@@ -1,5 +1,6 @@
 'use client';
 
+import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import { Zap, Users, Clock, Award } from 'lucide-react';
 import Navbar from '@/components/Navbar';

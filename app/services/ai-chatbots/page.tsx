@@ -1,5 +1,6 @@
 'use client';
 
+import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import { Bot, MessageCircle, Globe, ShoppingCart, Clock, Brain, Shield, TrendingUp, ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';

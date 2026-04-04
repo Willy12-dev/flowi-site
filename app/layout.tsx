@@ -15,21 +15,40 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Flowi — Premium Web Design & Development Agency",
+  metadataBase: new URL("https://useflowi.app"),
+  title: {
+    default: "Flowi — Premium Web Design, AI Chatbots & Video Production | Nairobi",
+    template: "%s | Flowi",
+  },
   description:
     "We build stunning websites, AI chatbots, mobile apps, and AI-powered marketing videos for ambitious brands. Based in Nairobi, serving the world.",
   keywords: [
     "web design Kenya",
     "website developer Nairobi",
     "app development Kenya",
-    "web design agency",
+    "AI chatbot Kenya",
+    "AI video production",
+    "WhatsApp automation Kenya",
+    "M-Pesa integration",
+    "web design agency Nairobi",
     "Flowi",
   ],
   openGraph: {
-    title: "Flowi — Premium Web Design & Development Agency",
+    title: "Flowi — Premium Web Design, AI Chatbots & Video Production",
     description:
-      "We build stunning websites, mobile apps, and business automation for ambitious brands.",
+      "We build stunning websites, AI chatbots, mobile apps, and AI-powered marketing videos for ambitious brands. Based in Nairobi.",
     type: "website",
+    url: "https://useflowi.app",
+    siteName: "Flowi",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flowi — Premium Web Design & AI Agency",
+    description:
+      "Websites, AI chatbots, video production, and M-Pesa integration. Built in days, not months.",
+  },
+  alternates: {
+    canonical: "https://useflowi.app",
   },
 };
 

@@ -1,5 +1,6 @@
 'use client';
 
+import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import { Video, Megaphone, ShoppingBag, GraduationCap, Users, Sparkles, ArrowRight, Check } from 'lucide-react';
 import Navbar from '@/components/Navbar';
