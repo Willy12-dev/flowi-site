@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src="/images/hero.png"
-          alt=""
+          alt="Flowi premium web design and AI chatbot agency showcase"
           className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0e27] via-[#0a0e27]/80 to-transparent" />

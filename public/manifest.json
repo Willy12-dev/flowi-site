@@ -1,0 +1,21 @@
+{
+  "name": "Flowi — Premium Web Design & AI Agency",
+  "short_name": "Flowi",
+  "description": "Premium websites, AI chatbots, and marketing videos. Built in Nairobi, serving the world.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e27",
+  "theme_color": "#4a7bff",
+  "icons": [
+    {
+      "src": "/images/logo-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/LOGOOOO.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

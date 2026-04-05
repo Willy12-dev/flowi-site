@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src="/images/contact-bg.png" alt="" className="w-full h-full object-cover opacity-20" />
+        <img src="/images/contact-bg.png" alt="Contact Flowi agency for web design and AI services" className="w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0e27] via-transparent to-[#0a0e27]" />
       </div>
 
