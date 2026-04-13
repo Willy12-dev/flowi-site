@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AdminForm from "@/components/AdminForm";
+import AdminDashboard from "@/components/AdminDashboard";
 
 export const metadata: Metadata = {
   title: "Admin — Content Engine",
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function AdminPage() {
   return (
-    <main className="min-h-screen bg-background flex items-center justify-center p-6">
-      <div className="w-full max-w-xl">
+    <main className="min-h-screen bg-background p-6">
+      <div className="mx-auto max-w-3xl">
         <h1 className="text-3xl font-bold text-foreground mb-2">
           Content Engine
         </h1>
@@ -18,6 +19,7 @@ export default function AdminPage() {
         </p>
 
         <AdminForm />
+        <AdminDashboard />
       </div>
     </main>
   );
