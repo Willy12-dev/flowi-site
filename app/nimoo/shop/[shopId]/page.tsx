@@ -12,16 +12,17 @@ export default function ShopPage({ params }: { params: { shopId: string } }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    supabase
-      .from('nimoo_shops')
-      .select('name, type, location')
-      .eq('id', params.shopId)
-      .single()
-      .then(({ data }) => {
+    (async () => {
+      try {
+        const { data } = await supabase
+          .from('nimoo_shops')
+          .select('name, type, location')
+          .eq('id', params.shopId)
+          .single();
         setShop(data);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
+      } catch {}
+      setLoading(false);
+    })();
   }, [params.shopId]);
 
   const type = shop?.type ? shop.type.charAt(0).toUpperCase() + shop.type.slice(1) : '';
