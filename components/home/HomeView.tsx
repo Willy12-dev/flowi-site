@@ -12,8 +12,11 @@ export default function HomeView() {
       <Hero />
       <Manifesto />
       <ValueBand />
+      <Services />
       <Work />
+      <Process />
       <Pricing />
+      <Testimonials />
       <Studio />
       <Contact />
       <Footer />
@@ -448,6 +451,259 @@ function Studio() {
               <p className="meta mt-2" style={{ color: 'var(--ash-light)' }}>Active commissions cap</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────── SERVICES ─────────────────────────── */
+function Services() {
+  const items = [
+    {
+      no: '01',
+      title: 'Custom Websites',
+      body:
+        'Marketing sites, e-commerce, booking flows, member portals. Built from scratch in Next.js — never copy-pasted from a WordPress theme. Lightning-fast on patchy 4G.',
+    },
+    {
+      no: '02',
+      title: 'Mobile Apps',
+      body:
+        'iOS and Android. React Native for cross-platform speed, native modules where it matters (camera, M-Pesa SDK, offline storage). Shipped to Play Store and App Store.',
+    },
+    {
+      no: '03',
+      title: 'AI Chatbots & Agents',
+      body:
+        'WhatsApp bots and on-site assistants trained on your products, prices, and policies. Handle inquiries, take orders, send M-Pesa STK pushes — 24 / 7.',
+    },
+    {
+      no: '04',
+      title: 'AI Video Production',
+      body:
+        'Marketing videos generated without crews, cameras, or studio fees. Cinematic, on-brand, ready for TikTok, Instagram, or your homepage hero. Days, not months.',
+    },
+    {
+      no: '05',
+      title: 'M-Pesa & Payments',
+      body:
+        'STK push, paybills, till numbers, recurring billing, crypto. Wired into your site or app with proper webhook handling and reconciliation that actually balances.',
+    },
+    {
+      no: '06',
+      title: 'SEO & Performance',
+      body:
+        'Schema markup, sitemaps, Core Web Vitals, structured data, ranking strategy. We make sure Google can read you — and that your site loads before your competitor\'s.',
+    },
+  ];
+
+  return (
+    <section id="services" className="px-8 md:px-12 lg:px-16 py-24 md:py-36 border-t" style={{ borderColor: 'var(--rule)' }}>
+      <div className="max-w-[1400px] mx-auto">
+        <div className="flex items-end justify-between mb-16 md:mb-24 flex-wrap gap-6">
+          <div>
+            <p className="eyebrow mb-4">— What we do</p>
+            <h2 className="display text-[40px] md:text-[64px] lg:text-[80px] leading-[1]">
+              Six disciplines.
+              <br />
+              <span className="display-italic" style={{ color: 'var(--clay)' }}>
+                One studio.
+              </span>
+            </h2>
+          </div>
+          <p className="meta max-w-[24ch]">
+            We don&apos;t outsource. Everything below is built in-house, by the same hands.
+          </p>
+        </div>
+
+        <div className="flex flex-col">
+          {items.map((s, i) => (
+            <motion.div
+              key={s.no}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.7, delay: i * 0.04 }}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 py-10 md:py-14 border-t"
+              style={{ borderColor: 'var(--rule)' }}
+            >
+              <div className="lg:col-span-1 meta">{s.no}</div>
+              <h3 className="lg:col-span-5 display text-[26px] md:text-[36px] lg:text-[44px] leading-[1.05]">
+                {s.title}
+              </h3>
+              <p className="lg:col-span-6 text-[15px] md:text-[16px] leading-[1.65]" style={{ color: 'var(--ash)' }}>
+                {s.body}
+              </p>
+            </motion.div>
+          ))}
+          <div className="hairline" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────── PROCESS ─────────────────────────── */
+function Process() {
+  const steps = [
+    {
+      no: '01',
+      title: 'Brief',
+      body:
+        'A 30-minute call. We listen. You describe the brand, the audience, and the outcome you actually need — more orders, more bookings, more credibility, fewer phone calls.',
+    },
+    {
+      no: '02',
+      title: 'Direction',
+      body:
+        'Within 48 hours: an aesthetic moodboard, type direction, sample layout, and a project plan with dates. You approve before we touch any code.',
+    },
+    {
+      no: '03',
+      title: 'Build',
+      body:
+        'We build. Daily Loom updates so you see the work form, not arrive. Feedback over WhatsApp, revisions overnight. No silent two-week stretches.',
+    },
+    {
+      no: '04',
+      title: 'Launch',
+      body:
+        'Goes live with proper analytics, SEO, and performance baselines. Source code, hosting access, and a one-page runbook handed over. Optional retainer for ongoing care.',
+    },
+  ];
+
+  return (
+    <section
+      id="process"
+      className="px-8 md:px-12 lg:px-16 py-24 md:py-36"
+      style={{ background: 'var(--paper-warm)' }}
+    >
+      <div className="max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
+          <p className="eyebrow lg:col-span-3">— How we work</p>
+          <div className="lg:col-span-9">
+            <h2 className="display text-[40px] md:text-[64px] lg:text-[80px] leading-[1] max-w-[16ch]">
+              Four steps.
+              <br />
+              <span className="display-italic" style={{ color: 'var(--forest)' }}>
+                Roughly two weeks.
+              </span>
+            </h2>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[var(--rule)] border" style={{ borderColor: 'var(--rule)' }}>
+          {steps.map((s, i) => (
+            <motion.div
+              key={s.no}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.6, delay: i * 0.06 }}
+              className="p-8 md:p-12 flex flex-col gap-5"
+              style={{ background: 'var(--paper-warm)' }}
+            >
+              <div className="flex items-center justify-between">
+                <span className="meta">{s.no}</span>
+                <span
+                  className="display-italic text-[20px]"
+                  style={{ color: i % 2 === 0 ? 'var(--forest)' : 'var(--clay)' }}
+                >
+                  {i === 0 ? 'Day 0' : i === 1 ? 'Day 2' : i === 2 ? 'Days 3–10' : 'Day 12+'}
+                </span>
+              </div>
+              <h3
+                className="display text-[36px] md:text-[48px]"
+                style={{ fontVariationSettings: '"SOFT" 60, "WONK" 1, "opsz" 100' }}
+              >
+                {s.title}
+              </h3>
+              <p className="text-[15px] md:text-[16px] leading-[1.65]" style={{ color: 'var(--ash)' }}>
+                {s.body}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────── TESTIMONIALS ─────────────────────────── */
+/* TODO: Replace placeholder quotes below with real client testimonials. */
+function Testimonials() {
+  const quotes = [
+    {
+      quote:
+        'They built our online showroom in a week. Customers now WhatsApp their orders straight from the site — we don\'t miss enquiries when the shop is closed.',
+      author: 'King\'s & Queens Furniture',
+      role: 'Furniture house, Githurai',
+    },
+    {
+      quote:
+        'Everyone else wanted three months and a quarter-million shillings. Flowi shipped a working booking site in five days, and it actually looks like our brand.',
+      author: 'Mr Joseph',
+      role: 'Premium Auto, carXPRESS Kiambu Road',
+    },
+    {
+      quote:
+        'They speak founder, not agency. We launched our trading platform with M-Pesa, crypto, and live performance reporting — all from one team.',
+      author: 'Flowi Capital',
+      role: 'In-house product · flowicapital.com',
+    },
+  ];
+
+  return (
+    <section
+      id="words"
+      className="px-8 md:px-12 lg:px-16 py-24 md:py-36 border-t"
+      style={{ borderColor: 'var(--rule)' }}
+    >
+      <div className="max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 md:mb-24">
+          <p className="eyebrow lg:col-span-3">— Words</p>
+          <div className="lg:col-span-9">
+            <h2 className="display text-[40px] md:text-[64px] lg:text-[80px] leading-[1] max-w-[18ch]">
+              What clients{' '}
+              <span className="display-italic" style={{ color: 'var(--clay)' }}>
+                say.
+              </span>
+            </h2>
+          </div>
+        </div>
+
+        <div className="flex flex-col">
+          {quotes.map((q, i) => (
+            <motion.figure
+              key={q.author}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.8, delay: i * 0.1 }}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 py-12 md:py-20 border-t"
+              style={{ borderColor: 'var(--rule)' }}
+            >
+              <div className="lg:col-span-1 meta">{String(i + 1).padStart(2, '0')}</div>
+              <blockquote className="lg:col-span-8">
+                <p
+                  className="display text-[28px] md:text-[44px] lg:text-[56px] leading-[1.15]"
+                  style={{ fontVariationSettings: '"SOFT" 60, "WONK" 1, "opsz" 96' }}
+                >
+                  <span style={{ color: 'var(--clay)' }}>“</span>
+                  {q.quote}
+                  <span style={{ color: 'var(--clay)' }}>”</span>
+                </p>
+              </blockquote>
+              <figcaption className="lg:col-span-3 lg:pt-2">
+                <p className="display-italic text-[18px]" style={{ color: 'var(--forest)' }}>
+                  — {q.author}
+                </p>
+                <p className="meta mt-2">{q.role}</p>
+              </figcaption>
+            </motion.figure>
+          ))}
+          <div className="hairline" />
         </div>
       </div>
     </section>
