@@ -1,198 +1,257 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowRight } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+import { ArrowUpRight } from 'lucide-react';
+import Nav from '@/components/site/Nav';
+import Footer from '@/components/site/Footer';
 
-const projects = [
+type Project = {
+  no: string;
+  year: string;
+  client: string;
+  category: string;
+  location: string;
+  brief: string;
+  services: string[];
+  results?: string;
+  href?: string;
+  external?: boolean;
+  tone: 'forest' | 'clay';
+};
+
+const projects: Project[] = [
   {
-    title: 'TrendyAirdrops',
-    category: 'Web App + Mobile',
-    description:
-      'Crypto airdrop aggregator with live prices, DEX swap, wallet checker, and premium subscription features. Built with Next.js, React Native, and Supabase.',
-    tags: ['Next.js', 'React Native', 'Supabase', 'Crypto', 'M-Pesa'],
-    url: 'https://trendyairdrops.com',
-    image: '/images/portfolio-trendy.png',
-    color: 'from-blue-500/30 to-purple-500/30',
-    results: '5K+ users in first month',
+    no: '01',
+    year: '2026',
+    client: 'King\'s & Queens Furniture',
+    category: 'E-commerce / Furniture',
+    location: 'Githurai, Nairobi',
+    brief:
+      'A flagship online showroom for a Thika Road furniture house — bringing their bespoke sofas, dining sets, and bedroom collections to a polished digital storefront with WhatsApp ordering and a working admin panel.',
+    services: ['Web Design', 'E-commerce', 'WhatsApp Order Flow', 'Admin Panel'],
+    results: 'Live admin operating in production',
+    href: 'https://furniture-demo-zeta.vercel.app',
+    external: true,
+    tone: 'forest',
   },
   {
-    title: 'Woyuduin',
-    category: 'Web App + Mobile',
-    description:
-      'Recovery app with VPN-based content blocker, AI counselor chatbot, accountability partners, community feed, therapist marketplace, and crypto payments.',
-    tags: ['React Native', 'AI/ML', 'Supabase', 'Crypto Payments', 'VPN'],
-    url: 'https://woyuduin.com',
-    image: '/images/portfolio-woyuduin.png',
-    color: 'from-violet-500/30 to-pink-500/30',
-    results: '22 screens, full backend',
+    no: '02',
+    year: '2026',
+    client: 'Mr Joseph — Premium Auto',
+    category: 'Booking / Service',
+    location: 'carXPRESS, Kiambu Road',
+    brief:
+      'Booking site for a premium auto specialist. Service request flow, vehicle drop-off scheduling, and a portfolio of restored builds — all from a single mobile-first interface tuned for a Kiambu Road clientele.',
+    services: ['Web Design', 'Booking Flow', 'Mobile-First', 'SEO'],
+    href: 'https://mrjoseph-premium.vercel.app',
+    external: true,
+    tone: 'clay',
   },
   {
-    title: 'Flowi Capital',
+    no: '03',
+    year: '2026',
+    client: 'Flowi Capital',
     category: 'Trading Platform',
-    description:
-      'Automated copy-trading platform with EA license management, real-time trade reporting, crypto & M-Pesa payments, and Telegram notifications.',
-    tags: ['Next.js', 'TypeScript', 'Turso DB', 'MT5 API', 'Crypto'],
-    url: 'https://flowicapital.com',
-    image: '/images/portfolio-trendy.png',
-    color: 'from-amber-500/30 to-orange-500/30',
-    results: '847% monthly returns tracked',
+    location: 'In-house product',
+    brief:
+      'A copy-trading and profit-sharing platform built around our own MT5 expert advisor. EA license management, real-time trade reporting, M-Pesa & crypto subscriptions, Telegram notifications, and a live performance dashboard.',
+    services: ['Product Design', 'Full-stack', 'MT5 API', 'M-Pesa & Crypto'],
+    results: '847% monthly returns tracked in production',
+    href: 'https://flowicapital.com',
+    external: true,
+    tone: 'forest',
   },
   {
-    title: 'Nairobi Furniture Co.',
-    category: 'E-Commerce',
-    description:
-      'Premium furniture e-commerce with product catalog, M-Pesa payment integration, WhatsApp ordering, and delivery tracking. Mobile-first design.',
-    tags: ['E-Commerce', 'M-Pesa', 'WhatsApp', 'Delivery Tracking'],
-    image: '/images/portfolio-furniture.png',
-    color: 'from-cyan-500/30 to-blue-500/30',
-    results: 'Orders from day 1',
+    no: '04',
+    year: '2026',
+    client: 'Nimoo POS',
+    category: 'Mobile App / Retail',
+    location: 'In-house product',
+    brief:
+      'A point-of-sale Android app for Kenyan retailers. Camera-driven product scanning, M-Pesa till integration, offline-first sync — designed for a duka, not a Starbucks.',
+    services: ['Mobile App', 'Product Design', 'Camera AI', 'M-Pesa'],
+    results: 'v1.0.0 shipped to Play Store',
+    href: '/nimoo',
+    external: false,
+    tone: 'clay',
   },
   {
-    title: 'Luna & Ember',
-    category: 'Restaurant Booking',
-    description:
-      'Restaurant website with online menu, table reservations, food ordering system, and WhatsApp notifications for order updates.',
-    tags: ['Bookings', 'Menu System', 'WhatsApp', 'M-Pesa'],
-    image: '/images/portfolio-restaurant.png',
-    color: 'from-emerald-500/30 to-teal-500/30',
-    results: '3x reservations increase',
+    no: '05',
+    year: '2025',
+    client: 'Woyuduin',
+    category: 'Recovery App',
+    location: 'In-house product',
+    brief:
+      'Recovery app with VPN-based content blocker, AI counselor chatbot, accountability partners, community feed, therapist marketplace, and crypto payments. 22 screens, full backend.',
+    services: ['React Native', 'AI/ML', 'Supabase', 'Crypto Payments', 'VPN'],
+    href: 'https://woyuduin.com',
+    external: true,
+    tone: 'forest',
   },
   {
-    title: 'StyleHouse Kenya',
-    category: 'Fashion E-Commerce',
-    description:
-      'Fashion brand e-commerce with AI-powered WhatsApp chatbot handling 80% of customer inquiries automatically. Integrated with M-Pesa.',
-    tags: ['AI Chatbot', 'WhatsApp', 'E-Commerce', 'M-Pesa'],
-    image: '/images/portfolio-furniture.png',
-    color: 'from-pink-500/30 to-rose-500/30',
-    results: '80% inquiries automated',
+    no: '06',
+    year: '2025',
+    client: 'TrendyAirdrops',
+    category: 'Web App + Mobile',
+    location: 'Crypto / Global',
+    brief:
+      'Crypto airdrop aggregator with live prices, DEX swap, wallet checker, and premium subscription features. Built with Next.js, React Native, and Supabase. M-Pesa for the local subscription tier.',
+    services: ['Next.js', 'React Native', 'Supabase', 'Crypto'],
+    results: '5K+ users in first month',
+    href: 'https://trendyairdrops.com',
+    external: true,
+    tone: 'clay',
   },
 ];
 
 export default function PortfolioContent() {
   return (
-    <>
-      <Navbar />
+    <div className="preview-scope min-h-screen overflow-x-hidden">
+      <Nav variant="page" />
+
       <main>
         {/* Hero */}
-        <section className="relative pt-32 pb-20 bg-mesh overflow-hidden">
-          <div className="absolute bottom-20 left-10 w-[400px] h-[400px] bg-blue/[0.08] rounded-full blur-[120px]" />
-          <div className="max-w-5xl mx-auto px-6 relative">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
+        <section className="px-8 md:px-12 lg:px-16 pt-24 md:pt-36 pb-20 md:pb-28">
+          <div className="max-w-[1400px] mx-auto">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center"
+              className="eyebrow mb-10"
             >
-              <span className="inline-block text-blue text-sm font-semibold tracking-widest uppercase bg-blue/10 px-4 py-1.5 rounded-full mb-4">
-                Portfolio
+              — Selected work, 2025–2026
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.1, ease: [0.2, 0, 0, 1] }}
+              className="display text-[44px] sm:text-[64px] md:text-[88px] lg:text-[112px] leading-[1] max-w-[16ch]"
+            >
+              Real projects.
+              <br />
+              <span className="display-italic" style={{ color: 'var(--clay)' }}>
+                Real results.
               </span>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Work That <span className="text-gradient-blue">Speaks</span>
-              </h1>
-              <p className="text-muted text-lg mt-6 max-w-2xl mx-auto">
-                Real projects. Real results. See what we&apos;ve built for businesses like yours.
-              </p>
-            </motion.div>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="mt-12 text-[16px] md:text-[18px] leading-[1.55] max-w-[52ch]"
+              style={{ color: 'var(--ash)' }}
+            >
+              A small studio doing three or four projects a quarter. Furniture, auto, fintech, retail, recovery, crypto — every project hand-built from scratch in our Westlands office. Click any row to see the live work.
+            </motion.p>
           </div>
         </section>
 
-        {/* Projects Grid */}
-        <section className="py-24">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-8">
-              {projects.map((project, i) => (
-                <motion.div
-                  key={project.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="group glass-card rounded-2xl overflow-hidden hover:border-blue/20 transition-all duration-500"
-                >
-                  <div className={`h-56 bg-gradient-to-br ${project.color} flex items-center justify-center relative overflow-hidden`}>
-                    {project.image && (
-                      <img
-                        src={project.image}
-                        alt={`${project.title} — ${project.category} project by Flowi`}
-                        className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
-                      />
-                    )}
+        {/* Projects list */}
+        <section className="px-8 md:px-12 lg:px-16 pb-24 md:pb-36">
+          <div className="max-w-[1400px] mx-auto flex flex-col">
+            {projects.map((p, i) => (
+              <motion.a
+                key={p.no}
+                href={p.href ?? '/#contact'}
+                {...(p.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-80px' }}
+                transition={{ duration: 0.7, delay: i * 0.04 }}
+                className="group grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 py-10 md:py-14 border-t hover:bg-[rgba(15,15,15,0.02)] transition-colors duration-500"
+                style={{ borderColor: 'var(--rule)' }}
+              >
+                <div className="lg:col-span-1 meta flex lg:flex-col gap-3 lg:gap-1">
+                  <span>{p.no}</span>
+                  <span style={{ color: 'var(--ash-light)' }}>{p.year}</span>
+                </div>
+
+                <div className="lg:col-span-5">
+                  <p className="meta mb-2" style={{ color: p.tone === 'forest' ? 'var(--forest)' : 'var(--clay)' }}>
+                    {p.category}
+                  </p>
+                  <h3 className="display text-[28px] md:text-[40px] lg:text-[52px] leading-[1.05] mb-3 group-hover:translate-x-1 transition-transform duration-500 ease-out">
+                    {p.client}
+                  </h3>
+                  <p className="meta">{p.location}</p>
+                </div>
+
+                <div className="lg:col-span-5">
+                  <p className="text-[15px] md:text-[16px] leading-[1.6] mb-5" style={{ color: 'var(--ash)' }}>
+                    {p.brief}
+                  </p>
+                  {p.results && (
+                    <p
+                      className="display-italic text-[18px] mb-5"
+                      style={{ color: p.tone === 'forest' ? 'var(--forest)' : 'var(--clay)' }}
+                    >
+                      &mdash; {p.results}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap gap-2">
+                    {p.services.map((s) => (
+                      <span
+                        key={s}
+                        className="text-[11px] tracking-[0.08em] uppercase border rounded-full px-3 py-1.5"
+                        style={{
+                          borderColor: 'var(--rule-strong)',
+                          color: p.tone === 'forest' ? 'var(--forest)' : 'var(--clay)',
+                        }}
+                      >
+                        {s}
+                      </span>
+                    ))}
                   </div>
-                  <div className="p-7">
-                    <div className="flex items-center justify-between mb-3">
-                      <div>
-                        <span className="text-xs font-medium text-blue-light">{project.category}</span>
-                        <h3 className="text-xl font-bold mt-1">{project.title}</h3>
-                      </div>
-                      {project.url && (
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`Visit ${project.title} website`}
-                          className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:border-blue/30 hover:bg-blue/10 transition-all"
-                        >
-                          <ExternalLink className="w-4 h-4 text-muted" />
-                        </a>
-                      )}
-                    </div>
-                    <p className="text-muted text-sm leading-relaxed mb-4">{project.description}</p>
-                    {project.results && (
-                      <div className="text-xs font-semibold text-blue-light bg-blue/10 inline-block px-3 py-1 rounded-full mb-4">
-                        {project.results}
-                      </div>
-                    )}
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-xs bg-white/[0.04] text-muted border border-white/[0.06] px-3 py-1 rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                </div>
+
+                <div className="lg:col-span-1 flex lg:justify-end items-start">
+                  <ArrowUpRight
+                    className="w-7 h-7 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-500 ease-out"
+                    strokeWidth={1.25}
+                  />
+                </div>
+              </motion.a>
+            ))}
+            <div className="hairline" />
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-mesh">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
+        <section className="px-8 md:px-12 lg:px-16 py-24 md:py-36 border-t" style={{ borderColor: 'var(--rule)' }}>
+          <div className="max-w-[1400px] mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8 }}
+              className="display text-[40px] md:text-[72px] lg:text-[96px] leading-[0.95] max-w-[14ch] mb-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Want to Be <span className="text-gradient-blue">Next</span>?
-              </h2>
-              <p className="text-muted mb-8">
-                Your project could be here. Let&apos;s build something your competitors will envy.
-              </p>
+              Want to be{' '}
+              <span className="display-italic" style={{ color: 'var(--clay)' }}>
+                next?
+              </span>
+            </motion.h2>
+            <p className="text-[18px] md:text-[20px] leading-[1.55] max-w-[40ch] mb-10" style={{ color: 'var(--ash)' }}>
+              We&apos;re booking April–June 2026 now. Send a few sentences about your business and what
+              you&apos;re hoping to launch — we&apos;ll come back within four working hours.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5">
               <a
-                href="https://wa.me/254714257688?text=Hi%20Flowi%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project"
+                href="https://wa.me/254714257688?text=Hi%20Flowi%2C%20I%20saw%20the%20portfolio%20and%20want%20to%20talk%20about%20a%20project."
                 target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 bg-blue hover:bg-blue-light text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_40px_rgba(74,123,255,0.3)]"
+                rel="noopener"
+                className="ink-pill"
+                style={{ background: 'var(--forest)' }}
               >
-                Start Your Project
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                WhatsApp the studio
+                <ArrowUpRight className="w-4 h-4" />
               </a>
-            </motion.div>
+              <a href="/about" className="ghost-link self-center">More about Flowi</a>
+            </div>
           </div>
         </section>
       </main>
+
       <Footer />
-      <WhatsAppFloat />
-    </>
+    </div>
   );
 }

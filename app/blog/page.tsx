@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getAllPosts, getCategories } from "@/lib/blog";
 import BlogCard from "@/components/BlogCard";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Nav from "@/components/site/Nav";
+import Footer from "@/components/site/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -17,8 +17,8 @@ export default function BlogPage() {
   const categories = getCategories();
 
   return (
-    <>
-      <Navbar />
+    <div className="preview-scope min-h-screen overflow-x-hidden">
+      <Nav variant="page" />
       <main className="min-h-screen pt-32 pb-20">
         <div className="mx-auto max-w-4xl px-6">
           <h1 className="text-4xl font-bold text-foreground mb-3">Blog</h1>
@@ -69,6 +69,6 @@ export default function BlogPage() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

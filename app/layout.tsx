@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Fraunces } from "next/font/google";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
 const inter = Inter({
@@ -12,6 +13,13 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   display: "swap",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  display: "swap",
+  axes: ["SOFT", "WONK", "opsz"],
 });
 
 export const metadata: Metadata = {
@@ -158,7 +166,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${playfair.variable} ${fraunces.variable} h-full antialiased`}
     >
       <head>
         <script
@@ -174,7 +182,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col grain">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <WhatsAppFloat />
+      </body>
     </html>
   );
 }

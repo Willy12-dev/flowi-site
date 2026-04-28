@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllSlugs, markdownToHtml } from "@/lib/blog";
 import BlogPostContent from "@/components/BlogPost";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Nav from "@/components/site/Nav";
+import Footer from "@/components/site/Footer";
 import Link from "next/link";
 
 interface PageProps {
@@ -60,8 +60,8 @@ export default async function BlogPostPage({ params }: PageProps) {
   };
 
   return (
-    <>
-      <Navbar />
+    <div className="preview-scope min-h-screen overflow-x-hidden">
+      <Nav variant="page" />
       <main className="min-h-screen pt-32 pb-20">
         <article className="mx-auto max-w-3xl px-6">
           <script
@@ -126,6 +126,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         </article>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

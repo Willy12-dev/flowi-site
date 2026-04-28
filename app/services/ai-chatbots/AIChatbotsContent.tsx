@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Bot, MessageCircle, Globe, ShoppingCart, Clock, Brain, Shield, TrendingUp, ArrowRight } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+import Nav from '@/components/site/Nav';
+import Footer from '@/components/site/Footer';
 
 const features = [
   {
@@ -77,8 +76,8 @@ const pricing = [
 
 export default function AIChatbotsContent() {
   return (
-    <>
-      <Navbar />
+    <div className="preview-scope min-h-screen overflow-x-hidden">
+      <Nav variant="page" />
       <main>
         {/* Hero */}
         <section className="relative pt-32 pb-20 bg-mesh overflow-hidden">
@@ -253,7 +252,6 @@ export default function AIChatbotsContent() {
         </section>
       </main>
       <Footer />
-      <WhatsAppFloat />
-    </>
+    </div>
   );
 }

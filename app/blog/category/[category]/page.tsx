@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getPostsByCategory, getCategories } from "@/lib/blog";
 import BlogCard from "@/components/BlogCard";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Nav from "@/components/site/Nav";
+import Footer from "@/components/site/Footer";
 import Link from "next/link";
 
 interface PageProps {
@@ -28,8 +28,8 @@ export default async function CategoryPage({ params }: PageProps) {
   const formatted = category.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
-    <>
-      <Navbar />
+    <div className="preview-scope min-h-screen overflow-x-hidden">
+      <Nav variant="page" />
       <main className="min-h-screen pt-32 pb-20">
         <div className="mx-auto max-w-4xl px-6">
           <Link
@@ -66,6 +66,6 @@ export default async function CategoryPage({ params }: PageProps) {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

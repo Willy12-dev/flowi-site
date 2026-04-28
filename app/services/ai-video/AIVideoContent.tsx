@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Video, Megaphone, ShoppingBag, GraduationCap, Users, Sparkles, ArrowRight, Check } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+import Nav from '@/components/site/Nav';
+import Footer from '@/components/site/Footer';
 
 const videoTypes = [
   {
@@ -72,8 +71,8 @@ const process = [
 
 export default function AIVideoContent() {
   return (
-    <>
-      <Navbar />
+    <div className="preview-scope min-h-screen overflow-x-hidden">
+      <Nav variant="page" />
       <main>
         {/* Hero */}
         <section className="relative pt-32 pb-20 bg-mesh overflow-hidden">
@@ -268,7 +267,6 @@ export default function AIVideoContent() {
         </section>
       </main>
       <Footer />
-      <WhatsAppFloat />
-    </>
+    </div>
   );
 }
