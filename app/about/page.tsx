@@ -91,6 +91,27 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* The operating thesis */}
+      <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+        <div className="page-max">
+          <p className="eyebrow eyebrow-mark mb-8">The operating thesis</p>
+          <h2 className="display text-[2rem] md:text-[3rem] leading-[1.05] -tracking-[0.02em] mb-10 measure">
+            We are not a news site.
+          </h2>
+          <p className="lead measure mb-10">
+            We&apos;re a technical intelligence product company. The blog is free sampling. The dispatch is a lead magnet. The books are the product. The library pass is the business. Editorial judgment is the moat.
+          </p>
+
+          <ol className="list-decimal pl-6 space-y-3 marker:font-semibold marker:text-[var(--accent)] text-[1.0625rem] md:text-[1.125rem] text-[var(--ink-soft)] leading-relaxed measure">
+            <li>Detect what serious builders care about.</li>
+            <li>Explain it faster than anyone else.</li>
+            <li>Package the implementation into paid books.</li>
+            <li>Convert readers into library customers.</li>
+            <li>Repeat every week.</li>
+          </ol>
+        </div>
+      </section>
+
       {/* Why this exists */}
       <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
         <div className="page-max">

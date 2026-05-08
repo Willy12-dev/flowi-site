@@ -102,6 +102,25 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           <BlogPostContent htmlContent={htmlContent} />
 
+          {/* "Read the book" — every post sells a book per the operating thesis */}
+          <aside className="mt-14 pt-8 border-t border-[var(--rule)] max-w-[64ch]">
+            <p className="eyebrow eyebrow-mark mb-3">If this was useful</p>
+            <h3 className="serif text-[1.625rem] md:text-[1.875rem] leading-[1.15] mb-3">
+              <a href="https://flowi.gumroad.com/l/sqqhvm" target="_blank" rel="noopener" className="link-ink">
+                Agent Memory: The 5 Patterns That Ship in Production
+              </a>
+            </h3>
+            <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed mb-4">
+              The decision tree, the code, and the failure modes nobody warns you about. 5 chapters · ~4,500 words · code that runs.
+            </p>
+            <p className="flex items-baseline gap-x-5">
+              <a href="https://flowi.gumroad.com/l/sqqhvm" target="_blank" rel="noopener" className="link-red text-[1.0625rem] font-medium">
+                Read it — $19 →
+              </a>
+              <span className="meta">or browse <a href="/courses" className="link-ink">all books</a></span>
+            </p>
+          </aside>
+
           {post.tags.length > 0 && (
             <div className="mt-14 pt-8 border-t border-[var(--rule)] max-w-[64ch]">
               <p className="eyebrow eyebrow-mark mb-3">Tagged</p>

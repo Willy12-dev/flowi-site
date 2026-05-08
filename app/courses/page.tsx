@@ -33,6 +33,61 @@ const BOOKS: Book[] = [
     meta: '5 chapters · 4,500 words · Python · Claude / GPT / Gemini compatible',
     status: 'live',
   },
+  {
+    number: '№02',
+    title: 'The AI Agent Stack: Memory, Tools, Planning, Evaluation',
+    subtitle: 'The whole system, not just the components.',
+    blurb:
+      'Builders understand one piece — memory, or tools, or planning — but not how they fit together. This is the systems-level architecture for moving an agent from demo to production.',
+    price: '$19',
+    url: '#',
+    meta: '5 chapters · ~5,000 words · in production',
+    status: 'coming',
+  },
+  {
+    number: '№03',
+    title: 'MCP in Production',
+    subtitle: 'How agents connect to real tools, safely.',
+    blurb:
+      "Model Context Protocol gets thrown around as an acronym. Almost nobody is implementing it cleanly. This is the implementation playbook — server design, auth, sandboxing, the patterns that scale.",
+    price: '$19',
+    url: '#',
+    meta: '5 chapters · in production',
+    status: 'coming',
+  },
+  {
+    number: '№04',
+    title: 'How to Evaluate AI Agents Before They Fail in Production',
+    subtitle: 'The reliability discipline most teams skip.',
+    blurb:
+      'Most agents ship without real evaluation, then break in production with no signal of why. This book is the eval framework — the metrics, the benchmarks, the test infrastructure.',
+    price: '$19',
+    url: '#',
+    meta: 'in production',
+    status: 'coming',
+  },
+  {
+    number: '№05',
+    title: 'The Open-Source Model Playbook',
+    subtitle: 'Which models actually matter and how to deploy them.',
+    blurb:
+      'Llama, Qwen, Mistral, DeepSeek, Phi — too many models, no clarity on which to use when. This book ranks them by use case, with deployment recipes for each.',
+    price: '$19',
+    url: '#',
+    meta: 'in production',
+    status: 'coming',
+  },
+  {
+    number: '№06',
+    title: 'When to Use Multi-Agent Systems (And When Not To)',
+    subtitle: 'The architecture call most teams get wrong.',
+    blurb:
+      'Multi-agent is exciting and almost always premature. This book is the decision tree — when single agents work, when multi-agent earns its complexity, and the patterns that actually ship.',
+    price: '$19',
+    url: '#',
+    meta: 'in production',
+    status: 'coming',
+  },
 ];
 
 export default function CoursesPage() {
@@ -73,11 +128,11 @@ export default function CoursesPage() {
           {BOOKS.map((b) => (
             <article
               key={b.number}
-              className="grid grid-cols-[3.5rem,1fr,auto] gap-x-6 gap-y-3 items-baseline pb-10 border-b border-[var(--rule)] mb-10 last:mb-0"
+              className={`grid grid-cols-[3.5rem,1fr,auto] gap-x-6 gap-y-3 items-baseline pb-10 border-b border-[var(--rule)] mb-10 last:mb-0 ${b.status === 'coming' ? 'opacity-65' : ''}`}
             >
               <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">{b.number}</span>
               <div>
-                <h2 className="serif text-[1.875rem] md:text-[2.5rem] leading-[1.05] -tracking-[0.015em] mb-3">
+                <h2 className="serif text-[1.5rem] md:text-[2rem] leading-[1.1] -tracking-[0.015em] mb-3">
                   {b.status === 'live' ? (
                     <a href={b.url} target="_blank" rel="noopener" className="link-ink">{b.title}</a>
                   ) : (
@@ -89,7 +144,7 @@ export default function CoursesPage() {
                 <p className="meta">{b.meta}</p>
               </div>
               <div className="text-right whitespace-nowrap">
-                <span className="serif text-[1.5rem] tabular block">{b.price}</span>
+                <span className={`serif text-[1.5rem] tabular block ${b.status === 'coming' ? 'text-[var(--ink-mute)]' : ''}`}>{b.price}</span>
                 {b.status === 'live' ? (
                   <a href={b.url} target="_blank" rel="noopener" className="link-red text-[14px] mt-1 inline-block">
                     Read it →
@@ -100,19 +155,6 @@ export default function CoursesPage() {
               </div>
             </article>
           ))}
-
-          <div className="grid grid-cols-[3.5rem,1fr,auto] gap-x-6 gap-y-3 items-baseline opacity-60">
-            <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">№02</span>
-            <div>
-              <h2 className="serif text-[1.5rem] leading-[1.1] mb-2 italic text-[var(--ink-soft)]">
-                In production — ships Monday
-              </h2>
-              <p className="meta">Topic locked Sunday. Subscribe to be notified.</p>
-            </div>
-            <div className="text-right">
-              <span className="meta italic">soon</span>
-            </div>
-          </div>
         </div>
       </section>
 
