@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Email subscribers (file-based capture for /api/subscribe — export to Beehiiv when ready)
+/data/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
