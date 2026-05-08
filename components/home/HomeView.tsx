@@ -16,6 +16,7 @@ export default function HomeView() {
       <Hero totalCount={posts.length} />
       {featured && <Featured post={featured} />}
       {latest.length > 0 && <LatestArticles posts={latest} />}
+      <SourcesCallout />
       <DispatchSpread />
       <EditorialAside />
       <BookShelf />
@@ -117,6 +118,32 @@ function LatestArticles({ posts }: { posts: ReturnType<typeof getAllPosts> }) {
         </ol>
 
         <p className="meta italic mt-8">A new piece lands every morning at 06:00 UTC.</p>
+      </div>
+    </section>
+  );
+}
+
+/* ─── SOURCES CALLOUT (the value-prop made concrete) ───────── */
+function SourcesCallout() {
+  return (
+    <section className="page-gutter pt-12 md:pt-16 pb-12 md:pb-16 border-t border-[var(--rule)]">
+      <div className="page-max-wide">
+        <div className="grid md:grid-cols-12 gap-6 md:gap-10 items-baseline">
+          <div className="md:col-span-7">
+            <p className="eyebrow eyebrow-mark mb-3">How we cover it</p>
+            <h2 className="serif text-[1.875rem] md:text-[2.5rem] leading-[1.1] mb-4 measure-tight">
+              <span className="tabular">60</span> platforms. <span className="display-italic">One newsroom.</span>
+            </h2>
+            <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure-tight">
+              All AI news is public. Our job is to track every place it shows up — official lab blogs, GitHub trending across 22 topics, the major publications, the aggregators, the newsletters — and write the one brief you actually have time to read. Every two hours.
+            </p>
+          </div>
+          <div className="md:col-span-5 md:text-right">
+            <Link href="/sources" className="link-red text-[1.0625rem] font-medium">
+              See every source →
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

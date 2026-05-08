@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const LINKS = [
+  { href: '/blog',     label: 'Daily'    },
   { href: '/dispatch', label: 'Dispatch', tag: 'free' },
-  { href: '/courses', label: 'Books' },
-  { href: '/blog',    label: 'Daily'  },
-  { href: '/about',   label: 'About'  },
+  { href: '/courses',  label: 'Books'    },
+  { href: '/sources',  label: 'Sources'  },
+  { href: '/about',    label: 'About'    },
 ];
 
 export default function Nav() {
