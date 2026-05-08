@@ -132,7 +132,7 @@ function SourcesCallout() {
           <div className="md:col-span-7">
             <p className="eyebrow eyebrow-mark mb-3">How we cover it</p>
             <h2 className="serif text-[1.875rem] md:text-[2.5rem] leading-[1.1] mb-4 measure-tight">
-              <span className="tabular">60</span> platforms. <span className="display-italic">One newsroom.</span>
+              <span className="tabular">71</span> platforms. <span className="display-italic">One newsroom.</span>
             </h2>
             <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure-tight">
               All AI news is public. Our job is to track every place it shows up — official lab blogs, GitHub trending across 22 topics, the major publications, the aggregators, the newsletters — and write the one brief you actually have time to read. Every two hours.

@@ -49,8 +49,25 @@ const AGGREGATORS: Source[] = [
 ];
 
 const NEWSLETTERS: Source[] = [
-  { name: 'Import AI',       url: 'https://importai.substack.com',          why: 'Jack Clark\'s research-side AI weekly.' },
-  { name: 'Cerebral Valley', url: 'https://cerebralvalley.beehiiv.com',     why: 'Bay Area AI scene, founder interviews.' },
+  { name: 'Import AI',                url: 'https://importai.substack.com',     why: 'Jack Clark\'s research-side AI weekly.' },
+  { name: 'Cerebral Valley',          url: 'https://cerebralvalley.beehiiv.com', why: 'Bay Area AI scene, founder interviews.' },
+  { name: 'Simon Willison',           url: 'https://simonwillison.net',          why: 'The single most reliable individual AI commentator online.' },
+  { name: 'One Useful Thing (Mollick)', url: 'https://www.oneusefulthing.org',   why: 'Wharton prof; the best AI-as-tool practitioner writing.' },
+];
+
+const COMMUNITIES: Source[] = [
+  { name: 'Reddit · r/LocalLLaMA',      url: 'https://www.reddit.com/r/LocalLLaMA/',      why: 'Self-hosted LLM frontier — leak velocity, benchmarks, fine-tuning.' },
+  { name: 'Reddit · r/ChatGPT',         url: 'https://www.reddit.com/r/ChatGPT/',         why: 'Mass-market AI sentiment + the prompt economy.' },
+  { name: 'Reddit · r/MachineLearning', url: 'https://www.reddit.com/r/MachineLearning/', why: 'Practitioner discussion + paper threads.' },
+  { name: 'Reddit · r/singularity',     url: 'https://www.reddit.com/r/singularity/',     why: 'Speculative, big-picture, where rumor first surfaces.' },
+  { name: 'Reddit · r/aivideo',         url: 'https://www.reddit.com/r/aivideo/',         why: 'Video-gen scene — Sora, Runway, Pika, Kling, Wan.' },
+];
+
+const RESEARCH: Source[] = [
+  { name: 'ArXiv · cs.AI',         url: 'https://arxiv.org/list/cs.AI/recent', why: 'Daily AI papers — what the labs are publishing.' },
+  { name: 'ArXiv · cs.CL',         url: 'https://arxiv.org/list/cs.CL/recent', why: 'Computational linguistics — the LLM research artery.' },
+  { name: 'ArXiv · cs.LG',         url: 'https://arxiv.org/list/cs.LG/recent', why: 'Machine learning broad — RL, agents, theory.' },
+  { name: 'Hugging Face Posts',    url: 'https://huggingface.co/posts',        why: 'Community model launches and threads beyond the company blog.' },
 ];
 
 const GITHUB_ORGS = [
@@ -83,17 +100,15 @@ const GITHUB_TOPICS = [
 ];
 
 const PIPELINE = [
-  { name: 'Reddit',       why: 'r/LocalLLaMA, r/ChatGPT, r/singularity, r/MachineLearning — practitioner sentiment + leak velocity.' },
-  { name: 'Twitter / X',  why: 'AI launches now happen first on X. We\'re evaluating list-based scraping (no cold-DM mess).' },
-  { name: 'Simon Willison\'s blog', why: 'The single most reliable individual AI commentator online. RSS coming.' },
-  { name: 'ArXiv (cs.AI / cs.CL)', why: 'Daily-paper feed for the technically-grounded pieces.' },
-  { name: 'Replicate trending', why: 'Where new image/video/audio models go live first.' },
-  { name: 'Hugging Face trending models', why: 'Beyond the company blog — what the community actually downloads.' },
-  { name: 'YouTube (release videos)', why: 'Some launches are video-first. Pulling channel feeds for the majors.' },
+  { name: 'Twitter / X',                  why: 'AI launches now happen first on X. We\'re evaluating list-based scraping that respects ToS — no cold-DM mess.' },
+  { name: 'Replicate trending',           why: 'Where new image/video/audio models go live first.' },
+  { name: 'YouTube (release videos)',     why: 'Some launches are video-first. Pulling channel feeds for the majors.' },
+  { name: 'Discord (public channels)',    why: 'A handful of AI communities still run Discord-first. Read-only RSS via bot if we add it.' },
+  { name: 'Tier-2 individual bloggers',   why: 'Andrej Karpathy, Yann LeCun, Sebastian Raschka, Lilian Weng — when they post, it matters.' },
 ];
 
 function totalCount() {
-  return OFFICIAL.length + PUBLICATIONS.length + AGGREGATORS.length + NEWSLETTERS.length + GITHUB_ORGS.length + GITHUB_TOPICS.length;
+  return OFFICIAL.length + PUBLICATIONS.length + AGGREGATORS.length + NEWSLETTERS.length + COMMUNITIES.length + RESEARCH.length + GITHUB_ORGS.length + GITHUB_TOPICS.length;
 }
 
 function SourceList({ items, type }: { items: Source[]; type: string }) {
@@ -159,9 +174,25 @@ export default function SourcesPage() {
 
       <section className="page-gutter pt-16 pb-16 border-t border-[var(--rule)]">
         <div className="page-max-wide">
-          <p className="eyebrow eyebrow-mark mb-3">Editorial Newsletters · {NEWSLETTERS.length}</p>
+          <p className="eyebrow eyebrow-mark mb-3">Editorial Newsletters &amp; Individuals · {NEWSLETTERS.length}</p>
           <span className="draw-rule mb-8 block" aria-hidden="true" />
           <SourceList items={NEWSLETTERS} type="LETTER" />
+        </div>
+      </section>
+
+      <section className="page-gutter pt-16 pb-16 border-t border-[var(--rule)]">
+        <div className="page-max-wide">
+          <p className="eyebrow eyebrow-mark mb-3">Communities · {COMMUNITIES.length}</p>
+          <span className="draw-rule mb-8 block" aria-hidden="true" />
+          <SourceList items={COMMUNITIES} type="REDDIT" />
+        </div>
+      </section>
+
+      <section className="page-gutter pt-16 pb-16 border-t border-[var(--rule)]">
+        <div className="page-max-wide">
+          <p className="eyebrow eyebrow-mark mb-3">Research · {RESEARCH.length}</p>
+          <span className="draw-rule mb-8 block" aria-hidden="true" />
+          <SourceList items={RESEARCH} type="PAPERS" />
         </div>
       </section>
 
