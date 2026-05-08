@@ -1,60 +1,96 @@
 'use client';
 
-import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 type Variant = 'over-hero' | 'page';
 
-export default function Nav({ variant = 'page' }: { variant?: Variant }) {
-  const overHero = variant === 'over-hero';
-  const textColor = overHero ? 'var(--paper)' : 'var(--ink)';
-  const subColor = overHero ? 'rgba(245, 240, 230, 0.5)' : 'var(--ash-light)';
-  const pillBg = overHero ? 'var(--paper)' : 'var(--ink)';
-  const pillText = overHero ? 'var(--ink)' : 'var(--paper)';
+const LINKS = [
+  { href: '/atlas', label: 'Atlas', tag: 'free' },
+  { href: '/courses', label: 'Courses' },
+  { href: '/blog', label: 'Daily AI' },
+  { href: '/about', label: 'About' },
+];
+
+export default function Nav({ variant: _variant = 'page' }: { variant?: Variant } = {}) {
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav
-      className={`${overHero ? 'absolute' : 'relative'} top-0 left-0 right-0 z-40 px-8 md:px-12 lg:px-16 pt-8 flex items-center justify-between`}
-      style={{ color: textColor }}
-    >
-      <a href="/" className="flex items-baseline gap-2">
-        <span
-          className="display text-[28px] tracking-[-0.02em]"
-          style={{ fontVariationSettings: '"SOFT" 60, "WONK" 1, "opsz" 144' }}
-        >
+    <nav className="absolute top-0 left-0 right-0 z-40 px-6 md:px-10 pt-6 flex items-center justify-between text-white">
+      <Link href="/" className="flex items-baseline gap-2.5 group">
+        <span className="size-2 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500 group-hover:scale-125 transition" />
+        <span className="font-[var(--font-playfair)] text-2xl font-extrabold tracking-tight">
           Flowi
         </span>
-        <span className="meta hidden sm:inline" style={{ color: subColor }}>
-          / studio
+        <span className="hidden sm:inline text-xs uppercase tracking-[0.2em] text-white/45">
+          AI Intelligence
         </span>
-      </a>
+      </Link>
 
-      <div className="hidden md:flex items-center gap-10">
-        <a href="/portfolio" className="text-[14px] hover:opacity-60 transition-opacity">
-          Work
-        </a>
-        <a href="/about" className="text-[14px] hover:opacity-60 transition-opacity">
-          Studio
-        </a>
-        <a href="/#pricing" className="text-[14px] hover:opacity-60 transition-opacity">
-          Rates
-        </a>
-        <a href="/#contact" className="text-[14px] hover:opacity-60 transition-opacity">
-          Contact
-        </a>
+      <div className="hidden md:flex items-center gap-8">
+        {LINKS.map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            className="text-sm text-white/75 hover:text-white transition flex items-center gap-1.5"
+          >
+            {l.label}
+            {l.tag && (
+              <span className="text-[10px] uppercase tracking-wider text-cyan-300/80 border border-cyan-400/30 rounded-full px-1.5 py-0.5">
+                {l.tag}
+              </span>
+            )}
+          </Link>
+        ))}
+        <Link
+          href="/atlas"
+          className="text-sm font-semibold rounded-lg bg-gradient-to-br from-violet-600 to-blue-600 px-4 py-2 hover:from-violet-500 hover:to-blue-500 transition"
+        >
+          Subscribe →
+        </Link>
       </div>
 
-      <a
-        href="/#contact"
-        className="text-[13px] inline-flex items-center gap-2 rounded-full font-medium transition-all duration-400"
-        style={{
-          background: pillBg,
-          color: pillText,
-          padding: '12px 20px',
-        }}
+      <button
+        type="button"
+        aria-label="Toggle menu"
+        onClick={() => setOpen(!open)}
+        className="md:hidden text-white/80 p-2 -m-2"
       >
-        Start a project
-        <ArrowRight className="w-3.5 h-3.5" />
-      </a>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          {open ? (
+            <path d="M6 6L18 18M6 18L18 6" />
+          ) : (
+            <>
+              <path d="M4 7h16" />
+              <path d="M4 12h16" />
+              <path d="M4 17h16" />
+            </>
+          )}
+        </svg>
+      </button>
+
+      {open && (
+        <div className="absolute top-full left-0 right-0 mx-4 mt-3 rounded-xl border border-white/10 bg-[#0a0e27]/95 backdrop-blur-xl p-4 md:hidden">
+          {LINKS.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="block py-3 text-white/85 border-b border-white/5 last:border-0"
+            >
+              {l.label}
+              {l.tag && <span className="text-[10px] uppercase ml-2 text-cyan-300">{l.tag}</span>}
+            </Link>
+          ))}
+          <Link
+            href="/atlas"
+            onClick={() => setOpen(false)}
+            className="block mt-3 text-center font-semibold rounded-lg bg-gradient-to-br from-violet-600 to-blue-600 py-3"
+          >
+            Subscribe →
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }

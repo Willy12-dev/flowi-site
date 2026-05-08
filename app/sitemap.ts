@@ -5,42 +5,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://useflowi.app";
 
   const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/portfolio`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/ai-chatbots`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/ai-video`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+    { url: baseUrl,                changeFrequency: "daily",   priority: 1.0, lastModified: new Date() },
+    { url: `${baseUrl}/atlas`,     changeFrequency: "monthly", priority: 0.9, lastModified: new Date() },
+    { url: `${baseUrl}/courses`,   changeFrequency: "weekly",  priority: 0.9, lastModified: new Date() },
+    { url: `${baseUrl}/blog`,      changeFrequency: "daily",   priority: 0.9, lastModified: new Date() },
+    { url: `${baseUrl}/about`,     changeFrequency: "monthly", priority: 0.7, lastModified: new Date() },
   ];
 
   const posts = getAllPosts();

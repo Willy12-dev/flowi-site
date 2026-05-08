@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Fraunces } from "next/font/google";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
 const inter = Inter({
@@ -25,36 +24,36 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://useflowi.app"),
   title: {
-    default:
-      "Flowi — Premium Web Design, AI Chatbots & Video Production | Nairobi",
+    default: "Flowi — AI Intelligence · Daily brief, monthly atlas, deep-dive courses",
     template: "%s | Flowi",
   },
   description:
-    "We build stunning websites, AI chatbots, mobile apps, and AI-powered marketing videos for ambitious brands. Based in Nairobi, serving the world.",
+    "The signal layer for AI builders. Twenty AI sources distilled every morning into a usable map of what shipped, what matters, and which tools you actually need to evaluate this week.",
   keywords: [
-    "web design Kenya",
-    "website developer Nairobi",
-    "app development Kenya",
-    "AI chatbot Kenya",
-    "AI chatbot WhatsApp",
-    "AI video production",
-    "AI video production Kenya",
-    "WhatsApp automation Kenya",
-    "M-Pesa integration",
-    "M-Pesa website payment",
-    "web design agency Nairobi",
-    "website design Nairobi",
-    "e-commerce Kenya",
-    "mobile app development Nairobi",
+    "AI tools",
+    "AI agents",
+    "LLM",
+    "Claude",
+    "ChatGPT",
+    "Gemini",
+    "AI courses",
+    "AI engineering",
+    "agentic AI",
+    "production AI",
+    "AI newsletter",
+    "AI atlas",
+    "vector database",
+    "RAG",
+    "MCP",
+    "AI memory",
+    "AI for developers",
     "Flowi",
-    "Flowi agency",
-    "digital agency Kenya",
-    "best web designer Kenya",
+    "Flowi AI",
   ],
   openGraph: {
-    title: "Flowi — Premium Web Design, AI Chatbots & Video Production",
+    title: "Flowi — AI Intelligence",
     description:
-      "We build stunning websites, AI chatbots, mobile apps, and AI-powered marketing videos for ambitious brands. Based in Nairobi.",
+      "Daily AI brief, monthly atlas of every tool worth knowing, opinionated deep-dive courses. The signal layer for AI builders.",
     type: "website",
     url: "https://useflowi.app",
     siteName: "Flowi",
@@ -64,15 +63,15 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Flowi — Premium Web Design & AI Agency in Nairobi",
+        alt: "Flowi — AI Intelligence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flowi — Premium Web Design & AI Agency",
+    title: "Flowi — AI Intelligence",
     description:
-      "Websites, AI chatbots, video production, and M-Pesa integration. Built in days, not months.",
+      "Daily AI brief, monthly atlas, deep-dive courses for AI builders.",
     images: ["/images/og-image.png"],
     creator: "@FlowiGroup",
   },
@@ -86,7 +85,6 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 
-// JSON-LD Organization Schema
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -94,67 +92,27 @@ const organizationSchema = {
   url: "https://useflowi.app",
   logo: "https://useflowi.app/images/LOGOOOO.png",
   description:
-    "Premium digital agency building websites, AI chatbots, mobile apps, and AI-powered marketing videos. Based in Nairobi, Kenya.",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Nairobi",
-    addressCountry: "KE",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+254714257688",
-    contactType: "sales",
-    availableLanguage: ["English", "Swahili"],
-  },
+    "Flowi is an AI intelligence platform that publishes a daily AI brief, a monthly atlas of every AI tool worth knowing, and opinionated deep-dive courses on the patterns that ship in production.",
   sameAs: [
     "https://twitter.com/FlowiGroup",
     "https://www.tiktok.com/@flowigroup",
     "https://www.instagram.com/flowigroup",
+    "https://flowi.gumroad.com",
   ],
   foundingDate: "2024",
-  areaServed: ["Kenya", "East Africa", "Africa"],
-  serviceType: [
-    "Web Design",
-    "Web Development",
-    "AI Chatbot Development",
-    "AI Video Production",
-    "Mobile App Development",
-    "WhatsApp Automation",
-    "M-Pesa Integration",
-  ],
 };
 
-// JSON-LD LocalBusiness Schema
-const localBusinessSchema = {
+const websiteSchema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Flowi — Web Design & AI Agency",
-  image: "https://useflowi.app/images/LOGOOOO.png",
+  "@type": "WebSite",
+  name: "Flowi",
   url: "https://useflowi.app",
-  telephone: "+254714257688",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Nairobi",
-    addressRegion: "Nairobi",
-    addressCountry: "KE",
-  },
-  priceRange: "KES 30,000 - KES 500,000+",
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-    ],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "40",
+  description:
+    "The signal layer for AI builders — daily AI brief, monthly atlas, deep-dive courses.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://useflowi.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -171,20 +129,15 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-[#0a0e27] text-white">
         {children}
-        <WhatsAppFloat />
       </body>
     </html>
   );
