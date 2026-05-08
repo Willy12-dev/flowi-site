@@ -1,19 +1,21 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import Nav from '@/components/site/Nav';
 import Footer from '@/components/site/Footer';
 import EmailCapture from '@/components/site/EmailCapture';
-import { getTodaysBrief } from '@/lib/today';
+import { getAllPosts } from '@/lib/blog';
 
 export default function HomeView() {
-  const brief = getTodaysBrief();
+  const posts = getAllPosts();
+  const featured = posts[0];
+  const latest = posts.slice(1, 9);
+
   return (
     <main className="bg-[var(--bg)] text-[var(--ink)]">
       <Nav />
-      <Hero />
-      <DailyIndex brief={brief} />
+      <Hero totalCount={posts.length} />
+      {featured && <Featured post={featured} />}
+      {latest.length > 0 && <LatestArticles posts={latest} />}
       <DispatchSpread />
       <EditorialAside />
       <BookShelf />
@@ -25,67 +27,102 @@ export default function HomeView() {
 }
 
 /* ─── HERO ─────────────────────────────────────────────────── */
-function Hero() {
+function Hero({ totalCount }: { totalCount: number }) {
   return (
-    <section className="page-gutter pt-20 md:pt-32 pb-24 md:pb-36">
+    <section className="page-gutter pt-16 md:pt-24 pb-14 md:pb-20">
       <div className="page-max">
-        <p className="eyebrow eyebrow-mark mb-10 md:mb-14">
+        <p className="eyebrow eyebrow-mark mb-8 md:mb-10">
           Flowi · AI Intelligence · Issue №09 · May&nbsp;9, 2026
         </p>
 
-        <h1 className="display hero-headline text-[3.75rem] sm:text-[5rem] md:text-[7rem] leading-[0.96] -tracking-[0.025em]">
-          AI moves daily.<br />
-          We turn it into <span className="marker">reading</span>.
+        <h1 className="display hero-headline text-[3rem] sm:text-[4.25rem] md:text-[6rem] leading-[0.98] -tracking-[0.025em]">
+          The daily paper <br />
+          for <span className="marker">AI&nbsp;builders</span>.
         </h1>
 
-        <p className="lead mt-10 measure">
-          A small editorial publisher covering the AI ecosystem. We watch the releases, the skills, the arguments, the bravado online — and turn it into a daily brief, a monthly dispatch, and books you can read in an evening.
+        <p className="lead mt-8 measure">
+          A small editorial publisher covering the AI ecosystem. We watch the releases, the new skills, the open-source bravado online — and turn it into a daily brief, a monthly dispatch, and books you can read in an evening.
         </p>
 
-        <div className="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
+        <div className="mt-8 flex flex-wrap items-baseline gap-x-8 gap-y-3">
           <Link href="/dispatch" className="link-red text-[1.0625rem] font-medium">
             Subscribe&nbsp;—&nbsp;free →
           </Link>
-          <Link href="/courses" className="link-ink text-[1.0625rem]">
-            Read the books
-          </Link>
+          <Link href="/courses" className="link-ink text-[1.0625rem]">Read the books</Link>
+          <span className="meta">{totalCount} articles in the archive</span>
         </div>
       </div>
     </section>
   );
 }
 
-/* ─── DAILY INDEX (the move) ───────────────────────────────── */
-function DailyIndex({ brief }: { brief: ReturnType<typeof getTodaysBrief> }) {
+/* ─── FEATURED ARTICLE ─────────────────────────────────────── */
+function Featured({ post }: { post: ReturnType<typeof getAllPosts>[0] }) {
+  const readTime = Math.max(1, Math.ceil(post.wordCount / 200));
+  const dateLong = new Date(post.date).toLocaleDateString("en-US", {
+    month: "long", day: "numeric", year: "numeric",
+  });
+
   return (
-    <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+    <section className="page-gutter pt-12 md:pt-16 pb-20 md:pb-24 border-t border-[var(--rule)]">
+      <div className="page-max-wide">
+        <p className="eyebrow eyebrow-mark mb-3">Today&apos;s lead story</p>
+        <span className="draw-rule mb-10 block" aria-hidden="true" />
+
+        <article>
+          <p className="meta mb-4">
+            {(post.category || "Article").replace(/_/g, " ").toUpperCase()} · <span className="tabular">{dateLong}</span> · <span className="tabular">{readTime} min read</span>
+          </p>
+          <h2 className="display text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] leading-[1.02] -tracking-[0.02em] max-w-[18ch] mb-6">
+            <Link href={`/blog/${post.slug}`} className="text-[var(--ink)] hover:text-[var(--accent)] transition-colors">
+              {post.title}
+            </Link>
+          </h2>
+          {post.description && (
+            <p className="lead measure mb-6">{post.description}</p>
+          )}
+          <Link href={`/blog/${post.slug}`} className="link-red text-[1.0625rem] font-medium">
+            Read the full piece →
+          </Link>
+        </article>
+      </div>
+    </section>
+  );
+}
+
+/* ─── LATEST ARTICLES (Index style) ────────────────────────── */
+function LatestArticles({ posts }: { posts: ReturnType<typeof getAllPosts> }) {
+  return (
+    <section className="page-gutter pt-12 md:pt-16 pb-20 md:pb-24 border-t border-[var(--rule)]">
       <div className="page-max-wide">
         <div className="flex items-end justify-between mb-3">
-          <p className="eyebrow eyebrow-mark">The Daily Brief — {brief.edition_label}</p>
-          <Link href="/blog" className="link-ink text-[14px] hidden sm:inline">View archive →</Link>
+          <p className="eyebrow eyebrow-mark">Latest from Daily AI</p>
+          <Link href="/blog" className="link-ink text-[14px] hidden sm:inline">Full archive →</Link>
         </div>
-        <span className="draw-rule mb-10" aria-hidden="true" />
+        <span className="draw-rule mb-10 block" aria-hidden="true" />
 
         <ol className="list-none p-0 m-0">
-          {brief.items.map((it) => (
-            <li key={it.rank}>
-              <a href={it.href} target="_blank" rel="noopener" className="index-row no-underline">
-                <span className="num">{String(it.rank).padStart(2, '0')}</span>
-                <span className="source">{it.source}</span>
-                <span className="title">{it.headline}</span>
-                <span className="when tabular">{it.when}</span>
-              </a>
+          {posts.map((p, i) => (
+            <li key={p.slug}>
+              <Link href={`/blog/${p.slug}`} className="index-row no-underline">
+                <span className="num">{String(i + 2).padStart(2, "0")}</span>
+                <span className="source">{(p.category || "Article").replace(/_/g, " ")}</span>
+                <span className="title">{p.title}</span>
+                <span className="when tabular">
+                  {new Date(p.date).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                </span>
+              </Link>
             </li>
           ))}
         </ol>
 
-        <p className="meta mt-8 italic">Compiled at 06:00 UTC. Refreshed every morning.</p>
+        <p className="meta italic mt-8">A new piece lands every morning at 06:00 UTC.</p>
       </div>
     </section>
   );
 }
 
-/* ─── DISPATCH SPREAD (lead magnet — monthly editorial) ────── */
+/* ─── DISPATCH SPREAD (lead magnet) ─────────────────────────── */
 function DispatchSpread() {
   return (
     <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
@@ -96,7 +133,6 @@ function DispatchSpread() {
               src="/images/atlas_book.png"
               alt="A leather-bound notebook resting on warm paper, with a red bookmark ribbon."
               fill
-              priority
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 92vw"
             />
@@ -117,8 +153,6 @@ function DispatchSpread() {
 
           <EmailCapture
             source="home-dispatch"
-            headline=""
-            subline=""
             cta="Send me The Dispatch"
             redirectTo="/dispatch"
             className="!max-w-md"
@@ -145,7 +179,7 @@ function EditorialAside() {
   );
 }
 
-/* ─── BOOK SHELF (courses) ─────────────────────────────────── */
+/* ─── BOOK SHELF (compact, demoted to sidecar) ─────────────── */
 function BookShelf() {
   return (
     <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
@@ -154,7 +188,7 @@ function BookShelf() {
           <p className="eyebrow eyebrow-mark">Books — In Print</p>
           <Link href="/courses" className="link-ink text-[14px] hidden sm:inline">All books →</Link>
         </div>
-        <span className="draw-rule mb-12" aria-hidden="true" />
+        <span className="draw-rule mb-12 block" aria-hidden="true" />
 
         <article className="grid grid-cols-[3rem,1fr,auto] gap-x-6 gap-y-3 items-baseline pb-10 border-b border-[var(--rule)]">
           <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">№01</span>
@@ -196,9 +230,7 @@ function Mission() {
           Daily brief, monthly dispatch, weekly book. One editorial line, three depths. Pick how deep you want to read.
         </p>
         <p className="mt-6">
-          <Link href="/about" className="link-red text-[1.0625rem]">
-            Read the full standard →
-          </Link>
+          <Link href="/about" className="link-red text-[1.0625rem]">Read the full standard →</Link>
         </p>
       </div>
     </section>
@@ -218,7 +250,7 @@ function Subscribe() {
           The new Dispatch issue plus the single most consequential AI release we covered that month. Unsubscribe anytime — no &ldquo;wait don&apos;t leave&rdquo; sequence.
         </p>
         <div className="mx-auto max-w-md">
-          <EmailCapture source="home-subscribe" headline="" subline="" cta="Subscribe — free" />
+          <EmailCapture source="home-subscribe" cta="Subscribe — free" />
         </div>
       </div>
     </section>

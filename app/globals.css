@@ -344,3 +344,126 @@ body {
 .measure-tight {
   max-width: 52ch;
 }
+
+/* ─── ARTICLE BODY (editorial reading) ────────────────────── */
+
+.article-body {
+  font-family: var(--font-serif);
+  font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 24;
+  font-weight: 400;
+  font-size: 1.1875rem;          /* 19px */
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  max-width: 64ch;
+}
+
+.article-body > * + * { margin-top: 1.05em; }
+
+.article-body h2 {
+  font-family: var(--font-serif);
+  font-variation-settings: "SOFT" 30, "WONK" 0, "opsz" 28;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin-top: 2.25em;
+  margin-bottom: 0.4em;
+  color: var(--ink);
+}
+
+.article-body h3 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  margin-top: 1.5em;
+  margin-bottom: 0.35em;
+  color: var(--ink);
+}
+
+.article-body h4 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+.article-body p {
+  color: var(--ink-soft);
+}
+
+.article-body a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: text-decoration-thickness 120ms ease;
+}
+.article-body a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.article-body strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+.article-body em { font-style: italic; }
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.4em;
+  color: var(--ink-soft);
+}
+.article-body li { margin: 0.4em 0; }
+
+.article-body blockquote {
+  font-style: italic;
+  border-left: 2px solid var(--accent);
+  padding: 0.4em 0 0.4em 1.2em;
+  margin: 1.4em 0;
+  color: var(--ink-soft);
+}
+
+.article-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--bg-elevated);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  color: var(--ink);
+}
+
+.article-body pre {
+  background: #14110F;
+  color: #FAF7F1;
+  padding: 1.1em 1.3em;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  border-left: 3px solid var(--accent);
+}
+.article-body pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.article-body hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+
+.article-body img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 1.5em 0;
+}
