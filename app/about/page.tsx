@@ -7,7 +7,7 @@ import Footer from '@/components/site/Footer';
 export const metadata: Metadata = {
   title: 'About — Flowi AI Intelligence',
   description:
-    'Flowi is one person plus a content engine, publishing the brief most builders wish they had time to write. Daily AI brief, monthly Atlas, deep-dive books on production AI patterns.',
+    'Flowi is a small editorial publisher covering the AI ecosystem. Daily brief on what shipped, monthly dispatch on what mattered, occasional deep-dive books for builders.',
   alternates: { canonical: 'https://useflowi.app/about' },
 };
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
             a <span className="display-italic">content engine.</span>
           </h1>
           <p className="lead mt-10 measure">
-            Flowi publishes the brief most builders wish they had time to write themselves. A daily Top&nbsp;10 of AI news, a monthly Atlas of every tool worth knowing, and opinionated deep-dive books on the patterns that actually ship in production.
+            Flowi is a small editorial publisher covering the AI ecosystem. We watch the releases, the new skills, the open-source bravado — and turn what&apos;s happening into a daily brief, a monthly dispatch, and the occasional deep-dive book.
           </p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function AboutPage() {
               The AI ecosystem moves too fast for any one person to track casually. Three months from now, half the tools on every &ldquo;top 10&rdquo; list today will be obsolete or absorbed. The people shipping AI products in production need a continuously-updated map — not a one-time survey.
             </p>
             <p>
-              The Atlas stays free because the brief should be a public good. The books are paid because the depth costs us a day each to write properly, and an honest specialty deserves an honest price. No subscriptions, no upsell ladders, no &ldquo;limited time&rdquo; nonsense.
+              The brief and the dispatch stay free because the editorial work should be a public good. The books are paid because writing a 4,500-word deep-dive with running code costs us a day each — and an honest specialty deserves an honest price. No subscriptions, no upsell ladders, no &ldquo;limited time&rdquo; nonsense.
             </p>
           </div>
         </div>
@@ -111,14 +111,14 @@ export default function AboutPage() {
         <div className="page-max max-w-3xl">
           <p className="eyebrow eyebrow-mark mb-5">Start here</p>
           <h2 className="display text-[2rem] md:text-[2.75rem] leading-[1.05] mb-4">
-            Free Atlas. <span className="display-italic">No commitment.</span>
+            Free Dispatch. <span className="display-italic">No commitment.</span>
           </h2>
           <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure mb-10">
             Drop your email and the May edition arrives in 90 seconds. Each first of the month, you get the next. Unsubscribe anytime — no &ldquo;wait don&apos;t leave us&rdquo; sequence.
           </p>
           <p>
-            <Link href="/atlas" className="link-red text-[1.0625rem]">
-              Get the Atlas →
+            <Link href="/dispatch" className="link-red text-[1.0625rem]">
+              Get The Dispatch →
             </Link>
           </p>
         </div>
@@ -139,8 +139,8 @@ const LAYERS = [
   {
     no: '№02',
     tag: 'Monthly · Free',
-    title: 'The Atlas',
-    body: '50+ curated AI tools and repos worth your evaluation hour this month. Ten chapters. Refreshed every month.',
+    title: 'The Dispatch',
+    body: 'Ten editorial pieces on the month’s biggest releases, skills, and arguments. Long-form, written, not aggregated.',
   },
   {
     no: '№03',

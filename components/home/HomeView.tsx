@@ -14,7 +14,7 @@ export default function HomeView() {
       <Nav />
       <Hero />
       <DailyIndex brief={brief} />
-      <AtlasSpread />
+      <DispatchSpread />
       <EditorialAside />
       <BookShelf />
       <Mission />
@@ -30,20 +30,20 @@ function Hero() {
     <section className="page-gutter pt-20 md:pt-32 pb-24 md:pb-36">
       <div className="page-max">
         <p className="eyebrow eyebrow-mark mb-10 md:mb-14">
-          Flowi · AI Intelligence · Issue 09 · May&nbsp;9, 2026
+          Flowi · AI Intelligence · Issue №09 · May&nbsp;9, 2026
         </p>
 
         <h1 className="display hero-headline text-[3.75rem] sm:text-[5rem] md:text-[7rem] leading-[0.96] -tracking-[0.025em]">
-          The signal layer<br />
-          for <span className="marker">AI&nbsp;builders</span>.
+          AI moves daily.<br />
+          We turn it into <span className="marker">reading</span>.
         </h1>
 
         <p className="lead mt-10 measure">
-          Twenty AI company blogs. Hacker News. Product Hunt. The major GitHub trending feeds. Distilled every morning into one usable map of what shipped, what matters, and which tools you actually need to evaluate this week.
+          A small editorial publisher covering the AI ecosystem. We watch the releases, the skills, the arguments, the bravado online — and turn it into a daily brief, a monthly dispatch, and books you can read in an evening.
         </p>
 
         <div className="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
-          <Link href="/atlas" className="link-red text-[1.0625rem] font-medium">
+          <Link href="/dispatch" className="link-red text-[1.0625rem] font-medium">
             Subscribe&nbsp;—&nbsp;free →
           </Link>
           <Link href="/courses" className="link-ink text-[1.0625rem]">
@@ -85,8 +85,8 @@ function DailyIndex({ brief }: { brief: ReturnType<typeof getTodaysBrief> }) {
   );
 }
 
-/* ─── ATLAS SPREAD (lead magnet) ───────────────────────────── */
-function AtlasSpread() {
+/* ─── DISPATCH SPREAD (lead magnet — monthly editorial) ────── */
+function DispatchSpread() {
   return (
     <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
       <div className="page-max-wide grid md:grid-cols-12 gap-10 md:gap-14 items-start">
@@ -104,23 +104,23 @@ function AtlasSpread() {
         </div>
 
         <div className="md:col-span-7 md:pt-4">
-          <p className="eyebrow eyebrow-mark mb-4">The Atlas · Free · Monthly</p>
+          <p className="eyebrow eyebrow-mark mb-4">The Dispatch · Free · Monthly</p>
           <h2 className="serif text-[2.25rem] md:text-[2.625rem] leading-[1.1] mb-6">
-            A monthly index of every AI tool worth your evaluation hour.
+            The reading the brief doesn&apos;t have room for.
           </h2>
           <p className="lead mb-4 measure-tight">
-            50+ curated entries across 10 chapters: frontier LLMs, agent frameworks, memory infrastructure, image and video gen, the production tooling layer.
+            Ten editorial pieces. One issue. Free.
           </p>
           <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure-tight mb-8">
-            Refreshed every month. The Atlas is what we&apos;d send to a friend who asked &ldquo;what should I be looking at?&rdquo; It stays free because the brief should be a public good. Subscribe and the first edition arrives in your inbox in 90&nbsp;seconds.
+            The Daily Brief is breaking news. The Dispatch is the long form — what those releases actually mean, which skills are worth picking up, and the editorial calls about where the field is heading. Drop your email and the May issue arrives in 90&nbsp;seconds.
           </p>
 
           <EmailCapture
-            source="home-atlas"
+            source="home-dispatch"
             headline=""
             subline=""
-            cta="Send me the Atlas"
-            redirectTo="/atlas"
+            cta="Send me The Dispatch"
+            redirectTo="/dispatch"
             className="!max-w-md"
           />
         </div>
@@ -190,10 +190,10 @@ function Mission() {
       <div className="page-max">
         <p className="eyebrow eyebrow-mark mb-8">Why this exists</p>
         <h2 className="display text-[2.25rem] md:text-[3.25rem] leading-[1.05] -tracking-[0.02em] measure">
-          The AI ecosystem moves too fast for any one person to track casually. Three months from now, half of today&apos;s tools will be obsolete or absorbed.
+          Builders ship. We write about what&apos;s shipping. The AI ecosystem moves too fast for any one person to keep up with — so we made keeping up with it the job.
         </h2>
         <p className="lead mt-10 measure">
-          Builders shipping in production need a continuously-updated map — not a one-time survey. That&apos;s the job. Flowi is that job, productized.
+          Daily brief, monthly dispatch, weekly book. One editorial line, three depths. Pick how deep you want to read.
         </p>
         <p className="mt-6">
           <Link href="/about" className="link-red text-[1.0625rem]">
@@ -215,7 +215,7 @@ function Subscribe() {
           One email a month. <span className="display-italic">Zero noise.</span>
         </h2>
         <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed mb-9 measure mx-auto">
-          The new Atlas edition plus the most consequential AI development we tracked that month. Unsubscribe anytime — no &ldquo;wait don&apos;t leave&rdquo; sequence.
+          The new Dispatch issue plus the single most consequential AI release we covered that month. Unsubscribe anytime — no &ldquo;wait don&apos;t leave&rdquo; sequence.
         </p>
         <div className="mx-auto max-w-md">
           <EmailCapture source="home-subscribe" headline="" subline="" cta="Subscribe — free" />

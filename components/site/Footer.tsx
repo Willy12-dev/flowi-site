@@ -12,17 +12,17 @@ export default function Footer() {
             <span className="meta">/ AI Intelligence</span>
           </div>
           <p className="mt-5 max-w-md text-[15px] text-[var(--ink-soft)] leading-relaxed">
-            One person plus a content engine, publishing the brief most builders wish they had time to write. Daily Top&nbsp;10 of AI news, monthly Atlas, deep-dive books on the patterns that ship in production.
+            A small editorial publisher covering the AI ecosystem. We watch the releases, skills, and arguments online, and turn them into a daily brief, a monthly dispatch, and books you can read in an evening.
           </p>
         </div>
 
         <div className="md:col-span-2">
           <p className="eyebrow eyebrow-mark mb-3">Read</p>
           <ul className="space-y-2 text-[15px]">
-            <li><Link href="/blog"    className="link-ink">Daily brief</Link></li>
-            <li><Link href="/atlas"   className="link-ink">The Atlas</Link></li>
-            <li><Link href="/courses" className="link-ink">Books</Link></li>
-            <li><Link href="/about"   className="link-ink">About</Link></li>
+            <li><Link href="/blog"     className="link-ink">Daily brief</Link></li>
+            <li><Link href="/dispatch" className="link-ink">The Dispatch</Link></li>
+            <li><Link href="/courses"  className="link-ink">Books</Link></li>
+            <li><Link href="/about"    className="link-ink">About</Link></li>
           </ul>
         </div>
 

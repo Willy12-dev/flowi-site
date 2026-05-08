@@ -133,14 +133,14 @@ export default function CoursesPage() {
         <div className="page-max max-w-3xl">
           <p className="eyebrow eyebrow-mark mb-5">Not buying yet?</p>
           <h2 className="display text-[2rem] md:text-[2.75rem] leading-[1.05] mb-4">
-            Start with <span className="display-italic">the Atlas.</span>
+            Start with <span className="display-italic">the Dispatch.</span>
           </h2>
           <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure mb-8">
-            Free monthly index of every AI tool and repo worth knowing. Refreshed every month, sent to your inbox. No spam, no &ldquo;wait don&apos;t leave us&rdquo; sequence. Cancel with one click.
+            Free monthly long-form on the AI ecosystem. Ten editorial pieces — the releases, skills, and arguments that moved this month. Refreshed every month, sent to your inbox. Cancel with one click.
           </p>
           <p>
-            <Link href="/atlas" className="link-red text-[1.0625rem]">
-              Get the free Atlas →
+            <Link href="/dispatch" className="link-red text-[1.0625rem]">
+              Get the free Dispatch →
             </Link>
           </p>
         </div>

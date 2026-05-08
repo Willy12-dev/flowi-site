@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const LINKS = [
-  { href: '/atlas',   label: 'Atlas',  tag: 'free' },
+  { href: '/dispatch', label: 'Dispatch', tag: 'free' },
   { href: '/courses', label: 'Books' },
   { href: '/blog',    label: 'Daily'  },
   { href: '/about',   label: 'About'  },
@@ -36,7 +36,7 @@ export default function Nav() {
             )}
           </Link>
         ))}
-        <Link href="/atlas" className="link-red text-[15px] font-medium">
+        <Link href="/dispatch" className="link-red text-[15px] font-medium">
           Subscribe&nbsp;—&nbsp;free
         </Link>
       </div>
@@ -74,7 +74,7 @@ export default function Nav() {
             </Link>
           ))}
           <Link
-            href="/atlas"
+            href="/dispatch"
             onClick={() => setOpen(false)}
             className="link-red block mt-4 text-[15px] font-medium"
           >

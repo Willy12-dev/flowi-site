@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 /**
- * Email capture endpoint for /atlas (and any other lead-magnet pages).
+ * Email capture endpoint for /dispatch (and any other lead-magnet pages).
  *
  * Default backend: append-only JSONL file at <project>/data/subscribers.jsonl.
  *   Works locally and on any non-serverless host (Render, Railway, VPS).
