@@ -3,27 +3,21 @@
 import { useState } from 'react';
 
 interface Props {
-  /** Tag stored alongside the email so we know which page captured it */
   source: string;
-  /** Headline shown above the form */
   headline?: string;
-  /** Sub-copy below the headline */
   subline?: string;
-  /** Button label */
   cta?: string;
-  /** Where to send the user after they subscribe (e.g. Gumroad free product) */
   redirectTo?: string;
-  /** Override Tailwind classes on the wrapping <div> */
   className?: string;
 }
 
-type State = { kind: 'idle' } | { kind: 'submitting' } | { kind: 'ok'; email: string } | { kind: 'error'; message: string };
+type State = { kind: 'idle' } | { kind: 'submitting' } | { kind: 'ok' } | { kind: 'error'; message: string };
 
 export default function EmailCapture({
   source,
-  headline = 'Get the Atlas free, every month',
-  subline = 'One email per month. The new edition + the highest-leverage AI tool we found that month. Unsubscribe anytime.',
-  cta = 'Get the Atlas',
+  headline = '',
+  subline = '',
+  cta = 'Subscribe — free',
   redirectTo,
   className = '',
 }: Props) {
@@ -33,7 +27,7 @@ export default function EmailCapture({
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email || !email.includes('@')) {
-      setState({ kind: 'error', message: 'Enter a valid email' });
+      setState({ kind: 'error', message: 'Enter a valid email.' });
       return;
     }
     setState({ kind: 'submitting' });
@@ -47,51 +41,57 @@ export default function EmailCapture({
         const body = await res.json().catch(() => ({}));
         throw new Error(body.error || `HTTP ${res.status}`);
       }
-      setState({ kind: 'ok', email });
+      setState({ kind: 'ok' });
       if (redirectTo) {
-        // Slight delay so the user sees the success state before redirect
-        setTimeout(() => {
-          window.location.href = redirectTo;
-        }, 1200);
+        setTimeout(() => { window.location.href = redirectTo; }, 1100);
       }
     } catch (err) {
-      setState({ kind: 'error', message: err instanceof Error ? err.message : 'Something went wrong' });
+      setState({ kind: 'error', message: err instanceof Error ? err.message : 'Something went wrong.' });
     }
   }
 
+  const disabled = state.kind === 'submitting' || state.kind === 'ok';
+
   return (
     <div className={`w-full max-w-lg ${className}`}>
-      {headline && <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-2">{headline}</h3>}
-      {subline && <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-5">{subline}</p>}
+      {headline && <h3 className="serif text-[1.5rem] mb-2">{headline}</h3>}
+      {subline && <p className="text-[15px] text-[var(--ink-soft)] mb-5">{subline}</p>}
 
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-        <input
-          type="email"
-          required
-          inputMode="email"
-          autoComplete="email"
-          placeholder="you@domain.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          disabled={state.kind === 'submitting' || state.kind === 'ok'}
-          className="flex-1 px-4 py-3 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-violet-500/40 focus:border-violet-400 transition disabled:opacity-60"
-        />
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-6"
+      >
+        <label className="flex-1 block">
+          <span className="meta block mb-2">Email address</span>
+          <input
+            type="email"
+            required
+            inputMode="email"
+            autoComplete="email"
+            placeholder="you@domain.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            disabled={disabled}
+            className="w-full bg-transparent border-0 border-b border-[var(--rule-strong)] py-2 text-[1.0625rem] text-[var(--ink)] placeholder:text-[var(--ink-mute)] focus:outline-none focus:border-[var(--accent)] transition-colors disabled:opacity-60"
+          />
+        </label>
+
         <button
           type="submit"
-          disabled={state.kind === 'submitting' || state.kind === 'ok'}
-          className="px-6 py-3 rounded-lg bg-gradient-to-br from-violet-600 to-blue-600 text-white font-semibold tracking-tight shadow-lg shadow-violet-600/20 hover:shadow-violet-600/40 hover:-translate-y-0.5 active:translate-y-0 transition-all disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+          disabled={disabled}
+          className="link-red text-[1.0625rem] font-medium pb-2 whitespace-nowrap text-left disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          {state.kind === 'submitting' ? 'Sending…' : state.kind === 'ok' ? '✓ Subscribed' : cta}
+          {state.kind === 'submitting' ? 'Sending…' : state.kind === 'ok' ? '✓ On the list' : `${cta} →`}
         </button>
       </form>
 
       {state.kind === 'ok' && (
-        <p className="mt-3 text-sm text-emerald-600 dark:text-emerald-400">
-          You&apos;re on the list. {redirectTo ? 'Sending you to the download…' : 'Check your inbox for the first edition.'}
+        <p className="mt-3 text-[14px] text-[var(--ink-soft)] italic">
+          {redirectTo ? "On the list. Sending you to the download…" : "On the list. The first edition lands at 06:00 UTC tomorrow."}
         </p>
       )}
       {state.kind === 'error' && (
-        <p className="mt-3 text-sm text-red-600 dark:text-red-400">{state.message}</p>
+        <p className="mt-3 text-[14px] text-[var(--accent)]">{state.message}</p>
       )}
     </div>
   );

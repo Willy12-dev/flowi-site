@@ -1,151 +1,152 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Nav from '@/components/site/Nav';
+import Footer from '@/components/site/Footer';
 
 export const metadata: Metadata = {
-  title: 'Courses — Flowi AI Intelligence',
+  title: 'Books — Flowi AI Intelligence',
   description:
-    'Deep-dive courses on AI tools and patterns that ship in production. Each course is opinionated, code-first, and 4,000+ words.',
+    'Opinionated, code-first deep-dives on AI patterns that ship in production. Each book is 4,000+ words, with code samples for Claude, GPT, Gemini, and local models.',
   alternates: { canonical: 'https://useflowi.app/courses' },
 };
 
-interface Course {
-  slug: string;
+interface Book {
+  number: string;
   title: string;
   subtitle: string;
   blurb: string;
   price: string;
-  gumroadUrl: string;
-  tags: string[];
-  status: 'live' | 'coming_soon';
+  url: string;
+  meta: string;
+  status: 'live' | 'coming';
 }
 
-const COURSES: Course[] = [
+const BOOKS: Book[] = [
   {
-    slug: 'agent-memory',
+    number: '№01',
     title: 'Agent Memory: The 5 Patterns That Ship in Production',
     subtitle: 'The decision tree, the code, and the failure modes nobody warns you about.',
     blurb:
-      'Most AI agent demos fail at message four because the agent forgets the user. This 5-chapter guide covers the 4 axes of memory, 5 production patterns with copy-paste-ready code, and the 5 failure modes (cost creep, memory poisoning, PII compliance, schema drift, eval gap) — with concrete fixes for each.',
+      'Most AI agent demos fail at message four because the agent forgets the user. Five chapters covering the four axes of agent memory, the five production patterns with copy-paste-ready code, and the five failure modes nobody warns you about.',
     price: '$19',
-    gumroadUrl: 'https://flowi.gumroad.com/l/sqqhvm',
-    tags: ['ai-agents', 'llm', 'memory', 'rag', 'production'],
+    url: 'https://flowi.gumroad.com/l/sqqhvm',
+    meta: '5 chapters · 4,500 words · Python · Claude / GPT / Gemini compatible',
     status: 'live',
   },
 ];
 
 export default function CoursesPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#0a0e27] via-[#0e1335] to-[#06091e] text-white">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[50vh] opacity-30 [background-image:radial-gradient(rgba(74,123,255,0.18)_0%,transparent_60%)]" />
+    <main className="bg-[var(--bg)] text-[var(--ink)]">
+      <Nav />
 
-      <div className="relative mx-auto max-w-6xl px-6 pt-20 pb-32 md:pt-32">
-        <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
-          <span className="size-1.5 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500" />
-          AI Intelligence · Premium Courses
-        </p>
-
-        <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight">
-          Courses for engineers who <br className="hidden md:block" />
-          <span className="bg-gradient-to-br from-cyan-400 to-violet-500 bg-clip-text text-transparent">
-            ship AI in production
-          </span>
-          .
-        </h1>
-
-        <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/75 leading-relaxed">
-          Opinionated, code-first deep-dives on the AI tools and patterns that actually work in production.
-          Each course is 4,000+ words, with code samples for Claude / GPT / Gemini / local models, plus the
-          failure modes nobody else writes about.
-        </p>
-
-        <p className="mt-3 max-w-2xl text-sm text-white/55">
-          New courses ship weekly — driven by what&apos;s actually trending in the AI ecosystem (not what&apos;s easy to write about).
-        </p>
-
-        {/* Course grid */}
-        <section className="mt-16 grid gap-8">
-          {COURSES.map((c) => (
-            <CourseCard key={c.slug} course={c} />
-          ))}
-        </section>
-
-        {/* Lead magnet upsell */}
-        <section className="mt-20 rounded-2xl border border-white/10 bg-white/[0.04] p-8 md:p-10">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/55 mb-3">Free</p>
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">
-            Not ready to buy? Start with the Atlas.
-          </h2>
-          <p className="text-white/75 max-w-2xl mb-6">
-            The free monthly index of every AI tool and repo worth evaluating this month. 50+ curated picks,
-            10 categories, refreshed every month. No spam, unsubscribe anytime.
+      {/* Hero */}
+      <section className="page-gutter pt-16 md:pt-24 pb-16 md:pb-20">
+        <div className="page-max">
+          <p className="eyebrow eyebrow-mark mb-10">Books — In Print</p>
+          <h1 className="display text-[3rem] sm:text-[4.5rem] md:text-[6rem] leading-[0.96]">
+            For builders who <br />
+            <span className="display-italic">ship&nbsp;AI</span> in production.
+          </h1>
+          <p className="lead mt-10 measure">
+            Opinionated, code-first deep-dives on the patterns that actually work in production. Each book is 4,000+ words with code samples for Claude, GPT, Gemini, and local models — plus the failure modes nobody else writes about.
           </p>
-          <Link
-            href="/atlas"
-            className="inline-flex items-center gap-2 rounded-lg bg-white text-[#0a0e27] px-6 py-3 text-sm font-semibold hover:bg-white/90 transition"
-          >
-            Get the free Atlas →
-          </Link>
-        </section>
-      </div>
-    </main>
-  );
-}
+          <p className="meta mt-8 italic">A new title ships every Monday morning at 06:00 UTC.</p>
+        </div>
+      </section>
 
-function CourseCard({ course }: { course: Course }) {
-  return (
-    <article className="group rounded-2xl border border-white/10 bg-white/[0.03] p-8 md:p-10 hover:border-white/20 hover:bg-white/[0.05] transition">
-      <div className="flex items-start justify-between gap-6 flex-wrap">
-        <div className="flex-1 min-w-[280px]">
-          {course.status === 'live' ? (
-            <span className="inline-block text-xs font-bold uppercase tracking-[0.18em] text-emerald-400 mb-3">
-              ● Live
-            </span>
-          ) : (
-            <span className="inline-block text-xs font-bold uppercase tracking-[0.18em] text-amber-300 mb-3">
-              ○ Coming soon
-            </span>
-          )}
-          <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-bold leading-tight tracking-tight">
-            {course.title}
+      {/* Editorial type interlude (no image — type-as-image per spec) */}
+      <section className="page-gutter pt-4 pb-16 md:pb-20">
+        <div className="page-max">
+          <p className="display-italic text-[1.5rem] md:text-[2rem] leading-[1.25] text-[var(--ink-soft)] measure-tight">
+            Each book is one weekend of reading, one Monday of shipping.
+          </p>
+        </div>
+      </section>
+
+      {/* The shelf (Index treatment) */}
+      <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+        <div className="page-max-wide">
+          <p className="eyebrow eyebrow-mark mb-3">The Shelf</p>
+          <span className="draw-rule mb-12" aria-hidden="true" />
+
+          {BOOKS.map((b) => (
+            <article
+              key={b.number}
+              className="grid grid-cols-[3.5rem,1fr,auto] gap-x-6 gap-y-3 items-baseline pb-10 border-b border-[var(--rule)] mb-10 last:mb-0"
+            >
+              <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">{b.number}</span>
+              <div>
+                <h2 className="serif text-[1.875rem] md:text-[2.5rem] leading-[1.05] -tracking-[0.015em] mb-3">
+                  {b.status === 'live' ? (
+                    <a href={b.url} target="_blank" rel="noopener" className="link-ink">{b.title}</a>
+                  ) : (
+                    b.title
+                  )}
+                </h2>
+                <p className="lead measure mb-3">{b.subtitle}</p>
+                <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure mb-4">{b.blurb}</p>
+                <p className="meta">{b.meta}</p>
+              </div>
+              <div className="text-right whitespace-nowrap">
+                <span className="serif text-[1.5rem] tabular block">{b.price}</span>
+                {b.status === 'live' ? (
+                  <a href={b.url} target="_blank" rel="noopener" className="link-red text-[14px] mt-1 inline-block">
+                    Read it →
+                  </a>
+                ) : (
+                  <span className="meta mt-1 inline-block italic">In production</span>
+                )}
+              </div>
+            </article>
+          ))}
+
+          <div className="grid grid-cols-[3.5rem,1fr,auto] gap-x-6 gap-y-3 items-baseline opacity-60">
+            <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">№02</span>
+            <div>
+              <h2 className="serif text-[1.5rem] leading-[1.1] mb-2 italic text-[var(--ink-soft)]">
+                In production — ships Monday
+              </h2>
+              <p className="meta">Topic locked Sunday. Subscribe to be notified.</p>
+            </div>
+            <div className="text-right">
+              <span className="meta italic">soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Editorial aside */}
+      <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+        <div className="page-max">
+          <span className="rule-red block w-60 mx-auto" />
+          <blockquote className="aside mt-10">
+            &ldquo;If you could ask Claude this and get the same answer, the book gets rewritten until you can&apos;t.&rdquo;
+          </blockquote>
+          <p className="eyebrow eyebrow-mark text-center mt-10">Editorial Standard</p>
+          <span className="rule-red block w-60 mx-auto mt-10" />
+        </div>
+      </section>
+
+      {/* Lead magnet upsell */}
+      <section className="page-gutter pt-20 md:pt-28 pb-12 border-t border-[var(--rule)]">
+        <div className="page-max max-w-3xl">
+          <p className="eyebrow eyebrow-mark mb-5">Not buying yet?</p>
+          <h2 className="display text-[2rem] md:text-[2.75rem] leading-[1.05] mb-4">
+            Start with <span className="display-italic">the Atlas.</span>
           </h2>
-          <p className="mt-3 text-base md:text-lg text-white/75">{course.subtitle}</p>
-          <p className="mt-4 text-sm md:text-base text-white/65 leading-relaxed max-w-2xl">{course.blurb}</p>
-
-          <div className="mt-5 flex flex-wrap gap-2">
-            {course.tags.map((t) => (
-              <span
-                key={t}
-                className="rounded-full bg-white/[0.06] px-3 py-1 text-xs text-white/70 border border-white/10"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
+          <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure mb-8">
+            Free monthly index of every AI tool and repo worth knowing. Refreshed every month, sent to your inbox. No spam, no &ldquo;wait don&apos;t leave us&rdquo; sequence. Cancel with one click.
+          </p>
+          <p>
+            <Link href="/atlas" className="link-red text-[1.0625rem]">
+              Get the free Atlas →
+            </Link>
+          </p>
         </div>
+      </section>
 
-        <div className="flex flex-col items-start md:items-end gap-3 min-w-[180px]">
-          <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-cyan-300 to-violet-400 bg-clip-text text-transparent">
-            {course.price}
-          </div>
-          {course.status === 'live' ? (
-            <a
-              href={course.gumroadUrl}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-br from-violet-600 to-blue-600 text-white px-6 py-3 text-sm font-semibold shadow-lg shadow-violet-600/20 hover:shadow-violet-600/40 hover:-translate-y-0.5 transition-all"
-            >
-              Buy on Gumroad →
-            </a>
-          ) : (
-            <button
-              disabled
-              className="inline-flex items-center gap-2 rounded-lg bg-white/[0.06] border border-white/10 text-white/50 px-6 py-3 text-sm font-semibold cursor-not-allowed"
-            >
-              Notify me →
-            </button>
-          )}
-        </div>
-      </div>
-    </article>
+      <Footer />
+    </main>
   );
 }

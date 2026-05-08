@@ -1,42 +1,51 @@
 import Link from 'next/link';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <footer className="relative border-t border-white/10 bg-[#06091e] text-white">
-      <div className="mx-auto max-w-6xl px-6 py-14 grid gap-12 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <Link href="/" className="flex items-baseline gap-2.5 group">
-            <span className="size-2 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500" />
-            <span className="font-[var(--font-playfair)] text-2xl font-extrabold tracking-tight">Flowi</span>
-            <span className="text-xs uppercase tracking-[0.2em] text-white/45">AI Intelligence</span>
-          </Link>
-          <p className="mt-4 max-w-md text-sm text-white/55 leading-relaxed">
-            The signal layer for AI builders. Daily intelligence on what&apos;s shipping, monthly atlas of every tool worth knowing, and opinionated deep-dive courses for the patterns that actually work in production.
+    <footer className="page-gutter mt-32 md:mt-44 pb-10 border-t border-[var(--rule)]">
+      <div className="page-max-wide pt-14 grid gap-10 md:grid-cols-12">
+        <div className="md:col-span-5">
+          <div className="flex items-baseline gap-3">
+            <span className="size-1.5 rounded-full bg-[var(--accent)] translate-y-[-2px]" />
+            <span className="display text-[1.625rem] leading-none">Flowi</span>
+            <span className="meta">/ AI Intelligence</span>
+          </div>
+          <p className="mt-5 max-w-md text-[15px] text-[var(--ink-soft)] leading-relaxed">
+            One person plus a content engine, publishing the brief most builders wish they had time to write. Daily Top&nbsp;10 of AI news, monthly Atlas, deep-dive books on the patterns that ship in production.
           </p>
         </div>
 
-        <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-white/40 mb-3">Read</p>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="/blog" className="text-white/75 hover:text-white">Daily AI brief</Link></li>
-            <li><Link href="/atlas" className="text-white/75 hover:text-white">The Atlas (free)</Link></li>
-            <li><Link href="/courses" className="text-white/75 hover:text-white">Courses</Link></li>
-            <li><Link href="/about" className="text-white/75 hover:text-white">About</Link></li>
+        <div className="md:col-span-2">
+          <p className="eyebrow eyebrow-mark mb-3">Read</p>
+          <ul className="space-y-2 text-[15px]">
+            <li><Link href="/blog"    className="link-ink">Daily brief</Link></li>
+            <li><Link href="/atlas"   className="link-ink">The Atlas</Link></li>
+            <li><Link href="/courses" className="link-ink">Books</Link></li>
+            <li><Link href="/about"   className="link-ink">About</Link></li>
           </ul>
         </div>
 
-        <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-white/40 mb-3">Elsewhere</p>
-          <ul className="space-y-2 text-sm">
-            <li><a href="https://flowi.gumroad.com" target="_blank" rel="noopener" className="text-white/75 hover:text-white">Gumroad</a></li>
-            <li><a href="https://twitter.com/FlowiGroup" target="_blank" rel="noopener" className="text-white/75 hover:text-white">Twitter / X</a></li>
-            <li><a href="https://www.instagram.com/flowigroup" target="_blank" rel="noopener" className="text-white/75 hover:text-white">Instagram</a></li>
+        <div className="md:col-span-2">
+          <p className="eyebrow eyebrow-mark mb-3">Elsewhere</p>
+          <ul className="space-y-2 text-[15px]">
+            <li><a href="https://flowi.gumroad.com"          target="_blank" rel="noopener" className="link-ink">Gumroad</a></li>
+            <li><a href="https://twitter.com/FlowiGroup"     target="_blank" rel="noopener" className="link-ink">Twitter / X</a></li>
+            <li><a href="https://www.instagram.com/flowigroup" target="_blank" rel="noopener" className="link-ink">Instagram</a></li>
           </ul>
+        </div>
+
+        <div className="md:col-span-3">
+          <p className="eyebrow eyebrow-mark mb-3">Issue</p>
+          <p className="serif text-[1.125rem] leading-tight">№09</p>
+          <p className="meta mt-1">May 2026</p>
+          <p className="meta mt-3">Compiled at 06:00 UTC</p>
         </div>
       </div>
 
-      <div className="border-t border-white/5 px-6 py-6 text-xs text-white/40 text-center">
-        © {new Date().getFullYear()} Flowi · AI Intelligence · Built in public.
+      <div className="page-max-wide mt-14 pt-5 border-t border-[var(--rule)] flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
+        <p className="meta">© {year} Flowi. Independent. Built in public.</p>
+        <p className="meta">Set in Fraunces &amp; Inter. Printed on the open web.</p>
       </div>
     </footer>
   );

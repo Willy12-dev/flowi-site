@@ -1,237 +1,224 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Nav from '@/components/site/Nav';
 import Footer from '@/components/site/Footer';
 import EmailCapture from '@/components/site/EmailCapture';
+import { getTodaysBrief } from '@/lib/today';
 
 export default function HomeView() {
+  const brief = getTodaysBrief();
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a0e27] via-[#0e1335] to-[#06091e] text-white">
-      <Nav variant="over-hero" />
+    <main className="bg-[var(--bg)] text-[var(--ink)]">
+      <Nav />
       <Hero />
-      <ValueBand />
-      <FeaturedCourse />
+      <DailyIndex brief={brief} />
+      <AtlasSpread />
+      <EditorialAside />
+      <BookShelf />
       <Mission />
       <Subscribe />
       <Footer />
-    </div>
+    </main>
   );
 }
 
-/* ─── HERO ────────────────────────────────────────────────────── */
+/* ─── HERO ─────────────────────────────────────────────────── */
 function Hero() {
   return (
-    <section className="relative pt-32 md:pt-44 pb-20 md:pb-32 px-6 overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 [background-image:radial-gradient(ellipse_at_25%_30%,rgba(124,58,237,0.30)_0%,transparent_55%),radial-gradient(ellipse_at_80%_60%,rgba(74,123,255,0.22)_0%,transparent_55%)]" />
-      <div className="pointer-events-none absolute inset-0 opacity-[0.04] [background-image:repeating-linear-gradient(135deg,transparent_0_40px,white_40px_41px)]" />
-
-      <div className="relative mx-auto max-w-5xl">
-        <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
-          <span className="size-1.5 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500" />
-          Daily AI Intelligence · Updated Every Morning
+    <section className="page-gutter pt-20 md:pt-32 pb-24 md:pb-36">
+      <div className="page-max">
+        <p className="eyebrow eyebrow-mark mb-10 md:mb-14">
+          Flowi · AI Intelligence · Issue 09 · May&nbsp;9, 2026
         </p>
 
-        <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.02] tracking-tight">
-          The signal layer <br />
-          for{' '}
-          <span className="bg-gradient-to-br from-cyan-400 via-violet-400 to-violet-600 bg-clip-text text-transparent">
-            AI builders
-          </span>
-          .
+        <h1 className="display hero-headline text-[3.75rem] sm:text-[5rem] md:text-[7rem] leading-[0.96] -tracking-[0.025em]">
+          The signal layer<br />
+          for <span className="marker">AI&nbsp;builders</span>.
         </h1>
 
-        <p className="mt-7 max-w-2xl text-lg md:text-2xl text-white/75 leading-relaxed">
-          Twenty official AI company blogs, every major GitHub trending feed, and Hacker News — distilled
-          every morning into a usable map of what shipped, what matters, and which tools you actually need
-          to evaluate this week.
+        <p className="lead mt-10 measure">
+          Twenty AI company blogs. Hacker News. Product Hunt. The major GitHub trending feeds. Distilled every morning into one usable map of what shipped, what matters, and which tools you actually need to evaluate this week.
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center gap-4">
-          <Link
-            href="/atlas"
-            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-br from-violet-600 to-blue-600 px-7 py-4 text-base font-semibold shadow-lg shadow-violet-600/30 hover:shadow-violet-600/50 hover:-translate-y-0.5 transition-all"
-          >
-            Get the free Atlas →
+        <div className="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
+          <Link href="/atlas" className="link-red text-[1.0625rem] font-medium">
+            Subscribe&nbsp;—&nbsp;free →
           </Link>
-          <Link
-            href="/courses"
-            className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold hover:bg-white/10 transition"
-          >
-            Browse courses
+          <Link href="/courses" className="link-ink text-[1.0625rem]">
+            Read the books
           </Link>
         </div>
-
-        <p className="mt-7 text-xs text-white/45 uppercase tracking-wider">
-          Free monthly atlas · No spam · Unsubscribe anytime
-        </p>
       </div>
     </section>
   );
 }
 
-/* ─── VALUE BAND ────────────────────────────────────────────── */
-function ValueBand() {
-  const items = [
-    {
-      tag: 'Daily',
-      title: 'AI Daily Brief',
-      body: 'Top 10 AIs every morning — 6 flagships (ChatGPT, Claude, Gemini, Grok, Midjourney, Suno) plus 4 dynamic trending products. Auto-published to the blog every 24h.',
-      cta: { href: '/blog', label: "Today's brief →" },
-    },
-    {
-      tag: 'Monthly · Free',
-      title: 'The AI Atlas',
-      body: '50+ curated AI tools and open-source repos worth evaluating this month, categorized across 10 chapters. Refreshed every month. One email.',
-      cta: { href: '/atlas', label: 'Get the Atlas →' },
-    },
-    {
-      tag: 'Weekly · Paid',
-      title: 'Deep-dive courses',
-      body: 'Code-first 4,000+ word guides on the patterns that ship in production. New course every week, driven by what is actually trending — not what is easy to write about.',
-      cta: { href: '/courses', label: 'Browse courses →' },
-    },
-  ];
+/* ─── DAILY INDEX (the move) ───────────────────────────────── */
+function DailyIndex({ brief }: { brief: ReturnType<typeof getTodaysBrief> }) {
   return (
-    <section className="px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight max-w-2xl mb-12">
-          Three layers of AI signal — pick what fits your stack.
-        </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {items.map((it) => (
-            <div
-              key={it.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 hover:bg-white/[0.05] hover:border-white/20 transition flex flex-col"
-            >
-              <span className="text-xs uppercase tracking-[0.18em] font-bold text-cyan-300 mb-3">{it.tag}</span>
-              <h3 className="font-[var(--font-playfair)] text-2xl font-bold tracking-tight mb-3">{it.title}</h3>
-              <p className="text-sm md:text-base text-white/65 leading-relaxed flex-1">{it.body}</p>
-              <Link
-                href={it.cta.href}
-                className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-cyan-300 hover:text-cyan-200"
-              >
-                {it.cta.label}
-              </Link>
-            </div>
+    <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+      <div className="page-max-wide">
+        <div className="flex items-end justify-between mb-3">
+          <p className="eyebrow eyebrow-mark">The Daily Brief — {brief.edition_label}</p>
+          <Link href="/blog" className="link-ink text-[14px] hidden sm:inline">View archive →</Link>
+        </div>
+        <span className="draw-rule mb-10" aria-hidden="true" />
+
+        <ol className="list-none p-0 m-0">
+          {brief.items.map((it) => (
+            <li key={it.rank}>
+              <a href={it.href} target="_blank" rel="noopener" className="index-row no-underline">
+                <span className="num">{String(it.rank).padStart(2, '0')}</span>
+                <span className="source">{it.source}</span>
+                <span className="title">{it.headline}</span>
+                <span className="when tabular">{it.when}</span>
+              </a>
+            </li>
           ))}
-        </div>
+        </ol>
+
+        <p className="meta mt-8 italic">Compiled at 06:00 UTC. Refreshed every morning.</p>
       </div>
     </section>
   );
 }
 
-/* ─── FEATURED COURSE ────────────────────────────────────────── */
-function FeaturedCourse() {
+/* ─── ATLAS SPREAD (lead magnet) ───────────────────────────── */
+function AtlasSpread() {
   return (
-    <section className="px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-6xl">
-        <p className="text-xs uppercase tracking-[0.2em] text-white/45 mb-3">Latest course</p>
-        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-8 md:p-12 grid md:grid-cols-[1fr,auto] gap-10 items-center">
-          <div>
-            <span className="inline-block text-xs font-bold uppercase tracking-[0.18em] text-emerald-400 mb-4">
-              ● Live now
-            </span>
-            <h2 className="font-[var(--font-playfair)] text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-3xl">
-              Agent Memory: The 5 Patterns That Ship in Production
-            </h2>
-            <p className="mt-4 text-base md:text-lg text-white/75 max-w-2xl leading-relaxed">
-              Most AI agent demos fail at message four because the agent forgets the user. The decision tree, the code, and the failure modes nobody warns you about. 5 chapters · ~4,500 words.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {['ai-agents', 'llm', 'memory', 'rag', 'production'].map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full bg-white/[0.06] border border-white/10 px-3 py-1 text-xs text-white/70"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex flex-col items-start md:items-end gap-4">
-            <div className="text-5xl md:text-6xl font-extrabold bg-gradient-to-br from-cyan-300 to-violet-400 bg-clip-text text-transparent">
-              $19
-            </div>
-            <a
-              href="https://flowi.gumroad.com/l/sqqhvm"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-br from-violet-600 to-blue-600 px-7 py-4 text-base font-semibold shadow-lg shadow-violet-600/30 hover:shadow-violet-600/50 transition"
-            >
-              Buy on Gumroad →
-            </a>
-            <Link href="/courses" className="text-sm text-cyan-300 hover:text-cyan-200">
-              All courses →
-            </Link>
+    <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+      <div className="page-max-wide grid md:grid-cols-12 gap-10 md:gap-14 items-start">
+        <div className="md:col-span-5">
+          <div className="relative aspect-[4/5] w-full bg-[var(--bg-elevated)]">
+            <Image
+              src="/images/atlas_book.png"
+              alt="A leather-bound notebook resting on warm paper, with a red bookmark ribbon."
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 768px) 40vw, 92vw"
+            />
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
 
-/* ─── MISSION ───────────────────────────────────────────────── */
-function Mission() {
-  return (
-    <section className="px-6 py-20 md:py-28 border-t border-white/5">
-      <div className="mx-auto max-w-4xl">
-        <p className="text-xs uppercase tracking-[0.2em] text-white/45 mb-4">How this works</p>
-        <h2 className="font-[var(--font-playfair)] text-3xl md:text-5xl font-bold leading-tight tracking-tight">
-          Built so the signal compounds, not the noise.
-        </h2>
-        <div className="mt-10 grid md:grid-cols-2 gap-x-12 gap-y-8 text-white/75 text-base md:text-lg leading-relaxed">
-          <div>
-            <h3 className="font-bold text-white text-xl mb-2">The pipeline</h3>
-            <p>
-              Twenty official AI sources are scanned every two hours. A flagship-aware ranker categorizes every release. A daily packager composes the Top 10. A course factory watches GitHub for trending repos worth deep-diving.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-white text-xl mb-2">The product</h3>
-            <p>
-              Each detection becomes either a paragraph in tomorrow&apos;s brief, an entry in the monthly Atlas, or a 5-chapter course on Gumroad. One signal, three depths — pick how deep you want to go.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-white text-xl mb-2">The bar</h3>
-            <p>
-              Every course must pass the &ldquo;could you have asked Claude this and gotten the same thing&rdquo; test. If yes, it gets rewritten until no. Opinions, code, and named patterns from production — not generic explainers.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-white text-xl mb-2">The honesty</h3>
-            <p>
-              Built in public. Failure modes flagged. AI tools used to draft, but every claim checked, every code sample run, every pattern named after a real production system. No spam, no swipe files, no AI-slop.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+        <div className="md:col-span-7 md:pt-4">
+          <p className="eyebrow eyebrow-mark mb-4">The Atlas · Free · Monthly</p>
+          <h2 className="serif text-[2.25rem] md:text-[2.625rem] leading-[1.1] mb-6">
+            A monthly index of every AI tool worth your evaluation hour.
+          </h2>
+          <p className="lead mb-4 measure-tight">
+            50+ curated entries across 10 chapters: frontier LLMs, agent frameworks, memory infrastructure, image and video gen, the production tooling layer.
+          </p>
+          <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure-tight mb-8">
+            Refreshed every month. The Atlas is what we&apos;d send to a friend who asked &ldquo;what should I be looking at?&rdquo; It stays free because the brief should be a public good. Subscribe and the first edition arrives in your inbox in 90&nbsp;seconds.
+          </p>
 
-/* ─── SUBSCRIBE ──────────────────────────────────────────────── */
-function Subscribe() {
-  return (
-    <section className="px-6 py-20 md:py-28 border-t border-white/5">
-      <div className="mx-auto max-w-3xl text-center">
-        <p className="text-xs uppercase tracking-[0.2em] text-white/45 mb-4">Stay in the loop</p>
-        <h2 className="font-[var(--font-playfair)] text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-4">
-          One email a month. <span className="bg-gradient-to-br from-cyan-400 to-violet-500 bg-clip-text text-transparent">Zero noise.</span>
-        </h2>
-        <p className="text-white/65 max-w-xl mx-auto mb-10">
-          The new Atlas edition + the most consequential AI development we tracked that month. Unsubscribe anytime — no questions, no &ldquo;wait don&apos;t leave us&rdquo; sequence.
-        </p>
-        <div className="mx-auto max-w-lg">
           <EmailCapture
-            source="home"
+            source="home-atlas"
             headline=""
             subline=""
-            cta="Subscribe"
+            cta="Send me the Atlas"
             redirectTo="/atlas"
+            className="!max-w-md"
           />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── EDITORIAL ASIDE ──────────────────────────────────────── */
+function EditorialAside() {
+  return (
+    <section className="page-gutter pt-24 md:pt-32 pb-24 md:pb-32 border-t border-[var(--rule)]">
+      <div className="page-max">
+        <span className="rule-red block w-60 mx-auto" />
+        <blockquote className="aside mt-10">
+          &ldquo;If you could ask Claude this and get the same answer, the book gets rewritten until you can&apos;t.&rdquo;
+        </blockquote>
+        <p className="eyebrow eyebrow-mark text-center mt-10">Flowi Editorial Standard</p>
+        <span className="rule-red block w-60 mx-auto mt-10" />
+      </div>
+    </section>
+  );
+}
+
+/* ─── BOOK SHELF (courses) ─────────────────────────────────── */
+function BookShelf() {
+  return (
+    <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
+      <div className="page-max-wide">
+        <div className="flex items-end justify-between mb-3">
+          <p className="eyebrow eyebrow-mark">Books — In Print</p>
+          <Link href="/courses" className="link-ink text-[14px] hidden sm:inline">All books →</Link>
+        </div>
+        <span className="draw-rule mb-12" aria-hidden="true" />
+
+        <article className="grid grid-cols-[3rem,1fr,auto] gap-x-6 gap-y-3 items-baseline pb-10 border-b border-[var(--rule)]">
+          <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">№01</span>
+          <div>
+            <h3 className="serif text-[1.875rem] md:text-[2.5rem] leading-[1.05] -tracking-[0.015em] mb-2">
+              <a href="https://flowi.gumroad.com/l/sqqhvm" target="_blank" rel="noopener" className="link-ink">
+                Agent Memory: The 5 Patterns That Ship in Production
+              </a>
+            </h3>
+            <p className="lead measure mb-3">
+              The decision tree, the code, and the failure modes nobody warns you about.
+            </p>
+            <p className="meta">5 chapters · 4,500 words · Python · Claude / GPT / Gemini compatible</p>
+          </div>
+          <div className="text-right">
+            <span className="serif text-[1.5rem] tabular block">$19</span>
+            <a href="https://flowi.gumroad.com/l/sqqhvm" target="_blank" rel="noopener" className="link-red text-[14px] mt-1 inline-block">
+              Read it →
+            </a>
+          </div>
+        </article>
+
+        <p className="meta italic mt-8">More titles in production. The next book ships Monday morning, 06:00 UTC.</p>
+      </div>
+    </section>
+  );
+}
+
+/* ─── MISSION ──────────────────────────────────────────────── */
+function Mission() {
+  return (
+    <section className="page-gutter pt-24 md:pt-36 pb-24 md:pb-36 border-t border-[var(--rule)]">
+      <div className="page-max">
+        <p className="eyebrow eyebrow-mark mb-8">Why this exists</p>
+        <h2 className="display text-[2.25rem] md:text-[3.25rem] leading-[1.05] -tracking-[0.02em] measure">
+          The AI ecosystem moves too fast for any one person to track casually. Three months from now, half of today&apos;s tools will be obsolete or absorbed.
+        </h2>
+        <p className="lead mt-10 measure">
+          Builders shipping in production need a continuously-updated map — not a one-time survey. That&apos;s the job. Flowi is that job, productized.
+        </p>
+        <p className="mt-6">
+          <Link href="/about" className="link-red text-[1.0625rem]">
+            Read the full standard →
+          </Link>
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ─── SUBSCRIBE ────────────────────────────────────────────── */
+function Subscribe() {
+  return (
+    <section className="page-gutter pt-20 md:pt-28 pb-12 border-t border-[var(--rule)]">
+      <div className="page-max max-w-2xl text-center">
+        <p className="eyebrow eyebrow-mark mb-5">Stay on the list</p>
+        <h2 className="display text-[2rem] md:text-[2.75rem] leading-[1.05] -tracking-[0.02em] mb-4">
+          One email a month. <span className="display-italic">Zero noise.</span>
+        </h2>
+        <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed mb-9 measure mx-auto">
+          The new Atlas edition plus the most consequential AI development we tracked that month. Unsubscribe anytime — no &ldquo;wait don&apos;t leave&rdquo; sequence.
+        </p>
+        <div className="mx-auto max-w-md">
+          <EmailCapture source="home-subscribe" headline="" subline="" cta="Subscribe — free" />
         </div>
       </div>
     </section>

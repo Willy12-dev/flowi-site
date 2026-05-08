@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/images/atlas_hero.png",
+        width: 1500,
+        height: 1000,
         alt: "Flowi — AI Intelligence",
       },
     ],
@@ -71,8 +71,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flowi — AI Intelligence",
     description:
-      "Daily AI brief, monthly atlas, deep-dive courses for AI builders.",
-    images: ["/images/og-image.png"],
+      "Daily AI brief, monthly atlas, deep-dive books for AI builders.",
+    images: ["/images/atlas_hero.png"],
     creator: "@FlowiGroup",
   },
   alternates: {
