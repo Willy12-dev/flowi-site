@@ -5,14 +5,22 @@ import path from 'path';
 /**
  * Email capture endpoint for /dispatch (and any other lead-magnet pages).
  *
- * Default backend: append-only JSONL file at <project>/data/subscribers.jsonl.
- *   Works locally and on any non-serverless host (Render, Railway, VPS).
+ * Three storage backends, tried in priority order. First one configured wins;
+ * also-configured backends ALSO get the email (defense in depth):
  *
- * Optional upgrade: set BEEHIIV_API_KEY + BEEHIIV_PUBLICATION_ID in env →
- * the route forwards to Beehiiv's API instead of (or in addition to) the file.
+ *   1. Resend Audiences  — set RESEND_API_KEY + RESEND_AUDIENCE_ID
+ *      Creates a real newsletter contact list, can broadcast from it.
+ *      Get the audience_id from https://resend.com/audiences after creating
+ *      one in the dashboard.
  *
- * For Vercel-serverless deployments, set USE_BEEHIIV=true + creds; the
- * filesystem write is a no-op in that case.
+ *   2. Beehiiv           — set BEEHIIV_API_KEY + BEEHIIV_PUBLICATION_ID
+ *      Legacy newsletter platform option.
+ *
+ *   3. JSONL file        — append-only at <project>/data/subscribers.jsonl
+ *      Works locally and on any non-serverless host. NO-OP on Vercel and
+ *      other serverless platforms (read-only filesystem).
+ *
+ * On Vercel: configure backend #1 or #2 or your subscribers vanish.
  */
 
 const SUBSCRIBERS_FILE = path.join(process.cwd(), 'data', 'subscribers.jsonl');
@@ -60,6 +68,30 @@ async function forwardToBeehiiv(sub: Subscriber): Promise<{ ok: boolean; error?:
   }
 }
 
+async function forwardToResend(sub: Subscriber): Promise<{ ok: boolean; error?: string }> {
+  const key = process.env.RESEND_API_KEY;
+  const audienceId = process.env.RESEND_AUDIENCE_ID;
+  if (!key || !audienceId) return { ok: false, error: 'resend audiences not configured' };
+  try {
+    const r = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: sub.email,
+        unsubscribed: false,
+      }),
+    });
+    if (!r.ok) {
+      // 422 = email already in list — treat as success
+      if (r.status === 422) return { ok: true };
+      return { ok: false, error: `resend ${r.status}: ${await r.text()}` };
+    }
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
+}
+
 export async function POST(request: NextRequest) {
   let body: { email?: string; source?: string };
   try {
@@ -86,13 +118,32 @@ export async function POST(request: NextRequest) {
   // Always try the JSONL append (no-op on serverless RO filesystem)
   await appendToFile(sub);
 
-  // Optional: forward to Beehiiv if credentials are present
-  if (process.env.BEEHIIV_API_KEY && process.env.BEEHIIV_PUBLICATION_ID) {
-    const r = await forwardToBeehiiv(sub);
-    if (!r.ok) console.warn('beehiiv forward failed:', r.error);
+  // Track which backends actually accepted the subscriber
+  const stored: string[] = [];
+
+  // Resend Audiences — preferred path on Pro
+  if (process.env.RESEND_API_KEY && process.env.RESEND_AUDIENCE_ID) {
+    const r = await forwardToResend(sub);
+    if (r.ok) stored.push('resend');
+    else console.warn('resend audience forward failed:', r.error);
   }
 
-  return NextResponse.json({ ok: true });
+  // Beehiiv — alternative
+  if (process.env.BEEHIIV_API_KEY && process.env.BEEHIIV_PUBLICATION_ID) {
+    const r = await forwardToBeehiiv(sub);
+    if (r.ok) stored.push('beehiiv');
+    else console.warn('beehiiv forward failed:', r.error);
+  }
+
+  // If neither cloud backend is configured AND we're on serverless, the
+  // email is effectively lost. Log loudly so it shows in Vercel logs.
+  if (stored.length === 0) {
+    console.error(
+      `SUBSCRIBER_LOST: no cloud backend configured. email=${sub.email} source=${sub.source}`
+    );
+  }
+
+  return NextResponse.json({ ok: true, stored });
 }
 
 export async function GET() {
