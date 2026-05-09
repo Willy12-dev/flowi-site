@@ -33,22 +33,31 @@ function groupByMonth(posts: ReturnType<typeof getAllPosts>) {
 export default function BlogPage() {
   const posts = getAllPosts();
   const categories = getCategories();
-  const grouped = groupByMonth(posts);
+  const lead = posts[0];
+  const rest = posts.slice(1);
+  const grouped = groupByMonth(rest);
 
   return (
     <main className="bg-[var(--bg)] text-[var(--ink)]">
       <Nav />
 
-      {/* Manifesto hero */}
-      <section className="page-gutter pt-16 md:pt-24 pb-12">
-        <div className="page-max">
-          <p className="eyebrow eyebrow-mark mb-10">Daily AI · Updated every morning</p>
-          <h1 className="display text-[3rem] sm:text-[4.5rem] md:text-[6rem] leading-[0.96]">
-            What shipped <br />
-            <span className="display-italic">in&nbsp;AI</span>, written down.
+      {/* Masthead — newspaper-style header */}
+      <section className="page-gutter pt-12 md:pt-16 pb-6 md:pb-8">
+        <div className="page-max-wide">
+          <p className="eyebrow eyebrow-mark mb-4">
+            Daily AI Brief
+            {lead && (
+              <>
+                {" · "}Latest dispatched{" "}
+                <span className="tabular">{fmt(lead.date)}</span>
+              </>
+            )}
+          </p>
+          <h1 className="serif text-[1.875rem] md:text-[2.625rem] leading-[1.1] -tracking-[0.01em] mb-4">
+            What shipped <span className="display-italic">in&nbsp;AI</span>.
           </h1>
-          <p className="lead mt-10 measure">
-            Daily editorial coverage of the AI ecosystem. Releases, frameworks, skills, arguments. {posts.length}&nbsp;articles in the archive.
+          <p className="meta">
+            Updated every morning at 06:00 UTC · {posts.length}&nbsp;articles in the archive
           </p>
         </div>
       </section>
@@ -72,33 +81,73 @@ export default function BlogPage() {
         </section>
       )}
 
-      {/* Date-grouped Index */}
-      <section className="page-gutter pb-24">
-        <div className="page-max-wide">
-          {posts.length === 0 ? (
+      {posts.length === 0 ? (
+        <section className="page-gutter pb-24">
+          <div className="page-max-wide">
             <p className="meta text-center py-20 italic">No articles yet. The first edition lands at 06:00 UTC tomorrow.</p>
-          ) : (
-            grouped.map(([month, monthPosts]) => (
-              <div key={month} className="mb-14">
-                <p className="eyebrow eyebrow-mark mb-3">{month}</p>
-                <span className="draw-rule mb-8 block" aria-hidden="true" />
-                <ol className="list-none p-0 m-0">
-                  {monthPosts.map((p, i) => (
-                    <li key={p.slug}>
-                      <Link href={`/blog/${p.slug}`} className="index-row no-underline">
-                        <span className="num">{String(i + 1).padStart(2, "0")}</span>
-                        <span className="source">{(p.category || "Article").replace(/_/g, " ")}</span>
-                        <span className="title">{p.title}</span>
-                        <span className="when tabular">{fmt(p.date)}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ol>
+          </div>
+        </section>
+      ) : (
+        <>
+          {/* Lead story — most recent gets the bigger treatment */}
+          <section className="page-gutter pb-16 md:pb-20 border-b border-[var(--rule)]">
+            <div className="page-max-wide">
+              <p className="eyebrow eyebrow-mark mb-5">Latest</p>
+              <span className="draw-rule mb-10 block" aria-hidden="true" />
+
+              <Link href={`/blog/${lead.slug}`} className="block group no-underline">
+                <p className="eyebrow mb-5">
+                  {(lead.category || "Article").replace(/_/g, " ")}
+                </p>
+                <h2 className="display text-[2.75rem] sm:text-[4rem] md:text-[5.5rem] leading-[1.0] -tracking-[0.02em] mb-6 max-w-[20ch] group-hover:text-[var(--accent)] transition-colors duration-200">
+                  {lead.title}
+                </h2>
+                {lead.description && (
+                  <p className="lead measure mb-6 text-[var(--ink)]">{lead.description}</p>
+                )}
+                <p className="meta italic">
+                  By{" "}
+                  <span className="not-italic font-medium text-[var(--ink)]">
+                    {lead.author || "Flowi Editorial"}
+                  </span>
+                  {" · "}
+                  <span className="tabular not-italic">{fmt(lead.date)}</span>
+                  {" · "}
+                  <span className="link-red not-italic">Read the dispatch →</span>
+                </p>
+              </Link>
+            </div>
+          </section>
+
+          {/* Archive — date-grouped Index */}
+          {rest.length > 0 && (
+            <section className="page-gutter pt-16 md:pt-20 pb-24">
+              <div className="page-max-wide">
+                <p className="eyebrow eyebrow-mark mb-3">Archive</p>
+                <span className="draw-rule mb-10 block" aria-hidden="true" />
+                {grouped.map(([month, monthPosts]) => (
+                  <div key={month} className="mb-14">
+                    <p className="eyebrow mb-3">{month}</p>
+                    <span className="draw-rule mb-8 block" aria-hidden="true" />
+                    <ol className="list-none p-0 m-0">
+                      {monthPosts.map((p, i) => (
+                        <li key={p.slug}>
+                          <Link href={`/blog/${p.slug}`} className="index-row no-underline">
+                            <span className="num">{String(i + 1).padStart(2, "0")}</span>
+                            <span className="source">{(p.category || "Article").replace(/_/g, " ")}</span>
+                            <span className="title">{p.title}</span>
+                            <span className="when tabular">{fmt(p.date)}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                ))}
               </div>
-            ))
+            </section>
           )}
-        </div>
-      </section>
+        </>
+      )}
 
       <Footer />
     </main>

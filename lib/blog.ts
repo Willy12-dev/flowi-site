@@ -53,7 +53,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     category: data.category || "",
     tags: data.tags || [],
     keywords: data.keywords || [],
-    author: data.author || "Flowi",
+    author: data.author || "Flowi Editorial",
     products: data.products || [],
     image: data.image || "",
     content,

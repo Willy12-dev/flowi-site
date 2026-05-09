@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllSlugs, getAllPosts, markdownToHtml } from "@/lib/blog";
+import { getCTAForCategory } from "@/lib/funnels";
 import BlogPostContent from "@/components/BlogPost";
 import Nav from "@/components/site/Nav";
 import Footer from "@/components/site/Footer";
@@ -86,14 +87,23 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           <header className="mb-12 pb-12 border-b border-[var(--rule)]">
             <p className="eyebrow eyebrow-mark mb-6">
-              {post.category ? post.category.replace(/_/g, " ") : "Article"} ·{" "}
-              <span className="tabular">{dateLong}</span> ·{" "}
-              <span className="tabular">{readTime} min read</span>
+              {post.category ? post.category.replace(/_/g, " ") : "Article"}
             </p>
 
             <h1 className="display text-[2.25rem] sm:text-[3rem] md:text-[4.25rem] leading-[1.02] mb-6">
               {post.title}
             </h1>
+
+            <p className="meta italic mb-6">
+              By{" "}
+              <span className="not-italic font-medium text-[var(--ink)]">
+                {post.author || "Flowi Editorial"}
+              </span>
+              {" · "}
+              <span className="tabular">{dateLong}</span>
+              {" · "}
+              <span className="tabular">{readTime} min read</span>
+            </p>
 
             {post.description && (
               <p className="lead measure">{post.description}</p>
@@ -102,24 +112,41 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           <BlogPostContent htmlContent={htmlContent} />
 
-          {/* "Read the book" — every post sells a book per the operating thesis */}
-          <aside className="mt-14 pt-8 border-t border-[var(--rule)] max-w-[64ch]">
-            <p className="eyebrow eyebrow-mark mb-3">If this was useful</p>
-            <h3 className="serif text-[1.625rem] md:text-[1.875rem] leading-[1.15] mb-3">
-              <a href="https://flowi.gumroad.com/l/sqqhvm" target="_blank" rel="noopener" className="link-ink">
-                Agent Memory: The 5 Patterns That Ship in Production
-              </a>
-            </h3>
-            <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed mb-4">
-              The decision tree, the code, and the failure modes nobody warns you about. 5 chapters · ~4,500 words · code that runs.
-            </p>
-            <p className="flex items-baseline gap-x-5">
-              <a href="https://flowi.gumroad.com/l/sqqhvm" target="_blank" rel="noopener" className="link-red text-[1.0625rem] font-medium">
-                Read it — $19 →
-              </a>
-              <span className="meta">or browse <a href="/courses" className="link-ink">all books</a></span>
-            </p>
-          </aside>
+          {/* Context-aware CTA — funnels to flagship product based on article category */}
+          {(() => {
+            const cta = getCTAForCategory(post.category);
+            const linkProps = cta.external
+              ? { target: "_blank", rel: "noopener" }
+              : {};
+            return (
+              <aside className="mt-14 pt-8 border-t border-[var(--rule)] max-w-[64ch]">
+                <p className="eyebrow eyebrow-mark mb-3">{cta.eyebrow}</p>
+                <h3 className="serif text-[1.625rem] md:text-[1.875rem] leading-[1.15] mb-3">
+                  <a href={cta.titleHref} {...linkProps} className="link-ink">
+                    {cta.title}
+                  </a>
+                </h3>
+                <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed mb-4">
+                  {cta.body}
+                </p>
+                <p className="flex items-baseline gap-x-5 flex-wrap">
+                  <a
+                    href={cta.primaryHref}
+                    {...linkProps}
+                    className="link-red text-[1.0625rem] font-medium"
+                  >
+                    {cta.primaryLabel}
+                  </a>
+                  <span className="meta">
+                    {cta.secondary.prefix}{" "}
+                    <a href={cta.secondary.href} className="link-ink">
+                      {cta.secondary.label}
+                    </a>
+                  </span>
+                </p>
+              </aside>
+            );
+          })()}
 
           {post.tags.length > 0 && (
             <div className="mt-14 pt-8 border-t border-[var(--rule)] max-w-[64ch]">

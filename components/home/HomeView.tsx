@@ -70,22 +70,29 @@ function Featured({ post }: { post: ReturnType<typeof getAllPosts>[0] }) {
         <p className="eyebrow eyebrow-mark mb-3">Today&apos;s lead story</p>
         <span className="draw-rule mb-10 block" aria-hidden="true" />
 
-        <article>
-          <p className="meta mb-4">
-            {(post.category || "Article").replace(/_/g, " ").toUpperCase()} · <span className="tabular">{dateLong}</span> · <span className="tabular">{readTime} min read</span>
+        <Link href={`/blog/${post.slug}`} className="block group no-underline">
+          <p className="eyebrow mb-5">
+            {(post.category || "Article").replace(/_/g, " ")}
           </p>
-          <h2 className="display text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] leading-[1.02] -tracking-[0.02em] max-w-[18ch] mb-6">
-            <Link href={`/blog/${post.slug}`} className="text-[var(--ink)] hover:text-[var(--accent)] transition-colors">
-              {post.title}
-            </Link>
+          <h2 className="display text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] leading-[1.0] -tracking-[0.02em] max-w-[18ch] mb-6 group-hover:text-[var(--accent)] transition-colors duration-200">
+            {post.title}
           </h2>
           {post.description && (
-            <p className="lead measure mb-6">{post.description}</p>
+            <p className="lead measure mb-6 text-[var(--ink)]">{post.description}</p>
           )}
-          <Link href={`/blog/${post.slug}`} className="link-red text-[1.0625rem] font-medium">
-            Read the full piece →
-          </Link>
-        </article>
+          <p className="meta italic">
+            By{" "}
+            <span className="not-italic font-medium text-[var(--ink)]">
+              {post.author || "Flowi Editorial"}
+            </span>
+            {" · "}
+            <span className="tabular not-italic">{dateLong}</span>
+            {" · "}
+            <span className="tabular not-italic">{readTime} min read</span>
+            {" · "}
+            <span className="link-red not-italic">Read the full piece →</span>
+          </p>
+        </Link>
       </div>
     </section>
   );
