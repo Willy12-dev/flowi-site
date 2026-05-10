@@ -85,6 +85,16 @@ export const metadata: Metadata = {
     apple: "/images/logo-icon.png",
   },
   manifest: "/manifest.json",
+  verification: {
+    // Set GOOGLE_SITE_VERIFICATION env var on Vercel after creating the
+    // property in Google Search Console (https://search.google.com/search-console).
+    // Verification method: HTML tag → paste only the content="..." value into the env var.
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+    // BING_SITE_VERIFICATION for Bing Webmaster Tools (optional but helps).
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : undefined,
+  },
 };
 
 const organizationSchema = {
