@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Fraunces } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -136,8 +138,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#0a0e27] text-white">
+      <body className="min-h-full flex flex-col bg-[var(--bg)] text-[var(--ink)]">
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
