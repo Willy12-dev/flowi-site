@@ -21,18 +21,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  const url = `https://useflowi.app/blog/${slug}`;
+  const image = post.image || "https://useflowi.app/images/atlas_hero.png";
+
   return {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: `https://useflowi.app/blog/${slug}` },
+    authors: [{ name: post.author || "Flowi Editorial" }],
+    category: post.category?.replace(/_/g, " "),
+    alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
+      url,
+      siteName: "Flowi",
       publishedTime: post.date,
+      modifiedTime: post.date,
       authors: [post.author || "Flowi Editorial"],
       tags: post.tags,
+      section: post.category?.replace(/_/g, " "),
+      images: [{ url: image, width: 1500, height: 1000, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [image],
+      creator: "@FlowiGroup",
     },
   };
 }
@@ -48,20 +65,48 @@ export default async function BlogPostPage({ params }: PageProps) {
   // Three more articles for the bottom rail
   const more = getAllPosts().filter((p) => p.slug !== slug).slice(0, 3);
 
+  const articleUrl = `https://useflowi.app/blog/${slug}`;
+  const articleImage = post.image || "https://useflowi.app/images/atlas_hero.png";
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    image: articleImage,
     datePublished: post.date,
-    author: { "@type": "Organization", name: "Flowi" },
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author || "Flowi Editorial",
+      url: "https://useflowi.app/about",
+    },
     publisher: {
       "@type": "Organization",
       name: "Flowi",
       url: "https://useflowi.app",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://useflowi.app/images/LOGOOOO.png",
+      },
     },
-    mainEntityOfPage: `https://useflowi.app/blog/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
     keywords: post.keywords.join(", "),
+    articleSection: post.category?.replace(/_/g, " "),
+    wordCount: post.wordCount,
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://useflowi.app" },
+      { "@type": "ListItem", position: 2, name: "Daily AI Brief", item: "https://useflowi.app/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: articleUrl },
+    ],
   };
 
   const dateLong = new Date(post.date).toLocaleDateString("en-US", {
@@ -78,6 +123,10 @@ export default async function BlogPostPage({ params }: PageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
         <div className="page-max">
