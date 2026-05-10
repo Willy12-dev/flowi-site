@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import fs from "fs";
+import path from "path";
 import { getPostBySlug, getAllSlugs, getAllPosts, getPostsByCategory, getPrevNextInCategory, markdownToHtml } from "@/lib/blog";
 import { getCTAForCategory } from "@/lib/funnels";
 import BlogPostContent from "@/components/BlogPost";
@@ -61,6 +63,10 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const htmlContent = await markdownToHtml(post.content);
   const readTime = Math.max(1, Math.ceil(post.wordCount / 200));
+
+  // Check if a pre-generated PDF exists for this article
+  const pdfPath = path.join(process.cwd(), "public", "pdfs", `${slug}.pdf`);
+  const pdfExists = fs.existsSync(pdfPath);
 
   // Category-aware: prefer 3 more from the same vertical; fall back to recent overall
   const sameCategory = getPostsByCategory(post.category).filter((p) => p.slug !== slug);
@@ -177,6 +183,18 @@ export default async function BlogPostPage({ params }: PageProps) {
               <span className="tabular">{dateLong}</span>
               {" · "}
               <span className="tabular">{readTime} min read</span>
+              {pdfExists && (
+                <>
+                  {" · "}
+                  <a
+                    href={`/pdfs/${slug}.pdf`}
+                    download
+                    className="link-red not-italic"
+                  >
+                    Download PDF ↓
+                  </a>
+                </>
+              )}
             </p>
 
             {post.description && (
