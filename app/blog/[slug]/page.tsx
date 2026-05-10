@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getPostBySlug, getAllSlugs, getAllPosts, markdownToHtml } from "@/lib/blog";
+import { getPostBySlug, getAllSlugs, getAllPosts, getPostsByCategory, getPrevNextInCategory, markdownToHtml } from "@/lib/blog";
 import { getCTAForCategory } from "@/lib/funnels";
 import BlogPostContent from "@/components/BlogPost";
 import Nav from "@/components/site/Nav";
@@ -62,8 +62,27 @@ export default async function BlogPostPage({ params }: PageProps) {
   const htmlContent = await markdownToHtml(post.content);
   const readTime = Math.max(1, Math.ceil(post.wordCount / 200));
 
-  // Three more articles for the bottom rail
-  const more = getAllPosts().filter((p) => p.slug !== slug).slice(0, 3);
+  // Category-aware: prefer 3 more from the same vertical; fall back to recent overall
+  const sameCategory = getPostsByCategory(post.category).filter((p) => p.slug !== slug);
+  const more = sameCategory.length >= 3
+    ? sameCategory.slice(0, 3)
+    : [
+        ...sameCategory,
+        ...getAllPosts()
+          .filter((p) => p.slug !== slug && !sameCategory.some((s) => s.slug === p.slug))
+          .slice(0, 3 - sameCategory.length),
+      ];
+  const moreFromCategoryLabel = sameCategory.length >= 3
+    ? `More on ${post.category.replace(/_/g, " ")}`
+    : "More from Daily AI";
+
+  // rel=prev/next within the same category — helps non-Google crawlers
+  // discover topic clusters. Google deprecated as a ranking signal in 2019
+  // but Bing/Yandex still use it.
+  const { prev: prevInCategory, next: nextInCategory } = getPrevNextInCategory(
+    slug,
+    post.category
+  );
 
   const articleUrl = `https://useflowi.app/blog/${slug}`;
   const articleImage = post.image || "https://useflowi.app/images/atlas_hero.png";
@@ -128,6 +147,12 @@ export default async function BlogPostPage({ params }: PageProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
+        {prevInCategory && (
+          <link rel="prev" href={`https://useflowi.app/blog/${prevInCategory.slug}`} />
+        )}
+        {nextInCategory && (
+          <link rel="next" href={`https://useflowi.app/blog/${nextInCategory.slug}`} />
+        )}
 
         <div className="page-max">
           <div className="mb-8">
@@ -227,10 +252,39 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* More articles */}
+        {/* Prev/Next within same category — topic-cluster navigation */}
+        {(prevInCategory || nextInCategory) && (
+          <nav
+            className="page-max-wide mt-20 pt-14 border-t border-[var(--rule)] grid md:grid-cols-2 gap-8"
+            aria-label="Article navigation within category"
+          >
+            <div>
+              {prevInCategory && (
+                <Link href={`/blog/${prevInCategory.slug}`} className="block group no-underline">
+                  <p className="meta italic mb-1">← Previous in {post.category.replace(/_/g, " ")}</p>
+                  <p className="serif text-[1.25rem] leading-[1.2] group-hover:text-[var(--accent)] transition-colors">
+                    {prevInCategory.title}
+                  </p>
+                </Link>
+              )}
+            </div>
+            <div className="md:text-right">
+              {nextInCategory && (
+                <Link href={`/blog/${nextInCategory.slug}`} className="block group no-underline">
+                  <p className="meta italic mb-1">Next in {post.category.replace(/_/g, " ")} →</p>
+                  <p className="serif text-[1.25rem] leading-[1.2] group-hover:text-[var(--accent)] transition-colors">
+                    {nextInCategory.title}
+                  </p>
+                </Link>
+              )}
+            </div>
+          </nav>
+        )}
+
+        {/* More articles (category-aware) */}
         {more.length > 0 && (
           <div className="page-max-wide mt-20 pt-14 border-t border-[var(--rule)]">
-            <p className="eyebrow eyebrow-mark mb-3">More from Daily AI</p>
+            <p className="eyebrow eyebrow-mark mb-3">{moreFromCategoryLabel}</p>
             <span className="draw-rule mb-8 block" aria-hidden="true" />
             <ol className="list-none p-0 m-0">
               {more.map((p, i) => (

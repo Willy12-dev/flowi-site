@@ -67,6 +67,27 @@ export function getPostsByCategory(category: string): BlogPost[] {
   );
 }
 
+/**
+ * Within a category, find the previous (older) and next (newer) post
+ * relative to the given slug. Used for rel=prev/next + topic clustering.
+ */
+export function getPrevNextInCategory(
+  slug: string,
+  category: string
+): { prev: BlogPost | null; next: BlogPost | null } {
+  const posts = getPostsByCategory(category);
+  // getAllPosts() returns newest first; for prev/next we want chronological order
+  const chronological = [...posts].sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+  const idx = chronological.findIndex((p) => p.slug === slug);
+  if (idx < 0) return { prev: null, next: null };
+  return {
+    prev: idx > 0 ? chronological[idx - 1] : null,
+    next: idx < chronological.length - 1 ? chronological[idx + 1] : null,
+  };
+}
+
 export function getCategories(): string[] {
   const posts = getAllPosts();
   const categories = new Set(posts.map((p) => p.category).filter(Boolean));

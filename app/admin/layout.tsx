@@ -47,6 +47,9 @@ export default async function AdminLayout({
             <Link href="/admin/scrape" className="link-ink text-[14px]">
               Scrape
             </Link>
+            <Link href="/admin/seo" className="link-ink text-[14px]">
+              SEO
+            </Link>
             <Link href="/" className="link-ink text-[14px] opacity-60">
               ← public site
             </Link>
