@@ -16,6 +16,7 @@ keywords:
   - "ict trading strategy"
   - "smart money concepts"
 author: "Flowi Editorial"
+image: "/images/blog/ai-trading-bots-beat-backtests-but-break-in-live.png"
 ---
 
 The pitch is always the same. A YouTube thumbnail with a green equity curve climbing through three years of historical data. "This AI trading bot returned 47% annualized in backtests." The bot goes live in February. By April, the same trader is filming a different video — about why they think the strategy needs a few weeks to "adjust to market conditions." By July, the channel is posting about a *new* bot.

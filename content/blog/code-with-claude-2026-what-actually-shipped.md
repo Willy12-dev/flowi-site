@@ -15,6 +15,7 @@ keywords:
   - "agentic coding tools"
   - "ai coding ide"
 author: "Flowi Editorial"
+image: "/images/blog/code-with-claude-2026-what-actually-shipped.png"
 ---
 
 Anthropic ran their second Code w/ Claude event yesterday. There were no Project Stargate-style announcements, which the live-blog set treated as a disappointment. They're misreading the room. The interesting story is what Anthropic shipped *quietly*, between the keynote talks, that changes how you'll work with Claude Code in production over the next six months.

@@ -180,7 +180,21 @@ export default async function BlogPostPage({ params }: PageProps) {
             </p>
 
             {post.description && (
-              <p className="lead measure">{post.description}</p>
+              <p className="lead measure mb-8">{post.description}</p>
+            )}
+
+            {post.image && (
+              <figure className="mt-10 -mx-4 sm:mx-0">
+                <div className="relative w-full aspect-[16/9] bg-[var(--bg-elevated)] overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                </div>
+              </figure>
             )}
           </header>
 

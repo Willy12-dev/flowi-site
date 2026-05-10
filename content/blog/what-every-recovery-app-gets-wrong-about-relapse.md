@@ -16,6 +16,7 @@ keywords:
   - "habit replacement"
   - "self-control app"
 author: "Flowi Editorial"
+image: "/images/blog/what-every-recovery-app-gets-wrong-about-relapse.png"
 ---
 
 Every recovery app — for porn, alcohol, gambling, screens, food — gets one thing structurally wrong, and the failure mode is identical across the category. The app treats relapse as **failure**. The user's streak resets. The dashboard turns red. The notification says "you can start again tomorrow!" The user feels shame, deletes the app, and re-downloads it six weeks later when they decide to try again. This cycle runs in millions of installations. It's the single biggest reason recovery apps have abysmal long-term retention.

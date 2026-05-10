@@ -16,6 +16,7 @@ keywords:
   - "fair value gap"
   - "liquidity sweep"
 author: "Flowi Editorial"
+image: "/images/blog/how-institutional-desks-use-ict-where-retail-tools-fall-short.png"
 ---
 
 Inner Circle Trader (ICT) methodology and Smart Money Concepts (SMC) have a strange split reputation. On TradingView and YouTube they're sometimes treated as retail mysticism — order blocks drawn over arbitrary candles, fair value gaps explained with the same casual confidence as moon-phase astrology. On institutional trading desks, the same concepts have been operational tools for thirty years, used differently and described in different language. The gap between the two communities isn't intellectual — it's tooling.

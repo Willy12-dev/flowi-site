@@ -15,6 +15,7 @@ keywords:
   - "frontier model gating"
   - "ai security tooling"
 author: "Flowi Editorial"
+image: "/images/blog/openai-spud-gpt-5-5-cyber-defenders-rollout.png"
 ---
 
 OpenAI is releasing GPT-5.5, internally nicknamed "Spud," only to vetted cyber-defense teams. That's the framing in [Axios's report](https://www.axios.com/2026/05/07/openai-gpt-55-cybersecurity-model) Thursday. Most of the coverage will focus on the model's capabilities — it's reportedly close to Anthropic's Mythos at finding software vulnerabilities. The more interesting story is the **access architecture**, because that's the new product surface.
