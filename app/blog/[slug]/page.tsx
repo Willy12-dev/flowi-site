@@ -5,10 +5,27 @@ import path from "path";
 import { getPostBySlug, getAllSlugs, getAllPosts, getPostsByCategory, getPrevNextInCategory, markdownToHtml } from "@/lib/blog";
 import { getCTAForCategory } from "@/lib/funnels";
 import BlogPostContent from "@/components/BlogPost";
+import InlineLeadMagnet from "@/components/InlineLeadMagnet";
+import TrackedLink from "@/components/TrackedLink";
 import Nav from "@/components/site/Nav";
 import Footer from "@/components/site/Footer";
 import EmailCapture from "@/components/site/EmailCapture";
 import Link from "next/link";
+
+/** Split HTML at the Nth closing </p> tag so we can inject components mid-article. */
+function splitHtmlAtParagraph(html: string, n: number): [string, string] {
+  let count = 0;
+  const re = /<\/p>/gi;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(html)) !== null) {
+    count++;
+    if (count === n) {
+      const cut = match.index + match[0].length;
+      return [html.slice(0, cut), html.slice(cut)];
+    }
+  }
+  return [html, ""];
+}
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -186,13 +203,18 @@ export default async function BlogPostPage({ params }: PageProps) {
               {pdfExists && (
                 <>
                   {" · "}
-                  <a
+                  <TrackedLink
                     href={`/pdfs/${slug}.pdf`}
-                    download
                     className="link-red not-italic"
+                    attribution={{
+                      article: slug,
+                      vertical: post.category || "uncategorized",
+                      position: "top-byline",
+                      offer: "Download PDF",
+                    }}
                   >
                     Download PDF ↓
-                  </a>
+                  </TrackedLink>
                 </>
               )}
             </p>
@@ -216,7 +238,25 @@ export default async function BlogPostPage({ params }: PageProps) {
             )}
           </header>
 
-          <BlogPostContent htmlContent={htmlContent} />
+          {(() => {
+            // Inject InlineLeadMagnet after the 5th paragraph (≈35–45% scroll
+            // depth for a typical 1,200-word article). Conversion-surface
+            // mid-article > only-at-bottom — readers rarely finish.
+            const [firstHalf, secondHalf] = splitHtmlAtParagraph(htmlContent, 5);
+            return (
+              <>
+                <BlogPostContent htmlContent={firstHalf} />
+                {secondHalf && (
+                  <InlineLeadMagnet
+                    vertical={post.category}
+                    slug={slug}
+                    hasPdf={pdfExists}
+                  />
+                )}
+                {secondHalf && <BlogPostContent htmlContent={secondHalf} />}
+              </>
+            );
+          })()}
 
           {/* Context-aware CTA — funnels to flagship product based on article category */}
           {(() => {
@@ -224,25 +264,46 @@ export default async function BlogPostPage({ params }: PageProps) {
             const linkProps = cta.external
               ? { target: "_blank", rel: "noopener" }
               : {};
+            const ctaPosition =
+              post.category === "ai_trading"
+                ? "trader-cta"
+                : post.category === "ai_behavior"
+                ? "woyuduin-cta"
+                : "book-cta";
+            const attribution = {
+              article: slug,
+              vertical: post.category || "uncategorized",
+              position: ctaPosition as
+                | "trader-cta"
+                | "woyuduin-cta"
+                | "book-cta",
+              offer: cta.primaryLabel,
+            };
             return (
               <aside className="mt-14 pt-8 border-t border-[var(--rule)] max-w-[64ch]">
                 <p className="eyebrow eyebrow-mark mb-3">{cta.eyebrow}</p>
                 <h3 className="serif text-[1.625rem] md:text-[1.875rem] leading-[1.15] mb-3">
-                  <a href={cta.titleHref} {...linkProps} className="link-ink">
+                  <TrackedLink
+                    href={cta.titleHref}
+                    {...linkProps}
+                    className="link-ink"
+                    attribution={attribution}
+                  >
                     {cta.title}
-                  </a>
+                  </TrackedLink>
                 </h3>
                 <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed mb-4">
                   {cta.body}
                 </p>
                 <p className="flex items-baseline gap-x-5 flex-wrap">
-                  <a
+                  <TrackedLink
                     href={cta.primaryHref}
                     {...linkProps}
                     className="link-red text-[1.0625rem] font-medium"
+                    attribution={attribution}
                   >
                     {cta.primaryLabel}
-                  </a>
+                  </TrackedLink>
                   <span className="meta">
                     {cta.secondary.prefix}{" "}
                     <a href={cta.secondary.href} className="link-ink">
