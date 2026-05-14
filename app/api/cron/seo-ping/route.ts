@@ -54,6 +54,20 @@ function staticUrls(): string[] {
     `https://${HOST}/dispatch`,
     `https://${HOST}/courses`,
     `https://${HOST}/about`,
+    `https://${HOST}/trader`,
+    `https://${HOST}/launch`,
+    `https://${HOST}/sources`,
+    `https://${HOST}/leads`,
+  ];
+}
+
+/** Category index pages — each gets BreadcrumbList + CollectionPage schema. */
+function categoryUrls(): string[] {
+  return [
+    `https://${HOST}/blog/category/ai_general`,
+    `https://${HOST}/blog/category/ai_trading`,
+    `https://${HOST}/blog/category/ai_behavior`,
+    `https://${HOST}/blog/category/ai_builder`,
   ];
 }
 
@@ -70,7 +84,7 @@ export async function GET(request: NextRequest) {
   }
 
   const blogUrls = await listBlogUrls();
-  const urlList = [...staticUrls(), ...blogUrls];
+  const urlList = [...staticUrls(), ...categoryUrls(), ...blogUrls];
 
   if (urlList.length === 0) {
     return NextResponse.json({ ok: false, reason: "no urls to submit" });
@@ -99,6 +113,7 @@ export async function GET(request: NextRequest) {
       submitted: urlList.length,
       breakdown: {
         static: staticUrls().length,
+        categories: categoryUrls().length,
         blog: blogUrls.length,
       },
       timestamp: new Date().toISOString(),

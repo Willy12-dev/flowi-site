@@ -40,8 +40,52 @@ export default async function CategoryPage({ params }: PageProps) {
     notFound();
   }
 
+  // BreadcrumbList JSON-LD: Home -> Blog -> Category
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://useflowi.app" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://useflowi.app/blog" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: formatted.charAt(0).toUpperCase() + formatted.slice(1),
+        item: `https://useflowi.app/blog/category/${category}`,
+      },
+    ],
+  };
+
+  // CollectionPage JSON-LD: tells Google this is a curated index of articles
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${formatted.charAt(0).toUpperCase() + formatted.slice(1)} — Flowi`,
+    description: `Editorial coverage in the ${formatted} vertical from Flowi.`,
+    url: `https://useflowi.app/blog/category/${category}`,
+    isPartOf: { "@type": "WebSite", name: "Flowi", url: "https://useflowi.app" },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: posts.length,
+      itemListElement: posts.slice(0, 20).map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://useflowi.app/blog/${p.slug}`,
+        name: p.title,
+      })),
+    },
+  };
+
   return (
     <main className="bg-[var(--bg)] text-[var(--ink)]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
       <Nav />
 
       {/* Masthead */}

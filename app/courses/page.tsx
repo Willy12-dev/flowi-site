@@ -137,9 +137,58 @@ const BOOKS: Book[] = [
   },
 ];
 
+/**
+ * ItemList JSON-LD — exposes all field guides + books as crawlable
+ * Product entries so Google can render rich product cards on /courses
+ * and surface them in shopping / sitelink results.
+ */
+function buildCatalogJsonLd() {
+  const liveItems: Array<{ name: string; url: string; price: string; description: string }> = [];
+  for (const g of FIELD_GUIDES) {
+    liveItems.push({ name: g.title, url: g.url, price: g.price.replace("$", ""), description: g.subtitle });
+  }
+  for (const b of BOOKS) {
+    if (b.status === "live") {
+      liveItems.push({ name: b.title, url: b.url, price: b.price.replace("$", ""), description: b.subtitle });
+    }
+  }
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Flowi Catalog — books + field guides",
+    description: "Opinionated, code-first deep-dives on AI patterns that ship in production.",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: liveItems.length,
+    itemListElement: liveItems.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: it.name,
+        description: it.description,
+        url: it.url,
+        brand: { "@type": "Brand", name: "Flowi" },
+        offers: {
+          "@type": "Offer",
+          price: it.price,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: it.url,
+          seller: { "@type": "Organization", name: "Flowi", url: "https://useflowi.app" },
+        },
+      },
+    })),
+  };
+}
+
 export default function CoursesPage() {
+  const jsonLd = buildCatalogJsonLd();
   return (
     <main className="bg-[var(--bg)] text-[var(--ink)]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Nav />
 
       {/* Hero */}

@@ -20,11 +20,54 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * SoftwareApplication JSON-LD — makes FlowiAI Trader a first-class
+ * crawlable product. Category: FinanceApplication. Lists key features +
+ * the launch list signup as a structured offer.
+ */
+const TRADER_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "FlowiAI Trader",
+  applicationCategory: "FinanceApplication",
+  applicationSubCategory: "Algorithmic Trading",
+  operatingSystem: "Web, Windows, macOS, Linux",
+  url: "https://useflowi.app/trader",
+  description:
+    "Institutional-grade algorithmic trading built on ICT methodology and multi-agent risk validation. Forex, crypto, stocks, indices. Five trading modes with one-directional drawdown circuit breakers — engineered to survive the regime shift retail systems break on.",
+  featureList: [
+    "ICT-first market structure (order blocks, FVGs, liquidity sweeps)",
+    "Multi-agent risk validation (strategy + risk + psychology agents must all agree)",
+    "Five trading modes — aggressive, normal, cautious, defensive, preservation",
+    "One-directional mode transitions under drawdown",
+    "Hard drawdown circuit breakers at 5%, 8%, 12%",
+    "Multi-timeframe confluence (D1 / H4 / H1) before any setup qualifies",
+    "Forex, crypto, stocks, and indices across every major platform",
+  ],
+  brand: { "@type": "Brand", name: "Flowi" },
+  publisher: { "@type": "Organization", name: "Flowi", url: "https://useflowi.app" },
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/PreOrder",
+    availabilityStarts: "2026-07-01",
+    url: "https://useflowi.app/trader",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "USD",
+      description: "Founding pricing announced at launch (Q3 2026). Join the launch list for early access.",
+    },
+  },
+};
+
 export default function TraderPage() {
   const tradingPosts = getPostsByCategory("ai_trading").slice(0, 4);
 
   return (
     <main className="bg-[var(--bg)] text-[var(--ink)]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(TRADER_JSON_LD) }}
+      />
       <Nav />
 
       {/* Hero */}
