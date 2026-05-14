@@ -1,0 +1,156 @@
+{
+  "id": "ai-builder-claude-instagram-results",
+  "title": "I gave Claude my Instagram page — here's what it cost me",
+  "vertical": "ai_builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "AUDIT", "promise": "for the full breakdown" },
+  "caption": "Spent 7 days handing my Instagram strategy to Claude. The results — and the four prompts that actually moved the needle.",
+  "hashtags": [
+    "ai",
+    "claude",
+    "instagrammarketing",
+    "contentstrategy",
+    "aiworkflow",
+    "creatoreconomy",
+    "indiehacker",
+    "buildinpublic"
+  ],
+  "slides": [
+    {
+      "type": "highlight-cover",
+      "index": 1,
+      "total": 10,
+      "eyebrow": "7-DAY EXPERIMENT",
+      "highlightedHook": "I gave Claude",
+      "followUp": "MY INSTAGRAM PAGE.",
+      "sub": "Here's what 7 days of AI-led content strategy actually returned."
+    },
+    {
+      "type": "results",
+      "index": 2,
+      "total": 10,
+      "eyebrow": "THE NUMBERS",
+      "title": "What 7 days",
+      "italicWord": "produced.",
+      "results": [
+        { "value": "1.5M", "label": "impressions" },
+        { "value": "12K", "label": "new followers" },
+        { "value": "$6,783", "label": "tracked revenue" },
+        { "value": "34%", "label": "save rate avg" }
+      ],
+      "cta": "All from 7 carousels. No paid ads. Same posting cadence."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 10,
+      "eyebrow": "BEFORE THE PROMPTS",
+      "term": "Audit",
+      "partOfSpeech": "verb.",
+      "definition": "Feed Claude every carousel from your last 30 days as image attachments. Ask it to find the single pattern your top 3 posts share that your bottom 3 don't.",
+      "example": "Mine: a contrarian claim in the first 5 words. Always."
+    },
+    {
+      "type": "step",
+      "index": 4,
+      "total": 10,
+      "stepNumber": "01",
+      "stepLabel": "PROMPT",
+      "title": "The hook surgeon",
+      "body": "Paste your draft hook. Ask Claude: \"Rewrite this 10 ways. Half contrarian, half curiosity-gap. Each <= 12 words. Mark the strongest 3.\" Pick from the marked three."
+    },
+    {
+      "type": "step",
+      "index": 5,
+      "total": 10,
+      "stepNumber": "02",
+      "stepLabel": "PROMPT",
+      "title": "The density rebalancer",
+      "body": "Paste your full slide-by-slide copy. Ask: \"Map word count per slide. Where does density spike or collapse? Rebalance — tight ends, dense middle.\""
+    },
+    {
+      "type": "compare",
+      "index": 6,
+      "total": 10,
+      "title": "What changed",
+      "italicWord": "in one week.",
+      "left": {
+        "label": "BEFORE CLAUDE",
+        "items": [
+          "Average 3K impressions per carousel",
+          "Save rate ~8%",
+          "1–2 hours per draft",
+          "No system, just instinct",
+          "DMs: 4-6 per post"
+        ]
+      },
+      "right": {
+        "label": "AFTER 7 DAYS",
+        "items": [
+          "Average 210K impressions per carousel",
+          "Save rate ~34%",
+          "20 minutes per draft",
+          "Repeatable, paste-ready system",
+          "DMs: 80-120 per post"
+        ]
+      }
+    },
+    {
+      "type": "audience",
+      "index": 7,
+      "total": 10,
+      "title": "Who wins",
+      "italicWord": "with this?",
+      "audiences": [
+        {
+          "pill": "CREATORS",
+          "body": "Anyone shipping 3+ posts per week and feeling the burnout. The system carries the cognitive load."
+        },
+        {
+          "pill": "AGENCIES",
+          "body": "Service businesses managing 4+ client accounts. Standardize the writing process, charge premium for the consistency."
+        },
+        {
+          "pill": "FOUNDERS",
+          "body": "Solo builders treating content as a growth lever. Ships your edge without becoming your job."
+        }
+      ]
+    },
+    {
+      "type": "fake-tweet",
+      "index": 8,
+      "total": 10,
+      "author": "Adam H.",
+      "handle": "adam.hafner",
+      "body": "Most creators are using Claude as a thesaurus. The real unlock is using it as your audit layer — what's working, what's noise, what to kill.",
+      "timestamp": "2:34 PM · May 12, 2026",
+      "likes": "9,213",
+      "reposts": "1,442"
+    },
+    {
+      "type": "bullets",
+      "index": 9,
+      "total": 10,
+      "eyebrow": "WHAT NOT TO DO",
+      "title": "Three mistakes",
+      "italicWord": "to dodge.",
+      "bullets": [
+        "Asking Claude to \"write a carousel\" without context. Output is generic. Always paste your last 3 posts first.",
+        "Trusting first-draft hooks. Always force 10 variants. The 7th is usually the winner.",
+        "Forgetting the CTA. Save rate is the metric. CTA mechanic is what compounds saves into DMs into sales."
+      ],
+      "footer": "Skipping any of these = wasted prompts."
+    },
+    {
+      "type": "cta",
+      "index": 10,
+      "total": 10,
+      "hook": "Want the four",
+      "italicWord": "exact prompts?",
+      "sub": "Free. No upsell. Paste-ready inside Claude.",
+      "ctaKeyword": "AUDIT",
+      "ctaPromise": "for the full pack"
+    }
+  ]
+}

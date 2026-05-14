@@ -1,0 +1,89 @@
+{
+  "id": "ai-builder-claude-content-engine",
+  "title": "Turn Claude into a content engine (11 prompts)",
+  "vertical": "ai_builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "BUILD", "promise": "for the full pack" },
+  "caption": "I shipped 13 articles in a week using Claude. The exact 11 prompts I rotate through — no fluff, paste-ready. Comment BUILD and I'll DM you the full pack.",
+  "hashtags": [
+    "ai",
+    "claude",
+    "buildwithai",
+    "aiworkflow",
+    "indiehacker",
+    "promptengineering",
+    "aiautomation",
+    "contentmarketing"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "AI BUILDERS · 11 PROMPTS",
+      "headline": "Turn Claude into a content engine in",
+      "italicWord": "11 steps.",
+      "sub": "The exact prompts I rotate through. Paste-ready."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "Scrape the angle",
+      "body": "Feed Claude one viral carousel from your niche. Ask: \"Extract the hook, the body density curve, and the CTA mechanic. Output as a one-page brief I can riff on.\""
+    },
+    {
+      "type": "code",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "PROMPT 02",
+      "title": "The hook generator",
+      "language": "Claude · system",
+      "code": "You are a viral-hook writer.\nGiven a topic, output 10 hooks.\n\nRules:\n- Each hook <= 12 words\n- Half contrarian, half curiosity-gap\n- One must include a specific number\n- Mark the strongest 3 with [*]"
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 7,
+      "number": "03",
+      "title": "Body density curve",
+      "body": "Carousels die when slide 3 has 80 words and slide 6 has 12. Ask Claude to plot density per slide and rebalance — tight middle, lean ends."
+    },
+    {
+      "type": "table",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "HOOK STRUCTURE",
+      "title": "What converted",
+      "italicWord": "last week.",
+      "columns": { "label": "HOOK PATTERN", "metric": "REACH" },
+      "rows": [
+        { "index": "01", "label": "\"How I shipped X in Y days\"", "metric": "42K" },
+        { "index": "02", "label": "\"I gave Claude my [thing]\"", "metric": "31K" },
+        { "index": "03", "label": "\"Most [audience] do this wrong\"", "metric": "19K" },
+        { "index": "04", "label": "\"Stop using [tool]. Use [tool].\"", "metric": "12K" },
+        { "index": "05", "label": "\"$X/mo on [tool]. Build it.\"", "metric": "9K" }
+      ],
+      "footer": "Across 7 carousels, 1 week, @useflowi"
+    },
+    {
+      "type": "quote",
+      "index": 6,
+      "total": 7,
+      "quote": "Ideas are cheap. The pipeline that converts them is rare.",
+      "attribution": "Flowi notebook"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want the full",
+      "italicWord": "11-prompt pack?",
+      "sub": "Free PDF. No upsell. Save this for when you're ready.",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the pack"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "ai-behavior-precommitment",
+  "title": "Every habit you keep is a precommitment",
+  "vertical": "ai_behavior",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "HABIT", "promise": "for the playbook" },
+  "caption": "The 6am workout isn't a decision you make at 6am. It's a decision you made the night before, and the night before that. Here's the architecture.",
+  "hashtags": [
+    "habits",
+    "behaviorchange",
+    "atomichabits",
+    "selfimprovement",
+    "consistency",
+    "discipline",
+    "mindset",
+    "personaldevelopment"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "DEAR YOUNGER SELF",
+      "headline": "Every habit you keep is a",
+      "italicWord": "precommitment.",
+      "sub": "Made earlier. Bound to be executed later."
+    },
+    {
+      "type": "letter",
+      "index": 2,
+      "total": 7,
+      "salutation": "Dear younger self,",
+      "body": "The 6am workout was never a decision you made at 6am.\n\nIt was a decision you made the night before, when you laid out the clothes. The decision you made the week before, when you booked the trainer. The decision you made three months before, when you agreed to a protocol you couldn't quietly back out of.",
+      "signoff": "— Flowi"
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "Decide when emotions are flat",
+      "body": "The brain that decides at 6am is not the brain that committed at 9pm. Make the decision once, in advance, and make it specific enough that the 6am brain has no room to negotiate."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE SLIP MYTH",
+      "preStat": "Most recovery attempts die at",
+      "stat": "28→0",
+      "postStat": "because of one missed day.",
+      "body": "Not the slip itself — the \"I've already failed, might as well…\" that follows. Track compliance windows, not streaks."
+    },
+    {
+      "type": "grid",
+      "index": 5,
+      "total": 7,
+      "title": "The 5-piece",
+      "italicWord": "architecture.",
+      "cols": 2,
+      "cards": [
+        {
+          "number": "01",
+          "title": "Pre-committed rules",
+          "body": "Made in calm states. Specific. No judgment calls at decision time."
+        },
+        {
+          "number": "02",
+          "title": "Mechanism-enforced",
+          "body": "Not just remembered — backed by a system you can't quietly override."
+        },
+        {
+          "number": "03",
+          "title": "Slip-aware metrics",
+          "body": "Compliance, never perfection. 28-of-30, never the streak."
+        },
+        {
+          "number": "04",
+          "title": "Asymmetric modes",
+          "body": "Defense automatic. Aggression earned. One-way valves only."
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "index": 6,
+      "total": 7,
+      "quote": "The decision was already made. You're just the courier.",
+      "attribution": "Flowi · habit architecture"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want the full",
+      "italicWord": "5-piece playbook?",
+      "sub": "Same architecture Woyuduin runs. Free PDF.",
+      "ctaKeyword": "HABIT",
+      "ctaPromise": "for the playbook"
+    }
+  ]
+}

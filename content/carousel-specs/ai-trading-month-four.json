@@ -1,0 +1,108 @@
+{
+  "id": "ai-trading-month-four",
+  "title": "Why most algo traders blow up at month four",
+  "vertical": "ai_trading",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "PROBABILITY", "promise": "for the risk playbook" },
+  "caption": "Month four is the kill zone. Not because the strategy fails — because the trader does. Here's what survives, and what dies.",
+  "hashtags": [
+    "algotrading",
+    "ictconcepts",
+    "smartmoneyconcepts",
+    "tradingpsychology",
+    "riskmanagement",
+    "forex",
+    "priceaction",
+    "drawdown",
+    "marketstructure"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 8,
+      "eyebrow": "DEAR NEW TRADER",
+      "headline": "Why most algo traders blow up at",
+      "italicWord": "month four.",
+      "sub": "And the one rule that lets the rest survive."
+    },
+    {
+      "type": "letter",
+      "index": 2,
+      "total": 8,
+      "salutation": "Dear new trader,",
+      "body": "Your strategy is fine. The backtest is fine.\n\nWhat's not fine is what your hands do when you're three months into a drawdown and the bot just flagged another setup. That's where the equity curve dies.",
+      "signoff": "— Flowi"
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 8,
+      "eyebrow": "THE KILL ZONE",
+      "preStat": "Strategies tested live",
+      "stat": "73%",
+      "postStat": "blow up by month 4",
+      "body": "Not because the edge disappeared — because position size got moved manually after 3 losing weeks."
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 8,
+      "number": "01",
+      "title": "Pre-commit the rules in calm",
+      "body": "Decide entry, exit, sizing, and shutdown conditions when emotions are baseline. Write them down. Make them specific enough that no judgment call is required at decision time."
+    },
+    {
+      "type": "diagram",
+      "index": 5,
+      "total": 8,
+      "title": "The one-directional",
+      "italicWord": "mode lock.",
+      "tiers": [
+        {
+          "label": "DROP TRIGGER (easy)",
+          "nodes": [
+            { "title": "5% drawdown", "sub": "→ half size automatic" },
+            { "title": "3 losing days", "sub": "→ no new entries" },
+            { "title": "News window", "sub": "→ hard pause" }
+          ]
+        },
+        {
+          "label": "RECOVER TRIGGER (hard)",
+          "nodes": [
+            { "title": "10 stable days", "sub": "no manual overrides" },
+            { "title": "Sharpe back above 1.2", "sub": "rolling 30d" },
+            { "title": "Manual review signed", "sub": "by you, in writing" }
+          ]
+        }
+      ],
+      "footer": "Defense is automatic. Aggression is earned."
+    },
+    {
+      "type": "quote",
+      "index": 6,
+      "total": 8,
+      "quote": "Discipline isn't a personality trait. It's an architecture choice.",
+      "attribution": "Flowi · trader psychology"
+    },
+    {
+      "type": "numbered",
+      "index": 7,
+      "total": 8,
+      "number": "02",
+      "title": "Track compliance, not perfection",
+      "body": "\"Did I follow the rules today?\" beats \"did I win today?\" Equity curve relative to expected drawdown range, never zero-drawdown. 28-of-30 success days, never 30-day streaks."
+    },
+    {
+      "type": "cta",
+      "index": 8,
+      "total": 8,
+      "hook": "Want the full",
+      "italicWord": "risk playbook?",
+      "sub": "Same architecture FlowiAI Trader runs. Free PDF.",
+      "ctaKeyword": "PROBABILITY",
+      "ctaPromise": "for the playbook"
+    }
+  ]
+}
