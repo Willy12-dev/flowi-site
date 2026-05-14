@@ -53,8 +53,17 @@ const ANTHROPIC_MODEL =
   process.env.NEWS_ENGINE_MODEL ||
   "claude-sonnet-4-5-20250929";
 
-const GEMINI_MODEL =
-  process.env.NEWS_ENGINE_GEMINI_MODEL || "gemini-2.5-flash";
+/** Ordered fallback chain — tries each model in turn until one succeeds.
+ *  Override the primary via NEWS_ENGINE_GEMINI_MODEL repo Variable.
+ */
+const GEMINI_MODEL_FALLBACKS = [
+  process.env.NEWS_ENGINE_GEMINI_MODEL,
+  "gemini-2.0-flash",          // stable, broadly available
+  "gemini-1.5-flash-latest",   // even more battle-tested
+  "gemini-2.5-flash",          // newest, may have region/quota gates
+].filter(Boolean);
+
+const GEMINI_MODEL = GEMINI_MODEL_FALLBACKS[0]; // primary for logging
 
 const DEFAULT_MAX_DRAFTS = 10;
 const FRESHNESS_HOURS = 36;
@@ -389,46 +398,71 @@ async function callClaude(item, courses) {
   return extractSpecJson(text);
 }
 
-async function callGemini(item, courses) {
-  const ctaSuggestion = pickCtaForTopic(courses, item.topic_hint, item.vertical);
-  const userPrompt = buildUserPrompt(item, ctaSuggestion);
-
+async function callGeminiOnce(model, systemPrompt, userPrompt) {
   // Gemini supports a JSON response mime type which guarantees valid JSON.
   // System instructions go in `systemInstruction`, user content in `contents`.
+  // Safety thresholds set to BLOCK_NONE-equivalents so news content doesn't
+  // trip the moderation filter (we're paraphrasing real news, not generating
+  // harmful content).
   const r = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`,
     {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
-        systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+        systemInstruction: { parts: [{ text: systemPrompt }] },
         contents: [{ role: "user", parts: [{ text: userPrompt }] }],
         generationConfig: {
           responseMimeType: "application/json",
           maxOutputTokens: 8192,
           temperature: 0.7,
         },
+        safetySettings: [
+          { category: "HARM_CATEGORY_HARASSMENT",        threshold: "BLOCK_ONLY_HIGH" },
+          { category: "HARM_CATEGORY_HATE_SPEECH",       threshold: "BLOCK_ONLY_HIGH" },
+          { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_ONLY_HIGH" },
+          { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_ONLY_HIGH" },
+        ],
       }),
     }
   );
 
   if (!r.ok) {
     const txt = await r.text();
-    throw new Error(`Gemini API ${r.status}: ${txt.slice(0, 300)}`);
+    throw new Error(`Gemini API ${r.status} (model=${model}): ${txt.slice(0, 300)}`);
   }
   const data = await r.json();
 
   const candidate = data.candidates?.[0];
   if (!candidate) {
-    throw new Error(`No candidate in Gemini response: ${JSON.stringify(data).slice(0, 300)}`);
+    throw new Error(`No candidate in Gemini response (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
   }
-  // Surface safety blocks etc.
   if (candidate.finishReason && candidate.finishReason !== "STOP") {
-    throw new Error(`Gemini finishReason=${candidate.finishReason}: ${JSON.stringify(data).slice(0, 300)}`);
+    throw new Error(`Gemini finishReason=${candidate.finishReason} (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
   }
   const text = candidate.content?.parts?.[0]?.text;
-  if (!text) throw new Error(`No text in Gemini response: ${JSON.stringify(data).slice(0, 300)}`);
+  if (!text) throw new Error(`No text in Gemini response (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
   return extractSpecJson(text);
+}
+
+async function callGemini(item, courses) {
+  const ctaSuggestion = pickCtaForTopic(courses, item.topic_hint, item.vertical);
+  const userPrompt = buildUserPrompt(item, ctaSuggestion);
+
+  // Try each model in the fallback chain. Stop on first success.
+  let lastErr;
+  for (const model of GEMINI_MODEL_FALLBACKS) {
+    try {
+      return await callGeminiOnce(model, SYSTEM_PROMPT, userPrompt);
+    } catch (e) {
+      lastErr = e;
+      // Don't retry on 4xx other than 404 (model not found). 404/500 = try next.
+      const msg = e.message ?? "";
+      const fatal = /\b(401|403|400)\b/.test(msg) && !/\b404\b/.test(msg);
+      if (fatal) break;
+    }
+  }
+  throw lastErr;
 }
 
 /** Provider dispatcher. */
