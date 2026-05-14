@@ -1,0 +1,114 @@
+{
+  "id": "news-2026-05-14-grok-in-tesla-app",
+  "title": "Grok's Tesla App Debut: More Assistant, Less AI Driver",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Grok is coming to the Tesla app, but don't expect a sentient co-pilot. This isn't about AI driving your car. It's about a smarter, more proactive assistant for diagnostics, trip planning, and vehicle control. We break down what Grok *actually* brings to your Tesla experience.\n👉 Get on the waitlist for Flowi’s premium Grok insights. Tap the link in bio.",
+  "hashtags": [
+    "grok",
+    "xai",
+    "tesla",
+    "elonmusk",
+    "aiinautomotive",
+    "teslanews",
+    "futureofai",
+    "autotech",
+    "appintegration",
+    "largelanguagemodels"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "GROK IN TESLA",
+      "headline": "Grok in Your Tesla App: It’s Not the AI Driver You *Think* It Is.",
+      "italicWord": "Think",
+      "sub": "The real utility is more subtle, and smarter, than you expect."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "Beyond Basic Car Control",
+      "body": "Grok integrates with your Tesla app, offering a conversational layer for vehicle status, remote functions, and diagnostics. Think of it as an intelligent digital concierge, not an autonomous driving upgrade."
+    },
+    {
+      "type": "step",
+      "index": 3,
+      "total": 7,
+      "stepNumber": "02",
+      "stepLabel": "USE CASE",
+      "title": "Predictive Maintenance Alerts",
+      "body": "Instead of generic warnings, Grok analyzes vehicle data to provide context-rich alerts. \"Tire pressure low on front-left, likely due to recent temperature drop, consider adding 3 PSI.\""
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "APP ENHANCEMENT",
+      "title": "Personalized Trip Planning",
+      "italicWord": "Planning",
+      "bullets": [
+        "Suggests optimal charging stops based on your driving style and real-time supercharger availability.",
+        "Integrates calendar events to pre-condition cabin and route to your next appointment efficiently.",
+        "Offers local recommendations along your route, tailored to your preferences."
+      ],
+      "footer": "This is about convenience, not taking the wheel."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Grok in App: What It *Isn't*",
+      "italicWord": "Isn't",
+      "left": {
+        "label": "WHAT IT IS",
+        "items": [
+          "Intelligent assistant",
+          "Proactive diagnostics",
+          "Contextual controls"
+        ]
+      },
+      "right": {
+        "label": "WHAT IT ISN'T",
+        "items": [
+          "FSD replacement",
+          "Autonomous agent",
+          "Real-time driving coach"
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "THE IMPACT",
+      "title": "Why This Integration Matters",
+      "italicWord": "Matters",
+      "bullets": [
+        "It shifts Grok from a general chatbot to a specialized, embedded tool for a specific ecosystem.",
+        "Enhances the existing Tesla app experience with a conversational, predictive layer.",
+        "Sets a precedent for how xAI plans to integrate Grok into other Musk-owned ventures beyond X."
+      ],
+      "footer": "It's about utility, not hype."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to track Grok's next moves?",
+      "italicWord": "moves",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Get premium intelligence on AI's biggest players, directly to your inbox."
+    }
+  ]
+}

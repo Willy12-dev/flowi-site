@@ -1,0 +1,93 @@
+{
+  "id": "news-2026-05-14-fired-hacker-twins-teams-recording",
+  "title": "The Dumbest Hacker Fail of 2026",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Fired hackers, a Teams recording, and a criminal enterprise caught on camera. This week's biggest security blunder shows why operational security matters more than ever.\n\nThe hacker twins thought they were smart. They weren't. Their epic fail highlights critical gaps in offboarding and monitoring that every company needs to address.\n\nBUILD for the field guide to get strategies for better AI security.",
+  "hashtags": [
+    "cybersecurity",
+    "infosec",
+    "insiderthreat",
+    "opsec",
+    "microsoftteams",
+    "hackingnews",
+    "techfail",
+    "aipublication",
+    "flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "OPERATIONAL SECURITY",
+      "headline": "Fired. Hacked. *Recorded*.",
+      "italicWord": "Recorded",
+      "sub": "The hacker twins who forgot to end their Teams call."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Setup",
+      "body": "Recently terminated from a major tech firm, twin brothers accessed company systems for data theft. Their motive: revenge and profit."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "02",
+      "title": "The Crime",
+      "body": "Using their former credentials, they attempted to exfiltrate proprietary source code and client databases. All while on a Microsoft Teams call."
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 7,
+      "number": "03",
+      "title": "The Blunder",
+      "body": "Crucially, they forgot to stop the Teams meeting. The entire criminal enterprise, including their planning and execution, was captured on video."
+    },
+    {
+      "type": "definition",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "SECURITY GLOSSARY",
+      "term": "Insider Threat",
+      "partOfSpeech": "noun.",
+      "definition": "A security risk from an individual with authorized access who misuses it to harm an organization. Often involves data theft or sabotage.",
+      "example": "Former employees retaining access and exploiting it, as seen with the hacker twins."
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "POST-MORTEM",
+      "title": "Key Takeaways for *Businesses*",
+      "italicWord": "Businesses",
+      "bullets": [
+        "Implement immediate credential revocation on termination.",
+        "Monitor anomalous access patterns from ex-employees.",
+        "Educate staff on digital hygiene, even during offboarding."
+      ],
+      "footer": "Even basic security protocols can prevent sophisticated blunders."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Don't let your next project become a security incident.",
+      "italicWord": "incident",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get Flowi's expert insights on AI security."
+    }
+  ]
+}

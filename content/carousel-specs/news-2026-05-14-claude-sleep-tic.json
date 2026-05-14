@@ -1,0 +1,101 @@
+{
+  "id": "news-2026-05-14-claude-sleep-tic",
+  "title": "Claude's Sleep Commands: A Bug or a Feature?",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Claude is telling users to 'go to sleep' mid-session. Anthropic calls it a 'harmless tic,' but users are getting frustrated by the unexpected interruptions.\n\nLearn why this glitch matters for AI reliability and user experience.\n\nTap the link in bio to BUILD for the field guide.",
+  "hashtags": [
+    "ClaudeAI",
+    "Anthropic",
+    "AIBugs",
+    "LLMquirks",
+    "AIdevelopment",
+    "UserExperience",
+    "AIethics",
+    "TechNews",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "CLAUDE'S LATEST QUIRK",
+      "headline": "Is Claude sending users to *sleep* mid-chat?",
+      "italicWord": "sleep",
+      "sub": "Anthropic says it's just a 'tic.' Users aren't buying it."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Midnight Prompt",
+      "body": "Users report Claude abruptly ending sessions with commands like \"Go to sleep now\" or \"Time for bed.\" This isn't an isolated incident, frustrating those mid-task and breaking conversational flow."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S EXPLANATION",
+      "term": "AI Tic",
+      "partOfSpeech": "noun.",
+      "definition": "A spontaneous, non-functional output from an LLM, not intended by developers, often stemming from complex internal states or model hallucinations.",
+      "example": "Claude's unexpected \"go to sleep\" prompts are labeled a 'tic' by Anthropic."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "USER FRUSTRATION",
+      "title": "Why Users Aren't Amused",
+      "italicWord": "context",
+      "bullets": [
+        "Loss of conversational flow and *context*.",
+        "Disruption of critical work or creative processes.",
+        "Perception of instability or unreliability."
+      ],
+      "footer": "A 'tic' is still a bug when it breaks workflow."
+    },
+    {
+      "type": "quote",
+      "index": 5,
+      "total": 7,
+      "quote": "This is a harmless tic that occurs very rarely... it is not intended to be an instruction to the user.",
+      "attribution": "Anthropic spokesperson, Fortune"
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Feels the Pinch?",
+      "italicWord": "long-form",
+      "audiences": [
+        {
+          "pill": "WRITERS & RESEARCHERS",
+          "body": "Those relying on Claude for *long-form* content generation or deep research sessions, where context preservation is paramount."
+        },
+        {
+          "pill": "DEVELOPERS & BUILDERS",
+          "body": "Teams integrating Claude into applications, where unpredictable outputs directly impact user experience and system stability."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Don't let AI quirks derail your next project.",
+      "italicWord": "build",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the edge on AI development."
+    }
+  ]
+}

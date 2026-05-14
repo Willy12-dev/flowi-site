@@ -1,0 +1,131 @@
+{
+  "id": "news-2026-05-14-grok-build-coding-agent-launch",
+  "title": "Grok Build: Another Coding AI for Musk's Empire",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Elon Musk's xAI just dropped \"Grok Build,\" a new coding agent. Another player in the crowded dev AI space, but with xAI's unique spin. We break down what it is and why it matters for your workflow. Tap the link in bio for the waitlist.",
+  "hashtags": [
+    "GrokBuild",
+    "xAI",
+    "ElonMusk",
+    "CodingAI",
+    "AIdeveloper",
+    "TechNews",
+    "LLM",
+    "AIcoding",
+    "FutureOfCode",
+    "AITools"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "xAI'S NEW PLAY",
+      "headline": "Grok Build wants to write your code. Do you *really* want it to?",
+      "italicWord": "really",
+      "sub": "Elon Musk just launched a coding agent to compete with GitHub Copilot."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "xAI's New Coding Agent",
+      "body": "Grok Build is xAI's latest offering, designed to assist developers with coding tasks. It aims to integrate Grok's conversational capabilities directly into the development workflow, offering code generation, debugging, and explanation."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE PITCH",
+      "title": "What Grok Build *Promises*",
+      "italicWord": "Promises",
+      "bullets": [
+        "Accelerated code generation for common functions.",
+        "Context-aware debugging suggestions.",
+        "Natural language explanations of complex code blocks."
+      ],
+      "footer": "All powered by Grok's real-time information access."
+    },
+    {
+      "type": "compare",
+      "index": 4,
+      "total": 7,
+      "title": "Grok Build vs. The *Incumbents*",
+      "italicWord": "Incumbents",
+      "left": {
+        "label": "Copilot/Cursor",
+        "items": [
+          "Deep IDE integration",
+          "Vast code dataset training",
+          "Established user base"
+        ]
+      },
+      "right": {
+        "label": "Grok Build",
+        "items": [
+          "Grok's real-time data edge",
+          "Musk's brand appeal",
+          "Potentially more 'rebellious' code?"
+        ]
+      }
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who *Actually* Needs This?",
+      "italicWord": "Actually",
+      "audiences": [
+        {
+          "pill": "Early Adopters",
+          "body": "Developers keen to experiment with new AI tools and integrate Grok's distinct personality into their coding."
+        },
+        {
+          "pill": "xAI Enthusiasts",
+          "body": "Those already invested in the xAI ecosystem or curious about Musk's vision for developer tooling."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "BEYOND CODE",
+      "title": "xAI's *Bigger* Picture",
+      "italicWord": "Bigger",
+      "stats": [
+        {
+          "value": "2023",
+          "label": "xAI founded"
+        },
+        {
+          "value": "$6B",
+          "label": "Recent funding round"
+        },
+        {
+          "value": "1.0",
+          "label": "Grok's current version"
+        }
+      ],
+      "footer": "Grok Build expands xAI beyond general chat into specialized, revenue-generating applications."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to try Grok Build?",
+      "italicWord": "Build",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "See how xAI's coding agent works in your development workflow."
+    }
+  ]
+}

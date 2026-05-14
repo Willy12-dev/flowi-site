@@ -670,11 +670,13 @@ async function main() {
     return;
   }
 
-  // Gemini free tier is ~10-15 RPM. Process in chunks of 3 with a 4s gap
-  // between chunks to stay comfortably under the limit. Claude API doesn't
-  // need this but it's harmless (just slightly slower).
-  const CONCURRENCY = provider === "gemini" ? 3 : 5;
-  const BATCH_GAP_MS = provider === "gemini" ? 4000 : 0;
+  // Gemini free tier is 15 RPM but Google's enforcement is bursty (3 in a
+  // tight window can still trip 429). Use fully serial calls with a 4.5s
+  // gap = 13.3 calls/min, comfortably under the ceiling. 10 items = ~45s
+  // total, fine for GH Actions' 10-min timeout. Claude (paid) has no
+  // comparable ceiling so we batch 5-wide there.
+  const CONCURRENCY = provider === "gemini" ? 1 : 5;
+  const BATCH_GAP_MS = provider === "gemini" ? 4500 : 0;
 
   console.log(
     `\nDrafting ${top.length} carousel specs via ${provider} (${model}) — concurrency ${CONCURRENCY}, gap ${BATCH_GAP_MS}ms\n`

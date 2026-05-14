@@ -1,0 +1,109 @@
+{
+  "id": "news-2026-05-14-elon-grok-ai-commitment",
+  "title": "Elon's AI Gambit: Is Grok a Distraction?",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Elon Musk's AI plans, especially Grok, are under the microscope. Is his commitment to xAI wavering, or is there a bigger strategy unfolding? We cut through the noise, detailing the key indicators of a potential shift and what it means for Grok's future. Read the full report via the link in our bio.",
+  "hashtags": [
+    "ElonMusk",
+    "xAI",
+    "GrokAI",
+    "AIStrategy",
+    "TechNews",
+    "ArtificialIntelligence",
+    "FlowiAI",
+    "FutureofAI",
+    "AIIndustry",
+    "MuskVision"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MUSK'S AI GAMBIT",
+      "headline": "Is Elon *Giving Up* on AI?",
+      "italicWord": "Giving Up",
+      "sub": "The signals suggesting a strategic pivot for Grok and xAI."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Shifting Narrative",
+      "body": "Initially, xAI was pitched as a direct rival to OpenAI. Recent moves, however, show Musk's attention fragmenting. The initial aggressive stance feels diluted by other ventures, raising questions about dedicated resources and long-term focus."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "COMPETING PRIORITIES",
+      "title": "Where Does Grok *Stand*?",
+      "italicWord": "Stand",
+      "bullets": [
+        "Musk's time is divided across Tesla, SpaceX, Neuralink, and X.",
+        "Grok's development appears slower than rivals, despite early hype.",
+        "Key talent retention challenges within xAI."
+      ],
+      "footer": "A leader's focus dictates a company's trajectory."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "MARKET PERCEPTION",
+      "preStat": "Industry analysts estimate a",
+      "stat": "35%",
+      "postStat": "drop in confidence regarding xAI's ability to meaningfully challenge market leaders within the next 18 months.",
+      "body": "This sentiment reflects concerns over Grok's unique value proposition and the execution speed required to capture significant market share."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Grok vs. *The Field*",
+      "italicWord": "The Field",
+      "left": {
+        "label": "Early Grok Promise",
+        "items": [
+          "Humor & Sarcasm",
+          "Real-time X data access",
+          "Open-source potential"
+        ]
+      },
+      "right": {
+        "label": "Current Reality Check",
+        "items": [
+          "Limited unique use cases",
+          "X data integration not exclusive",
+          "Open-sourcing still vague"
+        ]
+      }
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "02",
+      "title": "The Strategic Pivot",
+      "body": "Musk's broader AI strategy seems to be less about developing a single, dominant LLM and more about integrating AI components across his empire. Grok might become a feature, not a standalone product, serving X or Tesla's internal needs."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to track every move in the AI race?",
+      "italicWord": "AI race",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Get the full analysis on Elon's AI strategy and Grok's future. Link in bio."
+    }
+  ]
+}

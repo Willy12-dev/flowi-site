@@ -1,0 +1,94 @@
+{
+  "id": "news-2026-05-14-musk-altman-jackass-trophy",
+  "title": "The Jackass Trophy: Inside Musk v. Altman",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "A 'jackass trophy' in a high-stakes AI courtroom. Sam Altman's team brought a literal award inscribed with a provocative message, setting a bizarre tone for the Musk v. Altman trial.\n\nHere's what happened.\n\nTap the link in bio and BUILD for the field guide.",
+  "hashtags": [
+    "ElonMusk",
+    "SamAltman",
+    "OpenAI",
+    "MuskVAltman",
+    "AILawsuit",
+    "AICommunity",
+    "CourtroomDrama",
+    "TechNews",
+    "AIBuilder",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MUSK V. ALTMAN",
+      "headline": "The trophy nobody saw coming in the OpenAI courtroom.",
+      "italicWord": "jackass",
+      "sub": "A peek at the drama behind the most public AI feud."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Unveiling",
+      "body": "Before jurors entered the Musk v. Altman courtroom, Sam Altman's team presented an unexpected item: a small trophy. It was passed up, initially appearing like a child's sports award."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "OPENAI'S MESSAGE",
+      "term": "Jackass Trophy",
+      "partOfSpeech": "noun.",
+      "definition": "A commemorative award, reportedly purchased by OpenAI employees, bearing the inscription: 'Never stop being a jackass.'",
+      "example": "The trophy was read aloud to the press, setting a defiant tone for the proceedings."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "COURTROOM DRAMA",
+      "title": "Altman's Calculated Move",
+      "italicWord": "Defiance",
+      "bullets": [
+        "A direct jab at Elon Musk's public persona and ongoing legal challenge.",
+        "Framing the legal battle as a clash of personalities, not just corporate dispute.",
+        "Signaling OpenAI's confidence and willingness to engage provocatively."
+      ],
+      "footer": "The trophy was a calculated psychological play."
+    },
+    {
+      "type": "numbered",
+      "index": 5,
+      "total": 7,
+      "number": "04",
+      "title": "Musk v. Altman",
+      "body": "The trophy incident underscores the high-stakes legal battle between Elon Musk and Sam Altman. Musk's suit alleges OpenAI deviated from its original non-profit, open-source mission."
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "05",
+      "title": "Setting the Tone",
+      "body": "Judge Yvonne Gonzalez Rogers had the inscription read aloud for the press. This public display ensured the trophy's message resonated beyond the courtroom, impacting public perception of the trial."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "This is just one skirmish in the larger AI battle. Stay ahead.",
+      "italicWord": "Stay ahead.",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Tap the link in bio to get access."
+    }
+  ]
+}

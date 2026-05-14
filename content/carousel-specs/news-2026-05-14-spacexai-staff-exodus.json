@@ -1,0 +1,106 @@
+{
+  "id": "news-2026-05-14-spacexai-staff-exodus",
+  "title": "Why SpaceXAI's Talent Exodus Matters",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Elon Musk's SpaceXAI is bleeding talent, with over 50 employees reportedly gone since February. This isn't just churn; it’s a symptom of deeper issues.\n\nLearn why key staff are walking away and what it means for the broader AI talent market.\n\nTap the link in bio to BUILD for the field guide.",
+  "hashtags": [
+    "SpaceXAI",
+    "ElonMusk",
+    "AITalent",
+    "TechNews",
+    "AIIndustry",
+    "StaffRetention",
+    "TechExodus",
+    "Burnout",
+    "AILeadership",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "SpaceXAI's Struggle",
+      "headline": "50+ Staff Left Since February. What's *Really* Happening?",
+      "italicWord": "Really",
+      "sub": "Elon Musk's AI venture faces a talent crisis."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Exodus: 50+ Gone",
+      "body": "Since February, over 50 employees have departed SpaceXAI, the merged AI arm of Elon Musk's empire. This isn't just attrition; it's a significant brain drain."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "Behind the Exits",
+      "title": "Four Reasons Staff *Walked*",
+      "italicWord": "Walked",
+      "bullets": [
+        "Burnout from intense project deadlines.",
+        "Leadership changes post-merger creating friction.",
+        "Aggressive poaching by rival AI firms.",
+        "Liquidity events reducing long-term incentives."
+      ],
+      "footer": "TechCrunch AI reports a confluence of factors."
+    },
+    {
+      "type": "definition",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "AI Startup Lexicon",
+      "term": "Liquidity Event",
+      "partOfSpeech": "noun.",
+      "definition": "When shares or ownership stakes become convertible to cash (e.g., IPO, acquisition, secondary sale). Often reduces incentive to stay if wealth is realized.",
+      "example": "Early SpaceXAI employees saw a liquidity event, then left."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Should *Care*?",
+      "italicWord": "Care",
+      "audiences": [
+        {
+          "pill": "AI Founders",
+          "body": "Retention issues at a high-profile firm highlight the fragility of post-merger talent. Strong culture matters more than ever."
+        },
+        {
+          "pill": "AI Engineers",
+          "body": "This signals potential red flags about work environment and long-term career growth in certain fast-moving ventures."
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "The Broader Picture",
+      "preStat": "High-growth AI firms average",
+      "stat": "18%",
+      "postStat": "annual turnover. SpaceXAI's rate is more than double that.",
+      "body": "While AI talent is fluid, 50+ departures in three months suggests systemic issues beyond typical industry churn."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Don't just watch AI news *unfold*.",
+      "italicWord": "unfold",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the insights to build your own AI edge."
+    }
+  ]
+}
