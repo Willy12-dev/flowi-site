@@ -35,8 +35,26 @@ const ROOT = path.resolve(__dirname, "..");
 
 /* ─── CONFIG ──────────────────────────────────────────────────────── */
 
+/**
+ * Provider switch: "gemini" (free tier, default if GEMINI_API_KEY set) or
+ * "claude" (paid). Override via NEWS_ENGINE_PROVIDER or --provider flag.
+ * Gemini 2.5 Flash has a free tier of 250 RPD which comfortably covers
+ * our 10 carousels/day.
+ */
+function pickDefaultProvider() {
+  if (process.env.NEWS_ENGINE_PROVIDER) return process.env.NEWS_ENGINE_PROVIDER;
+  if (process.env.GEMINI_API_KEY) return "gemini";
+  if (process.env.ANTHROPIC_API_KEY) return "claude";
+  return "gemini"; // doesn't matter — script will error on missing key
+}
+
 const ANTHROPIC_MODEL =
-  process.env.NEWS_ENGINE_MODEL || "claude-sonnet-4-5-20250929";
+  process.env.NEWS_ENGINE_CLAUDE_MODEL ||
+  process.env.NEWS_ENGINE_MODEL ||
+  "claude-sonnet-4-5-20250929";
+
+const GEMINI_MODEL =
+  process.env.NEWS_ENGINE_GEMINI_MODEL || "gemini-2.5-flash";
 
 const DEFAULT_MAX_DRAFTS = 10;
 const FRESHNESS_HOURS = 36;
@@ -78,11 +96,12 @@ const FEEDS = [
 
 function parseArgs() {
   const argv = process.argv.slice(2);
-  const out = { dry: false, count: DEFAULT_MAX_DRAFTS };
+  const out = { dry: false, count: DEFAULT_MAX_DRAFTS, provider: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry") out.dry = true;
     else if (a === "--count") out.count = parseInt(argv[++i], 10);
+    else if (a === "--provider") out.provider = argv[++i];
   }
   return out;
 }
@@ -318,6 +337,29 @@ Suggested CTA (from courses registry — use these exact values for the cta obje
 Now write the complete CarouselSpec for this item as raw JSON. First character must be \`{\`.`;
 }
 
+function extractSpecJson(text) {
+  // Some models pad with a leading newline / markdown fence / explanation.
+  // Find the first { and last }.
+  const first = text.indexOf("{");
+  const last = text.lastIndexOf("}");
+  if (first < 0 || last < 0) {
+    throw new Error(`No JSON object in response: ${text.slice(0, 300)}`);
+  }
+  const json = text.slice(first, last + 1);
+  let spec;
+  try {
+    spec = JSON.parse(json);
+  } catch (e) {
+    throw new Error(`Invalid JSON: ${e.message} — text: ${json.slice(0, 300)}`);
+  }
+  // Sanity-fix: ensure slide indices + total are consistent
+  if (Array.isArray(spec.slides)) {
+    const total = spec.slides.length;
+    spec.slides = spec.slides.map((s, i) => ({ ...s, index: i + 1, total }));
+  }
+  return spec;
+}
+
 async function callClaude(item, courses) {
   const ctaSuggestion = pickCtaForTopic(courses, item.topic_hint, item.vertical);
   const userPrompt = buildUserPrompt(item, ctaSuggestion);
@@ -343,29 +385,69 @@ async function callClaude(item, courses) {
   }
   const data = await r.json();
   const text = data.content?.[0]?.text;
-  if (!text) throw new Error(`No text in response: ${JSON.stringify(data).slice(0, 300)}`);
+  if (!text) throw new Error(`No text in Anthropic response: ${JSON.stringify(data).slice(0, 300)}`);
+  return extractSpecJson(text);
+}
 
-  // Some models pad with a leading newline / explanation. Find the first { and last }.
-  const first = text.indexOf("{");
-  const last = text.lastIndexOf("}");
-  if (first < 0 || last < 0) {
-    throw new Error(`No JSON object in response: ${text.slice(0, 300)}`);
-  }
-  const json = text.slice(first, last + 1);
-  let spec;
-  try {
-    spec = JSON.parse(json);
-  } catch (e) {
-    throw new Error(`Invalid JSON: ${e.message} — text: ${json.slice(0, 300)}`);
-  }
+async function callGemini(item, courses) {
+  const ctaSuggestion = pickCtaForTopic(courses, item.topic_hint, item.vertical);
+  const userPrompt = buildUserPrompt(item, ctaSuggestion);
 
-  // Sanity-fix: ensure indices and total are consistent
-  if (Array.isArray(spec.slides)) {
-    const total = spec.slides.length;
-    spec.slides = spec.slides.map((s, i) => ({ ...s, index: i + 1, total }));
-  }
+  // Gemini supports a JSON response mime type which guarantees valid JSON.
+  // System instructions go in `systemInstruction`, user content in `contents`.
+  const r = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+        contents: [{ role: "user", parts: [{ text: userPrompt }] }],
+        generationConfig: {
+          responseMimeType: "application/json",
+          maxOutputTokens: 8192,
+          temperature: 0.7,
+        },
+      }),
+    }
+  );
 
-  return spec;
+  if (!r.ok) {
+    const txt = await r.text();
+    throw new Error(`Gemini API ${r.status}: ${txt.slice(0, 300)}`);
+  }
+  const data = await r.json();
+
+  const candidate = data.candidates?.[0];
+  if (!candidate) {
+    throw new Error(`No candidate in Gemini response: ${JSON.stringify(data).slice(0, 300)}`);
+  }
+  // Surface safety blocks etc.
+  if (candidate.finishReason && candidate.finishReason !== "STOP") {
+    throw new Error(`Gemini finishReason=${candidate.finishReason}: ${JSON.stringify(data).slice(0, 300)}`);
+  }
+  const text = candidate.content?.parts?.[0]?.text;
+  if (!text) throw new Error(`No text in Gemini response: ${JSON.stringify(data).slice(0, 300)}`);
+  return extractSpecJson(text);
+}
+
+/** Provider dispatcher. */
+async function callAgent(provider, item, courses) {
+  switch (provider) {
+    case "gemini":
+      if (!process.env.GEMINI_API_KEY) {
+        throw new Error("GEMINI_API_KEY env var is required for --provider gemini");
+      }
+      return callGemini(item, courses);
+    case "claude":
+    case "anthropic":
+      if (!process.env.ANTHROPIC_API_KEY) {
+        throw new Error("ANTHROPIC_API_KEY env var is required for --provider claude");
+      }
+      return callClaude(item, courses);
+    default:
+      throw new Error(`Unknown provider: ${provider} (use "gemini" or "claude")`);
+  }
 }
 
 /* ─── PERSISTENCE ────────────────────────────────────────────────── */
@@ -455,11 +537,21 @@ spec.json directly — every word ships from there.
 
 async function main() {
   const args = parseArgs();
-  console.log(`Flowi News Engine · ${new Date().toISOString()}`);
-  console.log(`Mode: ${args.dry ? "DRY" : "WRITE"} · max drafts: ${args.count}\n`);
+  const provider = args.provider || pickDefaultProvider();
+  const model = provider === "gemini" ? GEMINI_MODEL : ANTHROPIC_MODEL;
 
-  if (!args.dry && !process.env.ANTHROPIC_API_KEY) {
-    throw new Error("ANTHROPIC_API_KEY env var is required (set as GitHub secret)");
+  console.log(`Flowi News Engine · ${new Date().toISOString()}`);
+  console.log(
+    `Mode: ${args.dry ? "DRY" : "WRITE"} · provider: ${provider} (${model}) · max drafts: ${args.count}\n`
+  );
+
+  if (!args.dry) {
+    if (provider === "gemini" && !process.env.GEMINI_API_KEY) {
+      throw new Error("GEMINI_API_KEY env var is required (set as GitHub secret)");
+    }
+    if ((provider === "claude" || provider === "anthropic") && !process.env.ANTHROPIC_API_KEY) {
+      throw new Error("ANTHROPIC_API_KEY env var is required (set as GitHub secret)");
+    }
   }
 
   const [state, courses] = await Promise.all([loadState(), loadCourses()]);
@@ -506,9 +598,11 @@ async function main() {
     return;
   }
 
-  console.log(`\nDrafting ${top.length} carousel specs in parallel via ${ANTHROPIC_MODEL}...\n`);
+  console.log(`\nDrafting ${top.length} carousel specs via ${provider} (${model})...\n`);
 
-  const results = await Promise.allSettled(top.map((item) => callClaude(item, courses)));
+  const results = await Promise.allSettled(
+    top.map((item) => callAgent(provider, item, courses))
+  );
 
   const drafted = [];
   for (let i = 0; i < results.length; i++) {
@@ -530,6 +624,8 @@ async function main() {
   state.seen = [...state.seen, ...top.map((i) => i.link)].slice(-SEEN_HISTORY_CAP);
   state.last_run = new Date().toISOString();
   state.last_run_count = drafted.length;
+  state.last_run_provider = provider;
+  state.last_run_model = model;
   state.last_run_items = drafted.map((d) => ({
     id: d.id,
     title: d.title,

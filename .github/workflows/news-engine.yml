@@ -38,11 +38,21 @@ jobs:
 
       - name: Run news engine
         env:
+          # Provider keys — agent uses Gemini first if GEMINI_API_KEY is set
+          # (free tier on Gemini 2.5 Flash: 250 RPD, plenty for 10/day).
+          # Falls back to Anthropic if you set NEWS_ENGINE_PROVIDER=claude
+          # in repo Variables.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Provider override (optional repo Variable: "gemini" or "claude")
+          NEWS_ENGINE_PROVIDER: ${{ vars.NEWS_ENGINE_PROVIDER }}
+          # Per-provider model overrides (optional repo Variables)
+          NEWS_ENGINE_GEMINI_MODEL: ${{ vars.NEWS_ENGINE_GEMINI_MODEL }}
+          NEWS_ENGINE_CLAUDE_MODEL: ${{ vars.NEWS_ENGINE_CLAUDE_MODEL }}
+          # Email digest (all optional)
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           OPS_EMAIL_TO: ${{ secrets.OPS_EMAIL_TO }}
           OPS_EMAIL_FROM: ${{ secrets.OPS_EMAIL_FROM }}
-          NEWS_ENGINE_MODEL: ${{ vars.NEWS_ENGINE_MODEL }}
         run: node scripts/news-engine.mjs
 
       - name: Commit drafted specs

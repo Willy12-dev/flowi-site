@@ -15,6 +15,8 @@ interface NewsEngineState {
   seen: string[];
   last_run: string | null;
   last_run_count: number;
+  last_run_provider?: string;
+  last_run_model?: string;
   last_run_items: Array<{
     id: string;
     title: string;
@@ -136,9 +138,10 @@ export default async function NewsEngineAdmin() {
               sub="carousels drafted"
             />
             <Stat
-              label="URLs deduped"
-              value={state?.seen.length ?? 0}
-              sub="seen across all runs"
+              label="Provider"
+              value={state?.last_run_provider ?? "—"}
+              sub={state?.last_run_model ?? "set via GEMINI_API_KEY (free) or ANTHROPIC_API_KEY"}
+              accent={state?.last_run_provider === "gemini"}
             />
           </div>
         </div>
@@ -226,10 +229,18 @@ node scripts/news-engine.mjs --count 3
           </pre>
 
           <p className="text-[0.95rem] text-[var(--ink-soft)] mt-6 measure">
-            The workflow needs <code className="tabular">ANTHROPIC_API_KEY</code>{" "}
-            (required) and <code className="tabular">RESEND_API_KEY</code> +{" "}
-            <code className="tabular">OPS_EMAIL_TO</code> (optional, for the
-            digest email) set as repo secrets at{" "}
+            The workflow takes either{" "}
+            <code className="tabular">GEMINI_API_KEY</code> (free — Gemini 2.5
+            Flash, 250 req/day on the free tier) or{" "}
+            <code className="tabular">ANTHROPIC_API_KEY</code> (paid Claude).
+            If both are set, Gemini wins by default. Override with the
+            optional repo Variable{" "}
+            <code className="tabular">NEWS_ENGINE_PROVIDER</code> set to{" "}
+            <code className="tabular">claude</code> or{" "}
+            <code className="tabular">gemini</code>. Resend secrets
+            (<code className="tabular">RESEND_API_KEY</code>,{" "}
+            <code className="tabular">OPS_EMAIL_TO</code>) optional, drive the
+            daily digest. Manage at{" "}
             <Link
               href="https://github.com/Willy12-dev/flowi-site/settings/secrets/actions"
               className="link-ink"

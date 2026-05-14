@@ -227,14 +227,33 @@ Cohere, Stability AI, xAI, HF Daily Papers, MIT Tech Review AI,
 VentureBeat AI, The Verge AI, TechCrunch AI, Ars Technica, HN AI tag,
 Product Hunt AI. ~18 sources, all free RSS.
 
+### Providers — Gemini (free) or Claude (paid)
+
+The agent dispatches to whichever provider has a key configured. Default
+preference: **Gemini** (it's free up to 250 req/day on the 2.5 Flash tier,
+which comfortably covers our 10 carousels/day).
+
+| Provider | Model default | Cost | API key source |
+|---|---|---|---|
+| **Gemini** (default if `GEMINI_API_KEY` set) | `gemini-2.5-flash` | **Free** (250 RPD on the free tier) | https://aistudio.google.com/apikey |
+| **Claude** (fallback) | `claude-sonnet-4-5-20250929` | ~$0.03/spec × 10/day ≈ $9/mo | https://console.anthropic.com/settings/keys |
+
 ### Required secrets (GitHub repo → Settings → Secrets → Actions)
 
-- `ANTHROPIC_API_KEY` — required. Claude API access for the spec writer.
-- `RESEND_API_KEY` + `OPS_EMAIL_TO` + `OPS_EMAIL_FROM` — optional, for
-  the daily digest email.
+Set **at least one** of these:
 
-Optional repo *variable* (not secret): `NEWS_ENGINE_MODEL` — Claude model
-identifier. Defaults to `claude-sonnet-4-5-20250929`.
+- `GEMINI_API_KEY` — Google AI Studio, free
+- `ANTHROPIC_API_KEY` — Anthropic, paid
+
+Optional for the email digest:
+
+- `RESEND_API_KEY` + `OPS_EMAIL_TO` + `OPS_EMAIL_FROM`
+
+Optional repo *Variables* (not secrets — Settings → Variables → Actions):
+
+- `NEWS_ENGINE_PROVIDER` — force `gemini` or `claude` even if the other key is also set
+- `NEWS_ENGINE_GEMINI_MODEL` — override Gemini model id
+- `NEWS_ENGINE_CLAUDE_MODEL` — override Claude model id
 
 ### Manual usage
 
@@ -242,8 +261,14 @@ identifier. Defaults to `claude-sonnet-4-5-20250929`.
 # Dry run — show what would be drafted, no API call
 node scripts/news-engine.mjs --dry
 
-# Draft 3 carousels right now (needs ANTHROPIC_API_KEY)
+# Draft 3 carousels using whichever provider has a key set
 node scripts/news-engine.mjs --count 3
+
+# Force Gemini (free)
+node scripts/news-engine.mjs --count 3 --provider gemini
+
+# Force Claude (paid)
+node scripts/news-engine.mjs --count 3 --provider claude
 
 # From GitHub UI: Actions → "News Engine" → Run workflow
 ```
