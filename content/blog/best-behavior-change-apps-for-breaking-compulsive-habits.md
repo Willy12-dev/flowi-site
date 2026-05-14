@@ -16,7 +16,7 @@ keywords:
   - "addiction recovery app"
   - "self-control app"
 author: "Flowi Editorial"
-image: "/images/blog/best-behavior-change-apps-for-breaking-compulsive-habits.png"
+image: "/images/blog/best-behavior-change-apps-for-breaking-compulsive-habits.jpg"
 ---
 
 The behavior-change app market is the largest unregulated experiment on human willpower in history. Hundreds of apps, mostly with similar features, mostly with no measurable evidence of effectiveness, mostly built around the same flawed engagement loop. This piece is the honest review — which apps in the category use real behavioral science, which are essentially shame engines, and which to pick based on what you're actually trying to change.

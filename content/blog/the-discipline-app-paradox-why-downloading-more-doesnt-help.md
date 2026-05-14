@@ -16,7 +16,7 @@ keywords:
   - "addiction recovery app"
   - "behavior change app"
 author: "Flowi Editorial"
-image: "/images/blog/the-discipline-app-paradox-why-downloading-more-doesnt-help.png"
+image: "/images/blog/the-discipline-app-paradox-why-downloading-more-doesnt-help.jpg"
 ---
 
 There's a counterintuitive pattern in the self-improvement app market. People struggling with discipline don't download *one* discipline app. They download four. Or six. They have a focus app, a habit tracker, a porn blocker, a screen time controller, and a journaling app. They check all of them throughout the day. Their outcomes are *worse* than the people with one app.

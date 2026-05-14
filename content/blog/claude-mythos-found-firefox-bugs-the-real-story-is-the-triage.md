@@ -15,7 +15,7 @@ keywords:
   - "automated vulnerability discovery"
   - "ai code review production"
 author: "Flowi Editorial"
-image: "/images/blog/claude-mythos-found-firefox-bugs-the-real-story-is-the-triage.png"
+image: "/images/blog/claude-mythos-found-firefox-bugs-the-real-story-is-the-triage.jpg"
 ---
 
 A security team that used to find one critical vulnerability a week now finds twelve in a morning. That's the shift Mozilla just published — quietly, in a [hacks.mozilla.org post](https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/) — about what happened when they pointed Anthropic's Claude Mythos preview at the Firefox source tree.

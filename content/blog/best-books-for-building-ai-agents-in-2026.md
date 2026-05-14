@@ -16,7 +16,7 @@ keywords:
   - "agent architecture book"
   - "claude agent book"
 author: "Flowi Editorial"
-image: "/images/blog/best-books-for-building-ai-agents-in-2026.png"
+image: "/images/blog/best-books-for-building-ai-agents-in-2026.jpg"
 ---
 
 The AI agent literature in 2026 is in an awkward place. The frontier moves quarterly. Most published books are 18-24 months out of date by the time they hit Kindle. The good content lives in scattered blog posts, conference talks, and a small set of recent books that have aged surprisingly well.

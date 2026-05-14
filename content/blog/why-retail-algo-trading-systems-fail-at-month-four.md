@@ -16,7 +16,7 @@ keywords:
   - "ai trading bot"
   - "ict trading strategy"
 author: "Flowi Editorial"
-image: "/images/blog/why-retail-algo-trading-systems-fail-at-month-four.png"
+image: "/images/blog/why-retail-algo-trading-systems-fail-at-month-four.jpg"
 ---
 
 There's a pattern in retail algorithmic trading that's so consistent it's almost a calendar. The system goes live in week one. Profitable through week six. Slightly off-pace through weeks ten and twelve. By week sixteen — month four — drawdown has eaten the cushion, the trader has either turned the bot off or doubled the position size, and the journal entry reads "I'll fix it next month." Most don't. The bot sits dormant, the strategy gets blamed, and the lesson goes unlearned.

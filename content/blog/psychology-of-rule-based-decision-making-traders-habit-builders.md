@@ -16,7 +16,7 @@ keywords:
   - "behavioral discipline"
   - "decision framework"
 author: "Flowi Editorial"
-image: "/images/blog/psychology-of-rule-based-decision-making-traders-habit-builders.png"
+image: "/images/blog/psychology-of-rule-based-decision-making-traders-habit-builders.jpg"
 ---
 
 There's a pattern that shows up in two communities that almost never talk to each other. Among professional traders, it's the discipline-or-die rule that separates the ones who survive month four from the ones who blow up. Among behavior-change practitioners, it's the protocol-based intervention that survives the third-month relapse. The pattern is the same. The underlying psychology is the same. The two communities have built their own vocabulary around it without noticing they're describing the same mechanism.

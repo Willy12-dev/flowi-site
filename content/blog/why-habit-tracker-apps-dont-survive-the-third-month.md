@@ -16,7 +16,7 @@ keywords:
   - "habit formation"
   - "addiction recovery app"
 author: "Flowi Editorial"
-image: "/images/blog/why-habit-tracker-apps-dont-survive-the-third-month.png"
+image: "/images/blog/why-habit-tracker-apps-dont-survive-the-third-month.jpg"
 ---
 
 A habit tracker app loses about 70% of its active users between week one and week ten. The number comes from internal cohort data published by a couple of the larger players in the space — and the curve is almost identical across every flavor: streak-based apps, gamified apps, AI coach apps, accountability-partner apps. The user shows up, gets excited, logs eleven days in a row, misses one, logs seven more, misses three, and then doesn't open the app again.
