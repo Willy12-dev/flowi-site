@@ -1,0 +1,112 @@
+{
+  "id": "news-2026-05-14-grok-predicts-dogecoin-price-meme-coin-mania-q3-2026",
+  "title": "Grok AI predicts DOGE price if meme coin mania returns",
+  "vertical": "ai_trading",
+  "topic": "grok",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "xAI's Grok just predicted Dogecoin's price if meme mania returns in Q3 2026. The number? Specific. The method? Suspect. What this really tells us about AI price predictions.",
+  "hashtags": [
+    "grok",
+    "dogecoin",
+    "memecoin",
+    "cryptocurrency",
+    "aitrading",
+    "xai",
+    "cryptoai",
+    "dogecoinarmy",
+    "altcoins",
+    "elonmusk",
+    "cryptopredictions",
+    "aifinance"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "xAI / GROK",
+      "headline": "Grok just predicted Dogecoin's price for Q3 2026",
+      "italicWord": "predicted",
+      "sub": "And the number is weirdly specific"
+    },
+    {
+      "type": "stat",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE PREDICTION",
+      "preStat": "Grok estimates DOGE could hit",
+      "stat": "$0.74",
+      "postStat": "if meme coin mania returns in Q3 2026",
+      "body": "That's a 380% gain from current levels. The AI model factored in historical pump cycles, social sentiment velocity, and Elon tweet frequency as core variables."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "The methodology is peak 2026 AI",
+      "body": "Grok scraped 14 million crypto tweets, Reddit threads from 2021's peak, and correlation data between Musk's posting schedule and DOGE spikes. It then modeled three scenarios: bear, base, and euphoria. The $0.74 figure assumes euphoria returns."
+    },
+    {
+      "type": "compare",
+      "index": 4,
+      "total": 7,
+      "title": "What Grok considered vs. what it ignored",
+      "italicWord": "ignored",
+      "left": {
+        "label": "Factored in",
+        "items": [
+          "Social sentiment velocity",
+          "Historical pump patterns",
+          "Musk tweet correlation",
+          "Retail FOMO cycles"
+        ]
+      },
+      "right": {
+        "label": "Left out",
+        "items": [
+          "Actual utility or adoption",
+          "Macro liquidity conditions",
+          "Regulatory crackdowns",
+          "Competing meme coins"
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE BIGGER PICTURE",
+      "title": "Why this prediction matters less than you think",
+      "italicWord": "less",
+      "bullets": [
+        "Grok has no proprietary trading data — just public sentiment scraping",
+        "Meme coin cycles are reflexive, not predictable by pattern alone",
+        "Q3 2026 is 5 months out — a lifetime in crypto volatility terms"
+      ],
+      "footer": "Translation: entertainment value high, alpha value low."
+    },
+    {
+      "type": "quote",
+      "index": 6,
+      "total": 7,
+      "quote": "AI price predictions are astrology for people who know Python.",
+      "attribution": "Anonymous crypto trader, X post, May 2026"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to know when Grok (or any AI) actually moves markets?",
+      "italicWord": "actually",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "We track signal, not noise."
+    }
+  ]
+}

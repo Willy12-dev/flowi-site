@@ -1,0 +1,116 @@
+{
+  "id": "news-2026-05-14-aeo-replaces-seo-brands-ai-discoverability",
+  "title": "AEO Is the New SEO: How Brands Get Found by AI",
+  "vertical": "ai_builder",
+  "topic": "perplexity",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "RESEARCH",
+    "promise": "for the waitlist"
+  },
+  "caption": "SEO is dead. AEO is how brands get discovered in the AI era. Trustpoint Xposure just became the first authority on optimizing for AI recommendations. Here's what changes for marketers in 2026.",
+  "hashtags": [
+    "AEO",
+    "AISearch",
+    "PerplexityAI",
+    "AIMarketing",
+    "SEOEvolution",
+    "AIDiscovery",
+    "BrandStrategy",
+    "MarketingAI",
+    "ContentOptimization",
+    "AITools",
+    "DigitalMarketing",
+    "AITrends"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "PERPLEXITY / MAY 2026",
+      "headline": "AEO just replaced SEO",
+      "italicWord": "replaced",
+      "sub": "How brands get found by AI now"
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE NEW DISCIPLINE",
+      "term": "AEO",
+      "partOfSpeech": "noun.",
+      "definition": "Answer Engine Optimization. The discipline of making your brand discoverable, trusted, and recommended by AI systems like Perplexity, ChatGPT, and Gemini.",
+      "example": "When someone asks Perplexity \"best project management tool for remote teams,\" AEO determines if your brand appears in that answer."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE SHIFT",
+      "preStat": "By mid-2026,",
+      "stat": "47%",
+      "postStat": "of product discovery happens in AI chat interfaces, not Google.",
+      "body": "Trustpoint Xposure became the first firm to formalize AEO methodology. Traditional SEO keywords don't matter when AI models synthesize answers from unstructured sources."
+    },
+    {
+      "type": "compare",
+      "index": 4,
+      "total": 7,
+      "title": "SEO vs. AEO",
+      "italicWord": "vs.",
+      "left": {
+        "label": "OLD (SEO)",
+        "items": [
+          "Optimize for Google crawlers",
+          "Target keyword rankings",
+          "Build backlinks",
+          "Win position 1 on SERPs"
+        ]
+      },
+      "right": {
+        "label": "NEW (AEO)",
+        "items": [
+          "Optimize for AI training data",
+          "Earn model trust signals",
+          "Structure for synthesis",
+          "Get cited in AI answers"
+        ]
+      }
+    },
+    {
+      "type": "numbered",
+      "index": 5,
+      "total": 7,
+      "number": "01",
+      "title": "What AEO Actually Requires",
+      "body": "Structured data that AI models can parse. Clear, authoritative content that gets cited. Brand presence across sources AI trusts. Zero fluff—models penalize SEO-gamed copy."
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "WHO NEEDS THIS NOW",
+      "title": "AEO matters most for",
+      "italicWord": "most",
+      "bullets": [
+        "B2B SaaS brands competing in AI search results",
+        "E-commerce products fighting for Perplexity recommendations",
+        "Service businesses wanting ChatGPT to surface them",
+        "Any brand watching Google traffic drop 30% year-over-year"
+      ],
+      "footer": "If AI doesn't know you exist, neither do your customers."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Master AEO before your competitors",
+      "italicWord": "before",
+      "ctaKeyword": "RESEARCH",
+      "ctaPromise": "for the waitlist",
+      "sub": "Get the frameworks that matter in 2026"
+    }
+  ]
+}

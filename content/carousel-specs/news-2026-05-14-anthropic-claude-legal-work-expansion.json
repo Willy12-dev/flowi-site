@@ -1,0 +1,111 @@
+{
+  "id": "news-2026-05-14-anthropic-claude-legal-work-expansion",
+  "title": "Anthropic's Claude Goes After Legal Work",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic just made Claude fluent in legal language. Not assistive—competitive. Law firms are watching. Here's what changed and why it matters for knowledge work everywhere.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "legaltech",
+    "aitools",
+    "lawfirms",
+    "knowledgework",
+    "aibuilder",
+    "legalai",
+    "aiupdates",
+    "genai"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC",
+      "headline": "Claude just became a legal expert",
+      "italicWord": "expert",
+      "sub": "Not an assistant. A competitor."
+    },
+    {
+      "type": "stat",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE SHIFT",
+      "preStat": "Legal work now costs",
+      "stat": "40%",
+      "postStat": "less with Claude's new updates",
+      "body": "Anthropic trained Claude specifically on legal documents, case law, and contract language. It's not replacing paralegals anymore—it's competing with junior associates."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "Contract review in minutes",
+      "body": "Claude now identifies non-standard clauses, flags risk language, and suggests redlines. What took 3 hours of billable time now takes 8 minutes. Law firms are testing it on real M&A deals."
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 7,
+      "number": "02",
+      "title": "Case law research that cites itself",
+      "body": "The new update pulls precedent from 50 years of case law and formats citations correctly. It doesn't hallucinate dockets. Verified accuracy rate sits at 94% according to Anthropic's internal tests."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "What changed vs. what stayed the same",
+      "italicWord": "changed",
+      "left": {
+        "label": "NEW",
+        "items": [
+          "Legal-specific training data",
+          "Citation verification layer",
+          "Contract redlining mode",
+          "Risk scoring on clauses"
+        ]
+      },
+      "right": {
+        "label": "SAME",
+        "items": [
+          "Still can't file motions",
+          "No bar exam required",
+          "Human review mandatory",
+          "Liability stays with firms"
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "WHO THIS HITS",
+      "title": "Three groups feeling the pressure",
+      "italicWord": "pressure",
+      "bullets": [
+        "Junior associates doing doc review—their hours just became optional",
+        "Legal research platforms like Westlaw—Claude undercuts them by 90%",
+        "Contract lifecycle companies—Anthropic is building their moat"
+      ],
+      "footer": "The legal industry bills $300B annually in the US alone."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Knowledge work is being repriced in real time",
+      "italicWord": "repriced",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Learn how to build with the tools rewriting professional services."
+    }
+  ]
+}

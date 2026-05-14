@@ -1,0 +1,126 @@
+{
+  "id": "news-2026-05-14-figma-ai-anthropic-partnership",
+  "title": "Figma's AI Tools Test Growth Story As Anthropic Joins The Race",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Figma just embedded Claude directly into its design canvas. Anthropic's first major design tool partnership could reshape how 4M+ designers prototype. Here's what changed.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "figma",
+    "aidesign",
+    "productdesign",
+    "uxdesign",
+    "designtools",
+    "aitools",
+    "designautomation",
+    "prototyping",
+    "builderai",
+    "aiworkflow"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC × FIGMA",
+      "headline": "Claude just moved into Figma's canvas",
+      "italicWord": "canvas",
+      "sub": "First major design partnership tests if AI can actually speed up creative work"
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The integration is deeper than plugins",
+      "body": "Claude now lives natively in Figma's editor. Designers can generate component variations, write microcopy, and refactor layouts without leaving the canvas. No API keys, no copy-paste between tabs."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "ADOPTION METRIC",
+      "preStat": "Figma has",
+      "stat": "4M+",
+      "postStat": "active designers",
+      "body": "If even 15% use Claude weekly, that's 600,000 design professionals relying on Anthropic's models. Largest creative vertical deal since Adobe's Firefly launch."
+    },
+    {
+      "type": "compare",
+      "index": 4,
+      "total": 7,
+      "title": "What Claude does versus what it skips",
+      "italicWord": "skips",
+      "left": {
+        "label": "HANDLES",
+        "items": [
+          "Component copy iteration",
+          "Layout grid suggestions",
+          "Accessibility audits",
+          "Design system compliance"
+        ]
+      },
+      "right": {
+        "label": "PUNTS TO HUMAN",
+        "items": [
+          "Brand voice decisions",
+          "Visual hierarchy calls",
+          "Final design approval",
+          "Client presentation logic"
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "WHY THIS MATTERS",
+      "title": "Anthropic's first creative tool bet",
+      "italicWord": "creative",
+      "bullets": [
+        "Tests whether designers trust AI with taste decisions, not just code",
+        "Figma growth has slowed 18% YoY — AI features might re-accelerate paid seats",
+        "Sets precedent: does Anthropic compete with Adobe or partner with challengers?"
+      ],
+      "footer": "Answer shapes next 12 months of design-AI deals"
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who wins from this partnership",
+      "italicWord": "wins",
+      "audiences": [
+        {
+          "pill": "SOLO DESIGNERS",
+          "body": "Ship client revisions faster without hiring a copywriter for every button label"
+        },
+        {
+          "pill": "DESIGN SYSTEMS TEAMS",
+          "body": "Enforce component patterns at scale — Claude flags violations before review"
+        },
+        {
+          "pill": "PRODUCT ORGS",
+          "body": "Compress prototype-to-dev handoff from 3 days to hours with AI-generated specs"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to build with Claude the way Figma does?",
+      "italicWord": "does",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Practical integration patterns from teams shipping AI features now"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "news-2026-05-14-claude-for-legal-launch",
+  "title": "Anthropic launches Claude for Legal — vertical-specific AI play",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic just launched Claude for Legal — a vertical play that matters more than you think. Why specialized models win. Why lawyers are the beachhead. What this means for every other vertical.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "legaltech",
+    "aiforlawyers",
+    "legalai",
+    "verticalai",
+    "aibuilders",
+    "genai",
+    "aitools",
+    "legaltechnology",
+    "artificialintelligence"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC",
+      "headline": "Why Claude just made lawyers the new beachhead",
+      "italicWord": "beachhead",
+      "sub": "Vertical-specific AI is the 2026 playbook"
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "What shipped",
+      "body": "Claude for Legal — a version of Claude trained and tuned specifically for legal workflows. Case research, contract review, brief drafting. Anthropic's first vertical-specific product."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "MARKET TIMING",
+      "preStat": "Legal AI market hit",
+      "stat": "$1.2B",
+      "postStat": "in 2025",
+      "body": "Law firms already spend six figures per associate on research tools. Claude for Legal slots into existing budgets with better output than human juniors on doc review."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHY LAWYERS FIRST",
+      "title": "Three reasons this vertical matters",
+      "italicWord": "matters",
+      "bullets": [
+        "High willingness to pay — law firms bill $400-$800 per hour",
+        "Clear ROI — shave 6 hours off a brief, bill the same, pocket the difference",
+        "Risk-tolerant early adopters — BigLaw innovation teams have budget and urgency"
+      ],
+      "footer": "Lawyers are the new developers"
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Horizontal vs vertical AI",
+      "italicWord": "vertical",
+      "left": {
+        "label": "GENERIC CLAUDE",
+        "items": [
+          "Good at everything",
+          "Requires prompt engineering",
+          "User figures out workflow"
+        ]
+      },
+      "right": {
+        "label": "CLAUDE FOR LEGAL",
+        "items": [
+          "Great at one thing",
+          "Pre-tuned for case law",
+          "Workflow built in"
+        ]
+      }
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who wins from this",
+      "italicWord": "wins",
+      "audiences": [
+        {
+          "pill": "LAW FIRMS",
+          "body": "Associates work faster. Partners bill the same. Margin expands by 20-30% on research-heavy cases."
+        },
+        {
+          "pill": "ANTHROPIC",
+          "body": "Vertical pricing unlocks enterprise budgets. Legal seats cost 3x consumer Claude. Moat widens."
+        },
+        {
+          "pill": "OTHER VERTICALS",
+          "body": "Blueprint for healthcare, finance, real estate. Expect Claude for Medicine by Q4 2026."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The vertical AI land grab just started",
+      "italicWord": "started",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "useflowi.com"
+    }
+  ]
+}

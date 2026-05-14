@@ -1,0 +1,126 @@
+{
+  "id": "news-2026-05-14-whatsapp-meta-ai-incognito-chat",
+  "title": "WhatsApp Meta AI Incognito Mode Launch",
+  "vertical": "ai_behavior",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Meta just launched incognito mode for WhatsApp AI chats — end-to-end encrypted, no memory, no training data. The catch? It's buried in settings. Here's what changed and why it matters.",
+  "hashtags": [
+    "whatsapp",
+    "metaai",
+    "privacy",
+    "encryption",
+    "aitools",
+    "artificialintelligence",
+    "chatbot",
+    "dataprivacy",
+    "techupdate",
+    "aiprivacy",
+    "meta",
+    "incognito"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "META AI UPDATE",
+      "headline": "WhatsApp AI now has an incognito mode",
+      "italicWord": "incognito",
+      "sub": "End-to-end encrypted chats that leave no trace"
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "What actually changed",
+      "body": "WhatsApp users can now toggle incognito mode for Meta AI conversations. When active, chats are end-to-end encrypted, Meta AI forgets everything after the session ends, and nothing feeds back into training data. It's a manual opt-in for every conversation."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE NUMBERS",
+      "preStat": "Over",
+      "stat": "2.8B",
+      "postStat": "WhatsApp users now have access",
+      "body": "Meta rolled this out globally across WhatsApp's entire user base. That's more privacy-conscious AI conversations than any other platform offers at scale."
+    },
+    {
+      "type": "compare",
+      "index": 4,
+      "total": 7,
+      "title": "Regular vs incognito mode",
+      "italicWord": "incognito",
+      "left": {
+        "label": "Regular Mode",
+        "items": [
+          "Chat history saved",
+          "Used for model training",
+          "Personalized responses",
+          "Persistent context"
+        ]
+      },
+      "right": {
+        "label": "Incognito Mode",
+        "items": [
+          "No chat history",
+          "Zero training data",
+          "Generic responses",
+          "Session-only memory"
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE CATCH",
+      "title": "What Meta didn't advertise",
+      "italicWord": "advertise",
+      "bullets": [
+        "Incognito mode isn't default — you manually toggle it per chat",
+        "Most users won't know it exists unless they dig into settings",
+        "Switching mid-conversation resets all context immediately"
+      ],
+      "footer": "Privacy by obscurity, not design."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who this actually matters for",
+      "italicWord": "matters",
+      "audiences": [
+        {
+          "pill": "Health queries",
+          "body": "Asking Meta AI about symptoms or sensitive medical questions without creating a permanent record"
+        },
+        {
+          "pill": "Financial advice",
+          "body": "Getting quick calculations or explainers on loans, taxes, or budgets that stay ephemeral"
+        },
+        {
+          "pill": "Relationship questions",
+          "body": "Venting or exploring tough personal decisions without Meta storing the context"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want the full breakdown on privacy-first AI tools?",
+      "italicWord": "privacy-first",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "We track the moves that matter"
+    }
+  ]
+}

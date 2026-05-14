@@ -1,7 +1,99 @@
 {
-  "seen": [],
-  "last_run": null,
-  "last_run_count": 0,
-  "last_run_items": [],
-  "total_drafted": 0
+  "seen": [
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxQemVIdGtMUjBxTjF3LXQ5eUlxRHFqSzF5YkF4ZkdkRUl6NXdoSXpLd2FTakZCT0N5YTFjZ3VyVnZCSUlPVDdQbnI0Z1F3V0YxOFQ5M2hfYnRmRWVXSTduRmRuTk5TcFU0cmxRWFBxaGpRQ1YzWTJ3RnpNLVJJdzJBc19IQnVyaUREWExXendWZ1RtaWVyc2YtV0U0Z2V4N3huVG1hSHlUM2VTNGkt?oc=5",
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRm83cS1ubUdLSFl1TTc0SmtkQXJtZEFpM3lFV3ZzaUJYWDVHMHJpR0FvZkpIc1JycEJtQ1NYLUtKVTJTYVQyTDh2a1ZScllxTU5jRURxVWNMUXQ3eElhR1dXbjAtZTVSVG5DRm5IanpRVE9GUmdBUm0waEstZDQ0dDZtVmgycnBSVzM0ay1yUU94TUhEaXlmTUNVcWQ5SUF4d01qWg?oc=5",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd212UWpndkNvTkhac2NyQWRScDZPLXNWZWMyM1RVd0p6T2drSWo2M0RsYWV2ZkNjNXpfdXpGR0M5M1U3Y1BCblM0LVRKNzNOVnl1NUxFOS1pQzJua2EyZjJyYk1SdFFSTGZXRjIwaWxEUkVGUFFjMmFTS19RYUMxbl9LWnNqakh3M25JWmIzNkpsRGNpeXNZM1RMZFRwVmx0NnpIZGdxSVUyZjJvSTl5aG9IQS1UMjY2UVpITnpR0gHDAUFVX3lxTE94V05QUExRazBfanU2WENvNTJ3Mk1yMW9zb2FLdmQ5bU1DWUcxeW5ENnNCdl8tTXhMdDNjNzhtZUg0dFBvemhzOGpEMFFnVUEwQ3VWdEdqdkExa3cxd3RfUk5EVVFZa3RFQWRxV2tEUjlMUG1xTzhBX2xCZ29BUzlBYndzVWlaYzh6VmJJc3JtYXAtdXFJZU5YWTJYTEsxQTdTSDYwMmdESnBnZkFUWGVhSEI3RUZZQnpkVEd3SXZpaG50TQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN2VfTFNWdjVxc1VOeDJHbVhONmFaaVRUTnNvR3RsdXRja1VhQkdlNER0MXgwdzZLOHJxaGJES2FZVVgyWnNmb0U2cWVLRUwtdUduenpmVmlOeURqbFVSSVB1M3R3d3NnUHdrNE1uLVY3enZkbHA2bUloMFNCNEhaU1JMY2ZhSVU0bVU2Z2txc0xmbGFzSHVmY3RMdjBMcDdwRUhHVmdLM09NQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTTFpRk1jcWpsdFFZbk8wWUwxV05qVDB3MEhSOXJvVkczRk14dUtYdWlLZU9IYWZtYVJ3NUJmQ21FeGJqSmVDcFhwbFd1SVp1SWRJcThhWXc5aHhCTUJDYU9rSTlQV1ZIakxZand1S0ctOE9iekVjcm1rZVZSdU1QRkdKcFZGU2tFQkFVTEdncl9LdVpSWUtsMWlIa3F3bmM5a1p3X2FoaHFqUWpiX3RTVmJEdTd5cElzZW1RRExiMUcxel9XdmMxYWNEQ0xhSVFQUEQ4TmNEbkRBbndFejNKLQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVzZkNWNFVGg5ZFQ5Z1RaLTNEXzJyX1RZXzdsTlNvTnJaTE05Vkl0VXNvV2M3RS1jbWtPY2ptOGZOWFRsdDNZa3dYRURXbG80VFUzZkpKMVluTDFjclpCay1lWFVVbnhveHpRMy1Pay1hd2RPNV9TbHBLUzJVV1NTbnhqdGJHekJVZUJ2WTZxbXp2UlItaFhjcWRQTGxPX0xWeHFJZmJucHNaQQ?oc=5",
+    "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPOUVGSVdYajhWa28yQnRmZk5EaTJfV0dNOFBNQW92ZDZPTFJrQVlGbVFvZGxzNWpRa3NseDdOVGhuVWlBUVBPRHUzazlCWm1nVkI0bjlZcS1uT1RNNFBQZHd0Ny1BZndaeXdmT2lkQVZOcmw5bWw3NWxNOA?oc=5",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdWdFaVFqeTlHVlFNcGhvWUdZN25rVi1VLXZYZkRhM1drVDlEeUF5dDA4dEE2ZTZpTERjQkcxamlOSHFzQjBTd2RYMk5KUll2NXhFeG1FbWdRMHptV3B1bWJJdWx0R3c0S1BXeVNhYmswanhOaGxzMGpqcHdKd2xWVEVxZXgtbFVpOHRKZ3lKN3FRSEllSnlFa0I0clhBSGNHX0l2Rl9iTWE?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9teUdmYk5IYnhiR3JVeFdRcEdaeWhaNUZUMDNjLWFHUW5VRTNGYi13U3lnRTFMUWZ0T2lvSUlYTmNmZ1RWOTJpVkxNUkstZTNObzhFQ2FiV0MxbFBhbHNpM0lJakJvSmU1?oc=5"
+  ],
+  "last_run": "2026-05-14T17:08:20.588Z",
+  "last_run_count": 10,
+  "last_run_items": [
+    {
+      "id": "news-2026-05-14-anthropic-claude-legal-work-expansion",
+      "title": "Anthropic's Claude Goes After Legal Work",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQemVIdGtMUjBxTjF3LXQ5eUlxRHFqSzF5YkF4ZkdkRUl6NXdoSXpLd2FTakZCT0N5YTFjZ3VyVnZCSUlPVDdQbnI0Z1F3V0YxOFQ5M2hfYnRmRWVXSTduRmRuTk5TcFU0cmxRWFBxaGpRQ1YzWTJ3RnpNLVJJdzJBc19IQnVyaUREWExXendWZ1RtaWVyc2YtV0U0Z2V4N3huVG1hSHlUM2VTNGkt?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-14-mythos-ai-breaks-mac-security",
+      "title": "Anthropic's Mythos AI Breaks Mac Security",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRm83cS1ubUdLSFl1TTc0SmtkQXJtZEFpM3lFV3ZzaUJYWDVHMHJpR0FvZkpIc1JycEJtQ1NYLUtKVTJTYVQyTDh2a1ZScllxTU5jRURxVWNMUXQ3eElhR1dXbjAtZTVSVG5DRm5IanpRVE9GUmdBUm0waEstZDQ0dDZtVmgycnBSVzM0ay1yUU94TUhEaXlmTUNVcWQ5SUF4d01qWg?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-14-figma-ai-anthropic-partnership",
+      "title": "Figma's AI Tools Test Growth Story As Anthropic Joins The Race",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd212UWpndkNvTkhac2NyQWRScDZPLXNWZWMyM1RVd0p6T2drSWo2M0RsYWV2ZkNjNXpfdXpGR0M5M1U3Y1BCblM0LVRKNzNOVnl1NUxFOS1pQzJua2EyZjJyYk1SdFFSTGZXRjIwaWxEUkVGUFFjMmFTS19RYUMxbl9LWnNqakh3M25JWmIzNkpsRGNpeXNZM1RMZFRwVmx0NnpIZGdxSVUyZjJvSTl5aG9IQS1UMjY2UVpITnpR0gHDAUFVX3lxTE94V05QUExRazBfanU2WENvNTJ3Mk1yMW9zb2FLdmQ5bU1DWUcxeW5ENnNCdl8tTXhMdDNjNzhtZUg0dFBvemhzOGpEMFFnVUEwQ3VWdEdqdkExa3cxd3RfUk5EVVFZa3RFQWRxV2tEUjlMUG1xTzhBX2xCZ29BUzlBYndzVWlaYzh6VmJJc3JtYXAtdXFJZU5YWTJYTEsxQTdTSDYwMmdESnBnZkFUWGVhSEI3RUZZQnpkVEd3SXZpaG50TQ?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-14-aeo-replaces-seo-brands-ai-discoverability",
+      "title": "AEO Is the New SEO: How Brands Get Found by AI",
+      "source": "Perplexity",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN2VfTFNWdjVxc1VOeDJHbVhONmFaaVRUTnNvR3RsdXRja1VhQkdlNER0MXgwdzZLOHJxaGJES2FZVVgyWnNmb0U2cWVLRUwtdUduenpmVmlOeURqbFVSSVB1M3R3d3NnUHdrNE1uLVY3enZkbHA2bUloMFNCNEhaU1JMY2ZhSVU0bVU2Z2txc0xmbGFzSHVmY3RMdjBMcDdwRUhHVmdLM09NQQ?oc=5",
+      "vertical": "ai_builder",
+      "topic": "perplexity"
+    },
+    {
+      "id": "news-2026-05-14-claude-for-legal-launch",
+      "title": "Anthropic launches Claude for Legal — vertical-specific AI play",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTTFpRk1jcWpsdFFZbk8wWUwxV05qVDB3MEhSOXJvVkczRk14dUtYdWlLZU9IYWZtYVJ3NUJmQ21FeGJqSmVDcFhwbFd1SVp1SWRJcThhWXc5aHhCTUJDYU9rSTlQV1ZIakxZand1S0ctOE9iekVjcm1rZVZSdU1QRkdKcFZGU2tFQkFVTEdncl9LdVpSWUtsMWlIa3F3bmM5a1p3X2FoaHFqUWpiX3RTVmJEdTd5cElzZW1RRExiMUcxel9XdmMxYWNEQ0xhSVFQUEQ4TmNEbkRBbndFejNKLQ?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-14-grok-predicts-dogecoin-price-meme-coin-mania-q3-2026",
+      "title": "Grok AI predicts DOGE price if meme coin mania returns",
+      "source": "xAI / Grok",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVzZkNWNFVGg5ZFQ5Z1RaLTNEXzJyX1RZXzdsTlNvTnJaTE05Vkl0VXNvV2M3RS1jbWtPY2ptOGZOWFRsdDNZa3dYRURXbG80VFUzZkpKMVluTDFjclpCay1lWFVVbnhveHpRMy1Pay1hd2RPNV9TbHBLUzJVV1NTbnhqdGJHekJVZUJ2WTZxbXp2UlItaFhjcWRQTGxPX0xWeHFJZmJucHNaQQ?oc=5",
+      "vertical": "ai_trading",
+      "topic": "grok"
+    },
+    {
+      "id": "news-2026-05-14-cerebras-55b-ipo-comeback",
+      "title": "Cerebras raises $5.5B in comeback IPO",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+      "vertical": "ai_builder",
+      "topic": "builder"
+    },
+    {
+      "id": "news-2026-05-14-xero-claude-integration-accounting-ai",
+      "title": "Xero brings Claude to small business accounting",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPOUVGSVdYajhWa28yQnRmZk5EaTJfV0dNOFBNQW92ZDZPTFJrQVlGbVFvZGxzNWpRa3NseDdOVGhuVWlBUVBPRHUzazlCWm1nVkI0bjlZcS1uT1RNNFBQZHd0Ny1BZndaeXdmT2lkQVZOcmw5bWw3NWxNOA?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-14-microsoft-beats-claude-gpt-cybersecurity",
+      "title": "Microsoft Beats Anthropic and OpenAI on Key Cybersecurity Test",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdWdFaVFqeTlHVlFNcGhvWUdZN25rVi1VLXZYZkRhM1drVDlEeUF5dDA4dEE2ZTZpTERjQkcxamlOSHFzQjBTd2RYMk5KUll2NXhFeG1FbWdRMHptV3B1bWJJdWx0R3c0S1BXeVNhYmswanhOaGxzMGpqcHdKd2xWVEVxZXgtbFVpOHRKZ3lKN3FRSEllSnlFa0I0clhBSGNHX0l2Rl9iTWE?oc=5",
+      "vertical": "ai_builder",
+      "topic": "builder"
+    },
+    {
+      "id": "news-2026-05-14-whatsapp-meta-ai-incognito-chat",
+      "title": "WhatsApp Meta AI Incognito Mode Launch",
+      "source": "Meta AI (news)",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9teUdmYk5IYnhiR3JVeFdRcEdaeWhaNUZUMDNjLWFHUW5VRTNGYi13U3lnRTFMUWZ0T2lvSUlYTmNmZ1RWOTJpVkxNUkstZTNObzhFQ2FiV0MxbFBhbHNpM0lJakJvSmU1?oc=5",
+      "vertical": "ai_behavior",
+      "topic": "builder"
+    }
+  ],
+  "total_drafted": 10
 }

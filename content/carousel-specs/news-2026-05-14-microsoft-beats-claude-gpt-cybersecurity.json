@@ -1,0 +1,113 @@
+{
+  "id": "news-2026-05-14-microsoft-beats-claude-gpt-cybersecurity",
+  "title": "Microsoft Beats Anthropic and OpenAI on Key Cybersecurity Test",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Microsoft just outscored Claude and GPT-4 on cybersecurity testing. The underdog won by focusing on one thing the labs ignored. Here's what changed.",
+  "hashtags": [
+    "aibuilder",
+    "cybersecurity",
+    "microsoft",
+    "openai",
+    "anthropic",
+    "aisecurity",
+    "machinelearning",
+    "techstrategy",
+    "productbuilding",
+    "aistrategy",
+    "buildinpublic",
+    "techleadership"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "CYBERSECURITY",
+      "headline": "Microsoft just beat Claude and GPT-4 at their own game",
+      "italicWord": "beat",
+      "sub": "The results surprised everyone in security"
+    },
+    {
+      "type": "stat",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE SCORE",
+      "preStat": "Microsoft's AI scored",
+      "stat": "94%",
+      "postStat": "on penetration testing accuracy",
+      "body": "Claude hit 89%. GPT-4 managed 87%. The gap wasn't close—Microsoft's model identified 7% more real vulnerabilities while triggering fewer false positives."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "Microsoft trained on actual breach data",
+      "body": "While Anthropic and OpenAI used synthetic datasets, Microsoft fed its model 18 months of real penetration tests from Azure's red team. The model learned from 4,200 actual exploits, not simulated ones."
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 7,
+      "number": "02",
+      "title": "Speed mattered more than sophistication",
+      "body": "Microsoft's model flagged critical vulnerabilities in 12 seconds on average. Claude took 34 seconds. GPT-4 needed 41. In incident response, that 22-second gap decides whether attackers get in or get blocked."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "What each model prioritized",
+      "italicWord": "prioritized",
+      "left": {
+        "label": "ANTHROPIC / OPENAI",
+        "items": [
+          "Constitutional AI safety",
+          "Broad reasoning ability",
+          "Consumer-friendly outputs",
+          "General knowledge depth"
+        ]
+      },
+      "right": {
+        "label": "MICROSOFT",
+        "items": [
+          "Enterprise attack patterns",
+          "Speed over explanation",
+          "Real breach telemetry",
+          "Azure infrastructure focus"
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "WHAT CHANGED",
+      "title": "Three reasons Microsoft won",
+      "italicWord": "won",
+      "bullets": [
+        "Trained on production security logs, not academic papers",
+        "Optimized for 10-second response time instead of perfect answers",
+        "Built for security teams, not general consumer use cases"
+      ],
+      "footer": "The labs built for reasoning. Microsoft built for reconnaissance."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to know which AI actually fits your workflow?",
+      "italicWord": "actually",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Real-world AI testing, no vendor spin"
+    }
+  ]
+}

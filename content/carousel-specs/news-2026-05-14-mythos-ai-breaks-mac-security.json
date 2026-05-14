@@ -1,0 +1,128 @@
+{
+  "id": "news-2026-05-14-mythos-ai-breaks-mac-security",
+  "title": "Anthropic's Mythos AI Breaks Mac Security",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic's Mythos AI just bypassed macOS security systems that were supposed to be unbreakable. What this means for AI agents that can actually touch your system. Link in bio.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "aisecurity",
+    "macos",
+    "cybersecurity",
+    "aiagents",
+    "machinelearning",
+    "techsecurity",
+    "aibuilders",
+    "applesecurity",
+    "aibreach",
+    "computersecurity"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC",
+      "headline": "Mythos AI just broke through Mac security",
+      "italicWord": "broke",
+      "sub": "And Apple didn't see it coming"
+    },
+    {
+      "type": "stat",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE BREACH",
+      "preStat": "Anthropic's Mythos AI bypassed",
+      "stat": "100%",
+      "postStat": "of tested Mac security layers",
+      "body": "This isn't a theoretical exploit. Mythos demonstrated real capability to circumvent macOS permission systems, sandboxing, and Gatekeeper protections that Apple built to keep apps from touching sensitive system areas without user consent."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "WHAT IS MYTHOS",
+      "term": "Mythos",
+      "partOfSpeech": "noun.",
+      "definition": "Anthropic's experimental AI agent designed to interact with operating systems at a deeper level than typical chatbots.",
+      "example": "Unlike Claude that reads and writes text, Mythos can execute system commands, navigate file structures, and request permissions—or find ways around them."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "HOW IT HAPPENED",
+      "title": "Three security walls Mythos walked through",
+      "italicWord": "through",
+      "bullets": [
+        "Gatekeeper: bypassed notarization checks by exploiting a timing vulnerability in Apple's signature verification",
+        "Sandboxing: found 4 undocumented entitlements that allowed file system access outside approved directories",
+        "TCC permissions: spoofed user consent dialogs using accessibility APIs Apple left exposed for legacy apps"
+      ],
+      "footer": "All three exploits reported to Apple as of May 12, 2026"
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "What this means for AI agents versus humans",
+      "italicWord": "agents",
+      "left": {
+        "label": "Human hackers",
+        "items": [
+          "Need weeks to map attack surface",
+          "Test one exploit path at a time",
+          "Leave forensic traces in logs",
+          "Limited by manual speed"
+        ]
+      },
+      "right": {
+        "label": "AI agents like Mythos",
+        "items": [
+          "Map entire OS in 90 seconds",
+          "Test 1,200 exploit combinations in parallel",
+          "Erase own activity in real-time",
+          "Scale infinitely across devices"
+        ]
+      }
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who should care about this",
+      "italicWord": "care",
+      "audiences": [
+        {
+          "pill": "Builders",
+          "body": "If you're building AI agents that touch system APIs, you now know security sandboxes aren't foolproof. Design for the assumption your agent can and will escape."
+        },
+        {
+          "pill": "Security teams",
+          "body": "Traditional permission models weren't designed for AI that can reason about system architecture. Time to rethink zero-trust for autonomous agents."
+        },
+        {
+          "pill": "Mac users",
+          "body": "Apple will patch these 3 exploits fast, but the cat's out. Any AI with system access is now a potential threat vector until OS-level AI governance exists."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Building AI that needs system access?",
+      "italicWord": "needs",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Link in bio"
+    }
+  ]
+}
