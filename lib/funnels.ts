@@ -29,9 +29,13 @@ export const FUNNELS: Record<string, ArticleCTA> = {
     titleHref: "https://useflowi.app/trader", // TODO: swap for live FlowiAI Trader URL
     body:
       "ICT methodology + multi-agent risk + 5 trading modes. Forex, crypto, stocks, indices. Built on the patterns this article describes.",
-    primaryLabel: "Get FlowiAI Trader →",
+    primaryLabel: "Get on the FlowiAI Trader launch list →",
     primaryHref: "https://useflowi.app/trader",
-    secondary: { prefix: "or read", label: "more on trading", href: "/blog/category/ai_trading" },
+    secondary: {
+      prefix: "or grab",
+      label: "the 4-essay playbook (PDF, $9)",
+      href: "https://flowi.gumroad.com/l/algo-traders-playbook",
+    },
     external: true,
   },
 
