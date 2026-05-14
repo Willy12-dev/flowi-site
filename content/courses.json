@@ -1,0 +1,208 @@
+{
+  "$schema": "lib/carousel/courses.ts — read by platforms.ts at render time",
+  "_notes": "Order matters: when a topic in a spec matches a course slug, that course becomes the primary CTA destination. Status drives the CTA language: 'live' uses the gumroad URL, 'waitlist' asks for email signups, 'coming_soon' generates a waitlist signup as fallback.",
+
+  "courses": [
+    {
+      "slug": "ai-builders-field-guide",
+      "title": "AI Builder Field Guide",
+      "topics": ["builder", "claude_code", "claude", "agent_memory"],
+      "vertical": "ai_builder",
+      "price_usd": 9,
+      "status": "live",
+      "url": "https://flowi.gumroad.com/l/ai-builders-field-guide",
+      "cta_keyword": "BUILD",
+      "cta_promise": "for the field guide"
+    },
+    {
+      "slug": "algo-traders-playbook",
+      "title": "Algo Traders Playbook",
+      "topics": ["trading", "ict", "smart_money", "algo_trading", "automation"],
+      "vertical": "ai_trading",
+      "price_usd": 9,
+      "status": "live",
+      "url": "https://flowi.gumroad.com/l/algo-traders-playbook",
+      "cta_keyword": "PROBABILITY",
+      "cta_promise": "for the playbook"
+    },
+    {
+      "slug": "behavior-change-playbook",
+      "title": "Behavior Change Playbook",
+      "topics": ["behavior", "habits", "discipline", "recovery", "precommitment"],
+      "vertical": "ai_behavior",
+      "price_usd": 9,
+      "status": "live",
+      "url": "https://flowi.gumroad.com/l/behavior-change-playbook",
+      "cta_keyword": "HABIT",
+      "cta_promise": "for the playbook"
+    },
+
+    {
+      "slug": "chatgpt-mastery",
+      "title": "ChatGPT Mastery — 60 prompts that print money",
+      "topics": ["chatgpt", "gpt"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/chatgpt-mastery",
+      "cta_keyword": "GPT",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "claude-mastery",
+      "title": "Claude Mastery — the prompt operating system",
+      "topics": ["claude"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/claude-mastery",
+      "cta_keyword": "CLAUDE",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "gemini-mastery",
+      "title": "Gemini Mastery — Google's stack, weaponized",
+      "topics": ["gemini", "google_ai"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/gemini-mastery",
+      "cta_keyword": "GEMINI",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "grok-mastery",
+      "title": "Grok for X creators — distribution-first prompts",
+      "topics": ["grok", "xai"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/grok-mastery",
+      "cta_keyword": "GROK",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "perplexity-research",
+      "title": "Perplexity for serious research",
+      "topics": ["perplexity"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/perplexity-research",
+      "cta_keyword": "RESEARCH",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "midjourney-studio",
+      "title": "Midjourney Studio — commercial-grade brand visuals",
+      "topics": ["midjourney"],
+      "vertical": "ai_builder",
+      "price_usd": 29,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/midjourney-studio",
+      "cta_keyword": "STUDIO",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "runway-video",
+      "title": "Runway video for creators",
+      "topics": ["runway", "gen3"],
+      "vertical": "ai_builder",
+      "price_usd": 29,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/runway-video",
+      "cta_keyword": "RUNWAY",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "suno-music",
+      "title": "Suno music for content + ads",
+      "topics": ["suno"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/suno-music",
+      "cta_keyword": "SUNO",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "elevenlabs-voice",
+      "title": "ElevenLabs voice cloning + narration",
+      "topics": ["elevenlabs", "voice"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/elevenlabs-voice",
+      "cta_keyword": "VOICE",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "cursor-coding",
+      "title": "Cursor — agentic coding for shipping",
+      "topics": ["cursor", "coding_agents"],
+      "vertical": "ai_builder",
+      "price_usd": 29,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/cursor-coding",
+      "cta_keyword": "CURSOR",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "v0-ui-engine",
+      "title": "v0 — production UIs in 20 minutes",
+      "topics": ["v0", "ui_generation"],
+      "vertical": "ai_builder",
+      "price_usd": 29,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/v0-ui-engine",
+      "cta_keyword": "V0",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "notebooklm-research",
+      "title": "NotebookLM — turn your tabs into a research analyst",
+      "topics": ["notebooklm"],
+      "vertical": "ai_builder",
+      "price_usd": 19,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/notebooklm-research",
+      "cta_keyword": "NOTEBOOK",
+      "cta_promise": "for the waitlist"
+    },
+    {
+      "slug": "trading-automation-stack",
+      "title": "Trading Automation Stack — build your own bot",
+      "topics": ["trading_automation", "trading_bot"],
+      "vertical": "ai_trading",
+      "price_usd": 49,
+      "status": "waitlist",
+      "url": "https://useflowi.app/waitlist/trading-automation-stack",
+      "cta_keyword": "AUTOMATE",
+      "cta_promise": "for the waitlist"
+    }
+  ],
+
+  "secondary_routes": {
+    "_comment": "After the primary course CTA, every carousel mentions one of these big products as the 'next step' in the post body. Picked by vertical.",
+    "ai_builder": {
+      "name": "Agent Memory book",
+      "url": "https://flowi.gumroad.com/l/sqqhvm",
+      "tagline": "The reasoning architecture behind every example."
+    },
+    "ai_trading": {
+      "name": "FlowiAI Trader",
+      "url": "https://useflowi.app/trader",
+      "tagline": "Where the playbook becomes execution."
+    },
+    "ai_behavior": {
+      "name": "Woyuduin",
+      "url": "https://woyuduin.com",
+      "tagline": "Where the protocol becomes daily practice."
+    },
+    "ai_general": {
+      "name": "FlowiAI Trader",
+      "url": "https://useflowi.app/trader",
+      "tagline": "Same architecture, different action set."
+    }
+  }
+}

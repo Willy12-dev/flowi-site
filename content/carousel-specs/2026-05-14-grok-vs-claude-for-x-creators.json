@@ -1,0 +1,70 @@
+{
+  "id": "2026-05-14-grok-vs-claude-for-x-creators",
+  "title": "Grok vs Claude for X creators: a 30-day test.",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Grok vs Claude for X creators: a 30-day test.",
+  "hashtags": [
+    "ai",
+    "claude",
+    "chatgpt",
+    "aitools",
+    "buildwithai",
+    "aiworkflow",
+    "promptengineering",
+    "aiautomation",
+    "indiehacker"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 3,
+      "eyebrow": "GROK",
+      "headline": "Grok vs Claude for X creators:",
+      "italicWord": "a 30-day test.",
+      "sub": "[Edit this sub-headline to set the promise.]"
+    },
+    {
+      "type": "compare",
+      "title": "What changed",
+      "italicWord": "in one move.",
+      "left": {
+        "label": "BEFORE",
+        "items": [
+          "[item 1]",
+          "[item 2]",
+          "[item 3]",
+          "[item 4]"
+        ]
+      },
+      "right": {
+        "label": "AFTER",
+        "items": [
+          "[item 1]",
+          "[item 2]",
+          "[item 3]",
+          "[item 4]"
+        ]
+      },
+      "index": 2,
+      "total": 3
+    },
+    {
+      "type": "cta",
+      "hook": "Want the full",
+      "italicWord": "pack?",
+      "sub": "Free PDF. No upsell. Save this for when you're ready.",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "index": 3,
+      "total": 3
+    }
+  ]
+}

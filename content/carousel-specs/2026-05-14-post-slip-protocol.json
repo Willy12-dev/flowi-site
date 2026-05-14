@@ -1,0 +1,71 @@
+{
+  "id": "2026-05-14-post-slip-protocol",
+  "title": "The 4-minute protocol after a slip.",
+  "vertical": "ai_behavior",
+  "topic": "recovery",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "HABIT",
+    "promise": "for the playbook"
+  },
+  "caption": "The 4-minute protocol after a slip.",
+  "hashtags": [
+    "habits",
+    "behaviorchange",
+    "atomichabits",
+    "selfimprovement",
+    "consistency",
+    "discipline",
+    "mindset",
+    "personaldevelopment"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 5,
+      "eyebrow": "RECOVERY",
+      "headline": "The 4-minute protocol",
+      "italicWord": "after a slip.",
+      "sub": "[Edit this sub-headline to set the promise.]"
+    },
+    {
+      "type": "step",
+      "stepNumber": "01",
+      "stepLabel": "STEP",
+      "title": "[Step 1 title]",
+      "body": "[Step body — 3-line max, paste-ready instruction.]",
+      "index": 2,
+      "total": 5
+    },
+    {
+      "type": "step",
+      "stepNumber": "02",
+      "stepLabel": "STEP",
+      "title": "[Step 2 title]",
+      "body": "[Step body — 3-line max, paste-ready instruction.]",
+      "index": 3,
+      "total": 5
+    },
+    {
+      "type": "step",
+      "stepNumber": "03",
+      "stepLabel": "STEP",
+      "title": "[Step 3 title]",
+      "body": "[Step body — 3-line max, paste-ready instruction.]",
+      "index": 4,
+      "total": 5
+    },
+    {
+      "type": "cta",
+      "hook": "Want the full",
+      "italicWord": "pack?",
+      "sub": "Free PDF. No upsell. Save this for when you're ready.",
+      "ctaKeyword": "HABIT",
+      "ctaPromise": "for the playbook",
+      "index": 5,
+      "total": 5
+    }
+  ]
+}

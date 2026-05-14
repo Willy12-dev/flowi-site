@@ -1,0 +1,491 @@
+{
+  "$schema": "Daily-pack drafter reads this. Each entry yields one stubbed carousel spec.",
+  "_notes": "Status: planned (never drafted) | drafted (spec exists in content/carousel-specs/) | posted (live on socials). Format hints map to the template family the drafter will use for the cover slide.",
+  "topics": [
+    {
+      "id": "claude-system-prompts-that-print",
+      "vertical": "ai_builder",
+      "topic": "claude",
+      "hook": "5 Claude system prompts I use every day",
+      "italic": "and 3 to delete.",
+      "format": "data-table",
+      "status": "planned",
+      "tags": [
+        "system_prompts",
+        "developer",
+        "workflow"
+      ]
+    },
+    {
+      "id": "claude-vs-chatgpt-2026",
+      "vertical": "ai_builder",
+      "topic": "claude",
+      "hook": "Claude vs ChatGPT in 2026:",
+      "italic": "the honest split.",
+      "format": "compare",
+      "status": "planned",
+      "tags": [
+        "comparison",
+        "decision"
+      ]
+    },
+    {
+      "id": "claude-code-shipped-in-a-day",
+      "vertical": "ai_builder",
+      "topic": "claude",
+      "hook": "I shipped a full app with Claude Code in",
+      "italic": "one Saturday.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "claude_code",
+        "case_study"
+      ]
+    },
+    {
+      "id": "chatgpt-content-engine",
+      "vertical": "ai_builder",
+      "topic": "chatgpt",
+      "hook": "I gave ChatGPT my Instagram page —",
+      "italic": "1.5M views in a week.",
+      "format": "results",
+      "status": "planned",
+      "tags": [
+        "content",
+        "case_study"
+      ]
+    },
+    {
+      "id": "chatgpt-prompts-for-cold-email",
+      "vertical": "ai_builder",
+      "topic": "chatgpt",
+      "hook": "The 7 cold-email prompts",
+      "italic": "agencies pay $5k for.",
+      "format": "numbered",
+      "status": "planned",
+      "tags": [
+        "cold_email",
+        "sales"
+      ]
+    },
+    {
+      "id": "chatgpt-custom-gpts-side-income",
+      "vertical": "ai_builder",
+      "topic": "chatgpt",
+      "hook": "Build a custom GPT in 18 minutes,",
+      "italic": "charge $97/mo.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "custom_gpts",
+        "monetization"
+      ]
+    },
+    {
+      "id": "gemini-google-stack-unlock",
+      "vertical": "ai_builder",
+      "topic": "gemini",
+      "hook": "Gemini's hidden integrations with",
+      "italic": "everything Google.",
+      "format": "grid",
+      "status": "planned",
+      "tags": [
+        "google_ecosystem",
+        "integrations"
+      ]
+    },
+    {
+      "id": "gemini-2m-context",
+      "vertical": "ai_builder",
+      "topic": "gemini",
+      "hook": "I fed Gemini a 1,200-page PDF.",
+      "italic": "Here's what it found.",
+      "format": "stat",
+      "status": "planned",
+      "tags": [
+        "long_context",
+        "research"
+      ]
+    },
+    {
+      "id": "grok-x-distribution",
+      "vertical": "ai_builder",
+      "topic": "grok",
+      "hook": "Grok writes the X thread —",
+      "italic": "the analytics agree.",
+      "format": "fake-tweet",
+      "status": "planned",
+      "tags": [
+        "x_marketing",
+        "distribution"
+      ]
+    },
+    {
+      "id": "grok-vs-claude-for-x-creators",
+      "vertical": "ai_builder",
+      "topic": "grok",
+      "hook": "Grok vs Claude for X creators:",
+      "italic": "a 30-day test.",
+      "format": "compare",
+      "status": "drafted",
+      "tags": [
+        "comparison",
+        "x_creators"
+      ],
+      "drafted_at": "2026-05-14T12:26:33.487Z"
+    },
+    {
+      "id": "perplexity-replaces-google",
+      "vertical": "ai_builder",
+      "topic": "perplexity",
+      "hook": "I haven't opened Google in",
+      "italic": "42 days.",
+      "format": "stat",
+      "status": "planned",
+      "tags": [
+        "search",
+        "research"
+      ]
+    },
+    {
+      "id": "perplexity-research-workflow",
+      "vertical": "ai_builder",
+      "topic": "perplexity",
+      "hook": "The 4-step Perplexity workflow",
+      "italic": "consultants charge for.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "consulting",
+        "workflow"
+      ]
+    },
+    {
+      "id": "midjourney-brand-system",
+      "vertical": "ai_builder",
+      "topic": "midjourney",
+      "hook": "A consistent brand world in",
+      "italic": "12 Midjourney prompts.",
+      "format": "grid",
+      "status": "planned",
+      "tags": [
+        "branding",
+        "design"
+      ]
+    },
+    {
+      "id": "midjourney-vs-flux",
+      "vertical": "ai_builder",
+      "topic": "midjourney",
+      "hook": "Midjourney vs Flux vs DALL-E:",
+      "italic": "the photo test.",
+      "format": "compare",
+      "status": "planned",
+      "tags": [
+        "comparison",
+        "image"
+      ]
+    },
+    {
+      "id": "runway-30s-ad",
+      "vertical": "ai_builder",
+      "topic": "runway",
+      "hook": "A 30-second ad in Runway,",
+      "italic": "made before lunch.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "video",
+        "ads"
+      ]
+    },
+    {
+      "id": "runway-gen3-creator-stack",
+      "vertical": "ai_builder",
+      "topic": "runway",
+      "hook": "The Gen-3 creator stack",
+      "italic": "agencies are hiding.",
+      "format": "diagram",
+      "status": "planned",
+      "tags": [
+        "gen3",
+        "workflow"
+      ]
+    },
+    {
+      "id": "suno-jingles-for-brands",
+      "vertical": "ai_builder",
+      "topic": "suno",
+      "hook": "Suno writes the brand jingle",
+      "italic": "in 90 seconds.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "audio",
+        "branding"
+      ]
+    },
+    {
+      "id": "elevenlabs-clone-your-voice",
+      "vertical": "ai_builder",
+      "topic": "elevenlabs",
+      "hook": "I cloned my voice with ElevenLabs.",
+      "italic": "Then I scaled.",
+      "format": "stat",
+      "status": "drafted",
+      "tags": [
+        "voice_cloning",
+        "scale"
+      ],
+      "drafted_at": "2026-05-14T12:26:33.486Z"
+    },
+    {
+      "id": "cursor-shipped-saas-weekend",
+      "vertical": "ai_builder",
+      "topic": "cursor",
+      "hook": "Built a SaaS with Cursor",
+      "italic": "in 47 hours.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "cursor",
+        "case_study"
+      ]
+    },
+    {
+      "id": "cursor-rules-that-save-hours",
+      "vertical": "ai_builder",
+      "topic": "cursor",
+      "hook": "The 9 Cursor rules",
+      "italic": "I steal from senior devs.",
+      "format": "numbered",
+      "status": "planned",
+      "tags": [
+        "cursor_rules",
+        "workflow"
+      ]
+    },
+    {
+      "id": "v0-prototype-to-prod",
+      "vertical": "ai_builder",
+      "topic": "v0",
+      "hook": "v0 prototype to production in",
+      "italic": "20 minutes.",
+      "format": "step-by-step",
+      "status": "planned",
+      "tags": [
+        "v0",
+        "ui"
+      ]
+    },
+    {
+      "id": "v0-component-library-trick",
+      "vertical": "ai_builder",
+      "topic": "v0",
+      "hook": "How v0 builds component libraries —",
+      "italic": "agencies hate this.",
+      "format": "definition",
+      "status": "planned",
+      "tags": [
+        "v0",
+        "components"
+      ]
+    },
+    {
+      "id": "notebooklm-podcasts-from-pdfs",
+      "vertical": "ai_builder",
+      "topic": "notebooklm",
+      "hook": "NotebookLM made a podcast from",
+      "italic": "my last 30 articles.",
+      "format": "results",
+      "status": "planned",
+      "tags": [
+        "audio",
+        "research"
+      ]
+    },
+    {
+      "id": "trading-bot-on-100",
+      "vertical": "ai_trading",
+      "topic": "trading_automation",
+      "hook": "I gave my trading bot $100.",
+      "italic": "Then $1,000.",
+      "format": "stat",
+      "status": "planned",
+      "tags": [
+        "trading_bot",
+        "case_study"
+      ]
+    },
+    {
+      "id": "trading-ict-4-rules",
+      "vertical": "ai_trading",
+      "topic": "ict",
+      "hook": "ICT in 4 rules:",
+      "italic": "what survives.",
+      "format": "numbered",
+      "status": "planned",
+      "tags": [
+        "ict",
+        "concepts"
+      ]
+    },
+    {
+      "id": "algo-rebalancer-saved-account",
+      "vertical": "ai_trading",
+      "topic": "algo_trading",
+      "hook": "The automatic rebalancer that saved my",
+      "italic": "account at month 4.",
+      "format": "letter",
+      "status": "planned",
+      "tags": [
+        "risk",
+        "drawdown"
+      ]
+    },
+    {
+      "id": "smart-money-vs-retail",
+      "vertical": "ai_trading",
+      "topic": "smart_money",
+      "hook": "Smart money vs retail in",
+      "italic": "one diagram.",
+      "format": "diagram",
+      "status": "planned",
+      "tags": [
+        "smc",
+        "structure"
+      ]
+    },
+    {
+      "id": "what-bots-fail-at",
+      "vertical": "ai_trading",
+      "topic": "trading_automation",
+      "hook": "What every trading bot",
+      "italic": "secretly fails at.",
+      "format": "compare",
+      "status": "planned",
+      "tags": [
+        "trading_bot",
+        "limitations"
+      ]
+    },
+    {
+      "id": "habits-decision-tree",
+      "vertical": "ai_behavior",
+      "topic": "habits",
+      "hook": "Why willpower stops working at",
+      "italic": "week 3.",
+      "format": "letter",
+      "status": "planned",
+      "tags": [
+        "willpower",
+        "habits"
+      ]
+    },
+    {
+      "id": "post-slip-protocol",
+      "vertical": "ai_behavior",
+      "topic": "recovery",
+      "hook": "The 4-minute protocol",
+      "italic": "after a slip.",
+      "format": "step-by-step",
+      "status": "drafted",
+      "tags": [
+        "recovery",
+        "protocol"
+      ],
+      "drafted_at": "2026-05-14T12:26:33.489Z"
+    },
+    {
+      "id": "compliance-windows-not-streaks",
+      "vertical": "ai_behavior",
+      "topic": "habits",
+      "hook": "Track 28-of-30, never",
+      "italic": "30-day streaks.",
+      "format": "definition",
+      "status": "planned",
+      "tags": [
+        "metrics",
+        "discipline"
+      ]
+    },
+    {
+      "id": "discipline-architecture",
+      "vertical": "ai_behavior",
+      "topic": "discipline",
+      "hook": "Discipline isn't a personality trait —",
+      "italic": "it's architecture.",
+      "format": "quote",
+      "status": "planned",
+      "tags": [
+        "discipline",
+        "systems"
+      ]
+    },
+    {
+      "id": "claude-cant-debug",
+      "vertical": "ai_builder",
+      "topic": "claude",
+      "hook": "Where Claude is",
+      "italic": "still bad.",
+      "format": "bullets",
+      "status": "planned",
+      "tags": [
+        "honest_review",
+        "limitations"
+      ]
+    },
+    {
+      "id": "ai-tools-for-solo-founders",
+      "vertical": "ai_builder",
+      "topic": "builder",
+      "hook": "The 6 AI tools every solo founder",
+      "italic": "actually pays for.",
+      "format": "grid",
+      "status": "planned",
+      "tags": [
+        "stack",
+        "founders"
+      ]
+    },
+    {
+      "id": "ai-replaced-my-team",
+      "vertical": "ai_builder",
+      "topic": "builder",
+      "hook": "AI replaced",
+      "italic": "3 of my 4 contractors.",
+      "format": "stats",
+      "status": "planned",
+      "tags": [
+        "case_study",
+        "scale"
+      ]
+    },
+    {
+      "id": "ai-agent-stack",
+      "vertical": "ai_builder",
+      "topic": "agent_memory",
+      "hook": "The agent stack that runs my",
+      "italic": "entire business.",
+      "format": "diagram",
+      "status": "planned",
+      "tags": [
+        "agents",
+        "stack"
+      ]
+    },
+    {
+      "id": "prompts-vs-systems",
+      "vertical": "ai_builder",
+      "topic": "builder",
+      "hook": "Stop collecting prompts.",
+      "italic": "Build systems.",
+      "format": "compare",
+      "status": "planned",
+      "tags": [
+        "systems",
+        "philosophy"
+      ]
+    }
+  ]
+}

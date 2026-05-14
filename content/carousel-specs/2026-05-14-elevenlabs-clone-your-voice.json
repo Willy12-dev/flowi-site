@@ -1,0 +1,55 @@
+{
+  "id": "2026-05-14-elevenlabs-clone-your-voice",
+  "title": "I cloned my voice with ElevenLabs. Then I scaled.",
+  "vertical": "ai_builder",
+  "topic": "elevenlabs",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "VOICE",
+    "promise": "for the waitlist"
+  },
+  "caption": "I cloned my voice with ElevenLabs. Then I scaled.",
+  "hashtags": [
+    "ai",
+    "claude",
+    "chatgpt",
+    "aitools",
+    "buildwithai",
+    "aiworkflow",
+    "promptengineering",
+    "aiautomation",
+    "indiehacker"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 3,
+      "eyebrow": "ELEVENLABS",
+      "headline": "I cloned my voice with ElevenLabs.",
+      "italicWord": "Then I scaled.",
+      "sub": "[Edit this sub-headline to set the promise.]"
+    },
+    {
+      "type": "stat",
+      "eyebrow": "THE NUMBER",
+      "preStat": "[Pre-stat line]",
+      "stat": "[X%]",
+      "postStat": "[post-stat line]",
+      "body": "[Body — what it means.]",
+      "index": 2,
+      "total": 3
+    },
+    {
+      "type": "cta",
+      "hook": "Want the full",
+      "italicWord": "pack?",
+      "sub": "Free PDF. No upsell. Save this for when you're ready.",
+      "ctaKeyword": "VOICE",
+      "ctaPromise": "for the waitlist",
+      "index": 3,
+      "total": 3
+    }
+  ]
+}
