@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-14-anthropic-gates-200m-health-pact",
+  "title": "Anthropic's $200M Gates Foundation Health Play",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic just landed $200M from the Gates Foundation to tackle global health issues. But is Claude truly ready for the complexities of real-world medical data and diverse languages? This partnership signals a major shift, pushing LLMs into high-stakes environments where accuracy and accessibility are non-negotiable.\n\nLearn how to build AI for impact, not just hype. Tap the link in bio and BUILD for the field guide.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "gatesfoundation",
+    "globalhealth",
+    "aiinhealthcare",
+    "artificialintelligence",
+    "llms",
+    "aidevelopment",
+    "techforgood",
+    "flowiinsights"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ANTHROPIC'S NEW FRONTIER",
+      "headline": "$200M from Gates. Is Claude *really* ready for this?",
+      "italicWord": "ready",
+      "sub": "The real challenge for LLMs in global health."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "The $200M Gates Foundation Pact",
+      "body": "Anthropic secured $200 million from the Bill & Melinda Gates Foundation. The goal: accelerate AI for global health and development. This isn't just funding; it's a strategic vote of confidence in Claude's potential beyond chatbots."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "THE MISSION",
+      "title": "Where the $200M will *go*",
+      "italicWord": "go",
+      "bullets": [
+        "Improve Claude's capabilities in low-resource languages.",
+        "Develop new AI tools for frontline health workers.",
+        "Focus on applications in maternal health, agriculture, and infectious disease."
+      ],
+      "footer": "Prioritizing accessibility and impact in underserved regions."
+    },
+    {
+      "type": "audience",
+      "index": 4,
+      "total": 6,
+      "title": "Who *benefits* from this?",
+      "italicWord": "benefits",
+      "audiences": [
+        {
+          "pill": "Global Health Workers",
+          "body": "From remote clinics to research labs, AI tools aim to assist diagnosis, treatment, and data management in critical areas."
+        },
+        {
+          "pill": "Researchers",
+          "body": "AI can accelerate drug discovery, vaccine development, and epidemiological modeling, potentially shortening response times to outbreaks."
+        },
+        {
+          "pill": "Underserved Communities",
+          "body": "The focus on low-resource languages and accessible tech could bring medical information and support to millions previously excluded."
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 6,
+      "eyebrow": "THE REALITY CHECK",
+      "preStat": "Despite the hype, AI in global health faces a steep curve. Just",
+      "stat": "10%",
+      "postStat": "of healthcare organizations globally currently use AI in clinical settings.",
+      "body": "Data privacy, bias in models, and integration with existing infrastructure are massive hurdles. $200M is a start, not a solution."
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "Stop building AI for abstract problems.",
+      "italicWord": "Start",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Real-world AI applications, explained."
+    }
+  ]
+}

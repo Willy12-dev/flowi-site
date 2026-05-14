@@ -1,0 +1,106 @@
+{
+  "id": "news-2026-05-14-anthropic-agents-api-billing",
+  "title": "Anthropic's Agent Billing: No More Free Autonomy",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic just pulled a fast one on AI agents: they're now explicitly billing for every single step. This means your 'autonomous' agent isn't just running free; it's racking up API calls that hit your bottom line. BUILD for the field guide to understand the shift.",
+  "hashtags": [
+    "claude",
+    "anthropic",
+    "aiagents",
+    "aibuilders",
+    "aidev",
+    "llms",
+    "apicosts",
+    "techtrends",
+    "generativeai",
+    "artificialintelligence",
+    "flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S LATEST MOVE",
+      "headline": "Your AI Agents? They're Just *Another* API Call Now.",
+      "italicWord": "Another",
+      "sub": "The real cost of agent autonomy just hit your bill."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "AI AGENTS, DEFINED",
+      "term": "AI Agent (Anthropic's View)",
+      "partOfSpeech": "noun.",
+      "definition": "An autonomous AI system that makes sequential API calls to achieve a goal, now explicitly integrated into Anthropic's billing structure.",
+      "example": "An agent researching market data might make 20 Claude 3 Opus calls, each adding to your monthly API usage."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "NO MORE FREE LUNCH FOR AUTONOMY",
+      "body": "Anthropic is now explicitly billing for agent actions within its API. Every call an agent makes to Claude, every tool use, every step in its reasoning chain – it all counts towards your usage."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "IMPACT FOR DEVELOPERS",
+      "title": "AGENT COSTS ARE *REAL* COSTS",
+      "italicWord": "Real",
+      "bullets": [
+        "Explicit Cost Tracking: No more guessing agent operational overhead.",
+        "Optimization Priority: Forces developers to build more efficient, less 'chatty' agents.",
+        "Transparency: Aligns agent operations with standard API billing practices."
+      ],
+      "footer": "Your autonomous agent isn't free to roam; its compute is on the meter."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE BILLING SHIFT",
+      "preStat": "An agent completing a complex task might make",
+      "stat": "50+ API calls",
+      "postStat": "in a single session.",
+      "body": "Previously, the implicit cost of these calls might have been overlooked. Now, each one is a line item, demanding closer attention to prompt engineering and agent design."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "WHO SHOULD PAY *CLOSE* ATTENTION?",
+      "italicWord": "Close",
+      "audiences": [
+        {
+          "pill": "Agent Builders",
+          "body": "Anyone designing or deploying AI agents on Anthropic's platform. Your cost models just got a significant update."
+        },
+        {
+          "pill": "Startup Founders",
+          "body": "If your product relies on agentic workflows, understand this shift immediately. It directly impacts your burn rate and unit economics."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "This changes how you build. Stay ahead.",
+      "italicWord": "build",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the full breakdown on AI agent economics."
+    }
+  ]
+}

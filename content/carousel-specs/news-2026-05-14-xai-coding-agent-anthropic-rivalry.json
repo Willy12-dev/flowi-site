@@ -1,0 +1,117 @@
+{
+  "id": "news-2026-05-14-xai-coding-agent-anthropic-rivalry",
+  "title": "xAI's Coding Agent: A Direct Shot at Anthropic",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "xAI just dropped its first coding agent, and it's a direct challenge to Anthropic. This move intensifies the battle for developer mindshare, pushing innovation faster and offering builders more advanced tools. Tap our link in bio and BUILD for the field guide.",
+  "hashtags": [
+    "xAI",
+    "Grok",
+    "Anthropic",
+    "Claude",
+    "AICoding",
+    "DeveloperTools",
+    "AIBuilders",
+    "TechNews",
+    "Flowi",
+    "FutureOfCode",
+    "MuskAI",
+    "AICompetition"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "XAI'S NEW PLAY",
+      "headline": "Musk’s xAI just built a coding agent. Anthropic should be *nervous*.",
+      "italicWord": "nervous",
+      "sub": "The race for developer mindshare just intensified."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "xAI's First Developer Tool",
+      "body": "Musk's xAI officially unveiled its first coding agent, designed to assist developers with complex tasks. This marks xAI's direct entry into the AI assistant space for programmers, a domain already contested by several major players."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "CONTEXT",
+      "term": "Coding Agent Rivalry",
+      "partOfSpeech": "noun.",
+      "definition": "The escalating competition among AI labs to develop superior AI models and tools specifically tailored for software development. The goal is to capture the developer market through efficiency and advanced capabilities.",
+      "example": "xAI's new coding agent targets Anthropic's established position in enterprise AI tools, intensifying the 'coding agent rivalry'."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHY ANTHROPIC?",
+      "title": "More Than Just *Another* Competitor",
+      "italicWord": "Another",
+      "bullets": [
+        "Anthropic's Claude is gaining traction with enterprise developers for its long context window and safety focus.",
+        "xAI is positioning its agent as a direct alternative, aiming for similar developer segments.",
+        "This isn't just about features; it's about ecosystem control and developer loyalty."
+      ],
+      "footer": "The battle for dev mindshare is heating up."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Two *Different* Approaches",
+      "italicWord": "Different",
+      "left": {
+        "label": "xAI's Agent",
+        "items": [
+          "Focus on 'truth-seeking' and efficiency (Grok's core philosophy).",
+          "Potential integration with X ecosystem.",
+          "Aggressive market entry."
+        ]
+      },
+      "right": {
+        "label": "Anthropic's Claude",
+        "items": [
+          "Emphasis on safety, helpfulness, and honesty (HHH framework).",
+          "Strong enterprise partnerships and data privacy focus.",
+          "Established developer base."
+        ]
+      }
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "FOR BUILDERS",
+      "title": "More Options, More *Pressure*",
+      "italicWord": "Pressure",
+      "bullets": [
+        "Increased competition means faster innovation and better tools for developers.",
+        "Expect more specialized agents targeting specific programming languages or tasks.",
+        "AI model providers will push harder to prove superior code generation and debugging."
+      ],
+      "footer": "Your coding workflow is about to get an upgrade."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to build with the best new AI tools?",
+      "italicWord": "best",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get our breakdown of essential AI builders, strategies, and workflows."
+    }
+  ]
+}

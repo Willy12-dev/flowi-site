@@ -1,0 +1,113 @@
+{
+  "id": "news-2026-05-14-openai-codex-mobile-workflow",
+  "title": "OpenAI's Mobile Codex Bet",
+  "vertical": "ai_builder",
+  "topic": "chatgpt",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "OpenAI's Codex is heading to your phone, promising a new era of mobile development. This isn't just a port; it's a re-think of on-the-go coding, offering unprecedented workflow flexibility directly from your device. Tap the link in bio to BUILD for the field guide.",
+  "hashtags": [
+    "ai",
+    "openai",
+    "codex",
+    "mobiledev",
+    "softwaredevelopment",
+    "techinnovation",
+    "artificialintelligence",
+    "codinglife",
+    "flowi",
+    "futureofwork"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "OpenAI's Latest Move",
+      "headline": "Your phone is now a *dev station*. OpenAI just made it real.",
+      "italicWord": "dev station",
+      "sub": "Codex goes mobile, changing how you build."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "The Core Tech",
+      "term": "OpenAI Codex",
+      "partOfSpeech": "noun.",
+      "definition": "An AI model from OpenAI, fine-tuned for code generation and understanding natural language prompts to write code.",
+      "example": "Turns 'make a button that says hello' into functional JavaScript."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "Why Mobile, Why Now?",
+      "body": "OpenAI is pushing Codex beyond desktop IDEs. Expect on-the-go code edits, rapid prototyping, and bug fixes directly from your device, enhancing workflow flexibility."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "Workflow Impact",
+      "title": "New *Flexibility* for Developers",
+      "italicWord": "Flexibility",
+      "bullets": [
+        "Edit code snippets during commutes.",
+        "Generate functions from voice prompts.",
+        "Test simple scripts without a full setup."
+      ],
+      "footer": "The goal: remove friction from the dev loop."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who *Gains* from Mobile Codex?",
+      "italicWord": "Gains",
+      "audiences": [
+        {
+          "pill": "Solo Devs",
+          "body": "Quick iterations, immediate problem-solving, reduced reliance on a dedicated workstation."
+        },
+        {
+          "pill": "On-Call Engineers",
+          "body": "Rapid diagnostics and patches for critical systems when away from the desk."
+        },
+        {
+          "pill": "Learners",
+          "body": "Experiment with code concepts and get instant feedback without a complex environment."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "The Catch",
+      "title": "Not Without *Challenges*",
+      "italicWord": "Challenges",
+      "bullets": [
+        "Screen size and input limitations.",
+        "Performance demands on mobile hardware.",
+        "Security concerns for sensitive code on personal devices."
+      ],
+      "footer": "Mobile convenience versus practical development needs."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The future of coding is *mobile*.",
+      "italicWord": "mobile",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get Flowi's insights on the next wave of AI development."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "news-2026-05-14-xai-turbines-lawsuit",
+  "title": "xAI's Turbine Trouble: More Noise, More Power, More Lawsuits",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "xAI is facing a lawsuit over the \"constant, droning noise\" from its gas turbines in Austin. Their response? File to add *more* turbines, effectively doubling the facility's capacity. This isn't just a local dispute; it's a stark preview of AI's escalating energy demands and the environmental trade-offs.\n\nWant the real story on AI's impact? Tap GROK for the waitlist.",
+  "hashtags": [
+    "xAI",
+    "Grok",
+    "ElonMusk",
+    "AIEnergy",
+    "DataCenter",
+    "GasTurbines",
+    "TechLawsuit",
+    "AIImpact",
+    "SustainableAI",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "xAI's Power Play",
+      "headline": "Sued over turbines. So xAI added *more*.",
+      "italicWord": "more",
+      "sub": "Elon Musk's xAI faces a lawsuit for its data center noise, then doubles down on gas power."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Turbine Tangle",
+      "body": "Residents near xAI's Austin data center sued over \"constant, droning noise\" from its gas turbines. These aren't just for backup; they're primary power sources for the AI compute."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "A Defiant Move",
+      "preStat": "Despite the ongoing lawsuit, xAI's latest filings show plans to add",
+      "stat": "100%",
+      "postStat": "more turbines to the facility.",
+      "body": "This effectively doubles the data center's current gas turbine capacity. The company is prioritizing compute over local complaints."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "AI's Energy Appetite",
+      "title": "Why So Many Turbines?",
+      "italicWord": "Energy",
+      "bullets": [
+        "Training large language models like Grok demands colossal electricity.",
+        "Traditional grid infrastructure often can't deliver enough power rapidly.",
+        "On-site gas turbines offer a quick, albeit noisy and polluting, solution."
+      ],
+      "footer": "This is a glimpse into AI's growing energy crisis."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Pays the Price?",
+      "italicWord": "Price",
+      "audiences": [
+        {
+          "pill": "Local Residents",
+          "body": "Enduring constant industrial noise and air pollution from the turbines, impacting quality of life and property values."
+        },
+        {
+          "pill": "Environmentalists",
+          "body": "Concerned about increased carbon emissions and reliance on fossil fuels in an era demanding clean energy transition."
+        },
+        {
+          "pill": "AI Companies",
+          "body": "Facing scrutiny for their environmental footprint and the escalating cost/complexity of powering advanced models."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "index": 6,
+      "total": 7,
+      "title": "Short-Term Gain, Long-Term...",
+      "italicWord": "Long-Term",
+      "left": {
+        "label": "xAI's Play",
+        "items": [
+          "Rapid power deployment for Grok's compute needs.",
+          "Bypassing grid limitations with on-site generation.",
+          "Prioritizing speed to market over local impact."
+        ]
+      },
+      "right": {
+        "label": "The Cost",
+        "items": [
+          "Community backlash and ongoing legal battles.",
+          "Increased carbon footprint and air quality concerns.",
+          "Setting a precedent for AI's energy-hungry future."
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to track the real costs of AI's ambition?",
+      "italicWord": "ambition",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "We cut through the noise to show you what matters."
+    }
+  ]
+}

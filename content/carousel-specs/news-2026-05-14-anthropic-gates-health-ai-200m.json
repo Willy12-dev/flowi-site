@@ -1,0 +1,114 @@
+{
+  "id": "news-2026-05-14-anthropic-gates-health-ai-200m",
+  "title": "Anthropic's $200M Health AI Bet: More Than Philanthropy?",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic just dropped $200M into health AI with the Gates Foundation. Is it pure philanthropy, or a strategic move to dominate a critical sector? We unpack the real drivers behind this massive investment.\n\nHit BUILD for the field guide on AI's next frontier.",
+  "hashtags": [
+    "anthropic",
+    "claudeai",
+    "healthai",
+    "gatesfoundation",
+    "medicalai",
+    "aiforhealthcare",
+    "aidisruption",
+    "futureofmedicine",
+    "techinvestment",
+    "flowi",
+    "aiinnovation"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S LATEST MOVE",
+      "headline": "$200M to Health AI. A Generous Gift, or a *Calculated* Market Grab?",
+      "italicWord": "Calculated",
+      "sub": "Why Anthropic and Gates Foundation are betting big on medical LLMs."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The $200 Million Commitment",
+      "body": "Anthropic, known for its Claude models, is pouring $200M into health-focused AI research. This isn't just about charity; it's a strategic play for a high-stakes sector."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE SECTOR'S APPEAL",
+      "title": "Why Health Is *Prime* for LLMs",
+      "italicWord": "Prime",
+      "bullets": [
+        "Unstructured data overload: Patient notes, research papers, clinical trials.",
+        "Demand for precision: Errors are costly, LLMs promise improved accuracy.",
+        "Complex reasoning: Diagnostics, treatment plans, drug discovery."
+      ],
+      "footer": "The potential for efficiency and improved outcomes is immense."
+    },
+    {
+      "type": "definition",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE PARTNER",
+      "term": "Gates Foundation",
+      "partOfSpeech": "noun.",
+      "definition": "A philanthropic organization focused on global health and poverty. Their involvement legitimizes the initiative and provides critical domain expertise.",
+      "example": "Previous investments in vaccine development and disease eradication."
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE REAL GOAL",
+      "title": "Beyond Philanthropy: Strategic *Aims*",
+      "italicWord": "Aims",
+      "bullets": [
+        "Early market positioning in a complex, regulated field.",
+        "Access to unique, high-value medical datasets.",
+        "Building trust and expertise with institutional partners."
+      ],
+      "footer": "This isn't a donation; it's a long-term play for critical infrastructure."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who *Benefits* Most?",
+      "italicWord": "Benefits",
+      "audiences": [
+        {
+          "pill": "Researchers",
+          "body": "Faster analysis of clinical trials and scientific literature."
+        },
+        {
+          "pill": "Clinicians",
+          "body": "Improved diagnostic support and personalized treatment plans."
+        },
+        {
+          "pill": "Anthropic",
+          "body": "Validation for Claude in high-stakes, real-world applications."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The future of *medicine* could run on LLMs.",
+      "italicWord": "medicine",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Understand how major players are shaping the next wave of AI applications."
+    }
+  ]
+}

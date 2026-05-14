@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-14-anthropic-china-ai-race-2028",
+  "title": "Anthropic's 2028 China AI Warning",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic's latest report isn't just a warning; it's a stark deadline. The US could lose its AI edge to China by 2028 without aggressive chip controls, reshaping global tech power dynamics. Get the full breakdown on what this means for national security and innovation.",
+  "hashtags": [
+    "Anthropic",
+    "AIChips",
+    "USChinaTechWar",
+    "FutureofAI",
+    "TechPolicy",
+    "NationalSecurity",
+    "AICompetition",
+    "GlobalAI",
+    "Semiconductors",
+    "AIStrategy"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ANTHROPIC'S LATEST",
+      "headline": "The US has until *2028* to keep its AI lead.",
+      "italicWord": "2028",
+      "sub": "Without strict chip controls, China could dominate."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "THE 2028 DEADLINE",
+      "body": "Anthropic's report outlines a scenario where China could surpass the US in AI capability within four years. This isn't just about research; it's about real-world AI deployment and global influence."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "KEY TERM",
+      "term": "AI Chip Controls",
+      "partOfSpeech": "noun.",
+      "definition": "Government policies restricting the export of advanced semiconductor technology and manufacturing equipment crucial for cutting-edge AI development.",
+      "example": "The US already limits sales of certain Nvidia and AMD chips to China."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "THE FACTORS",
+      "title": "Why *2028*?",
+      "italicWord": "2028",
+      "bullets": [
+        "China's rapid progress in AI research and development.",
+        "Aggressive domestic chip manufacturing initiatives.",
+        "The time it takes for current controls to fully take effect or be circumvented."
+      ],
+      "footer": "Anthropic suggests this is the critical window."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "WHO *CARES*?",
+      "italicWord": "CARES",
+      "audiences": [
+        {
+          "pill": "POLICYMAKERS",
+          "body": "The report is a direct call for stricter and more proactive measures to maintain US technological superiority."
+        },
+        {
+          "pill": "TECH EXECS",
+          "body": "Implications for supply chains, market access, and global competitive strategy are significant."
+        },
+        {
+          "pill": "INVESTORS",
+          "body": "Geopolitical tech shifts impact long-term growth and risk profiles in both US and Chinese markets."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "Anthropic's warning isn't *subtle*.",
+      "italicWord": "subtle",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the full breakdown on the US-China AI race."
+    }
+  ]
+}
