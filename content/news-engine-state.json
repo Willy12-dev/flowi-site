@@ -26,12 +26,40 @@
     "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVDh4RGJNZ3lfSGFYcXh3ZDd6Y20xU1JRUE5pVlpycUxIYkI1Q01aaG1Jd1NKWk05YS16dkNNaWVrLWx1ak5Id2tQY2RxVVFUVHFSa3BpZ1k5ekw1Zi1naFdhSkhWZVY5ZDYtZnRudExwdW0tam9DNlV3ZVkxZGZsdFFVQlcxX1lLQzl0WW1tdw?oc=5",
     "https://www.theverge.com/ai-artificial-intelligence/930763/openai-codex-chatgpt-ios-android-app-preview",
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxONUZFTk5uRFFST2Rqc0JZbXY5WUQwaERDSm1wbmU4azlCQnBINlY4UTgyR2Z4bEtrRzFMNUVlVHI1QmdLVE5iMW1oTzBUSV90cnZ5dDE3TXFUd1ZSMjlqUzgwUE9MNUFFS3FJelhwa0JHbnRJVEJqMTNKcTBWMzBjcUNFd3Y0UUhYSll4Y0VvNkpKdi1rZzg4eW9mMDU?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdGktSUpfUmt2N1lZc3dnYU1XQXpYSG9oN000Z0pUa3JwamVWS3d3bjZXZmxuQXhZT2hJVDJaYkJGSFB0UFlSU3hicUZwcTU5UXZ5aWZsMmtnb1Q5MnhVZjhmbVU3Q2x3Mk9QVTcwMXBXcFg4d1ZBcU4zbXI0WVNDbtIBhgFBVV95cUxOQ0ZCcTZVNURDTUdTV0tIdHIweWdhR0VDcGY1RnQxSnNkSGgtNF9YVzYyRnV4dWV2b3lDcU9yeTUzbzJKTnVxZXJmTERjaG9mOHVrdkk3bU5FUl9xcWlSUWJITVlocUo0ZDVVWlNCRnowU0s5aTltd0FhdkZvVVoyZV9nM2N6dw?oc=5"
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdGktSUpfUmt2N1lZc3dnYU1XQXpYSG9oN000Z0pUa3JwamVWS3d3bjZXZmxuQXhZT2hJVDJaYkJGSFB0UFlSU3hicUZwcTU5UXZ5aWZsMmtnb1Q5MnhVZjhmbVU3Q2x3Mk9QVTcwMXBXcFg4d1ZBcU4zbXI0WVNDbtIBhgFBVV95cUxOQ0ZCcTZVNURDTUdTV0tIdHIweWdhR0VDcGY1RnQxSnNkSGgtNF9YVzYyRnV4dWV2b3lDcU9yeTUzbzJKTnVxZXJmTERjaG9mOHVrdkk3bU5FUl9xcWlSUWJITVlocUo0ZDVVWlNCRnowU0s5aTltd0FhdkZvVVoyZV9nM2N6dw?oc=5",
+    "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXZWcFpGZkxpdjVQMFpfOFctWmR2MzR4a2s5cVNkMnhTQ0RQUUlaVXNTN3JGU2hvdUZMNzRNWXdHZmdzSGY3NUJpLUpMQ3RseUg3eVhybjJrYmVUYmp1eHlFb3dseXIwZms1TlhmREVkdHFKQ1Z5cjBLUkprLVhGQTBUenBQem55eUxZamY3MW05aEpzeUdjQlpWUQ?oc=5",
+    "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/"
   ],
-  "last_run": "2026-05-14T21:38:10.391Z",
-  "last_run_count": 0,
-  "last_run_items": [],
-  "total_drafted": 27,
+  "last_run": "2026-05-14T21:58:34.379Z",
+  "last_run_count": 3,
+  "last_run_items": [
+    {
+      "id": "news-2026-05-14-socher-self-building-ai-650m",
+      "title": "Socher's $650M Self-Building AI Bet",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
+      "vertical": "ai_builder",
+      "topic": "builder"
+    },
+    {
+      "id": "news-2026-05-14-grok-sf-election-picks",
+      "title": "Grok's Unfiltered Election Advice Sparks Debate",
+      "source": "xAI / Grok",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXZWcFpGZkxpdjVQMFpfOFctWmR2MzR4a2s5cVNkMnhTQ0RQUUlaVXNTN3JGU2hvdUZMNzRNWXdHZmdzSGY3NUJpLUpMQ3RseUg3eVhybjJrYmVUYmp1eHlFb3dseXIwZms1TlhmREVkdHFKQ1Z5cjBLUkprLVhGQTBUenBQem55eUxZamY3MW05aEpzeUdjQlpWUQ?oc=5",
+      "vertical": "ai_builder",
+      "topic": "grok"
+    },
+    {
+      "id": "news-2026-05-14-ai-data-centers-ditch-lake-tahoe",
+      "title": "When AI's Thirst Trumps Human Needs: Tahoe's Power Shift",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/",
+      "vertical": "ai_builder",
+      "topic": "builder"
+    }
+  ],
+  "total_drafted": 30,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
 }

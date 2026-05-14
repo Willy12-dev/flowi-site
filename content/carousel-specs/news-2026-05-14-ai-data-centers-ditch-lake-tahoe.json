@@ -1,0 +1,117 @@
+{
+  "id": "news-2026-05-14-ai-data-centers-ditch-lake-tahoe",
+  "title": "When AI's Thirst Trumps Human Needs: Tahoe's Power Shift",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Lake Tahoe residents are losing power. Not due to a storm, but because their energy supplier chose to prioritize data centers. It’s a stark signal of AI’s growing infrastructure demands and the real-world trade-offs emerging. \n\nGet the critical context on AI's energy footprint. Tap \"BUILD\" for our field guide.",
+  "hashtags": [
+    "AIImpact",
+    "DataCenters",
+    "EnergyCrisis",
+    "LakeTahoe",
+    "TechEthics",
+    "AIRealTalk",
+    "Infrastructure",
+    "FutureOfAI",
+    "PowerGrid",
+    "AIConsequences"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "AI'S REAL-WORLD COSTS",
+      "headline": "Lake Tahoe residents abandoned for AI's energy *appetite*.",
+      "italicWord": "appetite",
+      "sub": "How data centers are pushing communities offline."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Unseen Power Grab",
+      "body": "An energy supplier in Lake Tahoe diverted power from local homes to serve data centers. This isn't a fluke; it's a stark example of how AI's insatiable demand for electricity is reshaping infrastructure priorities."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "WHAT IT MEANS",
+      "term": "Energy Colonialism",
+      "partOfSpeech": "noun.",
+      "definition": "The practice where high-demand tech industries (like AI data centers) consume disproportionate energy resources, often at the expense of local communities' stability and access.",
+      "example": "Residents faced blackouts as power was rerouted to a growing cluster of AI data centers."
+    },
+    {
+      "type": "stats",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE SCALE OF IT",
+      "title": "AI's Power *Hunger*",
+      "italicWord": "Hunger",
+      "stats": [
+        {
+          "value": "20%",
+          "label": "Projected global electricity consumption by data centers by 2030."
+        },
+        {
+          "value": "10x",
+          "label": "Energy increase for training advanced AI models in just 5 years."
+        }
+      ]
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Feels The *Pinch*?",
+      "italicWord": "Pinch",
+      "audiences": [
+        {
+          "pill": "Local Residents",
+          "body": "Facing blackouts, higher utility costs, and a diminishing sense of priority in their own communities."
+        },
+        {
+          "pill": "Utilities",
+          "body": "Caught between growing demand from AI giants and the need to maintain reliable service for existing customers."
+        },
+        {
+          "pill": "AI Developers",
+          "body": "Indirectly benefiting from cheap, consistent power, often without direct engagement with the social costs."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "THE BIGGER PICTURE",
+      "title": "Beyond Tahoe: A *Precedent* Set",
+      "italicWord": "Precedent",
+      "bullets": [
+        "This isn't an isolated incident; similar tensions are emerging globally.",
+        "AI's infrastructure demands will force difficult conversations about resource allocation.",
+        "Expect more regulations and public scrutiny as energy conflicts escalate."
+      ],
+      "footer": "The era of cheap, abundant energy for AI is ending. Fast."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Understand the real *drivers* behind AI's energy future.",
+      "italicWord": "drivers",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get our exclusive report on AI's escalating energy demands and what it means for you."
+    }
+  ]
+}

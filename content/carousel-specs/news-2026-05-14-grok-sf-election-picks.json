@@ -1,0 +1,116 @@
+{
+  "id": "news-2026-05-14-grok-sf-election-picks",
+  "title": "Grok's Unfiltered Election Advice Sparks Debate",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Grok, xAI's bold AI, just weighed in on San Francisco's ballot measures, and its 'risky' picks are turning heads. This isn't just a political stunt; it's a test of AI's role in public discourse.\n\nLearn why Grok's election advice is so controversial and what it means for AI in politics.\n\nTap the link in bio for the waitlist.",
+  "hashtags": [
+    "GrokAI",
+    "xAI",
+    "ElonMusk",
+    "AIPolitics",
+    "ElectionTech",
+    "SanFrancisco",
+    "BallotMeasures",
+    "AIEthics",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 8,
+      "eyebrow": "xAI's Latest Stunt",
+      "headline": "Grok's SF election picks: *Unfiltered* or just reckless?",
+      "italicWord": "Unfiltered",
+      "sub": "Musk's AI just weighed in on local politics. The results are... predictably controversial."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 8,
+      "number": "01",
+      "title": "The Incident",
+      "body": "Grok, xAI's AI chatbot, recently offered 'risky' recommendations for San Francisco's ballot measures at a public party. While not an official endorsement, it publicly showcased Grok's political leanings."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 8,
+      "eyebrow": "Defining the Controversy",
+      "term": "Risky Predictions",
+      "partOfSpeech": "noun.",
+      "definition": "In this context, Grok's 'unfiltered' nature means it can generate politically charged opinions without conventional guardrails. This approach, while bold, raises concerns about misinformation or undue influence.",
+      "example": "Grok's suggestions for Proposition F, for instance, were particularly contentious, sparking immediate debate among attendees."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 8,
+      "eyebrow": "Why It Matters",
+      "title": "The *xAI* Playbook",
+      "italicWord": "xAI",
+      "bullets": [
+        "Elon Musk positioned Grok as a truth-seeking AI willing to tackle topics others avoid.",
+        "This incident aligns with that 'rebellious' brand, pushing boundaries in AI communication.",
+        "It tests the public's tolerance for AI engaging directly in sensitive political discourse."
+      ],
+      "footer": "Is 'unfiltered' a feature or a bug when it comes to elections?"
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 8,
+      "title": "AI in *Politics*",
+      "italicWord": "Politics",
+      "audiences": [
+        {
+          "pill": "For Voters",
+          "body": "AI offering political advice, even informally, can influence public opinion. The source and potential biases become critical for informed decision-making."
+        },
+        {
+          "pill": "For AI Developers",
+          "body": "This highlights the fine line between developing powerful, unrestricted AI and ensuring responsible deployment, especially in areas with significant societal impact like elections."
+        }
+      ]
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 8,
+      "number": "02",
+      "title": "The Broader Stakes",
+      "body": "With major elections looming globally, any AI engaging in political commentary faces immense scrutiny. Grok's public foray forces a conversation about the ethical boundaries and regulatory needs for AI in democratic processes."
+    },
+    {
+      "type": "bullets",
+      "index": 7,
+      "total": 8,
+      "eyebrow": "Looking Ahead",
+      "title": "What This *Signals*",
+      "italicWord": "Signals",
+      "bullets": [
+        "xAI's continued commitment to an 'edgy' and less censored approach to AI.",
+        "A growing public debate around AI's role in shaping political narratives and outcomes.",
+        "The increasing need for transparency regarding AI models' biases and training data."
+      ],
+      "footer": "This is just the start of AI's messy entry into the political arena."
+    },
+    {
+      "type": "cta",
+      "index": 8,
+      "total": 8,
+      "hook": "Want to see what else Grok is saying?",
+      "italicWord": "Grok",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Get on the list to try xAI's Grok and experience its unfiltered perspective firsthand."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "news-2026-05-14-socher-self-building-ai-650m",
+  "title": "Socher's $650M Self-Building AI Bet",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "An AI that *builds* itself? Richard Socher just landed $650M to make it happen. He’s not just talking theory—he's promising products.\n\nFlowi breaks down the controversial vision, the funding, and what it means for the future of development. Tap our field guide to BUILD.",
+  "hashtags": [
+    "RichardSocher",
+    "SelfImprovingAI",
+    "AIStartup",
+    "AIFunding",
+    "TechCrunchAI",
+    "FutureOfAI",
+    "AIInnovation",
+    "RecursiveAI",
+    "AIdevelopment",
+    "FlowiAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "The AI Feedback Loop",
+      "headline": "An AI that *builds* itself? The $650M bet that says it’s not sci-fi.",
+      "italicWord": "builds",
+      "sub": "Richard Socher's new venture isn't just theory."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "Richard Socher's new $650M bet",
+      "body": "The AI pioneer behind You.com and Salesforce AI is building a new startup. Its mission: an AI capable of researching, developing, and improving its own architecture indefinitely."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "Key Concept",
+      "term": "Recursive Self-Improvement",
+      "partOfSpeech": "noun.",
+      "definition": "An AI system designed to understand, modify, and enhance its own source code or training processes, leading to continuous, autonomous upgrades without human intervention.",
+      "example": "Imagine an AI that writes better code for itself, then uses that better code to write even *better* code."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "The Socher Angle",
+      "title": "Not just theory, but *product*",
+      "italicWord": "product",
+      "bullets": [
+        "Socher's track record includes shipping real-world AI at Salesforce and You.com.",
+        "He insists this new venture will deliver tangible, usable AI products, not just research papers.",
+        "The focus is on practical applications derived from self-improving capabilities."
+      ],
+      "footer": "The market demands more than just promise."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "Funding Reality",
+      "preStat": "Investors just poured",
+      "stat": "$650M",
+      "postStat": "into a startup aiming for AI that builds itself.",
+      "body": "This massive Series A round signals serious institutional belief in Socher's vision, despite historical skepticism around truly autonomous AI development."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "The *real* impact of self-improving AI",
+      "italicWord": "real",
+      "audiences": [
+        {
+          "pill": "Developers",
+          "body": "Imagine AIs that debug, optimize, and expand their own codebases, freeing up human engineers for higher-level design."
+        },
+        {
+          "pill": "Researchers",
+          "body": "Accelerated discovery cycles, with AIs exploring new architectures and training methods far faster than human teams."
+        },
+        {
+          "pill": "Enterprises",
+          "body": "Custom AI solutions that adapt and evolve to changing business needs without constant, costly human re-engineering."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Forget \"AI will take your job.\" What if AI starts *building* itself?",
+      "italicWord": "building",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the strategic breakdown of self-improving AI."
+    }
+  ]
+}
