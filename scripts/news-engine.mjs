@@ -401,48 +401,86 @@ async function callClaude(item, courses) {
 async function callGeminiOnce(model, systemPrompt, userPrompt) {
   // Gemini supports a JSON response mime type which guarantees valid JSON.
   // System instructions go in `systemInstruction`, user content in `contents`.
-  // Safety thresholds set to BLOCK_NONE-equivalents so news content doesn't
-  // trip the moderation filter (we're paraphrasing real news, not generating
-  // harmful content).
-  const r = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: systemPrompt }] },
-        contents: [{ role: "user", parts: [{ text: userPrompt }] }],
-        generationConfig: {
-          responseMimeType: "application/json",
-          maxOutputTokens: 8192,
-          temperature: 0.7,
-        },
-        safetySettings: [
-          { category: "HARM_CATEGORY_HARASSMENT",        threshold: "BLOCK_ONLY_HIGH" },
-          { category: "HARM_CATEGORY_HATE_SPEECH",       threshold: "BLOCK_ONLY_HIGH" },
-          { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_ONLY_HIGH" },
-          { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_ONLY_HIGH" },
-        ],
-      }),
+  // Safety thresholds permissive so real-news content (cybersecurity,
+  // crime, politics references) doesn't trip the moderation filter.
+  //
+  // Retry on 429 (rate limit) and 503 (model overloaded) with exponential
+  // backoff. Free-tier Gemini is ~10-15 RPM so transient hits are common
+  // even with chunked concurrency.
+  const MAX_ATTEMPTS = 4;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const r = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: systemPrompt }] },
+          contents: [{ role: "user", parts: [{ text: userPrompt }] }],
+          generationConfig: {
+            responseMimeType: "application/json",
+            maxOutputTokens: 8192,
+            temperature: 0.7,
+          },
+          safetySettings: [
+            { category: "HARM_CATEGORY_HARASSMENT",        threshold: "BLOCK_ONLY_HIGH" },
+            { category: "HARM_CATEGORY_HATE_SPEECH",       threshold: "BLOCK_ONLY_HIGH" },
+            { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_ONLY_HIGH" },
+            { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_ONLY_HIGH" },
+          ],
+        }),
+      }
+    );
+
+    // Retry on transient rate-limit / overload responses
+    if ((r.status === 429 || r.status === 503) && attempt < MAX_ATTEMPTS) {
+      const backoffMs = 2000 * Math.pow(2, attempt - 1); // 2s, 4s, 8s
+      console.error(
+        `  ${model} ${r.status} (attempt ${attempt}/${MAX_ATTEMPTS}) — retrying in ${backoffMs}ms`
+      );
+      await sleep(backoffMs);
+      continue;
     }
-  );
 
-  if (!r.ok) {
-    const txt = await r.text();
-    throw new Error(`Gemini API ${r.status} (model=${model}): ${txt.slice(0, 300)}`);
+    if (!r.ok) {
+      const txt = await r.text();
+      throw new Error(`Gemini API ${r.status} (model=${model}): ${txt.slice(0, 300)}`);
+    }
+    const data = await r.json();
+    const candidate = data.candidates?.[0];
+    if (!candidate) {
+      throw new Error(`No candidate in Gemini response (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
+    }
+    if (candidate.finishReason && candidate.finishReason !== "STOP") {
+      throw new Error(`Gemini finishReason=${candidate.finishReason} (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
+    }
+    const text = candidate.content?.parts?.[0]?.text;
+    if (!text) throw new Error(`No text in Gemini response (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
+    return extractSpecJson(text);
   }
-  const data = await r.json();
+  // Exhausted retries
+  throw new Error(`Gemini API exhausted ${MAX_ATTEMPTS} attempts (model=${model})`);
+}
 
-  const candidate = data.candidates?.[0];
-  if (!candidate) {
-    throw new Error(`No candidate in Gemini response (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+/**
+ * Process items with bounded concurrency + a delay between batches.
+ * Keeps us under Gemini free-tier RPM limits (~10-15 RPM).
+ */
+async function withConcurrency(items, concurrency, gapMs, fn) {
+  const results = [];
+  for (let i = 0; i < items.length; i += concurrency) {
+    const batch = items.slice(i, i + concurrency);
+    const batchResults = await Promise.allSettled(batch.map(fn));
+    results.push(...batchResults);
+    if (i + concurrency < items.length) {
+      await sleep(gapMs);
+    }
   }
-  if (candidate.finishReason && candidate.finishReason !== "STOP") {
-    throw new Error(`Gemini finishReason=${candidate.finishReason} (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
-  }
-  const text = candidate.content?.parts?.[0]?.text;
-  if (!text) throw new Error(`No text in Gemini response (model=${model}): ${JSON.stringify(data).slice(0, 300)}`);
-  return extractSpecJson(text);
+  return results;
 }
 
 async function callGemini(item, courses) {
@@ -632,10 +670,18 @@ async function main() {
     return;
   }
 
-  console.log(`\nDrafting ${top.length} carousel specs via ${provider} (${model})...\n`);
+  // Gemini free tier is ~10-15 RPM. Process in chunks of 3 with a 4s gap
+  // between chunks to stay comfortably under the limit. Claude API doesn't
+  // need this but it's harmless (just slightly slower).
+  const CONCURRENCY = provider === "gemini" ? 3 : 5;
+  const BATCH_GAP_MS = provider === "gemini" ? 4000 : 0;
 
-  const results = await Promise.allSettled(
-    top.map((item) => callAgent(provider, item, courses))
+  console.log(
+    `\nDrafting ${top.length} carousel specs via ${provider} (${model}) — concurrency ${CONCURRENCY}, gap ${BATCH_GAP_MS}ms\n`
+  );
+
+  const results = await withConcurrency(top, CONCURRENCY, BATCH_GAP_MS, (item) =>
+    callAgent(provider, item, courses)
   );
 
   const drafted = [];
