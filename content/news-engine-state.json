@@ -18,58 +18,9 @@
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSEcyRU5KcVlaQTQ5Z2VweHRkREhza1NEb19mdmhvRWtob1dpUXlCdEJOb2Q5clM4aF9IUHVQcXNtRmtGTVFINW1PeTRrZUZLUVl6Mk12T0RZcHRQcEItS2liYTM5cDFuaS1USm01TXV4TXVGR3R2YUlFeW4tcjVaV1lLT0Vkejl1ZUxjeXdTYmRoTGZLUmZiNFk5WUZOMkZJMkE?oc=5",
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbEprTVRNQXZubmQ2MXd6WXV1LUZNanZaWXh0ekxJSWxCQUV2RGNiS0w0SExKekVSUmVFU1ZKdlFPamxMM3RJTXBCLTBNaVdzS2Y2aGxHOHJtc3ZPamdZMGxKTlo1VXVpVTd3U2Z6aVc5Wjhia2NJamRPaUdaVndobzdWRTN2VnhmVnNVVk5EVHNVSHBfRG9fWXpHNko5eGZ1Rnpjeg?oc=5"
   ],
-  "last_run": "2026-05-14T21:23:58.096Z",
-  "last_run_count": 6,
-  "last_run_items": [
-    {
-      "id": "news-2026-05-14-anthropic-gates-200m-health-pact",
-      "title": "Anthropic's $200M Gates Foundation Health Play",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPblhENVp3QUFJQUh4WjB4MXk0aDM2b1BqNVFQV294aGNsMUZ6TVBsZ3ItLW5mWHc3eXVDY1hyeV9JSFA4d3FXVkV6OGRpb0dvdElhVmZ3QkxMclZBTmFlXzRJZXREdlAtUm9kRllVZDM0WEVWWkZBSmNHdUxKQUUxMVE3eHh4Tl8yV3h1TGVjbHRqVU5FUVNCU3JwRC1FSzVZUVBWdWtPaFk5X19WeXRLOFVB?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-openai-codex-mobile-workflow",
-      "title": "OpenAI's Mobile Codex Bet",
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
-      "vertical": "ai_builder",
-      "topic": "chatgpt"
-    },
-    {
-      "id": "news-2026-05-14-anthropic-gates-health-ai-200m",
-      "title": "Anthropic's $200M Health AI Bet: More Than Philanthropy?",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8zajdKM0xocElmVXgxQnNuSkRDSnRJV3Z1NElzMTEta2Vhc1RXX2prWktHTV90TTBHaGFfalM5dUVOV3pQVHhsXzhhcjFYSzF2eGtz?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-xai-coding-agent-anthropic-rivalry",
-      "title": "xAI's Coding Agent: A Direct Shot at Anthropic",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeXpCZ1hKa0hEQzRLSkk2NzF0YV9NM01yUHZUYzJYMU45TUJBd09xMFU2TnBBUkJ6QzdFbWlJbDJZaThZbGVQWktGdTlJSF9XZDlqcXZGSTl4MVp3YnBTOThFUmZWX01ucjZmdy1OR1RuVGowNFZGQXpnS2xqU1FldEV2NXlOWmtlTjBydF9MVnhoZl91VGl4NkVLYmZZWmZGMTJ6SGJxUkZpNC1hY0xyTWlnMmw?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-14-xai-turbines-lawsuit",
-      "title": "xAI's Turbine Trouble: More Noise, More Power, More Lawsuits",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSEcyRU5KcVlaQTQ5Z2VweHRkREhza1NEb19mdmhvRWtob1dpUXlCdEJOb2Q5clM4aF9IUHVQcXNtRmtGTVFINW1PeTRrZUZLUVl6Mk12T0RZcHRQcEItS2liYTM5cDFuaS1USm01TXV4TXVGR3R2YUlFeW4tcjVaV1lLT0Vkejl1ZUxjeXdTYmRoTGZLUmZiNFk5WUZOMkZJMkE?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-14-anthropic-agents-api-billing",
-      "title": "Anthropic's Agent Billing: No More Free Autonomy",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbEprTVRNQXZubmQ2MXd6WXV1LUZNanZaWXh0ekxJSWxCQUV2RGNiS0w0SExKekVSUmVFU1ZKdlFPamxMM3RJTXBCLTBNaVdzS2Y2aGxHOHJtc3ZPamdZMGxKTlo1VXVpVTd3U2Z6aVc5Wjhia2NJamRPaUdaVndobzdWRTN2VnhmVnNVVk5EVHNVSHBfRG9fWXpHNko5eGZ1Rnpjeg?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    }
-  ],
+  "last_run": "2026-05-14T21:28:59.224Z",
+  "last_run_count": 0,
+  "last_run_items": [],
   "total_drafted": 17,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
