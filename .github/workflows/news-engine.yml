@@ -21,6 +21,11 @@ jobs:
     name: Poll RSS · draft carousels · commit
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # Opt into Node.js 24 for the action runtime — silences the
+    # "Node 20 actions are deprecated" annotation. Doesn't change the
+    # version our script runs on (still set explicitly in setup-node).
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
       - name: Checkout
