@@ -44,3 +44,14 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Reference images for studying viral formats — not for production
+references/**/*.png
+references/**/*.jpg
+references/**/*.jpeg
+references/**/*.webp
+references/**/*.gif
+references/**/*.mp4
+
+# Generated carousel outputs (regenerable; not source of truth)
+output/
