@@ -605,23 +605,40 @@ async function main() {
   );
 
   const drafted = [];
+  const successfulUrls = [];
+  const errors = [];
   for (let i = 0; i < results.length; i++) {
     const r = results[i];
     if (r.status === "fulfilled") {
       try {
         const filepath = await saveSpec(r.value);
         drafted.push({ ...r.value, source: top[i].source, url: top[i].link });
+        successfulUrls.push(top[i].link);
         console.log(`  ✓ ${path.basename(filepath)}`);
       } catch (e) {
-        console.error(`  ✗ save FAIL for ${top[i].title}: ${e.message}`);
+        const msg = `save FAIL for "${top[i].title}": ${e.message}`;
+        errors.push(msg);
+        console.error(`  ✗ ${msg}`);
       }
     } else {
-      console.error(`  ✗ draft FAIL for ${top[i].title}: ${r.reason?.message ?? r.reason}`);
+      const msg = `draft FAIL for "${top[i].title}": ${r.reason?.message ?? r.reason}`;
+      errors.push(msg);
+      console.error(`  ✗ ${msg}`);
     }
   }
 
-  // Persist all attempted URLs (so failures don't re-attempt forever)
-  state.seen = [...state.seen, ...top.map((i) => i.link)].slice(-SEEN_HISTORY_CAP);
+  // Surface a summary BEFORE the script exits so the GH Actions run summary
+  // shows the error count even when the workflow itself succeeds.
+  if (errors.length > 0) {
+    console.error(`\n${errors.length} error(s) this run:`);
+    for (const e of errors.slice(0, 5)) console.error(`  - ${e}`);
+    if (errors.length > 5) console.error(`  ... and ${errors.length - 5} more`);
+  }
+
+  // Only mark *successfully drafted* URLs as seen. Failed items stay unseen
+  // so the next cron retries them (the bug we caught when Gemini failed all
+  // 10 calls silently and we lost the news items to the seen-list).
+  state.seen = [...state.seen, ...successfulUrls].slice(-SEEN_HISTORY_CAP);
   state.last_run = new Date().toISOString();
   state.last_run_count = drafted.length;
   state.last_run_provider = provider;
