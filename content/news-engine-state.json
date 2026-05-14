@@ -9,91 +9,22 @@
     "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
     "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPOUVGSVdYajhWa28yQnRmZk5EaTJfV0dNOFBNQW92ZDZPTFJrQVlGbVFvZGxzNWpRa3NseDdOVGhuVWlBUVBPRHUzazlCWm1nVkI0bjlZcS1uT1RNNFBQZHd0Ny1BZndaeXdmT2lkQVZOcmw5bWw3NWxNOA?oc=5",
     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdWdFaVFqeTlHVlFNcGhvWUdZN25rVi1VLXZYZkRhM1drVDlEeUF5dDA4dEE2ZTZpTERjQkcxamlOSHFzQjBTd2RYMk5KUll2NXhFeG1FbWdRMHptV3B1bWJJdWx0R3c0S1BXeVNhYmswanhOaGxzMGpqcHdKd2xWVEVxZXgtbFVpOHRKZ3lKN3FRSEllSnlFa0I0clhBSGNHX0l2Rl9iTWE?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9teUdmYk5IYnhiR3JVeFdRcEdaeWhaNUZUMDNjLWFHUW5VRTNGYi13U3lnRTFMUWZ0T2lvSUlYTmNmZ1RWOTJpVkxNUkstZTNObzhFQ2FiV0MxbFBhbHNpM0lJakJvSmU1?oc=5"
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9teUdmYk5IYnhiR3JVeFdRcEdaeWhaNUZUMDNjLWFHUW5VRTNGYi13U3lnRTFMUWZ0T2lvSUlYTmNmZ1RWOTJpVkxNUkstZTNObzhFQ2FiV0MxbFBhbHNpM0lJakJvSmU1?oc=5",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPekQ4TWxDSDQxN0JESGl2aDRXbXdzZE1CTFUwbGxXeEJ6a1d4NU1ZMnlYSjFGLXFISll2OS11dERMaGt4ekRWUlFhWXJCTGxtbGtlOEFBQ09EODNjel9FWlhaZzlEZFI3OGZZdnRYWmsxRU9YbGxCbGJJLWVLdEpyYlo1RXJBSy1MdkxWVDJYbzdwYWpOMzBaNGwzRGwtbDZkejJVcUJaUQ?oc=5",
+    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcTJtZ0NndDdPVWZ4NHBmNlM0bVpJYUltcXlrS3ptYmUzcjZjbTJYS2hMalEyU2dJNUcwa0taZWNVQ3lyYl96SWswR1RGRFJHV2wyeko5Q0lsSHNkck1fbHlPMjVOd0sydUx1ZFRRb0hqODNYSzFmcGs1VzNlU3Y2YzVmOFhiRi1fLUtSZXpJemtfUkN1UjlIQm1LZlR1Y0lrbVpHd2RiRXJKWVpYbmlzak9MdlJCQVFmVi1JYjhRdmtfS05nV0RTUjRfSldxV0Q5cVhrTHVR?oc=5",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMXBXNXhIam1RN3cwUDRQMU51Wm5CVWl4ZHEzR0FzYTRDT3BsNGxoc0UxMTJIM2JLdHpvWUt2Mm85MXN4NTZaYlVIMFk2SDhpTUNkUXIzWElCLWVZc2NsSElxR2ZKaVVCQng4eDZISmYwSWVSNjN1cWNlQVdsN3dPTEhVZWtsTzJFaUFsVUsxNDHSAZYBQVVfeXFMT1BLd1I2NTRkZzE1eWYyc0gzdm1BQm4tRjlma0ZOV3cwSGc4VzczTVIzbXJRb3FVdkRyZjg1RElTUUlxMmwxLXIxMzR6NnNTNFhJSWYzc1J6M2ZSdmxCNmVOUnZzQ0o1ZG9KZXlPSEJZeVVHMHFaMGswOUNNRWtPU25NZ3p1MjdvNEI2NFlPRm1NSm9JVW93?oc=5",
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM2UzemxFMFF0eUVJS3k1UFNjbnhnaENXR09SNFBYVUhEQXJyMm1aQlhzNkR6YnVfMjNBX0VuNGpBMW9fTk9FUEIxekNQbG5TVmgzbWg1eDgwSnlyc0hoNUUwT3ZyTWRldFg5cW8zYzd0V3duSzZsMkYxc0x4X2FtTnAyd0lWWXBpY3pKV3ZCRXBUMWMxYnNsSW5OSUhwNHM?oc=5",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQVpDd2VIcEpqSTk1UjFrM1JZTTNqUFVsQzNMQkdDM1FZMGVTcEc3QmRxNTd5endGTXp2ZmlTSnZRRkpIQnl0YzEwT3N1SWZlS1lQUzhhR05YVEJUcl9CX2dIcmRnb0xhUDJMMG0zdjBfdXR6NGxpSktNV1RuYktOQmtRQXBXME1BWjM1VWgzc1NicFZnZktYUDFGOUdoVzQ1ZXfSAbYBQVVfeXFMTXZ5a1JjTkJ1RFczZkwyT2tsUEZQUEU2dngwNTRYNXEzampLWTEwUDZsUDc2bnNvbFRkaU14Qjc5cFVmN19mUV9oT01XaHFoekVzNkJBUDY1RzJEVjZWSFFIZHVHcnRQcl9MMjd4LTloLS1XcThFVThBUS1kSkZ1b1IzVmlTTUwtY2VJenNOaEJTUVNiU1B6MmFmWG1KclFIQXpUcmk3ZVdZX09LRDJPd2gzU0pIV1E?oc=5",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcUttdlNGOUlWamtJVFk2aWJQS05yc2VmM0JaTnMxc25ZVUdGanZfWjBtOGlMNUczU3lXbVVZOEx6MmMzcEJzUmswamxDSWhZdDBwU0dPdnlmZFpFSkZWMThiQkFVcGROWWVDcjhmS1BkT2FBU0UxZTNpTUNGaVRQSVo2NGw1SEp1OGk1V290NkM0R1Y2bGlDQmRoWG9hWHlfZExQSU9QOWR2WDZ3N1A3dElDb3dyZVZ2M09EcFRRcw?oc=5",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPM3VKekRrMHhwSkt1bjM4elZoU2dRZ2JkbmtidWdKdWxDNm1MQXFWSkEyV2oxYnNhYlFKTGlway1tU1VaR0VrUHA2NnFVemZydENOVnZKTjl5MHhvdTVqN1c1Q2Jjc3k0clhaS3A2LWU2UFZaNDVnSXlxNFNydWl5dURmUThDd3BGdjZTdTRNX2x4RUJPUm9yMmgtZFdiTUMtamNZQW9GREx5TzhQOS1nXzBzVHVhU1BNLWg4MzY1ZU9uUQ?oc=5",
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNel9xMW44X1lXX0xTV09pYXhNVEFyOG80TTd0azVBMk9BclZDZVFEZWc0T2N1STExMC1rUnYtS1lQRlhHd3R6VHpURVlZQUgtTG1fU09pS2FyQ3ljdk5rT2NGbFI5aTFITGVhSzd2U0pmQXgwU0xseXdEcjYwOHVmaFZfNXE4S1R0LXFWaUFpVGJnQ2N1V1J0Qi05NGYzVG8?oc=5",
+    "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeUEyLVd6ckZlZlhiTWZPVWNMdTBXX25nNEdLQzVHOXd5RGwwMk1UZlJmbXhCakpNTEhPbkRZMDFBQ0V1MWR1WmFPZFNjSy1nRUkxemxUd1hMMGRQZVRJU1FqcnE5M1ZJNFlUMjUtRnB2UG5mUktuNUdpWk1vMHBwTk1acVVydw?oc=5"
   ],
-  "last_run": "2026-05-14T17:08:20.588Z",
-  "last_run_count": 10,
-  "last_run_items": [
-    {
-      "id": "news-2026-05-14-anthropic-claude-legal-work-expansion",
-      "title": "Anthropic's Claude Goes After Legal Work",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQemVIdGtMUjBxTjF3LXQ5eUlxRHFqSzF5YkF4ZkdkRUl6NXdoSXpLd2FTakZCT0N5YTFjZ3VyVnZCSUlPVDdQbnI0Z1F3V0YxOFQ5M2hfYnRmRWVXSTduRmRuTk5TcFU0cmxRWFBxaGpRQ1YzWTJ3RnpNLVJJdzJBc19IQnVyaUREWExXendWZ1RtaWVyc2YtV0U0Z2V4N3huVG1hSHlUM2VTNGkt?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-mythos-ai-breaks-mac-security",
-      "title": "Anthropic's Mythos AI Breaks Mac Security",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRm83cS1ubUdLSFl1TTc0SmtkQXJtZEFpM3lFV3ZzaUJYWDVHMHJpR0FvZkpIc1JycEJtQ1NYLUtKVTJTYVQyTDh2a1ZScllxTU5jRURxVWNMUXQ3eElhR1dXbjAtZTVSVG5DRm5IanpRVE9GUmdBUm0waEstZDQ0dDZtVmgycnBSVzM0ay1yUU94TUhEaXlmTUNVcWQ5SUF4d01qWg?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-figma-ai-anthropic-partnership",
-      "title": "Figma's AI Tools Test Growth Story As Anthropic Joins The Race",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd212UWpndkNvTkhac2NyQWRScDZPLXNWZWMyM1RVd0p6T2drSWo2M0RsYWV2ZkNjNXpfdXpGR0M5M1U3Y1BCblM0LVRKNzNOVnl1NUxFOS1pQzJua2EyZjJyYk1SdFFSTGZXRjIwaWxEUkVGUFFjMmFTS19RYUMxbl9LWnNqakh3M25JWmIzNkpsRGNpeXNZM1RMZFRwVmx0NnpIZGdxSVUyZjJvSTl5aG9IQS1UMjY2UVpITnpR0gHDAUFVX3lxTE94V05QUExRazBfanU2WENvNTJ3Mk1yMW9zb2FLdmQ5bU1DWUcxeW5ENnNCdl8tTXhMdDNjNzhtZUg0dFBvemhzOGpEMFFnVUEwQ3VWdEdqdkExa3cxd3RfUk5EVVFZa3RFQWRxV2tEUjlMUG1xTzhBX2xCZ29BUzlBYndzVWlaYzh6VmJJc3JtYXAtdXFJZU5YWTJYTEsxQTdTSDYwMmdESnBnZkFUWGVhSEI3RUZZQnpkVEd3SXZpaG50TQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-aeo-replaces-seo-brands-ai-discoverability",
-      "title": "AEO Is the New SEO: How Brands Get Found by AI",
-      "source": "Perplexity",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN2VfTFNWdjVxc1VOeDJHbVhONmFaaVRUTnNvR3RsdXRja1VhQkdlNER0MXgwdzZLOHJxaGJES2FZVVgyWnNmb0U2cWVLRUwtdUduenpmVmlOeURqbFVSSVB1M3R3d3NnUHdrNE1uLVY3enZkbHA2bUloMFNCNEhaU1JMY2ZhSVU0bVU2Z2txc0xmbGFzSHVmY3RMdjBMcDdwRUhHVmdLM09NQQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "perplexity"
-    },
-    {
-      "id": "news-2026-05-14-claude-for-legal-launch",
-      "title": "Anthropic launches Claude for Legal — vertical-specific AI play",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTTFpRk1jcWpsdFFZbk8wWUwxV05qVDB3MEhSOXJvVkczRk14dUtYdWlLZU9IYWZtYVJ3NUJmQ21FeGJqSmVDcFhwbFd1SVp1SWRJcThhWXc5aHhCTUJDYU9rSTlQV1ZIakxZand1S0ctOE9iekVjcm1rZVZSdU1QRkdKcFZGU2tFQkFVTEdncl9LdVpSWUtsMWlIa3F3bmM5a1p3X2FoaHFqUWpiX3RTVmJEdTd5cElzZW1RRExiMUcxel9XdmMxYWNEQ0xhSVFQUEQ4TmNEbkRBbndFejNKLQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-grok-predicts-dogecoin-price-meme-coin-mania-q3-2026",
-      "title": "Grok AI predicts DOGE price if meme coin mania returns",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVzZkNWNFVGg5ZFQ5Z1RaLTNEXzJyX1RZXzdsTlNvTnJaTE05Vkl0VXNvV2M3RS1jbWtPY2ptOGZOWFRsdDNZa3dYRURXbG80VFUzZkpKMVluTDFjclpCay1lWFVVbnhveHpRMy1Pay1hd2RPNV9TbHBLUzJVV1NTbnhqdGJHekJVZUJ2WTZxbXp2UlItaFhjcWRQTGxPX0xWeHFJZmJucHNaQQ?oc=5",
-      "vertical": "ai_trading",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-14-cerebras-55b-ipo-comeback",
-      "title": "Cerebras raises $5.5B in comeback IPO",
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-14-xero-claude-integration-accounting-ai",
-      "title": "Xero brings Claude to small business accounting",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPOUVGSVdYajhWa28yQnRmZk5EaTJfV0dNOFBNQW92ZDZPTFJrQVlGbVFvZGxzNWpRa3NseDdOVGhuVWlBUVBPRHUzazlCWm1nVkI0bjlZcS1uT1RNNFBQZHd0Ny1BZndaeXdmT2lkQVZOcmw5bWw3NWxNOA?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-14-microsoft-beats-claude-gpt-cybersecurity",
-      "title": "Microsoft Beats Anthropic and OpenAI on Key Cybersecurity Test",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdWdFaVFqeTlHVlFNcGhvWUdZN25rVi1VLXZYZkRhM1drVDlEeUF5dDA4dEE2ZTZpTERjQkcxamlOSHFzQjBTd2RYMk5KUll2NXhFeG1FbWdRMHptV3B1bWJJdWx0R3c0S1BXeVNhYmswanhOaGxzMGpqcHdKd2xWVEVxZXgtbFVpOHRKZ3lKN3FRSEllSnlFa0I0clhBSGNHX0l2Rl9iTWE?oc=5",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-14-whatsapp-meta-ai-incognito-chat",
-      "title": "WhatsApp Meta AI Incognito Mode Launch",
-      "source": "Meta AI (news)",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9teUdmYk5IYnhiR3JVeFdRcEdaeWhaNUZUMDNjLWFHUW5VRTNGYi13U3lnRTFMUWZ0T2lvSUlYTmNmZ1RWOTJpVkxNUkstZTNObzhFQ2FiV0MxbFBhbHNpM0lJakJvSmU1?oc=5",
-      "vertical": "ai_behavior",
-      "topic": "builder"
-    }
-  ],
-  "total_drafted": 10
+  "last_run": "2026-05-14T17:16:05.458Z",
+  "last_run_count": 0,
+  "last_run_items": [],
+  "total_drafted": 10,
+  "last_run_provider": "gemini",
+  "last_run_model": "gemini-2.5-flash"
 }
