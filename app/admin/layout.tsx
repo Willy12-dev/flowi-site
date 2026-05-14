@@ -50,6 +50,9 @@ export default async function AdminLayout({
             <Link href="/admin/seo" className="link-ink text-[14px]">
               SEO
             </Link>
+            <Link href="/admin/sales" className="link-ink text-[14px]">
+              Sales
+            </Link>
             <Link href="/" className="link-ink text-[14px] opacity-60">
               ← public site
             </Link>
