@@ -42,12 +42,16 @@ export const FUNNELS: Record<string, ArticleCTA> = {
   ai_behavior: {
     eyebrow: "Building habits that actually stick?",
     title: "Woyuduin — AI-assisted accountability.",
-    titleHref: "https://woyuduin.com", // TODO: swap for live Woyuduin URL
+    titleHref: "https://woyuduin.com",
     body:
       "Track the patterns, get nudges that fire when they matter, recover fast when you slip. The behavioral system this article points toward — built.",
     primaryLabel: "Try Woyuduin →",
     primaryHref: "https://woyuduin.com",
-    secondary: { prefix: "or read", label: "more on behavior change", href: "/blog/category/ai_behavior" },
+    secondary: {
+      prefix: "or grab",
+      label: "the 4-essay playbook (PDF, $9)",
+      href: "https://flowi.gumroad.com/l/behavior-change-playbook",
+    },
     external: true,
   },
 };
