@@ -67,10 +67,24 @@ jobs:
           git add content/carousel-specs/ content/news-engine-state.json
           if git diff --cached --quiet; then
             echo "Nothing to commit (no fresh items today)."
-          else
-            DATE=$(date -u +%Y-%m-%d)
-            COUNT=$(git diff --cached --name-only -- 'content/carousel-specs/news-*.json' | wc -l | tr -d ' ')
-            git commit -m "news: ${DATE} · ${COUNT} carousels drafted by the daily engine"
-            git push
-            echo "Committed and pushed ${COUNT} new draft(s)."
+            exit 0
           fi
+
+          DATE=$(date -u +%Y-%m-%d)
+          COUNT=$(git diff --cached --name-only -- 'content/carousel-specs/news-*.json' | wc -l | tr -d ' ')
+          git commit -m "news: ${DATE} · ${COUNT} carousels drafted by the daily engine"
+
+          # Push with rebase-on-conflict retry. Handles the race where
+          # someone (or a parallel workflow) pushed to master during this run.
+          # Retries up to 5 times with a short backoff.
+          for attempt in 1 2 3 4 5; do
+            if git push origin master; then
+              echo "Pushed on attempt ${attempt}: ${COUNT} new draft(s)."
+              exit 0
+            fi
+            echo "Push attempt ${attempt} rejected — rebasing on origin/master..."
+            git fetch origin master
+            git rebase origin/master || { echo "Rebase conflict — aborting."; git rebase --abort; exit 1; }
+          done
+          echo "Push failed after 5 attempts. Giving up."
+          exit 1
