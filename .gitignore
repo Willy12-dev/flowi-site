@@ -55,3 +55,6 @@ references/**/*.mp4
 
 # Generated carousel outputs (regenerable; not source of truth)
 output/
+
+# News engine local cron logs
+.news-engine-logs/
