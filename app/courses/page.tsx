@@ -21,6 +21,53 @@ interface Book {
   status: 'live' | 'coming';
 }
 
+interface FieldGuide {
+  number: string;
+  title: string;
+  subtitle: string;
+  blurb: string;
+  price: string;
+  url: string;
+  meta: string;
+  vertical: 'trading' | 'behavior' | 'ai-builder';
+}
+
+const FIELD_GUIDES: FieldGuide[] = [
+  {
+    number: '№01',
+    title: "The Algo Trader's Playbook",
+    subtitle: 'Four essays on why retail algo trading fails — and the architecture that survives.',
+    blurb:
+      'Compiled from the trading vertical of the daily brief. Why most retail systems blow up at month four, the six lies backtests cannot simulate, how institutional desks actually use ICT, and an honest comparison of every real platform in the category.',
+    price: '$9',
+    url: 'https://flowi.gumroad.com/l/algo-traders-playbook',
+    meta: '~5,500 words · 4 essays · PDF',
+    vertical: 'trading',
+  },
+  {
+    number: '№02',
+    title: 'The Behavior Change Playbook',
+    subtitle: 'Four essays on why most recovery apps fail — and the relapse-aware architecture that works.',
+    blurb:
+      "Compiled from the behavior vertical. Why habit apps don't survive month three, the discipline-app paradox (more apps → worse outcomes), what every recovery app gets wrong about relapse, and an honest comparison of the apps actually built on Marlatt's research.",
+    price: '$9',
+    url: 'https://flowi.gumroad.com/l/behavior-change-playbook',
+    meta: '~5,500 words · 4 essays · PDF',
+    vertical: 'behavior',
+  },
+  {
+    number: '№03',
+    title: "The AI Builder's Field Guide",
+    subtitle: 'Four essays on what shipped in AI this month — and what the production patterns mean.',
+    blurb:
+      'Compiled from the AI builder vertical. Mozilla using Claude Mythos to harden Firefox, OpenAI gating Spud to defenders, what actually shipped at Code w/ Claude 2026, and an honest review of the AI engineering books worth reading.',
+    price: '$9',
+    url: 'https://flowi.gumroad.com/l/ai-builders-field-guide',
+    meta: '~5,500 words · 4 essays · PDF',
+    vertical: 'ai-builder',
+  },
+];
+
 const BOOKS: Book[] = [
   {
     number: '№01',
@@ -98,19 +145,50 @@ export default function CoursesPage() {
       {/* Hero */}
       <section className="page-gutter pt-16 md:pt-24 pb-16 md:pb-20">
         <div className="page-max">
-          <p className="eyebrow eyebrow-mark mb-10">Books — In Print</p>
+          <p className="eyebrow eyebrow-mark mb-10">Catalog — In Print</p>
           <h1 className="display text-[3rem] sm:text-[4.5rem] md:text-[6rem] leading-[0.96]">
             For builders who <br />
-            <span className="display-italic">ship&nbsp;AI</span> in production.
+            <span className="display-italic">ship</span> in production.
           </h1>
           <p className="lead mt-10 measure">
-            Opinionated, code-first deep-dives on the patterns that actually work in production. Each book is 4,000+ words with code samples for Claude, GPT, Gemini, and local models — plus the failure modes nobody else writes about.
+            Two tiers. Field guides at $9 — curated essay compilations, ~5,500 words each, one sitting. Books at $19 — code-first deep-dives, 4,500+ words, one weekend. Both serve the same readers: practitioners who'd rather have an opinionated map than another exhaustive survey.
           </p>
           <p className="meta mt-8 italic">A new title ships every Monday morning at 06:00 UTC.</p>
         </div>
       </section>
 
-      {/* Editorial type interlude (no image — type-as-image per spec) */}
+      {/* Field Guides — $9 entry tier */}
+      <section className="page-gutter pt-16 md:pt-20 pb-16 md:pb-20 border-t border-[var(--rule)]">
+        <div className="page-max-wide">
+          <p className="eyebrow eyebrow-mark mb-3">Field Guides — $9 each</p>
+          <span className="draw-rule mb-12" aria-hidden="true" />
+
+          {FIELD_GUIDES.map((g) => (
+            <article
+              key={g.number}
+              className="grid grid-cols-[3.5rem,1fr,auto] gap-x-6 gap-y-3 items-baseline pb-10 border-b border-[var(--rule)] mb-10 last:mb-0"
+            >
+              <span className="serif text-[1.5rem] tabular text-[var(--ink-mute)]">{g.number}</span>
+              <div>
+                <h2 className="serif text-[1.5rem] md:text-[2rem] leading-[1.1] -tracking-[0.015em] mb-3">
+                  <a href={g.url} target="_blank" rel="noopener" className="link-ink">{g.title}</a>
+                </h2>
+                <p className="lead measure mb-3">{g.subtitle}</p>
+                <p className="text-[1.0625rem] text-[var(--ink-soft)] leading-relaxed measure mb-4">{g.blurb}</p>
+                <p className="meta">{g.meta} · vertical: {g.vertical}</p>
+              </div>
+              <div className="text-right whitespace-nowrap">
+                <span className="serif text-[1.5rem] tabular block">{g.price}</span>
+                <a href={g.url} target="_blank" rel="noopener" className="link-red text-[14px] mt-1 inline-block">
+                  Get it →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Editorial type interlude */}
       <section className="page-gutter pt-4 pb-16 md:pb-20">
         <div className="page-max">
           <p className="display-italic text-[1.5rem] md:text-[2rem] leading-[1.25] text-[var(--ink-soft)] measure-tight">
@@ -122,7 +200,7 @@ export default function CoursesPage() {
       {/* The shelf (Index treatment) */}
       <section className="page-gutter pt-20 md:pt-28 pb-20 md:pb-28 border-t border-[var(--rule)]">
         <div className="page-max-wide">
-          <p className="eyebrow eyebrow-mark mb-3">The Shelf</p>
+          <p className="eyebrow eyebrow-mark mb-3">Books — $19 each</p>
           <span className="draw-rule mb-12" aria-hidden="true" />
 
           {BOOKS.map((b) => (

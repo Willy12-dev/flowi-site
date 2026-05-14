@@ -64,7 +64,11 @@ export const DEFAULT_CTA: ArticleCTA = {
     "The decision tree, the code, and the failure modes nobody warns you about. 5 chapters · ~4,500 words · code that runs.",
   primaryLabel: "Read it — $19 →",
   primaryHref: "https://flowi.gumroad.com/l/sqqhvm",
-  secondary: { prefix: "or browse", label: "all books", href: "/courses" },
+  secondary: {
+    prefix: "or grab",
+    label: "the field guide (PDF, $9)",
+    href: "https://flowi.gumroad.com/l/ai-builders-field-guide",
+  },
   external: true,
 };
 

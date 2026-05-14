@@ -136,7 +136,7 @@ export async function getSystemState(): Promise<SystemState> {
     scrapes,
     totalScrapes,
     subscribers,
-    books: { live: 1, inProduction: 5 },
+    books: { live: 4, inProduction: 5 },
     flowiLeadsAvailable,
     flowiLeadsPath: FLOWI_LEADS_PATH,
   };
