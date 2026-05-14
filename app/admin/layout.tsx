@@ -62,6 +62,9 @@ export default async function AdminLayout({
             <Link href="/admin/prompts" className="link-ink text-[14px]">
               Prompts
             </Link>
+            <Link href="/admin/news-engine" className="link-ink text-[14px]">
+              News engine
+            </Link>
             <Link href="/" className="link-ink text-[14px] opacity-60">
               ← public site
             </Link>

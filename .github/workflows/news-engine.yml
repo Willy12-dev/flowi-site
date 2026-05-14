@@ -1,0 +1,61 @@
+name: News Engine — daily AI carousel drafter
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC (≈ 09:00 EAT / 02:00 ET).
+    # GitHub Actions cron can drift by a few minutes — that's fine for this.
+    - cron: "0 6 * * *"
+  workflow_dispatch: # manual trigger from the Actions tab
+
+# Need write access so the workflow can commit drafted specs back to the repo.
+permissions:
+  contents: write
+
+# Avoid two runs racing if a manual trigger overlaps a scheduled one.
+concurrency:
+  group: news-engine
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    name: Poll RSS · draft carousels · commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Use the default GITHUB_TOKEN to push commits back.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Need history for git diff/push to behave.
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run news engine
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          OPS_EMAIL_TO: ${{ secrets.OPS_EMAIL_TO }}
+          OPS_EMAIL_FROM: ${{ secrets.OPS_EMAIL_FROM }}
+          NEWS_ENGINE_MODEL: ${{ vars.NEWS_ENGINE_MODEL }}
+        run: node scripts/news-engine.mjs
+
+      - name: Commit drafted specs
+        run: |
+          git config user.name "flowi-bot"
+          git config user.email "bot@useflowi.app"
+          git add content/carousel-specs/ content/news-engine-state.json
+          if git diff --cached --quiet; then
+            echo "Nothing to commit (no fresh items today)."
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            COUNT=$(git diff --cached --name-only -- 'content/carousel-specs/news-*.json' | wc -l | tr -d ' ')
+            git commit -m "news: ${DATE} · ${COUNT} carousels drafted by the daily engine"
+            git push
+            echo "Committed and pushed ${COUNT} new draft(s)."
+          fi

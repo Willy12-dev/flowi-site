@@ -197,6 +197,63 @@ Edit `content/prompts.json`:
 
 The hub picks it up on next load — no code change required.
 
+## The autonomous engine — RSS → Claude → repo → site
+
+The system is no longer just a studio. A daily cron polls AI news, has
+Claude draft 10 publication-ready carousels, commits them to the repo,
+and emails you the digest. You wake up to ready-to-post packs.
+
+### Architecture (no paid services beyond Anthropic API + Resend)
+
+```
+GitHub Actions (free, 06:00 UTC daily)
+   ├─ checkout repo
+   ├─ npm ci
+   ├─ node scripts/news-engine.mjs
+   │     ├─ fetch 18 RSS/Atom feeds in parallel
+   │     ├─ dedupe vs content/news-engine-state.json
+   │     ├─ filter < 36h old, dedupe by title, take top 10
+   │     ├─ for each item: Claude API → CarouselSpec JSON
+   │     ├─ write each spec → content/carousel-specs/news-YYYY-MM-DD-<slug>.json
+   │     ├─ update state file
+   │     └─ POST Resend digest email
+   └─ git commit + push → Vercel auto-deploys
+```
+
+### Feeds polled
+
+OpenAI, Anthropic, Google AI, DeepMind, Meta AI, Hugging Face, Mistral,
+Cohere, Stability AI, xAI, HF Daily Papers, MIT Tech Review AI,
+VentureBeat AI, The Verge AI, TechCrunch AI, Ars Technica, HN AI tag,
+Product Hunt AI. ~18 sources, all free RSS.
+
+### Required secrets (GitHub repo → Settings → Secrets → Actions)
+
+- `ANTHROPIC_API_KEY` — required. Claude API access for the spec writer.
+- `RESEND_API_KEY` + `OPS_EMAIL_TO` + `OPS_EMAIL_FROM` — optional, for
+  the daily digest email.
+
+Optional repo *variable* (not secret): `NEWS_ENGINE_MODEL` — Claude model
+identifier. Defaults to `claude-sonnet-4-5-20250929`.
+
+### Manual usage
+
+```bash
+# Dry run — show what would be drafted, no API call
+node scripts/news-engine.mjs --dry
+
+# Draft 3 carousels right now (needs ANTHROPIC_API_KEY)
+node scripts/news-engine.mjs --count 3
+
+# From GitHub UI: Actions → "News Engine" → Run workflow
+```
+
+### Status dashboard
+
+`/admin/news-engine` shows the last run time, drafted count, last-run
+items detail, full list of `news-*.json` specs on disk, and the manual
+commands. Drafted specs open in `/admin/studio` for review.
+
 ## The monetization layer — courses + topic library
 
 The carousel system isn't the product. The **courses** are. Every carousel funnels into a course (the primary CTA), and every long-form export (Reddit, Quora) mentions a bigger product (the secondary route — FlowiAI Trader / Woyuduin / Agent Memory book).
@@ -259,6 +316,10 @@ node scripts/draft-daily-pack.mjs --topic claude --topic chatgpt
 | **Image-prompts admin** | `app/admin/prompts/` |
 | Batch render CLI | `scripts/generate-carousel.mjs` |
 | **Daily pack drafter** | `scripts/draft-daily-pack.mjs` |
+| **Autonomous news engine** | `scripts/news-engine.mjs` |
+| News engine state file | `content/news-engine-state.json` |
+| News engine cron | `.github/workflows/news-engine.yml` |
+| News engine admin | `app/admin/news-engine/` |
 | Courses registry | `content/courses.json` |
 | Topic library | `content/topic-library.json` |
 | **Image prompts library** | `content/prompts.json` |
