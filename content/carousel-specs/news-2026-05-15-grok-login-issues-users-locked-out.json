@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-15-grok-login-issues-users-locked-out",
+  "title": "Grok's Glitch: Users Report Widespread Login Problems",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Grok users are locked out. Elon Musk's AI chatbot is facing widespread login issues, leaving many subscribers unable to access the service.\n\nLearn why Grok is down and what it means for xAI's flagship AI. Tap the link in bio and type GROK for the waitlist.",
+  "hashtags": [
+    "GrokAI",
+    "xAI",
+    "ElonMusk",
+    "AIchatbot",
+    "TechNews",
+    "AIDown",
+    "LoginIssues",
+    "ArtificialIntelligence",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "GROK GOES DOWN",
+      "headline": "Grok is Down. Users Locked Out. Not So *Sarcastic* Now, Is It?",
+      "italicWord": "Sarcastic",
+      "sub": "Elon Musk's AI chatbot faces widespread login issues."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "The Login Lockout",
+      "body": "Users are reporting persistent login failures and error messages when trying to access Grok. The issue appears widespread, preventing subscribers from interacting with xAI's chatbot."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "USER FRUSTRATION",
+      "title": "What's the Point if You Can't *Chat*?",
+      "italicWord": "Chat",
+      "bullets": [
+        "Many users voiced complaints on X, unable to use the service they pay for.",
+        "The disruption raises questions about Grok's reliability and stability.",
+        "Some noted the irony of a 'sarcastic' AI being completely unavailable."
+      ],
+      "footer": "Access issues hit at the core of the user experience."
+    },
+    {
+      "type": "stats",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "THE SCOPE",
+      "title": "Hundreds of Reports Within *Hours*",
+      "italicWord": "Hours",
+      "stats": [
+        {
+          "value": "Widespread",
+          "label": "User Reports"
+        },
+        {
+          "value": "Unknown",
+          "label": "Resolution Time"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 6,
+      "eyebrow": "xAI'S RESPONSE",
+      "title": "Silence From the *Source*",
+      "italicWord": "Source",
+      "bullets": [
+        "As of Friday, xAI had not issued an official statement regarding the outage.",
+        "This lack of communication leaves users guessing about the problem's cause.",
+        "Uncertainty adds to user frustration, impacting trust in the platform."
+      ],
+      "footer": "No word on when Grok will be back online."
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "Grok's down, but the AI world keeps moving. Stay ahead.",
+      "italicWord": "moving",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Tap the link in bio to get Flowi's intelligence, not just headlines."
+    }
+  ]
+}

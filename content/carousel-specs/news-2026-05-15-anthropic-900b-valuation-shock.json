@@ -1,0 +1,123 @@
+{
+  "id": "news-2026-05-15-anthropic-900b-valuation-shock",
+  "title": "Anthropic's $900B Valuation: A Reality Check",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic just secured a $30 billion raise, pushing its valuation to an eye-watering $900 billion. Is this a sign of unprecedented growth or a market gone wild?\n\nThis valuation puts Anthropic on par with some of the world's largest tech companies, raising questions about the true scale of AI's economic impact.\n\nTap \"BUILD\" for the field guide.",
+  "hashtags": [
+    "Anthropic",
+    "ClaudeAI",
+    "AIinvestment",
+    "TechValuation",
+    "AIbubble",
+    "VentureCapital",
+    "FutureofAI",
+    "StartupFunding",
+    "AIeconomy",
+    "FlowiInsights"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "UNBELIEVABLE VALUATION",
+      "headline": "Anthropic's $900 Billion: Is This The AI",
+      "italicWord": "Bubble?",
+      "sub": "New funding terms signal a market in overdrive."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Staggering Terms",
+      "body": "Anthropic has reportedly agreed to a $30 billion fundraising round. This deal pegs the company's valuation at an unprecedented $900 billion, according to sources familiar with the matter. It's a significant jump for a private AI firm."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "VALUATION BREAKDOWN",
+      "term": "900 Billion Dollar Valuation",
+      "partOfSpeech": "noun.",
+      "definition": "The estimated total worth of Anthropic, based on its latest funding round. This figure reflects investor confidence (or speculation) in its future earning potential and market dominance.",
+      "example": "A $900B valuation positions Anthropic among the top global companies, despite its relatively short operational history."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHY SO HIGH?",
+      "title": "Investor Appetite for",
+      "italicWord": "Dominance",
+      "bullets": [
+        "Claude's growing market share and enterprise adoption.",
+        "Strategic competition with OpenAI and Google.",
+        "Long-term bets on foundational AI models.",
+        "Limited access to top-tier AI investments."
+      ],
+      "footer": "Investors are clamoring for a piece of the next AI giant, driving valuations sky-high."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Anthropic vs. Tech",
+      "italicWord": "Titans",
+      "left": {
+        "label": "Anthropic ($900B)",
+        "items": [
+          "Focus: Frontier AI safety & development.",
+          "Revenue: Still scaling, not public.",
+          "Age: ~3 years old."
+        ]
+      },
+      "right": {
+        "label": "For Context (Approx.)",
+        "items": [
+          "Meta: ~$1.2 Trillion (Public)",
+          "TSMC: ~$800 Billion (Public)",
+          "Tesla: ~$550 Billion (Public)"
+        ]
+      }
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Benefits From This",
+      "italicWord": "Bet?",
+      "audiences": [
+        {
+          "pill": "Anthropic",
+          "body": "Secures massive capital for R&D, talent acquisition, and infrastructure scaling to compete at the highest level."
+        },
+        {
+          "pill": "Early Investors",
+          "body": "Significant paper gains and validation of their initial high-risk bets on the AI sector's potential."
+        },
+        {
+          "pill": "AI Market",
+          "body": "Further legitimizes AI as a trillion-dollar industry, but also fuels concerns about speculative bubbles and unsustainable growth."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Is this valuation pure hype, or a glimpse into AI's true",
+      "italicWord": "future?",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Understand the real forces shaping the AI economy."
+    }
+  ]
+}

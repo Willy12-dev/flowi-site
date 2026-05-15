@@ -29,37 +29,40 @@
     "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdGktSUpfUmt2N1lZc3dnYU1XQXpYSG9oN000Z0pUa3JwamVWS3d3bjZXZmxuQXhZT2hJVDJaYkJGSFB0UFlSU3hicUZwcTU5UXZ5aWZsMmtnb1Q5MnhVZjhmbVU3Q2x3Mk9QVTcwMXBXcFg4d1ZBcU4zbXI0WVNDbtIBhgFBVV95cUxOQ0ZCcTZVNURDTUdTV0tIdHIweWdhR0VDcGY1RnQxSnNkSGgtNF9YVzYyRnV4dWV2b3lDcU9yeTUzbzJKTnVxZXJmTERjaG9mOHVrdkk3bU5FUl9xcWlSUWJITVlocUo0ZDVVWlNCRnowU0s5aTltd0FhdkZvVVoyZV9nM2N6dw?oc=5",
     "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
     "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXZWcFpGZkxpdjVQMFpfOFctWmR2MzR4a2s5cVNkMnhTQ0RQUUlaVXNTN3JGU2hvdUZMNzRNWXdHZmdzSGY3NUJpLUpMQ3RseUg3eVhybjJrYmVUYmp1eHlFb3dseXIwZms1TlhmREVkdHFKQ1Z5cjBLUkprLVhGQTBUenBQem55eUxZamY3MW05aEpzeUdjQlpWUQ?oc=5",
-    "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/"
+    "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdU1SQkpkU1dlUGdiT3VEa25Ma3c1TWhXcEs3TFU4aDBNR3VVRy01OXNXRWNncFkwZ1RRQ1VpWEsxa0ZZQ1BtRFFhVDRHdGdzMzB2SS02Y1ZCWnMycDRBdGVabDdxNE9YZGJWZHIyQlpUdGw2MEFqX3J1ZngtVTJZbm5waDBzWkNmMmtEMWc2bGM2ME43RmJPWFcwalU3UlUtX19ScjAtbVBQNEtueWfSAbYBQVVfeXFMT3dTSDdsajY2ZlFUNXFuazZ6MTFFWmpQcVhsUlVfQmphbTFnTTlWVm95S1FmSy1EdExJbERFM2ZUYmU3NllPYXM4bHVoaThoOXdpUzB1cERNOC00ZVMxNGVSLXBuZlh6ZmRHakt5OExESVplb0h3TEd0aHBUdGN1dTZwZ0JPSzlKUTZ1UUhibElOaDJZaWxYMEhvcjBJOExZcmdMakhPZlBWNndyYWFOYW5HdmMwbUE?oc=5",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNenlxQnNzZUN4SF9LUkl2d2lieldhU1htSkFaX0htT1IwVnU0WUxVcmRsU2tNSFgzdERXaWRBNUxwZmJKZzRLMGFPVDE1OWJwNkxPbFdEZUVCdE95UVVxX3ljU0RUeVNhdVk5QS1ob2RDcTdJTHVwQmIxd256VDZuNzZfZDM5dzNJd0RMa1BTRk5Pemtza0toUk50UFlWM25wc2JSeDI2LTNvUFRqRUFtNEgzYzBDdnVfNkdTLUUtQjFqN0JKekxoVtIBzgFBVV95cUxQa2NyOWlxX3l4OXo3OWFNT0hzZzhlTEN3WXFqSDEtc2tSbV9rUC1JOVhONUc1elptam5yTlBqSm94TjJwcThEMXpTMkcxcWg3eXBCOXptRXdYaU1KUXVQeUgxOE1BMTJaU1RPZjBYbFRGS0lMR0FTQ0RpbEpBMHVIQ000bkUyX1lSTURpY3g2Rnp6Y0dwblEzTWMybzJZeHEtRExKQ1BsYXdReF8tN19BNVpScWRHMXVKZTRubGpOdmMyOERVZXprVl9XR2lXQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbG9NQy02ZzcwYk5mbTdzNi0teVJDVktWbnFzYjBsNUFDbmJDSi1oLWtBWWZwRUJRRWlzY3JIWV9Fd21WS1VZM2xZWGlQYUxQbDNfY2RiYXl2WGNSdi1oQjlELW43Rm0zU3hNek90ZElOMTd1NUVuRWtsa3FCQXRWTjdSNGJRNllicWVlaGNHeU9oWVhCOVVnU0c4bEkzdngxdmMwSEJrQVZKTWp4Q2dIMm81Ujd2QjdzQVlTUTBZancxQUY2NWc?oc=5"
   ],
-  "last_run": "2026-05-14T21:58:34.379Z",
+  "last_run": "2026-05-15T03:06:22.455Z",
   "last_run_count": 3,
   "last_run_items": [
     {
-      "id": "news-2026-05-14-socher-self-building-ai-650m",
-      "title": "Socher's $650M Self-Building AI Bet",
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-14-grok-sf-election-picks",
-      "title": "Grok's Unfiltered Election Advice Sparks Debate",
+      "id": "news-2026-05-15-grok-login-issues-users-locked-out",
+      "title": "Grok's Glitch: Users Report Widespread Login Problems",
       "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXZWcFpGZkxpdjVQMFpfOFctWmR2MzR4a2s5cVNkMnhTQ0RQUUlaVXNTN3JGU2hvdUZMNzRNWXdHZmdzSGY3NUJpLUpMQ3RseUg3eVhybjJrYmVUYmp1eHlFb3dseXIwZms1TlhmREVkdHFKQ1Z5cjBLUkprLVhGQTBUenBQem55eUxZamY3MW05aEpzeUdjQlpWUQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdU1SQkpkU1dlUGdiT3VEa25Ma3c1TWhXcEs3TFU4aDBNR3VVRy01OXNXRWNncFkwZ1RRQ1VpWEsxa0ZZQ1BtRFFhVDRHdGdzMzB2SS02Y1ZCWnMycDRBdGVabDdxNE9YZGJWZHIyQlpUdGw2MEFqX3J1ZngtVTJZbm5waDBzWkNmMmtEMWc2bGM2ME43RmJPWFcwalU3UlUtX19ScjAtbVBQNEtueWfSAbYBQVVfeXFMT3dTSDdsajY2ZlFUNXFuazZ6MTFFWmpQcVhsUlVfQmphbTFnTTlWVm95S1FmSy1EdExJbERFM2ZUYmU3NllPYXM4bHVoaThoOXdpUzB1cERNOC00ZVMxNGVSLXBuZlh6ZmRHakt5OExESVplb0h3TEd0aHBUdGN1dTZwZ0JPSzlKUTZ1UUhibElOaDJZaWxYMEhvcjBJOExZcmdMakhPZlBWNndyYWFOYW5HdmMwbUE?oc=5",
       "vertical": "ai_builder",
       "topic": "grok"
     },
     {
-      "id": "news-2026-05-14-ai-data-centers-ditch-lake-tahoe",
-      "title": "When AI's Thirst Trumps Human Needs: Tahoe's Power Shift",
-      "source": "Ars Technica AI",
-      "url": "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/",
+      "id": "news-2026-05-15-grok-outage-reliability-check",
+      "title": "Grok's Glitch: xAI's Chatbot Faces Major Outage",
+      "source": "xAI / Grok",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNenlxQnNzZUN4SF9LUkl2d2lieldhU1htSkFaX0htT1IwVnU0WUxVcmRsU2tNSFgzdERXaWRBNUxwZmJKZzRLMGFPVDE1OWJwNkxPbFdEZUVCdE95UVVxX3ljU0RUeVNhdVk5QS1ob2RDcTdJTHVwQmIxd256VDZuNzZfZDM5dzNJd0RMa1BTRk5Pemtza0toUk50UFlWM25wc2JSeDI2LTNvUFRqRUFtNEgzYzBDdnVfNkdTLUUtQjFqN0JKekxoVtIBzgFBVV95cUxQa2NyOWlxX3l4OXo3OWFNT0hzZzhlTEN3WXFqSDEtc2tSbV9rUC1JOVhONUc1elptam5yTlBqSm94TjJwcThEMXpTMkcxcWg3eXBCOXptRXdYaU1KUXVQeUgxOE1BMTJaU1RPZjBYbFRGS0lMR0FTQ0RpbEpBMHVIQ000bkUyX1lSTURpY3g2Rnp6Y0dwblEzTWMybzJZeHEtRExKQ1BsYXdReF8tN19BNVpScWRHMXVKZTRubGpOdmMyOERVZXprVl9XR2lXQQ?oc=5",
       "vertical": "ai_builder",
-      "topic": "builder"
+      "topic": "grok"
+    },
+    {
+      "id": "news-2026-05-15-anthropic-900b-valuation-shock",
+      "title": "Anthropic's $900B Valuation: A Reality Check",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbG9NQy02ZzcwYk5mbTdzNi0teVJDVktWbnFzYjBsNUFDbmJDSi1oLWtBWWZwRUJRRWlzY3JIWV9Fd21WS1VZM2xZWGlQYUxQbDNfY2RiYXl2WGNSdi1oQjlELW43Rm0zU3hNek90ZElOMTd1NUVuRWtsa3FCQXRWTjdSNGJRNllicWVlaGNHeU9oWVhCOVVnU0c4bEkzdngxdmMwSEJrQVZKTWp4Q2dIMm81Ujd2QjdzQVlTUTBZancxQUY2NWc?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
     }
   ],
-  "total_drafted": 30,
+  "total_drafted": 33,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
 }
