@@ -19,6 +19,7 @@ interface Book {
   url: string;
   meta: string;
   status: 'live' | 'coming';
+  image: string;
 }
 
 interface FieldGuide {
@@ -30,6 +31,7 @@ interface FieldGuide {
   url: string;
   meta: string;
   vertical: 'trading' | 'behavior' | 'ai-builder';
+  image: string;
 }
 
 const FIELD_GUIDES: FieldGuide[] = [
@@ -43,6 +45,7 @@ const FIELD_GUIDES: FieldGuide[] = [
     url: 'https://flowi.gumroad.com/l/algo-traders-playbook',
     meta: '~5,500 words · 4 essays · PDF',
     vertical: 'trading',
+    image: 'https://useflowi.app/images/blog/why-retail-algo-trading-systems-fail-at-month-four.jpg',
   },
   {
     number: '№02',
@@ -54,6 +57,7 @@ const FIELD_GUIDES: FieldGuide[] = [
     url: 'https://flowi.gumroad.com/l/behavior-change-playbook',
     meta: '~5,500 words · 4 essays · PDF',
     vertical: 'behavior',
+    image: 'https://useflowi.app/images/blog/why-habit-tracker-apps-dont-survive-the-third-month.jpg',
   },
   {
     number: '№03',
@@ -65,6 +69,7 @@ const FIELD_GUIDES: FieldGuide[] = [
     url: 'https://flowi.gumroad.com/l/ai-builders-field-guide',
     meta: '~5,500 words · 4 essays · PDF',
     vertical: 'ai-builder',
+    image: 'https://useflowi.app/images/blog/best-books-for-building-ai-agents-in-2026.jpg',
   },
 ];
 
@@ -79,6 +84,7 @@ const BOOKS: Book[] = [
     url: 'https://flowi.gumroad.com/l/sqqhvm',
     meta: '5 chapters · 4,500 words · Python · Claude / GPT / Gemini compatible',
     status: 'live',
+    image: 'https://useflowi.app/images/blog/best-books-for-building-ai-agents-in-2026.jpg',
   },
   {
     number: '№02',
@@ -90,6 +96,7 @@ const BOOKS: Book[] = [
     url: '#',
     meta: '5 chapters · ~5,000 words · in production',
     status: 'coming',
+    image: 'https://useflowi.app/images/blog/code-with-claude-2026-what-actually-shipped.jpg',
   },
   {
     number: '№03',
@@ -101,6 +108,7 @@ const BOOKS: Book[] = [
     url: '#',
     meta: '5 chapters · in production',
     status: 'coming',
+    image: 'https://useflowi.app/images/blog/code-with-claude-2026-what-actually-shipped.jpg',
   },
   {
     number: '№04',
@@ -112,6 +120,7 @@ const BOOKS: Book[] = [
     url: '#',
     meta: 'in production',
     status: 'coming',
+    image: 'https://useflowi.app/images/blog/code-with-claude-2026-what-actually-shipped.jpg',
   },
   {
     number: '№05',
@@ -123,6 +132,7 @@ const BOOKS: Book[] = [
     url: '#',
     meta: 'in production',
     status: 'coming',
+    image: 'https://useflowi.app/images/blog/code-with-claude-2026-what-actually-shipped.jpg',
   },
   {
     number: '№06',
@@ -134,6 +144,7 @@ const BOOKS: Book[] = [
     url: '#',
     meta: 'in production',
     status: 'coming',
+    image: 'https://useflowi.app/images/blog/code-with-claude-2026-what-actually-shipped.jpg',
   },
 ];
 
@@ -141,15 +152,58 @@ const BOOKS: Book[] = [
  * ItemList JSON-LD — exposes all field guides + books as crawlable
  * Product entries so Google can render rich product cards on /courses
  * and surface them in shopping / sitelink results.
+ *
+ * Required fields per Google's Merchant listings spec:
+ *   - image (REQUIRED, was missing — flagged in Search Console)
+ *   - offers.shippingDetails (recommended for digital products)
+ *   - offers.hasMerchantReturnPolicy (recommended)
  */
+const DIGITAL_SHIPPING = {
+  "@type": "OfferShippingDetails",
+  shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "USD" },
+  shippingDestination: { "@type": "DefinedRegion", geoTargetName: "Worldwide" },
+  deliveryTime: {
+    "@type": "ShippingDeliveryTime",
+    handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "DAY" },
+    transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "DAY" },
+  },
+};
+
+const DIGITAL_RETURN_POLICY = {
+  "@type": "MerchantReturnPolicy",
+  applicableCountry: "US",
+  returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+  merchantReturnDays: 30,
+  returnMethod: "https://schema.org/ReturnByMail",
+  returnFees: "https://schema.org/FreeReturn",
+};
+
 function buildCatalogJsonLd() {
-  const liveItems: Array<{ name: string; url: string; price: string; description: string }> = [];
+  const liveItems: Array<{
+    name: string;
+    url: string;
+    price: string;
+    description: string;
+    image: string;
+  }> = [];
   for (const g of FIELD_GUIDES) {
-    liveItems.push({ name: g.title, url: g.url, price: g.price.replace("$", ""), description: g.subtitle });
+    liveItems.push({
+      name: g.title,
+      url: g.url,
+      price: g.price.replace("$", ""),
+      description: g.subtitle,
+      image: g.image,
+    });
   }
   for (const b of BOOKS) {
     if (b.status === "live") {
-      liveItems.push({ name: b.title, url: b.url, price: b.price.replace("$", ""), description: b.subtitle });
+      liveItems.push({
+        name: b.title,
+        url: b.url,
+        price: b.price.replace("$", ""),
+        description: b.subtitle,
+        image: b.image,
+      });
     }
   }
   return {
@@ -167,14 +221,19 @@ function buildCatalogJsonLd() {
         name: it.name,
         description: it.description,
         url: it.url,
+        image: it.image,
         brand: { "@type": "Brand", name: "Flowi" },
+        category: "Digital Publication",
         offers: {
           "@type": "Offer",
           price: it.price,
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
           url: it.url,
+          itemCondition: "https://schema.org/NewCondition",
           seller: { "@type": "Organization", name: "Flowi", url: "https://useflowi.app" },
+          shippingDetails: DIGITAL_SHIPPING,
+          hasMerchantReturnPolicy: DIGITAL_RETURN_POLICY,
         },
       },
     })),
