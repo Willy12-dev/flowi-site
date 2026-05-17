@@ -11,6 +11,8 @@
 
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
+import { promises as fs } from "fs";
+import path from "path";
 import { THEMES, themeForVertical } from "@/lib/carousel/themes";
 import type { CarouselSpec } from "@/lib/carousel/types";
 import { loadFonts } from "@/lib/carousel/fonts";
@@ -181,9 +183,29 @@ export async function POST(req: NextRequest) {
 
   let spec: CarouselSpec;
   try {
-    spec = (await req.json()) as CarouselSpec;
+    const body = (await req.json()) as
+      | CarouselSpec
+      | { spec?: CarouselSpec; specId?: string };
+    if ((body as { specId?: string }).specId) {
+      // Library passes just an id — load the spec from disk.
+      const safeId = (body as { specId: string }).specId.replace(
+        /[^a-zA-Z0-9_-]/g,
+        ""
+      );
+      const p = path.join(
+        process.cwd(),
+        "content",
+        "carousel-specs",
+        `${safeId}.json`
+      );
+      spec = JSON.parse(await fs.readFile(p, "utf8")) as CarouselSpec;
+    } else if ((body as { spec?: CarouselSpec }).spec) {
+      spec = (body as { spec: CarouselSpec }).spec;
+    } else {
+      spec = body as CarouselSpec;
+    }
   } catch {
-    return new Response("Invalid JSON", { status: 400 });
+    return new Response("Invalid JSON or spec not found", { status: 400 });
   }
 
   if (!spec.id || !spec.slides || !spec.handle || !spec.vertical) {

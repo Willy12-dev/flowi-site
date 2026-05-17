@@ -53,6 +53,9 @@ export default async function AdminLayout({
             <Link href="/admin/sales" className="link-ink text-[14px]">
               Sales
             </Link>
+            <Link href="/admin/library" className="link-ink text-[14px]">
+              Library
+            </Link>
             <Link href="/admin/studio" className="link-ink text-[14px]">
               Studio
             </Link>
