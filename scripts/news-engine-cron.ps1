@@ -76,8 +76,14 @@ if ($EngineExit -ne 0) {
     exit $EngineExit
 }
 
+# --- Publish blog articles from the freshly-drafted specs ---
+Log "Converting new specs to blog articles..."
+$ArticleOutput = & node "$ProjectRoot\scripts\specs-to-articles.mjs" 2>&1
+$ArticleOutput | ForEach-Object { Add-Content -Path $LogFile -Value $_ }
+Log "Article generation exit code: $LASTEXITCODE"
+
 # --- Commit + push ---
-& git -C $ProjectRoot add content/carousel-specs/ content/news-engine-state.json | Out-Null
+& git -C $ProjectRoot add content/carousel-specs/ content/news-engine-state.json content/blog/ | Out-Null
 
 # Check if anything actually changed
 & git -C $ProjectRoot diff --cached --quiet
