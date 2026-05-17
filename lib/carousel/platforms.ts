@@ -546,15 +546,30 @@ export function toRedditPost(spec: CarouselSpec, routing?: CarouselRouting): str
 
 /* ─── Quora answer ────────────────────────────────────────────────── */
 
-export function toQuoraAnswer(spec: CarouselSpec, routing?: CarouselRouting): string {
-  const dest = destinationFor(spec, routing);
-  const secondary = secondaryRouteFor(spec, routing);
+/** Strip markdown emphasis + any URL so Quora Spaces never see a link. */
+function plainNoLinks(s: string): string {
+  return s
+    .replace(/\(https?:\/\/[^)]+\)/g, "") // markdown link targets
+    .replace(/https?:\/\/\S+/g, "")        // bare URLs
+    .replace(/\*\*/g, "")                   // bold
+    .replace(/^#+\s*/gm, "")                // headings -> plain
+    .replace(/^>\s?/gm, "")                 // blockquote markers
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
 
-  // Frame the cover hook as a question.
+/**
+ * Quora Spaces / communities ban links and reward long, substantive,
+ * link-free answers. This emits a pure-value long-form post — no URLs,
+ * no product mention, no markdown headers. The user pastes it as-is.
+ */
+export function toQuoraAnswer(spec: CarouselSpec, routing?: CarouselRouting): string {
+  void routing;
   const hook = coverHook(spec);
   const question = hook.endsWith("?") ? hook : `${hook}?`;
 
-  const intro = `Short answer: ${hook} — and here is what most write-ups miss.`;
+  const intro = plainNoLinks(hook);
 
   const body = spec.slides
     .filter(
@@ -564,37 +579,30 @@ export function toQuoraAnswer(spec: CarouselSpec, routing?: CarouselRouting): st
         s.type !== "photo-frame" &&
         s.type !== "cta"
     )
-    .map((s, i) => `## ${i + 1}. ${slideHeadline(s)}\n\n${slideToProse(s)}`)
+    .map((s) => {
+      const head = slideHeadline(s);
+      const prose = plainNoLinks(slideToProse(s));
+      return `${head}\n\n${prose}`;
+    })
     .join("\n\n");
 
-  const qLink = outboundUrl(spec, dest);
-  const closeVerb =
-    dest.status === "waitlist" ? "waitlist (launching this month)" : "playbook";
-  const closeMain =
-    spec.id && spec.id.startsWith("news-")
-      ? `I keep a running breakdown of this on Flowi — full write-up here: ${qLink}.`
-      : `If you want the full systemized version of this, I've put it on the ${dest.name} ${closeVerb}: ${dest.url}.`;
-  const closeSecondary = secondary
-    ? `\n\nAnd the bigger product I'm building this toward is **${secondary.name}** (${secondary.url}) — ${secondary.tagline}`
-    : "";
-  const close = closeMain + closeSecondary;
+  // A value-only closer — no link, no product. Invites discussion instead.
+  const close =
+    "If you found this useful, the nuance worth arguing about is which of these holds once the hype cycle cools. Curious where others land.";
 
   return [
-    `# Quora answer — ${spec.title}`,
+    `# Quora — ${spec.title}`,
     "",
-    `Find or create a question along the lines of:`,
+    `NO LINKS — Quora Spaces auto-remove them. Paste the answer below as-is.`,
+    `Find/answer a question like:`,
     "",
     `> ${question}`,
     "",
     "---",
     "",
-    `**Answer** (long form)`,
-    "",
     intro,
     "",
     body,
-    "",
-    "---",
     "",
     close,
     "",

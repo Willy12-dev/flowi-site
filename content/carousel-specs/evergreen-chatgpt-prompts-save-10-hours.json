@@ -1,0 +1,88 @@
+{
+  "id": "evergreen-chatgpt-prompts-save-10-hours",
+  "title": "7 ChatGPT prompts that save 10 hours a week",
+  "vertical": "ai_builder",
+  "topic": "chatgpt",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "PROMPTS", "promise": "for the full pack" },
+  "caption": "Seven prompts that quietly replace an afternoon of work. Save this — you'll come back to it.",
+  "hashtags": ["chatgptprompts", "aiproductivity", "chatgpttips", "worksmarter", "aitools"],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 9,
+      "eyebrow": "AI PRODUCTIVITY · SAVE THIS",
+      "headline": "7 ChatGPT prompts that quietly save you",
+      "italicWord": "10 hours a week.",
+      "sub": "Steal these. No fluff, paste-ready."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 9,
+      "number": "01",
+      "title": "The inbox triager",
+      "body": "\"Here are 20 unread emails (pasted below). Sort into: reply now, reply later, delegate, ignore. One-line reason each.\" Turns 40 minutes of inbox dread into 4."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 9,
+      "number": "02",
+      "title": "The meeting compressor",
+      "body": "\"Here's a meeting transcript. Give me: decisions made, who owns what by when, and the one thing still unresolved.\" Never re-watch a recording again."
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 9,
+      "number": "03",
+      "title": "The first-draft killer",
+      "body": "\"Write the worst possible version of this in 5 bullets, then the best. I'll pick the parts I want.\" Beats staring at a blank page every time."
+    },
+    {
+      "type": "numbered",
+      "index": 5,
+      "total": 9,
+      "number": "04",
+      "title": "The decision pressure-test",
+      "body": "\"I'm leaning toward X. Argue the strongest case against it, then tell me what would have to be true for the opposite to win.\" Kills bad calls before they cost you."
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 9,
+      "number": "05",
+      "title": "The learning accelerator",
+      "body": "\"Explain [topic] at three levels: to a 10-year-old, to a smart adult, to an expert. Then quiz me on the middle one.\" A week of study in 20 minutes."
+    },
+    {
+      "type": "numbered",
+      "index": 7,
+      "total": 9,
+      "number": "06",
+      "title": "The cold-message writer",
+      "body": "\"Write 3 cold outreach versions to [person/role]: one curiosity-led, one value-led, one provocative. Under 60 words each.\" Pick, tweak, send."
+    },
+    {
+      "type": "numbered",
+      "index": 8,
+      "total": 9,
+      "number": "07",
+      "title": "The weekly review partner",
+      "body": "\"Here's everything I did this week (pasted). What did I avoid? What was busywork? What's the one lever I ignored?\" The 10-minute habit that compounds."
+    },
+    {
+      "type": "cta",
+      "index": 9,
+      "total": 9,
+      "hook": "Want all",
+      "italicWord": "40 prompts?",
+      "sub": "The full pack — categorized, paste-ready.",
+      "ctaKeyword": "PROMPTS",
+      "ctaPromise": "for the full pack"
+    }
+  ]
+}
