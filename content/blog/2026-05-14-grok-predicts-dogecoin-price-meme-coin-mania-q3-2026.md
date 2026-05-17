@@ -69,4 +69,6 @@ Grok scraped 14 million crypto tweets, Reddit threads from 2021's peak, and corr
 
 Want to know when Grok (or any AI) actually moves markets? actually We track signal, not noise.
 
-If you're building in this space, the deep-dive playbooks at [FlowiAI Trader](https://useflowi.app/trader) go further than any single news cycle. On Instagram, comment **GROK** on the carousel version of this story and we'll send the full breakdown.
+**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.
+
+If you trade, the execution system behind this thinking is [FlowiAI Trader](https://useflowi.app/trader).

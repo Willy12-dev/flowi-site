@@ -64,4 +64,6 @@ By 2030, analysts predict over **40%** of online transactions will involve AI ag
 
 Agentic AI is coming faster than you think. faster Get the full breakdown on AI agent architecture and deployment.
 
-If you're building in this space, the deep-dive playbooks at [the AI Builder's Field Guide](https://useflowi.app/courses) go further than any single news cycle. On Instagram, comment **BUILD** on the carousel version of this story and we'll send the full breakdown.
+**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.
+
+The deep-dive playbooks that go past any single news cycle live in [the Flowi catalog](https://useflowi.app/courses).

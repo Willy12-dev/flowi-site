@@ -67,4 +67,6 @@ Musk's broader AI strategy seems to be less about developing a single, dominant 
 
 Want to track every move in the AI race? AI race Get the full analysis on Elon's AI strategy and Grok's future. Link in bio.
 
-If you're building in this space, the deep-dive playbooks at [the AI Builder's Field Guide](https://useflowi.app/courses) go further than any single news cycle. On Instagram, comment **GROK** on the carousel version of this story and we'll send the full breakdown.
+**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.
+
+The deep-dive playbooks that go past any single news cycle live in [the Flowi catalog](https://useflowi.app/courses).

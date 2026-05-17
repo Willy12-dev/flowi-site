@@ -66,4 +66,6 @@ OpenAI's advanced AI model designed to translate natural language into code and 
 
 Don't just react to the news. Understand it. Get the full story on AI's biggest moves, delivered daily.
 
-If you're building in this space, the deep-dive playbooks at [the AI Builder's Field Guide](https://useflowi.app/courses) go further than any single news cycle. On Instagram, comment **BUILD** on the carousel version of this story and we'll send the full breakdown.
+**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.
+
+The deep-dive playbooks that go past any single news cycle live in [the Flowi catalog](https://useflowi.app/courses).

@@ -71,4 +71,6 @@ Over **2.8B** WhatsApp users now have access. Meta rolled this out globally acro
 
 Want the full breakdown on privacy-first AI tools? privacy-first We track the moves that matter
 
-If you're building in this space, the deep-dive playbooks at [Woyuduin](https://woyuduin.com) go further than any single news cycle. On Instagram, comment **BUILD** on the carousel version of this story and we'll send the full breakdown.
+**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.
+
+If you're working on the behavior-change side, [Woyuduin](https://woyuduin.com) turns this into daily practice.

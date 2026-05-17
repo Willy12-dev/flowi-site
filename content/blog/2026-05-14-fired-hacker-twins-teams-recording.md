@@ -59,4 +59,6 @@ A security risk from an individual with authorized access who misuses it to harm
 
 Don't let your next project become a security incident. incident Get Flowi's expert insights on AI security.
 
-If you're building in this space, the deep-dive playbooks at [the AI Builder's Field Guide](https://useflowi.app/courses) go further than any single news cycle. On Instagram, comment **BUILD** on the carousel version of this story and we'll send the full breakdown.
+**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.
+
+The deep-dive playbooks that go past any single news cycle live in [the Flowi catalog](https://useflowi.app/courses).

@@ -164,8 +164,16 @@ function buildArticle(spec) {
 
   const sections = body.map(slideToMarkdown).filter(Boolean).join("\n\n");
 
-  const funnel = FUNNEL_BY_VERTICAL[vertical] || FUNNEL_BY_VERTICAL.ai_general;
-  const ctaKeyword = cta?.ctaKeyword || spec.cta?.keyword;
+  // Vertical-aware contextual backlink — every article becomes a do-follow
+  // link to a money page (woyuduin.com / /trader / /courses). The SEO lever:
+  // 124+ indexed articles all pointing at the products.
+  const backlink =
+    vertical === "ai_trading"
+      ? "If you trade, the execution system behind this thinking is [FlowiAI Trader](https://useflowi.app/trader)."
+      : vertical === "ai_behavior"
+        ? "If you're working on the behavior-change side, [Woyuduin](https://woyuduin.com) turns this into daily practice."
+        : "The deep-dive playbooks that go past any single news cycle live in [the Flowi catalog](https://useflowi.app/courses).";
+
   const closing = [
     `## The bottom line`,
     "",
@@ -173,7 +181,10 @@ function buildArticle(spec) {
       ? joinSentence([cta.hook, cta.italicWord, cta.hookAfter, cta.sub])
       : "The pattern here is the same one we keep seeing across the AI landscape — the teams that win are the ones that systematize before they scale.",
     "",
-    `If you're building in this space, the deep-dive playbooks at [${funnel.name}](${funnel.url}) go further than any single news cycle. ${ctaKeyword ? `On Instagram, comment **${ctaKeyword}** on the carousel version of this story and we'll send the full breakdown.` : ""}`,
+    // EMAIL FIRST — cold readers won't buy a $9 thing, but they'll subscribe.
+    `**Want this every morning?** We break down a story like this daily — the release, why it matters, who should care. [Get the free Flowi brief by email →](https://useflowi.app/dispatch) No fluff, one-click unsubscribe.`,
+    "",
+    backlink,
     "",
   ].join("\n");
 
