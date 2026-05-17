@@ -275,6 +275,26 @@ function destinationFor(
 }
 
 /**
+ * The outbound link every social post should point at.
+ *
+ * For NEWS specs (id starts with "news-") the canonical destination is the
+ * live blog article for that story — NOT a course/waitlist URL. The article
+ * already carries the funnel CTA, gives Google a real page to index, and
+ * earns dwell time. social → article → product is the correct funnel; a raw
+ * waitlist link is too aggressive AND was mis-routing (OpenAI stories
+ * pointing at the Grok waitlist).
+ *
+ * Evergreen/hand-written specs keep the course-funnel destination.
+ */
+function outboundUrl(spec: CarouselSpec, dest: { url: string }): string {
+  if (spec.id && spec.id.startsWith("news-")) {
+    const slug = spec.id.replace(/^news-/, "");
+    return `https://useflowi.app/blog/${slug}`;
+  }
+  return dest.url;
+}
+
+/**
  * The "next step" the carousel mentions after the primary course — points to
  * the bigger product (FlowiAI Trader / Woyuduin / Agent Memory book).
  * Used only by long-form exporters (Reddit, Quora).
@@ -362,21 +382,30 @@ export function toInstagramCaption(spec: CarouselSpec, routing?: CarouselRouting
  */
 export function toPinterestPins(spec: CarouselSpec, routing?: CarouselRouting): string {
   const dest = destinationFor(spec, routing);
+  const link = outboundUrl(spec, dest);
   const cta = ctaSlide(spec);
-  const sections = spec.slides.map((slide, i) => {
+  // Pinterest flags near-duplicate pins as spam. Only emit the 2 strongest:
+  // the cover and the single richest body slide. Both link to the article.
+  const cover = spec.slides[0];
+  const bodyPick =
+    spec.slides.find((s) =>
+      ["definition", "stat", "stats", "compare", "numbered"].includes(s.type)
+    ) ?? spec.slides[1];
+  const picks = [cover, bodyPick].filter(Boolean);
+  const sections = picks.map((slide, i) => {
     const baseTitle = slideHeadline(slide).slice(0, 100);
-    const title = `${baseTitle}${i === 0 ? "" : ` — pt ${i + 1}/${spec.slides.length}`}`;
-    const description = `${slideToProse(slide).slice(0, 480)}\n\n${tags(spec)}`;
+    const title = baseTitle.length > 100 ? baseTitle.slice(0, 97) + "..." : baseTitle;
+    const description = `${slideToProse(slide).slice(0, 440)}\n\n${tags(spec)}`;
     return [
-      `### Pin ${pad(i + 1)} — ${slide.type}`,
+      `### Pin ${pad(i + 1)} — use ${i === 0 ? "the cover (01-*.png)" : slide.type + " slide"}`,
       "",
       `**Title** (≤ 100 chars)`,
-      title.length > 100 ? title.slice(0, 97) + "..." : title,
+      title,
       "",
       `**Description** (≤ 500 chars)`,
       description,
       "",
-      `**Link**: ${dest.url}`,
+      `**Link**: ${link}`,
       "",
       "---",
       "",
@@ -386,8 +415,8 @@ export function toPinterestPins(spec: CarouselSpec, routing?: CarouselRouting): 
   const intro = [
     `# Pinterest pins — ${spec.title}`,
     "",
-    `Upload each pin as a separate image. Use the title + description below per pin.`,
-    `All pins link to: ${dest.url} (${dest.name}).`,
+    `Post these 2 pins (more = Pinterest near-dupe spam flag).`,
+    `Both link to the live article: ${link}`,
     cta ? `CTA in caption mention: Comment "${cta.ctaKeyword}" on the IG post for the playbook.` : "",
     "",
     "---",
@@ -424,10 +453,14 @@ export function toTwitterThread(spec: CarouselSpec, routing?: CarouselRouting): 
       beats.push(`${i + 1}/  ${trimmed}`);
     });
 
-  // Final CTA tweet
-  const ctaHook = cta
-    ? `Want the full pack? ${cta.sub ?? ""}\n\nLink in bio → ${dest.url}`
-    : `Full breakdown: ${dest.url}`;
+  // Final CTA tweet — news specs point at the live article, not a waitlist
+  const tLink = outboundUrl(spec, dest);
+  const ctaHook =
+    spec.id && spec.id.startsWith("news-")
+      ? `Full breakdown ↓\n\n${tLink}`
+      : cta
+        ? `Want the full pack? ${cta.sub ?? ""}\n\nLink in bio → ${tLink}`
+        : `Full breakdown: ${tLink}`;
   beats.push(ctaHook);
 
   // Format: one tweet per double-newline-separated block, prefixed with "---"
@@ -470,13 +503,19 @@ export function toRedditPost(spec: CarouselSpec, routing?: CarouselRouting): str
     .map((s) => slideToProse(s))
     .join("\n\n");
 
+  const isNews = spec.id && spec.id.startsWith("news-");
+  const rLink = outboundUrl(spec, dest);
   const isWaitlist = dest.status === "waitlist";
   const ctaVerb = isWaitlist ? "early-access waitlist" : "playbook";
   const ctaArticle = isWaitlist ? "an" : "a";
-  const signoffMain = cta
-    ? `If this is useful, I'm putting it into ${ctaArticle} ${ctaVerb} over at ${dest.url}. Happy to answer questions in the thread.`
-    : `Full write-up: ${dest.url}`;
-  const secondaryLine = secondary
+  // News: soft article link (Reddit-safe). Evergreen: the funnel.
+  const signoffMain = isNews
+    ? `I wrote the full breakdown here if useful: ${rLink} — happy to get into any of it in the comments.`
+    : cta
+      ? `If this is useful, I'm putting it into ${ctaArticle} ${ctaVerb} over at ${rLink}. Happy to answer questions in the thread.`
+      : `Full write-up: ${rLink}`;
+  // Don't stack a second promo link on news posts — Reddit hates that.
+  const secondaryLine = secondary && !isNews
     ? `\n\nThe bigger play I'm building this toward is **${secondary.name}** (${secondary.url}) — ${secondary.tagline}`
     : "";
   const signoff = signoffMain + secondaryLine;
@@ -528,9 +567,13 @@ export function toQuoraAnswer(spec: CarouselSpec, routing?: CarouselRouting): st
     .map((s, i) => `## ${i + 1}. ${slideHeadline(s)}\n\n${slideToProse(s)}`)
     .join("\n\n");
 
+  const qLink = outboundUrl(spec, dest);
   const closeVerb =
     dest.status === "waitlist" ? "waitlist (launching this month)" : "playbook";
-  const closeMain = `If you want the full systemized version of this, I've put it on the ${dest.name} ${closeVerb}: ${dest.url}.`;
+  const closeMain =
+    spec.id && spec.id.startsWith("news-")
+      ? `I keep a running breakdown of this on Flowi — full write-up here: ${qLink}.`
+      : `If you want the full systemized version of this, I've put it on the ${dest.name} ${closeVerb}: ${dest.url}.`;
   const closeSecondary = secondary
     ? `\n\nAnd the bigger product I'm building this toward is **${secondary.name}** (${secondary.url}) — ${secondary.tagline}`
     : "";
