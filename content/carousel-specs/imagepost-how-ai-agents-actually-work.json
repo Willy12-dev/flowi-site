@@ -1,0 +1,91 @@
+{
+  "id": "imagepost-how-ai-agents-actually-work",
+  "title": "How AI agents actually work (in 5 images)",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "AGENT", "promise": "for the agent playbook" },
+  "caption": "Everyone says \"AI agent.\" Almost nobody can draw one. Here's what's actually happening under the hood, in 5 images. Save this — it'll make every agent demo make sense.",
+  "hashtags": ["aiagents", "aiexplained", "buildwithai", "llm", "aiengineering"],
+  "slides": [
+    {
+      "type": "photo-frame", "index": 1, "total": 6,
+      "eyebrow": "AI AGENTS · 1 OF 5",
+      "headline": "An agent is a loop,",
+      "italicWord": "not an answer.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "How AI agents actually work",
+        "N": "1",
+        "CONCEPT": "An agent is a repeating loop, not a one-shot answer",
+        "VISUAL": "A bold circular loop of 4 connected nodes labeled PERCEIVE, PLAN, ACT, OBSERVE, arrows flowing clockwise, one node glowing brighter than the rest, clean geometric, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 2, "total": 6,
+      "eyebrow": "AI AGENTS · 2 OF 5",
+      "headline": "Memory is what makes it",
+      "italicWord": "feel smart.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "How AI agents actually work",
+        "N": "2",
+        "CONCEPT": "Without memory the agent forgets you between every step",
+        "VISUAL": "A split image: left side a goldfish-simple single bubble fading out, right side a layered stack of glowing memory cards being carried forward along an arrow, clean isometric, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 3, "total": 6,
+      "eyebrow": "AI AGENTS · 3 OF 5",
+      "headline": "Tools are how it",
+      "italicWord": "touches reality.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "How AI agents actually work",
+        "N": "3",
+        "CONCEPT": "The model only thinks — tools let it act in the real world",
+        "VISUAL": "A central brain-orb with clean lines extending out to 4 labeled tool icons: SEARCH, CODE, DATABASE, SEND, premium minimal icon set, soft shadows, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 4, "total": 6,
+      "eyebrow": "AI AGENTS · 4 OF 5",
+      "headline": "Planning is the",
+      "italicWord": "hard part.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "How AI agents actually work",
+        "N": "4",
+        "CONCEPT": "A goal becomes a tree of sub-steps the agent must sequence",
+        "VISUAL": "A clean branching tree diagram: one top GOAL node splitting into ordered numbered sub-task nodes, the critical path highlighted in the accent color, gallery-grade, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 5, "total": 6,
+      "eyebrow": "AI AGENTS · 5 OF 5",
+      "headline": "Most agents fail at",
+      "italicWord": "evaluation.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "How AI agents actually work",
+        "N": "5",
+        "CONCEPT": "No way to check its own work means it fails silently in production",
+        "VISUAL": "A confident robot figure walking off a cliff edge with a blindfold, but rendered as a clean premium minimal pictogram, a single warning-accent guardrail missing, high-contrast, near-black background",
+        "ACCENT": "#FF6B3D"
+      }
+    },
+    {
+      "type": "cta", "index": 6, "total": 6,
+      "hook": "Want the full",
+      "italicWord": "agent playbook?",
+      "sub": "The 5 patterns that ship in production. Free.",
+      "ctaKeyword": "AGENT",
+      "ctaPromise": "for the playbook"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ export interface SpecMeta {
   vertical: string;
   topic: string | null;
   slides: number;
-  kind: "news" | "evergreen" | "starter";
+  kind: "news" | "evergreen" | "imagepost" | "starter";
   mtime: string;
 }
 
@@ -46,7 +46,9 @@ async function listSpecs(): Promise<SpecMeta[]> {
           ? "news"
           : id.startsWith("evergreen-")
             ? "evergreen"
-            : "starter",
+            : id.startsWith("imagepost-")
+              ? "imagepost"
+              : "starter",
         mtime: stat.mtime.toISOString(),
       });
     } catch {
@@ -62,6 +64,7 @@ export default async function LibraryPage() {
   const specs = await listSpecs();
 
   const groups = {
+    imagepost: specs.filter((s) => s.kind === "imagepost"),
     evergreen: specs.filter((s) => s.kind === "evergreen"),
     news: specs.filter((s) => s.kind === "news"),
     starter: specs.filter((s) => s.kind === "starter"),
@@ -83,13 +86,21 @@ export default async function LibraryPage() {
             with one button, or download the full zip. No terminal, no files.
           </p>
           <p className="meta mt-4">
-            {groups.evergreen.length} evergreen · {groups.news.length} news ·{" "}
-            {groups.starter.length} starter · {specs.length} total
+            {groups.imagepost.length} image-posts · {groups.evergreen.length}{" "}
+            evergreen · {groups.news.length} news · {groups.starter.length}{" "}
+            starter · {specs.length} total
           </p>
         </div>
       </section>
 
-      <LibraryBrowser groups={groups} />
+      <LibraryBrowser
+        groups={{
+          imagepost: groups.imagepost,
+          evergreen: groups.evergreen,
+          news: groups.news,
+          starter: groups.starter,
+        }}
+      />
     </main>
   );
 }

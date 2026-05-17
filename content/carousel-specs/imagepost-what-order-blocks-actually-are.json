@@ -1,0 +1,91 @@
+{
+  "id": "imagepost-what-order-blocks-actually-are",
+  "title": "What ICT order blocks actually are (in 5 images)",
+  "vertical": "ai_trading",
+  "topic": "ict",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "PROBABILITY", "promise": "for the ICT playbook" },
+  "caption": "Order blocks are the most drawn, least understood concept in trading. Five images that finally make it click. Save this and stop guessing your zones.",
+  "hashtags": ["ictconcepts", "orderblocks", "smartmoneyconcepts", "forex", "priceaction"],
+  "slides": [
+    {
+      "type": "photo-frame", "index": 1, "total": 6,
+      "eyebrow": "ORDER BLOCKS · 1 OF 5",
+      "headline": "It's the last candle",
+      "italicWord": "before the move.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "What ICT order blocks actually are",
+        "N": "1",
+        "CONCEPT": "An order block is the last opposing candle before an explosive move",
+        "VISUAL": "A clean minimal candlestick chart, one red candle highlighted with a glowing box right before a large green impulse leg, premium financial-graphic style, near-black background",
+        "ACCENT": "#FF6B3D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 2, "total": 6,
+      "eyebrow": "ORDER BLOCKS · 2 OF 5",
+      "headline": "It's where institutions",
+      "italicWord": "filled orders.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "What ICT order blocks actually are",
+        "N": "2",
+        "CONCEPT": "Big players couldn't fill all size at once — unfilled orders remain in that zone",
+        "VISUAL": "A clean illustration of a large glowing block with partial-fill bars inside it, small remaining-liquidity dots still pulsing, premium minimal financial style, near-black background",
+        "ACCENT": "#FF6B3D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 3, "total": 6,
+      "eyebrow": "ORDER BLOCKS · 3 OF 5",
+      "headline": "Price returns to it",
+      "italicWord": "like a magnet.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "What ICT order blocks actually are",
+        "N": "3",
+        "CONCEPT": "Price retraces back into the order block to fill remaining orders, then continues",
+        "VISUAL": "A candlestick path that rallies, curves back down to tap a highlighted zone box, then resumes upward — a clean arrow tracing the move, premium financial graphic, near-black background",
+        "ACCENT": "#FF6B3D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 4, "total": 6,
+      "eyebrow": "ORDER BLOCKS · 4 OF 5",
+      "headline": "Only the ones on",
+      "italicWord": "D1 / H4 matter.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "What ICT order blocks actually are",
+        "N": "4",
+        "CONCEPT": "Lower-timeframe order blocks are noise — only higher-timeframe ones hold weight",
+        "VISUAL": "Three stacked timeframe panels labeled D1, H4, M5 — the D1 and H4 zones glowing solid, the M5 one faded and crossed out, clean premium hierarchy graphic, near-black background",
+        "ACCENT": "#FF6B3D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 5, "total": 6,
+      "eyebrow": "ORDER BLOCKS · 5 OF 5",
+      "headline": "No confirmation,",
+      "italicWord": "no entry.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "What ICT order blocks actually are",
+        "N": "5",
+        "CONCEPT": "The zone is not a signal — you wait for a market structure shift inside it",
+        "VISUAL": "A highlighted zone box with price entering it, then a clean break-of-structure arrow snapping the opposite way with a bold checkmark, premium financial minimal, near-black background",
+        "ACCENT": "#FF6B3D"
+      }
+    },
+    {
+      "type": "cta", "index": 6, "total": 6,
+      "hook": "Want the full",
+      "italicWord": "ICT playbook?",
+      "sub": "The setups + the rules. Free PDF.",
+      "ctaKeyword": "PROBABILITY",
+      "ctaPromise": "for the playbook"
+    }
+  ]
+}

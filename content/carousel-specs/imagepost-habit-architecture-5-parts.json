@@ -1,0 +1,91 @@
+{
+  "id": "imagepost-habit-architecture-5-parts",
+  "title": "The habit architecture that survives, in 5 images",
+  "vertical": "ai_behavior",
+  "topic": "habits",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "HABIT", "promise": "for the playbook" },
+  "caption": "Willpower is not the system. This is. Five images that show why some habits survive month three and most don't. Save this for the next time you 'fall off'.",
+  "hashtags": ["habits", "behaviorchange", "discipline", "selfimprovement", "consistency"],
+  "slides": [
+    {
+      "type": "photo-frame", "index": 1, "total": 6,
+      "eyebrow": "HABIT ARCHITECTURE · 1 OF 5",
+      "headline": "Decide in calm,",
+      "italicWord": "execute in chaos.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "The habit architecture that survives",
+        "N": "1",
+        "CONCEPT": "The decision is made once in a calm state, not negotiated in the hard moment",
+        "VISUAL": "Two contrasting clean scenes connected by an arrow: a calm still lake (labeled DECIDE) flowing into a storm (labeled EXECUTE), a single steady line cutting straight through both, premium minimal, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 2, "total": 6,
+      "eyebrow": "HABIT ARCHITECTURE · 2 OF 5",
+      "headline": "Mechanism beats",
+      "italicWord": "memory.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "The habit architecture that survives",
+        "N": "2",
+        "CONCEPT": "A habit you only remember fails — bind it to a mechanism you can't skip",
+        "VISUAL": "A faint thought-bubble labeled REMEMBER dissolving, beside a solid locked gear-and-rail mechanism labeled BIND, the mechanism glowing in the accent color, premium minimal, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 3, "total": 6,
+      "eyebrow": "HABIT ARCHITECTURE · 3 OF 5",
+      "headline": "Track compliance,",
+      "italicWord": "not streaks.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "The habit architecture that survives",
+        "N": "3",
+        "CONCEPT": "A 28-of-30 grid survives a miss; a perfect chain shatters on one",
+        "VISUAL": "Two clean calendar grids side by side: left a fragile chain snapping at one broken link, right a 30-cell grid with 28 filled and 2 empty still labeled WIN, premium minimal, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 4, "total": 6,
+      "eyebrow": "HABIT ARCHITECTURE · 4 OF 5",
+      "headline": "Defense easy,",
+      "italicWord": "aggression earned.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "The habit architecture that survives",
+        "N": "4",
+        "CONCEPT": "A slip drops you to half-intensity; full intensity is only re-earned slowly",
+        "VISUAL": "A clean one-way ratchet / valve diagram: an easy fast arrow pointing DOWN to a lower tier, and a slow stepped staircase required to climb back UP, premium minimal, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "photo-frame", "index": 5, "total": 6,
+      "eyebrow": "HABIT ARCHITECTURE · 5 OF 5",
+      "headline": "The work is",
+      "italicWord": "after the slip.",
+      "promptTemplate": "educational-explainer-image",
+      "promptVars": {
+        "SERIES": "The habit architecture that survives",
+        "N": "5",
+        "CONCEPT": "What you do after a miss matters more than the miss — map the trigger, don't reset",
+        "VISUAL": "A path with a stumble point, and instead of a STREAK RESET button (shown crossed out) a small magnifying glass examining the trigger that preceded the stumble, premium minimal, cream background",
+        "ACCENT": "#C8252D"
+      }
+    },
+    {
+      "type": "cta", "index": 6, "total": 6,
+      "hook": "Want the full",
+      "italicWord": "5-part playbook?",
+      "sub": "The system, written down. Free.",
+      "ctaKeyword": "HABIT",
+      "ctaPromise": "for the playbook"
+    }
+  ]
+}

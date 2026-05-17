@@ -19,6 +19,7 @@ interface Pack {
 }
 
 const KIND_LABEL: Record<string, string> = {
+  imagepost: "Image posts — YOU generate the 5 images (copy the prompts)",
   evergreen: "Evergreen — Pinterest engine (compounds in search)",
   news: "News — timely (IG / X / TikTok / Reddit, decays fast)",
   starter: "Starter / hand-written",
@@ -27,11 +28,16 @@ const KIND_LABEL: Record<string, string> = {
 export default function LibraryBrowser({
   groups,
 }: {
-  groups: { evergreen: SpecMeta[]; news: SpecMeta[]; starter: SpecMeta[] };
+  groups: {
+    imagepost: SpecMeta[];
+    evergreen: SpecMeta[];
+    news: SpecMeta[];
+    starter: SpecMeta[];
+  };
 }) {
   return (
     <>
-      {(["evergreen", "news", "starter"] as const).map((kind) => {
+      {(["imagepost", "evergreen", "news", "starter"] as const).map((kind) => {
         const list = groups[kind];
         if (list.length === 0) return null;
         return (

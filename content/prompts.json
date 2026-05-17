@@ -1,7 +1,6 @@
 {
   "$schema": "lib/carousel/image-prompts.ts — every image the system can render has a prompt template here.",
   "_notes": "Workflow: 1) Pick a template by asset_class. 2) Resolver fills {variables} from the spec. 3) Copy the rendered prompt into ChatGPT image-gen / Gemini Imagen / Midjourney. 4) Drop the output PNG/JPG in the path under public/images/.",
-
   "styles": {
     "editorial-cream-photography": {
       "label": "Editorial cream — magazine-grade photography (default for builder + behavior)",
@@ -32,9 +31,13 @@
       "label": "X / Twitter header — wide cinematic 3:1 frame",
       "base": "Cinematic wide-frame photography at 1500x500 (3:1 aspect), wide negative space left of the focal subject, single subject in the right third of the frame, photorealistic, restrained palette, mood matching the vertical (warm cream for builder/behavior, near-black for trading).",
       "negative": "NEVER: no illustration, no sketch, no 3D render, no clipart, no cluttered composition."
+    },
+    "educational-modern": {
+      "label": "Educational modern — premium clean explainer graphic (for 5-image teaching posts)",
+      "base": "Premium modern educational graphic, Apple-keynote / editorial-infographic quality. Clean composition on a warm cream backdrop (#F5F0E5) OR deep near-black (#0B0B0B) depending on accent. One bold central visual metaphor, generous negative space, crisp geometric shapes, a single saturated accent color, refined sans-serif numerals/labels baked into the image, soft realistic shadows, high-contrast, gallery-grade. Looks like a frame from a top-tier explainer video.",
+      "negative": "NEVER: no childish clipart, no hand-drawn sketch, no doodle, no stock-photo people, no neon, no anime, no pastel mush, no AI-glossy plastic finish, no cluttered busy backgrounds, no lorem-ipsum, no garbled text."
     }
   },
-
   "templates": [
     {
       "id": "carousel-hero-photo-frame",
@@ -72,8 +75,14 @@
       "style_default": "editorial-cream-photography",
       "prompt_template": "{style.base}\n\nArticle topic: {ARTICLE_TOPIC}.\nLiteral subject in frame: {LITERAL_SUBJECT}.\nFraming: 16:9 landscape, subject in the right two thirds, negative space at left where a large serif title could overlay.\n\n{style.negative}",
       "variables": [
-        { "name": "ARTICLE_TOPIC", "default": "The agent stack a solo founder uses every day" },
-        { "name": "LITERAL_SUBJECT", "default": "An aerial flat-lay of a wooden desk: macbook closed, leather notebook open, espresso cup half-finished, all bathed in 8 AM north light" }
+        {
+          "name": "ARTICLE_TOPIC",
+          "default": "The agent stack a solo founder uses every day"
+        },
+        {
+          "name": "LITERAL_SUBJECT",
+          "default": "An aerial flat-lay of a wooden desk: macbook closed, leather notebook open, espresso cup half-finished, all bathed in 8 AM north light"
+        }
       ]
     },
     {
@@ -87,8 +96,14 @@
       "style_default": "premium-dark-cinematic",
       "prompt_template": "{style.base}\n\nArticle topic: {ARTICLE_TOPIC}.\nLiteral subject in frame: {LITERAL_SUBJECT}.\nFraming: 16:9 landscape, subject in the right third, near-black negative space at left for serif title overlay.\n\n{style.negative}",
       "variables": [
-        { "name": "ARTICLE_TOPIC", "default": "Why most algo traders blow up at month four" },
-        { "name": "LITERAL_SUBJECT", "default": "A trader's screen reflected in the lens of a pair of glasses on the desk, a tight equity-curve chart visible in the reflection, single orange P/L number glowing" }
+        {
+          "name": "ARTICLE_TOPIC",
+          "default": "Why most algo traders blow up at month four"
+        },
+        {
+          "name": "LITERAL_SUBJECT",
+          "default": "A trader's screen reflected in the lens of a pair of glasses on the desk, a tight equity-curve chart visible in the reflection, single orange P/L number glowing"
+        }
       ]
     },
     {
@@ -102,8 +117,14 @@
       "style_default": "editorial-cream-photography",
       "prompt_template": "{style.base}\n\nArticle topic: {ARTICLE_TOPIC}.\nLiteral subject in frame: {LITERAL_SUBJECT}.\nFraming: 16:9 landscape, subject in the right two thirds, cream negative space at left for serif title overlay.\n\n{style.negative}",
       "variables": [
-        { "name": "ARTICLE_TOPIC", "default": "Every habit you keep is a precommitment" },
-        { "name": "LITERAL_SUBJECT", "default": "A pair of running shoes laid out beside a folded shirt and a watch set to 5:45 AM, soft cream linen surface, single shaft of morning light" }
+        {
+          "name": "ARTICLE_TOPIC",
+          "default": "Every habit you keep is a precommitment"
+        },
+        {
+          "name": "LITERAL_SUBJECT",
+          "default": "A pair of running shoes laid out beside a folded shirt and a watch set to 5:45 AM, soft cream linen surface, single shaft of morning light"
+        }
       ]
     },
     {
@@ -117,8 +138,14 @@
       "style_default": "editorial-cream-photography",
       "prompt_template": "{style.base}\n\nThe image is a magazine-cover-style still life that suggests the topic without being literal.\n\nTopic: {TOPIC}.\nSubject suggestion: {SUBJECT}.\nFraming: 3:4 portrait, subject in the lower half of the frame, generous cream paper space at the top for a serif title.\n\n{style.negative}",
       "variables": [
-        { "name": "TOPIC", "default": "AI Builder Field Guide" },
-        { "name": "SUBJECT", "default": "A single moleskine notebook open to a hand-drawn flowchart, fountain pen resting in the spine, espresso cup just inside the frame" }
+        {
+          "name": "TOPIC",
+          "default": "AI Builder Field Guide"
+        },
+        {
+          "name": "SUBJECT",
+          "default": "A single moleskine notebook open to a hand-drawn flowchart, fountain pen resting in the spine, espresso cup just inside the frame"
+        }
       ]
     },
     {
@@ -132,9 +159,18 @@
       "style_default": "courseware-cover",
       "prompt_template": "{style.base}\n\nCourse: {COURSE_TITLE}.\nVisual hook: {VISUAL_HOOK}.\nAccent color: {ACCENT_HEX} (use sparingly, single object only).\n\n{style.negative}",
       "variables": [
-        { "name": "COURSE_TITLE", "default": "Claude Mastery" },
-        { "name": "VISUAL_HOOK", "default": "A black hardback book on cream paper, the title 'Claude Mastery' embossed in red, single fountain pen resting on top" },
-        { "name": "ACCENT_HEX", "default": "#C8252D" }
+        {
+          "name": "COURSE_TITLE",
+          "default": "Claude Mastery"
+        },
+        {
+          "name": "VISUAL_HOOK",
+          "default": "A black hardback book on cream paper, the title 'Claude Mastery' embossed in red, single fountain pen resting on top"
+        },
+        {
+          "name": "ACCENT_HEX",
+          "default": "#C8252D"
+        }
       ]
     },
     {
@@ -184,8 +220,14 @@
       "style_default": "x-banner-cinematic",
       "prompt_template": "{style.base}\n\nProfile: Flowi — AI tools, trading automation, behavior systems.\nSubject in the right third: {SUBJECT}.\nNegative-space mood at left: {LEFT_MOOD}.\n\n{style.negative}",
       "variables": [
-        { "name": "SUBJECT", "default": "A worn leather notebook open to a hand-drawn diagram of an agent loop, fountain pen mid-stroke" },
-        { "name": "LEFT_MOOD", "default": "Warm cream paper backdrop with a single shaft of morning light cutting diagonally across" }
+        {
+          "name": "SUBJECT",
+          "default": "A worn leather notebook open to a hand-drawn diagram of an agent loop, fountain pen mid-stroke"
+        },
+        {
+          "name": "LEFT_MOOD",
+          "default": "Warm cream paper backdrop with a single shaft of morning light cutting diagonally across"
+        }
       ]
     },
     {
@@ -199,8 +241,14 @@
       "style_default": "editorial-cream-photography",
       "prompt_template": "{style.base}\n\nPinterest board topic: {BOARD_TOPIC}.\nSubject: {SUBJECT}.\nFraming: 2:3 portrait, subject in the lower two thirds, negative space at the top for the board title to overlay.\n\n{style.negative}",
       "variables": [
-        { "name": "BOARD_TOPIC", "default": "AI tools for solo builders" },
-        { "name": "SUBJECT", "default": "A flat-lay of a wooden desk with a closed macbook, leather notebook, espresso cup, and a single small accent of warm red — a bookmark, a pencil, anything tiny" }
+        {
+          "name": "BOARD_TOPIC",
+          "default": "AI tools for solo builders"
+        },
+        {
+          "name": "SUBJECT",
+          "default": "A flat-lay of a wooden desk with a closed macbook, leather notebook, espresso cup, and a single small accent of warm red — a bookmark, a pencil, anything tiny"
+        }
       ]
     },
     {
@@ -214,8 +262,14 @@
       "style_default": "premium-dark-cinematic",
       "prompt_template": "{style.base}\n\nThumbnail topic: {TOPIC}.\nHook to convey visually: {HOOK}.\nFraming: 9:16 vertical, subject in the upper third, dark negative space below where bold serif headline could overlay.\n\n{style.negative}",
       "variables": [
-        { "name": "TOPIC", "default": "Why most algo traders blow up at month four" },
-        { "name": "HOOK", "default": "the kill zone" }
+        {
+          "name": "TOPIC",
+          "default": "Why most algo traders blow up at month four"
+        },
+        {
+          "name": "HOOK",
+          "default": "the kill zone"
+        }
       ]
     },
     {
@@ -229,7 +283,43 @@
       "style_default": "editorial-cream-photography",
       "prompt_template": "{style.base}\n\nA close-cropped portrait of {SUBJECT}, shoulders-up, three-quarter angle, eye contact with camera, soft natural side-light, cream paper backdrop, neutral expression, photorealistic, 400x400 final crop with subject centered.\n\n{style.negative}",
       "variables": [
-        { "name": "SUBJECT", "default": "A 30-something founder in a charcoal henley, short tidy hair, looking off-camera" }
+        {
+          "name": "SUBJECT",
+          "default": "A 30-something founder in a charcoal henley, short tidy hair, looking off-camera"
+        }
+      ]
+    },
+    {
+      "id": "educational-explainer-image",
+      "title": "Educational post — one of 5 teaching images",
+      "asset_class": "educational-image",
+      "asset_path": "public/images/edu/<spec-id>/img-<NN>.jpg",
+      "uses": "Generate this image, post as slide N of a 5-image educational carousel (IG / Pinterest / TikTok photo)",
+      "size": "1080x1350",
+      "aspect": "4:5 portrait",
+      "style_default": "educational-modern",
+      "prompt_template": "{style.base}\n\nThis is image {N} of a 5-part educational series titled: {SERIES}.\nThe single concept this image must teach, instantly and without reading: {CONCEPT}.\nVisual to depict: {VISUAL}.\nAccent color: {ACCENT}. Include the large numeral \"{N}\" subtly in a corner.\n\n{style.negative}",
+      "variables": [
+        {
+          "name": "SERIES",
+          "default": "How AI agents actually work"
+        },
+        {
+          "name": "N",
+          "default": "1"
+        },
+        {
+          "name": "CONCEPT",
+          "default": "An agent is a loop, not a single answer"
+        },
+        {
+          "name": "VISUAL",
+          "default": "A clean circular loop diagram: perceive -> plan -> act -> observe, one node glowing"
+        },
+        {
+          "name": "ACCENT",
+          "default": "#C8252D"
+        }
       ]
     }
   ]
