@@ -1,0 +1,22 @@
+{
+  "id": "evergreen-ai-tools-solo-founders-pay-for",
+  "title": "The 6 AI tools solo founders actually pay for",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "STACK", "promise": "for the full stack breakdown" },
+  "caption": "100 AI tools get hyped. Solo founders pay for 6. The stack that earns its subscription. Save this.",
+  "hashtags": ["aitools", "solopreneur", "indiehacker", "buildwithai", "startuptools"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 9, "eyebrow": "AI STACK · SAVE THIS", "headline": "The 6 AI tools solo founders", "italicWord": "actually pay for.", "sub": "Not the hyped ones. The ones that earn it." },
+    { "type": "numbered", "index": 2, "total": 9, "number": "01", "title": "Claude — the thinking layer", "body": "Strategy, writing, analysis, hard decisions. The one tool that replaces a thinking partner, not just a task-doer. ~$20/mo. Non-negotiable." },
+    { "type": "numbered", "index": 3, "total": 9, "number": "02", "title": "Cursor — the shipping layer", "body": "Reads your repo, writes the code, runs the tests. Turns 'I have an idea' into 'it's deployed' without a dev team. ~$20/mo." },
+    { "type": "numbered", "index": 4, "total": 9, "number": "03", "title": "Perplexity — the research layer", "body": "Replaces the 6-tab research spiral with a sourced answer in 2 minutes. The time it saves pays the sub in week one. ~$20/mo." },
+    { "type": "numbered", "index": 5, "total": 9, "number": "04", "title": "An image gen — the visual layer", "body": "Midjourney or ChatGPT images. Every brand needs visuals; agencies charge $500/asset. This is the highest-ROI line on the list." },
+    { "type": "numbered", "index": 6, "total": 9, "number": "05", "title": "Transcription — the capture layer", "body": "Every call, voice note, idea → searchable text. The cheapest tool here and the one founders underrate the most." },
+    { "type": "numbered", "index": 7, "total": 9, "number": "06", "title": "An automation layer", "body": "n8n / Make / Zapier. The glue that makes the other 5 run without you. The difference between tools and a system." },
+    { "type": "bullets", "index": 8, "total": 9, "eyebrow": "THE MATH", "title": "~$100/mo", "italicWord": "total.", "bullets": ["Replaces a researcher, a junior dev, a designer's first pass, and an ops VA.", "Break-even: one client, one shipped feature, or 4 saved hours.", "Everything else is a nice-to-have until these 6 are running."] },
+    { "type": "cta", "index": 9, "total": 9, "hook": "Want the full", "italicWord": "stack breakdown?", "sub": "Tools, costs, setup order. Free.", "ctaKeyword": "STACK", "ctaPromise": "for the breakdown" }
+  ]
+}

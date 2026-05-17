@@ -1,0 +1,21 @@
+{
+  "id": "evergreen-5-risk-rules-keep-account-alive",
+  "title": "5 risk rules that keep trading accounts alive",
+  "vertical": "ai_trading",
+  "topic": "risk",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "PROBABILITY", "promise": "for the risk playbook" },
+  "caption": "Strategy gets the attention. Risk keeps the account. The 5 rules that decide who's still trading in a year. Save this.",
+  "hashtags": ["riskmanagement", "tradingpsychology", "forex", "daytrading", "tradingtips"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 8, "eyebrow": "TRADING · SAVE THIS", "headline": "5 risk rules that keep accounts", "italicWord": "alive.", "sub": "Strategy is overrated. This isn't." },
+    { "type": "numbered", "index": 2, "total": 8, "number": "01", "title": "Never more than 1%", "body": "Risk 1% of the account per trade — 2% absolute max. At 1%, a 10-loss streak costs ~10%. At 5%, it ends you. The number isn't conservative. It's survival math." },
+    { "type": "numbered", "index": 3, "total": 8, "number": "02", "title": "Hard daily loss limit", "body": "Down 3% on the day → laptop closed. No exceptions, no 'just one more'. Most blown accounts die in a single revenge session, not over months." },
+    { "type": "numbered", "index": 4, "total": 8, "number": "03", "title": "Size off the stop, not the gut", "body": "Position size = risk amount ÷ stop distance. The chart decides your size. Never 'feel' bigger because you're confident. Confidence is not edge." },
+    { "type": "numbered", "index": 5, "total": 8, "number": "04", "title": "One-directional de-risking", "body": "After a loss streak you drop to half size. You only return to full size after sustained recovery — not one good trade. Easy to get defensive, hard to get aggressive again." },
+    { "type": "numbered", "index": 6, "total": 8, "number": "05", "title": "Journal every loss", "body": "Every loss: was the rule followed, yes or no. 'Followed the rule and lost' is fine. 'Broke the rule' — even on a win — is the actual problem. Track that, not P&L." },
+    { "type": "quote", "index": 7, "total": 8, "quote": "Amateurs think about how much they can make. Professionals think about how much they can lose.", "attribution": "Trading desk maxim" },
+    { "type": "cta", "index": 8, "total": 8, "hook": "Want the full", "italicWord": "risk playbook?", "sub": "The rules + the journal template. Free.", "ctaKeyword": "PROBABILITY", "ctaPromise": "for the playbook" }
+  ]
+}

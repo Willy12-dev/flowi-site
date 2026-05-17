@@ -1,0 +1,22 @@
+{
+  "id": "evergreen-claude-prompts-replace-junior",
+  "title": "7 Claude prompts that replace a junior hire",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "CLAUDE", "promise": "for the prompt pack" },
+  "caption": "Seven Claude prompts that quietly do the work you'd hand a junior. Save this.",
+  "hashtags": ["claudeai", "aiprompts", "aiproductivity", "promptengineering", "worksmarter"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 9, "eyebrow": "AI WORKFLOWS · SAVE THIS", "headline": "7 Claude prompts that replace a", "italicWord": "junior hire.", "sub": "The exact prompts. Paste-ready." },
+    { "type": "numbered", "index": 2, "total": 9, "number": "01", "title": "The research synthesizer", "body": "\"Here are 6 articles (pasted). Give me the 3 claims they agree on, the 2 they contradict on, and the 1 nobody is saying out loud.\" An afternoon of reading in 90 seconds." },
+    { "type": "numbered", "index": 3, "total": 9, "number": "02", "title": "The code reviewer", "body": "\"Review this for bugs, security holes, and the one design choice you'd push back on in a real PR. Be blunt.\" Catches what tired eyes miss." },
+    { "type": "numbered", "index": 4, "total": 9, "number": "03", "title": "The doc-from-notes", "body": "\"Turn these messy notes into a doc a new teammate could follow with zero context. Flag every place I assumed knowledge.\"" },
+    { "type": "numbered", "index": 5, "total": 9, "number": "04", "title": "The meeting-to-action", "body": "\"From this transcript: decisions, owners, deadlines, and the unresolved thing everyone avoided. Table format.\"" },
+    { "type": "numbered", "index": 6, "total": 9, "number": "05", "title": "The competitor teardown", "body": "\"Here's a competitor's landing page. What are they promising, who are they NOT for, and the gap I could own?\"" },
+    { "type": "numbered", "index": 7, "total": 9, "number": "06", "title": "The explain-it-back", "body": "\"Explain my own code/plan back to me as if you're skeptical it works. Where would it break first?\" The cheapest QA you'll ever run." },
+    { "type": "numbered", "index": 8, "total": 9, "number": "07", "title": "The edge-case finder", "body": "\"List the 10 inputs most likely to break this, ranked by how embarrassing the failure would be in production.\"" },
+    { "type": "cta", "index": 9, "total": 9, "hook": "Want the full", "italicWord": "30-prompt pack?", "sub": "Categorized, paste-ready, free.", "ctaKeyword": "CLAUDE", "ctaPromise": "for the pack" }
+  ]
+}

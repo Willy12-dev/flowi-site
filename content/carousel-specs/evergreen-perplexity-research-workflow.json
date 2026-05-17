@@ -1,0 +1,21 @@
+{
+  "id": "evergreen-perplexity-research-workflow",
+  "title": "The 4-step Perplexity workflow consultants charge for",
+  "vertical": "ai_builder",
+  "topic": "perplexity",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "RESEARCH", "promise": "for the research playbook" },
+  "caption": "How to get consultant-grade research out of Perplexity in 20 minutes. Save this.",
+  "hashtags": ["perplexityai", "airesearch", "aitools", "productivity", "deepresearch"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 8, "eyebrow": "AI RESEARCH · SAVE THIS", "headline": "The 4-step Perplexity workflow", "italicWord": "consultants charge for.", "sub": "20 minutes to a defensible answer." },
+    { "type": "numbered", "index": 2, "total": 8, "number": "01", "title": "Define the decision first", "body": "Don't search a topic — search a decision. \"I need to decide X. What evidence would change my mind either way?\" Research without a decision is just scrolling." },
+    { "type": "numbered", "index": 3, "total": 8, "number": "02", "title": "Go narrow, then wide", "body": "Start with the most specific question you have. Then zoom out: \"What is the obvious answer here, and why might it be wrong?\" Narrow surfaces facts; wide surfaces blind spots." },
+    { "type": "numbered", "index": 4, "total": 8, "number": "03", "title": "Demand the sources", "body": "\"For each claim, give the primary source and its date. Flag anything older than 18 months or from a vendor selling the thing.\" Recency and incentive kill bad research." },
+    { "type": "numbered", "index": 5, "total": 8, "number": "04", "title": "Run the contrarian pass", "body": "\"Argue the strongest case AGAINST the conclusion you just gave me. What would an expert who disagrees say?\" If it survives this, it's usable." },
+    { "type": "numbered", "index": 6, "total": 8, "number": "05", "title": "Compress to a brief", "body": "\"Summarize as: the answer, the 3 reasons, the 1 risk, the source I'd cite if challenged.\" That's the deliverable a consultant bills $2k for." },
+    { "type": "quote", "index": 7, "total": 8, "quote": "Most people use AI search to confirm. The edge is using it to disconfirm.", "attribution": "Flowi research notebook" },
+    { "type": "cta", "index": 8, "total": 8, "hook": "Want the full", "italicWord": "research playbook?", "sub": "The prompts + the checklist. Free.", "ctaKeyword": "RESEARCH", "ctaPromise": "for the playbook" }
+  ]
+}

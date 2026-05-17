@@ -1,0 +1,22 @@
+{
+  "id": "evergreen-ict-concepts-every-trader",
+  "title": "7 ICT concepts every trader actually needs",
+  "vertical": "ai_trading",
+  "topic": "ict",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "PROBABILITY", "promise": "for the ICT playbook" },
+  "caption": "ICT has 100 concepts. You need 7. The ones that survive contact with a live account. Save this.",
+  "hashtags": ["ictconcepts", "smartmoneyconcepts", "forex", "priceaction", "tradingstrategy"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 9, "eyebrow": "TRADING · SAVE THIS", "headline": "7 ICT concepts every trader", "italicWord": "actually needs.", "sub": "Ignore the other 93." },
+    { "type": "definition", "index": 2, "total": 9, "eyebrow": "01", "term": "Order block", "partOfSpeech": "noun.", "definition": "The last opposing candle before a strong move. Institutions filled orders here; price returns to it because liquidity remains. Mark it on D1/H4 only.", "example": "Up-move started here? The last red candle is your demand zone." },
+    { "type": "definition", "index": 3, "total": 9, "eyebrow": "02", "term": "Fair value gap", "partOfSpeech": "noun.", "definition": "A 3-candle imbalance where price moved too fast to trade fairly. Price tends to return and fill it. A magnet, not a guarantee.", "example": "Gap between candle 1's high and candle 3's low = the FVG." },
+    { "type": "numbered", "index": 4, "total": 9, "number": "03", "title": "Liquidity sweep", "body": "Price spikes past an obvious high/low (where stops sit), grabs the liquidity, then reverses. The trap is the signal. Stop-hunts are not random — they're the setup." },
+    { "type": "numbered", "index": 5, "total": 9, "number": "04", "title": "Market structure shift", "body": "A break of the most recent swing in the opposite direction. This is your only real confirmation that the prior trend just died. No MSS, no entry." },
+    { "type": "numbered", "index": 6, "total": 9, "number": "05", "title": "Premium / discount", "body": "Draw a fib on the range. Only sell in premium (top half), only buy in discount (bottom half). Most retail losses come from buying in premium." },
+    { "type": "numbered", "index": 7, "total": 9, "number": "06", "title": "Killzones", "body": "London open and NY open carry the moves. Setups outside these windows have worse follow-through. Time is a filter, not an afterthought." },
+    { "type": "numbered", "index": 8, "total": 9, "number": "07", "title": "One A+ a day", "body": "The 7th concept is discipline. D1 bias → H4 zone → H1 confirmation → one trade. The edge isn't the concepts. It's not taking the other 12 setups." },
+    { "type": "cta", "index": 9, "total": 9, "hook": "Want the full", "italicWord": "ICT playbook?", "sub": "The setups + the rules. Free PDF.", "ctaKeyword": "PROBABILITY", "ctaPromise": "for the playbook" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "evergreen-habit-architecture-survives-month-3",
+  "title": "The habit architecture that survives month 3",
+  "vertical": "ai_behavior",
+  "topic": "habits",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "HABIT", "promise": "for the playbook" },
+  "caption": "Motivation gets you to week 3. Architecture gets you to year 1. The 5-part system that actually holds. Save this.",
+  "hashtags": ["habits", "behaviorchange", "selfimprovement", "discipline", "atomichabits"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 8, "eyebrow": "BEHAVIOR · SAVE THIS", "headline": "The habit architecture that survives", "italicWord": "month 3.", "sub": "Where every streak app fails — and why." },
+    { "type": "numbered", "index": 2, "total": 8, "number": "01", "title": "Decide in calm, not in the moment", "body": "The brain at 6am is not the brain that committed at 9pm. Make the decision once, in advance, specific enough that the 6am brain has nothing to negotiate." },
+    { "type": "numbered", "index": 3, "total": 8, "number": "02", "title": "Mechanism, not memory", "body": "A habit you only 'remember' fails under stress. Bind it to a mechanism you can't quietly skip — laid-out gear, a booked slot, a person expecting you." },
+    { "type": "numbered", "index": 4, "total": 8, "number": "03", "title": "Track compliance, not streaks", "body": "Aim for 28-of-30, not a perfect chain. Streak psychology means one miss feels like total failure → you quit. Compliance windows survive the miss." },
+    { "type": "numbered", "index": 5, "total": 8, "number": "04", "title": "Asymmetric modes", "body": "A slip drops you to half-intensity for a week. You only return to full after stable compliance — not one good day. Defense easy, aggression earned." },
+    { "type": "numbered", "index": 6, "total": 8, "number": "05", "title": "The post-slip protocol", "body": "What you do AFTER a miss matters more than the miss. Not 'restart the streak' — a 4-minute trigger-mapping: what happened, what preceded it, what changes." },
+    { "type": "quote", "index": 7, "total": 8, "quote": "Discipline isn't a personality trait. It's an architecture choice.", "attribution": "Flowi behavior notebook" },
+    { "type": "cta", "index": 8, "total": 8, "hook": "Want the full", "italicWord": "5-part playbook?", "sub": "The system, written down. Free.", "ctaKeyword": "HABIT", "ctaPromise": "for the playbook" }
+  ]
+}

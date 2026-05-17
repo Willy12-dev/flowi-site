@@ -1,0 +1,21 @@
+{
+  "id": "evergreen-midjourney-brand-consistent-formula",
+  "title": "The Midjourney formula for brand-consistent images",
+  "vertical": "ai_builder",
+  "topic": "midjourney",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "STUDIO", "promise": "for the prompt formula" },
+  "caption": "Why your Midjourney images look random — and the 6-part prompt skeleton that makes them look like one brand. Save this.",
+  "hashtags": ["midjourney", "aiart", "aidesign", "branddesign", "promptengineering"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 8, "eyebrow": "AI DESIGN · SAVE THIS", "headline": "The Midjourney formula for", "italicWord": "brand consistency.", "sub": "Stop generating randomness. Build a house style." },
+    { "type": "numbered", "index": 2, "total": 8, "number": "01", "title": "The 6-part skeleton", "body": "Every prompt: [subject] + [composition] + [lighting] + [palette] + [medium/camera] + [negative]. Random prompts = random results. Same skeleton = a recognizable look." },
+    { "type": "numbered", "index": 3, "total": 8, "number": "02", "title": "Lock the style reference", "body": "Generate one image you love. Use it as --sref on every future prompt. This is the single biggest lever for 'all our images look related'." },
+    { "type": "numbered", "index": 4, "total": 8, "number": "03", "title": "Fix the palette in words", "body": "Don't say 'nice colors'. Say 'cream paper #F5F0E5, charcoal ink, one saturated red accent'. Specific hex-level language survives across generations." },
+    { "type": "numbered", "index": 5, "total": 8, "number": "04", "title": "Commit to one lighting", "body": "Pick one: 'soft north-window light' OR 'hard low rim light'. Mixing lighting across a feed is what makes a brand look amateur. Consistency reads as intentional." },
+    { "type": "numbered", "index": 6, "total": 8, "number": "05", "title": "Write a house-style doc", "body": "One paragraph that ends every prompt: the style, palette, lighting, and a negative list ('no 3D, no neon, no stock-photo gloss'). Paste it every time." },
+    { "type": "numbered", "index": 7, "total": 8, "number": "06", "title": "Seed-lock for series", "body": "Need 5 variations of the same scene? Reuse --seed. Changes stay controlled instead of regenerating a different universe each time." },
+    { "type": "cta", "index": 8, "total": 8, "hook": "Want the full", "italicWord": "prompt formula?", "sub": "The skeleton + a house-style template. Free.", "ctaKeyword": "STUDIO", "ctaPromise": "for the formula" }
+  ]
+}

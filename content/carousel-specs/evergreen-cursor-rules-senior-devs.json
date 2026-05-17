@@ -1,0 +1,23 @@
+{
+  "id": "evergreen-cursor-rules-senior-devs",
+  "title": "9 Cursor rules I steal from senior devs",
+  "vertical": "ai_builder",
+  "topic": "cursor",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "CURSOR", "promise": "for the .cursorrules file" },
+  "caption": "The .cursorrules lines that separate shipped code from AI slop. Save this.",
+  "hashtags": ["cursorai", "aicoding", "devtools", "vibecoding", "softwareengineering"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 10, "eyebrow": "AI CODING · SAVE THIS", "headline": "9 Cursor rules I steal from", "italicWord": "senior devs.", "sub": "Paste these into .cursorrules. Thank me later." },
+    { "type": "numbered", "index": 2, "total": 10, "number": "01", "title": "Read before you write", "body": "\"Always read the full file before editing it. Never edit code you haven't read in this session.\" Kills the #1 cause of AI regressions." },
+    { "type": "numbered", "index": 3, "total": 10, "number": "02", "title": "Explain, then change", "body": "\"Before any edit, state in one sentence what you're changing and why. If you can't, don't edit.\"" },
+    { "type": "numbered", "index": 4, "total": 10, "number": "03", "title": "Match the codebase", "body": "\"Mirror existing patterns, naming, and structure. Consistency beats your preferred style.\"" },
+    { "type": "numbered", "index": 5, "total": 10, "number": "04", "title": "Smallest possible diff", "body": "\"Change only what the task requires. No drive-by refactors, no reformatting untouched lines.\"" },
+    { "type": "numbered", "index": 6, "total": 10, "number": "05", "title": "Tests are not optional", "body": "\"For any logic change, write or update the test in the same edit. No test, no done.\"" },
+    { "type": "numbered", "index": 7, "total": 10, "number": "06", "title": "Ask before deleting", "body": "\"Never delete files, env vars, or config without explicitly asking. Deletions are irreversible in a hurry.\"" },
+    { "type": "numbered", "index": 8, "total": 10, "number": "07", "title": "No premature abstraction", "body": "\"Don't build the generic version until there are 3 real callers. YAGNI by default.\"" },
+    { "type": "numbered", "index": 9, "total": 10, "number": "08", "title": "Surface assumptions", "body": "\"List every assumption you made before I run this. Wrong assumptions caught early are free.\"" },
+    { "type": "cta", "index": 10, "total": 10, "hook": "Want the full", "italicWord": ".cursorrules file?", "sub": "Copy-paste ready. Free.", "ctaKeyword": "CURSOR", "ctaPromise": "for the file" }
+  ]
+}

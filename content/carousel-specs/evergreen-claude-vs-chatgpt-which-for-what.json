@@ -1,0 +1,21 @@
+{
+  "id": "evergreen-claude-vs-chatgpt-which-for-what",
+  "title": "Claude vs ChatGPT: which one for what",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "STACK", "promise": "for the full decision map" },
+  "caption": "Stop asking which is better. Ask which for what. The honest split, by task. Save this.",
+  "hashtags": ["claudeai", "chatgpt", "aitools", "aicomparison", "worksmarter"],
+  "slides": [
+    { "type": "cover", "index": 1, "total": 8, "eyebrow": "AI TOOLS · SAVE THIS", "headline": "Claude vs ChatGPT:", "italicWord": "which for what.", "sub": "Not which is better. Which, when." },
+    { "type": "compare", "index": 2, "total": 8, "title": "Long documents", "italicWord": "& code", "left": { "label": "CLAUDE — use this", "items": ["100+ page PDFs in one pass", "Agentic coding (Claude Code)", "Writing with a point of view", "Following multi-step instructions exactly"] }, "right": { "label": "CHATGPT — use this", "items": ["Quick image generation", "Voice conversations", "Data analysis / charts", "Web browsing + citations"] } },
+    { "type": "numbered", "index": 3, "total": 8, "number": "01", "title": "Reasoning under nuance", "body": "Claude. When the task has judgment calls, contradictions, or 'it depends' baked in, Claude holds the nuance longer without flattening it." },
+    { "type": "numbered", "index": 4, "total": 8, "number": "02", "title": "Anything visual", "body": "ChatGPT. Image generation, charts from data, screenshots-to-code. Claude reads images well but ChatGPT makes them." },
+    { "type": "numbered", "index": 5, "total": 8, "number": "03", "title": "Shipping software", "body": "Claude Code. Reads the repo, edits files, runs tests, doesn't hallucinate the codebase. The gap here is real." },
+    { "type": "numbered", "index": 6, "total": 8, "number": "04", "title": "Fast factual lookup", "body": "ChatGPT or Perplexity. When you just need the current answer with a source, not a thinking partner." },
+    { "type": "bullets", "index": 7, "total": 8, "eyebrow": "THE RULE", "title": "One-line", "italicWord": "heuristic.", "bullets": ["Thinking, writing, code → Claude.", "Seeing, searching, speaking → ChatGPT.", "If you only pay for one and you build → Claude. If you create content → ChatGPT."] },
+    { "type": "cta", "index": 8, "total": 8, "hook": "Want the full", "italicWord": "decision map?", "sub": "Every task, mapped. Free PDF.", "ctaKeyword": "STACK", "ctaPromise": "for the map" }
+  ]
+}
