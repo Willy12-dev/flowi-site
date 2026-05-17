@@ -1,0 +1,105 @@
+{
+  "id": "news-2026-05-17-xai-grok-apple-openai-suit-boost",
+  "title": "US Court Ruling Gives xAI a Strategic Edge in Apple-OpenAI Suit",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "A US court just dealt xAI an unexpected advantage in the Apple vs. OpenAI suit. This ruling bolsters Grok's position, proving legal battles are reshaping AI competition. \n\nType GROK to get on the waitlist.",
+  "hashtags": [
+    "xAI",
+    "Grok",
+    "OpenAI",
+    "Apple",
+    "AISuit",
+    "TechLaw",
+    "AICompetition",
+    "ElonMusk",
+    "AIIndustry",
+    "Antitrust"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "US COURT RULING",
+      "headline": "Apple's OpenAI Suit Just Made Grok *Stronger*.",
+      "italicWord": "Stronger",
+      "sub": "How legal battles are reshaping the AI builder landscape."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "xAI's Unexpected Boost",
+      "body": "A US court ruling in the Apple vs. OpenAI dispute has given xAI a strategic advantage. While details are under seal, the outcome directly benefits Grok's competitive position."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE LAWSUIT",
+      "term": "Monopolistic Practices",
+      "partOfSpeech": "noun.",
+      "definition": "Allegations often leveled against dominant tech firms for stifling competition, controlling market access, or unfair pricing. Apple's suit targets OpenAI's alleged market control.",
+      "example": "Historically, antitrust cases against Microsoft defined software markets for decades."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "GROK'S GAIN",
+      "title": "Why This Helps xAI",
+      "italicWord": "Advantages",
+      "bullets": [
+        "Increased scrutiny on top competitors like OpenAI.",
+        "Potential for regulatory intervention to level the playing field.",
+        "Distraction and resource drain for rivals in legal proceedings."
+      ],
+      "footer": "A clear path for new entrants."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Wins When Giants Fight?",
+      "italicWord": "Ecosystem",
+      "audiences": [
+        {
+          "pill": "NEW ENTRANTS",
+          "body": "Companies like xAI, looking to disrupt the established order, gain breathing room as regulators focus on incumbents."
+        },
+        {
+          "pill": "DEVELOPERS",
+          "body": "More competition could lead to better tools, more open models, and less vendor lock-in over time."
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "REGULATORY IMPACT",
+      "preStat": "Over the last 12 months,",
+      "stat": "3 major antitrust probes",
+      "postStat": "have been launched against Big Tech's AI ventures.",
+      "body": "This signals a growing trend: governments are actively shaping the AI market through legal challenges, not just innovation policy."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Legal battles are the new battleground for AI dominance.",
+      "italicWord": "dominance",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Tap here to learn more about xAI's Grok."
+    }
+  ]
+}

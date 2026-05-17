@@ -1,0 +1,105 @@
+{
+  "id": "news-2026-05-17-cancer-treatment-autoimmune-breakthrough",
+  "title": "CAR T-Cell Therapy's Autoimmune Pivot",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "The biggest cancer breakthrough in decades isn't just for tumors anymore. CAR T-cell therapy, once exclusive to oncology, now shows radical promise against chronic autoimmune diseases. See how this biotech pivot changes everything for millions. BUILD for the field guide.",
+  "hashtags": [
+    "CARtCell",
+    "AutoimmuneDisease",
+    "CancerResearch",
+    "MedicalBreakthrough",
+    "Biotech",
+    "AIinMedicine",
+    "Immunotherapy",
+    "ScienceNews",
+    "FutureofHealth",
+    "DrugDiscovery"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "BIOTECH SHIFT",
+      "headline": "The Cancer Therapy That's About To Cure *Autoimmune Disease*",
+      "italicWord": "Cure",
+      "sub": "CAR T-cells are rewriting the rulebook for chronic illness."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE BREAKTHROUGH",
+      "term": "CAR T-Cell Therapy",
+      "partOfSpeech": "noun.",
+      "definition": "A personalized immunotherapy using genetically engineered T-cells to target and destroy specific cells. Originally for blood cancers, now repurposed for chronic autoimmune conditions.",
+      "example": "Patients with lupus and rheumatoid arthritis are seeing complete remission."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "TARGETING THE SOURCE",
+      "body": "Instead of attacking cancer cells, CAR T-cells are re-engineered to eliminate B-cells responsible for producing autoantibodies. This resets the immune system, stopping the disease at its root."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "EARLY SUCCESS",
+      "title": "UNEXPECTED REMISSIONS",
+      "italicWord": "Remissions",
+      "bullets": [
+        "Systemic Lupus Erythematosus (SLE)",
+        "Rheumatoid Arthritis",
+        "Systemic Sclerosis"
+      ],
+      "footer": "Trial data shows complete, drug-free remission in severe cases."
+    },
+    {
+      "type": "stats",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "MASSIVE POTENTIAL",
+      "title": "MILLIONS AFFECTED",
+      "italicWord": "Affected",
+      "stats": [
+        {
+          "value": "50M+",
+          "label": "Americans with autoimmune disease"
+        },
+        {
+          "value": "$100B",
+          "label": "Annual US healthcare cost"
+        }
+      ],
+      "footer": "A new paradigm shifts treatment from symptom management to cure."
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "02",
+      "title": "OBSTACLES AHEAD",
+      "body": "CAR T-cell therapy is complex, expensive, and carries significant risks including cytokine release syndrome. Scaling production and reducing costs are critical for wider adoption."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "This isn't just a treatment. It's a *rethink*.",
+      "italicWord": "Rethink",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Stay ahead of the next wave in biotech and AI."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "news-2026-05-17-xai-apple-openai-partial-win",
+  "title": "Elon Musk's xAI Scores Partial Win Against Apple-OpenAI",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Elon Musk's xAI just scored a \"partial win\" in its lawsuit against Apple and OpenAI. This ruling signals a significant challenge to Apple's AI strategy, highlighting potential antitrust concerns in tech partnerships. Get the full breakdown of what this means for the future of AI competition.",
+  "hashtags": [
+    "xAI",
+    "Grok",
+    "ElonMusk",
+    "Apple",
+    "OpenAI",
+    "Antitrust",
+    "AIStrategy",
+    "TechNews",
+    "AICompetition",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "xAI v. Apple-OpenAI",
+      "headline": "Elon Musk's xAI just showed why Apple's AI deals are *vulnerable*.",
+      "italicWord": "vulnerable",
+      "sub": "A \"partial win\" against Cupertino's new AI strategy."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Lawsuit's Genesis",
+      "body": "xAI alleged anti-competitive practices stemming from Apple's integration of OpenAI's ChatGPT. Musk claimed this deal stifled competition and leveraged Apple's market power unfairly."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "xAI's Core Arguments",
+      "title": "What xAI *Claimed*",
+      "italicWord": "Claimed",
+      "bullets": [
+        "Apple's exclusive deal with OpenAI creates a monopoly.",
+        "Undermines open competition in the AI assistant market.",
+        "Leverages Apple's platform dominance to favor one AI."
+      ],
+      "footer": "These points aimed to challenge the legality of the partnership."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "The Court's Ruling",
+      "preStat": "xAI didn't get a full victory, but the court found",
+      "stat": "Sufficient Merit",
+      "postStat": "to proceed with specific anti-trust claims against Apple.",
+      "body": "This indicates the judge saw enough evidence in xAI's allegations to warrant further legal scrutiny, despite not granting all requested injunctions."
+    },
+    {
+      "type": "definition",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "A Key Detail",
+      "term": "Tim Cook Spared",
+      "partOfSpeech": "verb phrase.",
+      "definition": "The court dismissed personal liability claims against Apple CEO Tim Cook, indicating the focus remains on corporate actions rather than individual executive malfeasance.",
+      "example": "This limits the scope, preventing a potential high-profile personal trial for Cook."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who *Benefits*?",
+      "italicWord": "Benefits",
+      "audiences": [
+        {
+          "pill": "xAI & Competitors",
+          "body": "The ruling validates concerns about market concentration, potentially opening doors for other AI players to challenge Apple's future deals."
+        },
+        {
+          "pill": "Regulatory Bodies",
+          "body": "It adds weight to ongoing global antitrust investigations into tech giants, reinforcing calls for closer scrutiny of AI partnerships."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Apple's AI strategy just hit a *snag*.",
+      "italicWord": "snag",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Stay ahead of the curve."
+    }
+  ]
+}

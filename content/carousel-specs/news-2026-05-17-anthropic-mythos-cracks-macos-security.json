@@ -1,0 +1,102 @@
+{
+  "id": "news-2026-05-17-anthropic-mythos-cracks-macos-security",
+  "title": "Anthropic's Mythos and the macOS Exploit",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic's Mythos, a research AI, just helped researchers crack macOS security. It's a stark reminder: AI's dual-use nature means it can find exploits as easily as it can fix them. The implications for cybersecurity are massive.\n\n* AI is changing the attack surface for operating systems.\n\nTap BUILD to get the field guide on AI security.",
+  "hashtags": [
+    "AISecurity",
+    "Anthropic",
+    "MythosAI",
+    "macOS",
+    "Cybersecurity",
+    "AIResearch",
+    "TechNews",
+    "LLMs",
+    "AIethics",
+    "DeepLearning"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "CYBERSECURITY",
+      "headline": "Anthropic’s AI Just *Cracked* macOS Security.",
+      "italicWord": "Cracked",
+      "sub": "A research model exposed critical privacy flaws."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE AI",
+      "term": "Mythos",
+      "partOfSpeech": "noun.",
+      "definition": "Anthropic's internal research model, a less publicized sibling to Claude. It's designed for advanced R&D, exploring new frontiers in AI capabilities and safety.",
+      "example": "Researchers leveraged Mythos to probe system vulnerabilities."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "How Mythos Found The Flaw",
+      "body": "Security researchers tasked Mythos with identifying weaknesses in macOS privacy settings. The AI successfully pinpointed a critical vulnerability that could bypass user consent for data access."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE RISK",
+      "title": "What Was Exposed",
+      "italicWord": "Exposed",
+      "bullets": [
+        "A flaw in macOS privacy settings.",
+        "Allowed applications to access sensitive user data without explicit permission.",
+        "Bypassed macOS's robust security architecture."
+      ],
+      "footer": "This wasn't a zero-day but a proof-of-concept for AI-assisted vulnerability discovery."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "AI's Double-Edged Sword",
+      "italicWord": "Double-Edged",
+      "audiences": [
+        {
+          "pill": "FOR OFFENSE",
+          "body": "AI can rapidly identify complex system vulnerabilities, accelerating exploit development for malicious actors."
+        },
+        {
+          "pill": "FOR DEFENSE",
+          "body": "AI can also be a powerful tool for proactively finding and patching security gaps before they are exploited."
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "index": 6,
+      "total": 7,
+      "quote": "Our goal is to understand the full spectrum of AI capabilities, including potential misuse, to build safer systems. This research helps us do that.",
+      "attribution": "ANTHROPIC RESEARCH TEAM"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The future of cybersecurity will be *AI-driven*.",
+      "italicWord": "AI-driven",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Understand the tools shaping tomorrow's digital battleground."
+    }
+  ]
+}

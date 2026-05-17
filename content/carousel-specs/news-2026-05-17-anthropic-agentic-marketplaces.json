@@ -1,0 +1,132 @@
+{
+  "id": "news-2026-05-17-anthropic-agentic-marketplaces",
+  "title": "Anthropic's Agentic Marketplace Vision",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Your next online purchase might not involve a human at all. Anthropic is pushing a vision where AI agents handle everything from product discovery to checkout.\n\nThis shift means unprecedented efficiency, but also new competitive landscapes.\n\nTap to BUILD for the field guide on agentic AI.",
+  "hashtags": [
+    "aiagents",
+    "anthropic",
+    "claudeai",
+    "ecommerceai",
+    "aifuture",
+    "techtrends",
+    "aidriven",
+    "futureofwork",
+    "flowi",
+    "automation",
+    "digitalcommerce"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S LATEST",
+      "headline": "Why your next online purchase won't be from a human",
+      "italicWord": "human",
+      "sub": "The rise of AI agent marketplaces."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "WHAT ARE THEY?",
+      "term": "Agentic Marketplace",
+      "partOfSpeech": "noun.",
+      "definition": "Platforms where autonomous AI agents interact, negotiate, and execute transactions on behalf of users or businesses, from product discovery to purchase.",
+      "example": "A user's agent finds and buys the best flight, hotel, and car rental package without direct human input."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE MECHANICS",
+      "title": "Agents aren't just chatbots.",
+      "italicWord": "chatbots",
+      "bullets": [
+        "Autonomous: They act without constant human instruction.",
+        "Goal-Oriented: Given a task, they break it down and execute steps.",
+        "Interactive: They communicate with other agents and systems."
+      ],
+      "footer": "They represent you in a digital economy."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "COMMERCE EVOLUTION",
+      "preStat": "By 2030, analysts predict over",
+      "stat": "40%",
+      "postStat": "of online transactions will involve AI agents acting autonomously.",
+      "body": "This isn't just automation; it's delegation at scale. Agents handle complex, multi-step tasks, freeing up human time for higher-value work."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who stands to gain (or lose)?",
+      "italicWord": "lose",
+      "audiences": [
+        {
+          "pill": "Businesses",
+          "body": "Reduced operational costs, hyper-personalized customer experiences, expanded reach without human scaling limits."
+        },
+        {
+          "pill": "Consumers",
+          "body": "Time saved, better deals, tailored services. Your agent becomes your personal shopper, travel agent, and negotiator."
+        },
+        {
+          "pill": "Intermediaries",
+          "body": "Traditional brokers, comparison sites, and even some content creators face disruption as agents bypass them."
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "index": 6,
+      "total": 7,
+      "title": "The Road Ahead for Agentic AI",
+      "italicWord": "Ahead",
+      "cols": 2,
+      "cards": [
+        {
+          "number": "01",
+          "title": "Autonomous Commerce",
+          "body": "Agents will move beyond simple tasks to handle entire complex transactions, acting as digital brokers."
+        },
+        {
+          "number": "02",
+          "title": "Trust & Ethics",
+          "body": "Ensuring agents operate ethically and transparently is crucial for widespread adoption and user confidence."
+        },
+        {
+          "number": "03",
+          "title": "New Market Models",
+          "body": "Expect entirely new marketplaces and services designed for agent-to-agent interaction, not just human users."
+        },
+        {
+          "number": "04",
+          "title": "Regulatory Scrutiny",
+          "body": "Governments will likely introduce regulations to manage agent autonomy, liability, and data privacy implications."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Agentic AI is coming faster than you think.",
+      "italicWord": "faster",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the full breakdown on AI agent architecture and deployment."
+    }
+  ]
+}

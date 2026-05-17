@@ -1,0 +1,109 @@
+{
+  "id": "news-2026-05-17-mistral-anthropic-military-code-warning",
+  "title": "Mistral CEO: Don't Let Anthropic Scan French Military Code",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Mistral AI's CEO issued a stark warning: letting foreign AI models scan military code is a direct threat to national sovereignty. The debate over data security vs. AI ambition is heating up.\n\nFlowi cuts through the noise on critical AI policy. Tap the link in bio to BUILD for the field guide.",
+  "hashtags": [
+    "anthropic",
+    "mistralai",
+    "nationalsecurity",
+    "aidata",
+    "militaryai",
+    "aipolicy",
+    "france",
+    "aiethics",
+    "technews",
+    "aigovernance",
+    "claudeai"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MISTRAL CEO'S WARNING",
+      "headline": "Why France Shouldn't Let Anthropic Scan Its *Military* Code",
+      "italicWord": "Military",
+      "sub": "The national security vs. AI ambition dilemma."
+    },
+    {
+      "type": "quote",
+      "index": 2,
+      "total": 7,
+      "quote": "We must not let a non-European actor scan military code bases. It would be a loss of sovereignty.",
+      "attribution": "Arthur Mensch, CEO of Mistral AI"
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE PROJECT IN QUESTION",
+      "term": "Project Mythos",
+      "partOfSpeech": "noun.",
+      "definition": "Anthropic's initiative to train AI models on vast, sensitive datasets, potentially including government and military code.",
+      "example": "Aimed at building highly capable, context-aware AI assistants."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE CORE CONCERN",
+      "title": "Why Sharing Data With *Non-EU* AI Is Risky",
+      "italicWord": "Non-EU",
+      "bullets": [
+        "Proprietary data could be integrated into models accessible elsewhere.",
+        "Loss of control over sensitive national defense information.",
+        "Potential for foreign influence on critical infrastructure AI."
+      ],
+      "footer": "A direct challenge to European digital sovereignty."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "This Isn't Just About *France*",
+      "italicWord": "France",
+      "audiences": [
+        {
+          "pill": "EU Policymakers",
+          "body": "Grappling with balancing AI innovation against national security and data privacy laws."
+        },
+        {
+          "pill": "Defense Contractors",
+          "body": "Need clear guidelines on what data can be shared and with whom for AI development."
+        },
+        {
+          "pill": "AI Developers",
+          "body": "Must navigate complex geopolitical lines when sourcing data for model training."
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "THE STAKES",
+      "preStat": "The value of proprietary data for training advanced AI models is currently estimated at over",
+      "stat": "$10B",
+      "postStat": "annually for leading AI labs.",
+      "body": "Military code is among the most sensitive and valuable datasets for training secure, robust AI."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to understand how AI models are built?",
+      "italicWord": "Built",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get our expert-vetted resource for AI builders."
+    }
+  ]
+}

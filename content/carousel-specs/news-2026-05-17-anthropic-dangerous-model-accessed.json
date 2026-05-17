@@ -1,0 +1,108 @@
+{
+  "id": "news-2026-05-17-anthropic-dangerous-model-accessed",
+  "title": "Anthropic's Secret Model: Dangerous, Accessed, Still Hidden",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic built a model so dangerous they refuse to release it. But it was accessed without authorization on day one, raising serious questions about internal security and the true risks of advanced AI.\n\n— The \"most dangerous\" model exists, but you'll never see it.\n\nTap the link in bio to BUILD for the field guide.",
+  "hashtags": [
+    "Anthropic",
+    "ClaudeAI",
+    "AISafety",
+    "LLM",
+    "AIethics",
+    "AIsecurity",
+    "TechNews",
+    "AIdevelopment",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S HIDDEN DANGER",
+      "headline": "Their 'Most Dangerous' AI Was Accessed On Day One. It's Still Not Public.",
+      "italicWord": "Accessed",
+      "sub": "Why Anthropic’s most potent model remains under lock and key after an early breach."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Ghost in the Machine",
+      "body": "Anthropic developed an AI model internally that they deemed too risky for public release. It's described as their 'most dangerous' creation, a testament to the cutting edge of AI capabilities and potential hazards."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "IMMEDIATE BREACH",
+      "preStat": "The 'dangerous' model was accessed without authorization on",
+      "stat": "DAY ONE",
+      "postStat": "of its internal deployment. This incident immediately flagged severe security vulnerabilities.",
+      "body": "The unauthorized access underscores the difficulty of containing powerful AI, even within a controlled environment. It highlighted critical internal security gaps."
+    },
+    {
+      "type": "definition",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHAT MAKES AN AI 'DANGEROUS'?",
+      "term": "Dangerous AI",
+      "partOfSpeech": "noun.",
+      "definition": "An AI model with capabilities that, if misused, could cause significant societal harm, instability, or even existential risk. This includes advanced deception, autonomous replication, or weaponization potential.",
+      "example": "Anthropic's internal model exemplifies 'dangerous AI' due to its undisclosed but high-risk capabilities."
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "WHY IT REMAINS PRIVATE",
+      "title": "A Calculated Risk",
+      "italicWord": "Secrecy",
+      "bullets": [
+        "**Uncertainty:** Anthropic struggles to predict the full scope of its capabilities or potential for misuse.",
+        "**Control:** The day-one breach proved they couldn't fully control access, let alone public deployment.",
+        "**Responsibility:** Releasing a model with known risks could invite severe regulatory backlash and public outcry."
+      ],
+      "footer": "The decision to withhold reflects a cautious approach, prioritizing safety over immediate innovation."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who This Impacts",
+      "italicWord": "Everyone",
+      "audiences": [
+        {
+          "pill": "AI Developers",
+          "body": "Highlights the extreme difficulty of securing and safely deploying advanced models. Sets a precedent for internal risk assessment."
+        },
+        {
+          "pill": "Policymakers",
+          "body": "Provides concrete evidence for the need for robust AI safety regulations and internal audit requirements for frontier models."
+        },
+        {
+          "pill": "The Public",
+          "body": "Reinforces concerns about AI's unchecked power and the opaque nature of its development. Raises questions about what else is being built in secret."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The AI industry moves fast. Stay ahead of the curve, not behind it.",
+      "italicWord": "Ahead",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the insights powering tomorrow's AI builders. Link in bio."
+    }
+  ]
+}

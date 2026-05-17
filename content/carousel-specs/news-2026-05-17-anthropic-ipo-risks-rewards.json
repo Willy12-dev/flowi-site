@@ -1,0 +1,104 @@
+{
+  "id": "news-2026-05-17-anthropic-ipo-risks-rewards",
+  "title": "Anthropic's IPO: Safety vs. Scrutiny",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Anthropic's rumored IPO means massive capital but also intense scrutiny. Can a company built on ethical AI principles truly thrive under Wall Street's relentless pursuit of quarterly growth? It's a high-stakes gamble for the Claude maker.\n\nFlowi cuts through the market hype, giving you the real story on AI's biggest moves.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "aicompany",
+    "ipo",
+    "techipo",
+    "aifinance",
+    "aibusiness",
+    "responsibleai",
+    "techinvesting",
+    "flowi",
+    "aianalysis",
+    "techtrends"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ANTHROPIC'S PUBLIC PLAY",
+      "headline": "IPO isn't the *only* way to win the AI race. Anthropic's bet is a big one.",
+      "italicWord": "big",
+      "sub": "The Claude maker considers going public."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "WHY GO PUBLIC NOW?",
+      "body": "Accessing massive capital for R&D and compute is paramount. Competing with OpenAI and Google demands resources. An IPO provides liquidity for early investors and employees, attracting top talent in a tight market."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "IPO REWARDS",
+      "title": "CAPITAL & VISIBILITY",
+      "italicWord": "visibility",
+      "bullets": [
+        "Billions in new funding to scale models and infrastructure.",
+        "Increased brand awareness and market legitimacy.",
+        "Liquidity for early investors and employee stock options.",
+        "Positions Anthropic as a long-term AI leader."
+      ],
+      "footer": "The public market demands growth."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "IPO RISKS",
+      "title": "SCRUTINY & PRESSURE",
+      "italicWord": "Scrutiny",
+      "bullets": [
+        "Intense regulatory oversight on AI safety and ethics claims.",
+        "Public market volatility impacts valuation and investor confidence.",
+        "Pressure to prioritize quarterly profits over long-term research.",
+        "Increased competition from open-source models and tech giants."
+      ],
+      "footer": "Can \"safety\" survive the market?"
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "THE ETHOS VS. THE MARKET",
+      "italicWord": "Market",
+      "audiences": [
+        {
+          "pill": "ANTHROPIC'S ETHOS",
+          "body": "Built on a \"constitutional AI\" safety framework. Prioritizes responsible development. Aims for beneficial AI, not just powerful AI."
+        },
+        {
+          "pill": "PUBLIC MARKET DEMANDS",
+          "body": "Focuses on revenue growth, market share, and profitability. Short-term returns often outweigh long-term ethical considerations."
+        }
+      ],
+      "footer": "A potential clash of priorities."
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "Forget the IPO noise.",
+      "italicWord": "noise",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Learn to build with AI, no investor deck needed."
+    }
+  ]
+}

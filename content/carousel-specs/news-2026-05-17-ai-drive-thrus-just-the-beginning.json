@@ -1,0 +1,114 @@
+{
+  "id": "news-2026-05-17-ai-drive-thrus-just-the-beginning",
+  "title": "AI's Silent Takeover of Service Jobs",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Think AI at the drive-thru is just a quirk? It's a strategic beachhead. McDonald's and Wendy's are piloting systems that hint at a much broader shift in customer service. This isn't just about ordering fries, it's about reshaping the frontline workforce.\n\nWant to understand the next wave of AI integration? BUILD for the field guide.",
+  "hashtags": [
+    "artificialintelligence",
+    "aiintech",
+    "futureofwork",
+    "automation",
+    "chatbots",
+    "mcdonalds",
+    "wendys",
+    "techtrends",
+    "businessai",
+    "servicetech",
+    "flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "AI AT THE DRIVE-THRU",
+      "headline": "McDonald's chatbots are just the *start*.",
+      "italicWord": "start",
+      "sub": "Why your next customer service experience won't be human."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "AUTOMATED ORDERING",
+      "term": "Conversational AI",
+      "partOfSpeech": "noun.",
+      "definition": "A system designed to interact with humans using natural language, typically via voice or text, to perform tasks or provide information.",
+      "example": "Taking a drive-thru order or answering common customer queries without human intervention."
+    },
+    {
+      "type": "stats",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "EARLY ADOPTION",
+      "title": "McDonald's paved the way.",
+      "italicWord": "trials",
+      "stats": [
+        {
+          "value": "2021",
+          "label": "McDonald's began its AI drive-thru trials."
+        },
+        {
+          "value": "100+",
+          "label": "Restaurants tested the technology by 2023."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "BEYOND THE GOLDEN ARCHES",
+      "title": "Wendy's and others join in.",
+      "italicWord": "expanding",
+      "bullets": [
+        "Wendy's partnered with Google Cloud for its \"FreshAI\" system.",
+        "Pilots aim to handle entire order flows, from greeting to payment.",
+        "Goal: reduce wait times, improve order accuracy, free up human staff."
+      ],
+      "footer": "This isn't unique to fast food."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who benefits from AI service?",
+      "italicWord": "Efficiency",
+      "audiences": [
+        {
+          "pill": "RESTAURANTS",
+          "body": "Lower labor costs, consistent service quality, faster transaction times, especially during peak hours."
+        },
+        {
+          "pill": "CUSTOMERS",
+          "body": "Shorter lines, potentially fewer order errors, and less pressure on human staff leading to better overall interactions."
+        }
+      ]
+    },
+    {
+      "type": "letter",
+      "index": 6,
+      "total": 7,
+      "salutation": "Dear Service Economy,",
+      "body": "The drive-thru is a proving ground. What starts as a simple order-taker evolves into a sophisticated front-line agent. Expect this integration to accelerate, moving beyond fast food to retail, banking, and beyond. This isn't just about speed; it's about redefining the human role in customer interaction.",
+      "signoff": "The AI Shift"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The AI shift is here.",
+      "italicWord": "understand it.",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get ahead of the next wave in AI adoption."
+    }
+  ]
+}

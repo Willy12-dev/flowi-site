@@ -1,0 +1,124 @@
+{
+  "id": "news-2026-05-17-meta-ai-incognito-chat-whatsapp",
+  "title": "Meta AI's \"Incognito Chat\": A Real Privacy Play or Optics?",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Meta AI just dropped \"Incognito Chat\" in WhatsApp. They promise privacy, but after years of data concerns, is this a genuine shift or just good PR? We break down what it actually means for your conversations.\nTap \"BUILD\" for the field guide.",
+  "hashtags": [
+    "MetaAI",
+    "WhatsApp",
+    "IncognitoChat",
+    "AIDevelopment",
+    "PrivacyTech",
+    "TechNews",
+    "AIethics",
+    "DataPrivacy",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "META AI",
+      "headline": "\"Incognito Chat\" for Meta AI in WhatsApp. Is it actually *private*?",
+      "italicWord": "private",
+      "sub": "Meta's new feature promises privacy. What's the catch?"
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "WHAT IT IS",
+      "term": "Incognito Chat",
+      "partOfSpeech": "noun.",
+      "definition": "A new mode for Meta AI within WhatsApp where conversations are not used for training the AI model or retained beyond 30 days.",
+      "example": "Chatting with Meta AI about sensitive topics without fear of persistent data logging."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "What Meta *Claims*",
+      "body": "Meta states Incognito Chat sessions are temporary. They delete after 30 days. Crucially, these interactions won't train future Meta AI models, addressing a major user concern about data usage."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE CATCH?",
+      "title": "What \"Incognito\" *Doesn't* Mean",
+      "italicWord": "Doesn't",
+      "bullets": [
+        "It's for Meta AI chats *only*, not your regular WhatsApp messages.",
+        "Meta still collects some metadata (time, participants) for operational purposes.",
+        "The feature is *not* end-to-end encrypted like standard WhatsApp chats."
+      ],
+      "footer": "Your data isn't used for training, but it's not invisible."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Benefits from This?",
+      "italicWord": "Benefits",
+      "audiences": [
+        {
+          "pill": "Privacy-Conscious Users",
+          "body": "Those wary of AI using their conversations for model training will find this reassuring, even if it's a limited privacy scope."
+        },
+        {
+          "pill": "Developers & Testers",
+          "body": "Experimenting with Meta AI without contributing to its long-term data pool, useful for sensitive queries or testing."
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "index": 6,
+      "total": 7,
+      "title": "Key Takeaways",
+      "italicWord": "Takeaways",
+      "cols": 2,
+      "cards": [
+        {
+          "number": "01",
+          "title": "AI Training Exemption",
+          "body": "Incognito chats are specifically *excluded* from Meta AI's training data."
+        },
+        {
+          "number": "02",
+          "title": "30-Day Retention",
+          "body": "Conversations are deleted after 30 days, offering temporary anonymity."
+        },
+        {
+          "number": "03",
+          "title": "AI Chats Only",
+          "body": "Applies *only* to direct interactions with Meta AI in WhatsApp."
+        },
+        {
+          "number": "04",
+          "title": "Not E2EE",
+          "body": "Unlike regular WhatsApp, these chats are not end-to-end encrypted."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Meta AI is trying to earn trust. Are you *buying* it?",
+      "italicWord": "buying",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "What's your take on AI privacy?"
+    }
+  ]
+}
