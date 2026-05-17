@@ -284,8 +284,8 @@ SCHEMA:
   "theme": "editorial-cream" | "premium-dark",
   "handle": "@useflowi",
   "cta": { "keyword": "...", "promise": "..." },
-  "caption": "Instagram caption — 180-260 chars. Hook + 1 value bullet + CTA. No emoji spam.",
-  "hashtags": ["8-12 relevant hashtags, no leading #"],
+  "caption": "LONG-FORM Instagram caption — 600 to 1100 characters. Open with a scroll-stopping 1-line hook, then 2-4 short story-driven paragraphs that actually deliver the substance (long captions perform best here — do NOT keep it short), then a soft CTA line. No emoji spam, max 2 emojis total. Conversational, specific, opinionated.",
+  "hashtags": ["EXACTLY 5 hashtags, no more, no fewer, no leading #. The 5 highest-reach tags for this exact topic."],
   "slides": [
     { "type": "cover", "index": 1, "total": N, "eyebrow": "...", "headline": "...", "italicWord": "...", "sub": "..." },
     ...4-6 body slides,

@@ -47,9 +47,15 @@ export interface CarouselRouting {
 
 /* ─── helpers ─────────────────────────────────────────────────────── */
 
-/** Join hashtags with a leading # if missing. */
+/**
+ * Join hashtags with a leading # — HARD CAP at 5.
+ * User constraint: only 5 hashtags allowed on their platforms. Even if a
+ * spec carries 8-12, we only ever emit the first 5.
+ */
+const MAX_HASHTAGS = 5;
 function tags(spec: CarouselSpec): string {
   return (spec.hashtags ?? [])
+    .slice(0, MAX_HASHTAGS)
     .map((h) => (h.startsWith("#") ? h : `#${h}`))
     .join(" ");
 }
@@ -282,25 +288,70 @@ function secondaryRouteFor(
 
 /* ─── Instagram caption ──────────────────────────────────────────── */
 
+/** Plain-text one-liner per body slide, for long-caption assembly. */
+function slideToCaptionLine(slide: Slide): string {
+  switch (slide.type) {
+    case "numbered":
+      return `${slide.number}. ${slide.title} — ${slide.body}`;
+    case "step":
+      return `Step ${slide.stepNumber}: ${slide.title} — ${slide.body}`;
+    case "definition":
+      return `${slide.term}: ${slide.definition}`;
+    case "stat":
+      return `${slide.preStat ?? ""} ${slide.stat} ${slide.postStat ?? ""} — ${slide.body ?? ""}`.trim();
+    case "bullets":
+      return `${slide.title}\n${(slide.bullets || []).map((b) => `• ${b}`).join("\n")}`;
+    case "compare":
+      return `${slide.title}\n${slide.left?.label}: ${(slide.left?.items || []).join(", ")}\n${slide.right?.label}: ${(slide.right?.items || []).join(", ")}`;
+    case "audience":
+      return `${slide.title}\n${(slide.audiences || []).map((a) => `• ${a.pill}: ${a.body}`).join("\n")}`;
+    case "quote":
+      return `"${slide.quote}"${slide.attribution ? ` — ${slide.attribution}` : ""}`;
+    default:
+      return slideHeadline(slide);
+  }
+}
+
+/**
+ * Long-form caption. User feedback: long captions perform on their
+ * platforms. We build a story-shaped caption — hook, then the body
+ * beats as a readable mini-article, then CTA, then exactly 5 hashtags.
+ */
 export function toInstagramCaption(spec: CarouselSpec, routing?: CarouselRouting): string {
   void routing;
   const cta = ctaSlide(spec);
   const ctaLine = cta
-    ? `Comment "${cta.ctaKeyword}" ${cta.ctaPromise}.`
+    ? `↓ Comment "${cta.ctaKeyword}" ${cta.ctaPromise} and I'll DM it to you.`
     : spec.cta
-      ? `Comment "${spec.cta.keyword}" ${spec.cta.promise}.`
+      ? `↓ Comment "${spec.cta.keyword}" ${spec.cta.promise} and I'll DM it to you.`
       : "";
 
-  return [
-    spec.caption ?? coverHook(spec),
-    "",
-    ctaLine,
-    "",
-    tags(spec),
-  ]
-    .filter((l) => l !== undefined)
-    .join("\n")
-    .trim();
+  const hook = spec.caption ?? coverHook(spec);
+
+  // Body beats — skip cover/cta/photo, take up to 5 for a rich caption.
+  const beats = spec.slides
+    .filter(
+      (s) =>
+        s.type !== "cover" &&
+        s.type !== "highlight-cover" &&
+        s.type !== "photo-frame" &&
+        s.type !== "cta"
+    )
+    .slice(0, 5)
+    .map(slideToCaptionLine)
+    .filter(Boolean);
+
+  const body = beats.join("\n\n");
+
+  const saveLine = "Save this for later — and follow @useflowi for the daily AI brief.";
+
+  // Keep blank lines as paragraph breaks; the "." lines push hashtags
+  // below the IG "more" fold so the caption reads clean.
+  const parts = [hook, "", body, "", saveLine];
+  if (ctaLine) parts.push("", ctaLine);
+  parts.push("", ".", ".", ".", tags(spec));
+
+  return parts.join("\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
 /* ─── Pinterest pins ──────────────────────────────────────────────── */
