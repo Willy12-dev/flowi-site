@@ -609,72 +609,158 @@ export function toQuoraAnswer(spec: CarouselSpec, routing?: CarouselRouting): st
   ].join("\n");
 }
 
-/* ─── TikTok script ───────────────────────────────────────────────── */
+/* ─── Higgsfield video brief (was: TikTok script) ─────────────────── */
 
+/** Persona + world per vertical — the Higgsfield character reference. */
+function personaFor(spec: CarouselSpec): {
+  name: string;
+  ref: string;
+  world: string;
+  music: string;
+} {
+  switch (spec.vertical) {
+    case "ai_trading":
+      return {
+        name: "Sofia (quant trader)",
+        ref: "public/images/personas/sofia-hero.jpg",
+        world: "near-black trading desk, single orange screen-glow, high contrast, controlled intensity",
+        music: "tense cinematic, low pulsing sub-bass, sparse",
+      };
+    case "ai_behavior":
+      return {
+        name: "Daniel (men's therapist)",
+        ref: "public/images/personas/daniel-hero.jpg",
+        world: "warm tungsten-lit study, deep brown, grounded, intimate",
+        music: "warm ambient piano, slow, reassuring",
+      };
+    default:
+      return {
+        name: "Maya (AI engineer)",
+        ref: "public/images/personas/maya-hero.jpg",
+        world: "warm cream editorial space, soft north-window light, calm-confident",
+        music: "modern minimal electronic, low-key confident, light pulse",
+      };
+  }
+}
+
+const CAMERA_MOVES = [
+  "slow push-in on the subject",
+  "static, shallow depth of field",
+  "subtle handheld drift right",
+  "slow dolly orbit left",
+  "rack focus background → subject",
+  "locked wide, subject centered",
+];
+
+/**
+ * Shot-by-shot brief built for Higgsfield (or any AI video tool).
+ * Paste-ready: character reference, per-shot scene/camera/on-screen/VO,
+ * duration, transitions. Same export name so the Library/zip/pack wiring
+ * picks it up with zero other changes.
+ */
 export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): string {
   const dest = destinationFor(spec, routing);
   const cta = ctaSlide(spec);
-
+  const persona = personaFor(spec);
   const hook = coverHook(spec);
-  const beats: Array<{ time: string; spoken: string; onScreen: string }> = [];
 
-  // Cold open
-  beats.push({
-    time: "0:00 – 0:03",
-    spoken: hook,
-    onScreen: hook.toUpperCase(),
+  const bodySlides = spec.slides.filter(
+    (s) =>
+      s.type !== "cover" &&
+      s.type !== "highlight-cover" &&
+      s.type !== "photo-frame" &&
+      s.type !== "cta"
+  );
+
+  type Shot = {
+    dur: number;
+    scene: string;
+    action: string;
+    camera: string;
+    onScreen: string;
+    vo: string;
+  };
+  const shots: Shot[] = [];
+
+  // Shot 1 — the hook (attention-grab camera, first 2s decide everything)
+  shots.push({
+    dur: 4,
+    scene: persona.world,
+    action: `${persona.name} looks straight to camera, direct, like she's about to tell you something most people get wrong`,
+    camera: "fast push-in / snap zoom to face",
+    onScreen: hook.toUpperCase().slice(0, 70),
+    vo: hook,
   });
 
-  // Body — distribute 50s across the remaining slides
-  const bodySlides = spec.slides.filter(
-      (s) =>
-        s.type !== "cover" &&
-        s.type !== "highlight-cover" &&
-        s.type !== "photo-frame" &&
-        s.type !== "cta"
-    );
-  const slotSec = bodySlides.length > 0 ? Math.floor(50 / bodySlides.length) : 5;
-  let cursor = 3;
-  for (const s of bodySlides) {
-    const start = cursor;
-    const end = cursor + slotSec;
-    cursor = end;
-    const headline = slideHeadline(s);
-    beats.push({
-      time: `${formatTime(start)} – ${formatTime(end)}`,
-      spoken: headline,
-      onScreen: slideToOnScreenText(s),
+  // Body shots — one per body slide, rotating camera moves
+  bodySlides.forEach((s, i) => {
+    shots.push({
+      dur: bodySlides.length > 6 ? 5 : 7,
+      scene: persona.world,
+      action:
+        i % 2 === 0
+          ? `${persona.name} explaining, controlled hand gesture, confident`
+          : `${persona.name} half-turned, glancing back to camera mid-thought`,
+      camera: CAMERA_MOVES[i % CAMERA_MOVES.length],
+      onScreen: slideToOnScreenText(s).slice(0, 60),
+      vo: slideHeadline(s),
     });
-  }
+  });
 
-  // CTA
-  beats.push({
-    time: `${formatTime(cursor)} – ${formatTime(cursor + 5)}`,
-    spoken: cta
-      ? `Comment ${cta.ctaKeyword} and I'll DM you the full breakdown.`
-      : `Full breakdown at ${dest.url}.`,
+  // Final shot — CTA
+  shots.push({
+    dur: 5,
+    scene: persona.world,
+    action: `${persona.name} leans in slightly, resolved, direct eye contact`,
+    camera: "slow push-in, settle to static",
     onScreen: cta ? `COMMENT "${cta.ctaKeyword}"` : "LINK IN BIO",
+    vo: cta
+      ? `Comment ${cta.ctaKeyword} and I'll DM you the full breakdown.`
+      : `Full breakdown — link in bio.`,
+  });
+
+  const total = shots.reduce((a, s) => a + s.dur, 0);
+
+  const header = [
+    `# Higgsfield video brief — ${spec.title}`,
+    "",
+    `**Format:** 9:16 vertical · ~${total}s · hook must land in first 2 seconds`,
+    `**Character reference (upload to Higgsfield):** ${persona.ref} → ${persona.name}`,
+    `**World / look:** ${persona.world}`,
+    `**Music / mood:** ${persona.music}`,
+    `**Rule:** same character every shot — reuse the reference image on every generation so the face stays consistent.`,
+    "",
+    "---",
+    "",
+  ];
+
+  let t = 0;
+  const shotBlocks = shots.flatMap((s, i) => {
+    const start = t;
+    t += s.dur;
+    return [
+      `## Shot ${i + 1} · ${formatTime(start)}–${formatTime(t)} (${s.dur}s)`,
+      "",
+      `- **Scene:** ${s.scene}`,
+      `- **Character:** ${s.action}`,
+      `- **Camera:** ${s.camera}`,
+      `- **On-screen text:** ${s.onScreen}`,
+      `- **Voiceover:** ${s.vo}`,
+      i < shots.length - 1 ? `- **Transition:** hard cut` : `- **End:** hold 0.5s on the CTA text`,
+      "",
+    ];
   });
 
   return [
-    `# TikTok / Reels script — ${spec.title}`,
-    "",
-    `Format: talking-head with on-screen text bumps. ~${cursor + 5} seconds total. Hook in first 3 seconds.`,
-    "",
+    ...header,
+    ...shotBlocks,
     "---",
     "",
-    ...beats.flatMap((b) => [
-      `**${b.time}**`,
-      "",
-      `*Spoken:* ${b.spoken}`,
-      `*On-screen:* ${b.onScreen}`,
-      "",
-    ]),
-    "---",
+    `**Caption:** ${spec.caption ?? hook}`,
     "",
-    `Caption: ${spec.caption ?? hook}`,
+    `**Hashtags:** ${tags(spec)}`,
     "",
-    `Hashtags: ${tags(spec)}`,
+    `**Workflow:** upload the character reference to Higgsfield → generate each shot with its camera move + action → stitch in order → add captions/VO → post. Reuse the SAME reference image every shot or the face drifts.`,
   ].join("\n");
 }
 
