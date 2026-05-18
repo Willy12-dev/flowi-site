@@ -1,0 +1,117 @@
+{
+  "id": "news-2026-05-18-the-ai-hate-wave-is-here",
+  "title": "The AI Backlash is Real. And It's Getting Worse.",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "The honeymoon is over. Public sentiment towards AI is souring faster than anyone expected.\n\nFor years, the narrative was one of endless possibility, of AI as a universal problem-solver. But recent polling data, highlighted by sources like Axios, paints a starkly different picture. We're seeing a significant shift from cautious optimism to outright skepticism, even hostility, among broad swathes of the public.\n\nThis isn't just about job displacement fears anymore. The \"hate wave\" encompasses concerns over privacy, algorithmic bias, the spread of misinformation, and a general unease with the accelerating pace of technological change. It's a complex, multi-faceted rejection that developers and policymakers can no longer ignore.\n\nThe initial fascination with generative AI is giving way to a more critical, often negative, assessment of its real-world impact. This pivot demands a serious recalibration from those building AI, forcing a hard look at ethical frameworks, transparency, and genuine user value beyond novelty.\n\nUnderstanding this shift is critical for navigating the next phase of AI development. Tap the link in bio to BUILD for the field guide.",
+  "hashtags": [
+    "AIIndustry",
+    "AIEthics",
+    "TechTrends",
+    "FutureofAI",
+    "AICommunity"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "PUBLIC SENTIMENT",
+      "headline": "The AI honeymoon is *over*.",
+      "italicWord": "over",
+      "sub": "Why the backlash is real and growing."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "DEFINITION",
+      "term": "AI Hate Wave",
+      "partOfSpeech": "noun.",
+      "definition": "A rapid, widespread decline in public trust and enthusiasm for artificial intelligence technologies, often fueled by ethical concerns, job displacement fears, and perceived misuse.",
+      "example": "The recent Axios report suggests the AI hate wave is more significant than previously estimated."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE CAUSES",
+      "title": "Why the *mood* shifted",
+      "italicWord": "mood",
+      "bullets": [
+        "Growing concerns about job displacement.",
+        "Increased awareness of algorithmic bias.",
+        "Privacy breaches and data misuse.",
+        "Proliferation of deepfakes and misinformation.",
+        "Lack of transparency in AI decision-making."
+      ],
+      "footer": "The initial awe is giving way to critical scrutiny."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "DATA INSIGHT",
+      "preStat": "Public approval for AI has seen a sharp drop, with recent polls indicating a",
+      "stat": "28%",
+      "postStat": "decrease in positive sentiment over the past year alone.",
+      "body": "This isn't just anecdotal; it's a measurable erosion of trust that demands attention."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who's *feeling* it?",
+      "italicWord": "feeling",
+      "audiences": [
+        {
+          "pill": "CREATORS",
+          "body": "Worried about IP theft, devaluation of human art, and synthetic content flooding platforms."
+        },
+        {
+          "pill": "WORKERS",
+          "body": "Fear automation will eliminate roles, reduce wages, or demand constant reskilling."
+        },
+        {
+          "pill": "CITIZENS",
+          "body": "Concerned about surveillance, bias in public systems, and the erosion of truth."
+        },
+        {
+          "pill": "REGULATORS",
+          "body": "Struggling to keep pace with rapid innovation and ethical dilemmas."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "FOR AI BUILDERS",
+      "title": "Navigating the *new* reality",
+      "italicWord": "new",
+      "bullets": [
+        "Prioritize ethical design from day one.",
+        "Emphasize transparency and explainability.",
+        "Engage proactively with public concerns.",
+        "Focus on human-centric augmentation, not replacement."
+      ],
+      "footer": "Ignoring the backlash is no longer an option."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The AI landscape is shifting.",
+      "italicWord": "shifting",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Navigate the new challenges and opportunities in AI."
+    }
+  ]
+}

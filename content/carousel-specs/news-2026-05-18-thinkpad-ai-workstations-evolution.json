@@ -1,0 +1,113 @@
+{
+  "id": "news-2026-05-18-thinkpad-ai-workstations-evolution",
+  "title": "ThinkPad's Unlikely AI Comeback",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Remember the ThinkPad? That iconic black slab, once a corporate workhorse, is now quietly powering the next wave of AI development. For decades, its design ethos prioritized ruggedness and reliability over flash. But as the demands of local AI processing exploded, Lenovo's ThinkPads have undergone a subtle but significant transformation, evolving into some of the most capable mobile AI workstations available.\n\nIt's not just about raw CPU power anymore; it's about dedicated neural processing units, advanced GPUs, and optimized cooling systems packed into a familiar, no-nonsense chassis. This evolution proves that even the most established hardware can adapt and lead in a rapidly changing software-driven world, offering serious compute for serious builders.\n\nWant to understand the hardware behind today's AI breakthroughs? BUILD for the field guide.",
+  "hashtags": [
+    "AIhardware",
+    "ThinkPad",
+    "LenovoAI",
+    "EdgeAI",
+    "AIdevelopment"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "THE UNLIKELY REVIVAL",
+      "headline": "Your Old ThinkPad is Now an AI Workstation",
+      "italicWord": "Workstation",
+      "sub": "How a corporate classic quietly became an AI powerhouse."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Bento Box Legacy",
+      "body": "IBM's original ThinkPad design prioritized durability, keyboard quality, and a distinct aesthetic. It became synonymous with reliability for professionals worldwide."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "COMPUTING SHIFT",
+      "term": "AI Workstation",
+      "partOfSpeech": "noun.",
+      "definition": "A personal computer, typically a laptop, optimized with high-performance GPUs, NPUs, and RAM for local AI model training and inference.",
+      "example": "Modern ThinkPads, like the P1 Gen 6, function as potent AI workstations."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "BEYOND THE CPU",
+      "title": "What Modern AI Demands",
+      "italicWord": "Demands",
+      "bullets": [
+        "Dedicated Neural Processing Units (NPUs) for efficient on-device AI.",
+        "High-end discrete GPUs (NVIDIA, AMD) for parallel processing.",
+        "Large, fast RAM for handling massive datasets."
+      ],
+      "footer": "This isn't just about faster clock speeds anymore."
+    },
+    {
+      "type": "stats",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "LENOVO'S EVOLUTION",
+      "title": "ThinkPad's AI Pivot",
+      "italicWord": "Pivot",
+      "stats": [
+        {
+          "value": "P-Series",
+          "label": "Designed for demanding professional workloads, now explicitly for AI/ML."
+        },
+        {
+          "value": "Z-Series",
+          "label": "Blending premium design with AI-ready AMD Ryzen Pro processors."
+        }
+      ],
+      "footer": "Integrating powerful hardware while retaining the core ThinkPad identity."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Needs a Mobile AI Lab?",
+      "italicWord": "Lab",
+      "audiences": [
+        {
+          "pill": "AI Developers",
+          "body": "Training smaller models or fine-tuning on the go, without cloud latency."
+        },
+        {
+          "pill": "Data Scientists",
+          "body": "Running complex analyses and visualizations directly on their device."
+        },
+        {
+          "pill": "Researchers",
+          "body": "Prototyping and experimenting with new AI architectures locally."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The hardware powering AI is changing fast.",
+      "italicWord": "fast",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the tools and insights to stay ahead in AI."
+    }
+  ]
+}

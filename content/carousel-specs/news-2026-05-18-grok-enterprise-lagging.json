@@ -1,0 +1,95 @@
+{
+  "id": "news-2026-05-18-grok-enterprise-lagging",
+  "title": "Grok's Enterprise AI Problem",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Your favorite AI model might not be winning where it counts: the enterprise. New data paints a stark picture of which large language models are actually gaining traction with businesses, and the results are not what the social media hype cycle suggests.\n\nWhile consumer interest often skews towards the flashiest new releases, enterprise adoption is a far more pragmatic affair. Companies prioritize stability, security, and proven performance. This latest report from SaaStr confirms what many industry insiders have suspected: the LLM landscape for serious business applications is shifting dramatically.\n\nClaude and Gemini are quietly making significant inroads, growing by 128% and 48% respectively, driven by their focus on reliability and integration capabilities. Meanwhile, OpenAI, despite its early lead, is seeing an 8% dip. The biggest surprise? Grok, xAI's much-hyped model, remains a statistical non-entity in the enterprise sector, barely registering on the charts.\n\nThis data underscores a critical lesson: marketing noise doesn't equate to business value. For enterprise users, the practicalities of deployment and data integrity trump novelty every time. The real battle for AI dominance is happening behind closed doors, not on X.\n\nWant to see the full breakdown of who's up and who's down? Follow Flowi for more data-driven insights.",
+  "hashtags": [
+    "Grok",
+    "xAI",
+    "EnterpriseAI",
+    "AIModels",
+    "TechNews"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ENTERPRISE AI ADOPTION",
+      "headline": "Grok is a rounding error. Your favorite AI isn't *really* winning.",
+      "italicWord": "really",
+      "sub": "New data reveals the true leaders in the enterprise AI race."
+    },
+    {
+      "type": "stat",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE SURPRISING LEADER",
+      "preStat": "Claude's enterprise adoption just surged by",
+      "stat": "128%",
+      "postStat": "in the last quarter.",
+      "body": "Anthropic's model is quietly dominating, proving that privacy and long context windows are critical for serious business applications. This isn't just hype; it's real growth."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "GOOGLE'S COMEBACK",
+      "preStat": "Meanwhile, Google's Gemini saw a respectable",
+      "stat": "48%",
+      "postStat": "increase in enterprise use.",
+      "body": "Gemini's integration with Google Cloud and its ecosystem is slowly paying off. Enterprises value seamless deployment and existing vendor relationships, a clear advantage here."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "OPENAI'S SLOWDOWN",
+      "preStat": "OpenAI, once the undisputed champion, experienced an",
+      "stat": "8%",
+      "postStat": "decline in enterprise adoption.",
+      "body": "Early lead means nothing if you can't retain it. Concerns over data privacy, unpredictable pricing, and the rise of strong competitors are chipping away at their market share."
+    },
+    {
+      "type": "definition",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "GROK'S ENTERPRISE REALITY",
+      "term": "Rounding Error",
+      "partOfSpeech": "noun.",
+      "definition": "A negligible quantity or value, too small to be significant in calculation or comparison.",
+      "example": "Despite Elon Musk's marketing, Grok's enterprise adoption remains a statistical rounding error, indicating minimal traction."
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "THE ENTERPRISE GAP",
+      "title": "Why Grok isn't gaining *real* ground:",
+      "italicWord": "real",
+      "bullets": [
+        "Lack of established enterprise support.",
+        "Perceived instability and unpredictable roadmap.",
+        "Data privacy concerns tied to X integration."
+      ],
+      "footer": "Enterprise demands stability, privacy, and proven performance over novelty."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Still curious about the underdog?",
+      "italicWord": "underdog",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "See if xAI's model has potential beyond its current niche."
+    }
+  ]
+}

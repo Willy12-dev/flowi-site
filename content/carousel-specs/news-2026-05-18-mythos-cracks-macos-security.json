@@ -1,0 +1,104 @@
+{
+  "id": "news-2026-05-18-mythos-cracks-macos-security",
+  "title": "Anthropic's Mythos: A New macOS Vulnerability Vector?",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "The AI safety narrative just took a hit, and it involves your Mac. Researchers recently leveraged Anthropic's Mythos LLM to uncover a zero-day vulnerability in macOS, demonstrating a concrete exploit rather than just theoretical risk.\n\nThis isn't just about another bug; it's about the tool used to find it. Anthropic positions itself as a leader in AI safety and alignment, yet their advanced model proved adept at identifying system-level flaws. It highlights the dual-use dilemma inherent in powerful AI: even models built with 'safety' in mind can be repurposed for offensive security research.\n\nThis incident underscores how quickly AI is changing the cybersecurity landscape. Red-teaming is evolving, and the line between benign and malicious AI use is blurring. Expect more sophisticated vulnerability discovery, not less.\n\nWant to understand how AI is changing security, for better or worse?",
+  "hashtags": [
+    "Anthropic",
+    "macOS",
+    "AISecurity",
+    "LLMSecurity",
+    "AIresearch"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "AI & OS SECURITY",
+      "headline": "Your Mac Is Safe. Unless Anthropic's _Mythos_ Is Involved.",
+      "italicWord": "Mythos",
+      "sub": "Researchers just demonstrated how an LLM can find macOS vulnerabilities."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "LLM Cracks macOS",
+      "body": "Security researchers used Anthropic's Mythos LLM to identify a zero-day vulnerability in macOS. This wasn't theoretical; it was a concrete exploit found by an AI."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S RESEARCH",
+      "term": "Mythos",
+      "partOfSpeech": "noun.",
+      "definition": "Anthropic's research-oriented LLM, designed for advanced reasoning and complex problem-solving, often used for internal safety and alignment work.",
+      "example": "Researchers applied Mythos to macOS security, yielding unexpected results for a 'safety-focused' model."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE METHOD",
+      "title": "AI-Assisted _Red Teaming_",
+      "italicWord": "Red Teaming",
+      "bullets": [
+        "Researchers prompted Mythos to analyze macOS system code.",
+        "The LLM identified a logic flaw in a core system service.",
+        "This flaw allowed for privilege escalation, a critical security breach."
+      ],
+      "footer": "The AI didn't just 'help'; it *found* the exploit."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "SAFETY VS. EXPLOIT",
+      "preStat": "The company behind Mythos, Anthropic, is a leading voice in AI safety. Yet, their own model was instrumental in a major exploit.",
+      "stat": "100%",
+      "postStat": "of the exploit's core logic was identified by Mythos, not just human input.",
+      "body": "This raises uncomfortable questions about AI's dual-use potential, even from 'safe' models."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Why This _Matters_ Now",
+      "italicWord": "Matters",
+      "audiences": [
+        {
+          "pill": "Apple Security",
+          "body": "Highlighting the evolving challenge of LLM-assisted vulnerability discovery. Patching will get harder."
+        },
+        {
+          "pill": "AI Developers",
+          "body": "Emphasizing the unpredictable nature of advanced LLMs, even those built with safety in mind. Dual-use is real."
+        },
+        {
+          "pill": "Enterprise IT",
+          "body": "Suggests AI could soon be weaponized for sophisticated attacks, requiring new defensive strategies."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "AI is shifting the cybersecurity landscape _faster_ than anyone predicted.",
+      "italicWord": "faster",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Stay ahead of the curve. Learn how AI impacts security, for better and worse."
+    }
+  ]
+}

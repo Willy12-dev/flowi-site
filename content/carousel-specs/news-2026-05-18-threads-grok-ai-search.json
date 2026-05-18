@@ -1,0 +1,106 @@
+{
+  "id": "news-2026-05-18-threads-grok-ai-search",
+  "title": "Threads copies Grok's playbook, but misses the point.",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Threads is building a 'Grok-like' AI search, but Meta might be misunderstanding the assignment. The news suggests Meta's social platform aims to integrate a conversational AI search, drawing comparisons to xAI's unfiltered chatbot.\n\nHere’s the catch: Grok’s entire persona—its real-time data access from X, its sardonic tone, its willingness to engage with controversial topics—is intrinsically linked to the chaotic, unfiltered nature of its source material. That’s its edge, for better or worse. It’s what makes it distinct.\n\nThreads, on the other hand, has carefully cultivated an environment focused on 'nicer' discourse and brand safety. How does a platform built on curation and moderation suddenly embrace the 'Grok-like' ethos without alienating its user base or fundamentally changing its identity? The answer is likely 'Grok-lite,' a filtered experience that prioritizes safety over true edge.\n\nThis move feels less like a genuine innovation and more like a reactive play to keep pace with AI integration on other social platforms. The real challenge for Threads will be delivering a useful AI assistant while staying true to its own carefully constructed ecosystem. For more on the real-time AI battleground, tap our link in bio.",
+  "hashtags": [
+    "grok",
+    "threads",
+    "metaai",
+    "aiupdates",
+    "socialmediaai"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "META'S LATEST AI MOVE",
+      "headline": "Threads wants Grok's *edge*.",
+      "italicWord": "edge",
+      "sub": "But can it handle the truth?"
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE ORIGINAL",
+      "term": "Grok-like AI",
+      "partOfSpeech": "noun.",
+      "definition": "An AI assistant known for real-time data access (primarily from X), unfiltered responses, and a willingness to engage in sardonic or contrarian dialogue.",
+      "example": "Grok can tell you what's trending *right now* on X, often with a side of sarcasm."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "GROK'S CORE PILLARS",
+      "title": "It's more than just search.",
+      "italicWord": "more",
+      "bullets": [
+        "Real-time information streams from X.",
+        "Direct, often irreverent tone.",
+        "Access to unfiltered, raw internet data."
+      ],
+      "footer": "This is where Threads faces its biggest challenge."
+    },
+    {
+      "type": "compare",
+      "index": 4,
+      "total": 7,
+      "title": "Two very different *ecosystems*.",
+      "italicWord": "ecosystems",
+      "left": {
+        "label": "Threads",
+        "items": [
+          "Curated content",
+          "Brand-safe environment",
+          "Focus on 'nicer' discourse"
+        ]
+      },
+      "right": {
+        "label": "Grok (via X)",
+        "items": [
+          "Unfiltered, raw data",
+          "Controversial topics",
+          "Real-time, chaotic feed"
+        ]
+      }
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "META'S DILEMMA",
+      "preStat": "Threads will likely deliver a version that is",
+      "stat": "\"Grok-lite\"",
+      "postStat": "to align with its platform values.",
+      "body": "Expect a highly filtered, moderated AI experience that prioritizes safety over Grok's signature edge."
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "01",
+      "title": "Catching up, not innovating.",
+      "body": "This move feels less like a bold new direction and more like a reactive play to keep pace with AI integration on other platforms."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The AI race is *heating up*.",
+      "italicWord": "heating up",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "Get the real story on AI, straight to your inbox."
+    }
+  ]
+}

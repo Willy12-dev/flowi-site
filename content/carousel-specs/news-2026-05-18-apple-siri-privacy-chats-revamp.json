@@ -1,0 +1,91 @@
+{
+  "id": "news-2026-05-18-apple-siri-privacy-chats-revamp",
+  "title": "Apple's Siri Refresh: Privacy Over Power",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Apple's new Siri isn't just getting smarter; it's getting *private*. While everyone else chases bigger models and more data, Apple is doubling down on its core promise: your data is yours. The rumored auto-delete feature for Siri chats isn't a minor update; it's a strategic move that redefines what a personal AI assistant can be.\n\nThis shift signals a deeper commitment to privacy in an AI landscape increasingly criticized for its data hunger. Imagine an assistant that helps without storing every word you say indefinitely. It changes the trust dynamic, making Siri a refuge for users wary of pervasive data collection. This isn't just about deleting chats; it's about building an AI experience where user control isn't an afterthought, but the foundation.\n\nExpect other platforms to scramble to match this new standard. Want to understand how to build AI that respects user data? Tap the link in bio.",
+  "hashtags": [
+    "AppleAI",
+    "Siri",
+    "AIethics",
+    "PrivacyTech",
+    "TechNews"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "APPLE'S AI PLAY",
+      "headline": "Siri's new trick isn't *smarter*. It's just more *private*.",
+      "italicWord": "private",
+      "sub": "Why auto-deleting chats changes everything."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Privacy Mandate",
+      "body": "Apple built its brand on privacy. Now, with AI, that same ethos is driving a major Siri overhaul. It's a direct counter-move to data-hungry competitors."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "WHAT'S CHANGING",
+      "title": "Siri's Data Diet",
+      "italicWord": "Diet",
+      "bullets": [
+        "Chats could auto-delete after use.",
+        "Less data stored on Apple's servers.",
+        "User control over data retention."
+      ],
+      "footer": "A clear differentiator in the AI assistant market."
+    },
+    {
+      "type": "definition",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "UNDERSTANDING THE SHIFT",
+      "term": "Ephemeral AI",
+      "partOfSpeech": "noun.",
+      "definition": "An AI system designed to minimize data retention, where interactions are temporary and automatically deleted to enhance user privacy and reduce data exposure risks.",
+      "example": "Siri's potential auto-delete feature, ensuring conversations don't persist indefinitely."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE BIG PICTURE",
+      "preStat": "By prioritizing privacy, Apple aims to capture",
+      "stat": "60%",
+      "postStat": "of users concerned about AI data handling, carving a distinct market niche.",
+      "body": "While other platforms chase scale, Apple banks on trust. This move is less about raw power and more about user confidence."
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "05",
+      "title": "Implications for Developers",
+      "body": "Building for Siri might mean rethinking persistent user profiles or conversation history. Apple's privacy-first approach will shape how third-party integrations function."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Master the AI tools that *respect* user data.",
+      "italicWord": "respect",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Learn to innovate within the new privacy paradigms."
+    }
+  ]
+}
