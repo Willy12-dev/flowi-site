@@ -27,6 +27,7 @@
  */
 
 import fs from "node:fs/promises";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -328,8 +329,56 @@ TOPIC / VERTICAL MAPPING:
 - Mental-health / behavior AI news → vertical: ai_behavior, theme: "editorial-cream"
 - Generic AI industry news → vertical: ai_builder, topic: "builder", theme: "editorial-cream"`;
 
+/* ─── PERSONA VOICE (AI-influencer columnists) ───────────────────── */
+
+/**
+ * The 3 recurring AI-influencer personas (content/personas.json). Lazy,
+ * cached, fail-soft: if the file is missing the engine still drafts in
+ * house voice. Each carousel is "bylined" by the persona that owns its
+ * vertical so the copy is written in-voice — format, POV, vocabulary and
+ * guardrails — instead of generic house style.
+ */
+let _personas;
+function getPersonas() {
+  if (_personas !== undefined) return _personas;
+  try {
+    _personas = JSON.parse(
+      readFileSync(path.join(ROOT, "content", "personas.json"), "utf8")
+    );
+  } catch (e) {
+    console.error(
+      `  personas.json not loaded (${e.message}) — drafting in house voice`
+    );
+    _personas = null;
+  }
+  return _personas;
+}
+
+function personaVoiceBlock(vertical) {
+  const P = getPersonas();
+  if (!P) return "";
+  const id = P.byVertical?.[vertical] || P.byVertical?.default;
+  const p = id && P.personas?.[id];
+  if (!p) return "";
+  const hooks = (p.hooks || []).slice(0, 2).join("  /  ");
+  return `COLUMNIST VOICE — this carousel is bylined by ${p.name}, the ${p.role} (${p.account}). Write the caption, cover hook and body in ${p.name}'s voice, not generic house style:
+- Who ${p.pronoun} is: ${p.identity}
+- Writing for: ${p.audience}
+- Voice: ${p.voice}
+- POV — bend every take toward this: ${p.worldview}
+- Signature shape: ${p.signatureFormat}
+- Hook DNA (echo this energy, never copy verbatim): ${hooks}
+- Words ${p.name} reaches for: ${(p.vocabulary || []).join(", ")}
+- ${p.name} NEVER does this: ${(p.neverSay || []).join("; ")}
+- CTA tone: ${p.cta}
+
+This changes ONLY the voice. Keep the CarouselSpec schema, the output-format rule, and every editorial rule above exactly as specified.
+
+`;
+}
+
 function buildUserPrompt(item, ctaSuggestion) {
-  return `NEWS ITEM TO COVER:
+  return `${personaVoiceBlock(item.vertical)}NEWS ITEM TO COVER:
 
 Source: ${item.source}
 Title: ${item.title}
