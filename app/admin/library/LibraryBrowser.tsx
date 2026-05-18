@@ -13,6 +13,7 @@ interface Pack {
     reddit: string;
     quora: string;
     tiktok: string;
+    youtube: string;
     pinterest: string;
   };
   imagePrompts: string | null;
@@ -195,7 +196,8 @@ function DeckRow({ meta }: { meta: SpecMeta }) {
                 label="Quora (link-free)"
                 text={pack.posts.quora}
               />
-              <CopyBlock label="TikTok script" text={pack.posts.tiktok} />
+              <CopyBlock label="TikTok / IG Reels script" text={pack.posts.tiktok} />
+              <CopyBlock label="YouTube Short (links work here)" text={pack.posts.youtube} />
               {pack.imagePrompts && (
                 <CopyBlock label="Image prompts" text={pack.imagePrompts} />
               )}

@@ -667,14 +667,12 @@ const CAMERA_MOVES = [
 ];
 
 /**
- * Shot-by-shot brief built for the Higgsfield MCP (Soul Characters).
- * MCP-ready: a one-paste run block + per-shot Generate prompts that reuse
- * a persistent Soul Character so the face holds identical across this and
- * every future video. Same export name so the Library/zip/pack wiring
- * picks it up with zero other changes.
+ * The platform-neutral Higgsfield shot brief — header, one-paste MCP run
+ * block, per-shot Generate prompts, train/stitch workflow. Shared by the
+ * TikTok and YouTube Shorts exporters so the video brief is a single
+ * source of truth and never drifts into two copies.
  */
-export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): string {
-  const dest = destinationFor(spec, routing);
+function higgsfieldShotBrief(spec: CarouselSpec): string {
   const cta = ctaSlide(spec);
   const persona = personaFor(spec);
   const hook = coverHook(spec);
@@ -777,11 +775,86 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
     ...shotBlocks,
     "---",
     "",
+    `**Workflow:** paste the run block to Claude (Higgsfield connector on) → it trains/reuses Soul Character \`${persona.soul}\` and returns every clip → stitch in order → add the on-screen text + voiceover → post. The Soul Character keeps the face identical across this and every future video — train it once, never retrain.`,
+  ].join("\n");
+}
+
+/**
+ * TikTok / IG Reels package — the shared Higgsfield brief + caption + the
+ * 5 hashtags. These platforms have no clickable links, so the CTA drives
+ * to "link in bio". Same export name so Library/zip/pack wiring is
+ * unchanged.
+ */
+export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): string {
+  void routing;
+  const hook = coverHook(spec);
+  return [
+    higgsfieldShotBrief(spec),
+    "",
+    "---",
+    "",
     `**Caption:** ${spec.caption ?? hook}`,
     "",
     `**Hashtags:** ${tags(spec)}`,
     "",
-    `**Workflow:** paste the run block to Claude (Higgsfield connector on) → it trains/reuses Soul Character \`${persona.soul}\` and returns every clip → stitch in order → add the on-screen text + voiceover → post. The Soul Character keeps the face identical across this and every future video — train it once, never retrain.`,
+    `*TikTok / IG Reels have no clickable links — the CTA must drive to "link in bio".*`,
+  ].join("\n");
+}
+
+/* ─── YouTube Shorts ─────────────────────────────────────────────── */
+
+/**
+ * YouTube Shorts package. Reuses the exact Higgsfield shot brief (zero
+ * drift) and adds the packaging YouTube needs. The lever YT has that
+ * TikTok / IG Reels do NOT: clickable links in the description and a
+ * searchable title — so the outbound link AND the email-capture link are
+ * real here. Shorts is the only short-form channel that converts
+ * on-platform instead of "link in bio".
+ */
+export function toYouTubeShort(spec: CarouselSpec, routing?: CarouselRouting): string {
+  const dest = destinationFor(spec, routing);
+  const link = outboundUrl(spec, dest);
+  const cta = ctaSlide(spec);
+  const hook = coverHook(spec).replace(/\s+/g, " ").trim();
+
+  // Title ≤100 chars (Shorts ARE searched). Leave room for " #Shorts".
+  const titleBase =
+    hook.length > 92 ? hook.slice(0, 92).replace(/\s+\S*$/, "").trim() : hook;
+
+  // Description: the first line surfaces in-feed — lead with the value.
+  const summary = (spec.caption ?? hook).replace(/\s+/g, " ").trim();
+  const blurb =
+    summary.length > 300
+      ? summary.slice(0, 300).replace(/\s+\S*$/, "").trim() + "…"
+      : summary;
+
+  const ctaLine = cta
+    ? `Comment "${cta.ctaKeyword}" ${cta.ctaPromise ?? ""}`.trim()
+    : "";
+
+  return [
+    `# YouTube Short — ${spec.title}`,
+    "",
+    "## Title  (paste — write it as a phrase someone would actually search)",
+    "",
+    `${titleBase} #Shorts`,
+    "",
+    "## Description  (paste as-is — links ARE clickable on YouTube, unlike TikTok/IG)",
+    "",
+    blurb,
+    "",
+    `▶ Free daily AI brief — one email, no fluff: https://useflowi.app/dispatch`,
+    `▶ Full write-up: ${link}`,
+    "",
+    ctaLine,
+    "",
+    `#Shorts ${tags(spec)}`,
+    "",
+    "---",
+    "",
+    "## Shoot it (same Soul Character — face stays identical to every other Short on this channel)",
+    "",
+    higgsfieldShotBrief(spec),
   ].join("\n");
 }
 

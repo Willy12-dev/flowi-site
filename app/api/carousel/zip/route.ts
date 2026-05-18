@@ -24,6 +24,7 @@ import {
   toRedditPost,
   toQuoraAnswer,
   toTikTokScript,
+  toYouTubeShort,
   toReadMe,
   toImagePrompts,
   type CarouselRouting,
@@ -306,6 +307,10 @@ export async function POST(req: NextRequest) {
   entries.push({
     name: "posts/tiktok-script.md",
     data: enc.encode(toTikTokScript(spec, routing)),
+  });
+  entries.push({
+    name: "posts/youtube-short.md",
+    data: enc.encode(toYouTubeShort(spec, routing)),
   });
   entries.push({
     name: "posts/pinterest-pins.md",

@@ -25,6 +25,7 @@ import {
   toRedditPost,
   toQuoraAnswer,
   toTikTokScript,
+  toYouTubeShort,
   toImagePrompts,
   type CarouselRouting,
   type ResolvedImagePrompt,
@@ -182,6 +183,7 @@ export async function POST(req: NextRequest) {
       reddit: toRedditPost(spec, routing),
       quora: toQuoraAnswer(spec, routing),
       tiktok: toTikTokScript(spec, routing),
+      youtube: toYouTubeShort(spec, routing),
       pinterest: toPinterestPins(spec, routing),
     },
     imagePrompts:
