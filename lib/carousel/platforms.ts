@@ -611,10 +611,15 @@ export function toQuoraAnswer(spec: CarouselSpec, routing?: CarouselRouting): st
 
 /* ─── Higgsfield video brief (was: TikTok script) ─────────────────── */
 
-/** Persona + world per vertical — the Higgsfield character reference. */
+/** Persona per vertical — the persistent Higgsfield Soul Character.
+ *  `soul` is the stable trained-character id reused on every video forever
+ *  (train once from `ref`); the face never drifts week to week. */
 function personaFor(spec: CarouselSpec): {
   name: string;
+  first: string;
+  soul: string;
   ref: string;
+  pronoun: string;
   world: string;
   music: string;
 } {
@@ -622,21 +627,30 @@ function personaFor(spec: CarouselSpec): {
     case "ai_trading":
       return {
         name: "Sofia (quant trader)",
+        first: "Sofia",
+        soul: "sofia",
         ref: "public/images/personas/sofia-hero.jpg",
+        pronoun: "she",
         world: "near-black trading desk, single orange screen-glow, high contrast, controlled intensity",
         music: "tense cinematic, low pulsing sub-bass, sparse",
       };
     case "ai_behavior":
       return {
         name: "Daniel (men's therapist)",
+        first: "Daniel",
+        soul: "daniel",
         ref: "public/images/personas/daniel-hero.jpg",
+        pronoun: "he",
         world: "warm tungsten-lit study, deep brown, grounded, intimate",
         music: "warm ambient piano, slow, reassuring",
       };
     default:
       return {
         name: "Maya (AI engineer)",
+        first: "Maya",
+        soul: "maya",
         ref: "public/images/personas/maya-hero.jpg",
+        pronoun: "she",
         world: "warm cream editorial space, soft north-window light, calm-confident",
         music: "modern minimal electronic, low-key confident, light pulse",
       };
@@ -653,9 +667,10 @@ const CAMERA_MOVES = [
 ];
 
 /**
- * Shot-by-shot brief built for Higgsfield (or any AI video tool).
- * Paste-ready: character reference, per-shot scene/camera/on-screen/VO,
- * duration, transitions. Same export name so the Library/zip/pack wiring
+ * Shot-by-shot brief built for the Higgsfield MCP (Soul Characters).
+ * MCP-ready: a one-paste run block + per-shot Generate prompts that reuse
+ * a persistent Soul Character so the face holds identical across this and
+ * every future video. Same export name so the Library/zip/pack wiring
  * picks it up with zero other changes.
  */
 export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): string {
@@ -674,7 +689,6 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
 
   type Shot = {
     dur: number;
-    scene: string;
     action: string;
     camera: string;
     onScreen: string;
@@ -685,8 +699,7 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
   // Shot 1 — the hook (attention-grab camera, first 2s decide everything)
   shots.push({
     dur: 4,
-    scene: persona.world,
-    action: `${persona.name} looks straight to camera, direct, like she's about to tell you something most people get wrong`,
+    action: `${persona.first} looks straight to camera, direct, like ${persona.pronoun}'s about to tell you something most people get wrong`,
     camera: "fast push-in / snap zoom to face",
     onScreen: hook.toUpperCase().slice(0, 70),
     vo: hook,
@@ -696,11 +709,10 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
   bodySlides.forEach((s, i) => {
     shots.push({
       dur: bodySlides.length > 6 ? 5 : 7,
-      scene: persona.world,
       action:
         i % 2 === 0
-          ? `${persona.name} explaining, controlled hand gesture, confident`
-          : `${persona.name} half-turned, glancing back to camera mid-thought`,
+          ? `${persona.first} explaining, controlled hand gesture, confident`
+          : `${persona.first} half-turned, glancing back to camera mid-thought`,
       camera: CAMERA_MOVES[i % CAMERA_MOVES.length],
       onScreen: slideToOnScreenText(s).slice(0, 60),
       vo: slideHeadline(s),
@@ -710,8 +722,7 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
   // Final shot — CTA
   shots.push({
     dur: 5,
-    scene: persona.world,
-    action: `${persona.name} leans in slightly, resolved, direct eye contact`,
+    action: `${persona.first} leans in slightly, resolved, direct eye contact`,
     camera: "slow push-in, settle to static",
     onScreen: cta ? `COMMENT "${cta.ctaKeyword}"` : "LINK IN BIO",
     vo: cta
@@ -721,14 +732,25 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
 
   const total = shots.reduce((a, s) => a + s.dur, 0);
 
+  // The literal natural-language prompt handed to the Higgsfield MCP, per shot.
+  const genPrompt = (s: Shot) =>
+    `Generate a ${s.dur}s 9:16 cinematic clip with Soul Character "${persona.soul}": ${s.action}. ` +
+    `Setting: ${persona.world}. Camera: ${s.camera}. Mood: ${persona.music}. Keep identity stable.`;
+
   const header = [
-    `# Higgsfield video brief — ${spec.title}`,
+    `# Higgsfield MCP brief — ${spec.title}`,
     "",
     `**Format:** 9:16 vertical · ~${total}s · hook must land in first 2 seconds`,
-    `**Character reference (upload to Higgsfield):** ${persona.ref} → ${persona.name}`,
-    `**World / look:** ${persona.world}`,
+    `**Soul Character:** \`${persona.soul}\` — ${persona.name}`,
+    `**Train-from (first time only):** ${persona.ref}`,
+    `**World:** ${persona.world}`,
     `**Music / mood:** ${persona.music}`,
-    `**Rule:** same character every shot — reuse the reference image on every generation so the face stays consistent.`,
+    "",
+    "## One-paste run block — give this to Claude with the Higgsfield connector on",
+    "",
+    "```",
+    `Using the Higgsfield connector: if a Soul Character named "${persona.soul}" does not exist, train it once from ${persona.ref}. Then generate the ${shots.length} shots below as 9:16 clips, in order, reusing Soul Character "${persona.soul}" on every shot so the face is identical. Return each clip.`,
+    "```",
     "",
     "---",
     "",
@@ -741,11 +763,10 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
     return [
       `## Shot ${i + 1} · ${formatTime(start)}–${formatTime(t)} (${s.dur}s)`,
       "",
-      `- **Scene:** ${s.scene}`,
-      `- **Character:** ${s.action}`,
-      `- **Camera:** ${s.camera}`,
-      `- **On-screen text:** ${s.onScreen}`,
-      `- **Voiceover:** ${s.vo}`,
+      `**Generate:** ${genPrompt(s)}`,
+      "",
+      `- **On-screen text (overlay, add in post):** ${s.onScreen}`,
+      `- **Voiceover (add in post):** ${s.vo}`,
       i < shots.length - 1 ? `- **Transition:** hard cut` : `- **End:** hold 0.5s on the CTA text`,
       "",
     ];
@@ -760,7 +781,7 @@ export function toTikTokScript(spec: CarouselSpec, routing?: CarouselRouting): s
     "",
     `**Hashtags:** ${tags(spec)}`,
     "",
-    `**Workflow:** upload the character reference to Higgsfield → generate each shot with its camera move + action → stitch in order → add captions/VO → post. Reuse the SAME reference image every shot or the face drifts.`,
+    `**Workflow:** paste the run block to Claude (Higgsfield connector on) → it trains/reuses Soul Character \`${persona.soul}\` and returns every clip → stitch in order → add the on-screen text + voiceover → post. The Soul Character keeps the face identical across this and every future video — train it once, never retrain.`,
   ].join("\n");
 }
 
