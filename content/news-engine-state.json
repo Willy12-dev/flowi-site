@@ -54,90 +54,9 @@
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeGxOMFZQMEIyU2R5ZjlzNnRqYWhhWldaR2s0UFZKOWlGM280TnQwSnlqMzhxRU10S0FxaHdQOU5FVGJoc3U2UXRWMVVRSnJrQTBnbUVzNnlHR0Y1NXdjOTlMdTNmNDROTjdkWUVrUVQxaXQzS1BnR09yWVJ4UlN2SFVLNFBsRkYxZXpQaVBHSnMwcmpj?oc=5",
     "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/"
   ],
-  "last_run": "2026-05-18T03:06:18.647Z",
-  "last_run_count": 10,
-  "last_run_items": [
-    {
-      "id": "news-2026-05-18-anthropic-900b-valuation-overtakes-openai",
-      "title": "Anthropic's $900B Bet: Outpacing OpenAI in Value",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcmI3WUM2X1Ywam50bDM1Tl9OSGkzNlI3QTM0NGFNVWEyU2J1c1ZSV3ctVjJtWXNLZWhic3NTcmRjTzMxY2w0UlBYRjJOVVo3MDgzSkJMYkh1NS12NXJST283VHNfWll0RmhkNnZLM1ZsMU5Kblc2NDcxbUs2cUstUGFkUXB2YkUtR1hSa1FrQnhhQnJkaFh5OFhfd3MzWjJZbHFZeUQzYnJaT3V3Q0xN?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-18-grok-ai-in-courtrooms",
-      "title": "Grok and the Future of International Law",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUnVnaDZhTkxJZGFPZVlPLWV2bEJjOWUtalVQd2t5Skx6TXVldnlENkNmc3RyNmVraW9JeWNsNjhQaGsyMl9DT1lQWEVZTG0zd29tazBIcGl3VEFCMzFnNUx1MFAtS1A4MGtiZk1INHZFa2otdlN4LXkxQjBCTU1oaGhXQmFKMFUzTEFUSEhpNXB1UmJITkFRa3V5TExRbkFRcklDeUVKOTNWZ2xiVURfbFFtbFR4RDNXRF8wSG50ZU9XZGRiNjJaQXpha0otZlNmX0c0cDJJTmU2bWVGMF9V?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-18-grok-free-speech-paradox",
-      "title": "Grok's Freedom Paradox",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQU0l5ZWU3NE1KNXVwMWMtTHJvNUYxWmx5SjhJcWZwUFFRaVVITmk2YmRWYy1tUGIxbHJ3Y3Q5dGIzNE4yR1ktc3FUclY1alZQTXJtY1VFeTd2OHZMWW0ybkFwMW9tSTNPeWlaVDlSV2NXNzdGRWpwQkJoMkRqSFFrRk1ta0YzVk1hT2lJUXRydFV2M2VWc0VzY2VB?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-18-thinkpad-ai-workstations-evolution",
-      "title": "ThinkPad's Unlikely AI Comeback",
-      "source": "Hacker News (AI)",
-      "url": "https://www.jdhodges.com/blog/thinkpad-history/",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-18-the-ai-hate-wave-is-here",
-      "title": "The AI Backlash is Real. And It's Getting Worse.",
-      "source": "Hacker News (AI)",
-      "url": "https://www.axios.com/2026/05/17/ai-backlash-polling-sentiment",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-18-threads-grok-ai-search",
-      "title": "Threads copies Grok's playbook, but misses the point.",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9LTW5FOUhJMl8wWWtrRHFGN3BmYW1xMXhZcFpsSzRYMlJpNmdFTi1NQkFjUGU0dmVNRHJHaWxQMl9RYVNLQUdUa3VZakhrZVAzdDdlckkyOHdqSTNFbEU2dy1KTkJyWVpOWTZGN0lmZ2xOS1A0eU4wb0pNQQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-18-grok-enterprise-lagging",
-      "title": "Grok's Enterprise AI Problem",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-18-apple-siri-privacy-chats-revamp",
-      "title": "Apple's Siri Refresh: Privacy Over Power",
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-18-mythos-cracks-macos-security",
-      "title": "Anthropic's Mythos: A New macOS Vulnerability Vector?",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeGxOMFZQMEIyU2R5ZjlzNnRqYWhhWldaR2s0UFZKOWlGM280TnQwSnlqMzhxRU10S0FxaHdQOU5FVGJoc3U2UXRWMVVRSnJrQTBnbUVzNnlHR0Y1NXdjOTlMdTNmNDROTjdkWUVrUVQxaXQzS1BnR09yWVJ4UlN2SFVLNFBsRkYxZXpQaVBHSnMwcmpj?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-18-elon-musk-openai-trial-altman-trust",
-      "title": "The Altman Trust Deficit in Musk's OpenAI Trial",
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/",
-      "vertical": "ai_builder",
-      "topic": "chatgpt"
-    }
-  ],
+  "last_run": "2026-05-18T09:39:44.840Z",
+  "last_run_count": 0,
+  "last_run_items": [],
   "total_drafted": 53,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
