@@ -71,6 +71,18 @@ function Featured({ post }: { post: ReturnType<typeof getAllPosts>[0] }) {
         <span className="draw-rule mb-10 block" aria-hidden="true" />
 
         <Link href={`/blog/${post.slug}`} className="block group no-underline">
+          {post.image && (
+            <div className="relative aspect-[16/9] w-full bg-[var(--bg-elevated)] mb-8 overflow-hidden">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                priority
+                className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                sizes="(min-width: 768px) 80vw, 92vw"
+              />
+            </div>
+          )}
           <p className="eyebrow mb-5">
             {(post.category || "Article").replace(/_/g, " ")}
           </p>
@@ -164,8 +176,8 @@ function DispatchSpread() {
         <div className="md:col-span-5">
           <div className="relative aspect-[4/5] w-full bg-[var(--bg-elevated)]">
             <Image
-              src="/images/atlas_book.png"
-              alt="A leather-bound notebook resting on warm paper, with a red bookmark ribbon."
+              src="/images/dispatch-spread.png"
+              alt="A wax-sealed editorial dispatch envelope with a red ribbon, on aged paper with a faint neural-line watermark."
               fill
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 92vw"
