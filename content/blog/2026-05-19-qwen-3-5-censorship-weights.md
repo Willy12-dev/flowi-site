@@ -17,7 +17,7 @@ keywords:
   - "aibuilders"
   - "modelweights"
 author: "Flowi Editorial"
-image: "/images/blog/best-books-for-building-ai-agents-in-2026.jpg"
+image: "/images/blog/2026-05-19-qwen-3-5-censorship-weights.png"
 ---
 Qwen 3.5 shipped. The *real* news is how its weights implement censorship. weights — This is the unglamorous part of building with LLMs.
 
