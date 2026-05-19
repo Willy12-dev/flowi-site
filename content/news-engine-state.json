@@ -58,42 +58,9 @@
     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUWY0VHNfVlVONmw2b0ViRjZQVUVDVDhuZmdHSTJkT3ZjWmEtcWh1YzdtTm9vLXdFVk45TkRqN1lfZlNVdVc1Y0NpT01iS00xak40Vm9EeHJnY3kwX0dkVmJuLU5oWm55ak82RHExZzNpYjQxanJjVHB2bjkwdFRNdllkb0ZtRTV0X1JzTnAwdTdzd18ySm1XYTVJVnVXZnhQaGZCYjFvU1NhY0JvdlM1MjdUXy16cFdvd1VncTFLSk4?oc=5",
     "https://vas-blog.pages.dev/qwen-censorship/"
   ],
-  "last_run": "2026-05-19T03:07:15.813Z",
-  "last_run_count": 4,
-  "last_run_items": [
-    {
-      "id": "news-2026-05-19-grok-tax-program-operational-friction",
-      "title": "Grok's Tax Program: An Operational Debrief",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSkNLWHdDVXdfbGJQVjQyTGNyS1VyN0JKVGlhb3JxLVpIeU9QX0hLVXlOU0htc1MtWlpiSHBFYjJHZG5BMEpTTEpkZS1tSmF5bU9BYlFCSzY3MkdqWXNRcGZTclNFajJBWGNVOGFDcDdFUElESWJKNkx3UmdkUVVBNHZjOHlVUQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-19-grok-ai-power-plant-impact",
-      "title": "The unseen cost of AI: Grok's power plant and community impact",
-      "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVUpKbWduTmthRTRmc2VMWkRiZnNBNXZpYl9TenhGb0k1UC1xVFhMNHAxdzB0bVZiTkZxUldpSm9RYUJkTmFwUHBRclNOZHVEdzhSYUo2RXc4SGYyQk5fLVdlM19XZHgxc2NXSTBSZWJtZWJPbC1DQTZ6VTZzUDVHSnV5a2RDbmliaGpOSHVfX1FtUGk5RmFjazV3cjd0LU04ZXg5WGRUN3FSTnFoajJoMGQ5bw?oc=5",
-      "vertical": "ai_builder",
-      "topic": "grok"
-    },
-    {
-      "id": "news-2026-05-19-hitachi-anthropic-operational-ai",
-      "title": "Hitachi's Anthropic Deal: The Practical Side of Enterprise AI",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUWY0VHNfVlVONmw2b0ViRjZQVUVDVDhuZmdHSTJkT3ZjWmEtcWh1YzdtTm9vLXdFVk45TkRqN1lfZlNVdVc1Y0NpT01iS00xak40Vm9EeHJnY3kwX0dkVmJuLU5oWm55ak82RHExZzNpYjQxanJjVHB2bjkwdFRNdllkb0ZtRTV0X1JzTnAwdTdzd18ySm1XYTVJVnVXZnhQaGZCYjFvU1NhY0JvdlM1MjdUXy16cFdvd1VncTFLSk4?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-19-qwen-3-5-censorship-weights",
-      "title": "Qwen 3.5 Censorship: The Weights Tell the Story",
-      "source": "Hacker News (AI)",
-      "url": "https://vas-blog.pages.dev/qwen-censorship/",
-      "vertical": "ai_builder",
-      "topic": "qwen"
-    }
-  ],
+  "last_run": "2026-05-19T08:58:34.485Z",
+  "last_run_count": 0,
+  "last_run_items": [],
   "total_drafted": 57,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
