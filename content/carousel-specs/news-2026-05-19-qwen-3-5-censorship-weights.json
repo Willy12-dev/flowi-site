@@ -1,0 +1,103 @@
+{
+  "id": "news-2026-05-19-qwen-3-5-censorship-weights",
+  "title": "Qwen 3.5 Censorship: The Weights Tell the Story",
+  "vertical": "ai_builder",
+  "topic": "qwen",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's posting about LLM safety. Almost nobody noticed the part that actually matters: how it's implemented under the hood. The Qwen 3.5 release offers a stark, concrete lesson here. Researchers uncovered direct political censorship embedded within its model weights – not merely a byproduct of biased training data or post-hoc filtering. This isn't some abstract ethical debate; it’s a tangible demonstration of model behavior being dictated at the neural network's lowest level. It changes how we think about trust and control.\n\nFor builders, this is the unglamorous, yet critical, part of the job. It means your model’s perceived 'neutral' baseline might not be neutral at all, regardless of your careful prompt engineering or robust RAG setup. Relying solely on external benchmarks or API safeguards is insufficient when core parameters are actively manipulated. This finding forces us to push beyond surface-level interactions and demand deeper transparency into the models we operationalize. It underscores why understanding the actual delta in a changelog, rather than just the marketing copy, is paramount.\n\nOperationalizing for true safety and predictability now demands a more rigorous approach. By Friday, critically review your current models for any known biases and, for critical applications, consider open-source alternatives where the architecture and training data are genuinely transparent. This isn't about fostering paranoia, but about shipping robust, predictable systems that perform as expected, free from hidden agendas. The teams that win in this space are those that systematize before they scale, and that absolutely includes understanding what's truly inside your AI tools before you deploy them at scale.\n\nI break down releases like this every morning, focusing on the practical implications for builders – one email, free, no fluff. Hit the link in bio for the field guide.",
+  "hashtags": [
+    "llms",
+    "aiengineering",
+    "machinelearning",
+    "aibuilders",
+    "modelweights"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "LLM ARCHITECTURE",
+      "headline": "Qwen 3.5 shipped. The *real* news is how its weights implement censorship.",
+      "italicWord": "weights",
+      "sub": "This is the unglamorous part of building with LLMs."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Qwen 3.5 reveal.",
+      "body": "Researchers found Qwen 3.5's weights encode specific political biases. This isn't about fine-tuning on a biased dataset; it's about *direct* manipulation within the model's core logic. The actual delta is significant for trust."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "MODEL MECHANICS",
+      "term": "Weight Manipulation",
+      "partOfSpeech": "noun.",
+      "definition": "The deliberate adjustment of specific parameters within an LLM's neural network to enforce desired outputs or suppress undesired ones, independent of training data distributions.",
+      "example": "A political entity's name consistently generating a negative sentiment score, regardless of context."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "FOR BUILDERS",
+      "title": "What this *actually* means.",
+      "italicWord": "actually",
+      "bullets": [
+        "Your model's 'neutral' baseline might not be neutral.",
+        "Behavior isn't just about prompt engineering or RAG.",
+        "Auditing becomes a deeper, more complex task."
+      ],
+      "footer": "This goes beyond simple content filtering."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who should *care*?",
+      "italicWord": "care",
+      "audiences": [
+        {
+          "pill": "AI Builders",
+          "body": "Anyone shipping LLM-powered features. Your app's behavior is now tied to hidden model politics."
+        },
+        {
+          "pill": "Founders",
+          "body": "Reputation risk is higher. Model defaults can introduce biases you didn't intend or approve."
+        },
+        {
+          "pill": "Researchers",
+          "body": "New frontier for interpretability: how to reliably detect and measure embedded censorship."
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTION",
+      "title": "Operationalizing for safety.",
+      "body": "By Friday: review your current model's known biases. For critical applications, consider open-source alternatives with transparent architectures. Understand that 'safety' is now a multi-layer problem, not just an API call."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "This is the actual delta. Ship accordingly.",
+      "italicWord": "delta",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I decode one new AI release every morning. One email, free, no fluff. Link in bio."
+    }
+  ]
+}

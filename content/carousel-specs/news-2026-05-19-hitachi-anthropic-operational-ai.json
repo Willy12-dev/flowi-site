@@ -1,0 +1,103 @@
+{
+  "id": "news-2026-05-19-hitachi-anthropic-operational-ai",
+  "title": "Hitachi's Anthropic Deal: The Practical Side of Enterprise AI",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about Anthropic's enterprise push. But the Hitachi partnership shows the unglamorous part of actually shipping AI. This isn't just another press release about a pilot project; it's a signal for what real-world, large-scale AI integration looks like.\n\nHitachi is a global conglomerate. Deploying Claude 3 across their operations isn't about speculative R&D. It's about systematizing data pipelines, building robust integration layers, and managing the model lifecycle at scale. This is the actual delta for any builder or operator looking to move AI from concept to daily utility.\n\nWhat this deal does not do is promise a 'magic bullet.' It demands methodical engineering and a clear strategy for embedding AI into existing workflows. The teams that win here will be the ones that operationalize their AI tools before attempting to scale them.\n\nI break down one new AI release every morning – what it means for builders, what to ship by Friday. One email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "aiengineering",
+    "aibuilders",
+    "enterpriseai",
+    "claudeai",
+    "techimplementation"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ENTERPRISE AI",
+      "headline": "Hitachi just partnered with Anthropic. Here’s the *unglamorous part* that matters.",
+      "italicWord": "unglamorous part",
+      "sub": "Why this deal is about operationalizing AI, not just adoption."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Headline You Saw",
+      "body": "Hitachi announced a partnership with Anthropic, aiming to deploy AI across its operations. This means using Claude 3 models for internal processes at a global scale."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "WHAT THIS IS NOT",
+      "title": "Not Another \"Pilot Project\"",
+      "italicWord": "Pilot Project",
+      "bullets": [
+        "This isn't just an R&D investment.",
+        "It's not a small-scale trial with limited scope.",
+        "It's not about speculative, future-state AI applications."
+      ],
+      "footer": "Hitachi’s scale demands immediate operational impact, not just demos."
+    },
+    {
+      "type": "definition",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "term": "Operationalizing AI",
+      "partOfSpeech": "verb.",
+      "definition": "The process of integrating AI systems into daily business functions to produce measurable, consistent results. Moving beyond demos.",
+      "example": "Deploying Claude 3 to automate internal reporting for 10,000 employees by Q4."
+    },
+    {
+      "type": "step",
+      "index": 5,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "THE WORK",
+      "title": "The Unglamorous Part",
+      "body": "This deal means Hitachi needs to systematize data pipelines, build robust integration layers, and manage model lifecycle. That's the actual work that needs to ship."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Should *Care*",
+      "italicWord": "Care",
+      "audiences": [
+        {
+          "pill": "Builders",
+          "body": "This is a blueprint for real enterprise AI integration. Pay attention to how they structure teams to ship."
+        },
+        {
+          "pill": "Founders",
+          "body": "Focus on tools that enable *operationalization*, not just flashy features. That's where the budget is."
+        },
+        {
+          "pill": "Operators",
+          "body": "Understand the infrastructure needed to move AI from concept to daily utility. It's more than just prompts."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want more breakdowns like this?",
+      "italicWord": "breakdowns",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I send one practical AI debrief every morning. Free. No fluff. Link in bio."
+    }
+  ]
+}

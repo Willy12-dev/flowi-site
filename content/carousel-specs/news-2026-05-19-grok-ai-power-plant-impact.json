@@ -1,0 +1,92 @@
+{
+  "id": "news-2026-05-19-grok-ai-power-plant-impact",
+  "title": "The unseen cost of AI: Grok's power plant and community impact",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Everyone's posting about Grok's latest features. Almost nobody noticed the part that actually matters for builders. The unglamorous truth of scaling AI: it demands immense physical infrastructure, and that infrastructure has a real-world footprint.\n\nRecent reports linking xAI's power plant operations to specific community impacts highlight this stark reality. As AI engineers, we often abstract away the physical costs of our models. But the energy consumption, the land use, and the resource demands are not theoretical; they are tangible and increasingly under scrutiny. This isn't just a political talking point; it's an engineering challenge that will define responsible AI deployment.\n\nOperationalizing AI means understanding its full stack, from code to carbon. Future regulatory frameworks and even user expectations will increasingly factor in the environmental and social costs of AI. Ignoring this now is building on borrowed time. Start auditing your project's footprint. Understand where your compute comes from. It's not about being perfect, it's about being aware and building responsibly.\n\nI break down one AI release every morning – what actually shipped, who should care, and what to do by Friday. Link in bio.",
+  "hashtags": [
+    "AIethics",
+    "AIdiscourse",
+    "TechPolicy",
+    "AIinfrastructure",
+    "xAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "GROK'S INFRASTRUCTURE REALITY",
+      "headline": "Everyone's talking about Grok. Few are talking about its actual *impact*.",
+      "italicWord": "impact",
+      "sub": "The unglamorous part of scaling AI. And why it matters to builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The xAI Power Plant Report",
+      "body": "Recent reports link xAI's data center power demands to significant environmental concerns in Black communities. This isn't about the model; it's about the physical cost."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "BUILDER'S REALITY",
+      "term": "AI Infrastructure",
+      "partOfSpeech": "noun.",
+      "definition": "The physical network of data centers, power grids, and cooling systems required to train and run large AI models. The unglamorous part of scaling.",
+      "example": "A single LLM training run can consume terawatts of energy, demanding dedicated power plants."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "IMPLICATIONS FOR YOU",
+      "title": "The *Actual Delta* for Teams",
+      "italicWord": "Actual Delta",
+      "bullets": [
+        "Infrastructure isn't abstract; it has real-world footprint and cost.",
+        "Future regulatory frameworks will consider environmental impact.",
+        "Your AI's 'carbon cost' will become a measurable metric for stakeholders."
+      ],
+      "footer": "Operationalizing AI means owning the full stack, not just the code."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "BY THE NUMBERS",
+      "preStat": "A large AI model's training can require",
+      "stat": "100,000 kWh",
+      "postStat": "equivalent to 10 average homes' annual consumption.",
+      "body": "Scaling AI isn't just about GPUs; it's about raw power. This directly impacts siting and community relations."
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTION",
+      "title": "Systematize for Impact",
+      "body": "Start auditing your current infrastructure footprint. Even small models have a cost. Document energy usage, data provenance, and deployment locations. This isn't just policy; it's good engineering."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The industry focuses on new features. I focus on the *reality* of shipping.",
+      "italicWord": "reality",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "I decode one AI release every morning. One email, no fluff. See what actually matters."
+    }
+  ]
+}
