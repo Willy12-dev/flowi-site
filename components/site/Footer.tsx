@@ -45,7 +45,11 @@ export default function Footer() {
 
       <div className="page-max-wide mt-14 pt-5 border-t border-[var(--rule)] flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
         <p className="meta">© {year} Flowi. Independent. Built in public.</p>
-        <p className="meta">Set in Fraunces &amp; Inter. Printed on the open web.</p>
+        <div className="flex items-center gap-3">
+          <p className="meta">Set in Fraunces &amp; Inter. Printed on the open web.</p>
+          <span className="meta" aria-hidden="true">·</span>
+          <Link href="/admin/login" className="meta link-ink">Admin</Link>
+        </div>
       </div>
     </footer>
   );
