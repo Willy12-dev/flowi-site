@@ -68,90 +68,9 @@
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTWJMdm5lWlRTb1U3U29yQlRsTXdhZ0xIQUVXX0pfNURRd2hscG5yNk5GXzJiN3VPREl4RW1tVnE2VFI4ZmFWZEpCT1FwLUF6OW9qWXZlRDRQTGZUcE0wdHdiQjNGRFJ2VFZVX09lLVVyNlAzSGtIRmJWaW5Ec3RVNVZ6c2Z1NmxpY2pTdEJSR1RibU1WeVlPZ0MwR1FINDlNSy1FOElINl9fUy1IQm00eF9pcWNwVmtIMW9GQ3hzeEk2akpVMDFuLWZfdlNpQQ?oc=5",
     "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNHVjcHhGQ3d6enFjU2FZMjFpSWdCNXVGWGtqWFdrbjd3ZW5OelNseWFpTUtJVGU1REVVY3NNNXZxQXgyYXBvdVAycHlGYW13a1pHdVRJaDRQakNBOFE5eGQxTnBPOFN0ZUZfbXQ4OVpZSVN0MlBibjdEWXV1S1ZzbTJjb9IBiwFBVV95cUxOOGN6SFdUdEFJMWxZZkg3dlBTVzNoY2hYay1zV2NzbGF1a1piQTc3NDFiUnI0WHoySWk4djl4cVVNSzlKb1RPV2t6SzdaNTFjeUtFeEJLWUVQOVE1TEJRbm1oV0ttZ21IU2NXUzR1U0pPeXV6Q2JVQlczN3NRMEFjei1abEYxdk5zOUJV?oc=5"
   ],
-  "last_run": "2026-05-20T03:07:08.230Z",
-  "last_run_count": 10,
-  "last_run_items": [
-    {
-      "id": "news-2026-05-20-vatican-ai-encyclical-debrief",
-      "title": "The Vatican's AI-Assisted Encyclical: A Builder's Debrief",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYU8yX005X01NSUJOWDV4aTNOUWJZMU5mbXNxbnhnQ3B3S3B0Y0dqWF92bHNyWVZfLXFHYnMzNHpzWGp5anQzZ29YRGhpTk5PNXZZN3BqUThaVEVaR2J2MHN0UDVISWFkQ3E4dUhrYXd6U0FCZU4tTHZFVndzam0wOGkyeGxLTm1MUGhOV19MU2piYUQzc2tSZHJxbFBua200RFlybw?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-cloudflare-anthropic-secure-ai-agents",
-      "title": "Cloudflare, Anthropic, and the Secure Agent Stack",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOQUxsZXdaZzlXb1N2b05WcDNRMmF1cEZIc3dvbmFGUUFZc3o2SlRNT01VSm5NWUdDM2lnbkFnT1U3aElWd3B4clBHNGliQ2JTZThJYk1Ca2pqRGVpRk1pa21LalVQNGpVdkEwbmdnNGZBaFltSVBpMVVBTlR4QWMwWUZyZmJCUzF2NERIU2dXX3p5WjJzdUJucmQwWGtQSEt1aXVtMFpyclVLa3FMbkJPdTFYQ1daSU9qaUo0cjRZcXpocm9k0gHKAUFVX3lxTE9nSjYwcy1vaHctZ3pFWVFRZ18zVVJsM0FMbkVkbUVEd3RhV18tRzNEc1NIMm9CS240bUNLMmVKREViNTJrWTNXNnlqSHYzSkJZOW52ZDdmbVdNcWRlMVhXX0NES0hmWDhxZTduVUZFcWUtbXNRaUZ5Z3JZTlpnQ3k0eHY3Q0dERnBuLWsyTmpKSExtczlVMkR5c2w4dTFWaDN4UlVmZlV4dVozbW5TaHNucUYtbGhTblZ6dnlGVmVHQ0lEQ19LMW1PbkE?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-buys-stainless-sdk-impact",
-      "title": "Anthropic's Stainless Acquisition: The Real SDK Play",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWXQ1UjBuZklmMXp4Y3BsbWhuY2sxZUp4aDRCNlJHZG5BUjR5bWxvTnRYVi1mYkZtWkczSFNYb0w3ZUV4d2JzUklfWl9YdGlNYVh6VXgxMmtMMXd6ajJDN1RYdzlPSlB3di15ZEJsLXpiT1FhV0NuVGh5TDZ3T0wya1N0Y1FQUUZkZnY1T09XdFFMSmZiY25yU3d3?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-mythos-threat-sharing-delta",
-      "title": "Anthropic's Mythos Shift: What Threat Sharing Really Means",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTV92S1lwQktKLXNkTzlSdlF3X21QdEZGV0tMR2pvckJTVGNvSzV5N2VrVEJCOGRIQ0F3a1RkQ0o0OWQzSGR0aGlraFRheUVVNnlHSlVYZG5MVklTM1BNVzBINWJBUWEwY1VrMnA3ZC13aHp0Yk9yLTZ6bFowSUlyNlBacjhEeDlrTVhNNnM1XzlKTVhyaTR3eXlKbzREYTg?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-hires-andrej-karpathy",
-      "title": "Karpathy to Anthropic: What it actually means for Claude",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GcFBrdVNfSUhmaUtyaVIxWW1zdkdBOGt1UVlZaUtrak1Zb0dRemQ1MkF3UEpkYi1uWnh2ZjV3VmNJR25XT2E5d1pJSHFwWWpudVBKajJIOUhRTWU1YW9yZjZ4TFVzWUtJV05IOVRn?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-frontier-ai-conversation-builders",
-      "title": "Anthropic's \"Conversation\": What it *actually* means for builders.",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBWZnZ4WlRmdGxkTGhKV2RscUp3NlZtbWZIaF9MdGQ0M0doV09TaVQ5VEhnMXE2WmpFSFlQMnBSdlJDak5EdjRhRDNja2s3WUxIcG03X29ORjl6Tmh4cFFHNjJoMzl0Zw?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-geopolitical-impact-on-ai-builders",
-      "title": "Geopolitics and AI: What Builders Need to Know",
-      "source": "Mistral (news)",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1lTTJxT2h4bnlqRE9ydzU3ZlNCcmw3eDZyWE1fdDBjTFZ1OGQ0cWl3MHNmQ3czU2JwWGdDM3ZPVllENnkxWEIwQmF5OW0wQmRQTWpuVWFSZnpmUGtfM0FVVDNlaWdjbmM?oc=5",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-karpathy-stainless-acquisition",
-      "title": "Anthropic's Play for the Dev Stack",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaHIzcXc5YTFRUVNzTjRURnNkX0RoczdGQnBMenhpNUo4aDVzbFVISHA1RTNiS0g2aGFzeVo1Q3NUX0ktcFhXaFJRaG92cTRGd0ROYmlnSzFRcFN5aVI2YTNBNVRxLW5WZWpZcS1BZTl4N2NqSE5SY1NTdHVlZU5uR09mZlhLR284cVZZdkUtdm9KMHl1NlRkcFBRSEw4Q2NDMWo0RzVsZDZPdU9kdDNXT1dWeHMwSVhZd3RES0g5dkJmLXV5LUxkcUlZSkRxenVJWHRROHB6d1pILTF2OVhFeW9PWQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-pentagon-court-ai-blacklist",
-      "title": "Anthropic's Pentagon Blacklist: The Actual Operational Implications",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTWJMdm5lWlRTb1U3U29yQlRsTXdhZ0xIQUVXX0pfNURRd2hscG5yNk5GXzJiN3VPREl4RW1tVnE2VFI4ZmFWZEpCT1FwLUF6OW9qWXZlRDRQTGZUcE0wdHdiQjNGRFJ2VFZVX09lLVVyNlAzSGtIRmJWaW5Ec3RVNVZ6c2Z1NmxpY2pTdEJSR1RibU1WeVlPZ0MwR1FINDlNSy1FOElINl9fUy1IQm00eF9pcWNwVmtIMW9GQ3hzeEk2akpVMDFuLWZfdlNpQQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-20-anthropic-hires-tesla-ai-lead",
-      "title": "Anthropic's New Play: What Tesla's AI Lead Hire Actually Means",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNHVjcHhGQ3d6enFjU2FZMjFpSWdCNXVGWGtqWFdrbjd3ZW5OelNseWFpTUtJVGU1REVVY3NNNXZxQXgyYXBvdVAycHlGYW13a1pHdVRJaDRQakNBOFE5eGQxTnBPOFN0ZUZfbXQ4OVpZSVN0MlBibjdEWXV1S1ZzbTJjb9IBiwFBVV95cUxOOGN6SFdUdEFJMWxZZkg3dlBTVzNoY2hYay1zV2NzbGF1a1piQTc3NDFiUnI0WHoySWk4djl4cVVNSzlKb1RPV2t6SzdaNTFjeUtFeEJLWUVQOVE1TEJRbm1oV0ttZ21IU2NXUzR1U0pPeXV6Q2JVQlczN3NRMEFjei1abEYxdk5zOUJV?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    }
-  ],
+  "last_run": "2026-05-20T08:53:25.692Z",
+  "last_run_count": 0,
+  "last_run_items": [],
   "total_drafted": 67,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
