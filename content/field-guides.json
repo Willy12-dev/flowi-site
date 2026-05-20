@@ -1,0 +1,47 @@
+{
+  "_doc": "Field-guide compilations. Each guide is 4 essays from the daily brief, bound into a single $9 PDF. The 'articles' slugs must match files in content/blog/. Edit this file to swap or reorder essays; the next render run will pick up the change.",
+  "guides": {
+    "algo-traders-playbook": {
+      "title": "The Algo Trader's Playbook",
+      "subtitle": "Four essays on why retail algo trading fails — and the architecture that survives.",
+      "intro": "Compiled from the trading vertical of the Flowi Daily Brief. Why most retail systems blow up at month four, the lies backtests cannot simulate, how institutional desks actually use ICT, and an honest comparison of the platforms in the category.",
+      "vertical": "ai_trading",
+      "gumroadUrl": "https://flowi.gumroad.com/l/algo-traders-playbook",
+      "coverImage": "/images/blog/why-retail-algo-trading-systems-fail-at-month-four.jpg",
+      "articles": [
+        "why-retail-algo-trading-systems-fail-at-month-four",
+        "ai-trading-bots-beat-backtests-but-break-in-live",
+        "how-institutional-desks-use-ict-where-retail-tools-fall-short",
+        "best-institutional-grade-trading-platforms-for-independent-traders"
+      ]
+    },
+    "behavior-change-playbook": {
+      "title": "The Behavior Change Playbook",
+      "subtitle": "Four essays on why most recovery apps fail — and the relapse-aware architecture that works.",
+      "intro": "Compiled from the behavior vertical of the Flowi Daily Brief. Why habit apps don't survive month three, the discipline-app paradox (more apps → worse outcomes), what every recovery app gets wrong about relapse, and an honest comparison of the apps actually built on Marlatt's research.",
+      "vertical": "ai_behavior",
+      "gumroadUrl": "https://flowi.gumroad.com/l/behavior-change-playbook",
+      "coverImage": "/images/blog/why-habit-tracker-apps-dont-survive-the-third-month.jpg",
+      "articles": [
+        "why-habit-tracker-apps-dont-survive-the-third-month",
+        "the-discipline-app-paradox-why-downloading-more-doesnt-help",
+        "what-every-recovery-app-gets-wrong-about-relapse",
+        "best-behavior-change-apps-for-breaking-compulsive-habits"
+      ]
+    },
+    "ai-builders-field-guide": {
+      "title": "The AI Builder's Field Guide",
+      "subtitle": "Four essays on what shipped in AI this month — and what the production patterns mean.",
+      "intro": "Compiled from the AI builder vertical of the Flowi Daily Brief. Mozilla using Claude Mythos to harden Firefox, OpenAI gating Spud to defenders, what actually shipped at Code w/ Claude 2026, and an honest review of the AI engineering books worth reading.",
+      "vertical": "ai_builder",
+      "gumroadUrl": "https://flowi.gumroad.com/l/ai-builders-field-guide",
+      "coverImage": "/images/blog/best-books-for-building-ai-agents-in-2026.jpg",
+      "articles": [
+        "behind-the-scenes-hardening-firefox-with-claude-mythos",
+        "openais-spud-cybersecurity-ai-now-available-to-defenders",
+        "code-with-claude-2026-what-actually-shipped",
+        "best-books-for-building-ai-agents-in-2026"
+      ]
+    }
+  }
+}
