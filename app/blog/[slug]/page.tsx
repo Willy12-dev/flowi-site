@@ -85,6 +85,15 @@ export default async function BlogPostPage({ params }: PageProps) {
   const pdfPath = path.join(process.cwd(), "public", "pdfs", `${slug}.pdf`);
   const pdfExists = fs.existsSync(pdfPath);
 
+  // Every news spec produces a public visual deck at /posts/<slug>
+  const deckSpecPath = path.join(
+    process.cwd(),
+    "content",
+    "carousel-specs",
+    `news-${slug}.json`
+  );
+  const deckExists = fs.existsSync(deckSpecPath);
+
   // Category-aware: prefer 3 more from the same vertical; fall back to recent overall
   const sameCategory = getPostsByCategory(post.category).filter((p) => p.slug !== slug);
   const more = sameCategory.length >= 3
@@ -215,6 +224,14 @@ export default async function BlogPostPage({ params }: PageProps) {
                   >
                     Download PDF ↓
                   </TrackedLink>
+                </>
+              )}
+              {deckExists && (
+                <>
+                  {" · "}
+                  <Link href={`/posts/${slug}`} className="link-red not-italic">
+                    See the visual deck →
+                  </Link>
                 </>
               )}
             </p>

@@ -20,6 +20,7 @@ export default function Footer() {
           <p className="eyebrow eyebrow-mark mb-3">Read</p>
           <ul className="space-y-2 text-[15px]">
             <li><Link href="/blog"     className="link-ink">Daily brief</Link></li>
+            <li><Link href="/posts"    className="link-ink">Posts (visual)</Link></li>
             <li><Link href="/dispatch" className="link-ink">The Dispatch</Link></li>
             <li><Link href="/courses"  className="link-ink">Books</Link></li>
             <li><Link href="/about"    className="link-ink">About</Link></li>
