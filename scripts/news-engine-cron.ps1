@@ -82,8 +82,18 @@ $ArticleOutput = & node "$ProjectRoot\scripts\specs-to-articles.mjs" 2>&1
 $ArticleOutput | ForEach-Object { Add-Content -Path $LogFile -Value $_ }
 Log "Article generation exit code: $LASTEXITCODE"
 
+# --- Scan for pending blog heroes ---
+# Safe default: list-only mode prints what's pending, NO api calls,
+# NO credits spent. Once HIGGSFIELD_API_KEY is set in .env.local and a
+# manual `--generate` run has verified the api client, change the args
+# below to "--generate --limit 5" to enable auto-gen in cron.
+Log "Scanning pending blog heroes (list-only mode)..."
+$HeroOutput = & node "$ProjectRoot\scripts\generate-blog-heroes.mjs" 2>&1
+$HeroOutput | ForEach-Object { Add-Content -Path $LogFile -Value $_ }
+Log "Hero scan exit code: $LASTEXITCODE"
+
 # --- Commit + push ---
-& git -C $ProjectRoot add content/carousel-specs/ content/news-engine-state.json content/blog/ | Out-Null
+& git -C $ProjectRoot add content/carousel-specs/ content/news-engine-state.json content/blog/ public/images/blog/ | Out-Null
 
 # Check if anything actually changed
 & git -C $ProjectRoot diff --cached --quiet
