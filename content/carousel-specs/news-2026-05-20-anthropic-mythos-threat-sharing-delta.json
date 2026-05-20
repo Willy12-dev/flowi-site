@@ -1,0 +1,91 @@
+{
+  "id": "news-2026-05-20-anthropic-mythos-threat-sharing-delta",
+  "title": "Anthropic's Mythos Shift: What Threat Sharing Really Means",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about AI safety, but Anthropic just made a quiet operational shift that actually matters for builders. Project Mythos, their confidential threat-sharing forum, has loosened its secrecy rules. This isn't about a public API or a splashy new feature; it's about the unglamorous, yet critical, work of security intelligence.\n\nPreviously, Mythos operated on a strict \"need-to-know\" basis, even among member organizations. Now, Anthropic permits broader internal sharing of threat intel within those companies. What does this mean in practice? It translates to faster internal threat dissemination and reduced friction for security teams building with frontier models. When vulnerabilities are identified, the path to mitigation shortens.\n\nFor us operationalizing AI, this policy change means the systems we build on top of these models can become more robust, quicker. It's a small but significant tweak in the plumbing that ultimately strengthens the security posture of the entire ecosystem. The delta is internal efficiency, which is where real-world security gains are often made.\n\nI break down one of these operational shifts every morning. One email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "aisafety",
+    "anthropic",
+    "claudeai",
+    "aiethics",
+    "aibuilders"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC DEBRIEF",
+      "headline": "Mythos just changed its rules. Here's the *actual* delta.",
+      "italicWord": "actual",
+      "sub": "Why a quiet policy shift matters for AI builders."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE CONTEXT",
+      "term": "Project Mythos",
+      "partOfSpeech": "noun.",
+      "definition": "Anthropic's confidential AI threat-sharing forum for industry leaders. Established to coordinate on severe AI safety risks.",
+      "example": "Members share vulnerabilities and mitigation strategies for frontier models *before* public disclosure."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "The Original Secrecy",
+      "body": "Mythos operated on a strict \"need-to-know\" basis. Information about shared threats was tightly controlled, even among members."
+    },
+    {
+      "type": "numbered",
+      "index": 4,
+      "total": 7,
+      "number": "02",
+      "title": "The Policy Shift",
+      "body": "Anthropic now permits broader sharing of Mythos intel *within* member organizations. This means more researchers can access threat data."
+    },
+    {
+      "type": "bullets",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "OPERATIONAL DELTA",
+      "title": "What This *Actually* Does",
+      "italicWord": "Actually",
+      "bullets": [
+        "Faster internal threat dissemination for member companies.",
+        "Reduced friction for security teams building with frontier models.",
+        "Potentially quicker patch cycles for identified vulnerabilities."
+      ],
+      "footer": "It's not a public API, but it means more robust, distributed security."
+    },
+    {
+      "type": "stat",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "THE UNGLAMOROUS PART",
+      "preStat": "This isn't about public access. It's about",
+      "stat": "1.2x",
+      "postStat": "faster internal security loops for large AI teams.",
+      "body": "The impact is in the internal operational efficiency, allowing member organizations to harden their systems quicker."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want more actionable breakdowns like this by Friday?",
+      "italicWord": "actionable",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Every morning, one operational debrief. Free, no fluff."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "news-2026-05-20-geopolitical-impact-on-ai-builders",
+  "title": "Geopolitics and AI: What Builders Need to Know",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's watching the news cycle, but builders need to look deeper. Reports of an “Iran war shock” aren't just abstract geopolitics; they're a direct signal for your AI roadmap. The unglamorous part of building is anticipating external shocks that impact your ability to ship. This isn't about political commentary, it's about silicon and capital.\n\nIn practice, global instability translates to potential disruptions in chip supply chains and a shift in venture funding priorities. The days of endless compute and speculative bets might be on pause. Teams that win will be those who systematize their operations, secure their resources, and focus on delivering tangible value efficiently, not just scaling compute. By Friday, you should have a clearer picture of your hardware dependencies.\n\nUnderstanding these macro currents helps you operationalize your AI strategy more effectively. It’s about building resilience into your stack and your business model *before* the market forces you to.\n\nI break down one of these operational insights every morning – one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AITech",
+    "AICommunity",
+    "TechBuilders",
+    "OperationalAI",
+    "AIStrategy"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA'S DEBRIEF",
+      "headline": "Everyone's watching global tensions. Few are tracking the *real* AI impact.",
+      "italicWord": "real",
+      "sub": "Geopolitics isn't just news. It's a supply chain signal."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Unseen Ripple Effect",
+      "body": "Reports of an \"Iran war shock\" signal global instability. For AI, this isn't just a headline—it's a direct input into the operational environment for chips, funding, and talent."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "OPERATIONAL IMPACT",
+      "title": "Three Direct Builder Consequences",
+      "italicWord": "Direct",
+      "bullets": [
+        "**Chip Supply**: Expect increased lead times and potential cost hikes for critical hardware.",
+        "**Funding Shifts**: Investors prioritize efficiency and proven use cases over raw scale.",
+        "**Market Volatility**: Defensible, value-driven projects become paramount."
+      ],
+      "footer": "Your roadmap needs to reflect this."
+    },
+    {
+      "type": "definition",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "KEY CONCEPT",
+      "term": "Operational Resilience",
+      "partOfSpeech": "noun.",
+      "definition": "The capacity of an AI system or organization to maintain core functions and adapt effectively amidst significant external disruptions, from supply shocks to market shifts.",
+      "example": "Diversifying cloud providers and sourcing chips from multiple regions."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Needs To Operationalize This",
+      "italicWord": "Now",
+      "audiences": [
+        {
+          "pill": "Founders",
+          "body": "Extend runway. Focus on core value. Validate product before aggressive scaling."
+        },
+        {
+          "pill": "Dev Teams",
+          "body": "Optimize existing models. Prioritize efficiency gains over raw compute growth."
+        },
+        {
+          "pill": "Operators",
+          "body": "Audit hardware dependencies. Explore multi-region deployments. Secure alternative vendors."
+        }
+      ]
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "02",
+      "title": "Your Next Steps By Friday",
+      "body": "Audit your current hardware supply chain. Identify single points of failure. Start a conversation with your finance team about extending runway and securing capital in a tighter market. This is about *shipping*, not just speculating."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Get the actual delta on AI, not the hype.",
+      "italicWord": "actual",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Practical, actionable insights for builders, delivered daily."
+    }
+  ]
+}

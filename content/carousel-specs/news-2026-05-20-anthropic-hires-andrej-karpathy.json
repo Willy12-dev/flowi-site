@@ -1,0 +1,103 @@
+{
+  "id": "news-2026-05-20-anthropic-hires-andrej-karpathy",
+  "title": "Karpathy to Anthropic: What it actually means for Claude",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Andrej Karpathy joining Anthropic is big news, but the headlines missed the critical detail for builders. Everyone's focused on the name, not the actual job title: 'Lead Claude Pre-training Research.' This isn't about agentic features or flashy demos next quarter. It's about fundamental model architecture, the unglamorous part that dictates long-term performance ceilings.\n\nIn practice, this means Anthropic is doubling down on the core science of LLMs. Karpathy's expertise is in making models *work* from the ground up, not just fine-tuning them. For those operationalizing Claude today, the immediate delta is zero. But for anyone building on Claude's future, this signals a deep commitment to foundational improvements that could manifest as significant context window increases, improved reasoning, or more robust safety guardrails in 12-18 months.\n\nThe takeaway? Don't expect immediate API changes. Instead, watch for research papers and subtle performance shifts in the underlying models. The teams that win systematize with current tools while keeping an eye on these deeper signals. This hire is a long-term play, not a sprint.\n\nI break down one of these signals every morning—one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "Anthropic",
+    "ClaudeAI",
+    "AIEngineering",
+    "LLMs",
+    "AIBuilders"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "Karpathy Joins Anthropic",
+      "headline": "Everyone's talking Karpathy. Almost nobody saw the *actual job* that matters.",
+      "italicWord": "actual job",
+      "sub": "What a pre-training lead *actually* builds."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The News: Karpathy to Anthropic",
+      "body": "Andrej Karpathy, former OpenAI co-founder and Tesla AI director, joins Anthropic to lead \"Claude Pre-training Research.\" This is a significant hire for the company."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "What 'Pre-training' Means",
+      "term": "Pre-training Research",
+      "partOfSpeech": "noun.",
+      "definition": "The fundamental process of training an LLM on vast datasets to learn language structure, before any fine-tuning or specific applications.",
+      "example": "Building the core intelligence of Claude 3, not just making it answer specific prompts better."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "Why This Matters to *Builders*",
+      "title": "The Unglamorous Part That *Ships*",
+      "italicWord": "Ships",
+      "bullets": [
+        "This isn't about immediate API features or agentic rollouts.",
+        "It targets Claude's foundational capabilities: scale, reasoning, safety.",
+        "The delta will be visible in core model performance, 12-18 months out."
+      ],
+      "footer": "A long-term play for deeper intelligence."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Cares About *Pre-training*?",
+      "italicWord": "Pre-training",
+      "audiences": [
+        {
+          "pill": "LLM Architects",
+          "body": "Teams pushing the limits of model scale and emergent capabilities."
+        },
+        {
+          "pill": "Research Labs",
+          "body": "Anyone focused on the next generation of AI science, not just deployment."
+        },
+        {
+          "pill": "Core AI Developers",
+          "body": "Those building systems that depend on stable, highly capable foundation models."
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTION",
+      "title": "What To Do By *Friday*",
+      "body": "Continue operationalizing Claude's current API. Don't wait for future models. Watch for research papers and subtle performance improvements, not immediate feature drops."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Stop sifting through AI headlines.",
+      "italicWord": "signals",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I debrief one critical AI signal every morning. One email, free, no fluff."
+    }
+  ]
+}

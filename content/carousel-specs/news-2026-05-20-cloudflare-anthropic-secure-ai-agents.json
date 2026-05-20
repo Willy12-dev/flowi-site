@@ -1,0 +1,105 @@
+{
+  "id": "news-2026-05-20-cloudflare-anthropic-secure-ai-agents",
+  "title": "Cloudflare, Anthropic, and the Secure Agent Stack",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Cloudflare and Anthropic just announced a partnership. Most headlines missed the actual implication for builders.\n\nThis isn't about faster APIs or marginal performance gains. It's about the unglamorous, critical layer for anyone looking to operationalize AI agents: secure infrastructure. Deploying autonomous agents means confronting data egress, trust boundaries, and controlled execution environments. Without this, your agent project is a liability waiting to happen.\n\nThe real delta here is a move toward systematizing the security perimeter around agents. Cloudflare brings its robust network and Zero Trust capabilities to Anthropic's models, addressing the practical challenges of agent security and data integrity at scale. This allows builders to focus on agent logic, not on reinventing the security stack.\n\nIf you're building with agents, this is the kind of detail that matters. I break one of these down every morning – one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "anthropic",
+    "claude",
+    "aiagents",
+    "aidevelopment",
+    "cloudsec"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA'S DEBRIEF",
+      "headline": "Cloudflare and Anthropic: The *unglamorous* part of shipping AI agents.",
+      "italicWord": "unglamorous",
+      "sub": "Why secure infrastructure for autonomous AI is the actual delta."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "Cloudflare + Anthropic: The Deal",
+      "body": "Anthropic's Claude models will integrate with Cloudflare's network for secure, performant AI agent deployments. This isn't just a marketing handshake."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE PROBLEM",
+      "term": "Agent Infrastructure",
+      "partOfSpeech": "noun.",
+      "definition": "The underlying systems that host, execute, and protect autonomous AI agents, ensuring data integrity and controlled access.",
+      "example": "Operationalizing agents means securing their compute, data access, and egress points."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE IMPLICATION",
+      "title": "Beyond API Calls: Agent Risks",
+      "italicWord": "Agent Risks",
+      "bullets": [
+        "Unauthorized data access or leakage.",
+        "Malicious agent execution or data poisoning.",
+        "Ensuring compliance and audit trails."
+      ],
+      "footer": "Agents need more than an API endpoint; they need an operational perimeter."
+    },
+    {
+      "type": "stats",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE TOOLKIT",
+      "title": "Cloudflare's Stack for AI",
+      "italicWord": "for AI",
+      "stats": [
+        {
+          "value": "Edge Network",
+          "label": "Low-latency execution"
+        },
+        {
+          "value": "Zero Trust",
+          "label": "Access control for agents"
+        },
+        {
+          "value": "WAF & DDoS",
+          "label": "Protection from attacks"
+        }
+      ],
+      "footer": "This is about operationalizing trust and performance at scale."
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTION",
+      "title": "Start Asking The Right Questions",
+      "body": "If you're building agents, consider your security posture beyond just model safety. Where does your agent run? How does it access data? Who controls its egress?"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "This isn't about hype. It's about shipping.",
+      "italicWord": "shipping",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Operationalize AI, don't just demo it. Every morning, one actionable debrief."
+    }
+  ]
+}

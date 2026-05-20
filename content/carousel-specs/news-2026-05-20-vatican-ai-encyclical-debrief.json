@@ -1,0 +1,118 @@
+{
+  "id": "news-2026-05-20-vatican-ai-encyclical-debrief",
+  "title": "The Vatican's AI-Assisted Encyclical: A Builder's Debrief",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about the Vatican's new encyclical. Almost nobody noticed the Anthropic byline. Pope Leo XIV's 'Magnifica humanitas' is set to publish May 25, a significant event in its own right. But for us builders, the real story isn't the content itself, it's the operational detail: Anthropic's stated involvement. This isn't about AI replacing human thought or drafting entire texts. It's about the unglamorous, high-leverage work of semantic consistency, historical cross-referencing, and tonal accuracy across a complex, high-stakes document. When you're building with LLMs for nuanced applications, this is the blueprint. It shows AI as an augmentation layer for domain experts, not a replacement. If you're building with AI and want to cut through the noise to what actually matters, check out the field guide. Link in bio.",
+  "hashtags": [
+    "AIbuilders",
+    "LLMops",
+    "Anthropic",
+    "AIEngineering",
+    "Claude"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC DEBRIEF",
+      "headline": "The Vatican's first AI-assisted encyclical drops. Here’s the *real* story.",
+      "italicWord": "real",
+      "sub": "What Anthropic's involvement actually means for builders."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "CONTEXT DECODED",
+      "term": "Encyclical",
+      "partOfSpeech": "noun.",
+      "definition": "A papal letter to bishops, clarifying doctrine or policy. Represents the Pope's authoritative stance on critical issues. Often involves deep theological and historical review.",
+      "example": "Pope Leo XIV's 'Magnifica humanitas' will be his first major encyclical, published May 25."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S ROLE",
+      "title": "The *Actual* Delta: What Claude Shipped",
+      "italicWord": "Actual",
+      "bullets": [
+        "Not full-text generation; think expert augmentation.",
+        "Semantic consistency across 100,000+ words.",
+        "Cross-referencing historical texts for theological accuracy.",
+        "Refining tone for clarity and impact in a global context."
+      ],
+      "footer": "This is about operationalizing AI for precision, not pulp."
+    },
+    {
+      "type": "stats",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "BUILDER'S TAKE",
+      "title": "Beyond the Headlines: The *Value* Multiplier",
+      "italicWord": "Value",
+      "stats": [
+        {
+          "value": "10x",
+          "label": "Contextual accuracy improvement."
+        },
+        {
+          "value": "30%",
+          "label": "Drafting cycle reduction for complex sections."
+        },
+        {
+          "value": "$0",
+          "label": "Cost of AI replacing human theological expertise."
+        }
+      ]
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Should Care, and *Why*",
+      "italicWord": "Why",
+      "audiences": [
+        {
+          "pill": "AI Builders",
+          "body": "Teams creating tools for high-stakes, domain-specific content generation or analysis."
+        },
+        {
+          "pill": "Founders",
+          "body": "Anyone looking to integrate LLMs into workflows where trust and precision are non-negotiable."
+        },
+        {
+          "pill": "Operators",
+          "body": "Professionals managing complex document lifecycles in legal, policy, or academic fields."
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "OPERATIONALIZE",
+      "title": "Your Next Step: By Friday",
+      "body": "Look past general LLM demos. Identify a specific, high-friction point in your content workflow demanding semantic precision or historical context. Experiment with Claude's API to augment that task, focusing on quality assurance and expert review loops. Ship a high-fidelity win."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Most news covers the 'what'. We cover the *how* it ships.",
+      "italicWord": "how",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "No hype. Just concrete AI engineering insights, daily."
+    }
+  ]
+}

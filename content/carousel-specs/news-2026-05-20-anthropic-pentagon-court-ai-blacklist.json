@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-20-anthropic-pentagon-court-ai-blacklist",
+  "title": "Anthropic's Pentagon Blacklist: The Actual Operational Implications",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about AI safety. The Anthropic-Pentagon court case shows what 'safety' looks like when it hits a procurement pipeline. This isn't about model performance; it's about the unglamorous, high-stakes reality of shipping AI in sensitive environments.\n\nAnthropic claims the Pentagon effectively blacklisted them from certain contracts, citing national security concerns over data access. This isn't a technical dispute. It's a clash over trust frameworks, vendor relationships, and the legal overhead that becomes a core product feature when you move beyond demos.\n\nFor builders, this is a clear signal: your AI solution isn't just code. It's a supply chain, a legal entity, and a trust relationship. Operationalizing AI means navigating these political and compliance frictions. Teams that win understand that systematizing these factors comes before scaling.\n\nI break one of these down every morning – one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AIpolicy",
+    "Anthropic",
+    "ClaudeAI",
+    "AISafety",
+    "TechLaw"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "THE ANTHROPIC DEBRIEF",
+      "headline": "The Pentagon *Blacklisted* Anthropic. What Happens In Practice?",
+      "italicWord": "Blacklisted",
+      "sub": "This isn't about models. It's about procurement and trust."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Core Conflict",
+      "body": "Anthropic filed suit against the DoD. They claim the Pentagon effectively blacklisted them from certain contracts, citing 'national security' concerns over data access and model transparency."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE UNGLAMOROUS PART",
+      "term": "Operational Blacklist",
+      "partOfSpeech": "noun.",
+      "definition": "When an organization, often governmental, implicitly or explicitly bars a vendor from bidding on or securing contracts due to policy, trust, or perceived risk, not technical performance.",
+      "example": "The Pentagon's alleged exclusion of Anthropic from specific AI projects despite technical capability."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "title": "Why This *Matters* For Builders",
+      "italicWord": "Matters",
+      "bullets": [
+        "Your tech isn't just code; it's a supply chain problem.",
+        "Trust frameworks are now as critical as model accuracy.",
+        "Compliance and legal overhead become core product features."
+      ],
+      "footer": "Operationalizing AI means navigating politics."
+    },
+    {
+      "type": "step",
+      "index": 5,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "WHAT THIS DOES NOT DO",
+      "title": "This Is Not About Model Quality",
+      "body": "The legal challenge isn't about Claude's capabilities or safety features. It's about the *vendor relationship* and the terms under which AI is deemed 'deployable' in sensitive environments."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Should Care *By Friday*",
+      "italicWord": "Friday",
+      "audiences": [
+        {
+          "pill": "Founders",
+          "body": "If you're building B2B AI, especially for regulated industries, start mapping your trust and compliance story *now*. It's not a post-launch problem."
+        },
+        {
+          "pill": "Devs/Operators",
+          "body": "Understand the data provenance, security architecture, and legal terms of your AI dependencies. The unglamorous part is often the most critical."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "This isn't just news. It's a signal for how AI gets *shipped*.",
+      "italicWord": "shipped",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Every morning: one AI release, decoded. No fluff."
+    }
+  ]
+}
