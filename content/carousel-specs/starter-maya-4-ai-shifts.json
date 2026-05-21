@@ -1,0 +1,130 @@
+{
+  "id": "maya-4-ai-shifts",
+  "title": "Maya / 4 AI Shifts This Month — AI Builder's Field Guide",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "BUILDER", "promise": "for the field guide" },
+  "caption": "While everyone argues about AGI timelines, four things actually shipped in AI this month — and they change how you build.\n\nComment \"BUILDER\" and I'll send you all four, fully decoded.\n\n🚀 What actually shipped in AI — May 2026. Zero hype.\n\nMost people are doomscrolling AI Twitter and absorbing nothing. Meanwhile the builders who win are reading the changelog, not the keynote.\n\nHere's what mattered:\n✅ Mozilla used Claude Mythos to find hundreds of REAL Firefox bugs — AI security review crossed from noise to signal\n✅ OpenAI's \"Spud\" opened offensive-security AI to defenders — the exploit window is shrinking\n✅ Background sub-agents shipped at Code w/ Claude — agents can now spawn agents\n✅ The honest AI-engineering book list — and the one gap nobody has filled\n\nThe biggest mistake right now? Reading AI news for entertainment instead of decisions.\n\nIn the next 2–3 years, the builders who can tell signal from theater will run circles around everyone else.\n\n👇 Which of the four are you looking into first?\n\nSave this — it's your May AI briefing in one post.\nShare it with a builder drowning in AI news 🚀\n\nComment \"BUILDER\" and I'll DM you the full field guide — all four shifts, decoded in depth.\n\nDisclaimer: shared for educational and informational purposes only. Not affiliated with the tools mentioned. AI moves fast — verify before you build.\n\n(Keywords: AI news May 2026, what shipped in AI, AI for builders, Claude Mythos, Code with Claude, AI agent books)\n\n#AIengineering #AItools #BuildWithAI #ClaudeAI #AInews",
+  "hashtags": ["AIengineering", "AItools", "BuildWithAI", "ClaudeAI", "AInews"],
+  "slides": [
+    {
+      "type": "method-cover",
+      "index": 1,
+      "total": 7,
+      "headline": [
+        [{ "t": "While everyone" }],
+        [{ "t": "argued about AGI," }],
+        [{ "t": "4 real shifts", "accent": "green" }],
+        [{ "t": "shipped in AI." }]
+      ],
+      "pills": ["WHAT ACTUALLY SHIPPED", "ZERO HYPE"],
+      "stepsCue": "here's what matters",
+      "photo": "/images/posts/maya-ugc/step1.jpg"
+    },
+    {
+      "type": "method-step",
+      "index": 2,
+      "total": 7,
+      "stepLabel": "01",
+      "headline": [
+        [{ "t": "AI FOUND" }],
+        [{ "t": "HUNDREDS OF" }],
+        [{ "t": "REAL BUGS", "accent": "green" }]
+      ],
+      "intro": "Mozilla pointed Claude Mythos at the Firefox codebase.",
+      "bullets": [
+        "not plausible-sounding noise — exploitable bugs",
+        "weeks of manual review compressed into days",
+        "the AI false-positive problem, basically solved"
+      ],
+      "callout": "AI security review just crossed from noise to signal. Point it at your riskiest code."
+    },
+    {
+      "type": "method-step",
+      "index": 3,
+      "total": 7,
+      "stepLabel": "02",
+      "headline": [
+        [{ "t": "THE EXPLOIT" }],
+        [{ "t": "WINDOW IS" }],
+        [{ "t": "CLOSING", "accent": "green" }]
+      ],
+      "intro": "OpenAI opened 'Spud' — offensive-security AI — to vetted defenders.",
+      "bullets": [
+        "AI can find and prove vulnerabilities fast",
+        "the gap from 'discoverable' to 'exploited' is shrinking",
+        "assume attackers have the same tools"
+      ],
+      "callout": "Patch speed now beats patch perfection. Security-by-design isn't optional."
+    },
+    {
+      "type": "method-step",
+      "index": 4,
+      "total": 7,
+      "stepLabel": "03",
+      "headline": [
+        [{ "t": "AGENTS CAN" }],
+        [{ "t": "NOW SPAWN" }],
+        [{ "t": "AGENTS", "accent": "green" }]
+      ],
+      "intro": "The real release at Code w/ Claude — buried under the keynote hype.",
+      "bullets": [
+        "background sub-agents that run for hours",
+        "the multi-agent pattern is now a built-in primitive",
+        "the '$100B GDP' clip? that was the theater"
+      ],
+      "callout": "The thing that matters is never the keynote clip — it's the line they barely mention."
+    },
+    {
+      "type": "method-step",
+      "index": 5,
+      "total": 7,
+      "stepLabel": "04",
+      "headline": [
+        [{ "t": "MOST AI" }],
+        [{ "t": "BOOKS ARE" }],
+        [{ "t": "ALREADY STALE", "accent": "green" }]
+      ],
+      "intro": "An honest look at the AI-engineering books worth your time.",
+      "bullets": [
+        "the frontier moves quarterly — most books lag 18 months",
+        "depth on one bottleneck beats a broad overview",
+        "the real gap: evaluating agents before they fail"
+      ],
+      "callout": "Don't read six books. Read the one that fixes your current bottleneck."
+    },
+    {
+      "type": "method-step",
+      "index": 6,
+      "total": 7,
+      "stepLabel": "THE PATTERN",
+      "headline": [
+        [{ "t": "IT'S THE SAME" }],
+        [{ "t": "TELL EVERY" }],
+        [{ "t": "TIME", "accent": "green" }]
+      ],
+      "intro": "Across all four releases:",
+      "bullets": [
+        "labs talk loudest about what isn't ready yet",
+        "and quietest about what already shipped",
+        "the signal is always in the boring line"
+      ],
+      "callout": "Read AI like a builder: skip the keynote, find the changelog."
+    },
+    {
+      "type": "method-cta",
+      "index": 7,
+      "total": 7,
+      "pre": "COMMENT",
+      "keyword": "BUILDER",
+      "post": "BELOW",
+      "card": [
+        { "t": "and I'll send you" },
+        { "t": "the full field guide", "accent": true },
+        { "t": "— all 4, decoded in depth." }
+      ]
+    }
+  ]
+}
