@@ -42,7 +42,7 @@ const FIELD_GUIDES: FieldGuide[] = [
     blurb:
       'Compiled from the trading vertical of the daily brief. Why most retail systems blow up at month four, the six lies backtests cannot simulate, how institutional desks actually use ICT, and an honest comparison of every real platform in the category.',
     price: '$9',
-    url: 'https://flowi.gumroad.com/l/algo-traders-playbook',
+    url: 'https://flowi.gumroad.com/l/algo-traders-playbook-v1',
     meta: '~5,500 words · 4 essays · PDF',
     vertical: 'trading',
     image: 'https://useflowi.app/images/blog/why-retail-algo-trading-systems-fail-at-month-four.jpg',

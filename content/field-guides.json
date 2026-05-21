@@ -6,7 +6,7 @@
       "subtitle": "Four essays on why retail algo trading fails — and the architecture that survives.",
       "intro": "Compiled from the trading vertical of the Flowi Daily Brief. Why most retail systems blow up at month four, the lies backtests cannot simulate, how institutional desks actually use ICT, and an honest comparison of the platforms in the category.",
       "vertical": "ai_trading",
-      "gumroadUrl": "https://flowi.gumroad.com/l/algo-traders-playbook",
+      "gumroadUrl": "https://flowi.gumroad.com/l/algo-traders-playbook-v1",
       "coverImage": "/images/blog/why-retail-algo-trading-systems-fail-at-month-four.jpg",
       "articles": [
         "why-retail-algo-trading-systems-fail-at-month-four",

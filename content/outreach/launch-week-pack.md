@@ -5,7 +5,7 @@ roughly tracks "easiest to ship today" → "harder, do mid-week."
 
 Three field guides, $9 each through Sunday, $14 from Monday:
 
-- **The Algo Trader's Playbook** — flowi.gumroad.com/l/algo-traders-playbook
+- **The Algo Trader's Playbook** — flowi.gumroad.com/l/algo-traders-playbook-v1
 - **The Behavior Change Playbook** — flowi.gumroad.com/l/behavior-change-playbook
 - **The AI Builder's Field Guide** — flowi.gumroad.com/l/ai-builders-field-guide
 
@@ -74,7 +74,7 @@ audience's timezone. Pin it to your profile through Sunday.
     → useflowi.app/launch
 
     Or the individual links:
-    → flowi.gumroad.com/l/algo-traders-playbook
+    → flowi.gumroad.com/l/algo-traders-playbook-v1
     → flowi.gumroad.com/l/behavior-change-playbook
     → flowi.gumroad.com/l/ai-builders-field-guide
 ```
@@ -199,7 +199,7 @@ I wrote a longer version of this with three sister essays —
 backtest vs live differences, how institutional desks actually
 use ICT, honest comparison of the platforms in the category —
 and bundled them into a field guide. $9 through Sunday at
-flowi.gumroad.com/l/algo-traders-playbook (or all three of my
+flowi.gumroad.com/l/algo-traders-playbook-v1 (or all three of my
 launch guides at useflowi.app/launch). Free version of each
 essay is on my blog too if you want to read first.
 

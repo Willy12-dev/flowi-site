@@ -39,7 +39,7 @@ const GUIDES: Guide[] = [
       "Names six specific failure modes most retail builds skip",
       "Honest comparison of TradeStation, NinjaTrader, MultiCharts, QuantConnect, TradingView, FlowiAI Trader",
     ],
-    url: "https://flowi.gumroad.com/l/algo-traders-playbook",
+    url: "https://flowi.gumroad.com/l/algo-traders-playbook-v1",
     audience: "Retail traders who hit drawdown they can't survive. Builders shipping AI trading bots.",
   },
   {
