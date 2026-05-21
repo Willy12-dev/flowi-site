@@ -1,0 +1,114 @@
+{
+  "id": "maya-ai-builder-field-guide",
+  "title": "Maya / How to Read an AI Release Like a Builder (AI Builder's Field Guide promo)",
+  "vertical": "ai_builder",
+  "topic": "ai-engineering",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "BUILDER", "promise": "for the field guide link" },
+  "caption": "Every week another AI release 'changes everything.' Most of it is theater.\n\nHere's the method I use to find the one part that actually changes how you build — three questions, run on every release:\n\n1. What did the demo skip? The demo is never the hard part.\n2. What shipped quietly, with no keynote clip? The buried feature is usually the real one.\n3. Can you use it by Friday, on real work? A projection curve is not a feature.\n\nThis month I ran it on the four biggest releases — Mozilla hardening Firefox with Claude Mythos, OpenAI's Spud going to defenders, what actually shipped at Code w/ Claude 2026, and the AI engineering books worth your time. All four, decoded, in one field guide.\n\nComment BUILDER for the link — or it's in bio.\n\n— maya",
+  "hashtags": [
+    "aiengineering",
+    "aiagents",
+    "buildwithai",
+    "llmdevelopment",
+    "aitools"
+  ],
+  "slides": [
+    {
+      "type": "storytelling",
+      "index": 1,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/01-hook.jpg",
+      "paragraphs": [
+        "most AI news is theater.",
+        "the one feature that actually changes how you build is usually buried under the hype.",
+        "here's how to find it — every release."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 2,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/02-principle.jpg",
+      "paragraphs": [
+        "the tell is always the same.",
+        "labs talk loudest about what isn't ready yet.",
+        "and quietest about what already shipped."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 3,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/03-question-1.jpg",
+      "paragraphs": [
+        "1 — what did the demo skip?",
+        "the '4-hour startup' demo was real. it also had no auth, no error handling, no real logic.",
+        "the demo is never the hard part. watch what it quietly leaves out."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 4,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/04-question-2.jpg",
+      "paragraphs": [
+        "2 — what shipped quietly?",
+        "one lab spent its keynote on a '100% of global GDP' clip. it went viral.",
+        "the feature that actually changed how people build? barely mentioned."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 5,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/05-question-3.jpg",
+      "paragraphs": [
+        "3 — can you use it by friday?",
+        "'in 21 months' is a forecast. a forecast is not a feature you can build with.",
+        "if it doesn't change your next sprint, it's not news yet."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 6,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/06-recap.jpg",
+      "paragraphs": [
+        "save this. three questions — run them on every AI release:"
+      ],
+      "bullets": [
+        "what did the demo quietly skip?",
+        "what shipped with no keynote clip?",
+        "can you use it by friday, on real work?"
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 7,
+      "total": 7,
+      "bgImage": "/images/posts/maya-ai-field-guide/07-cta.jpg",
+      "paragraphs": [
+        "i run these three every morning, on every release.",
+        "the AI Builder's Field Guide does exactly that — this month's four biggest, fully decoded.",
+        "the signal, not the theater. $9 — link in bio."
+      ],
+      "attribution": "comment BUILDER for the link · — maya",
+      "textPosition": "bottom",
+      "textAlign": "left"
+    }
+  ]
+}
