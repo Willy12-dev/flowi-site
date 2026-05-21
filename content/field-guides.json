@@ -42,6 +42,21 @@
         "code-with-claude-2026-what-actually-shipped",
         "best-books-for-building-ai-agents-in-2026"
       ]
+    },
+    "ai-ugc-playbook": {
+      "title": "The AI UGC Playbook",
+      "subtitle": "Build an AI creator that posts for you — every day, fully automated, for under $50 a month.",
+      "intro": "The complete system for AI-generated UGC: choosing and locking an avatar, building its persona with Claude, running the Claude-to-Higgsfield content loop, and scaling it into a channel that earns. Five chapters, no hype — the build.",
+      "vertical": "ai_builder",
+      "gumroadUrl": "https://flowi.gumroad.com/l/ai-ugc-playbook-v1",
+      "coverImage": "/images/posts/maya-ugc/cover.jpg",
+      "articles": [
+        "ai-ugc-the-unfair-advantage-for-2026",
+        "building-your-ai-avatar-influencer-or-clone",
+        "the-persona-engine-make-claude-define-your-creator",
+        "the-content-loop-claude-writes-higgsfield-generates",
+        "shipping-scaling-and-monetizing-ai-ugc"
+      ]
     }
   }
 }

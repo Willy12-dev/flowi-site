@@ -36,6 +36,17 @@
       "cta_keyword": "HABIT",
       "cta_promise": "for the playbook"
     },
+    {
+      "slug": "ai-ugc-playbook",
+      "title": "The AI UGC Playbook",
+      "topics": ["ugc", "ai_ugc", "ai_influencer", "ai_avatar"],
+      "vertical": "ai_builder",
+      "price_usd": 9,
+      "status": "live",
+      "url": "https://flowi.gumroad.com/l/ai-ugc-playbook-v1",
+      "cta_keyword": "UGC",
+      "cta_promise": "for the playbook"
+    },
 
     {
       "slug": "chatgpt-mastery",
