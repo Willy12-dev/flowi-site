@@ -23,9 +23,10 @@
       "index": 1,
       "total": 7,
       "eyebrow": "GROK DEBRIEF",
-      "headline": "Everyone's talking about xAI + SpaceX. Here's the *unglamorous* truth.",
+      "headline": "Everyone's talking about xAI + SpaceX. Here's the",
       "italicWord": "unglamorous",
-      "sub": "Why backend links matter more than front-end hype."
+      "sub": "Why backend links matter more than front-end hype.",
+      "headlineAfter": "truth."
     },
     {
       "type": "numbered",
@@ -40,8 +41,7 @@
       "index": 3,
       "total": 7,
       "eyebrow": "THE LINKS",
-      "title": "More Than Just *Shared* Founders",
-      "italicWord": "Shared",
+      "title": "More Than Just Shared Founders",
       "bullets": [
         "SpaceX stock investments in xAI.",
         "Shared use of private jets.",
@@ -64,8 +64,7 @@
       "index": 5,
       "total": 7,
       "eyebrow": "FOR BUILDERS",
-      "title": "What This *Does Not* Do",
-      "italicWord": "Not",
+      "title": "What This Does Not Do",
       "stats": [
         {
           "value": "0",
@@ -95,8 +94,7 @@
       "type": "cta",
       "index": 7,
       "total": 7,
-      "hook": "Want the raw, operational *truth* on AI, not the hype?",
-      "italicWord": "truth",
+      "hook": "Want the raw, operational truth on AI, not the hype?",
       "ctaKeyword": "GROK",
       "ctaPromise": "for the waitlist",
       "sub": "I break down one AI release every morning. Zero fluff."

@@ -23,8 +23,8 @@
       "index": 1,
       "total": 6,
       "eyebrow": "GROK'S \"SPICY\" MODE",
-      "headline": "SpaceX just called Grok a *risk*.",
-      "italicWord": "risk",
+      "headline": "SpaceX just called Grok a",
+      "italicWord": "risk.",
       "sub": "The unglamorous part of shipping AI."
     },
     {
@@ -51,11 +51,10 @@
       "total": 6,
       "eyebrow": "FOR BUILDERS",
       "title": "The Actual Delta: What This Changes",
-      "italicWord": "changes",
       "bullets": [
         "Unpredictable AI outputs carry tangible business risk, not just user complaints.",
         "\"Fun\" features like \"spicy\" mode are liabilities in regulated contexts.",
-        "Operationalizing AI means engineering for *predictability*, not just capability."
+        "Operationalizing AI means engineering for predictability, not just capability."
       ],
       "footer": "Demos lie; shipped things don't."
     },
@@ -74,7 +73,6 @@
       "index": 6,
       "total": 6,
       "hook": "Stop guessing which AI releases actually matter.",
-      "italicWord": "matter",
       "ctaKeyword": "GROK",
       "ctaPromise": "for the waitlist",
       "sub": "I debrief the one line that changes your workflow."

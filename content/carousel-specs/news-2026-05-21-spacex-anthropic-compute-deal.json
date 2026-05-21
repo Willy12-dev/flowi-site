@@ -23,9 +23,10 @@
       "index": 1,
       "total": 6,
       "eyebrow": "The Supply Chain",
-      "headline": "Everyone's talking about the Anthropic deal. Missed the *real* headline.",
+      "headline": "Everyone's talking about the Anthropic deal. Missed the",
       "italicWord": "real",
-      "sub": "It's about infrastructure, not just AI capabilities."
+      "sub": "It's about infrastructure, not just AI capabilities.",
+      "headlineAfter": "headline."
     },
     {
       "type": "numbered",
@@ -51,7 +52,6 @@
       "total": 6,
       "eyebrow": "For Builders",
       "title": "Operationalizing Scale",
-      "italicWord": "operationalizing",
       "bullets": [
         "Less dependency on hyperscalers for raw compute.",
         "Potential for more competitive pricing long-term.",
@@ -64,7 +64,6 @@
       "index": 5,
       "total": 6,
       "title": "Implications by Friday",
-      "italicWord": "Friday",
       "cols": 2,
       "cards": [
         {
@@ -94,7 +93,6 @@
       "index": 6,
       "total": 6,
       "hook": "The real work happens when you know what to build.",
-      "italicWord": "build",
       "ctaKeyword": "BUILD",
       "ctaPromise": "for the field guide",
       "sub": "Get my daily debriefs on AI releases."

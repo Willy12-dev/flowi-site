@@ -9,7 +9,7 @@
     "keyword": "BUILD",
     "promise": "for the field guide"
   },
-  "caption": "Everyone's talking about Anthropic's operating profit. Almost nobody noticed the part that actually matters if you're building with AI.\n\nThis isn't just a financial footnote; it's a signal. When a foundational model provider hits profitability, it means their enterprise strategy is working. They're not just burning venture capital; they're generating revenue from actual deployed solutions. For builders and operators, this translates directly to platform stability. It means less risk when you commit to their APIs, more consistent development cycles, and better long-term support. The unglamorous part of AI is operationalizing it, and profit proves they're doing that at scale.\n\nWhat this doesn't do: suddenly make Claude 'better' than GPT-4o. What it *does* do: validate Anthropic as a serious, viable, long-term partner for mission-critical AI applications. It's an indicator that their model is solving real problems for paying customers, which means more resources for R&D and platform improvements down the line. It's the kind of quiet news that actually changes your workflow, by making it more reliable.\n\nI break down one AI release like this every morning—what shipped, what it means for your build, and what to do about it this week. Hit the link in bio to BUILD for the field guide.",
+  "caption": "Everyone's talking about Anthropic's operating profit. Almost nobody noticed the part that actually matters if you're building with AI.\n\nThis isn't just a financial footnote; it's a signal. When a foundational model provider hits profitability, it means their enterprise strategy is working. They're not just burning venture capital; they're generating revenue from actual deployed solutions. For builders and operators, this translates directly to platform stability. It means less risk when you commit to their APIs, more consistent development cycles, and better long-term support. The unglamorous part of AI is operationalizing it, and profit proves they're doing that at scale.\n\nWhat this doesn't do: suddenly make Claude 'better' than GPT-4o. What it does do: validate Anthropic as a serious, viable, long-term partner for mission-critical AI applications. It's an indicator that their model is solving real problems for paying customers, which means more resources for R&D and platform improvements down the line. It's the kind of quiet news that actually changes your workflow, by making it more reliable.\n\nI break down one AI release like this every morning—what shipped, what it means for your build, and what to do about it this week. Hit the link in bio to BUILD for the field guide.",
   "hashtags": [
     "Claude",
     "Anthropic",
@@ -23,9 +23,10 @@
       "index": 1,
       "total": 7,
       "eyebrow": "ANTHROPIC'S PROFIT",
-      "headline": "Everyone's talking profit. Here's what it *actually* means for builders.",
+      "headline": "Everyone's talking profit. Here's what it",
       "italicWord": "actually",
-      "sub": "Why steady revenue is the unglamorous part that matters."
+      "sub": "Why steady revenue is the unglamorous part that matters.",
+      "headlineAfter": "means for builders."
     },
     {
       "type": "numbered",
@@ -41,7 +42,6 @@
       "total": 7,
       "eyebrow": "REVENUE DRIVERS",
       "title": "Where the Money Comes From",
-      "italicWord": "Enterprise",
       "bullets": [
         "Not consumer chatbots; enterprise contracts are the engine.",
         "Custom model fine-tuning and secure, private deployments.",
@@ -64,7 +64,6 @@
       "index": 5,
       "total": 7,
       "title": "Who Should Care?",
-      "italicWord": "Operationalizing",
       "audiences": [
         {
           "pill": "Founders",
@@ -94,8 +93,7 @@
       "type": "cta",
       "index": 7,
       "total": 7,
-      "hook": "Stop chasing hype. Ship *practical* AI.",
-      "italicWord": "practical",
+      "hook": "Stop chasing hype. Ship practical AI.",
       "ctaKeyword": "BUILD",
       "ctaPromise": "for the field guide",
       "sub": "I debrief one AI release every morning. One email, free, no fluff."

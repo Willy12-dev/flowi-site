@@ -23,9 +23,10 @@
       "index": 1,
       "total": 6,
       "eyebrow": "ANTHROPIC'S ACQUISITION DECODED",
-      "headline": "Everyone missed the *real* reason Anthropic bought Stainless.",
+      "headline": "Everyone missed the",
       "italicWord": "real",
-      "sub": "Why agent reliability, not just competition, drove the deal."
+      "sub": "Why agent reliability, not just competition, drove the deal.",
+      "headlineAfter": "reason Anthropic bought Stainless."
     },
     {
       "type": "definition",
@@ -52,7 +53,6 @@
       "total": 6,
       "eyebrow": "WHAT STAINLESS BRINGS",
       "title": "Operationalizing agent reliability",
-      "italicWord": "reliability",
       "bullets": [
         "Structured data handling for LLM inputs and outputs.",
         "Robust tooling for agent state management and error recovery.",
@@ -64,8 +64,7 @@
       "type": "audience",
       "index": 5,
       "total": 6,
-      "title": "Who should care about this *right now*?",
-      "italicWord": "now",
+      "title": "Who should care about this right now?",
       "audiences": [
         {
           "pill": "AI Builders",
@@ -86,7 +85,6 @@
       "index": 6,
       "total": 6,
       "hook": "I break down one critical AI signal every morning.",
-      "italicWord": "critical",
       "ctaKeyword": "BUILD",
       "ctaPromise": "for the field guide",
       "sub": "Get the actual delta on AI, delivered free to your inbox."

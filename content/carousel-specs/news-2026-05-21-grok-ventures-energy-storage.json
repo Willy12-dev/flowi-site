@@ -23,9 +23,10 @@
       "index": 1,
       "total": 7,
       "eyebrow": "GROK",
-      "headline": "This isn't *your* Grok.",
+      "headline": "This isn't",
       "italicWord": "your",
-      "sub": "What Elon's *other* Grok is actually building."
+      "sub": "What Elon's other Grok is actually building.",
+      "headlineAfter": "Grok."
     },
     {
       "type": "definition",
@@ -50,8 +51,7 @@
       "index": 4,
       "total": 7,
       "eyebrow": "FOR BUILDERS",
-      "title": "What This *Doesn't* Mean For You",
-      "italicWord": "Doesn't",
+      "title": "What This Doesn't Mean For You",
       "bullets": [
         "No new Grok LLM features shipped.",
         "This isn't an xAI infrastructure play.",
@@ -63,8 +63,7 @@
       "type": "audience",
       "index": 5,
       "total": 7,
-      "title": "Who *Should* Care",
-      "italicWord": "Should",
+      "title": "Who Should Care",
       "audiences": [
         {
           "pill": "Climate Tech Investors",
@@ -87,8 +86,7 @@
       "type": "cta",
       "index": 7,
       "total": 7,
-      "hook": "Want to stay ahead of the *real* AI news?",
-      "italicWord": "real",
+      "hook": "Want to stay ahead of the real AI news?",
       "ctaKeyword": "GROK",
       "ctaPromise": "for the waitlist",
       "sub": "I debrief one release every morning. One email, no fluff."

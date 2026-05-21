@@ -23,9 +23,10 @@
       "index": 1,
       "total": 7,
       "eyebrow": "Compute Infrastructure Debrief",
-      "headline": "Anthropic just spent $45 billion on compute. Here's the *unglamorous* part.",
+      "headline": "Anthropic just spent $45 billion on compute. Here's the",
       "italicWord": "unglamorous",
-      "sub": "It's not about new models. It's about operationalizing raw power."
+      "sub": "It's not about new models. It's about operationalizing raw power.",
+      "headlineAfter": "part."
     },
     {
       "type": "numbered",
@@ -50,7 +51,7 @@
       "index": 4,
       "total": 7,
       "eyebrow": "The Cost of Scale",
-      "preStat": "Training frontier models takes unprecedented resources. This deal covers years of access, ensuring Anthropic can *ship* future iterations. The actual delta for their compute budget is:",
+      "preStat": "Training frontier models takes unprecedented resources. This deal covers years of access, ensuring Anthropic can ship future iterations. The actual delta for their compute budget is:",
       "stat": "$45B",
       "postStat": "Over an unspecified period, likely 3-5 years, for dedicated GPU clusters.",
       "body": "This is not a one-off payment but a commitment to secure guaranteed capacity in a highly competitive market. It’s the cost of staying in the race."
@@ -60,11 +61,10 @@
       "index": 5,
       "total": 7,
       "title": "Who Should Care",
-      "italicWord": "Builders",
       "audiences": [
         {
           "pill": "AI Founders",
-          "body": "The cost of entry for foundational models just went up. Secure compute isn't a luxury; it's a prerequisite to *operationalize* anything at scale."
+          "body": "The cost of entry for foundational models just went up. Secure compute isn't a luxury; it's a prerequisite to operationalize anything at scale."
         },
         {
           "pill": "Infra Engineers",
@@ -77,8 +77,7 @@
       "index": 6,
       "total": 7,
       "eyebrow": "The Actual Delta",
-      "title": "What This Deal *Does Not* Do",
-      "italicWord": "Not",
+      "title": "What This Deal Does Not Do",
       "bullets": [
         "It doesn't instantly deliver a new model.",
         "It doesn't guarantee a specific performance leap.",
@@ -91,7 +90,6 @@
       "index": 7,
       "total": 7,
       "hook": "Want more debriefs on what actually shipped?",
-      "italicWord": "shipped",
       "ctaKeyword": "GROK",
       "ctaPromise": "for the waitlist",
       "sub": "I break down one AI release every morning. One email, free, no fluff. Link in bio."
