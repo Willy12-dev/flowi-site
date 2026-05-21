@@ -1,0 +1,114 @@
+{
+  "id": "starter-mira-discipline-paradox",
+  "title": "Mira / The Discipline-App Paradox (BCH launch carousel)",
+  "vertical": "ai_behavior",
+  "topic": "behavior-change",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "PLAYBOOK", "promise": "for the link" },
+  "caption": "4 habit apps this year. None lasted past month three.\n\nThis is not willpower. This is architecture.\n\nEvery app runs the same loop — streak, slip, shame, quit. None of them are built on the only model that actually predicts whether behavior change holds. (G. Alan Marlatt. 1985. The research no app reads.)\n\nFour essays on this, compiled into one 27-page field guide. $9.\n\nComment PLAYBOOK or check link in bio.\n\n— mira",
+  "hashtags": [
+    "behaviorchange",
+    "habits",
+    "mensmentalhealth",
+    "relapseprevention",
+    "disciplineapp"
+  ],
+  "slides": [
+    {
+      "type": "storytelling",
+      "index": 1,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/01-hook.png",
+      "paragraphs": [
+        "four habit apps this year.",
+        "none of them lasted past month three.",
+        "you don't have a willpower problem. you have an architecture problem."
+      ],
+      "textPosition": "top",
+      "textAlign": "center"
+    },
+    {
+      "type": "storytelling",
+      "index": 2,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/02-relatable.png",
+      "paragraphs": [
+        "i know — because i used to download them too.",
+        "every productivity book. every '5am club' protocol. every habit tracker with the green checkmarks.",
+        "none of it stuck."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "center"
+    },
+    {
+      "type": "storytelling",
+      "index": 3,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/03-mechanism.png",
+      "paragraphs": [
+        "here's what i learned.",
+        "every habit app runs the same loop: streak. slip. shame. quit.",
+        "the shame is what feeds the loop. not what breaks it."
+      ],
+      "textPosition": "top",
+      "textAlign": "center"
+    },
+    {
+      "type": "storytelling",
+      "index": 4,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/04-research.png",
+      "paragraphs": [
+        "the only model that actually predicts whether behavior change holds is from 1985.",
+        "G. Alan Marlatt. Stanford. Relapse Prevention.",
+        "almost no consumer app is built on it. that's the problem."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "center"
+    },
+    {
+      "type": "storytelling",
+      "index": 5,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/05-action.png",
+      "paragraphs": [
+        "once i stopped looking for the app and started building the architecture, everything changed.",
+        "small. repeated. not extreme.",
+        "the work is boring. that's the point."
+      ],
+      "textPosition": "top",
+      "textAlign": "center"
+    },
+    {
+      "type": "storytelling",
+      "index": 6,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/06-preview.png",
+      "paragraphs": [
+        "i compiled the four essays on this into one 27-page field guide:"
+      ],
+      "bullets": [
+        "why habit apps die at month three",
+        "the discipline-app paradox",
+        "what every recovery app gets wrong about relapse",
+        "the honest list of what's built on real research"
+      ],
+      "textPosition": "top",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 7,
+      "total": 7,
+      "bgImage": "/images/posts/discipline-paradox-mira/07-cta.png",
+      "paragraphs": [
+        "if willpower hasn't worked, the playbook gives you the architecture that does.",
+        "27 pages. one sitting. $9."
+      ],
+      "attribution": "comment PLAYBOOK or link in bio · xoxo, mira",
+      "textPosition": "bottom",
+      "textAlign": "center"
+    }
+  ]
+}
