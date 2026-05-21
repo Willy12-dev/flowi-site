@@ -63,7 +63,7 @@ export function Storytelling({
     textPosition === "top"
       ? "linear-gradient(180deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.60) 26%, rgba(0,0,0,0.25) 44%, rgba(0,0,0,0.0) 64%)"
       : textPosition === "bottom"
-        ? "linear-gradient(180deg, rgba(0,0,0,0.0) 32%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.88) 100%)"
+        ? "linear-gradient(180deg, rgba(0,0,0,0.0) 18%, rgba(0,0,0,0.42) 44%, rgba(0,0,0,0.80) 70%, rgba(0,0,0,0.96) 100%)"
         : "linear-gradient(180deg, rgba(0,0,0,0.56) 0%, rgba(0,0,0,0.14) 34%, rgba(0,0,0,0.14) 64%, rgba(0,0,0,0.66) 100%)";
 
   // Vertical anchor for the overlay text block.
@@ -71,7 +71,7 @@ export function Storytelling({
     textPosition === "top"
       ? { top: 150 }
       : textPosition === "bottom"
-        ? { bottom: 250 }
+        ? { bottom: 215 }
         : { top: 408 };
 
   const itemsAlign =

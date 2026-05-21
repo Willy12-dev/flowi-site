@@ -25,8 +25,8 @@
         "none of them lasted past month three.",
         "you don't have a willpower problem. you have an architecture problem."
       ],
-      "textPosition": "top",
-      "textAlign": "center"
+      "textPosition": "bottom",
+      "textAlign": "left"
     },
     {
       "type": "storytelling",
@@ -39,7 +39,7 @@
         "none of it stuck."
       ],
       "textPosition": "bottom",
-      "textAlign": "center"
+      "textAlign": "left"
     },
     {
       "type": "storytelling",
@@ -51,8 +51,8 @@
         "every habit app runs the same loop: streak. slip. shame. quit.",
         "the shame is what feeds the loop. not what breaks it."
       ],
-      "textPosition": "top",
-      "textAlign": "center"
+      "textPosition": "bottom",
+      "textAlign": "left"
     },
     {
       "type": "storytelling",
@@ -65,7 +65,7 @@
         "almost no consumer app is built on it. that's the problem."
       ],
       "textPosition": "bottom",
-      "textAlign": "center"
+      "textAlign": "left"
     },
     {
       "type": "storytelling",
@@ -77,8 +77,8 @@
         "small. repeated. not extreme.",
         "the work is boring. that's the point."
       ],
-      "textPosition": "top",
-      "textAlign": "center"
+      "textPosition": "bottom",
+      "textAlign": "left"
     },
     {
       "type": "storytelling",
@@ -94,7 +94,7 @@
         "what every recovery app gets wrong about relapse",
         "the honest list of what's built on real research"
       ],
-      "textPosition": "top",
+      "textPosition": "bottom",
       "textAlign": "left"
     },
     {
@@ -108,7 +108,7 @@
       ],
       "attribution": "comment PLAYBOOK or link in bio · xoxo, mira",
       "textPosition": "bottom",
-      "textAlign": "center"
+      "textAlign": "left"
     }
   ]
 }
