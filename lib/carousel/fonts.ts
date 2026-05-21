@@ -14,7 +14,7 @@
  *   - Inter 400 (body sans)
  *   - Inter 600 (body sans semibold)
  *   - JetBrains Mono 400 (eyebrows, code, tables)
- *   - Bodoni Moda 700 (editorial photo-overlay headlines — Storytelling)
+ *   - Bodoni Moda 800 (editorial photo-overlay headlines — Storytelling)
  *   - Bodoni Moda 700 italic (signature / attribution lines)
  *   - DM Sans 500 (photo-overlay handle, eyebrows, bullets)
  */
@@ -22,7 +22,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-type FontWeight = 400 | 500 | 600 | 700;
+type FontWeight = 400 | 500 | 600 | 700 | 800;
 
 interface FontFile {
   name: string;
@@ -66,10 +66,10 @@ const FILES: FontFile[] = [
   },
   {
     name: "BodoniModa",
-    weight: 700,
+    weight: 800,
     style: "normal",
     fontsourcePath:
-      "@fontsource/bodoni-moda/files/bodoni-moda-latin-700-normal.woff2",
+      "@fontsource/bodoni-moda/files/bodoni-moda-latin-800-normal.woff2",
   },
   {
     name: "BodoniModaItalic",

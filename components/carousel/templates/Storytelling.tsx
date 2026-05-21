@@ -31,9 +31,9 @@ const SANS = "DMSans";
  */
 function headlineSize(text: string): number {
   const n = text.length;
-  if (n <= 30) return 58;
-  if (n <= 62) return 44;
-  return 34;
+  if (n <= 32) return 66;
+  if (n <= 64) return 50;
+  return 40;
 }
 
 export function Storytelling({
@@ -61,18 +61,18 @@ export function Storytelling({
   // high-contrast serif hairlines stay legible on any photo.
   const scrim =
     textPosition === "top"
-      ? "linear-gradient(180deg, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.34) 40%, rgba(0,0,0,0.0) 66%)"
+      ? "linear-gradient(180deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.60) 26%, rgba(0,0,0,0.25) 44%, rgba(0,0,0,0.0) 64%)"
       : textPosition === "bottom"
-        ? "linear-gradient(180deg, rgba(0,0,0,0.0) 38%, rgba(0,0,0,0.40) 66%, rgba(0,0,0,0.84) 100%)"
-        : "linear-gradient(180deg, rgba(0,0,0,0.52) 0%, rgba(0,0,0,0.12) 34%, rgba(0,0,0,0.12) 64%, rgba(0,0,0,0.62) 100%)";
+        ? "linear-gradient(180deg, rgba(0,0,0,0.0) 32%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.88) 100%)"
+        : "linear-gradient(180deg, rgba(0,0,0,0.56) 0%, rgba(0,0,0,0.14) 34%, rgba(0,0,0,0.14) 64%, rgba(0,0,0,0.66) 100%)";
 
   // Vertical anchor for the overlay text block.
   const blockPosition: React.CSSProperties =
     textPosition === "top"
-      ? { top: 112 }
+      ? { top: 150 }
       : textPosition === "bottom"
-        ? { bottom: 232 }
-        : { top: 396 };
+        ? { bottom: 250 }
+        : { top: 408 };
 
   const itemsAlign =
     textAlign === "left"
@@ -141,9 +141,9 @@ export function Storytelling({
           bottom: 0,
           left: 0,
           width: W,
-          height: 210,
+          height: 230,
           backgroundImage:
-            "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 100%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.62) 100%)",
         }}
       />
 
@@ -157,14 +157,14 @@ export function Storytelling({
           display: "flex",
           flexDirection: "column",
           alignItems: itemsAlign,
-          gap: 22,
+          gap: 20,
         }}
       >
         {/* Editorial kicker rule — small brand-accent hairline */}
         <div
           style={{
             display: "flex",
-            width: 52,
+            width: 56,
             height: 3,
             backgroundColor: theme.accent,
           }}
@@ -176,9 +176,9 @@ export function Storytelling({
             style={{
               display: "flex",
               fontFamily: SERIF,
-              fontWeight: 700,
+              fontWeight: 800,
               fontSize: headlineSize(p),
-              lineHeight: 1.28,
+              lineHeight: 1.3,
               color: "#FBF8F2",
               textAlign,
               maxWidth: 870,
@@ -216,7 +216,7 @@ export function Storytelling({
                     height: 9,
                     borderRadius: 2,
                     backgroundColor: theme.accent,
-                    marginTop: 14,
+                    marginTop: 16,
                   }}
                 />
                 <div
@@ -224,7 +224,7 @@ export function Storytelling({
                     display: "flex",
                     fontFamily: SANS,
                     fontWeight: 500,
-                    fontSize: 30,
+                    fontSize: 33,
                     lineHeight: 1.42,
                     color: "#F2ECE2",
                   }}
@@ -273,7 +273,7 @@ export function Storytelling({
             fontWeight: 500,
             fontSize: 17,
             letterSpacing: 2.6,
-            color: "rgba(255,255,255,0.66)",
+            color: "rgba(255,255,255,0.86)",
             marginBottom: 14,
           }}
         >
