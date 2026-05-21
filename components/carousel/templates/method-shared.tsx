@@ -94,12 +94,12 @@ export function Check({ d = 32 }: { d?: number }) {
           height: Math.round(d * 0.46),
           borderStyle: "solid",
           borderTopWidth: 0,
-          borderRightWidth: 0,
-          borderLeftWidth: Math.max(3, Math.round(d * 0.12)),
-          borderBottomWidth: Math.max(3, Math.round(d * 0.12)),
+          borderLeftWidth: 0,
+          borderRightWidth: Math.max(3, Math.round(d * 0.13)),
+          borderBottomWidth: Math.max(3, Math.round(d * 0.13)),
           borderColor: "#FFFFFF",
           transform: "rotate(45deg)",
-          marginTop: -Math.round(d * 0.07),
+          marginTop: -Math.round(d * 0.06),
         }}
       />
     </div>

@@ -18,7 +18,7 @@ export function MethodCover({
 }) {
   const W = 1080;
   const H = 1350;
-  const PHOTO = 600;
+  const PHOTO = 680;
 
   return (
     <div
@@ -79,9 +79,9 @@ export function MethodCover({
       <div
         style={{
           position: "absolute",
-          top: 150,
+          top: 138,
           left: 74,
-          width: 824,
+          width: 884,
           display: "flex",
           flexDirection: "column",
         }}
@@ -104,10 +104,10 @@ export function MethodCover({
                   key={j}
                   style={{
                     display: "flex",
-                    fontSize: 70,
+                    fontSize: 82,
                     fontWeight: 800,
-                    lineHeight: 1.14,
-                    letterSpacing: -1.4,
+                    lineHeight: 1.12,
+                    letterSpacing: -1.8,
                     color: runColor(r.accent),
                   }}
                 >

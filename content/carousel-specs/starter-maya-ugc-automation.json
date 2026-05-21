@@ -30,7 +30,7 @@
       "total": 7,
       "stepLabel": "STEP 1",
       "headline": [
-        [{ "t": "START WITH" }],
+        [{ "t": "YOU NEED" }],
         [{ "t": "AN AI" }],
         [{ "t": "AVATAR", "accent": "green" }]
       ],
