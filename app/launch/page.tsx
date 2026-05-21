@@ -65,7 +65,7 @@ const GUIDES: Guide[] = [
       "Names the bottleneck pattern across every production-grade AI system right now",
       "Honest review of Huyen, Pai, Alammar — and the gap none of them fills",
     ],
-    url: "https://flowi.gumroad.com/l/ai-builders-field-guide",
+    url: "https://flowi.gumroad.com/l/ai-builders-field-guide-v1",
     audience: "Engineers shipping AI agents to production this year. CTOs choosing where to invest engineering hours.",
   },
 ];

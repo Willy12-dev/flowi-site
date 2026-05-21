@@ -67,7 +67,7 @@ export const DEFAULT_CTA: ArticleCTA = {
   secondary: {
     prefix: "or grab",
     label: "the field guide (PDF, $9)",
-    href: "https://flowi.gumroad.com/l/ai-builders-field-guide",
+    href: "https://flowi.gumroad.com/l/ai-builders-field-guide-v1",
   },
   external: true,
 };

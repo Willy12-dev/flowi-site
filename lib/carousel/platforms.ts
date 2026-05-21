@@ -266,7 +266,7 @@ function destinationFor(
     case "ai_builder":
       return {
         name: "AI Builder Field Guide",
-        url: "https://flowi.gumroad.com/l/ai-builders-field-guide",
+        url: "https://flowi.gumroad.com/l/ai-builders-field-guide-v1",
         status: "legacy",
       };
     default:

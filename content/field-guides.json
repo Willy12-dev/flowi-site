@@ -34,7 +34,7 @@
       "subtitle": "Four essays on what shipped in AI this month — and what the production patterns mean.",
       "intro": "Compiled from the AI builder vertical of the Flowi Daily Brief. Mozilla using Claude Mythos to harden Firefox, OpenAI gating Spud to defenders, what actually shipped at Code w/ Claude 2026, and an honest review of the AI engineering books worth reading.",
       "vertical": "ai_builder",
-      "gumroadUrl": "https://flowi.gumroad.com/l/ai-builders-field-guide",
+      "gumroadUrl": "https://flowi.gumroad.com/l/ai-builders-field-guide-v1",
       "coverImage": "/images/blog/best-books-for-building-ai-agents-in-2026.jpg",
       "articles": [
         "behind-the-scenes-hardening-firefox-with-claude-mythos",

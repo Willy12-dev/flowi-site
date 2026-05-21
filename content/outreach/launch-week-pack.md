@@ -7,7 +7,7 @@ Three field guides, $9 each through Sunday, $14 from Monday:
 
 - **The Algo Trader's Playbook** — flowi.gumroad.com/l/algo-traders-playbook-v1
 - **The Behavior Change Playbook** — flowi.gumroad.com/l/behavior-change-playbook
-- **The AI Builder's Field Guide** — flowi.gumroad.com/l/ai-builders-field-guide
+- **The AI Builder's Field Guide** — flowi.gumroad.com/l/ai-builders-field-guide-v1
 
 Landing page that pulls them all together: **useflowi.app/launch**
 
@@ -76,7 +76,7 @@ audience's timezone. Pin it to your profile through Sunday.
     Or the individual links:
     → flowi.gumroad.com/l/algo-traders-playbook-v1
     → flowi.gumroad.com/l/behavior-change-playbook
-    → flowi.gumroad.com/l/ai-builders-field-guide
+    → flowi.gumroad.com/l/ai-builders-field-guide-v1
 ```
 
 ---
@@ -335,7 +335,7 @@ What this means for builders:
 I wrote this up properly with three sister essays — on OpenAI's
 vetted-defender tier for Spud, what shipped at Code w/ Claude
 2026, and the AI engineering books worth reading. Field guide
-is $9 through Sunday at flowi.gumroad.com/l/ai-builders-field-guide
+is $9 through Sunday at flowi.gumroad.com/l/ai-builders-field-guide-v1
 (or all three of my launch guides at useflowi.app/launch).
 
 But the actual question I'm curious about for this sub: anyone

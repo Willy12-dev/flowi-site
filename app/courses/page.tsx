@@ -66,7 +66,7 @@ const FIELD_GUIDES: FieldGuide[] = [
     blurb:
       'Compiled from the AI builder vertical. Mozilla using Claude Mythos to harden Firefox, OpenAI gating Spud to defenders, what actually shipped at Code w/ Claude 2026, and an honest review of the AI engineering books worth reading.',
     price: '$9',
-    url: 'https://flowi.gumroad.com/l/ai-builders-field-guide',
+    url: 'https://flowi.gumroad.com/l/ai-builders-field-guide-v1',
     meta: '~5,500 words · 4 essays · PDF',
     vertical: 'ai-builder',
     image: 'https://useflowi.app/images/blog/best-books-for-building-ai-agents-in-2026.jpg',
