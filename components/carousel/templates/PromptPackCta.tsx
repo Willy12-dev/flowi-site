@@ -168,14 +168,14 @@ export function PromptPackCta({
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: 50,
+          marginTop: 46,
         }}
       >
         <div
           style={{
             display: "flex",
             width: 4,
-            height: 46,
+            height: 40,
             borderRadius: 999,
             backgroundColor: PP.orange,
           }}
@@ -183,32 +183,18 @@ export function PromptPackCta({
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
-            marginTop: -6,
+            width: 22,
+            height: 22,
+            borderStyle: "solid",
+            borderTopWidth: 0,
+            borderLeftWidth: 0,
+            borderRightWidth: 5,
+            borderBottomWidth: 5,
+            borderColor: PP.orange,
+            transform: "rotate(45deg)",
+            marginTop: -19,
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              width: 4,
-              height: 24,
-              borderRadius: 999,
-              backgroundColor: PP.orange,
-              transform: "rotate(-45deg)",
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              width: 4,
-              height: 24,
-              borderRadius: 999,
-              backgroundColor: PP.orange,
-              transform: "rotate(45deg)",
-              marginLeft: -3,
-            }}
-          />
-        </div>
+        />
       </div>
     </div>
   );

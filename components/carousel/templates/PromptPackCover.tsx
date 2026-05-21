@@ -17,7 +17,7 @@ export function PromptPackCover({
 }) {
   const W = 1080;
   const H = 1350;
-  const PHOTO = 520;
+  const PHOTO = 560;
 
   // Stat strip children, built flat so there are no React.Fragment wrappers.
   const statNodes: React.ReactNode[] = [];
@@ -150,7 +150,7 @@ export function PromptPackCover({
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          paddingTop: 112,
+          paddingTop: 88,
           paddingLeft: 70,
           paddingRight: 70,
         }}
@@ -165,7 +165,7 @@ export function PromptPackCover({
             backgroundColor: PP.orange,
             alignItems: "center",
             justifyContent: "center",
-            marginBottom: 28,
+            marginBottom: 22,
           }}
         >
           <Starburst size={38} color="#FFFFFF" thickness={4} />
@@ -239,7 +239,7 @@ export function PromptPackCover({
                       display: "flex",
                       fontFamily: PP.serif,
                       fontWeight: 700,
-                      fontSize: big ? 86 : 42,
+                      fontSize: big ? 100 : 46,
                       lineHeight: 1.06,
                       color: r.accent ? PP.orange : PP.ink,
                     }}
@@ -355,8 +355,28 @@ export function PromptPackCover({
               top: 0,
               left: 0,
               width: PHOTO,
-              height: 170,
+              height: 190,
               backgroundImage: `linear-gradient(180deg, ${PP.paper} 0%, rgba(247,242,233,0) 100%)`,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: 140,
+              height: PHOTO,
+              backgroundImage: `linear-gradient(90deg, ${PP.paper} 0%, rgba(247,242,233,0) 100%)`,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              width: 140,
+              height: PHOTO,
+              backgroundImage: `linear-gradient(270deg, ${PP.paper} 0%, rgba(247,242,233,0) 100%)`,
             }}
           />
         </div>
