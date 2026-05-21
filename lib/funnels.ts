@@ -50,7 +50,7 @@ export const FUNNELS: Record<string, ArticleCTA> = {
     secondary: {
       prefix: "or grab",
       label: "the 4-essay playbook (PDF, $9)",
-      href: "https://flowi.gumroad.com/l/behavior-change-playbook",
+      href: "https://flowi.gumroad.com/l/behavior-change-playbook-v1",
     },
     external: true,
   },

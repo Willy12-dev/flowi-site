@@ -52,7 +52,7 @@ const GUIDES: Guide[] = [
       "Names the single cognitive distortion that destroys 70% of recovery attempts",
       "Honest comparison of Habitica, Streaks, Brick, Fortify, Woyuduin",
     ],
-    url: "https://flowi.gumroad.com/l/behavior-change-playbook",
+    url: "https://flowi.gumroad.com/l/behavior-change-playbook-v1",
     audience: "Anyone fighting a compulsive habit who has tried 3+ apps and watched them fail. Builders working on habit, focus, or recovery products.",
   },
   {

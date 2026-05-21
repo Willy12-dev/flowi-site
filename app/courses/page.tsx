@@ -54,7 +54,7 @@ const FIELD_GUIDES: FieldGuide[] = [
     blurb:
       "Compiled from the behavior vertical. Why habit apps don't survive month three, the discipline-app paradox (more apps → worse outcomes), what every recovery app gets wrong about relapse, and an honest comparison of the apps actually built on Marlatt's research.",
     price: '$9',
-    url: 'https://flowi.gumroad.com/l/behavior-change-playbook',
+    url: 'https://flowi.gumroad.com/l/behavior-change-playbook-v1',
     meta: '~5,500 words · 4 essays · PDF',
     vertical: 'behavior',
     image: 'https://useflowi.app/images/blog/why-habit-tracker-apps-dont-survive-the-third-month.jpg',

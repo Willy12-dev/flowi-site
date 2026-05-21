@@ -6,7 +6,7 @@ roughly tracks "easiest to ship today" → "harder, do mid-week."
 Three field guides, $9 each through Sunday, $14 from Monday:
 
 - **The Algo Trader's Playbook** — flowi.gumroad.com/l/algo-traders-playbook-v1
-- **The Behavior Change Playbook** — flowi.gumroad.com/l/behavior-change-playbook
+- **The Behavior Change Playbook** — flowi.gumroad.com/l/behavior-change-playbook-v1
 - **The AI Builder's Field Guide** — flowi.gumroad.com/l/ai-builders-field-guide-v1
 
 Landing page that pulls them all together: **useflowi.app/launch**
@@ -75,7 +75,7 @@ audience's timezone. Pin it to your profile through Sunday.
 
     Or the individual links:
     → flowi.gumroad.com/l/algo-traders-playbook-v1
-    → flowi.gumroad.com/l/behavior-change-playbook
+    → flowi.gumroad.com/l/behavior-change-playbook-v1
     → flowi.gumroad.com/l/ai-builders-field-guide-v1
 ```
 
@@ -265,7 +265,7 @@ I wrote the longer version of this with three sister essays on
 why habit apps fail at month three, the Abstinence Violation
 Effect, and an honest comparison of the apps actually built on
 the right behavioral model. Field guide is $9 through Sunday at
-flowi.gumroad.com/l/behavior-change-playbook. The essays are
+flowi.gumroad.com/l/behavior-change-playbook-v1. The essays are
 free on my blog if you want to read first.
 
 But genuinely curious here: how many self-improvement / habit /
