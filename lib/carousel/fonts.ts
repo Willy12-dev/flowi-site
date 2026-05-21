@@ -13,6 +13,7 @@
  *   - Fraunces 700 italic (italic accent words)
  *   - Inter 400 (body sans)
  *   - Inter 600 (body sans semibold)
+ *   - Inter 800 (heavy display sans — method/prompt-pack headlines)
  *   - JetBrains Mono 400 (eyebrows, code, tables)
  *   - Bodoni Moda 800 (editorial photo-overlay headlines — Storytelling)
  *   - Bodoni Moda 700 italic (signature / attribution lines)
@@ -56,6 +57,12 @@ const FILES: FontFile[] = [
     weight: 600,
     style: "normal",
     fontsourcePath: "@fontsource/inter/files/inter-latin-600-normal.woff2",
+  },
+  {
+    name: "Inter",
+    weight: 800,
+    style: "normal",
+    fontsourcePath: "@fontsource/inter/files/inter-latin-800-normal.woff2",
   },
   {
     name: "JetBrainsMono",

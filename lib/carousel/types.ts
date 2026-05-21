@@ -63,7 +63,10 @@ export type Slide =
   | StorytellingSlide
   | PromptPackCoverSlide
   | PromptPackCardSlide
-  | PromptPackCtaSlide;
+  | PromptPackCtaSlide
+  | MethodCoverSlide
+  | MethodStepSlide
+  | MethodCtaSlide;
 
 interface SlideBase {
   /** 1-indexed position. */
@@ -384,6 +387,59 @@ export interface PromptPackCtaSlide extends SlideBase {
   card: Array<{ t: string; accent?: boolean }>;
 }
 
+/**
+ * 27 — METHOD_COVER. White / bold-sans cover for the method format: a
+ * left-aligned headline with Claude-orange / Higgsfield-green accent runs,
+ * result pills, a steps cue, and the persona photo bottom-right.
+ */
+export interface MethodCoverSlide extends SlideBase {
+  type: "method-cover";
+  /** Headline as lines of styled runs. accent: "orange" | "green". */
+  headline: Array<Array<{ t: string; accent?: "orange" | "green" }>>;
+  /** Result pills. */
+  pills?: string[];
+  /** "here are the steps" cue line. */
+  stepsCue?: string;
+  /** Persona photo. Absolute https:// or root-relative /images/... */
+  photo?: string;
+}
+
+/**
+ * 28 — METHOD_STEP. White / bold-sans step slide: a STEP pill, a heavy
+ * all-caps headline, optional intro, green-checkmark bullets, a callout.
+ */
+export interface MethodStepSlide extends SlideBase {
+  type: "method-step";
+  /** "STEP 1" etc. */
+  stepLabel: string;
+  /** Headline as lines of styled runs. */
+  headline: Array<Array<{ t: string; accent?: "orange" | "green" }>>;
+  /** Optional intro line under the headline. */
+  intro?: string;
+  /** Green-checkmark bullets. */
+  bullets?: string[];
+  /** Light-green callout box text. */
+  callout?: string;
+  /** Optional persona photo, right side. */
+  photo?: string;
+}
+
+/**
+ * 29 — METHOD_CTA. White / bold-sans comment-to-DM close for the method
+ * format. No price — conversion happens in the DM.
+ */
+export interface MethodCtaSlide extends SlideBase {
+  type: "method-cta";
+  /** Word before the keyword, e.g. "COMMENT". */
+  pre: string;
+  /** The keyword, e.g. "UGC" (rendered in quotes). */
+  keyword: string;
+  /** Word after the keyword, e.g. "BELOW". */
+  post: string;
+  /** What-you-get lines. One per entry; accent → green. */
+  card: Array<{ t: string; accent?: boolean }>;
+}
+
 export const SLIDE_TYPES = [
   "cover",
   "code",
@@ -411,4 +467,7 @@ export const SLIDE_TYPES = [
   "promptpack-cover",
   "promptpack-card",
   "promptpack-cta",
+  "method-cover",
+  "method-step",
+  "method-cta",
 ] as const;

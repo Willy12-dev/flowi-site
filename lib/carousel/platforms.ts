@@ -212,6 +212,30 @@ function slideToProse(slide: Slide): string {
       const head = `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
       return `${head}\n\n${slide.card.map((l) => l.t).join(" ")}`;
     }
+    case "method-cover": {
+      const lines = slide.headline
+        .map((l) => l.map((r) => r.t).join(" "))
+        .join(" ");
+      return [lines, (slide.pills ?? []).join(" · "), slide.stepsCue]
+        .filter(Boolean)
+        .join("\n\n");
+    }
+    case "method-step": {
+      const head = slide.headline
+        .map((l) => l.map((r) => r.t).join(" "))
+        .join(" ");
+      const intro = slide.intro ? `\n\n${slide.intro}` : "";
+      const bul =
+        slide.bullets && slide.bullets.length > 0
+          ? `\n\n${slide.bullets.map((b) => `- ${b}`).join("\n")}`
+          : "";
+      const callout = slide.callout ? `\n\n${slide.callout}` : "";
+      return `**${slide.stepLabel} — ${head}**${intro}${bul}${callout}`;
+    }
+    case "method-cta": {
+      const head = `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
+      return `${head}\n\n${slide.card.map((l) => l.t).join(" ")}`;
+    }
   }
 }
 
@@ -273,6 +297,14 @@ function slideHeadline(slide: Slide): string {
     case "promptpack-card":
       return slide.title.map((r) => r.t).join(" ");
     case "promptpack-cta":
+      return `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
+    case "method-cover":
+      return slide.headline.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+    case "method-step":
+      return `${slide.stepLabel}: ${slide.headline
+        .map((l) => l.map((r) => r.t).join(" "))
+        .join(" ")}`;
+    case "method-cta":
       return `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
   }
 }

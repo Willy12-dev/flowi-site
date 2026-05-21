@@ -1,0 +1,125 @@
+{
+  "id": "maya-ugc-automation",
+  "title": "Maya / Claude + Higgsfield UGC Automation",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "UGC", "promise": "for the workflow" },
+  "caption": "Most brands still think UGC means hiring creators, shipping product, and waiting weeks for content. It doesn't anymore.\n\nHere's the system: Claude + Higgsfield, running together, producing unlimited UGC content — fully automated, under $50 a month.\n\nThe 5 steps (they're all on the slides):\n\n1. Start with an AI avatar — a new influencer or a clone of you\n2. Create the character — one consistent face, locked forever\n3. Build the persona — Claude defines the niche, voice and content\n4. Connect Claude to Higgsfield — Claude writes, Higgsfield generates\n5. Ship it every day — fresh content on autopilot\n\nNo filming. No creators. No burnout. One person running a whole content brand.\n\nComment UGC and I'll send you the exact workflow to set it up.\n\n— maya",
+  "hashtags": ["ugc", "aicontent", "aiinfluencer", "contentautomation", "claudeai"],
+  "slides": [
+    {
+      "type": "method-cover",
+      "index": 1,
+      "total": 7,
+      "headline": [
+        [{ "t": "This is how" }],
+        [{ "t": "Claude", "accent": "orange" }, { "t": "+" }, { "t": "Higgsfield", "accent": "green" }],
+        [{ "t": "make unlimited" }],
+        [{ "t": "UGC content" }],
+        [{ "t": "fully automated." }]
+      ],
+      "pills": ["FULLY AUTOMATED", "UNDER $50 / MONTH"],
+      "stepsCue": "here are the steps",
+      "photo": "/images/posts/maya-ugc/cover.jpg"
+    },
+    {
+      "type": "method-step",
+      "index": 2,
+      "total": 7,
+      "stepLabel": "STEP 1",
+      "headline": [
+        [{ "t": "START WITH" }],
+        [{ "t": "AN AI" }],
+        [{ "t": "AVATAR", "accent": "green" }]
+      ],
+      "intro": "A face that posts for you — forever.",
+      "bullets": ["a brand-new AI influencer", "or a digital clone of you"],
+      "callout": "Once it's built, the content engine runs without you ever on camera.",
+      "photo": "/images/posts/maya-ugc/step1.jpg"
+    },
+    {
+      "type": "method-step",
+      "index": 3,
+      "total": 7,
+      "stepLabel": "STEP 2",
+      "headline": [
+        [{ "t": "CREATE THE" }],
+        [{ "t": "CHARACTER", "accent": "green" }]
+      ],
+      "intro": "Generate one consistent face you'll use on every post.",
+      "bullets": [
+        "realism + natural skin texture",
+        "consistent lighting and identity",
+        "the same face, every single time"
+      ],
+      "callout": "Higgsfield's Soul Character locks the face so it never drifts."
+    },
+    {
+      "type": "method-step",
+      "index": 4,
+      "total": 7,
+      "stepLabel": "STEP 3",
+      "headline": [
+        [{ "t": "BUILD THE" }],
+        [{ "t": "PERSONA", "accent": "green" }]
+      ],
+      "intro": "Tell Claude exactly who she is.",
+      "bullets": [
+        "the niche and the audience",
+        "the personality and tone of voice",
+        "the content pillars she posts on"
+      ],
+      "callout": "Claude then writes the scripts, hooks and captions — automatically."
+    },
+    {
+      "type": "method-step",
+      "index": 5,
+      "total": 7,
+      "stepLabel": "STEP 4",
+      "headline": [
+        [{ "t": "CONNECT" }],
+        [{ "t": "CLAUDE", "accent": "orange" }, { "t": "TO" }],
+        [{ "t": "HIGGSFIELD", "accent": "green" }]
+      ],
+      "intro": "Two tools, one pipeline.",
+      "bullets": [
+        "Claude writes the prompts, scenes and concepts",
+        "Higgsfield generates the actual images and videos"
+      ],
+      "callout": "That's the whole loop — a content system that runs itself."
+    },
+    {
+      "type": "method-step",
+      "index": 6,
+      "total": 7,
+      "stepLabel": "STEP 5",
+      "headline": [
+        [{ "t": "SHIP IT" }],
+        [{ "t": "EVERY" }],
+        [{ "t": "DAY", "accent": "green" }]
+      ],
+      "intro": "The loop runs daily — you just review and post.",
+      "bullets": [
+        "fresh UGC every morning",
+        "weeks of content in one afternoon",
+        "zero filming, zero burnout"
+      ],
+      "callout": "This is how one person runs an entire content brand."
+    },
+    {
+      "type": "method-cta",
+      "index": 7,
+      "total": 7,
+      "pre": "COMMENT",
+      "keyword": "UGC",
+      "post": "BELOW",
+      "card": [
+        { "t": "and I'll send you" },
+        { "t": "the exact workflow", "accent": true },
+        { "t": "to set this up." }
+      ]
+    }
+  ]
+}

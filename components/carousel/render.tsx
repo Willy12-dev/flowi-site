@@ -35,6 +35,9 @@ import { Storytelling } from "./templates/Storytelling";
 import { PromptPackCover } from "./templates/PromptPackCover";
 import { PromptPackCard } from "./templates/PromptPackCard";
 import { PromptPackCta } from "./templates/PromptPackCta";
+import { MethodCover } from "./templates/MethodCover";
+import { MethodStep } from "./templates/MethodStep";
+import { MethodCta } from "./templates/MethodCta";
 
 export function renderSlide(
   slide: Slide,
@@ -94,5 +97,11 @@ export function renderSlide(
       return <PromptPackCard slide={slide} theme={theme} handle={handle} />;
     case "promptpack-cta":
       return <PromptPackCta slide={slide} theme={theme} handle={handle} />;
+    case "method-cover":
+      return <MethodCover slide={slide} theme={theme} handle={handle} />;
+    case "method-step":
+      return <MethodStep slide={slide} theme={theme} handle={handle} />;
+    case "method-cta":
+      return <MethodCta slide={slide} theme={theme} handle={handle} />;
   }
 }
