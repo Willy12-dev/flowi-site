@@ -59,7 +59,8 @@ export type Slide =
   | BadgeSlide
   | FakeTweetSlide
   | PhotoFrameSlide
-  | ResultsPosterSlide;
+  | ResultsPosterSlide
+  | StorytellingSlide;
 
 interface SlideBase {
   /** 1-indexed position. */
@@ -301,6 +302,33 @@ export interface ResultsPosterSlide extends SlideBase {
   cta?: string;
 }
 
+/**
+ * 23 — STORYTELLING. Full-bleed photo + white-serif paragraph overlay.
+ * The format the Ava-style transformation carousels use: a recurring
+ * persona (Soul Character) appears in different scenes per slide, with
+ * personal-narrative copy floating in white italic serif over a soft
+ * dark gradient for legibility. Used for first-person narrative arcs
+ * (origin story → realization → action → result → CTA).
+ */
+export interface StorytellingSlide extends SlideBase {
+  type: "storytelling";
+  /** Full-bleed background image — required. Absolute https:// URL or root-relative /images/... */
+  bgImage: string;
+  /**
+   * Multi-paragraph text overlay. Each entry renders as a separate
+   * paragraph with line spacing between. Use for the personal narrative.
+   */
+  paragraphs: string[];
+  /** Position the text block on the slide. Defaults to "top". */
+  textPosition?: "top" | "center" | "bottom";
+  /** Horizontal alignment of the text. Defaults to "center". */
+  textAlign?: "left" | "center" | "right";
+  /** Optional italic signoff — "xoxo — mira" style. */
+  attribution?: string;
+  /** Optional bullet list rendered after the paragraphs ("I'm exposing:" pattern). */
+  bullets?: string[];
+}
+
 export const SLIDE_TYPES = [
   "cover",
   "code",
@@ -324,4 +352,5 @@ export const SLIDE_TYPES = [
   "fake-tweet",
   "photo-frame",
   "results",
+  "storytelling",
 ] as const;

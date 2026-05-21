@@ -187,6 +187,14 @@ function slideToProse(slide: Slide): string {
       return `${slide.salutation}\n\n${slide.body}${slide.signoff ? `\n\n${slide.signoff}` : ""}`;
     case "cta":
       return `${slide.hook} ${slide.italicWord ?? ""} ${slide.hookAfter ?? ""} — ${slide.sub ?? ""}`.trim();
+    case "storytelling": {
+      const body = slide.paragraphs.join("\n\n");
+      const bullets = slide.bullets && slide.bullets.length > 0
+        ? `\n\n${slide.bullets.map((b) => `- ${b}`).join("\n")}`
+        : "";
+      const sig = slide.attribution ? `\n\n${slide.attribution}` : "";
+      return `${body}${bullets}${sig}`;
+    }
   }
 }
 
@@ -239,6 +247,8 @@ function slideHeadline(slide: Slide): string {
       return `${slide.salutation} ${slide.body.split("\n")[0]}`;
     case "cta":
       return `${slide.hook} ${slide.italicWord ?? ""} ${slide.hookAfter ?? ""}`.trim();
+    case "storytelling":
+      return slide.paragraphs[0] ?? "";
   }
 }
 

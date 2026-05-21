@@ -31,6 +31,7 @@ import { Badge } from "./templates/Badge";
 import { FakeTweet } from "./templates/FakeTweet";
 import { PhotoFrame } from "./templates/PhotoFrame";
 import { ResultsPoster } from "./templates/ResultsPoster";
+import { Storytelling } from "./templates/Storytelling";
 
 export function renderSlide(
   slide: Slide,
@@ -82,5 +83,7 @@ export function renderSlide(
       return <PhotoFrame slide={slide} theme={theme} handle={handle} />;
     case "results":
       return <ResultsPoster slide={slide} theme={theme} handle={handle} />;
+    case "storytelling":
+      return <Storytelling slide={slide} theme={theme} handle={handle} />;
   }
 }
