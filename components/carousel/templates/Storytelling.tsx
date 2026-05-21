@@ -28,6 +28,13 @@ export function Storytelling({
   const textPosition = slide.textPosition ?? "top";
   const textAlign = slide.textAlign ?? "center";
 
+  // Satori in Vercel's serverless context can't resolve root-relative
+  // image paths — it needs an absolute URL to fetch. Promote /images/...
+  // to the deployed origin.
+  const bgSrc = slide.bgImage.startsWith("/")
+    ? `https://useflowi.app${slide.bgImage}`
+    : slide.bgImage;
+
   // Gradient is positioned to darken the area the text sits over, so the
   // copy stays legible against any photographic background.
   const gradient =
@@ -68,7 +75,7 @@ export function Storytelling({
       {/* Full-bleed photo background */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={slide.bgImage}
+        src={bgSrc}
         alt=""
         width={W}
         height={H}
@@ -119,7 +126,6 @@ export function Storytelling({
               lineHeight: 1.32,
               color: "#fff",
               textAlign,
-              textShadow: "0 2px 12px rgba(0,0,0,0.6)",
               maxWidth: 900,
             }}
           >
@@ -147,8 +153,7 @@ export function Storytelling({
                   fontSize: 32,
                   lineHeight: 1.32,
                   color: "#fff",
-                  textShadow: "0 2px 12px rgba(0,0,0,0.6)",
-                  maxWidth: 880,
+                      maxWidth: 880,
                 }}
               >
                 • {b}
@@ -166,7 +171,6 @@ export function Storytelling({
               fontStyle: "italic",
               fontSize: 28,
               color: "rgba(255,255,255,0.88)",
-              textShadow: "0 2px 8px rgba(0,0,0,0.55)",
             }}
           >
             {slide.attribution}
@@ -193,7 +197,6 @@ export function Storytelling({
             fontFamily: theme.fonts.body,
             fontSize: 20,
             color: "rgba(255,255,255,0.65)",
-            textShadow: "0 1px 4px rgba(0,0,0,0.55)",
             marginBottom: 14,
           }}
         >
