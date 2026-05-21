@@ -116,17 +116,21 @@ export async function loadFonts(): Promise<LoadedFont[]> {
     try {
       bytes = await fs.readFile(fullPath);
     } catch (e) {
-      throw new Error(
-        `Font not found at ${fullPath}: ${(e as Error).message}. Run \`npm install @fontsource/fraunces @fontsource/inter @fontsource/jetbrains-mono @fontsource/bodoni-moda @fontsource/dm-sans\`.`
+      // Resilient: a missing font file degrades gracefully (Satori falls
+      // back to a loaded weight) instead of 500-ing every carousel render.
+      console.warn(
+        `[fonts] skipped — not found: ${f.fontsourcePath} (${(e as Error).message})`
       );
+      continue;
     }
     let ttf: Uint8Array;
     try {
       ttf = await wawoff.decompress(bytes);
     } catch (e) {
-      throw new Error(
-        `Failed decompressing ${f.fontsourcePath}: ${(e as Error).message}`
+      console.warn(
+        `[fonts] skipped — decompress failed: ${f.fontsourcePath} (${(e as Error).message})`
       );
+      continue;
     }
     out.push({
       name: f.name,

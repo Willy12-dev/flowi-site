@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  // Force the @fontsource woff2 files into the serverless functions that
+  // render carousels — they are read at runtime via fs and would otherwise
+  // be missed by file tracing (causing loadFonts to skip weights in prod).
+  outputFileTracingIncludes: {
+    "/api/**": ["./node_modules/@fontsource/**/*.woff2"],
+  },
   async headers() {
     return [
       {
