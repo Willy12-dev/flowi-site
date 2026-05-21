@@ -1,0 +1,103 @@
+{
+  "id": "news-2026-05-21-spacex-anthropic-compute-deal",
+  "title": "SpaceX's Compute Play: What it means for AI builders",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about the SpaceX-Anthropic deal, but almost nobody noticed the part that actually matters for builders.\n\nThis isn't a story about new AI capabilities. It’s about infrastructure, pure and simple. SpaceX is now effectively a massive GPU farm, directly supplying compute to Anthropic. For anyone operationalizing AI, this is a significant signal: the raw compute layer is becoming increasingly commoditized and diversified. We're seeing more players enter the critical supply chain for large model training and inference.\n\nIn practice, this means less reliance on the handful of hyperscalers for your base processing power. It validates a future where dedicated compute providers, even unexpected ones like SpaceX, compete to offer cycles. For dev teams, this shifts the focus from 'how do we get enough GPUs?' to 'how do we efficiently deploy what we have?' The unglamorous part of shipping AI just got a new, major player.\n\nI break down one of these releases every morning — what shipped, what it means for builders, and what to do by Friday. Link in bio for the field guide.",
+  "hashtags": [
+    "AICoding",
+    "AIBuilders",
+    "LLMDevelopment",
+    "Anthropic",
+    "GPUCompute"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "The Supply Chain",
+      "headline": "Everyone's talking about the Anthropic deal. Missed the *real* headline.",
+      "italicWord": "real",
+      "sub": "It's about infrastructure, not just AI capabilities."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "The Actual Delta",
+      "body": "SpaceX is supplying compute resources to Anthropic. This isn't just a capital injection; it's a massive GPU farm becoming a service. For builders, it means critical infrastructure is diversifying."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "What This Means",
+      "term": "Compute Utility",
+      "partOfSpeech": "concept.",
+      "definition": "The provision of raw processing power, often GPUs, as a commoditized service, decoupled from specific AI models or cloud providers.",
+      "example": "SpaceX selling cycles to Anthropic, much like AWS sells EC2 instances."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "For Builders",
+      "title": "Operationalizing Scale",
+      "italicWord": "operationalizing",
+      "bullets": [
+        "Less dependency on hyperscalers for raw compute.",
+        "Potential for more competitive pricing long-term.",
+        "Focus shifts to efficient model deployment, not procurement."
+      ],
+      "footer": "The unglamorous part of shipping AI just got a new player."
+    },
+    {
+      "type": "grid",
+      "index": 5,
+      "total": 6,
+      "title": "Implications by Friday",
+      "italicWord": "Friday",
+      "cols": 2,
+      "cards": [
+        {
+          "number": "01",
+          "title": "Diversified Supply",
+          "body": "Adds a new major provider to the GPU market, easing some bottlenecks."
+        },
+        {
+          "number": "02",
+          "title": "Infrastructure Focus",
+          "body": "Validates dedicated compute providers outside traditional cloud."
+        },
+        {
+          "number": "03",
+          "title": "Cost Pressure",
+          "body": "More competition could eventually drive down base compute costs."
+        },
+        {
+          "number": "04",
+          "title": "New Partnerships",
+          "body": "Expect more custom compute deals for large AI labs."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "The real work happens when you know what to build.",
+      "italicWord": "build",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get my daily debriefs on AI releases."
+    }
+  ]
+}

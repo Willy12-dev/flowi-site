@@ -1,0 +1,100 @@
+{
+  "id": "news-2026-05-21-xai-grok-memphis-data-center",
+  "title": "xAI's $2.8B Data Center: The Unglamorous Reality",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Everyone's posting about xAI's new $2.8 billion data center. Almost nobody noticed the part that actually matters.\n\nxAI's latest move to sink $2.8 billion into a Memphis data center isn't about flashy new Grok features. This 'turbine spend' is the unglamorous, foundational work of securing physical infrastructure: power, cooling, and compute capacity. It’s what allows them to *operationalize* their models at a scale that isn't just a demo.\n\nBut the actual delta here isn't just the dollar figure. The Memphis site is already facing legal challenges and regulatory scrutiny, particularly around energy consumption and local impact. This is the part of scaling AI that rarely makes the headlines but dictates real-world viability. Builders need to understand that infrastructure isn't just buying GPUs; it's navigating permits, power grids, and local politics.\n\nSo, what does this mean for you? If you're building with AI, understand that the path to shipping reliable, always-on systems is paved with these exact unglamorous challenges. It's about systematizing the bedrock before you can even think about scaling. Demos are easy; consistent, robust deployment is not.\n\nI break down one AI release every morning — one email, free, no fluff. Check the link in bio.",
+  "hashtags": [
+    "grok",
+    "xai",
+    "aiinfrastructure",
+    "aidevelopment",
+    "llm"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "xAI's Infrastructure Play",
+      "headline": "xAI just committed $2.8 billion. The real story isn't the *money*.",
+      "italicWord": "money",
+      "sub": "It's the unglamorous part of scaling AI that no one talks about."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Headline Number",
+      "body": "xAI plans a $2.8 billion investment in a Memphis data center. This capital goes into 'turbines' — code for serious infrastructure to power Grok's future models."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "Operational Reality",
+      "term": "Turbine Spend",
+      "partOfSpeech": "noun.",
+      "definition": "Capital expenditure on physical infrastructure (power, cooling, compute) required to operationalize large-scale AI models. The often-overlooked cost of actually *shipping* at scale.",
+      "example": "The $2.8 billion turbine spend for xAI's Memphis data center."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "The Actual Delta",
+      "title": "Beyond the Big Number",
+      "italicWord": "risks",
+      "bullets": [
+        "Memphis site faces mounting legal challenges.",
+        "Regulatory scrutiny on energy consumption and local impact.",
+        "Operationalizing at scale means navigating these external *risks*."
+      ],
+      "footer": "This is the unglamorous part of building."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Cares?",
+      "italicWord": "operationalize",
+      "audiences": [
+        {
+          "pill": "AI Founders",
+          "body": "Scaling isn't just compute. It's permits, power, and local politics. Plan for this early."
+        },
+        {
+          "pill": "Builders & Devs",
+          "body": "Your model needs a home. Infrastructure choices dictate latency, cost, and legal exposure."
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "The Takeaway",
+      "preStat": "What this *doesn't* do:",
+      "stat": "0 new features",
+      "postStat": "for Grok by Friday. This is about foundational infrastructure, not immediate product releases.",
+      "body": "Systematizing before scaling means securing the bedrock. Demos are easy; shipping reliable, always-on AI is not."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to know what *actually* ships in AI?",
+      "italicWord": "ships",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "I break down one AI release every morning. One email, free, no fluff."
+    }
+  ]
+}

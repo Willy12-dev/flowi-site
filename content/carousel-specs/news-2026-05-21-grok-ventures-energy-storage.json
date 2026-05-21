@@ -1,0 +1,97 @@
+{
+  "id": "news-2026-05-21-grok-ventures-energy-storage",
+  "title": "Grok Ventures Backs Energy Storage: Not the Grok You Think",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Everyone's talking about 'Grok' today, but almost nobody noticed the part that actually matters for AI builders. This isn't about xAI's chatbot. Grok Ventures, an entirely separate entity founded by Atlassian's Mike Cannon-Brookes, just backed a massive 5 GWh thermal energy storage project in the US.\n\nIn practice, this means zero change to your AI workflow by Friday. No new LLM features, no infrastructure shifts for xAI, and certainly no impact on your inference costs. It's a significant climate tech investment, crucial for grid stability and renewable integration, but it's not an AI model story.\n\nThe unglamorous part of building with AI is knowing what news to filter out. Demos lie; shipped things don't. While energy infrastructure is critical for the broader tech ecosystem, conflating this with advancements in AI models is a common pitfall. The teams that win systematize before they scale, and that includes systematizing your news intake.\n\nI break down one AI release every morning — one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "grok",
+    "xai",
+    "aiinvesting",
+    "energytech",
+    "venturecapital"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "GROK",
+      "headline": "This isn't *your* Grok.",
+      "italicWord": "your",
+      "sub": "What Elon's *other* Grok is actually building."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "THE TWO GROKS",
+      "term": "Grok Ventures",
+      "partOfSpeech": "noun.",
+      "definition": "An Australian investment firm founded by Mike Cannon-Brookes, co-founder of Atlassian. Focuses on climate tech, not AI models.",
+      "example": "Grok Ventures recently backed a 5 GWh thermal energy storage project in the US."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "01",
+      "title": "The Energy Project",
+      "body": "Grok Ventures is investing in a 5 GWh thermal energy storage facility. This project aims to stabilize grids with long-duration energy. It's about renewables, not large language models."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "FOR BUILDERS",
+      "title": "What This *Doesn't* Mean For You",
+      "italicWord": "Doesn't",
+      "bullets": [
+        "No new Grok LLM features shipped.",
+        "This isn't an xAI infrastructure play.",
+        "Your inference costs aren't changing Monday."
+      ],
+      "footer": "The actual delta for your AI workflow is zero."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who *Should* Care",
+      "italicWord": "Should",
+      "audiences": [
+        {
+          "pill": "Climate Tech Investors",
+          "body": "A significant investment in a critical green energy infrastructure project. Shows capital moving into long-duration storage."
+        },
+        {
+          "pill": "Energy Grid Operators",
+          "body": "5 GWh capacity is substantial. It signals a tangible shift towards more resilient, renewable-powered grids."
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "index": 6,
+      "total": 7,
+      "quote": "Operationalizing AI means knowing when news impacts your stack, and when it's just noise. This is the latter for most AI builders. Focus on the changelogs that actually ship code.",
+      "attribution": "Maya, Flowi AI Engineer"
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to stay ahead of the *real* AI news?",
+      "italicWord": "real",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "I debrief one release every morning. One email, no fluff."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "news-2026-05-21-anthropic-stainless-agentic-infra",
+  "title": "Anthropic's Stainless acquisition: The unglamorous part of agentic AI",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's posting about Anthropic's Stainless acquisition. Almost nobody noticed the part that actually matters for shipping reliable AI agents.\n\nAnthropic just bought Stainless, and if you're building with agents, this is a signal. The headlines will focus on 'agentic AI competition,' but the actual delta here isn't about new models. Stainless built LLM-native data infrastructure. Think of it as the unglamorous but critical plumbing that makes agents work in production, not just in demos.\n\nThe reality of agentic workflows is messy: managing state, ensuring data quality, handling tool outputs, and recovering from errors. These are the problems Stainless aimed to solve. Anthropic acquiring this capability shows a clear understanding that reliable agents require robust systems, not just bigger LLMs.\n\nFor builders, this means focusing on the infrastructure layer is no longer optional. If you’re pushing agents to production, you need to operationalize data handling and error recovery with the same rigor you apply to model selection. Demos lie; shipped things don't. This move by Anthropic underscores that systematizing data flows is foundational for scaling agentic applications.\n\nI break one of these down every morning – one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "anthropic",
+    "aiagents",
+    "llms",
+    "aidevelopment",
+    "agenticai"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ANTHROPIC'S ACQUISITION DECODED",
+      "headline": "Everyone missed the *real* reason Anthropic bought Stainless.",
+      "italicWord": "real",
+      "sub": "Why agent reliability, not just competition, drove the deal."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 6,
+      "eyebrow": "THE ACQUISITION",
+      "term": "Stainless",
+      "partOfSpeech": "noun.",
+      "definition": "A startup specializing in LLM-native data infrastructure, designed to manage, structure, and ensure the reliability of data for complex agentic workflows.",
+      "example": "Crucial for systems where agents interact with external tools or databases, ensuring consistent outputs and error recovery."
+    },
+    {
+      "type": "step",
+      "index": 3,
+      "total": 6,
+      "stepNumber": "01",
+      "stepLabel": "THE PROBLEM",
+      "title": "Agent demos look great. Production agents often break.",
+      "body": "The unglamorous truth: building reliable AI agents means dealing with messy data, inconsistent tool calls, and state management. This is where most agent projects falter."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "WHAT STAINLESS BRINGS",
+      "title": "Operationalizing agent reliability",
+      "italicWord": "reliability",
+      "bullets": [
+        "Structured data handling for LLM inputs and outputs.",
+        "Robust tooling for agent state management and error recovery.",
+        "Reduced hallucination and failure rates in complex agentic chains."
+      ],
+      "footer": "This is the plumbing that makes agents dependable, not just flashy."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "Who should care about this *right now*?",
+      "italicWord": "now",
+      "audiences": [
+        {
+          "pill": "AI Builders",
+          "body": "If you're shipping agents, you know the pain of unreliability. This signals a need to invest in your own data infrastructure."
+        },
+        {
+          "pill": "AI Founders",
+          "body": "Your first agent customers will demand consistency. Don't scale until you've systematized these core data challenges."
+        },
+        {
+          "pill": "Dev Leads",
+          "body": "Evaluate your current agent stack. Are you building custom data layers or relying on ad-hoc solutions? There's a better way."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "I break down one critical AI signal every morning.",
+      "italicWord": "critical",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get the actual delta on AI, delivered free to your inbox."
+    }
+  ]
+}
