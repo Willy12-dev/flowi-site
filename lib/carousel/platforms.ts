@@ -636,13 +636,13 @@ function personaFor(spec: CarouselSpec): {
       };
     case "ai_behavior":
       return {
-        name: "Daniel (men's therapist)",
-        first: "Daniel",
-        soul: "daniel",
-        ref: "public/images/personas/daniel-hero.jpg",
-        pronoun: "he",
-        world: "warm tungsten-lit study, deep brown, grounded, intimate",
-        music: "warm ambient piano, slow, reassuring",
+        name: "Mira (luxury lifestyle advisor)",
+        first: "Mira",
+        soul: "mira",
+        ref: "public/images/personas/mira-hero.png",
+        pronoun: "she",
+        world: "warm Mediterranean-coded minimalist interior, cream walls + light wood, soft natural window light, subtle terracotta accents",
+        music: "warm acoustic guitar, soft sun-soaked, contemplative",
       };
     default:
       return {
