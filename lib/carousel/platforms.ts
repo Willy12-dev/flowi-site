@@ -195,6 +195,23 @@ function slideToProse(slide: Slide): string {
       const sig = slide.attribution ? `\n\n${slide.attribution}` : "";
       return `${body}${bullets}${sig}`;
     }
+    case "promptpack-cover": {
+      const lines = slide.headline
+        .map((l) => ("divider" in l ? l.divider : l.runs.map((r) => r.t).join(" ")))
+        .join(" ");
+      const stats = (slide.stats ?? [])
+        .map((s) => `${s.value} ${s.label}${s.sub ? ` ${s.sub}` : ""}`)
+        .join(" · ");
+      return [lines, stats, slide.pill].filter(Boolean).join("\n\n");
+    }
+    case "promptpack-card": {
+      const head = slide.title.map((r) => r.t).join(" ");
+      return `**${head}**\n\n${slide.promptParagraphs.join("\n\n")}`;
+    }
+    case "promptpack-cta": {
+      const head = `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
+      return `${head}\n\n${slide.card.map((l) => l.t).join(" ")}`;
+    }
   }
 }
 
@@ -249,6 +266,14 @@ function slideHeadline(slide: Slide): string {
       return `${slide.hook} ${slide.italicWord ?? ""} ${slide.hookAfter ?? ""}`.trim();
     case "storytelling":
       return slide.paragraphs[0] ?? "";
+    case "promptpack-cover":
+      return slide.headline
+        .map((l) => ("divider" in l ? l.divider : l.runs.map((r) => r.t).join(" ")))
+        .join(" ");
+    case "promptpack-card":
+      return slide.title.map((r) => r.t).join(" ");
+    case "promptpack-cta":
+      return `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
   }
 }
 

@@ -32,6 +32,9 @@ import { FakeTweet } from "./templates/FakeTweet";
 import { PhotoFrame } from "./templates/PhotoFrame";
 import { ResultsPoster } from "./templates/ResultsPoster";
 import { Storytelling } from "./templates/Storytelling";
+import { PromptPackCover } from "./templates/PromptPackCover";
+import { PromptPackCard } from "./templates/PromptPackCard";
+import { PromptPackCta } from "./templates/PromptPackCta";
 
 export function renderSlide(
   slide: Slide,
@@ -85,5 +88,11 @@ export function renderSlide(
       return <ResultsPoster slide={slide} theme={theme} handle={handle} />;
     case "storytelling":
       return <Storytelling slide={slide} theme={theme} handle={handle} />;
+    case "promptpack-cover":
+      return <PromptPackCover slide={slide} theme={theme} handle={handle} />;
+    case "promptpack-card":
+      return <PromptPackCard slide={slide} theme={theme} handle={handle} />;
+    case "promptpack-cta":
+      return <PromptPackCta slide={slide} theme={theme} handle={handle} />;
   }
 }

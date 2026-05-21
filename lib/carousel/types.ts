@@ -60,7 +60,10 @@ export type Slide =
   | FakeTweetSlide
   | PhotoFrameSlide
   | ResultsPosterSlide
-  | StorytellingSlide;
+  | StorytellingSlide
+  | PromptPackCoverSlide
+  | PromptPackCardSlide
+  | PromptPackCtaSlide;
 
 interface SlideBase {
   /** 1-indexed position. */
@@ -329,6 +332,58 @@ export interface StorytellingSlide extends SlideBase {
   bullets?: string[];
 }
 
+/**
+ * 24 — PROMPTPACK_COVER. Result-led hook for the prompt-pack format (cream
+ * paper, warm orange, serif). Logo badge, multi-line accent headline, an
+ * optional "Result?" divider, a stat strip, a value pill, persona photo.
+ */
+export interface PromptPackCoverSlide extends SlideBase {
+  type: "promptpack-cover";
+  /** Headline as a sequence of lines: styled-run lines, or a divider label. */
+  headline: Array<
+    | { divider: string }
+    | { runs: Array<{ t: string; accent?: boolean }>; size?: "sm" | "lg" }
+  >;
+  /** Up to two stats shown in the strip. */
+  stats?: Array<{ value: string; label: string; sub?: string }>;
+  /** White value-pill text. */
+  pill?: string;
+  /** Persona photo (cream-bg portrait). Absolute https:// or root-relative /images/... */
+  photo?: string;
+}
+
+/**
+ * 25 — PROMPTPACK_CARD. One named step of a prompt-pack: a two-tone all-caps
+ * title and the actual Claude prompt shown inside a chat-window card.
+ */
+export interface PromptPackCardSlide extends SlideBase {
+  type: "promptpack-card";
+  /** Two-tone all-caps section title as styled runs. */
+  title: Array<{ t: string; accent?: boolean }>;
+  /** The Claude prompt, one entry per paragraph. */
+  promptParagraphs: string[];
+  /** Model label in the card's bottom bar. Defaults to "Sonnet 4.6". */
+  model?: string;
+  /** Tool pills shown under the card. */
+  pills?: string[];
+}
+
+/**
+ * 26 — PROMPTPACK_CTA. Comment-to-DM close for the prompt-pack format.
+ * No price, no product name, no hard sell — conversion happens in the DM.
+ */
+export interface PromptPackCtaSlide extends SlideBase {
+  type: "promptpack-cta";
+  /** Word before the keyword, e.g. "Comment". */
+  pre: string;
+  /** The big keyword, e.g. "PROMPT". */
+  keyword: string;
+  /** Word after the keyword, e.g. "below". */
+  post: string;
+  /** Card lines — what they get. One line per entry; accent → orange. */
+  card: Array<{ t: string; accent?: boolean }>;
+}
+
 export const SLIDE_TYPES = [
   "cover",
   "code",
@@ -353,4 +408,7 @@ export const SLIDE_TYPES = [
   "photo-frame",
   "results",
   "storytelling",
+  "promptpack-cover",
+  "promptpack-card",
+  "promptpack-cta",
 ] as const;

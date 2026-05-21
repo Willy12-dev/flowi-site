@@ -1,0 +1,110 @@
+{
+  "id": "maya-promptpack-ai-decoder",
+  "title": "Maya / The AI-News Decoder — prompt pack",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": { "keyword": "SYSTEM", "promise": "for the full prompt system" },
+  "caption": "Every week, 40+ AI releases. Maybe 5 of them actually change how you build. The other 35 are funding rounds, founder drama, and demos that never ship.\n\nI got tired of the FOMO, so I built a system: every morning I run the whole AI feed through Claude, and 15 minutes later I have a brief of what actually matters.\n\nHere are the 5 prompts that run it — they're all on the slides, swipe through:\n\n1. SOURCE & TRIAGE — kill the noise\n2. WHAT ACTUALLY SHIPPED — strip the marketing\n3. SIGNAL VS. THEATER — spot the hype\n4. THE FRIDAY TEST — turn it into a decision\n5. THE WEEKLY BRIEF — package it in 200 words\n\nComment SYSTEM and I'll DM you the full prompt system — copy-paste ready — plus the field guide it's built on.\n\n— maya",
+  "hashtags": [
+    "aiengineering",
+    "claude",
+    "aitools",
+    "buildwithai",
+    "promptengineering"
+  ],
+  "slides": [
+    {
+      "type": "promptpack-cover",
+      "index": 1,
+      "total": 7,
+      "headline": [
+        { "runs": [{ "t": "I told Claude to" }], "size": "sm" },
+        { "runs": [{ "t": "run the AI feed" }], "size": "lg" },
+        { "divider": "Result?" },
+        { "runs": [{ "t": "I read what matters in" }], "size": "sm" },
+        { "runs": [{ "t": "15 minutes", "accent": true }], "size": "lg" }
+      ],
+      "stats": [
+        { "value": "40+", "label": "releases", "sub": "triaged a week" },
+        { "value": "15 min", "label": "start to brief", "sub": "every morning" }
+      ],
+      "pill": "Here are the 5 prompts",
+      "photo": "/images/posts/maya-promptpack/cover.jpg"
+    },
+    {
+      "type": "promptpack-card",
+      "index": 2,
+      "total": 7,
+      "title": [{ "t": "SOURCE &" }, { "t": "TRIAGE", "accent": true }],
+      "promptParagraphs": [
+        "Here are today's AI headlines: [paste 20-40].",
+        "Sort them into flagship releases, real capability shifts, and noise. Drop anything that's funding, drama, or a demo that hasn't shipped.",
+        "Return the 5 a working builder would regret missing — ranked, one line each."
+      ],
+      "pills": ["Strategize", "Write", "Learn", "Code", "From Drive"]
+    },
+    {
+      "type": "promptpack-card",
+      "index": 3,
+      "total": 7,
+      "title": [{ "t": "WHAT ACTUALLY" }, { "t": "SHIPPED", "accent": true }],
+      "promptParagraphs": [
+        "Here's one AI announcement: [paste it].",
+        "Strip the marketing. Tell me what's usable today, what's a preview, and what's just a roadmap promise.",
+        "Then, in one sentence: what changes for someone building with this on Monday?"
+      ],
+      "pills": ["Strategize", "Write", "Learn", "Code", "From Drive"]
+    },
+    {
+      "type": "promptpack-card",
+      "index": 4,
+      "total": 7,
+      "title": [{ "t": "SIGNAL vs." }, { "t": "THEATER", "accent": true }],
+      "promptParagraphs": [
+        "Same announcement — now play skeptic.",
+        "What did the demo quietly skip? What got the keynote clip but isn't shipping? What's a projection dressed up as a feature?",
+        "List every red flag. Shortest version possible."
+      ],
+      "pills": ["Strategize", "Write", "Learn", "Code", "From Drive"]
+    },
+    {
+      "type": "promptpack-card",
+      "index": 5,
+      "total": 7,
+      "title": [{ "t": "THE FRIDAY" }, { "t": "TEST", "accent": true }],
+      "promptParagraphs": [
+        "Given all of the above, answer one question.",
+        "Can I use this on real work by Friday — yes or no?",
+        "If yes: the 3-step path to try it. If no: the one signal to watch that would change the answer."
+      ],
+      "pills": ["Strategize", "Write", "Learn", "Code", "From Drive"]
+    },
+    {
+      "type": "promptpack-card",
+      "index": 6,
+      "total": 7,
+      "title": [{ "t": "THE WEEKLY" }, { "t": "BRIEF", "accent": true }],
+      "promptParagraphs": [
+        "Take the 5 releases I kept this week and the notes above.",
+        "Write a 200-word brief I can read in 90 seconds: what shipped, the line that matters, who should care, what to do this week.",
+        "Plain and concrete. No adjective I can't measure."
+      ],
+      "pills": ["Strategize", "Write", "Learn", "Code", "From Drive"]
+    },
+    {
+      "type": "promptpack-cta",
+      "index": 7,
+      "total": 7,
+      "pre": "Comment",
+      "keyword": "SYSTEM",
+      "post": "below",
+      "card": [
+        { "t": "and I'll send you" },
+        { "t": "the full prompt system", "accent": true },
+        { "t": "+ the field guide it's from" }
+      ]
+    }
+  ]
+}
