@@ -1,0 +1,114 @@
+{
+  "id": "sofia-algo-traders-playbook",
+  "title": "Sofia / Why Your Trading Bot Dies at Month Four (Algo Trader's Playbook promo)",
+  "vertical": "ai_trading",
+  "topic": "algo-trading",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": { "keyword": "SURVIVE", "promise": "for the playbook link" },
+  "caption": "Your backtest returned 47%. Your live account, four months in, did not.\n\nThat gap is the most consistent failure pattern in retail algo trading — and it is almost never the strategy.\n\nThree reasons retail systems die at month four:\n\n1. It was never the strategy. The strategy is the fun part — the part you can backtest in a weekend. Systems fail at the boring part: the risk architecture nobody builds.\n\n2. Your backtest lied. It never paid a real spread, never took slippage, never sat through an NFP print. A backtest is a hypothesis; live trading is the test.\n\n3. You override the bot. A 12% drawdown is just a number — until it's your account at 2am. A system that needs your willpower at 2am was never a system.\n\nWhat survives month four isn't a smarter strategy. It's the architecture under it: hard drawdown circuit breakers, regime detection, a second model that can veto the trade.\n\nFour essays on exactly this, compiled into The Algo Trader's Playbook. $9.\n\nComment SURVIVE for the link, or it's in bio.\n\nNot financial advice.\n\n— sofia",
+  "hashtags": [
+    "algotrading",
+    "tradingbot",
+    "riskmanagement",
+    "tradingpsychology",
+    "quanttrading"
+  ],
+  "slides": [
+    {
+      "type": "storytelling",
+      "index": 1,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/01-hook.jpg",
+      "paragraphs": [
+        "your backtest returned 47%.",
+        "your live account, four months in, did not.",
+        "that gap isn't bad luck. it's architecture."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 2,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/02-pattern.jpg",
+      "paragraphs": [
+        "month four is not a coincidence.",
+        "live in week one. profitable through week six. bleeding by week twelve. broken by sixteen.",
+        "it's so consistent it's almost a calendar."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 3,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/03-reason-1.jpg",
+      "paragraphs": [
+        "1 — it was never the strategy.",
+        "the strategy is the fun part — the part you can backtest in a weekend.",
+        "systems fail at the boring part: the risk architecture nobody builds."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 4,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/04-reason-2.jpg",
+      "paragraphs": [
+        "2 — your backtest lied to you.",
+        "it never paid a real spread, never took slippage, never sat through an NFP print.",
+        "a backtest is a hypothesis. live trading is the test."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 5,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/05-reason-3.jpg",
+      "paragraphs": [
+        "3 — then you override the bot.",
+        "a 12% drawdown is just a number — until it's your account, at 2am, after a losing week.",
+        "a system that needs your willpower at 2am was never a system."
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 6,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/06-recap.jpg",
+      "paragraphs": [
+        "what survives month four isn't a smarter strategy. it's the architecture under it:"
+      ],
+      "bullets": [
+        "hard drawdown circuit breakers — no manual override",
+        "regime detection — modes, not one fixed rule",
+        "a second model that can veto the trade"
+      ],
+      "textPosition": "bottom",
+      "textAlign": "left"
+    },
+    {
+      "type": "storytelling",
+      "index": 7,
+      "total": 7,
+      "bgImage": "/images/posts/sofia-algo-playbook/07-cta.jpg",
+      "paragraphs": [
+        "the four ways retail systems die — and the architecture that survives each one.",
+        "that's the Algo Trader's Playbook. four essays, $9.",
+        "link in bio. not financial advice."
+      ],
+      "attribution": "comment SURVIVE for the link · — sofia",
+      "textPosition": "bottom",
+      "textAlign": "left"
+    }
+  ]
+}
