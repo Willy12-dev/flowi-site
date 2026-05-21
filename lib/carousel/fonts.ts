@@ -14,14 +14,19 @@
  *   - Inter 400 (body sans)
  *   - Inter 600 (body sans semibold)
  *   - JetBrains Mono 400 (eyebrows, code, tables)
+ *   - Bodoni Moda 700 (editorial photo-overlay headlines — Storytelling)
+ *   - Bodoni Moda 700 italic (signature / attribution lines)
+ *   - DM Sans 500 (photo-overlay handle, eyebrows, bullets)
  */
 
 import { promises as fs } from "fs";
 import path from "path";
 
+type FontWeight = 400 | 500 | 600 | 700;
+
 interface FontFile {
   name: string;
-  weight: 400 | 600 | 700;
+  weight: FontWeight;
   style: "normal" | "italic";
   // Path under node_modules/@fontsource/<pkg>/files/
   fontsourcePath: string;
@@ -59,12 +64,32 @@ const FILES: FontFile[] = [
     fontsourcePath:
       "@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2",
   },
+  {
+    name: "BodoniModa",
+    weight: 700,
+    style: "normal",
+    fontsourcePath:
+      "@fontsource/bodoni-moda/files/bodoni-moda-latin-700-normal.woff2",
+  },
+  {
+    name: "BodoniModaItalic",
+    weight: 700,
+    style: "italic",
+    fontsourcePath:
+      "@fontsource/bodoni-moda/files/bodoni-moda-latin-700-italic.woff2",
+  },
+  {
+    name: "DMSans",
+    weight: 500,
+    style: "normal",
+    fontsourcePath: "@fontsource/dm-sans/files/dm-sans-latin-500-normal.woff2",
+  },
 ];
 
 export interface LoadedFont {
   name: string;
   data: ArrayBuffer;
-  weight: 400 | 600 | 700;
+  weight: FontWeight;
   style: "normal" | "italic";
 }
 
@@ -85,7 +110,7 @@ export async function loadFonts(): Promise<LoadedFont[]> {
       bytes = await fs.readFile(fullPath);
     } catch (e) {
       throw new Error(
-        `Font not found at ${fullPath}: ${(e as Error).message}. Run \`npm install @fontsource/fraunces @fontsource/inter @fontsource/jetbrains-mono\`.`
+        `Font not found at ${fullPath}: ${(e as Error).message}. Run \`npm install @fontsource/fraunces @fontsource/inter @fontsource/jetbrains-mono @fontsource/bodoni-moda @fontsource/dm-sans\`.`
       );
     }
     let ttf: Uint8Array;
