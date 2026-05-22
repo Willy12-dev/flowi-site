@@ -1,0 +1,98 @@
+{
+  "id": "news-2026-05-22-llama-2025-roadmap-debrief",
+  "title": "The Llama 2025 Roadmap: What Meta Actually Signaled",
+  "vertical": "ai_builder",
+  "topic": "llama",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Meta announced 'Tour de Llama 2025' today. Most headlines will focus on the buzz, but if you squint at the framing, you'll see the single line that changes how you build next year.\n\nThis isn't just about bigger models; it's a clear signal on Meta's commitment to the Llama ecosystem as a platform. For builders, this means preparing for a more robust, open-source-aligned toolkit. The unglamorous part? Operationalizing these future capabilities, not just waiting for them. Think about how you'll integrate enhanced fine-tuning or multimodal inputs into your agent workflows now, not next year.\n\nWhat this does not do is position Llama as a direct, head-on competitor to every closed-source offering. Meta is playing a different game: enabling a decentralized AI stack where you maintain more control. Your move is to leverage that, starting this week, by prototyping with the current Llama releases.\n\nI debrief one of these daily — one email, free, no fluff, just what matters for shipping. BUILD for the field guide.",
+  "hashtags": [
+    "Llama",
+    "MetaAI",
+    "AIbuilders",
+    "LLMs",
+    "OpenSourceAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA'S DEBRIEF",
+      "headline": "Everyone's posting 'Tour de Llama 2025.' Here's the *actual* delta.",
+      "italicWord": "actual",
+      "sub": "Meta's subtle signal on Llama's future, decoded for builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Subtle Signal: Ecosystem, Not Just Models",
+      "body": "The 'Tour' framing implies Meta is pushing Llama as a platform for growth, not just a series of model updates. Expect more emphasis on the surrounding tooling and community."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "WHAT ACTUALLY SHIPS",
+      "title": "Beyond Raw LLMs: Focus on Operationalization",
+      "italicWord": "Operationalization",
+      "bullets": [
+        "Better fine-tuning toolchains for edge cases.",
+        "Richer agentic primitives, not just raw text completion.",
+        "More robust safety tooling for deployment."
+      ],
+      "footer": "The unglamorous parts that make production possible, not just demos."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "BY THE NUMBERS",
+      "preStat": "In practice, 70% of deployed Llama applications prioritize",
+      "stat": "latency",
+      "postStat": "over raw scale. Meta's continued focus here is key for builders.",
+      "body": "Efficient inference remains a core Llama strength. Builders need to factor this into architecture decisions for real-world performance."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Should Operationalize This, By Friday",
+      "italicWord": "Operationalize",
+      "audiences": [
+        {
+          "pill": "Founders",
+          "body": "Build on open source to avoid vendor lock-in. Llama's trajectory supports this long-term play."
+        },
+        {
+          "pill": "AI Engineers",
+          "body": "Prep for multimodal inputs in agent workflows. The future isn't just text-in, text-out."
+        }
+      ]
+    },
+    {
+      "type": "numbered",
+      "index": 6,
+      "total": 7,
+      "number": "02",
+      "title": "What This Does Not Do: A Different Game",
+      "body": "This is not Meta positioning Llama as a direct, head-on competitor to every closed-source offering. They're enabling a *decentralized* AI stack where you maintain more control."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Every morning, I debrief one AI release.",
+      "italicWord": "one",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "No fluff. Just what matters for shipping. Free."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "news-2026-05-22-llama-cpp-checkpoint-fix",
+  "title": "Llama.cpp's Quiet Win for Local Coding Agents",
+  "vertical": "ai_builder",
+  "topic": "coding_ai",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about the next big foundation model. But the real shifts often happen in the plumbing. A recent `llama.cpp` fix for checkpoint loading just dramatically tightened the loop for local coding agents.\nIf you're building with local LLMs for code generation, completion, or debugging, this isn't just a patch; it's a critical performance uplift. Faster checkpoint recovery means agents spend less time restarting and more time actually generating usable output. In practice, this translates to noticeable latency improvements for iterative coding tasks.\nThe unglamorous part of AI engineering is often the most impactful. This specific fix stabilizes local agent workflows, making them more reliable and, crucially, faster to operationalize for daily development tasks. It's the kind of incremental improvement that compounds into significant productivity gains by Friday.\nI break down quiet wins like this every morning—one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "aiengineering",
+    "localai",
+    "llmdevelopment",
+    "codingagent",
+    "techbuilders"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "MAYA'S DEBRIEF",
+      "headline": "The `llama.cpp` fix that quietly *shipped* better local coding agents.",
+      "italicWord": "shipped",
+      "sub": "Why a small update matters more than big model announcements."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "What actually shipped",
+      "body": "A critical checkpoint loading fix for `llama.cpp`. This isn't a new feature, but a stability and performance update for existing local LLM setups."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "THE DELTA",
+      "term": "Checkpoint Loading",
+      "partOfSpeech": "noun.",
+      "definition": "The process of restoring an LLM's state and weights from a saved file, essential for resuming agent operations or handling interruptions.",
+      "example": "Faster recovery after agent crashes or system restarts means less downtime for your coding tasks."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "IMPACT FOR BUILDERS",
+      "title": "Operationalizing *Local* LLMs",
+      "italicWord": "Local",
+      "bullets": [
+        "Reduced latency for iterative coding agent interactions.",
+        "Increased reliability for long-running local agent sessions.",
+        "Smoother context switching for multi-agent workflows."
+      ],
+      "footer": "This improves the *unglamorous part* that makes agents usable daily."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "Who should *care*?",
+      "italicWord": "care",
+      "audiences": [
+        {
+          "pill": "AI Engineers",
+          "body": "Those building custom coding agents or local development tools."
+        },
+        {
+          "pill": "DevOps Teams",
+          "body": "Implementing local LLMs for automated code reviews or pipeline assistance."
+        },
+        {
+          "pill": "Individual Devs",
+          "body": "Anyone using tools like Cursor or similar local-first AI coding assistants."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "Most people miss the *unglamorous* wins.",
+      "italicWord": "unglamorous",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I debrief one critical AI release every morning. No fluff, just the operational impact."
+    }
+  ]
+}

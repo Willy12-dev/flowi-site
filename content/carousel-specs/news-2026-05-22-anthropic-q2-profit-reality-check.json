@@ -1,0 +1,103 @@
+{
+  "id": "news-2026-05-22-anthropic-q2-profit-reality-check",
+  "title": "Anthropic's Q2 Profit: What it *Actually* Means for Builders",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about Anthropic's Q2 numbers. Here's the unglamorous part that actually ships products.\n\nAnthropic projects $10.9B in Q2 revenue and a $559M operating profit. This isn't just a big number; it’s a clear signal from the market: enterprise AI spend is no longer just for R&D. Companies are moving serious budget toward *deployed* AI solutions that solve specific, measurable business problems.\n\nThe actual delta isn't just better models, though those help. It's about strategic partnerships, robust safety guardrails, and integrations that deliver predictable value in regulated environments. This is the unglamorous work of making AI operational, not just impressive in a demo. It’s what allows for long-term contracts and actual profit.\n\nFor builders and founders, this means your integration layer, your deployment strategy, and your ability to target high-value problems just became more critical than chasing the latest model spec. The market is rewarding systematization before scale. Focus on specific outcomes, not just general capabilities.\n\nI break down one of these signals every morning—one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AIdevelopment",
+    "LLMs",
+    "AIengineering",
+    "AIbuilders",
+    "Anthropic"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC Q2 DEBRIEF",
+      "headline": "Everyone's talking about Anthropic's Q2. Here's what *actually* ships products.",
+      "italicWord": "actually",
+      "sub": "The numbers are out. The signal for builders is less obvious."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "$10.9B Revenue, $559M Profit.",
+      "body": "Anthropic projects a significant Q2. This isn't just growth; it's a signal that *enterprise AI spend* is maturing beyond pilot projects. The market is paying for deployed value."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "title": "This isn't just model performance.",
+      "italicWord": "performance",
+      "bullets": [
+        "Enterprise contracts: long-term, specific use cases.",
+        "Focus on safety/reliability for regulated industries.",
+        "Strategic partnerships, not just API access."
+      ],
+      "footer": "The unglamorous part: operationalizing AI."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHERE THE MONEY GOES",
+      "preStat": "Q2 shows a shift: companies are moving past initial R&D. The budget is for",
+      "stat": "Deployed AI",
+      "postStat": "not just experimentation. They're buying solutions, not just tokens.",
+      "body": "This means the market rewards teams that build for specific outcomes, with predictable performance, and robust integration."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who should care?",
+      "italicWord": "care",
+      "audiences": [
+        {
+          "pill": "AI Builders",
+          "body": "Your integration layer and deployment strategy just got more valuable than raw model calls."
+        },
+        {
+          "pill": "Founders",
+          "body": "Focus on specific, high-value enterprise problems. The generalist AI wrapper market is tightening."
+        },
+        {
+          "pill": "Operators",
+          "body": "Demand predictable, auditable AI systems. The 'magic' is in the system, not the model."
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "BY FRIDAY",
+      "title": "Audit your current AI stack.",
+      "body": "Are you integrating for specific, measurable business value? Or are you just calling an API? The market is now rewarding the former. Ship something concrete."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The signal is clear: Ship value.",
+      "italicWord": "value",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One signal, decoded, every morning."
+    }
+  ]
+}

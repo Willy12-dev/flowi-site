@@ -76,12 +76,103 @@
     "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa1RzeXEzS3FhZHowUkdHUGdVcXlWUGxaWDJacUFaZ0JMVWxtcllGRzZabHZXTHRyX194Q1FQU0Z2NlNIVDV2UEhqUmVubDk2ZVpLallGZm5oekRqY0w0LWZwcjhGTVRzaXA3T2JJWFNSa1Zld1Q1M1pPZkxBMFBxQkdUbHpwTzNkNWh2by1aNWdhN3dTdUdFbWJ2WWhoRzlkcm9IMi1EWkpnZ3dUMTV0YzZR?oc=5",
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWGZDSjBVNFF2ZVowVFpMTFdNZk4ydXllMlFRYUw1VUhoQjJiR2FtR2dPVGpqVWdYN1JaaDVQa0dSaEZZeGZtQVdRUUMxU2trckJvYkZBQWV4Q0lCVUx3SlRvS29FSkFNXzc1MjRqcVFUdXZ3azBPVzZhRVdaa2U2M3BDTkttV1BaT0dlb2xweDc1cmNPQ1BIVlpzQXM1OGJjT1RraXRILS1pcXVHUnNRUzlIZkZJc252ZHc?oc=5",
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jaG85T2hzMEtkYWZEUW5fakFtdnhuUzZvVDd4bGFvT1VTRzFhMU9rSTZJTGJXR2ZVMkwwSV9RNE9Vb2NJeWFkLWlJZ0xQRy1yN3EyeFRuX2VrdjdpOUN5ajZYOFpMY21hYVhPN1hR?oc=5",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTjVfMGF4LURuSGNLZFViVU5pcFYyajBMczM1bDdrVlh6eDAxMm80amN3cVJhUGxqRklKdFRNX0JSUXFnVWVOT3B2NGVnRGVTOURtQWExSTFJMi1BNWlPY2NMc2Vob0wwVnhNejZ2bDVBaGNjbFdwZElwVVFpS2RaM3pWMTBoWEp6QzZuLWFvd25GVzRvbU1NblpQY3BhZVFFZkd0NUpWWjF5OExGNDVvRlhGdw?oc=5"
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTjVfMGF4LURuSGNLZFViVU5pcFYyajBMczM1bDdrVlh6eDAxMm80amN3cVJhUGxqRklKdFRNX0JSUXFnVWVOT3B2NGVnRGVTOURtQWExSTFJMi1BNWlPY2NMc2Vob0wwVnhNejZ2bDVBaGNjbFdwZElwVVFpS2RaM3pWMTBoWEp6QzZuLWFvd25GVzRvbU1NblpQY3BhZVFFZkd0NUpWWjF5OExGNDVvRlhGdw?oc=5",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd012RG1oaFE4SDBmM0lVRGpvVV9NLUtLcHNZNU5Yb1hxLXE3c2I3ZlUzU0pDOTY1SGp2VDBjdThtY3htdlowMWItZ1JzRXlUVkNCWlBjUU1uVEpLOHhLTzdlYmNkQnFhZjEyLVdHNmdoa2N6enhDb2N4STk1ZGVXbHNvSmo?oc=5",
+    "https://news.google.com/rss/articles/CBMiekFVX3lxTE1EdFNCU1cxRXF6NFFBZExxSDdZOGh4UVVBNVFrdk81cy1lWnFNd19TMTlhNTJDQm5KN1FmNlowWER5WEczY0R0WWtuWTByTGcweU9ZbWZxS2R1U0o1R2o4YkRSMGNCQW90LUZ1S2ZoMzA2RkJTS3diUmNR?oc=5",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGdsVHFIRkM3RFVvWE1wTVR6SG1uMTJXS0RhM3RYeVJ0Nms2ODhZRzlWN01JaGM2Q2haZVpqSF83YnJ0RmNHQlJnTVQ4bV91cG1Zb3VWNTlMYVg0aTRyTlBKTGJiVXpaR0xqLTV4b0lsOGpvYlZ2VmIyZFlwUndzNGpYaHBPSlpzYThPWGZkM3pVcWtMUUR4SEV6Zkw2Wlk5TjNsb1p3YTRSSlVsTmV3QmZjLW1MUQ?oc=5",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLXhlY0ZQREJ0SmtuZmJGUkJVcEpFbV90Z3pZNTgwVGV1UGx5RktUU1FZWnk3eGRNaG1Gcm1SS3pDeUpnZEcwS2RIZy1kaWI2U211QWRWNWwwQzFlZ1JGMXhtWHJnZUYtZGFHaUVFN2RkbkRidGk3ZVRVUUpmNXRyWGFBdnp0ZGdJbDk4S28zbXBPVXVxQTNXbw?oc=5",
+    "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5QWk4QnlwWW0zbGFTRGFEb3Z1Y28zaVdPT2xjdHk3cklzNm5zaEVTNk1PTERZRTlYbEt4RHp1Q2VlbEFoQ2dONGI1N0N6NTVQRzNZaXhscVdRNS02Vlp1dDU3V3pFdTIybEc0QmZZZTM?oc=5",
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNmg4QlBQTzMtRk1oV3BlVkl2TVhGZGpmRC1VQnFSenJGNkJWa1ZMOHBaamlBYl9KZXpxOTFsVy1VQ0RUSEE4NWsxX1JSNVgxR2ctYWp2aTBTbGw1akRCMkViUENFZmktRWYtU2FvdDZYX01UenJkWVNFWW5SUElfcWpzbGZUeHd1V3FWaTlPNzFSMnc5bWNOSk5wZE0?oc=5",
+    "https://news.google.com/rss/articles/CBMi8wFBVV95cUxON2FQNVBQcldMTXU3OEZTNzNyanEyOEZUWW0tRWFmZnBIRTN5ak4weEoyNVRJalRRYmFjaTh4T2JKbm5iaFl5U3ZpcWMxbGk2ellXYXR1ME9Qc201a0pXdFBldng5bFZ4enR4d3FoVXBpdjJLWmdVd1Q4QXNDVjdjenp2eFJ2V3AxWmx6VGFWTzhDUTJmbTllMTg5TWhzdkY4MjA5MW1jZ1BpblBMV0gya0JkdVZQeFlWbnlBNUpyVFMzdXNPNzBYb1JDcTNXdnZLQW5jcjRPd0ZSOXE2bktxMmo5c3VHM0t6bEZhcUxNU0JydUk?oc=5",
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWEdJcFR1VGRLN25mcnNYZlZKazlhazl0UkRBZmJiamE2UE1kVXZta2YzQ09DdW9zek1zYkpiR2VpeW5vUFZkY1NrQ2NNNWNIN0UxbFc4Ujc1bDBlQ0FUNk5SUlRVaU15Q3g5amtnT3IzbmxvQWNRMGlJTkU2SEZDVjI1TmNhZGFpM2JB?oc=5",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNnBKT2lMT0ZGRWFaTTYxRGlvdXhvV0EwMWdaTUQyMk5Pc0sxMXg0dTZTenR3VGFZRm15bktUZXZPRnV1ZldXRm43VmR4Y2puNjhoSnJ3aVVmMDEtSTZpVEdXQm5sV19HUVV1UU1oSG5yejZ3cC1hOW15Ti1sQmRnODFR?oc=5",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMDBaYUFFSjNLajh3dEJlZ04xWGc0T1NGdTFYYnNGZ01YNzc4S0lIUmFfN0FUVDBmS0xHQnZtbDVvaklBcG1rRXZqU1E2aWZDT2lnY0JJRWwtTUwtYWltVkMwMklGNTBUZFB6emZlN0taM0RjZnJjMGhZZFRJNkR1VW1yaks3WEdBSlpvZW1VSUo5bnoxZU55R1lkX2txRjVnb2FyYm8zc1AyYk9k?oc=5"
   ],
-  "last_run": "2026-05-21T08:55:53.249Z",
-  "last_run_count": 0,
-  "last_run_items": [],
-  "total_drafted": 77,
+  "last_run": "2026-05-22T03:06:48.391Z",
+  "last_run_count": 10,
+  "last_run_items": [
+    {
+      "id": "news-2026-05-22-llama-cpp-checkpoint-fix",
+      "title": "Llama.cpp's Quiet Win for Local Coding Agents",
+      "source": "Meta AI (news)",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd012RG1oaFE4SDBmM0lVRGpvVV9NLUtLcHNZNU5Yb1hxLXE3c2I3ZlUzU0pDOTY1SGp2VDBjdThtY3htdlowMWItZ1JzRXlUVkNCWlBjUU1uVEpLOHhLTzdlYmNkQnFhZjEyLVdHNmdoa2N6enhDb2N4STk1ZGVXbHNvSmo?oc=5",
+      "vertical": "ai_builder",
+      "topic": "coding_ai"
+    },
+    {
+      "id": "news-2026-05-22-llama-2025-roadmap-debrief",
+      "title": "The Llama 2025 Roadmap: What Meta Actually Signaled",
+      "source": "Meta AI (news)",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1EdFNCU1cxRXF6NFFBZExxSDdZOGh4UVVBNVFrdk81cy1lWnFNd19TMTlhNTJDQm5KN1FmNlowWER5WEczY0R0WWtuWTByTGcweU9ZbWZxS2R1U0o1R2o4YkRSMGNCQW90LUZ1S2ZoMzA2RkJTS3diUmNR?oc=5",
+      "vertical": "ai_builder",
+      "topic": "llama"
+    },
+    {
+      "id": "news-2026-05-22-agent-orchestration-debrief",
+      "title": "The Agent Orchestration Layer: What Actually Shipped",
+      "source": "Meta AI (news)",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGdsVHFIRkM3RFVvWE1wTVR6SG1uMTJXS0RhM3RYeVJ0Nms2ODhZRzlWN01JaGM2Q2haZVpqSF83YnJ0RmNHQlJnTVQ4bV91cG1Zb3VWNTlMYVg0aTRyTlBKTGJiVXpaR0xqLTV4b0lsOGpvYlZ2VmIyZFlwUndzNGpYaHBPSlpzYThPWGZkM3pVcWtMUUR4SEV6Zkw2Wlk5TjNsb1p3YTRSSlVsTmV3QmZjLW1MUQ?oc=5",
+      "vertical": "ai_builder",
+      "topic": "builder"
+    },
+    {
+      "id": "news-2026-05-22-anthropic-cloudflare-agent-deal-decoded",
+      "title": "Anthropic + Cloudflare: The Agent Deal That Matters",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLXhlY0ZQREJ0SmtuZmJGUkJVcEpFbV90Z3pZNTgwVGV1UGx5RktUU1FZWnk3eGRNaG1Gcm1SS3pDeUpnZEcwS2RIZy1kaWI2U211QWRWNWwwQzFlZ1JGMXhtWHJnZUYtZGFHaUVFN2RkbkRidGk3ZVRVUUpmNXRyWGFBdnp0ZGdJbDk4S28zbXBPVXVxQTNXbw?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-22-anthropic-q2-profit-reality-check",
+      "title": "Anthropic's Q2 Profit: What it *Actually* Means for Builders",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5QWk4QnlwWW0zbGFTRGFEb3Z1Y28zaVdPT2xjdHk3cklzNm5zaEVTNk1PTERZRTlYbEt4RHp1Q2VlbEFoQ2dONGI1N0N6NTVQRzNZaXhscVdRNS02Vlp1dDU3V3pFdTIybEc0QmZZZTM?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-22-grok-spacex-filing-operational-ties",
+      "title": "Grok's Unseen Ties: What the SpaceX Filing Reveals",
+      "source": "xAI / Grok",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNmg4QlBQTzMtRk1oV3BlVkl2TVhGZGpmRC1VQnFSenJGNkJWa1ZMOHBaamlBYl9KZXpxOTFsVy1VQ0RUSEE4NWsxX1JSNVgxR2ctYWp2aTBTbGw1akRCMkViUENFZmktRWYtU2FvdDZYX01UenJkWVNFWW5SUElfcWpzbGZUeHd1V3FWaTlPNzFSMnc5bWNOSk5wZE0?oc=5",
+      "vertical": "ai_builder",
+      "topic": "grok"
+    },
+    {
+      "id": "news-2026-05-22-alibaba-qwen-35hr-agent",
+      "title": "Alibaba's Qwen3.7-Max Agent: The 35-Hour Uptime that Actually Matters",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxON2FQNVBQcldMTXU3OEZTNzNyanEyOEZUWW0tRWFmZnBIRTN5ak4weEoyNVRJalRRYmFjaTh4T2JKbm5iaFl5U3ZpcWMxbGk2ellXYXR1ME9Qc201a0pXdFBldng5bFZ4enR4d3FoVXBpdjJLWmdVd1Q4QXNDVjdjenp2eFJ2V3AxWmx6VGFWTzhDUTJmbTllMTg5TWhzdkY4MjA5MW1jZ1BpblBMV0gya0JkdVZQeFlWbnlBNUpyVFMzdXNPNzBYb1JDcTNXdnZLQW5jcjRPd0ZSOXE2bktxMmo5c3VHM0t6bEZhcUxNU0JydUk?oc=5",
+      "vertical": "ai_builder",
+      "topic": "builder"
+    },
+    {
+      "id": "news-2026-05-22-github-copilot-eclipse-open-source-delta",
+      "title": "The GitHub Copilot Eclipse Release: What Actually Matters",
+      "source": "Cursor / coding",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWEdJcFR1VGRLN25mcnNYZlZKazlhazl0UkRBZmJiamE2UE1kVXZta2YzQ09DdW9zek1zYkpiR2VpeW5vUFZkY1NrQ2NNNWNIN0UxbFc4Ujc1bDBlQ0FUNk5SUlRVaU15Q3g5amtnT3IzbmxvQWNRMGlJTkU2SEZDVjI1TmNhZGFpM2JB?oc=5",
+      "vertical": "ai_builder",
+      "topic": "cursor"
+    },
+    {
+      "id": "news-2026-05-22-llama-cpp-mtp-leak-fix-stabilizes-agents",
+      "title": "The llama.cpp Fix That Actually Matters for Local Agents",
+      "source": "Meta AI (news)",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNnBKT2lMT0ZGRWFaTTYxRGlvdXhvV0EwMWdaTUQyMk5Pc0sxMXg0dTZTenR3VGFZRm15bktUZXZPRnV1ZldXRm43VmR4Y2puNjhoSnJ3aVVmMDEtSTZpVEdXQm5sV19HUVV1UU1oSG5yejZ3cC1hOW15Ti1sQmRnODFR?oc=5",
+      "vertical": "ai_builder",
+      "topic": "llama_cpp"
+    },
+    {
+      "id": "news-2026-05-22-anthropic-services-firm-acquires-fractional-ai",
+      "title": "Anthropic's Quiet Roll-Up: What the Fractional AI Acquisition Actually Means",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMDBaYUFFSjNLajh3dEJlZ04xWGc0T1NGdTFYYnNGZ01YNzc4S0lIUmFfN0FUVDBmS0xHQnZtbDVvaklBcG1rRXZqU1E2aWZDT2lnY0JJRWwtTUwtYWltVkMwMklGNTBUZFB6emZlN0taM0RjZnJjMGhZZFRJNkR1VW1yaks3WEdBSlpvZW1VSUo5bnoxZU55R1lkX2txRjVnb2FyYm8zc1AyYk9k?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    }
+  ],
+  "total_drafted": 87,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
 }

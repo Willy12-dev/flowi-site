@@ -1,0 +1,97 @@
+{
+  "id": "news-2026-05-22-github-copilot-eclipse-open-source-delta",
+  "title": "The GitHub Copilot Eclipse Release: What Actually Matters",
+  "vertical": "ai_builder",
+  "topic": "cursor",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "CURSOR",
+    "promise": "for the waitlist"
+  },
+  "caption": "GitHub Copilot for Eclipse just shipped, and everyone's talking about the IDE. They're missing the *actual* delta.\n\nThis isn't about Copilot suddenly working in Eclipse, which frankly, should have shipped years ago. The real story is the *open-source* aspect. This move changes the operational calculus for specific teams, allowing them to integrate AI-assisted coding in environments previously considered too complex or sensitive for off-the-shelf tooling.\n\nThink about enterprise teams with deeply customized build systems, or those under strict compliance. A black-box plugin is a non-starter. Open sourcing the connector means inspection, modification, and true integration are now on the table. It’s an unglamorous win for the teams who need to systematize before they can even think about scaling.\n\nThis isn't a new model or a performance boost. It's an infrastructure play. If you're building with AI agents daily, understanding these subtle shifts is key to actually shipping. I break down releases like this every morning—one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AIforDevelopers",
+    "CodingAI",
+    "GitHubCopilot",
+    "OpenSourceAI",
+    "DeveloperTools"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "Copilot for Eclipse",
+      "headline": "GitHub Copilot for Eclipse shipped. Here's the *actual* delta.",
+      "italicWord": "actual",
+      "sub": "The unglamorous part that changes things for specific teams."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "What Just Shipped",
+      "body": "GitHub Copilot for Eclipse is now open source. This isn't just a new IDE integration; it's a shift in how Copilot's tooling can be operationalized."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "The Delta",
+      "term": "Open Source Copilot",
+      "partOfSpeech": "noun.",
+      "definition": "The ability to inspect, modify, and distribute Copilot's Eclipse integration code, moving beyond a black-box plugin.",
+      "example": "Customizing behavior for specific enterprise codebases or security protocols."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "Who Cares?",
+      "title": "Not Everyone. But *Specific* Teams.",
+      "italicWord": "Specific",
+      "bullets": [
+        "Enterprise teams needing deep integration with proprietary build systems.",
+        "Developers on legacy platforms where standard plugins often fail.",
+        "Security-sensitive environments requiring code audits for all tooling."
+      ],
+      "footer": "This targets niche, high-value scenarios, not general dev workflow."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "Practical Impact",
+      "preStat": "This means custom modifications and deeper system integration can occur for the first time, potentially saving",
+      "stat": "dozens of hours",
+      "postStat": "per quarter for teams with complex requirements, by Friday.",
+      "body": "The unglamorous part: avoiding vendor lock-in and enabling compliance for AI-assisted coding."
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "What This Does Not Do",
+      "title": "This is Not a *New* Copilot.",
+      "italicWord": "New",
+      "bullets": [
+        "It does not introduce a new underlying AI model or improve code suggestion quality.",
+        "It does not bring feature parity with Copilot's VS Code experience.",
+        "It does not mean Copilot itself is open source, just this specific connector."
+      ],
+      "footer": "Manage expectations: this is an operational win, not a core AI capability upgrade."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "I break down releases like this every morning.",
+      "italicWord": "every morning",
+      "ctaKeyword": "CURSOR",
+      "ctaPromise": "for the waitlist",
+      "sub": "One email. Zero fluff. Link in bio."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "news-2026-05-22-alibaba-qwen-35hr-agent",
+  "title": "Alibaba's Qwen3.7-Max Agent: The 35-Hour Uptime that Actually Matters",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Alibaba's Qwen3.7-Max shipped today. While the agent capabilities are getting attention, the single line in the changelog that genuinely changes your workflow isn't about what it *does*, but how long it *runs*.\n\nQwen demonstrated 35 hours of uninterrupted autonomous operation. This is the unglamorous part, but it's the actual delta for serious agentic workflows. We're moving beyond agents that fail after a few turns. This signals a crucial shift towards systems that can manage complex, multi-step tasks over significant periods, pushing us closer to operationalizing agents in production. Builders, this means rethinking state management, error handling, and monitoring. The \"happy path\" demos are over; robust, long-running agent infrastructure is what ships.\n\nThe other key detail often overlooked: Qwen's support for external harnesses like Anthropic's Claude Code. This isn't about Alibaba trying to build everything from scratch. It's about smart interoperability – leveraging existing, proven tools for specific tasks. The teams that win systematize their workflows with best-in-class components before they scale. This practical approach recognizes that building agents isn't about a single magical model, but intelligently composing reliable systems.\n\nThis release isn't a \"game-changer\" in the breathless sense. It's something far more important: a concrete step towards truly robust, production-ready agent infrastructure. It shifts the conversation from \"can an agent theoretically do X?\" to \"can an agent reliably do X for 35 hours without falling over?\" That's a fundamental difference for anyone actually deploying these systems. If you're building, start planning for agents that persist, manage state, and integrate gracefully.\n\nI break down one AI release that actually matters for builders every morning. One email, free, no fluff. Link in bio if you want the daily debrief.",
+  "hashtags": [
+    "AIagents",
+    "LLMdevelopment",
+    "AIconstruction",
+    "AIengineering",
+    "AgenticAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ALIBABA'S QWEN SHIPS",
+      "headline": "Qwen3.7-Max just shipped. The *actual* delta is in its uptime.",
+      "italicWord": "actual",
+      "sub": "Why 35 hours of autonomous agent run-time matters."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 6,
+      "eyebrow": "QWEN3.7-MAX",
+      "term": "The Agent",
+      "partOfSpeech": "noun.",
+      "definition": "Alibaba's latest proprietary LLM, now shipping with enhanced agentic capabilities designed for extended, autonomous task execution.",
+      "example": "Moving beyond single-turn prompts, Qwen can manage multi-step workflows for hours."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "THE ACTUAL DELTA",
+      "preStat": "Qwen3.7-Max demonstrated",
+      "stat": "35 hours",
+      "postStat": "of uninterrupted autonomous operation in testing.",
+      "body": "This pushes beyond typical short-burst agent tasks, enabling complex, long-running processes without manual intervention."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "OPERATIONALIZING AGENTS",
+      "title": "It's not just the uptime.",
+      "italicWord": "harnesses",
+      "bullets": [
+        "Supports external harnesses like Anthropic's Claude Code.",
+        "Means Qwen can operationalize existing, proven tools for code generation and analysis.",
+        "Less about reinventing the wheel, more about effective system integration."
+      ],
+      "footer": "This is how agents get built in practice."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "What this means for *your* workflow.",
+      "italicWord": "your",
+      "audiences": [
+        {
+          "pill": "BUILDERS",
+          "body": "If you're prototyping long-running agents, this signals a shift toward more robust, production-ready infrastructure. Start thinking about persistent state."
+        },
+        {
+          "pill": "FOUNDERS",
+          "body": "Look for agent-native tools that focus on reliability and interoperability, not just flashy demos. The unglamorous part is often the valuable part."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "The next wave of agent infra is here.",
+      "italicWord": "here",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I break down one AI release like this every morning. No fluff."
+    }
+  ]
+}

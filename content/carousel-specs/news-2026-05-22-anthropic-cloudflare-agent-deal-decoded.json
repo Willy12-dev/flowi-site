@@ -1,0 +1,116 @@
+{
+  "id": "news-2026-05-22-anthropic-cloudflare-agent-deal-decoded",
+  "title": "Anthropic + Cloudflare: The Agent Deal That Matters",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Cloudflare stock jumped 6.4% on its Anthropic agent deal. Everyone's talking market cap, but the actual delta for builders is elsewhere.\n\nThis isn't just another partnership announcement. It's about Anthropic's agent capabilities being deployed on Cloudflare's global network. For teams building with LLMs, this means the potential for more robust, distributed agent workflows, especially those requiring low-latency execution at the edge. The unglamorous part? It's not a plug-and-play solution.\n\nWhat shipped is a foundation. Cloudflare provides the infrastructure, Anthropic provides the agent models. The real work, as always, is in operationalizing these tools. Think about use cases that benefit from distributed compute and inherent security features Cloudflare offers. This moves agent deployment from theoretical to more practical, edge-aware applications.\n\nBy Friday, if you're evaluating agent frameworks, consider how this integration impacts your deployment strategy for real-time applications or distributed data processing. It's a signal that agent architectures are maturing beyond single-server deployments. The goal isn't just to *use* an agent, but to *ship* an agent system that actually performs at scale.\n\nI break down one of these releases every morning — one email, free, no fluff. Link in bio if you want the field guide.",
+  "hashtags": [
+    "Anthropic",
+    "ClaudeAI",
+    "AIAgents",
+    "Cloudflare",
+    "AIBuilders"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "SHIP THE THING",
+      "headline": "Cloudflare's new Anthropic deal: The *real* news isn't the stock.",
+      "italicWord": "real",
+      "sub": "What actually matters for AI builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "Cloudflare + Anthropic",
+      "body": "Cloudflare announced a partnership with Anthropic, integrating its AI agent capabilities into Cloudflare's global network. NET stock climbed 6.4% on the news."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "DECODED",
+      "term": "AI Agent",
+      "partOfSpeech": "noun.",
+      "definition": "An AI system designed to autonomously perform tasks, make decisions, and interact with its environment without human intervention.",
+      "example": "A Claude-powered agent monitoring network traffic, identifying anomalies, and autonomously triggering mitigation protocols."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "MAYA'S TAKE",
+      "title": "This means:",
+      "italicWord": "means",
+      "bullets": [
+        "Potential for *distributed* agent deployment at the edge.",
+        "Leveraging Cloudflare's security and performance infrastructure.",
+        "More robust, real-time agent applications."
+      ],
+      "footer": "Moving beyond single-server agent demos."
+    },
+    {
+      "type": "stats",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "INFRASTRUCTURE",
+      "title": "Operationalizing agents needs:",
+      "italicWord": "Operationalizing",
+      "stats": [
+        {
+          "value": "95%",
+          "label": "of global internet users within 50ms of a Cloudflare data center."
+        },
+        {
+          "value": "13,000",
+          "label": "petabytes of daily traffic handled."
+        },
+        {
+          "value": "170M+",
+          "label": "average daily cyber threats blocked."
+        }
+      ]
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "If you're building:",
+      "italicWord": "building",
+      "audiences": [
+        {
+          "pill": "EDGE AI",
+          "body": "Applications requiring low-latency agent execution close to data sources."
+        },
+        {
+          "pill": "SECURE WORKFLOWS",
+          "body": "Agents handling sensitive data or critical infrastructure on a robust network."
+        },
+        {
+          "pill": "DISTRIBUTED SYSTEMS",
+          "body": "Agent orchestrations across multiple geographic regions."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The unglamorous part of AI is shipping.",
+      "italicWord": "shipping",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One signal, one strategy, delivered daily."
+    }
+  ]
+}

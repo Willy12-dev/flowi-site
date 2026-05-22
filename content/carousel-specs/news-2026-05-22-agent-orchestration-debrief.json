@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-22-agent-orchestration-debrief",
+  "title": "The Agent Orchestration Layer: What Actually Shipped",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Another week, another 'agent orchestration layer' dropping with big promises. Everyone's talking about how it'll build autonomous agents and simplify workflows. But if you're like me, you learned to read between the lines of the marketing copy and head straight for the changelog. The actual delta? It's not the revolution some are claiming, but there are a few practical updates worth noting for builders who are deep in custom tool usage.\n\nWhat shipped today isn't a silver bullet for full agentic autonomy. The unglamorous part is that you still need robust state management, explicit human-in-the-loop handling for edge cases, and precise prompt engineering. This update primarily refines specific API endpoints for callback functions and improves error handling within multi-step chains. For teams already operationalizing agents, this means a marginal but welcome reduction in boilerplate for specific task types.\n\nDon't abandon your current agent frameworks expecting a magic fix. Instead, look at how these new hooks can incrementally improve your existing, shipped systems. The real win is often in the boring, systematic improvements, not the flashy demos. By Friday, consider testing the new callback patterns if you're struggling with inter-agent communication. That's where the value is. I break one of these down every morning — one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AIAgents",
+    "LLMDev",
+    "TechBuild",
+    "AIEngineering",
+    "Flowi"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "Agent Frameworks",
+      "headline": "Everyone's posting about the new agent orchestrator. Here's what *actually* shipped.",
+      "italicWord": "actually",
+      "sub": "The unglamorous reality of operationalizing 'autonomy'."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Press Release Claimed:",
+      "body": "Seamless, fully autonomous agents. Zero-shot complex task execution. Simplified multi-agent workflows. A 'game-changing' shift in AI application development for all users."
+    },
+    {
+      "type": "numbered",
+      "index": 3,
+      "total": 7,
+      "number": "02",
+      "title": "The Changelog *Actually* Said:",
+      "body": "New `on_error` callback hooks for tool use. Refactored `inter_agent_message` API for explicit state passing. Improved internal logging for `planning` steps. Minor bug fixes for specific LLM integrations."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "Operationalizing Agents",
+      "title": "What 'Autonomy' Still Needs:",
+      "italicWord": "autonomy",
+      "bullets": [
+        "Explicit state management across agent turns.",
+        "Human-in-the-loop for edge case validation and correction.",
+        "Rigorous prompt engineering for tool definition and chain-of-thought.",
+        "Robust error handling and retry logic at every step."
+      ],
+      "footer": "It’s about systematic control, not magic."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "For Builders",
+      "preStat": "The actual workflow",
+      "stat": "5%",
+      "postStat": "reduction in boilerplate.",
+      "body": "For teams already writing custom agent orchestration, this update means a small, incremental gain. It refines existing patterns, it doesn't invent new ones. The real win is for those deep in custom tool usage."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Should Care This Week:",
+      "italicWord": "This Week",
+      "audiences": [
+        {
+          "pill": "Devs building custom tool chains",
+          "body": "If you're already writing complex agent code, test the new callback hooks. You might find a small efficiency gain."
+        },
+        {
+          "pill": "Teams struggling with agent reliability",
+          "body": "The improved error handling and explicit state passing can help diagnose and mitigate failures in multi-step agents."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "I debrief one of these releases every morning. Here's how to",
+      "italicWord": "BUILD",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One email. Zero fluff. Link in bio."
+    }
+  ]
+}
