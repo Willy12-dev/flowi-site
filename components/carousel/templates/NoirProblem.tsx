@@ -31,6 +31,33 @@ export function NoirProblem({
         paddingRight: 84,
       }}
     >
+      {/* ghost watermark number — fills the canvas with editorial weight */}
+      <div
+        style={{
+          display: "flex",
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            fontSize: 780,
+            fontWeight: 800,
+            lineHeight: 1,
+            letterSpacing: -10,
+            color: "#2F2A20",
+          }}
+        >
+          {slide.number}
+        </div>
+      </div>
+
       {/* number + headline */}
       <div
         style={{

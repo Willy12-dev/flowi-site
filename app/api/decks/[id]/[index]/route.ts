@@ -92,7 +92,7 @@ export async function GET(
     headers: {
       "Content-Type": "image/png",
       // Build marker — lets a deploy be detected without guessing on timing.
-      "X-Carousel-Build": "noir-2026-05-22a",
+      "X-Carousel-Build": "noir-2026-05-22b",
       // Specs are immutable per slug — strong cache is safe. Vercel + CDN
       // will serve every subsequent hit without re-running Satori.
       "Cache-Control":
