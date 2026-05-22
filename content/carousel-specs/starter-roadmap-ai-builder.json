@@ -1,0 +1,40 @@
+{
+  "id": "roadmap-ai-builder",
+  "title": "The AI Builder Roadmap — educational poster",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "handle": "@useflowi",
+  "cta": { "keyword": "BUILD", "promise": "for the full roadmap" },
+  "caption": "Most people learning AI in 2026 are collecting tricks. Builders follow a path.\n\nHere's the 10-stage roadmap — zero to shipping real things with AI 👇\n\n1. AI foundations — how models actually think\n2. Prompt engineering — the skill that compounds\n3. Your AI toolkit — the right tool per job\n4. AI-assisted coding — ship without a CS degree\n5. APIs & integration — wire AI into real apps\n6. Your first agent — AI that acts, not just chats\n7. Memory & context — why most agents break\n8. Workflow automation — chain tasks end to end\n9. Ship a real project — something people actually use\n10. Deploy & scale — prototype to product\n\nYou don't need all of it on day one. You need stage 1 — then the next one. The people who'll be irreplaceable next year aren't the ones who know the most prompts. They're the ones who can BUILD.\n\nSave this. Start at stage 1 today.\n\nComment \"BUILD\" and I'll DM you the full step-by-step roadmap — the exact tools and first move for every stage.\n\nDisclaimer: shared for educational purposes only. AI tools change fast — adapt the path to your own goals.\n\n#AIbuilder #LearnAI #AIengineer #PromptEngineering #BuildWithAI",
+  "hashtags": ["aibuilder", "learnai", "aiengineer", "promptengineering", "buildwithai"],
+  "slides": [
+    {
+      "type": "roadmap-poster",
+      "index": 1,
+      "total": 1,
+      "eyebrow": "FLOWI · THE 2026 BUILD PATH",
+      "title": [
+        [{ "t": "THE AI BUILDER" }],
+        [{ "t": "ROADMAP", "accent": "orange" }]
+      ],
+      "subtitle": "Zero to shipping real AI products — in 10 stages.",
+      "stages": [
+        { "title": "AI foundations", "tail": "— how models actually think" },
+        { "title": "Prompt engineering", "tail": "— the skill that compounds" },
+        { "title": "Your AI toolkit", "tail": "— the right tool per job" },
+        { "title": "AI-assisted coding", "tail": "— ship without a CS degree" },
+        { "title": "APIs & integration", "tail": "— wire AI into real apps" },
+        { "title": "Your first agent", "tail": "— AI that acts, not chats" },
+        { "title": "Memory & context", "tail": "— why most agents break" },
+        { "title": "Workflow automation", "tail": "— chain tasks end to end" },
+        { "title": "Ship a real project", "tail": "— something people use" },
+        { "title": "Deploy & scale", "tail": "— prototype to product" }
+      ],
+      "cta": {
+        "pre": "Comment",
+        "keyword": "BUILD",
+        "post": "and I'll DM you the full step-by-step roadmap"
+      }
+    }
+  ]
+}

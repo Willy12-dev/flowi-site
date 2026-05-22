@@ -67,7 +67,8 @@ export type Slide =
   | MethodCoverSlide
   | MethodStepSlide
   | MethodCtaSlide
-  | ProductCoverSlide;
+  | ProductCoverSlide
+  | RoadmapPosterSlide;
 
 interface SlideBase {
   /** 1-indexed position. */
@@ -460,6 +461,26 @@ export interface ProductCoverSlide extends SlideBase {
   footer?: string;
 }
 
+/**
+ * 31 — ROADMAP_POSTER. A single dark, save-worthy educational poster: an
+ * orange starburst mark, a bold display title, a numbered roadmap of stages,
+ * and a comment-to-DM CTA. Self-contained dark theme — does NOT use the deck
+ * Frame or the white "method" palette. Built for single-image teaching posts.
+ */
+export interface RoadmapPosterSlide extends SlideBase {
+  type: "roadmap-poster";
+  /** Small mono eyebrow above the title. */
+  eyebrow?: string;
+  /** Title as lines of styled runs. accent: "orange" | "green". */
+  title: Array<Array<{ t: string; accent?: "orange" | "green" }>>;
+  /** Sub-headline beneath the title. */
+  subtitle?: string;
+  /** The roadmap stages, in order — auto-numbered 1..N. */
+  stages: Array<{ title: string; tail?: string }>;
+  /** Comment-to-DM CTA. keyword renders in orange, in quotes. */
+  cta: { pre: string; keyword: string; post: string };
+}
+
 export const SLIDE_TYPES = [
   "cover",
   "code",
@@ -491,4 +512,5 @@ export const SLIDE_TYPES = [
   "method-step",
   "method-cta",
   "product-cover",
+  "roadmap-poster",
 ] as const;

@@ -39,6 +39,7 @@ import { MethodCover } from "./templates/MethodCover";
 import { MethodStep } from "./templates/MethodStep";
 import { MethodCta } from "./templates/MethodCta";
 import { ProductCover } from "./templates/ProductCover";
+import { RoadmapPoster } from "./templates/RoadmapPoster";
 
 export function renderSlide(
   slide: Slide,
@@ -106,5 +107,7 @@ export function renderSlide(
       return <MethodCta slide={slide} theme={theme} handle={handle} />;
     case "product-cover":
       return <ProductCover slide={slide} theme={theme} handle={handle} />;
+    case "roadmap-poster":
+      return <RoadmapPoster slide={slide} theme={theme} handle={handle} />;
   }
 }

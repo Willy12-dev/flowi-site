@@ -244,6 +244,18 @@ function slideToProse(slide: Slide): string {
         .filter(Boolean)
         .join("\n\n");
     }
+    case "roadmap-poster": {
+      const title = slide.title
+        .map((l) => l.map((r) => r.t).join(" "))
+        .join(" ");
+      const stages = slide.stages
+        .map((s, i) => `${i + 1}. ${s.title}${s.tail ? ` ${s.tail}` : ""}`)
+        .join("\n");
+      const cta = `${slide.cta.pre} "${slide.cta.keyword}" ${slide.cta.post}`.trim();
+      return [slide.eyebrow, title, slide.subtitle, stages, cta]
+        .filter(Boolean)
+        .join("\n\n");
+    }
   }
 }
 
@@ -315,6 +327,8 @@ function slideHeadline(slide: Slide): string {
     case "method-cta":
       return `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
     case "product-cover":
+      return slide.title.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+    case "roadmap-poster":
       return slide.title.map((l) => l.map((r) => r.t).join(" ")).join(" ");
   }
 }
