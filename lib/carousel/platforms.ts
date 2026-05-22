@@ -236,6 +236,14 @@ function slideToProse(slide: Slide): string {
       const head = `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
       return `${head}\n\n${slide.card.map((l) => l.t).join(" ")}`;
     }
+    case "product-cover": {
+      const title = slide.title
+        .map((l) => l.map((r) => r.t).join(" "))
+        .join(" ");
+      return [slide.eyebrow, title, slide.subtitle, slide.footer]
+        .filter(Boolean)
+        .join("\n\n");
+    }
   }
 }
 
@@ -306,6 +314,8 @@ function slideHeadline(slide: Slide): string {
         .join(" ")}`;
     case "method-cta":
       return `${slide.pre} ${slide.keyword} ${slide.post}`.trim();
+    case "product-cover":
+      return slide.title.map((l) => l.map((r) => r.t).join(" ")).join(" ");
   }
 }
 

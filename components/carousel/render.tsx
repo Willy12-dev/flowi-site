@@ -38,6 +38,7 @@ import { PromptPackCta } from "./templates/PromptPackCta";
 import { MethodCover } from "./templates/MethodCover";
 import { MethodStep } from "./templates/MethodStep";
 import { MethodCta } from "./templates/MethodCta";
+import { ProductCover } from "./templates/ProductCover";
 
 export function renderSlide(
   slide: Slide,
@@ -103,5 +104,7 @@ export function renderSlide(
       return <MethodStep slide={slide} theme={theme} handle={handle} />;
     case "method-cta":
       return <MethodCta slide={slide} theme={theme} handle={handle} />;
+    case "product-cover":
+      return <ProductCover slide={slide} theme={theme} handle={handle} />;
   }
 }

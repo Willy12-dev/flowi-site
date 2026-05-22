@@ -66,7 +66,8 @@ export type Slide =
   | PromptPackCtaSlide
   | MethodCoverSlide
   | MethodStepSlide
-  | MethodCtaSlide;
+  | MethodCtaSlide
+  | ProductCoverSlide;
 
 interface SlideBase {
   /** 1-indexed position. */
@@ -440,6 +441,25 @@ export interface MethodCtaSlide extends SlideBase {
   card: Array<{ t: string; accent?: boolean }>;
 }
 
+/**
+ * 30 — PRODUCT_COVER. Centred typographic cover for a digital product
+ * (Gumroad listings, field guides). White paper, heavy Inter display, the
+ * Claude-orange / Higgsfield-green accent system. All content sits inside
+ * the centre 1080×1080 square, so a centre-crop yields a clean square
+ * thumbnail with no rework.
+ */
+export interface ProductCoverSlide extends SlideBase {
+  type: "product-cover";
+  /** Small mono eyebrow above the title. */
+  eyebrow?: string;
+  /** Title as lines of styled runs. accent: "orange" | "green". */
+  title: Array<Array<{ t: string; accent?: "orange" | "green" }>>;
+  /** Sub-headline beneath the accent rule. */
+  subtitle?: string;
+  /** Mono footer line — e.g. the site URL. */
+  footer?: string;
+}
+
 export const SLIDE_TYPES = [
   "cover",
   "code",
@@ -470,4 +490,5 @@ export const SLIDE_TYPES = [
   "method-cover",
   "method-step",
   "method-cta",
+  "product-cover",
 ] as const;
