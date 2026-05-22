@@ -68,7 +68,10 @@ export type Slide =
   | MethodStepSlide
   | MethodCtaSlide
   | ProductCoverSlide
-  | RoadmapPosterSlide;
+  | RoadmapPosterSlide
+  | NoirCoverSlide
+  | NoirProblemSlide
+  | NoirCtaSlide;
 
 interface SlideBase {
   /** 1-indexed position. */
@@ -481,6 +484,59 @@ export interface RoadmapPosterSlide extends SlideBase {
   cta: { pre: string; keyword: string; post: string };
 }
 
+/**
+ * 32 — NOIR_COVER. The fear-hook opening slide of a "noir" carousel — a dark,
+ * moody, premium typographic format for emotional / psychology-driven decks.
+ * A large multi-line headline stating an alarming, loop-opening claim.
+ */
+export interface NoirCoverSlide extends SlideBase {
+  type: "noir-cover";
+  /** Small mono eyebrow above the headline. */
+  eyebrow?: string;
+  /** Headline as lines of styled runs. accent: "orange". */
+  headline: Array<Array<{ t: string; accent?: "orange" }>>;
+  /** Muted sub-line under the headline. */
+  sub?: string;
+}
+
+/**
+ * 33 — NOIR_PROBLEM. A numbered "problem" slide of a noir carousel: a big
+ * orange number, an all-caps headline, short statement lines, an orange rule,
+ * and a quiet takeaway. Escalates the emotional case slide by slide.
+ */
+export interface NoirProblemSlide extends SlideBase {
+  type: "noir-problem";
+  /** The big number, e.g. "1". */
+  number: string;
+  /** Headline as lines of styled runs. accent: "orange". */
+  headline: Array<Array<{ t: string; accent?: "orange" }>>;
+  /** Short statement lines. */
+  lines: string[];
+  /** The quiet takeaway after the rule. */
+  takeaway: string;
+}
+
+/**
+ * 34 — NOIR_CTA. The product-reveal closer of a noir carousel: a reframing
+ * headline, a bridge line, a product card, and a comment-to-DM CTA. The first
+ * slide that names a product — value carried the deck, this converts.
+ */
+export interface NoirCtaSlide extends SlideBase {
+  type: "noir-cta";
+  /** Headline as lines of styled runs. accent: "orange". */
+  headline: Array<Array<{ t: string; accent?: "orange" }>>;
+  /** Bridge line — the pivot from the problem to the product. */
+  bridge?: string;
+  /** Product name shown in the card. */
+  product: string;
+  /** Small mono label above the product name. Defaults to "FLOWI · FIELD GUIDE". */
+  productLabel?: string;
+  /** Comment keyword — rendered orange, in quotes. */
+  keyword: string;
+  /** Note line under the comment instruction. */
+  ctaNote?: string;
+}
+
 export const SLIDE_TYPES = [
   "cover",
   "code",
@@ -513,4 +569,7 @@ export const SLIDE_TYPES = [
   "method-cta",
   "product-cover",
   "roadmap-poster",
+  "noir-cover",
+  "noir-problem",
+  "noir-cta",
 ] as const;

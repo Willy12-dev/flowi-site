@@ -1,0 +1,104 @@
+{
+  "id": "the-guilt-pattern",
+  "title": "When the guilt fades — behavior psychology carousel",
+  "vertical": "ai_behavior",
+  "topic": "habits",
+  "handle": "@useflowi",
+  "cta": { "keyword": "HABIT", "promise": "for the playbook" },
+  "caption": "There's a moment most people miss.\n\nIt's not when the habit starts — it's when you stop feeling bad about it.\n\nGuilt feels awful, so we assume losing it is progress. It isn't. Guilt is the part of you that still wants out. When it goes quiet, the fight usually went with it.\n\nHere's how a habit actually wins 👇\n\n1. You feel guilty — that's the resistance, the fight still in you.\n2. You try, fail, try again — until trying feels pointless and you stop.\n3. Effort turns into routine. No resolutions, no streaks, no shame. It looks like peace.\n4. You lower the bar — you stop expecting to quit, stop picturing life without it.\n5. You stop noticing it at all. That's not recovery — that's the habit, unopposed.\n\nIf the guilt is gone, you haven't failed. You've just been fighting it with the wrong tools. Willpower, streaks and shame were never built to hold. A relapse-aware system is.\n\nComment \"HABIT\" and I'll send you the Behavior Change Playbook — built for how habits actually break.\n\nSave this. Come back to it on a hard day.\n\nDisclaimer: shared for educational purposes only — not medical or clinical advice. For compulsive behaviors that affect your health or safety, please also speak with a professional.\n\n#Habits #BehaviorChange #Discipline #SelfMastery #BreakTheCycle",
+  "hashtags": ["habits", "behaviorchange", "discipline", "selfmastery", "breakthecycle"],
+  "slides": [
+    {
+      "type": "noir-cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "FLOWI · A FIELD NOTE ON HABITS",
+      "headline": [
+        [{ "t": "WHEN YOU STOP" }],
+        [{ "t": "FEELING GUILTY," }],
+        [{ "t": "THE HABIT'S" }],
+        [{ "t": "ALREADY WON", "accent": "orange" }]
+      ],
+      "sub": "The quietest sign you're losing the fight — and how it comes back."
+    },
+    {
+      "type": "noir-problem",
+      "index": 2,
+      "total": 7,
+      "number": "1",
+      "headline": [[{ "t": "GUILT MEANS YOU" }], [{ "t": "STILL WANT OUT" }]],
+      "lines": [
+        "Feeling bad about it means part of you still wants better.",
+        "It means you haven't filed it under \"just who I am.\"",
+        "Guilt is resistance — the fight still alive in you."
+      ],
+      "takeaway": "When the guilt finally goes quiet, the fight usually went with it."
+    },
+    {
+      "type": "noir-problem",
+      "index": 3,
+      "total": 7,
+      "number": "2",
+      "headline": [[{ "t": "YOU GOT TIRED" }], [{ "t": "OF FAILING" }]],
+      "lines": [
+        "You tried to quit. Then you tried again.",
+        "Rules, streaks, start dates, fresh Mondays.",
+        "Nothing held — so eventually you stopped trying."
+      ],
+      "takeaway": "Not because it stopped mattering. Because trying began to feel pointless."
+    },
+    {
+      "type": "noir-problem",
+      "index": 4,
+      "total": 7,
+      "number": "3",
+      "headline": [[{ "t": "EFFORT TURNED" }], [{ "t": "INTO ROUTINE" }]],
+      "lines": [
+        "No more resolutions.",
+        "No more streaks.",
+        "No more shame the morning after."
+      ],
+      "takeaway": "It looks like peace. It's the habit running completely unchallenged."
+    },
+    {
+      "type": "noir-problem",
+      "index": 5,
+      "total": 7,
+      "number": "4",
+      "headline": [[{ "t": "YOU LOWERED" }], [{ "t": "THE BAR" }]],
+      "lines": [
+        "You stopped expecting to quit.",
+        "You stopped picturing who you'd be without it."
+      ],
+      "takeaway": "When you stop expecting change, you quietly stop reaching for it."
+    },
+    {
+      "type": "noir-problem",
+      "index": 6,
+      "total": 7,
+      "number": "5",
+      "headline": [[{ "t": "YOU STOPPED" }], [{ "t": "RESISTING IT" }]],
+      "lines": [
+        "When you stop noticing it.",
+        "When you stop fighting it.",
+        "When you stop even wishing it gone —"
+      ],
+      "takeaway": "that's not peace. That's the habit, finally unopposed."
+    },
+    {
+      "type": "noir-cta",
+      "index": 7,
+      "total": 7,
+      "headline": [
+        [{ "t": "YOU DIDN'T LOSE." }],
+        [{ "t": "YOU FOUGHT IT" }],
+        [{ "t": "WRONG.", "accent": "orange" }]
+      ],
+      "bridge": "Willpower, streaks, shame — none of it was built to hold. This is the system built for when discipline alone has failed:",
+      "product": "The Behavior Change Playbook",
+      "productLabel": "FLOWI · FIELD GUIDE",
+      "keyword": "HABIT",
+      "ctaNote": "and I'll send you the full playbook — the relapse-aware version."
+    }
+  ]
+}

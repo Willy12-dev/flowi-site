@@ -256,6 +256,19 @@ function slideToProse(slide: Slide): string {
         .filter(Boolean)
         .join("\n\n");
     }
+    case "noir-cover": {
+      const h = slide.headline.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+      return [h, slide.sub].filter(Boolean).join("\n\n");
+    }
+    case "noir-problem": {
+      const h = slide.headline.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+      return `**${slide.number}. ${h}**\n\n${slide.lines.join("\n")}\n\n${slide.takeaway}`;
+    }
+    case "noir-cta": {
+      const h = slide.headline.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+      const cta = `Comment "${slide.keyword}"${slide.ctaNote ? ` ${slide.ctaNote}` : ""}`;
+      return [h, slide.bridge, slide.product, cta].filter(Boolean).join("\n\n");
+    }
   }
 }
 
@@ -330,6 +343,14 @@ function slideHeadline(slide: Slide): string {
       return slide.title.map((l) => l.map((r) => r.t).join(" ")).join(" ");
     case "roadmap-poster":
       return slide.title.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+    case "noir-cover":
+      return slide.headline.map((l) => l.map((r) => r.t).join(" ")).join(" ");
+    case "noir-problem":
+      return `${slide.number}. ${slide.headline
+        .map((l) => l.map((r) => r.t).join(" "))
+        .join(" ")}`;
+    case "noir-cta":
+      return slide.headline.map((l) => l.map((r) => r.t).join(" ")).join(" ");
   }
 }
 

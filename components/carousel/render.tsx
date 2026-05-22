@@ -40,6 +40,9 @@ import { MethodStep } from "./templates/MethodStep";
 import { MethodCta } from "./templates/MethodCta";
 import { ProductCover } from "./templates/ProductCover";
 import { RoadmapPoster } from "./templates/RoadmapPoster";
+import { NoirCover } from "./templates/NoirCover";
+import { NoirProblem } from "./templates/NoirProblem";
+import { NoirCta } from "./templates/NoirCta";
 
 export function renderSlide(
   slide: Slide,
@@ -109,5 +112,11 @@ export function renderSlide(
       return <ProductCover slide={slide} theme={theme} handle={handle} />;
     case "roadmap-poster":
       return <RoadmapPoster slide={slide} theme={theme} handle={handle} />;
+    case "noir-cover":
+      return <NoirCover slide={slide} theme={theme} handle={handle} />;
+    case "noir-problem":
+      return <NoirProblem slide={slide} theme={theme} handle={handle} />;
+    case "noir-cta":
+      return <NoirCta slide={slide} theme={theme} handle={handle} />;
   }
 }
