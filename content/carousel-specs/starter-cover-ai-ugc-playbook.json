@@ -11,7 +11,11 @@
       "total": 1,
       "eyebrow": "FLOWI · FIELD GUIDE",
       "title": [
-        [{ "t": "THE" }, { "t": "AI UGC", "accent": "orange" }],
+        [
+          { "t": "THE" },
+          { "t": "AI", "accent": "orange" },
+          { "t": "UGC", "accent": "orange" }
+        ],
         [{ "t": "PLAYBOOK", "accent": "green" }]
       ],
       "subtitle": "Build an AI creator that posts for you — every day, fully automated.",
