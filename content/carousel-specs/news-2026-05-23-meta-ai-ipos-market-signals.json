@@ -1,0 +1,94 @@
+{
+  "id": "news-2026-05-23-meta-ai-ipos-market-signals",
+  "title": "Meta AI's IPO: What Builders Should Watch",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about Meta AI's IPO filings today. The headlines are focused on market cap and investor appetite, but that's not the actual delta for builders. The unglamorous part is what matters: these filings lay bare the infrastructure bets, the compute burn, and the operational cadence required to scale a major AI effort. This isn't about hype; it's about the bill of materials.\n\nIn practice, an IPO filing like this signals a maturation of the underlying tech. Meta isn't just shipping models; they're systematizing their entire AI stack for public scrutiny. This means more stable APIs, clearer roadmaps, and a stronger push for developer adoption to justify their valuation. For you, it means a more reliable platform to build on, assuming you can navigate their specific ecosystem.\n\nThe real takeaway? Operationalize your own stack now. Understand your compute costs. Plan for multi-cloud. The market is consolidating around a few major players who are scaling their infrastructure to unprecedented levels. If you're building a startup, this is your blueprint for what 'enterprise-grade' AI truly means. Don't chase the shiny demo; chase the stable, scalable backend. 🛠️\n\nI break down one of these releases every morning — one email, free, no fluff. Link in bio if you want to get the field guide.",
+  "hashtags": [
+    "AIforBuilders",
+    "AISystems",
+    "AIInfrastructure",
+    "TechDebrief",
+    "OperationalAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "THE BUILDER'S DEBRIEF",
+      "headline": "Meta AI IPO filings are out. The *unglamorous* part changes your roadmap.",
+      "italicWord": "unglamorous",
+      "sub": "Everyone's focused on valuation. You should be watching the infrastructure."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "The Meta AI Filings: What Shipped",
+      "body": "This isn't a product release. It's a financial disclosure of an operational machine. The filing signals Meta's commitment to systematizing its AI efforts for long-term shareholder value, not just research."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "FOR YOUR ROADMAP",
+      "title": "Three Implications for Your Stack",
+      "italicWord": "Implications",
+      "bullets": [
+        "Infrastructure Bet: Massive capex on compute means robust tooling, but also vendor lock-in risk.",
+        "Platform Push: Expect more stable APIs and developer programs to drive adoption.",
+        "Consolidation: Major players are formalizing their AI divisions; smaller builders need a clear niche."
+      ],
+      "footer": "This is about operationalizing, not just iterating."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "THE UNGLAMOROUS TRUTH",
+      "preStat": "Meta's investment in AI infrastructure, as hinted by these filings and the broader market signals (Nvidia's continued reign), points to a",
+      "stat": ">$100B",
+      "postStat": "commitment over the next 3-5 years.",
+      "body": "This scale dictates the actual delta for developers: build on top of giants or find specialized hardware."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "Operationalizing Your AI: Who Cares?",
+      "italicWord": "Operationalizing",
+      "audiences": [
+        {
+          "pill": "Startup Founders",
+          "body": "Understand the cost curve of scaling. Plan your compute budget for 24-36 months, not just 6."
+        },
+        {
+          "pill": "Senior Engineers",
+          "body": "Evaluate Meta's developer offerings. Where do they integrate cleanly? Where's the inevitable friction?"
+        },
+        {
+          "pill": "Product Managers",
+          "body": "Assess platform stability. Does Meta's AI roadmap align with your product's long-term vision?"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "The actual delta for builders isn't in the headlines. It's in the *unglamorous* details.",
+      "italicWord": "unglamorous",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One email, every morning. What shipped, what matters, what to do by Friday."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "news-2026-05-23-perplexity-bumblebee-operational-security",
+  "title": "Perplexity's Bumblebee: The Unglamorous Security Win",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "RESEARCH",
+    "promise": "for the waitlist"
+  },
+  "caption": "Everyone's talking about Perplexity's latest move. Almost nobody is focusing on Bumblebee's actual utility for builders. This isn't another consumer AI feature. Perplexity just open-sourced a read-only supply-chain scanner for developer endpoints, and if you're shipping code, this is a pragmatic tool you should operationalize.\n\nThe core value here is visibility, not magic. Bumblebee scans your dependencies and flags potential issues without interfering with your build process. This 'read-only' constraint is crucial; it means lower integration friction and fewer headaches in production. It’s the unglamorous, foundational work that prevents bigger problems down the line, especially for teams that move fast.\n\nWhat this doesn't do is patch your code or act as a full security suite. It's a scanner. But for developers who want to enforce better supply-chain hygiene without adding heavy overhead, this is a solid addition. Think of it as an early warning system for the components you're pulling into your projects. By Friday, you could have this integrated into your CI/CD.\n\nI break down one new AI release like this every morning—one email, free, no fluff, straight to your inbox. Tap the link in bio to get on the waitlist.",
+  "hashtags": [
+    "AISecurity",
+    "DevOps",
+    "OpenSourceAI",
+    "SoftwareEngineering",
+    "PerplexityAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "PERPLEXITY SHIPS",
+      "headline": "Bumblebee. The part that *actually* secures your supply chain.",
+      "italicWord": "actually",
+      "sub": "It’s not about search. It’s about read-only endpoint visibility."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "What Bumblebee *Does*",
+      "body": "Perplexity open-sourced Bumblebee, a read-only supply-chain scanner. It checks your developer endpoints for known vulnerabilities and dependencies. It’s a pragmatic tool for pipeline visibility, not a magic bullet."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "CORE DETAIL",
+      "term": "Read-Only",
+      "partOfSpeech": "adjective.",
+      "definition": "Pertaining to a system component that observes data or operations without modifying them.",
+      "example": "Bumblebee scans your pipeline for vulnerabilities, but does not alter your code or dependencies."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHO THIS IS FOR",
+      "title": "Operationalizing Security",
+      "italicWord": "Operationalizing",
+      "bullets": [
+        "Dev teams shipping quickly.",
+        "Builders prioritizing security hygiene.",
+        "Anyone needing early dependency vulnerability flags."
+      ],
+      "footer": "It's about systematizing before scaling."
+    },
+    {
+      "type": "numbered",
+      "index": 5,
+      "total": 7,
+      "number": "02",
+      "title": "What Bumblebee is *Not*",
+      "body": "This is not a full-stack security suite. It won't patch vulnerabilities or prevent zero-days. It's a foundational scanner. It gives you data; action is still on your team."
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "SHIP IT",
+      "title": "Integrate by Friday",
+      "body": "Add Bumblebee to your CI/CD pipeline. Use its output to flag new dependencies and enforce basic supply-chain hygiene. This is how you operationalize pragmatic security."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "I break down one AI release every morning.",
+      "italicWord": "every morning",
+      "ctaKeyword": "RESEARCH",
+      "ctaPromise": "for the waitlist",
+      "sub": "One email. Free. No fluff."
+    }
+  ]
+}

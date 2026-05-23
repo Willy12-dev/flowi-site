@@ -1,0 +1,101 @@
+{
+  "id": "news-2026-05-23-anthropic-openai-ipo-reality-check",
+  "title": "AI IPOs: The Builder's Reality Check",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "The headlines are screaming about OpenAI and Anthropic IPOs. For anyone actually building, this news changes almost nothing about your daily workflow. It’s easy to get caught up in market valuations and future projections, especially when the numbers get astronomical, reaching into the tens of billions. But the actual delta for engineers and founders shipping products with AI remains exactly where it was yesterday: on the operational details.\n\nThe unglamorous part of building is still the part that drives real value, not speculative market caps. Your agent’s reliability, the latency of your API calls, the precision of your prompt engineering, and the cost optimization of your inference stack – these are the metrics that move the needle in practice. Not whether a company is publicly traded or not.\n\nThe market will do what the market does. For those of us shipping code, our job doesn’t shift. Focus on delivering tangible value, iterating on user feedback, and refining your systems. That’s where the real wins come from, regardless of who’s going public. This isn't a signal to pivot your roadmap; it's a signal that the financial world is catching up to the technology we've been operationalizing for years. Keep building.\n\nI break down one of these operational shifts every morning in a short, no-fluff email. Check it out at the link in bio.",
+  "hashtags": [
+    "AIdevelopment",
+    "AIEngineering",
+    "AISystems",
+    "TechNews",
+    "BuildWithAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA'S DEBRIEF",
+      "headline": "Everyone's posting about AI IPOs. Nobody's talking about the *actual* delta for builders.",
+      "italicWord": "actual",
+      "sub": "What the Anthropic and OpenAI IPO buzz means for shipping code."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Headlines: IPOs Are Coming",
+      "body": "The Financial Times reports Anthropic, OpenAI, and SpaceX are gearing up for IPOs. Valuations are expected to be in the tens of billions, signaling a maturing market."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "A BUILDER'S REALITY",
+      "term": "Operational Value",
+      "partOfSpeech": "noun.",
+      "definition": "The tangible utility and efficiency an AI system delivers in practice, measured by performance metrics like latency, accuracy, and cost.",
+      "example": "An agent's 99.8% uptime directly contributes to operational value; a high market cap does not."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHAT THIS DOES NOT DO",
+      "title": "For builders, an IPO changes *nothing* about:",
+      "italicWord": "nothing",
+      "bullets": [
+        "Your agent's reliability or failure rates.",
+        "The latency of your API calls.",
+        "The precision of your prompt engineering.",
+        "Your daily CI/CD pipeline."
+      ],
+      "footer": "These remain your core operational challenges."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "preStat": "The market is reacting to future potential. Builders are focused on the",
+      "stat": "95%",
+      "postStat": "of work that happens *before* any IPO.",
+      "body": "This 95% is where real, shippable value is created: iterating, optimizing, and solving user problems, regardless of public trading status."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who cares vs. Who should *build*:",
+      "italicWord": "build",
+      "audiences": [
+        {
+          "pill": "Investors",
+          "body": "Focus on market cap, growth projections, and competitive positioning within the AI boom."
+        },
+        {
+          "pill": "Engineers & Founders",
+          "body": "Focus on operationalizing AI. Ship reliable systems. Optimize costs. Solve real problems. The market will follow."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Stop chasing the hype. Start shipping.",
+      "italicWord": "shipping",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get Maya's daily debrief on what actually matters in AI. No fluff, just the operational truth."
+    }
+  ]
+}

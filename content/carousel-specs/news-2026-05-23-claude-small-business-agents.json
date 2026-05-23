@@ -1,0 +1,92 @@
+{
+  "id": "news-2026-05-23-claude-small-business-agents",
+  "title": "Anthropic's Claude for Small Business: The API, Not the Agent",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's posting about Anthropic's \"Claude for Small Business\" launch. Almost nobody noticed the part that actually matters for builders. This isn't AGI running your company; it's a specific set of API integrations designed to embed Claude's capabilities directly into the tools you already use.\n\nIn practice, this means clearer endpoints for tasks like drafting replies in a CRM or summarizing reports in a document editor. The actual delta is about making Claude more accessible for narrow, defined automations, reducing the friction for teams to operationalize specific language tasks. It's the unglamorous work of connecting systems, not a magically autonomous agent.\n\nWhat this does not do is eliminate the need for careful system design. While the marketing highlights \"agents,\" the real effort still falls on builders to ensure reliable input, manage context, and validate outputs for multi-step workflows. Expect to spend time on prompt engineering and chaining if your use case goes beyond simple, single-turn interactions. This is a tool you operationalize, not a religion.\n\nIf you're looking to ship something by Friday, identify one specific, high-volume, low-complexity text task in your existing workflow. Can Claude handle it reliably via these new integrations? Start there. The teams that win systematize before they scale.\n\nI break down one of these launches every morning – what actually shipped, who should care, and what to do about it this week. One email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "claude",
+    "anthropic",
+    "aibuilders",
+    "llms",
+    "aiagents"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ANTHROPIC'S LATEST",
+      "headline": "Claude for Small Business Shipped. Here's the *unglamorous* part that actually matters.",
+      "italicWord": "unglamorous",
+      "sub": "It's not about the agent. It's about the API."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 6,
+      "eyebrow": "DEFINITION",
+      "term": "Claude for Small Business",
+      "partOfSpeech": "noun.",
+      "definition": "A set of API-driven integrations designed to embed Claude's capabilities into specific, existing business tools. It enables task automation within familiar software, not autonomous company management.",
+      "example": "Drafting customer service replies in a CRM, summarizing reports in a document editor, or extracting data from spreadsheets."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "OPERATIONAL IMPACT",
+      "title": "What *Actually* Shipped for Builders",
+      "italicWord": "Actually",
+      "bullets": [
+        "New, clearer API endpoints for common business tasks.",
+        "Pre-built connectors for platforms like Salesforce or Zendesk.",
+        "Improved context window handling for long documents within these integrations."
+      ],
+      "footer": "Focus on structured input/output for reliable automation."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "IN PRACTICE",
+      "preStat": "The marketing says \"agents.\" In practice, for complex multi-step workflows, expect",
+      "stat": "70%",
+      "postStat": "of the integration work to still involve careful system design, prompt chaining, and validation cycles. This isn't plug-and-play AGI.",
+      "body": "The unglamorous part is ensuring the agent's output is reliable and fits downstream processes."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "Who *Operationalizes* This?",
+      "italicWord": "Operationalizes",
+      "audiences": [
+        {
+          "pill": "BUILDERS",
+          "body": "Developers integrating AI into existing SaaS products or internal tools. Focus on specific, high-volume tasks that benefit from language understanding."
+        },
+        {
+          "pill": "SMALL BUSINESSES",
+          "body": "Companies with clear, repetitive text-based tasks (e.g., customer support, content drafting) seeking incremental efficiency gains within their current software suite."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "Most AI news is *noise*.",
+      "italicWord": "noise",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Get my daily debrief on what *actually* ships in AI."
+    }
+  ]
+}

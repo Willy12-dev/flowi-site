@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-23-claude-mythos-bug-tsunami",
+  "title": "Claude Mythos: The Bug Tsunami Anthropic Didn't Plan For",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about Claude Mythos, but the real story isn't the agent itself—it's Anthropic's quiet admission buried in the changelog. Mythos, designed to find bugs, is doing its job *too well*. It’s generating valid bug reports faster than human developers can triage, reproduce, and patch them. This isn't a failure, it’s a critical insight into the operational bottlenecks that emerge when you introduce highly efficient AI agents into existing workflows.\n\nFor builders, this isn't a 'set and forget' solution. It means your engineering team needs to re-evaluate its entire bug-fixing pipeline, from triage to deployment. The actual delta is the shift from manual bug discovery to managing an AI-driven tsunami of issues. This is the unglamorous part of scaling AI. The teams that win here will be those who systematize their response mechanisms before they scale Mythos across their entire codebase. It's about workflow adaptation, not just tool adoption.\n\nI break down one new AI release like this every morning—one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AIdevelopment",
+    "ClaudeAI",
+    "Anthropic",
+    "LLMAgents",
+    "SoftwareEngineering"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "Claude Mythos Preview",
+      "headline": "Anthropic's new agent finds bugs faster than developers can *patch* them.",
+      "italicWord": "patch",
+      "sub": "The unglamorous part of AI agent deployment."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "Mythos: The AI Bug Hunter",
+      "body": "Anthropic's Claude Mythos Preview is an AI agent designed to autonomously explore codebases, identify vulnerabilities, and generate detailed bug reports. It's built to accelerate the QA process."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "preStat": "Mythos generates",
+      "stat": "MORE BUGS",
+      "postStat": "than dev teams can fix.",
+      "body": "The core warning from Anthropic: Mythos is so effective at finding issues that it's creating a backlog faster than human engineers can address them. This is the operational bottleneck."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "FOR BUILDERS",
+      "title": "Beyond the Hype: Operationalizing Bug Agents",
+      "italicWord": "Operationalizing",
+      "bullets": [
+        "Not a 'set and forget' solution for QA.",
+        "Requires a re-evaluation of your bug-fix pipeline.",
+        "Shifts focus from discovery to triage and remediation."
+      ],
+      "footer": "The challenge moves from finding bugs to managing their volume."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who Wins (and Who Doesn't)",
+      "italicWord": "Wins",
+      "audiences": [
+        {
+          "pill": "WINNERS",
+          "body": "Teams with mature devops, automated testing, and robust triage systems. They can absorb the AI's output."
+        },
+        {
+          "pill": "STRUGGLERS",
+          "body": "Teams with manual processes, small dev teams, or existing backlogs. Mythos will amplify their pain points."
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTIONABLE",
+      "title": "Before You Deploy Mythos",
+      "body": "Before deploying, audit your current bug-fixing throughput. Implement AI-driven triage (e.g., categorizing, prioritizing). By Friday, identify your team's current bug resolution rate. This is your baseline."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want more debriefs like this?",
+      "italicWord": "debriefs",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One daily email. No fluff. Just what ships and what matters."
+    }
+  ]
+}

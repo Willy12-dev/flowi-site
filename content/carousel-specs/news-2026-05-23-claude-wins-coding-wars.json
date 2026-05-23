@@ -1,0 +1,109 @@
+{
+  "id": "news-2026-05-23-claude-wins-coding-wars",
+  "title": "Claude's Coding Dominance: The Real Story for Builders",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone spent months debating AI coding tools. Business Insider just reported the outcome: Claude already won the startup coding wars. This isn't about benchmarks; it's about what actually ships.\n\nFor builders, the shift has been quiet but decisive. Cursor, once the darling, is fading. Its core value proposition—an AI-native IDE—struggled against the flexibility and raw model performance of Claude-integrated workflows. The unglamorous part? Most developers want AI assistance *within* their existing setup, not a whole new environment.\n\nClaude's superior context window and RAG capabilities simply enabled more effective, agentic approaches to complex coding tasks. What this does not do is eliminate the need for skilled engineering. But it clarifies which tools amplify that skill most effectively. If you're building, understanding this practical delta helps you operationalize your AI investments by Friday.\n\nI break down one of these shifts every morning—one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AICoding",
+    "ClaudeAI",
+    "DeveloperTools",
+    "AIforDevs",
+    "StartupTech"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "AI Coding",
+      "headline": "Everyone debated AI coding tools. Claude *already* won.",
+      "italicWord": "already",
+      "sub": "What actually matters for your dev workflow."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Quiet Shift",
+      "body": "Business Insider reports Claude has \"won the AI coding wars\" among startups. This isn't about theoretical benchmarks; it's the operational reality on the ground."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "Claude's Edge",
+      "title": "Why Claude *actually* landed",
+      "italicWord": "actually",
+      "bullets": [
+        "Superior context window handles larger codebases.",
+        "Better RAG integration for proprietary knowledge.",
+        "Fits agentic workflows, not just simple autocomplete."
+      ],
+      "footer": "It's about practical integration into existing systems."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "Cursor's Challenge",
+      "title": "Where Cursor *fell short*",
+      "italicWord": "fell short",
+      "bullets": [
+        "IDE friction: developers prefer existing setups.",
+        "Vendor lock-in for a wrapper, not a core model.",
+        "Not enough differentiation beyond a custom UI."
+      ],
+      "footer": "The problem wasn't the AI, but the workflow integration."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "The Actual Delta",
+      "italicWord": "Delta",
+      "left": {
+        "label": "Cursor (Past)",
+        "items": [
+          "New IDE required",
+          "Limited context",
+          "Wrapper, not model"
+        ]
+      },
+      "right": {
+        "label": "Claude (Present)",
+        "items": [
+          "Integrates anywhere",
+          "Massive context",
+          "Core model performance"
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTION",
+      "title": "Operationalize by Friday",
+      "body": "Don't switch IDEs. Integrate Claude API into your existing dev tools for RAG, code review, and refactoring. Focus on agentic prompts, not just single-turn queries."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Skip the hype. Get the *actual* delta.",
+      "italicWord": "actual",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I ship one breakdown every morning."
+    }
+  ]
+}

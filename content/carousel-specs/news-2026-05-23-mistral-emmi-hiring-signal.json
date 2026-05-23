@@ -1,0 +1,83 @@
+{
+  "id": "news-2026-05-23-mistral-emmi-hiring-signal",
+  "title": "Mistral's New Hire: What Emmi's Move Actually Signals for Builders",
+  "vertical": "ai_builder",
+  "topic": "mistral",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about Mistral hiring Emmi. Almost nobody noticed the part that actually matters for builders.\n\nEmmi isn't just another senior leader. She comes from a background of *shipping* complex enterprise AI solutions at scale, not just researching them. Her previous role involved operationalizing LLMs for hundreds of internal teams, dealing with the unglamorous realities of latency, cost control, and API stability. This isn't a hire for model benchmarks; it's a hire for production systems.\n\nFor Mistral, this signals a clear strategic pivot: moving beyond raw model capabilities to focus on how builders *operationalize* their models in the real world. They're investing in the tools, integrations, and developer experience needed to make their models reliable workhorses, not just impressive demos. This is the actual delta for anyone building with Mistral today.\n\nWhat does this mean for you? Expect Mistral to double down on enterprise features, MLOps tooling, and a clearer path to production. By Friday, you should be looking for their next API update to reflect this shift toward stability and practical deployment, not just headline-grabbing new models. The teams that win systematize before they scale.\n\nI break one of these down every morning — one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "MistralAI",
+    "AIEngineering",
+    "LLMops",
+    "AISystems",
+    "AIBuilders"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "MISTRAL'S NEW HIRE",
+      "headline": "Emmi joins Mistral. The news isn't the hire. It’s what she’s *actually* building.",
+      "italicWord": "actually",
+      "sub": "Why this move signals a pivot for AI builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 6,
+      "number": "01",
+      "title": "Who is Emmi?",
+      "body": "Former Head of Enterprise AI Solutions at a major tech firm. Not a research lead, but a practitioner known for scaling internal LLM deployments across 100+ teams. Her expertise is in *operationalizing* AI, not just developing it."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "BUILDER'S GLOSSARY",
+      "term": "Operationalizing AI",
+      "partOfSpeech": "verb.",
+      "definition": "The unglamorous work of taking an AI model from demo to stable, cost-controlled, and integrated production system. In practice, this means predictable latency, robust APIs, and clear deployment pathways.",
+      "example": "Many AI pilots fail because teams focus on model performance, not operationalizing the solution."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "MISTRAL'S STRATEGY",
+      "title": "Why this hire, *now*?",
+      "italicWord": "now",
+      "bullets": [
+        "Signals a shift beyond raw model capabilities.",
+        "Focus on enterprise-grade tooling and integration.",
+        "Prioritizing reliability and developer experience for production systems."
+      ],
+      "footer": "This is about making models usable, not just powerful."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 6,
+      "eyebrow": "THE UNGLAMOROUS TRUTH",
+      "preStat": "The actual delta for builders:",
+      "stat": "80%",
+      "postStat": "of enterprise AI pilots fail at scale due to integration and operational challenges. Emmi's role is to solve this for Mistral's ecosystem.",
+      "body": "This move suggests Mistral is serious about helping teams actually *ship* AI, not just experiment."
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "What this means for your workflow *by Friday*.",
+      "italicWord": "Friday",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One email, every morning. Zero fluff. Just the signal."
+    }
+  ]
+}
