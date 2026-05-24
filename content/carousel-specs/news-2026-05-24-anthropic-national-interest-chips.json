@@ -1,0 +1,99 @@
+{
+  "id": "news-2026-05-24-anthropic-national-interest-chips",
+  "title": "Anthropic's National Interest Designation and Chip Supply",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's inbox is full of takes on Anthropic's 'national interest' designation. But few are talking about the actual operational delta for builders. This isn't about patriotism; it's about chips.\n\nThe US government's move positions Anthropic to bypass the brutal GPU supply chain crunch. In practice, this means preferential access to the NVIDIA H100s and B200s that every other lab is fighting for. While competitors are navigating lead times and price hikes, Anthropic gains a strategic advantage in scaling its models and R&D. This matters if you're building on Claude, or if you're a startup trying to compete for compute.\n\nWhat this *does not* do is instantly make Claude 'better' or change your immediate model selection. The unglamorous part is that it gives them room to breathe and innovate faster, which manifests as more stable APIs and quicker feature rollouts down the line. For us, it's a reminder that compute is the new oil, and access is now a geopolitical asset.\n\nSo, by Friday, audit your own compute strategy. Are you over-reliant on a single provider? Are you optimizing your existing GPU usage? These are the questions that truly matter when the macro landscape shifts like this.\n\nIf you want more breakdowns like this—what actually shipped, what matters for builders—I send one out every morning. Tap BUILD in bio for the field guide.",
+  "hashtags": [
+    "AnthropicAI",
+    "ClaudeAI",
+    "AIBusiness",
+    "AIChips",
+    "AIBuilders"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S CHIP PLAY",
+      "headline": "Everyone's talking chips. Here's the *actual delta* for Anthropic.",
+      "italicWord": "actual delta",
+      "sub": "The US government's 'national interest' designation decoded."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Designation",
+      "body": "The US government named Anthropic a 'national interest' entity. This isn't just PR; it's a strategic move tied to critical infrastructure and AI leadership."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "WHAT IT MEANS",
+      "title": "Prioritized *Access* to Critical Resources",
+      "italicWord": "Access",
+      "bullets": [
+        "Anthropic now gets preferential access to scarce AI compute, specifically advanced GPUs.",
+        "This bypasses typical commercial supply chain bottlenecks.",
+        "The designation is a direct response to the ongoing global chip shortage."
+      ],
+      "footer": "A significant operational advantage in a tight market."
+    },
+    {
+      "type": "stat",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE CONTEXT",
+      "preStat": "The chip shortage has driven GPU prices up by",
+      "stat": "20-30%",
+      "postStat": "over the last 18 months, impacting all major AI labs.",
+      "body": "Access to cutting-edge chips like NVIDIA's H100s or B200s is the primary bottleneck for scaling frontier models. This designation directly addresses that for Anthropic."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who *Actually* Cares",
+      "italicWord": "Actually",
+      "audiences": [
+        {
+          "pill": "AI Builders",
+          "body": "If you're shipping Claude-powered agents, expect more stable API performance and faster feature rollouts. Anthropic can dedicate more compute to R&D."
+        },
+        {
+          "pill": "Startups & Scaleups",
+          "body": "Your competition just got a leg up on foundational compute. This is a reminder to optimize your own GPU utilization and model efficiency."
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "OPERATIONALIZE THIS",
+      "title": "Evaluate Your *Compute Strategy*",
+      "body": "This isn't a signal to switch models. It's a signal that compute access is now a geopolitical asset. Audit your current GPU spend and consider multi-cloud or specialized hardware options for redundancy by Friday."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Operationalize AI, don't just observe it.",
+      "italicWord": "observe it",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "Daily AI insights, no fluff, direct to your inbox."
+    }
+  ]
+}

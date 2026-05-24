@@ -1,0 +1,92 @@
+{
+  "id": "news-2026-05-24-anthropic-glasswing-vulnerabilities",
+  "title": "Anthropic's Glasswing: What 10,000 Vulns Actually Means",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's posting about Anthropic's Project Glasswing uncovering 10,000+ software vulnerabilities. The headlines are impressive, but as an engineer who ships, I look for the actual delta in my workflow.\n\nWhat actually shipped here is not an autonomous security agent. It’s a powerful demonstration of Claude’s pattern recognition for code issues, requiring significant human expertise for confirmation and triage. This isn't 10,000 zero-days found by an AI flying solo; it's an LLM augmenting human security engineers, sifting through noise across diverse open-source projects. The unglamorous part is the human labor still required to operationalize these findings.\n\nFor builders, this means LLMs like Claude are becoming indispensable tools for *assisting* in security audits, not replacing them. Think of it as an advanced linter on steroids. The teams that win will systematize these AI-assisted processes, integrating them into existing pipelines rather than hoping for a magic bullet. Demos lie; shipped things don't.\n\nI break one of these down every morning — one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AnthropicAI",
+    "AISecurity",
+    "LLMDev",
+    "AIBuilders",
+    "SoftwareEngineering"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 6,
+      "eyebrow": "ANTHROPIC'S GLASSWING DEBRIEF",
+      "headline": "Everyone's posting about 10,000 vulnerabilities. Here's the *unglamorous* part that actually matters.",
+      "italicWord": "unglamorous",
+      "sub": "An AI engineer's take on what actually shipped."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 6,
+      "eyebrow": "THE PROJECT",
+      "term": "Project Glasswing",
+      "partOfSpeech": "noun.",
+      "definition": "An Anthropic initiative testing Claude's ability to identify software vulnerabilities in large, complex codebases using a multi-agent system.",
+      "example": "It found issues in projects like Apache and PostgreSQL, reporting them upstream for human review."
+    },
+    {
+      "type": "stat",
+      "index": 3,
+      "total": 6,
+      "eyebrow": "THE HEADLINE NUMBER",
+      "preStat": "Anthropic reported uncovering",
+      "stat": "10,000+",
+      "postStat": "software vulnerabilities.",
+      "body": "This isn't 10,000 zero-days. It's a volume metric across diverse, often less-maintained, open-source codebases. Context matters: these were potential issues, not confirmed exploits."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 6,
+      "eyebrow": "WHAT THIS IS NOT",
+      "title": "This is not an *autonomous* security agent.",
+      "italicWord": "autonomous",
+      "bullets": [
+        "Claude identified patterns, but human engineers confirmed and triaged findings.",
+        "It didn't exploit anything; it flagged potential issues for review.",
+        "The process required significant human oversight, iteration, and domain expertise."
+      ],
+      "footer": "Demos lie; shipped things don't."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 6,
+      "title": "Who should *actually* care?",
+      "italicWord": "actually",
+      "audiences": [
+        {
+          "pill": "Security Teams",
+          "body": "Consider integrating LLMs like Claude into your *existing* vulnerability scanning pipeline for first-pass detection. It's a force multiplier."
+        },
+        {
+          "pill": "Dev Leads",
+          "body": "Use this as a signal to review your internal code review processes and tooling for AI assistance. Systematize before you scale."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 6,
+      "total": 6,
+      "hook": "I break down one new AI release every morning.",
+      "italicWord": "morning",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One email, free, no fluff. Real insights for builders."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "news-2026-05-24-github-copilot-struggles-maya",
+  "title": "Copilot's Lead: The Real Story Microsoft Missed",
+  "vertical": "ai_builder",
+  "topic": "cursor",
+  "theme": "premium-dark",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "CURSOR",
+    "promise": "for the waitlist"
+  },
+  "caption": "Everyone's talking about Microsoft's big internal shifts and custom silicon. But the real story for builders? GitHub Copilot's deepening struggle to retain its lead. In practice, this isn't about raw model power anymore; it's about operationalizing AI in the dev workflow.\n\nThe news points to leadership changes and a chip deal, which grab headlines. But the unglamorous part is Copilot's actual performance delta against newer, more focused tools. When developers aren't seeing measurable productivity gains, or when latency and context windows fall short, they switch. Fast. This isn't a theoretical problem; it's a daily friction point for hundreds of thousands of engineers.\n\nWhat this means for you, the builder, is simple: don't chase the loudest announcement. Focus on tools that ship actual workflow improvements, not just features. The teams winning right now are systematizing AI assistance, not just adding it. By Friday, you should be evaluating what’s *actually* making your team faster, not just what's popular.\n\nI break down one AI release like this every morning — one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AItools",
+    "AIfordevelopers",
+    "GitHubCopilot",
+    "CodingAI",
+    "AIproductivity"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA'S DEBRIEF",
+      "headline": "Microsoft's latest moves? Everyone missed the *real* competitive problem.",
+      "italicWord": "real",
+      "sub": "Why Copilot is losing ground, and what actually matters for builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Headline Noise",
+      "body": "Microsoft announced leadership reshuffles and a custom chip deal. Standard big-tech moves. These grab attention, but for everyday engineering, they're context, not the core issue."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE REAL PROBLEM",
+      "term": "Struggles to Hold Its Lead",
+      "partOfSpeech": "phrase.",
+      "definition": "In practice, Copilot is seeing reduced adoption growth and increased churn as developers migrate to tools offering clearer, demonstrable workflow efficiency gains.",
+      "example": "When a dev team ships 15% faster with Cursor, Copilot's 'struggle to hold its lead' becomes concrete."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHY IT'S HAPPENING",
+      "title": "The *Actual* Delta",
+      "italicWord": "Actual",
+      "bullets": [
+        "Workflow integration: Competitors are building deeper, more opinionated IDE integrations.",
+        "Precision: Newer tools offer better context awareness and code generation accuracy.",
+        "Latency: Speed matters. Small delays compound into significant friction in daily use."
+      ],
+      "footer": "It's about operationalizing AI, not just adding it."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Copilot vs. The Field",
+      "italicWord": "Field",
+      "left": {
+        "label": "Copilot Today",
+        "items": [
+          "Broad code suggestion",
+          "Lower context awareness",
+          "Generalist approach"
+        ]
+      },
+      "right": {
+        "label": "Newer Tools (e.g., Cursor)",
+        "items": [
+          "Agentic workflows",
+          "Deep project understanding",
+          "Specialized dev tasks"
+        ]
+      }
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Should Care?",
+      "italicWord": "Care",
+      "audiences": [
+        {
+          "pill": "Devs & Engineers",
+          "body": "Evaluate your daily tooling. Are you seeing measurable gains? If not, explore alternatives by Friday."
+        },
+        {
+          "pill": "Founders & CTOs",
+          "body": "Your team's productivity is paramount. Don't assume 'AI' equals efficiency. Measure it."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "The teams that win systematize before they scale. I debrief one release that matters every morning.",
+      "italicWord": "systematize",
+      "ctaKeyword": "CURSOR",
+      "ctaPromise": "for the waitlist",
+      "sub": "One email, free, no fluff. Link in bio."
+    }
+  ]
+}

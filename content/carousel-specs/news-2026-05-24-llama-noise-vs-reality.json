@@ -1,0 +1,107 @@
+{
+  "id": "news-2026-05-24-llama-noise-vs-reality",
+  "title": "The Llama News That Wasn't AI",
+  "vertical": "ai_builder",
+  "topic": "builder",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about Llama, but the 'Llama news' today was about a blanket, not an AI model. This is the unglamorous part of tracking AI: sifting through noise to find the actual delta. Builders need to cut through the hype cycle and focus on what *actually* ships and what you can operationalize. The real story isn't about cute animal-themed apparel; it's about the strategic implications of Meta's Llama models and the open-source ecosystem they fuel.\n\nLlama and its derivatives like Alpaca offer a powerful alternative to closed-API models, especially for local development, privacy-sensitive applications, and highly specific fine-tuning. But that flexibility comes with overhead: managing infrastructure, ensuring reproducibility, and staying current with rapid updates. Demos are one thing; shipping a stable, performant system is another. The teams that succeed aren't just downloading weights; they're systematizing their entire model lifecycle.\n\nMy daily work involves taking these models from concept to deployment. The actual delta is rarely the headline feature. It's in the often-overlooked details of integration and monitoring. Don't get distracted by the noise. Focus on the tools you can ship with by Friday.",
+  "hashtags": [
+    "AIbuilders",
+    "LLM",
+    "OpenSourceAI",
+    "TechNews",
+    "AIengineering"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA / AI ENGINEER",
+      "headline": "The Llama news everyone missed. It wasn't about *AI*.",
+      "italicWord": "AI",
+      "sub": "How to cut through the noise and operationalize what matters."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The 'News' Today",
+      "body": "Today's top result for 'Alpaca Llama news' was a wearable blanket. A perfect example of the noise builders navigate daily. This is what distraction looks like."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "FOR BUILDERS",
+      "term": "Llama",
+      "partOfSpeech": "noun.",
+      "definition": "Meta's family of open-source large language models. Significant for enabling local development and custom fine-tuning outside of proprietary APIs.",
+      "example": "A Llama 3 8B fine-tune deployed on a local GPU for sensitive internal data queries."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "title": "Why *Llama* matters to you",
+      "italicWord": "Llama",
+      "bullets": [
+        "Local deployment capabilities for privacy-sensitive use cases.",
+        "Full control over model architecture and fine-tuning data.",
+        "Cost-effective scaling for specific, high-volume tasks vs. API fees."
+      ],
+      "footer": "This is what enables new product categories, not just new features."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Operationalizing Open-Source",
+      "italicWord": "Open-Source",
+      "left": {
+        "label": "The Upside",
+        "items": [
+          "Flexibility",
+          "Cost Control",
+          "Data Privacy",
+          "Innovation Cycles"
+        ]
+      },
+      "right": {
+        "label": "The Overhead",
+        "items": [
+          "Infrastructure",
+          "Maintenance",
+          "Benchmarking",
+          "Talent Gap"
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "index": 6,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "ACTION",
+      "title": "Ship a Llama-powered agent by Friday",
+      "body": "Pick a narrow internal task. Use a smaller Llama variant (e.g., Llama 3 8B Instruct). Focus on prompt engineering and function calling. Get it working, then iterate."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Cut through the noise. Get the actual delta.",
+      "italicWord": "actual delta",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One email. Every morning. No fluff."
+    }
+  ]
+}

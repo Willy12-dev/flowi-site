@@ -1,0 +1,109 @@
+{
+  "id": "news-2026-05-24-anthropic-project-glasswing-agent-safety",
+  "title": "Anthropic's Agent Safety Playbook: Project Glasswing",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone’s talking about how AI agents will revolutionize everything. Almost nobody is talking about how to ship them *safely*.\n\nAnthropic just shipped Project Glasswing, their internal framework for building and deploying safe AI agents. This isn't a flashy new model or benchmark breakthrough. It’s the unglamorous, foundational work that moves agents from demo to production without catastrophic failure.\n\nThe real challenge for builders isn't creating an agent that *can* do something, but one that *consistently* does the right thing at scale. Glasswing is Anthropic's answer: a systematized approach to defining intent, simulating actions, and evaluating outcomes. Predictable behavior over emergent capabilities.\n\nThis is the actual delta for operationalizing agents. Demos lie; shipped things don't. Teams that win systematize before they scale. Glasswing shows how a leading lab ensures agents avoid costly mistakes in edge cases. Less Skynet, more robust systems.\n\nWant more breakdowns of what actually matters in AI, delivered daily? Tap the link in bio.",
+  "hashtags": [
+    "claude",
+    "anthropic",
+    "aiexperts",
+    "aiforbuilders",
+    "agenticai"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC'S LATEST",
+      "headline": "Everyone's focused on agent *capabilities*. The real win is *safety*.",
+      "italicWord": "safety",
+      "sub": "Project Glasswing shipped. Here's why it matters for builders."
+    },
+    {
+      "type": "definition",
+      "index": 2,
+      "total": 7,
+      "eyebrow": "AGENT ENGINEERING",
+      "term": "Project Glasswing",
+      "partOfSpeech": "noun.",
+      "definition": "Anthropic's internal framework for building, testing, and deploying safe AI agents. It's their operational playbook for preventing unintended agent behaviors.",
+      "example": "Simulating agent actions in sandboxed environments before production."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE PROBLEM",
+      "title": "The unglamorous part of agents.",
+      "italicWord": "unglamorous",
+      "bullets": [
+        "Agents fail silently in production, often on edge cases.",
+        "Current agent dev is ad-hoc, leading to inconsistent safety.",
+        "Scaling agents without guardrails is a liability, not a feature."
+      ],
+      "footer": "This isn't about AI going \"rogue,\" it's about predictable failure modes."
+    },
+    {
+      "type": "step",
+      "index": 4,
+      "total": 7,
+      "stepNumber": "01",
+      "stepLabel": "THE FRAMEWORK",
+      "title": "Systematizing agent deployment.",
+      "body": "Glasswing establishes a structured approach: define agent intent, simulate actions, evaluate outputs, and iterate. It's a CI/CD pipeline for agent safety."
+    },
+    {
+      "type": "audience",
+      "index": 5,
+      "total": 7,
+      "title": "Who actually benefits?",
+      "italicWord": "benefits",
+      "audiences": [
+        {
+          "pill": "BUILDERS",
+          "body": "Get a blueprint for robust agent development. No more guessing on safety protocols."
+        },
+        {
+          "pill": "FOUNDERS",
+          "body": "Reduce operational risk and build trust with early agent deployments."
+        },
+        {
+          "pill": "ENTERPRISE",
+          "body": "A path to integrate agents into critical workflows with documented safety."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "MAYA'S TAKE",
+      "title": "What this *does not* do.",
+      "italicWord": "does not",
+      "bullets": [
+        "It's not a new model capability.",
+        "It doesn't make agents \"smarter.\"",
+        "It won't ship your agent for you."
+      ],
+      "footer": "It's the operational framework you need to ship *more reliably*."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Stop building agents in the dark.",
+      "italicWord": "dark",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I break down one AI release every morning. One email, no fluff."
+    }
+  ]
+}

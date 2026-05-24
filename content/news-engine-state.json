@@ -96,93 +96,103 @@
     "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5COWI4SzJXWFdldXRmbHZsZFZSU2JqdUdGVUZaZTF4emFHcVR2ZWp6QXVjX0o0Ykh2cnJOdXpZeE9DNjZOSlM4a3UxLS01RWlCeWtadmFOX1Q?oc=5",
     "https://news.google.com/rss/articles/CBMie0FVX3lxTE5fZ3oxNUduRDA4WWpvbloyN2ItTHNMR19RaVlNclhhU3RKWUVfWTlXMGNlX2lQdEZUNTViTms1ckhVS1RrV0NmRGo4bFNvRlQ4N1BBbGxYOHdhRk5nQXFhYTRmdkdNanJCWE9xZ3ZoTmJFbEloSHNkUng4SQ?oc=5",
     "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVnl6WGFfdFBUNVdMYk5sTHg5XzU3Mnp4a1J5OTZhczBLYzZnVHNvXzV6anVFemVNMTNObjA2dHdjUkV0TG1kV1pZV1czSGdZV2xGVUZpRVlPZUE0TnhuZXBVMzdQemdkNUs4cl9kZnM2R2FCRWRrdWl5UGhYNUNONVlEQUZoOGJFVlRoNUw5bG1RQTNyamliVk9MWEx2d1lxYXZONm1udTNVUmRsS2dEVDJpc25tSGFjMXdQTDlsbmk4UER6Yk03VWtTcTVrVm1H?oc=5",
-    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUV9ON1hOSlp0OVhscnhkTG5FR0JwTHIxczBoaFBTMzVPTGFzdDBSdGR0NzZWaEloUElZbEp4eGN2a0NEVVlYRWd6bmZ4WHR1RFlUQVVfUDhSTmhvVm1EVUwxa1NIR2ZWV1RmNjctOHh1QVo2bWZpVjA1NkxVdktqWGlDaTlTWlN4M3Ezc3Q5RHBPZFdDb0JUOGtwTXdPaFN3M29wUFhCb2Z0WkVFNkFmemJUZDdoWGJzYkhMeUowakF3OTZ1ZDR4bW1ydlZaZlF0NDdxM0dKb0tYNDjSAeMBQVVfeXFMUGI0eE9BaXZpcVp2ekswTEhObldHUm9ST011SlRGTzZnTXE3Zl9XaXBOSWxkLWtORjl2Slh1eVdwUTd0SjBCRmh2THNSOGFNRk90M05jUE84MzJXakZZWFJfZS0zR1lYRk5PX1ViWngwUTRMVlFMb3VzWTBmVmNrc1c3cUdQbW81Z0xVQ3pMTDZLUG51SVEtUVlSNzBNMW8zcEhweVFnd0FnN0hCMWd3b29uaWhzVDBqYXg2OUV1cjlYM0hkWUJsbkJBZXhSYlkxdHNEZVVMTnVLd1psSE9EUlJtQVk?oc=5"
+    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUV9ON1hOSlp0OVhscnhkTG5FR0JwTHIxczBoaFBTMzVPTGFzdDBSdGR0NzZWaEloUElZbEp4eGN2a0NEVVlYRWd6bmZ4WHR1RFlUQVVfUDhSTmhvVm1EVUwxa1NIR2ZWV1RmNjctOHh1QVo2bWZpVjA1NkxVdktqWGlDaTlTWlN4M3Ezc3Q5RHBPZFdDb0JUOGtwTXdPaFN3M29wUFhCb2Z0WkVFNkFmemJUZDdoWGJzYkhMeUowakF3OTZ1ZDR4bW1ydlZaZlF0NDdxM0dKb0tYNDjSAeMBQVVfeXFMUGI0eE9BaXZpcVp2ekswTEhObldHUm9ST011SlRGTzZnTXE3Zl9XaXBOSWxkLWtORjl2Slh1eVdwUTd0SjBCRmh2THNSOGFNRk90M05jUE84MzJXakZZWFJfZS0zR1lYRk5PX1ViWngwUTRMVlFMb3VzWTBmVmNrc1c3cUdQbW81Z0xVQ3pMTDZLUG51SVEtUVlSNzBNMW8zcEhweVFnd0FnN0hCMWd3b29uaWhzVDBqYXg2OUV1cjlYM0hkWUJsbkJBZXhSYlkxdHNEZVVMTnVLd1psSE9EUlJtQVk?oc=5",
+    "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYmhhZjJvVE9zUkJaUlNLMHNnWk9Sb2Y2YjlmMFlVNTRLQ1cta3ZEUEw1NzNrS3BfVURCQldjVVhETXhmcG1QY2FiN1lsTk11a2lOTDBFcTFtcjR1QjJqY2JMQ3ZkeW1CRzhXN05HVWFZbUJ3QXhGb3NSY2ttMWdwa2xIMU5OZWJBX2FzUA?oc=5",
+    "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTjZNOVhSRTZZVlN2ZnRqWGNlMnV0UjBxbFdDRnBFUDdSaU5ocDVPYlBBMk4tYkxodl84ZjV4WjkwdDZNS05CMWNwbDl0YXZfV1Y0LUFfQWR0ck1KbjA0eTk2ajFhY3NfUWZ1ZmotWE5WZGxQVkM4Xy1rem1ncXVUV0JHeTdmRGd6MDlNMmxKQ0h1WHNYZUZiVTBLR1hDdklmUkVxVURIRXFMX2JDMERxbEV1UFZ3RUw5dTlRTENOTzYwZU5RbDFIakpENm9CLXlnVWtsZlVMMEpiNExmazFtZmxXdzA0UdIB6wFBVV95cUxOTEhYTmtsSXpxRWM0VFFQTFl4elFoUmMtUnlIM2QzaWpnalNuY1lqMnB3cGw2cF9WWlRYc3BfbEpNbzhEMWxxV3V6ZUx1V0VPaG04a0xoQ3lDNWIzbjAzU3dKZ3U1NUUtRmZuUnVCemtmckJ5SHNtenkxVmFKUl83RVc4d1ZBU3RIX2x2NUFRQThUT3RxZjRHUHkwd2xZbFB1WWpURy1zRVp2cXdrX1VrT0NQdGRPNXdIbTZsbEZGSEJHMGNBbGhWZkhub0wxd3JYd2szdW9OVWJ0QWJSbjdMSkVYUDdRNlJPUWlz?oc=5",
+    "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQdDg2RlpPLVdZR0o0bWItTmtVcHB4ZUhQdXZoLTJPVzBEcXpHNk9vT256RE9XUzFmakpBNmxlV2RGT0F6N045eUNPMjdLRV9Ebkk0c2VjVEhEZ3VOeVZMT0xXNzM1enluS242ZTJ6WXlMdk5PdGZHVzA4azFCU1ZEVE1ab1ZwRXhKWGhhUVFkWDZVT3FOcXVrRTFFS2hJTjg0OFVBazR0N1F4bTJmTnBYY3I5bGlCS2IwUF82RXVFYklmYW1PSDhSQVRYOTE5TkUwcE00MXZFbUFnMUFhLUdiRUdoZEUtYWIyU1h5ZW43eHFmTDhXT0lxVVhCb1VBbzlLc2pDczBDTlZvMHJlaU9oX1lCT3ZvYzJxbDRSZHNKMkNZdTNFNGpfWkJyMNIBsAJBVV95cUxQcTY2ZU9GdnUwd0wzMUV5RWZqbmJNMmszU3Q3TFNScTZjX0VRS0RpVmhfT3FSNjJNVjdrSTJOMzkybF9WazJQNU5yUGNiaUM4U0p5c2ZRZkhTRlBoc25JOHIzbGNqYWc4dmVoS2FqQzdFTXlzSmRUZ3ZoVGFyQl8za1poSjNFMF8tVXgzeURrLUVEOUVLU1FrRmlHZUV0WjlBOHJPV2pBM2h4Z29qNEJCOW9HWWpMeWdnZERhM21GcDc3S3IwU1J0R3pzaGhnSVdPTU16cU4wS1NCT2NIMldWOE50TmRMV3ZVdldLdnlheDIwUmd1Q2ZzWFF1TVhJNGZETWJqRWJ1alBIMld2RmIwZnByS1ZvVTZrekt3SFdqdlVBWkJTRFJJTkJIVnJtWlBa?oc=5",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaVdWNW5DdEsxTDRDajdFZGFrRDg0SlVTQkFuWTdRSGlRSGdEZVR3WWJsdHNoUHZPOHJNeVhHbDRpQ3hVYXNlbll1OUpGY0xIZVBiN0d6Z1FqeU9iajJZQk5iclFYVldjdGdKNEZKaEdWVDR5WlZNdjJCdk5HQk41dU5NMlg5cWp3ZWd3MVZEc1ZTVzNVV01zM3VjUGp2c0lVQVR6T3dPTXJzSDBydWpTTW92NGtUd2NLMG11R1lRSmxwT1REX2xKeWw5QQ?oc=5",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaGpSWEtWM1VkRE5nOHRhUE9ITEx4TlozY18xWlNwMjVkNkhtaU9POXplQlA3TTQxbFdVdXBfZk15ekprVUt2NldKb1gyZ0x0QlZiZGV4WUlhMW9BWmFGbXdEa0R1azdzS1RfdHdodnFiQXpFRnZUWkZNWVZsUUF4WW15bmRLV1piTWRzMGs0ZHJaN2dXa3JEMzJ5RWI5UUhrZmNDX3RyQdIBrAFBVV95cUxOTDVaUnBwaUNCcXhhTnhtMWlXMUNlMWM0Z2tTYndaeE54WFg3eERpTmJkMWZhWkUwZ3kwMlI5THN3Ym01Q2tkNFpHM1JNaDB4QUpfZHljWXNuYlRzNzNFMFZ2a21QYzZRdW1Vb1F0QkdnN0ZEbG0zS09LQ2IyYVdldUxxdXVXaVhkMWMwbmVoVjczYUFMYldnU0FNZTBRanIzTFVwOEptU0lxWENV?oc=5",
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMUVXeTM4c1FFdXpsQTVlNXhEN29LYlA1cUg5Ul9TWXE0T1Bnd2E2Vm5scHEtRlFiazFqYWNXY2trMktQMDVoeGdOQTRQaExndWdaQ2dhN0tqS00ya1pFS3NtTEJxdFNtZG9ISDE3R3d6LUl3UV9rbUVNN0g2QThPYmFrV3hpM04zMTEtUXZQcXE0RS14ZExqd0J6SQ?oc=5",
+    "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FU04td2ZWZFdMXzU4SDVlSXBheF9nV1ZIMlctYS04VTAxTVBjazZvLVBaTnZrQndzNlM2aVN1ZlhJTDczcmpiSUZRZllrVTJwZVpVRTBxMlV5UkM1NkxLRnV5b3NuSFJDVk55UlZZUkFZbHY1NGMyRnNXUTE?oc=5",
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNDJnV09OSEpjdE5SMVhfal9NbXprUkctM0laQllDa2hrZUlzWlY4dU1JYzU2dnBnSkNLQUdZUzUzWUw4VnhBckxMQnllbnloVkp1dFNYaTFndUdSRE5GLVp5UDBBM2JkUXBsdnZNaFlGUGZld3JPU1R2eDNSRExwMXZHdU9KNHVmRE9WS09aUE5mdw?oc=5",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxNX2JrY01OdXdzdGpMY1lvVTZpMVhCMXRsUlU4RGN4cDJPWGVmalNDV0pKN1ltX1puZnlGS3l6eWtXU3RzYmtrLXN3WHlqX3IxUThGY0FzNUNQVVpMWGlTMDBiZXROZTJkajBiUVB1QWxleURNN0V4WUNQVXpPVmRzdUdZSXM0UjZJWTlsSktzYVBBX3Z3WmpR?oc=5",
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxOazU5dWczVTZsaFdHVnNIOW9vSW1hVlBnSGl1NkpKTGJQei1wR3NEUVdNNHVmYkFQQ2RqWVg1OVY4ejNVRVdZYWw1X0tKUDRXenQ1OUlJbXBfTExENG1sTDJManpoU3Z5bnFoN255Yzl6TnVNRWVyM3N4cUxjcFVJblBBaDBjLVE?oc=5"
   ],
-  "last_run": "2026-05-23T10:30:35.263Z",
+  "last_run": "2026-05-24T03:06:55.378Z",
   "last_run_count": 10,
   "last_run_items": [
     {
-      "id": "news-2026-05-23-mistral-emmi-hiring-signal",
-      "title": "Mistral's New Hire: What Emmi's Move Actually Signals for Builders",
-      "source": "Mistral (news)",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ncHdGempGTDRQWmVlck9PNy1hbjVJTmlIb3RxZFlIVnFkMVlIaFBPXzh1RkwxcWlpdXJOWFlsUDFQLTl2OTZyaGtsX1NCU1RITHZMVzVDRVlVbVRsQUhyZHBhQQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "mistral"
-    },
-    {
-      "id": "news-2026-05-23-claude-wins-coding-wars",
-      "title": "Claude's Coding Dominance: The Real Story for Builders",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWGhaT0c5eVN5bnhVX1JyNkNKN1Z3NktZMHctM2Z2dFpkLWtWRDFaaFNUaEVrWUIyQlR6WW9UVWpWVm9DU09KVFFUbDBrOXpsNzZPa0xzSmxNcE5UZl9JaHp0NTA2N0Y2YnMxcHFfUWNwa3dXQS02NjVpY2ZVVldjVkhkT241QjJDTWpEOGtPVkN2bVB4YVpHVDJVQTE?oc=5",
-      "vertical": "ai_builder",
-      "topic": "claude"
-    },
-    {
-      "id": "news-2026-05-23-perplexity-bumblebee-operational-security",
-      "title": "Perplexity's Bumblebee: The Unglamorous Security Win",
-      "source": "Perplexity",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZS1qMWpubEZ2ckZUMzRvWUlkU2RxOWNJVjdiRHltTlp4LUNQNEJmdkhNQURTSk1sS19Kc21mWWllS3ZXRzlQTlktdFVZaUpyU2xGQzhFaW1kUE9hRE9Gc1J1Q3p3Yi1nekdpZURCMDUwTWplTnBFMUtwa09IMkhTaURfb0dpZHpmdzdzS3NGMndoelJnQjZxdWplSUpwYkVBSHBtMG1zM0VORHFXcmRPNW9vaHRDWkhoZEs5bzhKUUVaWjFvRUtEM19YRQ?oc=5",
+      "id": "news-2026-05-24-llama-noise-vs-reality",
+      "title": "The Llama News That Wasn't AI",
+      "source": "Meta AI (news)",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYmhhZjJvVE9zUkJaUlNLMHNnWk9Sb2Y2YjlmMFlVNTRLQ1cta3ZEUEw1NzNrS3BfVURCQldjVVhETXhmcG1QY2FiN1lsTk11a2lOTDBFcTFtcjR1QjJqY2JMQ3ZkeW1CRzhXN05HVWFZbUJ3QXhGb3NSY2ttMWdwa2xIMU5OZWJBX2FzUA?oc=5",
       "vertical": "ai_builder",
       "topic": "builder"
     },
     {
-      "id": "news-2026-05-23-anthropic-openai-ipo-reality-check",
-      "title": "AI IPOs: The Builder's Reality Check",
+      "id": "news-2026-05-24-bristol-myers-squibb-claude-deployment",
+      "title": "Bristol Myers Squibb's Claude Deployment: What Actually Shipped",
       "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVi0xbFNHeUNkRXItRE1uQmdVQmx4RHU1T0JkUlp0OE1sUEFBR0VNLUlhRHBHUlVYcmNOYm1VSmtHM1hhNS0xZGp2dmJnVmtia2tSdGVvZ2hkQTVSLTNlN09hMjZXZUZNaWZfWm4xeFFoRFpFUEExbVFOLXptZG1Od0JYSV8?oc=5",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-23-claude-mythos-bug-tsunami",
-      "title": "Claude Mythos: The Bug Tsunami Anthropic Didn't Plan For",
-      "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQnpTY2FvdE9XZml6Zmx6dVUwbXJ4Zk5CMjJsWG9iYnJ5QkZQbFBOV1FyTnVzUGRZa3BiZTlpaDJtczNxVzdpYmRPVlBHbUVCYzEydUZBMG9VV1Zqa1NjcmdLZDRaZHlDV2V3Z0RvSXh1SlN1bzNLd2MxbVpKcko5bFUxZEo2dkh6bkRRaVprZEllZ2tMdG5lSFpKZFM4eU9nbDdtM0RPdDFjalpkZG1QYQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTjZNOVhSRTZZVlN2ZnRqWGNlMnV0UjBxbFdDRnBFUDdSaU5ocDVPYlBBMk4tYkxodl84ZjV4WjkwdDZNS05CMWNwbDl0YXZfV1Y0LUFfQWR0ck1KbjA0eTk2ajFhY3NfUWZ1ZmotWE5WZGxQVkM4Xy1rem1ncXVUV0JHeTdmRGd6MDlNMmxKQ0h1WHNYZUZiVTBLR1hDdklmUkVxVURIRXFMX2JDMERxbEV1UFZ3RUw5dTlRTENOTzYwZU5RbDFIakpENm9CLXlnVWtsZlVMMEpiNExmazFtZmxXdzA0UdIB6wFBVV95cUxOTEhYTmtsSXpxRWM0VFFQTFl4elFoUmMtUnlIM2QzaWpnalNuY1lqMnB3cGw2cF9WWlRYc3BfbEpNbzhEMWxxV3V6ZUx1V0VPaG04a0xoQ3lDNWIzbjAzU3dKZ3U1NUUtRmZuUnVCemtmckJ5SHNtenkxVmFKUl83RVc4d1ZBU3RIX2x2NUFRQThUT3RxZjRHUHkwd2xZbFB1WWpURy1zRVp2cXdrX1VrT0NQdGRPNXdIbTZsbEZGSEJHMGNBbGhWZkhub0wxd3JYd2szdW9OVWJ0QWJSbjdMSkVYUDdRNlJPUWlz?oc=5",
       "vertical": "ai_builder",
       "topic": "claude"
     },
     {
-      "id": "news-2026-05-23-claude-small-business-agents",
-      "title": "Anthropic's Claude for Small Business: The API, Not the Agent",
+      "id": "news-2026-05-24-anthropic-national-interest-chips",
+      "title": "Anthropic's National Interest Designation and Chip Supply",
       "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMnA4Njk1TVBGWFpEYTFRN3ZEazZKcVdvdTlMOU5PSkVpbzRuRHBmVTNDbHFjUlF3QWhiNXA4b1hudnZRa3piZ0pweUc4eFBFOEZfQ3YxSWtSMXo4b1BkanRsRWh2ZHAxUVZyTzFtTWQ2OXlxV3V4bGo0MWxVeGRjN1o2NnVaWVAwRlJERTREWjJBcDROWkplNjlsTUZmYTlKemRYUzJXT3RQcmNVNEUwd3pEM0lERlNCQWRLVg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQdDg2RlpPLVdZR0o0bWItTmtVcHB4ZUhQdXZoLTJPVzBEcXpHNk9vT256RE9XUzFmakpBNmxlV2RGT0F6N045eUNPMjdLRV9Ebkk0c2VjVEhEZ3VOeVZMT0xXNzM1enluS242ZTJ6WXlMdk5PdGZHVzA4azFCU1ZEVE1ab1ZwRXhKWGhhUVFkWDZVT3FOcXVrRTFFS2hJTjg0OFVBazR0N1F4bTJmTnBYY3I5bGlCS2IwUF82RXVFYklmYW1PSDhSQVRYOTE5TkUwcE00MXZFbUFnMUFhLUdiRUdoZEUtYWIyU1h5ZW43eHFmTDhXT0lxVVhCb1VBbzlLc2pDczBDTlZvMHJlaU9oX1lCT3ZvYzJxbDRSZHNKMkNZdTNFNGpfWkJyMNIBsAJBVV95cUxQcTY2ZU9GdnUwd0wzMUV5RWZqbmJNMmszU3Q3TFNScTZjX0VRS0RpVmhfT3FSNjJNVjdrSTJOMzkybF9WazJQNU5yUGNiaUM4U0p5c2ZRZkhTRlBoc25JOHIzbGNqYWc4dmVoS2FqQzdFTXlzSmRUZ3ZoVGFyQl8za1poSjNFMF8tVXgzeURrLUVEOUVLU1FrRmlHZUV0WjlBOHJPV2pBM2h4Z29qNEJCOW9HWWpMeWdnZERhM21GcDc3S3IwU1J0R3pzaGhnSVdPTU16cU4wS1NCT2NIMldWOE50TmRMV3ZVdldLdnlheDIwUmd1Q2ZzWFF1TVhJNGZETWJqRWJ1alBIMld2RmIwZnByS1ZvVTZrekt3SFdqdlVBWkJTRFJJTkJIVnJtWlBa?oc=5",
       "vertical": "ai_builder",
       "topic": "claude"
     },
     {
-      "id": "news-2026-05-23-ai-etfs-target-xai-anthropic-openai",
-      "title": "New AI ETFs: What it means for builders, not investors",
+      "id": "news-2026-05-24-github-copilot-struggles-maya",
+      "title": "Copilot's Lead: The Real Story Microsoft Missed",
+      "source": "Cursor / coding",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaVdWNW5DdEsxTDRDajdFZGFrRDg0SlVTQkFuWTdRSGlRSGdEZVR3WWJsdHNoUHZPOHJNeVhHbDRpQ3hVYXNlbll1OUpGY0xIZVBiN0d6Z1FqeU9iajJZQk5iclFYVldjdGdKNEZKaEdWVDR5WlZNdjJCdk5HQk41dU5NMlg5cWp3ZWd3MVZEc1ZTVzNVV01zM3VjUGp2c0lVQVR6T3dPTXJzSDBydWpTTW92NGtUd2NLMG11R1lRSmxwT1REX2xKeWw5QQ?oc=5",
+      "vertical": "ai_builder",
+      "topic": "cursor"
+    },
+    {
+      "id": "news-2026-05-24-xai-grok-memphis-data-center",
+      "title": "xAI's $185M Compute Play in Memphis",
       "source": "xAI / Grok",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5COWI4SzJXWFdldXRmbHZsZFZSU2JqdUdGVUZaZTF4emFHcVR2ZWp6QXVjX0o0Ykh2cnJOdXpZeE9DNjZOSlM4a3UxLS01RWlCeWtadmFOX1Q?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaGpSWEtWM1VkRE5nOHRhUE9ITEx4TlozY18xWlNwMjVkNkhtaU9POXplQlA3TTQxbFdVdXBfZk15ekprVUt2NldKb1gyZ0x0QlZiZGV4WUlhMW9BWmFGbXdEa0R1azdzS1RfdHdodnFiQXpFRnZUWkZNWVZsUUF4WW15bmRLV1piTWRzMGs0ZHJaN2dXa3JEMzJ5RWI5UUhrZmNDX3RyQdIBrAFBVV95cUxOTDVaUnBwaUNCcXhhTnhtMWlXMUNlMWM0Z2tTYndaeE54WFg3eERpTmJkMWZhWkUwZ3kwMlI5THN3Ym01Q2tkNFpHM1JNaDB4QUpfZHljWXNuYlRzNzNFMFZ2a21QYzZRdW1Vb1F0QkdnN0ZEbG0zS09LQ2IyYVdldUxxdXVXaVhkMWMwbmVoVjczYUFMYldnU0FNZTBRanIzTFVwOEptU0lxWENV?oc=5",
       "vertical": "ai_builder",
       "topic": "grok"
     },
     {
-      "id": "news-2026-05-23-meta-ai-ipos-market-signals",
-      "title": "Meta AI's IPO: What Builders Should Watch",
-      "source": "Meta AI (news)",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5fZ3oxNUduRDA4WWpvbloyN2ItTHNMR19RaVlNclhhU3RKWUVfWTlXMGNlX2lQdEZUNTViTms1ckhVS1RrV0NmRGo4bFNvRlQ4N1BBbGxYOHdhRk5nQXFhYTRmdkdNanJCWE9xZ3ZoTmJFbEloSHNkUng4SQ?oc=5",
-      "vertical": "ai_builder",
-      "topic": "builder"
-    },
-    {
-      "id": "news-2026-05-23-zoom-anthropic-investment-operational-impact",
-      "title": "Zoom's Anthropic Win: What the $1B Actually Means for Builders",
+      "id": "news-2026-05-24-anthropic-mythos-1-code-security-debrief",
+      "title": "Anthropic's Mythos 1: The Code & Security Play",
       "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVnl6WGFfdFBUNVdMYk5sTHg5XzU3Mnp4a1J5OTZhczBLYzZnVHNvXzV6anVFemVNMTNObjA2dHdjUkV0TG1kV1pZV1czSGdZV2xGVUZpRVlPZUE0TnhuZXBVMzdQemdkNUs4cl9kZnM2R2FCRWRrdWl5UGhYNUNONVlEQUZoOGJFVlRoNUw5bG1RQTNyamliVk9MWEx2d1lxYXZONm1udTNVUmRsS2dEVDJpc25tSGFjMXdQTDlsbmk4UER6Yk03VWtTcTVrVm1H?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMUVXeTM4c1FFdXpsQTVlNXhEN29LYlA1cUg5Ul9TWXE0T1Bnd2E2Vm5scHEtRlFiazFqYWNXY2trMktQMDVoeGdOQTRQaExndWdaQ2dhN0tqS00ya1pFS3NtTEJxdFNtZG9ISDE3R3d6LUl3UV9rbUVNN0g2QThPYmFrV3hpM04zMTEtUXZQcXE0RS14ZExqd0J6SQ?oc=5",
       "vertical": "ai_builder",
       "topic": "claude"
     },
     {
-      "id": "news-2026-05-23-anthropic-existential-risk-debrief",
-      "title": "Anthropic's latest AI warning: What it *actually* means for builders",
+      "id": "news-2026-05-24-anthropic-glasswing-vulnerabilities",
+      "title": "Anthropic's Glasswing: What 10,000 Vulns Actually Means",
       "source": "Anthropic (news)",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUV9ON1hOSlp0OVhscnhkTG5FR0JwTHIxczBoaFBTMzVPTGFzdDBSdGR0NzZWaEloUElZbEp4eGN2a0NEVVlYRWd6bmZ4WHR1RFlUQVVfUDhSTmhvVm1EVUwxa1NIR2ZWV1RmNjctOHh1QVo2bWZpVjA1NkxVdktqWGlDaTlTWlN4M3Ezc3Q5RHBPZFdDb0JUOGtwTXdPaFN3M29wUFhCb2Z0WkVFNkFmemJUZDdoWGJzYkhMeUowakF3OTZ1ZDR4bW1ydlZaZlF0NDdxM0dKb0tYNDjSAeMBQVVfeXFMUGI0eE9BaXZpcVp2ekswTEhObldHUm9ST011SlRGTzZnTXE3Zl9XaXBOSWxkLWtORjl2Slh1eVdwUTd0SjBCRmh2THNSOGFNRk90M05jUE84MzJXakZZWFJfZS0zR1lYRk5PX1ViWngwUTRMVlFMb3VzWTBmVmNrc1c3cUdQbW81Z0xVQ3pMTDZLUG51SVEtUVlSNzBNMW8zcEhweVFnd0FnN0hCMWd3b29uaWhzVDBqYXg2OUV1cjlYM0hkWUJsbkJBZXhSYlkxdHNEZVVMTnVLd1psSE9EUlJtQVk?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FU04td2ZWZFdMXzU4SDVlSXBheF9nV1ZIMlctYS04VTAxTVBjazZvLVBaTnZrQndzNlM2aVN1ZlhJTDczcmpiSUZRZllrVTJwZVpVRTBxMlV5UkM1NkxLRnV5b3NuSFJDVk55UlZZUkFZbHY1NGMyRnNXUTE?oc=5",
+      "vertical": "ai_builder",
+      "topic": "claude"
+    },
+    {
+      "id": "news-2026-05-24-grok-enterprise-trust-struggle",
+      "title": "Grok's Enterprise Problem: It's Not About the Code",
+      "source": "xAI / Grok",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNDJnV09OSEpjdE5SMVhfal9NbXprUkctM0laQllDa2hrZUlzWlY4dU1JYzU2dnBnSkNLQUdZUzUzWUw4VnhBckxMQnllbnloVkp1dFNYaTFndUdSRE5GLVp5UDBBM2JkUXBsdnZNaFlGUGZld3JPU1R2eDNSRExwMXZHdU9KNHVmRE9WS09aUE5mdw?oc=5",
+      "vertical": "ai_builder",
+      "topic": "grok"
+    },
+    {
+      "id": "news-2026-05-24-grok-strategic-compute-alignment",
+      "title": "Decoding Elon's Grok-SpaceX-Tesla-Nvidia \"Trade\"",
+      "source": "xAI / Grok",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNX2JrY01OdXdzdGpMY1lvVTZpMVhCMXRsUlU4RGN4cDJPWGVmalNDV0pKN1ltX1puZnlGS3l6eWtXU3RzYmtrLXN3WHlqX3IxUThGY0FzNUNQVVpMWGlTMDBiZXROZTJkajBiUVB1QWxleURNN0V4WUNQVXpPVmRzdUdZSXM0UjZJWTlsSktzYVBBX3Z3WmpR?oc=5",
+      "vertical": "ai_builder",
+      "topic": "grok"
+    },
+    {
+      "id": "news-2026-05-24-anthropic-project-glasswing-agent-safety",
+      "title": "Anthropic's Agent Safety Playbook: Project Glasswing",
+      "source": "Anthropic (news)",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOazU5dWczVTZsaFdHVnNIOW9vSW1hVlBnSGl1NkpKTGJQei1wR3NEUVdNNHVmYkFQQ2RqWVg1OVY4ejNVRVdZYWw1X0tKUDRXenQ1OUlJbXBfTExENG1sTDJManpoU3Z5bnFoN255Yzl6TnVNRWVyM3N4cUxjcFVJblBBaDBjLVE?oc=5",
       "vertical": "ai_builder",
       "topic": "claude"
     }
   ],
-  "total_drafted": 97,
+  "total_drafted": 107,
   "last_run_provider": "gemini",
   "last_run_model": "gemini-2.0-flash"
 }

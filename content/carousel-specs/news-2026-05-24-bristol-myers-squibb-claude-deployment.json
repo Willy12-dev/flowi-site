@@ -1,0 +1,100 @@
+{
+  "id": "news-2026-05-24-bristol-myers-squibb-claude-deployment",
+  "title": "Bristol Myers Squibb's Claude Deployment: What Actually Shipped",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about AI in enterprise, but Bristol Myers Squibb actually *shipped* something substantial with Claude.\n\nMost \"AI deployments\" are pilot programs or small internal tools. BMY's move isn't just a press release; it's a pipeline-wide integration that's already shifting how analysts view their stock. This is the unglamorous part of AI that actually moves the needle.\n\nThe actual delta here is scale. They're not just testing; they're operationalizing Claude for drug discovery, clinical trials, and regulatory processes. This systematic approach is what separates a proof-of-concept from a strategic asset. It's about systemic efficiency, not just a flashy demo.\n\nFor builders, this means the focus needs to be on robust integration and measurable impact. Forget the hype cycles. If you can't show how your AI system changes workflows or improves a core business metric, it's just a toy. BMY shows how to build for actual adoption.\n\nI break down one real-world AI deployment every morning. One email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AI",
+    "Claude",
+    "EnterpriseAI",
+    "AIinPharma",
+    "AItools"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "MAYA: THE DEBRIEF",
+      "headline": "Bristol Myers Squibb *shipped* Claude. Not a pilot.",
+      "italicWord": "shipped",
+      "sub": "Why their pipeline-wide AI integration matters for builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Actual Deployment",
+      "body": "Bristol Myers Squibb integrated Claude AI across its entire drug discovery and development pipeline. This isn't a single-team experiment; it's a strategic, company-wide operationalization."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE DELTA",
+      "term": "Operationalized AI",
+      "partOfSpeech": "noun.",
+      "definition": "AI systems deployed at scale into core business processes, showing measurable impact on workflows, efficiency, or output, rather than isolated proofs-of-concept.",
+      "example": "BMY's pipeline-wide Claude integration is operationalized AI, not just a pilot."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "WHAT THIS DOES",
+      "title": "In Practice, Claude Is Used For:",
+      "italicWord": "Practice",
+      "bullets": [
+        "Accelerating drug discovery research.",
+        "Streamlining clinical trial data analysis.",
+        "Assisting with complex regulatory document preparation."
+      ],
+      "footer": "This moves beyond simple data retrieval to active workflow participation."
+    },
+    {
+      "type": "stat",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE BUSINESS IMPACT",
+      "preStat": "BMY's Claude deployment has already",
+      "stat": "shifted",
+      "postStat": "how analysts view its investment story.",
+      "body": "This is the unglamorous part: real AI value is reflected in market confidence and long-term strategic positioning, not just tech press headlines."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who Should *Care* & Why",
+      "italicWord": "Care",
+      "audiences": [
+        {
+          "pill": "Builders & Founders",
+          "body": "Your AI needs to integrate deeply into existing workflows. Systematize before you scale. Demos don't move stock prices, shipped systems do."
+        },
+        {
+          "pill": "Enterprise Leaders",
+          "body": "Look beyond pilots. Demand clear ROI metrics and a roadmap for pipeline-wide adoption. Focus on the actual delta in operational efficiency."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to build AI that *ships*?",
+      "italicWord": "ships",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "I break down one real-world AI deployment every morning. One email, free, no fluff. Link in bio."
+    }
+  ]
+}

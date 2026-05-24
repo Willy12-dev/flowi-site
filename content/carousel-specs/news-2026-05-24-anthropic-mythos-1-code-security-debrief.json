@@ -1,0 +1,108 @@
+{
+  "id": "news-2026-05-24-anthropic-mythos-1-code-security-debrief",
+  "title": "Anthropic's Mythos 1: The Code & Security Play",
+  "vertical": "ai_builder",
+  "topic": "claude",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "BUILD",
+    "promise": "for the field guide"
+  },
+  "caption": "Everyone's talking about new models. Anthropic just prepped one for code and security, and the *unglamorous part* is what actually matters. Mythos 1 is in the pipeline, specifically tailored for Claude's performance in coding and security tasks. This isn't just about a bigger context window or marginal gains; it's about delivering specific, reliable task performance in high-stakes environments. The actual delta here will be measured by its ability to handle complex codebases, pinpoint vulnerabilities with precision, and guide secure coding practices. We've seen models *talk* about code, but the operational gap between a cool demo and a deployable tool has been substantial. If Mythos 1 delivers on *security*, that’s a much harder problem than merely generating boilerplate. It demands deep understanding of logic, intent, and predicting flaws—a real tool for engineers, not just a conversational companion. I debrief one release like this every morning—one email, free, no fluff. Hit the link in bio to get it.",
+  "hashtags": [
+    "Claude",
+    "Anthropic",
+    "LLM",
+    "AIdevelopment",
+    "AIengineering"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "ANTHROPIC DEBRIEF",
+      "headline": "Mythos 1 is coming. The *real* news is the unglamorous part.",
+      "italicWord": "real",
+      "sub": "What \"Claude Code & Security\" actually means for builders."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "What Shipped?",
+      "body": "Anthropic is preparing Mythos 1 specifically for Claude Code and Security. This isn't a generalist update; it's a targeted play for vertical performance. The focus is on specialized, not broad, capability."
+    },
+    {
+      "type": "bullets",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "THE 'CODE' PART",
+      "title": "What this *could* operationalize:",
+      "italicWord": "operationalize",
+      "bullets": [
+        "Faster, more accurate code generation for specific languages.",
+        "Enhanced debugging assistance for complex systems.",
+        "Automated refactoring suggestions that don't break existing logic."
+      ],
+      "footer": "The delta is in the *reliability* of these tasks, not just their presence."
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE 'SECURITY' PART",
+      "title": "This is where it gets *interesting*.",
+      "italicWord": "interesting",
+      "bullets": [
+        "Vulnerability detection with fewer false positives.",
+        "Proactive secure code review and compliance checks.",
+        "Guidance on secure architecture patterns, not just syntax."
+      ],
+      "footer": "Security is a high-stakes domain. Demos don't cut it; shipped impact does."
+    },
+    {
+      "type": "definition",
+      "index": 5,
+      "total": 7,
+      "eyebrow": "THE ACTUAL DELTA",
+      "term": "Operational Reliability",
+      "partOfSpeech": "noun.",
+      "definition": "The unglamorous part of AI: consistent, high-precision performance on critical tasks where failure carries significant cost.",
+      "example": "Mythos 1 needs to detect security flaws with minimal false positives to be truly useful in production. That's the bar."
+    },
+    {
+      "type": "audience",
+      "index": 6,
+      "total": 7,
+      "title": "Who should *care*?",
+      "italicWord": "care",
+      "audiences": [
+        {
+          "pill": "Dev Teams",
+          "body": "Looking to integrate more robust AI tooling for daily coding workflows and quality assurance."
+        },
+        {
+          "pill": "Security Engineers",
+          "body": "Seeking to automate parts of vulnerability scanning and code review without sacrificing accuracy."
+        },
+        {
+          "pill": "Founders",
+          "body": "Building secure-by-design applications where code integrity is a core product differentiator."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Forget the hype cycles. Build what *ships*.",
+      "italicWord": "ships",
+      "ctaKeyword": "BUILD",
+      "ctaPromise": "for the field guide",
+      "sub": "One AI release, decoded. Every morning, no fluff. Link in bio."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "news-2026-05-24-grok-enterprise-trust-struggle",
+  "title": "Grok's Enterprise Problem: It's Not About the Code",
+  "vertical": "ai_builder",
+  "topic": "grok",
+  "theme": "editorial-cream",
+  "handle": "@useflowi",
+  "cta": {
+    "keyword": "GROK",
+    "promise": "for the waitlist"
+  },
+  "caption": "Everyone's talking about Grok's enterprise ambitions, but the actual delta is this: a brand built on contrarian takes doesn't translate to trust for mission-critical systems. My feed is full of hot takes, but the unglamorous part of shipping AI into a business is about reliable, predictable performance and data security, not viral posts.\n\nGrok's public persona, while effective for reach, is fundamentally at odds with the due diligence required by enterprise procurement. You don't operationalize an agent into a production workflow if its primary feature is \"sarcasm.\" It's a reminder that building an LLM is one thing; building a product that solves real business problems, with the necessary guardrails and support, is another entirely.\n\nEnterprise adoption isn't about raw model capability alone; it's about the entire trust stack, from data governance to predictable outputs. What Grok does not do, right now, is provide that. It’s a tool, but for specific, less critical use cases.\n\nI break down one AI release like this every morning — one email, free, no fluff. Link in bio.",
+  "hashtags": [
+    "AIEngineering",
+    "LLMs",
+    "xAI",
+    "Grok",
+    "EnterpriseAI"
+  ],
+  "slides": [
+    {
+      "type": "cover",
+      "index": 1,
+      "total": 7,
+      "eyebrow": "GROK'S ENTERPRISE PROBLEM",
+      "headline": "Everyone's talking reach. Almost nobody noticed the part that actually *matters*.",
+      "italicWord": "matters",
+      "sub": "Why xAI’s LLM struggles to ship into businesses."
+    },
+    {
+      "type": "numbered",
+      "index": 2,
+      "total": 7,
+      "number": "01",
+      "title": "The Brand-Trust Mismatch",
+      "body": "Grok built its identity on edgy, contrarian responses. This drives engagement but fundamentally conflicts with enterprise requirements for predictability and stability in production systems."
+    },
+    {
+      "type": "definition",
+      "index": 3,
+      "total": 7,
+      "eyebrow": "ENTERPRISE AI",
+      "term": "Trust Stack",
+      "partOfSpeech": "noun.",
+      "definition": "The layers of reliability, security, data governance, and support an AI product must demonstrate to be operationalized within a business environment.",
+      "example": "\"A strong trust stack is more critical than raw model performance for enterprise adoption.\""
+    },
+    {
+      "type": "bullets",
+      "index": 4,
+      "total": 7,
+      "eyebrow": "THE DELTA",
+      "title": "Where Grok Falls *Short*",
+      "italicWord": "Short",
+      "bullets": [
+        "Unpredictable outputs: Sarcasm and \"takes\" are not features in enterprise.",
+        "Data handling: Lack of clear, robust data privacy and security guarantees.",
+        "Support: Enterprise-grade SLAs and dedicated support channels are absent."
+      ],
+      "footer": "These are the unglamorous parts that decide adoption."
+    },
+    {
+      "type": "compare",
+      "index": 5,
+      "total": 7,
+      "title": "Use Cases: Reach vs. *Reliability*",
+      "italicWord": "Reliability",
+      "left": {
+        "label": "Grok's Current Fit",
+        "items": [
+          "Social media analysis",
+          "Personal ideation",
+          "Content drafting (low stakes)"
+        ]
+      },
+      "right": {
+        "label": "Enterprise Needs",
+        "items": [
+          "Customer service automation",
+          "Internal knowledge retrieval",
+          "Code generation (critical)"
+        ]
+      }
+    },
+    {
+      "type": "stat",
+      "index": 6,
+      "total": 7,
+      "eyebrow": "IN PRACTICE",
+      "preStat": "75% of IT decision-makers prioritize data security and compliance over cutting-edge features when evaluating new AI tools.",
+      "stat": "75%",
+      "postStat": "prioritize data security",
+      "body": "The ability to ship with trust is built on boring, unsexy fundamentals."
+    },
+    {
+      "type": "cta",
+      "index": 7,
+      "total": 7,
+      "hook": "Want to operationalize AI, not just *hype* it?",
+      "italicWord": "hype",
+      "ctaKeyword": "GROK",
+      "ctaPromise": "for the waitlist",
+      "sub": "I break down one AI release every morning. One email, free, no fluff."
+    }
+  ]
+}
